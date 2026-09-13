@@ -1,0 +1,101 @@
+{
+  "descripcion": "Básicos habituales en despensa y cocina de Lord.I y Doña.Y. Se excluyen de la lista semanal de la compra automática a menos que se marquen como agotados.",
+  "articulos": [
+    {
+      "id": "aove",
+      "nombre": "Aceite de Oliva Virgen Extra",
+      "categoria": "Aceites y condimentos",
+      "habitual": true
+    },
+    {
+      "id": "sal_yodada",
+      "nombre": "Sal yodada",
+      "categoria": "Condimentos",
+      "habitual": true,
+      "nota": "Recomendada para apoyo al tiroides"
+    },
+    {
+      "id": "pimienta_negra",
+      "nombre": "Pimienta negra molida",
+      "categoria": "Especias",
+      "habitual": true
+    },
+    {
+      "id": "oregano",
+      "nombre": "Orégano seco",
+      "categoria": "Especias",
+      "habitual": true
+    },
+    {
+      "id": "pimenton_dulce",
+      "nombre": "Pimentón dulce (cero picante)",
+      "categoria": "Especias",
+      "habitual": true
+    },
+    {
+      "id": "ajos",
+      "nombre": "Ajos",
+      "categoria": "Verduras base",
+      "habitual": true
+    },
+    {
+      "id": "vinagre",
+      "nombre": "Vinagre de manzana",
+      "categoria": "Condimentos",
+      "habitual": true
+    },
+    {
+      "id": "soja_baja_sal",
+      "nombre": "Salsa de soja baja en sal",
+      "categoria": "Salsas",
+      "habitual": true
+    },
+    {
+      "id": "levadura_panadero",
+      "nombre": "Levadura seca de panadería",
+      "categoria": "Repostería y masas",
+      "habitual": true,
+      "nota": "Para masa de pizza casera"
+    },
+    {
+      "id": "harina_trigo_fuerza",
+      "nombre": "Harina de fuerza",
+      "categoria": "Despensa",
+      "habitual": true
+    },
+    {
+      "id": "cafe_infusiones",
+      "nombre": "Café en grano o molido / infusiones",
+      "categoria": "Despensa",
+      "habitual": true
+    },
+    {
+      "id": "comino_molido",
+      "nombre": "Comino molido",
+      "categoria": "Especias",
+      "habitual": true,
+      "nota": "Para chili suave casero"
+    },
+    {
+      "id": "curry_dulce",
+      "nombre": "Curry dulce suave en polvo (cero picante)",
+      "categoria": "Especias",
+      "habitual": true,
+      "nota": "Para pollo al curry cremoso"
+    },
+    {
+      "id": "laurel",
+      "nombre": "Hojas de laurel seco",
+      "categoria": "Especias",
+      "habitual": true,
+      "nota": "Para guiso de lentejas"
+    },
+    {
+      "id": "proteina_dona_y",
+      "nombre": "Bote de proteína en polvo (sabor neutro/vainilla)",
+      "categoria": "Suplementación",
+      "habitual": true,
+      "uso_exclusivo": "Doña.Y"
+    }
+  ]
+}

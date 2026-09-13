@@ -1,0 +1,11 @@
+{
+  "name": "nutriplan-ia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Asistente Nutricional Adaptativo y Planificador de Menús para Lord.I y Doña.Y",
+  "scripts": {
+    "dev": "npm --prefix app run dev",
+    "build": "npm --prefix app run build",
+    "preview": "npm --prefix app run preview"
+  }
+}

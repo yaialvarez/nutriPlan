@@ -1,0 +1,296 @@
+{
+  "semana": "Semana 1: Arranque y consolidación de hábitos",
+  "fecha_inicio": "2026-09-14",
+  "objetivo_semana": "Establecer la rutina de Batch Cooking del domingo para liberar tiempo entre semana, garantizando digestiones ligeras, seguridad médica total y platos disfrutones el fin de semana.",
+  "batch_cooking_domingo": {
+    "duracion_estimada_minutos": 120,
+    "resumen": "Sesión de 2 horas para dejar listas todas las bases de comida y cremas de lunes a jueves.",
+    "equipamiento": [
+      "1 olla grande para el guiso de lentejas",
+      "1 cazo mediano para el arroz basmati",
+      "1 olla para la crema de calabacín",
+      "1 sartén amplia para el pollo al curry",
+      "4-6 recipientes herméticos de cristal"
+    ],
+    "cronograma_pasos": [
+      {
+        "orden": 1,
+        "tiempo": "00:00 - 00:20",
+        "accion": "Picar verduras base (cebolla, puerro, zanahoria, calabacines). Poner a pochar cebolla y puerro en dos ollas a fuego medio-bajo."
+      },
+      {
+        "orden": 2,
+        "tiempo": "00:20 - 00:50",
+        "accion": "En la olla 1: Añadir magro de cerdo, pimentón dulce, lentejas pardinas, patata chascada y zanahorias; cubrir de agua y dejar cocer a fuego suave 35-40 min."
+      },
+      {
+        "orden": 3,
+        "tiempo": "00:30 - 00:50",
+        "accion": "En la olla 2: Añadir calabacines troceados con patata y puerro pochado; cubrir de agua justo al ras y cocer 18 min. Triturar con quesitos suaves y sal yodada hasta textura seda. Dejar atemperar."
+      },
+      {
+        "orden": 4,
+        "tiempo": "00:50 - 01:10",
+        "accion": "En el cazo: Cocer 300g de arroz basmati con sal yodada durante 11 minutos exactos. Escurrir, enfriar con agua fría y desgranar con unas gotas de AOVE para que quede suelto."
+      },
+      {
+        "orden": 5,
+        "tiempo": "01:10 - 01:40",
+        "accion": "En sartén amplia: Dorar dados de pechuga de pollo, añadir zanahoria en rodajas finas y dados de calabacín; agregar curry dulce (cero picante) y bebida de coco/leche evaporada. Cocinar 8 min."
+      },
+      {
+        "orden": 6,
+        "tiempo": "01:40 - 02:00",
+        "accion": "Envasado y etiquetado: Repartir el guiso de lentejas, el arroz basmati, el pollo al curry y la crema de calabacín en tuppers de cristal. Dejar enfriar a temperatura ambiente antes de refrigerar."
+      }
+    ],
+    "conservacion": "Todos los recipientes aguantan en refrigeración óptima a 4°C de lunes a jueves. Recalentado en microondas o sartén en solo 3 minutos."
+  },
+  "dias": [
+    {
+      "dia": "Lunes",
+      "comida": {
+        "receta_id": "guiso_lentejas_verduras",
+        "nombre": "Guiso de lentejas pardinas con magro y verduras",
+        "origen": "Batch Cooking (recalentar 3 min)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 plato hondo estándar bien caliente",
+          "detalles": "Cebolla perfectamente deshecha en la cocción. Proteína procedente 100% del magro y legumbre de comida real. Cero suplementos.",
+          "volumen_macros": "1/4 magro, 1/4 lentejas/patata, 1/2 verdura y caldo."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "1 plato hondo generoso con trozos extra de patata cocida",
+          "detalles": "Mayor volumen de carbohidratos para superávit calórico magro.",
+          "suplementacion": "1 batido de proteína a media tarde (merienda)."
+        }
+      },
+      "cena": {
+        "receta_id": "fajitas_suaves_pollo_pimientos",
+        "nombre": "Fajitas suaves de pollo con pimientos salteados y mayonesa",
+        "origen": "Cocina rápida al momento (15 min)",
+        "tiempo_preparacion": "15 min",
+        "adaptacion_lord_i": {
+          "porcion": "2 tortillas de trigo rellenas",
+          "detalles": "Cebolla y pimientos dorados a fuego vivo en sartén (cero cebolla cruda). Toque de mayonesa.",
+          "volumen_macros": "Proteína abundante de pollo a la plancha."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "3 tortillas de trigo bien cargadas con pollo, verduras y mayonesa",
+          "detalles": "Aporte energético superior para ganancia muscular.",
+          "suplementacion": "Completado con fruta fresca (plátano maduro)."
+        }
+      }
+    },
+    {
+      "dia": "Martes",
+      "comida": {
+        "receta_id": "pollo_curry_suave_arroz",
+        "nombre": "Pollo al curry suave y cremoso con arroz basmati",
+        "origen": "Batch Cooking (recalentar 3 min)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "150g de pechuga cocinada, 1 taza rasa de arroz basmati y verduras",
+          "detalles": "Curry aromático cero picante. Digestión ligera.",
+          "volumen_macros": "Proteína 1/4 plato, Hidratos 1/4 plato, Calabacín/Zanahoria 1/2 plato."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "130g de pechuga con 1 taza y media colmada de arroz basmati y salsa cremosa",
+          "detalles": "Carbohidrato alto y sabroso.",
+          "suplementacion": "1 batido de proteína en la merienda."
+        }
+      },
+      "cena": {
+        "receta_id": "pure_calabacin_dados_pollo",
+        "nombre": "Crema suave de calabacín con dados dorados de pollo y AOVE",
+        "origen": "Crema lista del Batch Cooking + dados de pollo en 5 min",
+        "tiempo_preparacion": "8 min",
+        "adaptacion_lord_i": {
+          "porcion": "Cuenco grande de crema de calabacín caliente coronado con 180g de pechuga dorada",
+          "detalles": "Cero quesos fuertes (solo toque de quesito suave desnatado). Cena saciante y antiinflamatoria.",
+          "volumen_macros": "Proteína magra + verdura cocida abundante."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Cuenco de crema con pollo + 2 tostas de pan integral con AOVE y mayonesa",
+          "detalles": "Extra de energía en forma de tostas crujientes.",
+          "suplementacion": "Infusión relajante antes de dormir."
+        }
+      }
+    },
+    {
+      "dia": "Miércoles",
+      "comida": {
+        "receta_id": "guiso_lentejas_verduras",
+        "nombre": "Guiso de lentejas pardinas con magro y verduras",
+        "origen": "Batch Cooking (recalentar 3 min)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 plato hondo estándar",
+          "detalles": "Las lentejas tras 2 días de reposo están aún más sabrosas. Plena tolerancia digestiva.",
+          "volumen_macros": "Aporte de hierro vegetal y proteína moderada de comida real."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "1 plato hondo colmado con extra de patata",
+          "detalles": "Ración reforzada para energía pre-entreno.",
+          "suplementacion": "1 batido de proteína post-entreno."
+        }
+      },
+      "cena": {
+        "receta_id": "tortilla_patata_cebolla_confitada",
+        "nombre": "Tortilla de patatas con cebolla muy pochada y ensalada de tomate",
+        "origen": "Cocina casera rápida (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "1/2 tortilla jugosa con ensalada de tomate maduro y lechuga",
+          "detalles": "Cebolla confitada a fuego muy suave durante el pochado de la patata. Cero cebolla cruda en ensalada. Cero aceitunas.",
+          "volumen_macros": "Huevos camperos + patata pochada en AOVE."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "1/2 tortilla jugosa acompañada de pan de masa madre y ensalada con AOVE",
+          "detalles": "Gran densidad de nutrientes y calorías limpias.",
+          "suplementacion": "Manzana dulce de postre."
+        }
+      }
+    },
+    {
+      "dia": "Jueves",
+      "comida": {
+        "receta_id": "pollo_curry_suave_arroz",
+        "nombre": "Pollo al curry suave y cremoso con arroz basmati",
+        "origen": "Batch Cooking (recalentar 3 min)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "Ración estándar equilibrada con arroz basmati y verduras",
+          "detalles": "Sin picante. Protección renal garantizada con proteína de ave limpia.",
+          "volumen_macros": "1/4 proteína, 1/4 hidrato, 1/2 verdura."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Ración con arroz basmati generoso y salsa extra",
+          "detalles": "Excelente asimilación energética.",
+          "suplementacion": "1 batido de proteína a media tarde."
+        }
+      },
+      "cena": {
+        "receta_id": "pure_calabacin_dados_pollo",
+        "nombre": "Crema suave de calabacín con huevos poché/cocidos y semillas",
+        "origen": "Crema lista del Batch Cooking + 2 huevos camperos cocidos en 8 min",
+        "tiempo_preparacion": "8 min",
+        "adaptacion_lord_i": {
+          "porcion": "Crema de calabacín con 2 huevos cocidos picados y chorrito de AOVE",
+          "detalles": "Cena ultra ligera que favorece el descanso y la recuperación muscular sin pesadez.",
+          "volumen_macros": "Proteína de alto valor biológico de huevo campero."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Crema de calabacín con 2 huevos cocidos + tostas de pan con mayonesa",
+          "detalles": "Acompañamiento con hidratos para sostener el superávit.",
+          "suplementacion": "Fruta de temporada (sandía o melón)."
+        }
+      }
+    },
+    {
+      "dia": "Viernes",
+      "comida": {
+        "receta_id": "chili_suave_ternera_arroz",
+        "nombre": "Chili suave con ternera magra, alubias y arroz",
+        "origen": "Cocinado al momento en 20 min con alubias cocidas",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 plato hondo con base moderada de arroz y abundante ternera y alubias",
+          "detalles": "Especiado con comino y pimentón dulce. Cero chile ni picante. Cebolla pochada.",
+          "volumen_macros": "Hierro y zinc bioasimilables de ternera magra."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Plato hondo con doble base de arroz y chili abundante",
+          "detalles": "Carga glucídica y proteica óptima para entrenar con fuerza.",
+          "suplementacion": "1 batido de proteína antes de entrenar."
+        }
+      },
+      "cena": {
+        "receta_id": "pizza_casera_artesanal",
+        "nombre": "Pizza casera artesanal de pollo, jamón cocido y mozzarella suave",
+        "origen": "Cocina disfrutona de viernes noche elaborada por Lord.I (35 min)",
+        "tiempo_preparacion": "35 min",
+        "adaptacion_lord_i": {
+          "porcion": "Media pizza de masa fina crujiente con tomate, orégano, champiñones, pollo y jamón",
+          "detalles": "Mozzarella suave y fresca (cero queso fuerte, azul o cabra). Cero berenjena y cero aceitunas.",
+          "volumen_macros": "Comida 100% casera elaborada con ingredientes nobles."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Media pizza bien cargada de ingredientes y queso suave",
+          "detalles": "Plato favorito de fin de semana con excelente densidad energética.",
+          "suplementacion": "Postre de fruta fresca."
+        }
+      }
+    },
+    {
+      "dia": "Sábado",
+      "comida": {
+        "receta_id": "salmon_plancha_pure_patata_zanahorias",
+        "nombre": "Lomos de salmón fresco a la plancha con puré rústico y zanahorias asadas",
+        "origen": "Cocina fresca de fin de semana (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "Lomo de salmón de 200g con piel crujiente, puré con AOVE y zanahorias asadas",
+          "detalles": "Poderoso aporte antiinflamatorio de Omega-3. Respeto al límite proteico de comida real.",
+          "volumen_macros": "1/4 salmón, 1/4 puré de patata, 1/2 zanahorias asadas al horno."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Lomo de salmón de 180g con doble ración de puré de patatas y toque de mayonesa suave",
+          "detalles": "Rico en Yodo y Selenio, micronutrientes estrella para la tiroides.",
+          "suplementacion": "1 batido de proteína en la merienda."
+        }
+      },
+      "cena": {
+        "receta_id": "poke_bowl_salmon_fresco",
+        "nombre": "Poke bowl de salmón marinado suave, aguacate, zanahoria y mayonesa de soja",
+        "origen": "Plato fresco y veraniego disfrutón (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "Bowl con dados de salmón fresco, aguacate, zanahoria rallada, tomate y arroz sushi",
+          "detalles": "Cero cebolla fresca ni cebolleta. Cero salsas picantes ni wasabi.",
+          "volumen_macros": "Grasas cardiosaludables de aguacate y salmón."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Bowl con base generosa de arroz aliñado, salmón, aguacate y generosa mayonesa de soja",
+          "detalles": "Uno de los platos favoritos de Doña.Y por textura y sabor.",
+          "suplementacion": "Plátano dulce con crema de cacahuete."
+        }
+      }
+    },
+    {
+      "dia": "Domingo",
+      "comida": {
+        "receta_id": "carbonara_adaptada",
+        "nombre": "Espaguetis a la auténtica carbonara suave con huevos camperos",
+        "origen": "Cocina elaborada al momento (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "Plato de 100g de pasta seca con emulsión de huevo, panceta dorada y pimienta suave",
+          "detalles": "Salsa ligera emulsionada con el agua de cocción. Sin natas pesadas ni quesos intensos.",
+          "volumen_macros": "Comida de fin de semana antes de la sesión de Batch Cooking."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Plato de 130g de pasta seca con abundante crema y queso rallado suave",
+          "detalles": "Superávit energético de placer gastronómico.",
+          "suplementacion": "1 batido de proteína post-entreno matutino."
+        }
+      },
+      "cena": {
+        "receta_id": "hamburguesa_casera_ternera_patatas_gajo",
+        "nombre": "Hamburguesa casera 100% ternera con patatas gajo al horno",
+        "origen": "Cena reconfortante de cierre de semana (25 min)",
+        "tiempo_preparacion": "25 min",
+        "adaptacion_lord_i": {
+          "porcion": "Hamburguesa de 200g de ternera magra en pan brioche con loncha de queso suave, lechuga, tomate y mayonesa",
+          "detalles": "Sin cebolla cruda. Patatas gajo asadas al horno con AOVE y pimentón dulce en vez de fritas.",
+          "volumen_macros": "Cena limpia, rica en hierro y proteína real."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Hamburguesa completa con queso suave y ración doble de patatas gajo al horno con mayonesa",
+          "detalles": "Cierre perfecto de la semana con balance calórico positivo.",
+          "suplementacion": "Infusión digestiva."
+        }
+      }
+    }
+  ]
+}

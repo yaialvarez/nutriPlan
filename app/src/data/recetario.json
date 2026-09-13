@@ -1,0 +1,1071 @@
+[
+  {
+    "id": "guiso_lentejas_verduras",
+    "nombre": "Guiso de lentejas pardinas con verduras y magro",
+    "tipo": "comida",
+    "tiempo_minutos": 45,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (recalentar 3 min)",
+    "ingredientes": [
+      {
+        "item": "Lentejas pardinas",
+        "cantidad": "350g",
+        "seccion": "Legumbres y arroz"
+      },
+      {
+        "item": "Zanahoria",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Patatas",
+        "cantidad": "2 medianas",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Puerro",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla (bien pochada y triturada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Magro de cerdo o jamón en dados",
+        "cantidad": "250g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Pimentón dulce y laurel",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 ración estándar con abundante caldo y verduras. Cebolla completamente integrada y deshecha en la cocción.",
+      "proporciones": "1 plato hondo (~30-35g de proteína vegetal y magro de comida real). Sin suplementos."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Ración con patata extra para asegurar aporte de energía e hidratos densos.",
+      "proporciones": "1 plato hondo generoso + 1 batido de proteína pautado a media tarde."
+    },
+    "seguridad_medica": "100% comida real; cero picante; cebolla cocinada a fuego lento; libre de berenjena, aceitunas y coles de Bruselas.",
+    "pasos_preparacion": [
+      "Sofreír el puerro, zanahoria y cebolla picada fina hasta que estén totalmente transparentes y tiernos.",
+      "Añadir el magro de cerdo y dorar 3 minutos con una cucharadita de pimentón dulce.",
+      "Incorporar las lentejas pardinas lavadas y las patatas chascadas en trozos medianos.",
+      "Cubrir con agua o caldo suave casero, salar con sal yodada y cocinar a fuego medio 35-40 minutos.",
+      "Conservar en tupper hermético de cristal para los primeros días de la semana."
+    ]
+  },
+  {
+    "id": "pollo_curry_suave_arroz",
+    "nombre": "Pollo al curry suave y cremoso con arroz basmati",
+    "tipo": "comida",
+    "tiempo_minutos": 25,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (recalentar y servir)",
+    "ingredientes": [
+      {
+        "item": "Pechuga de pollo limpia",
+        "cantidad": "500g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Arroz basmati",
+        "cantidad": "300g",
+        "seccion": "Legumbres y arroz"
+      },
+      {
+        "item": "Calabacín",
+        "cantidad": "1 mediano",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahoria",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Bebida de coco o nata ligera para cocinar",
+        "cantidad": "200ml",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Curry dulce suave (cero picante)",
+        "cantidad": "2 cucharaditas",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "150g de pechuga cocinada, 1 taza rasa de arroz basmati, abundante calabacín y zanahoria.",
+      "proporciones": "Proteína 1/4 plato, Hidratos 1/4 plato, Verdura 1/2 plato."
+    },
+    "adaptacion_dona_y": {
+      "plato": "130g de pechuga cocinada con porción generosa de arroz basmati (1 taza y media colmada) y salsa.",
+      "proporciones": "Extra hidratos para superávit calórico + batido de proteína en merienda."
+    },
+    "seguridad_medica": "Curry dulce aromático sin cayena ni picante; cebolla pochada a fondo; verduras cocidas idóneas para la pauta de Doña.Y.",
+    "pasos_preparacion": [
+      "Cocer el arroz basmati con sal yodada durante 11 minutos, enfriar y guardar en tupper.",
+      "En sartén amplia, pochar la cebolla en brunoise fina hasta caramelizar suavemente.",
+      "Añadir la zanahoria en rodajas finas y calabacín en medias lunas, salteando 7 minutos.",
+      "Incorporar la pechuga en dados, dorar y añadir el curry dulce con la leche de coco ligera.",
+      "Dejar reducir 6 minutos a fuego suave hasta obtener una salsa homogénea y aterciopelada."
+    ]
+  },
+  {
+    "id": "pure_calabacin_dados_pollo",
+    "nombre": "Crema suave de calabacín con dados dorados de pollo y AOVE",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Cena rápida entre semana (crema lista del domingo + pollo al momento)",
+    "ingredientes": [
+      {
+        "item": "Calabacines verdes",
+        "cantidad": "3 medianos",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Patata mediana",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Puerro",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pechuga de pollo en dados",
+        "cantidad": "350g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Quesitos suaves desnatados o nata suave",
+        "cantidad": "3 quesitos",
+        "seccion": "Quesos suaves"
+      },
+      {
+        "item": "Aceite de Oliva Virgen Extra",
+        "cantidad": "2 cucharadas",
+        "seccion": "Aceites y condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Plato de crema con 180g de dados de pechuga recién dorada a la plancha por encima.",
+      "proporciones": "Cena ligera, saciante y digestiva."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Plato de crema con dados de pollo + tostas de pan integral con un toque de mayonesa.",
+      "proporciones": "Hidrato extra de acompañamiento."
+    },
+    "seguridad_medica": "Calabacín reconfortante favorito; quesos suaves sin fermentación intensa; cero cebolla cruda.",
+    "pasos_preparacion": [
+      "El domingo: cocer calabacines, patata y puerro durante 18 minutos; triturar con quesitos y sal yodada hasta textura seda.",
+      "La noche de entre semana: calentar la crema en 2 minutos en microondas o cazo.",
+      "En una sartén antiadherente con un hilo de AOVE, saltear los dados de pollo 4 minutos con sal y ajo en polvo.",
+      "Servir la crema caliente coronada con el pollo dorado y unas gotas de AOVE crudo."
+    ]
+  },
+  {
+    "id": "chili_suave_ternera_arroz",
+    "nombre": "Chili con carne suave (cero picante) con alubias y arroz",
+    "tipo": "comida",
+    "tiempo_minutos": 30,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (recalentar 3 min)",
+    "ingredientes": [
+      {
+        "item": "Carne picada de ternera magra",
+        "cantidad": "450g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Alubias rojas cocidas en frasco",
+        "cantidad": "400g",
+        "seccion": "Legumbres y arroz"
+      },
+      {
+        "item": "Tomate frito casero o triturado natural",
+        "cantidad": "350g",
+        "seccion": "Conservas y tomate"
+      },
+      {
+        "item": "Pimiento rojo dulce",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla pochada",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Comino molido y pimentón dulce",
+        "cantidad": "1 cucharadita",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Arroz cocido blanco",
+        "cantidad": "250g",
+        "seccion": "Legumbres y arroz"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Ración estándar con 1/4 arroz y 3/4 chili con ternera y alubias.",
+      "proporciones": "Proteína y hierro bioasimilable óptimo para rendimiento."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Doble base de arroz blanco con ración generosa de chili.",
+      "proporciones": "Aporte energético para el objetivo de superávit magro."
+    },
+    "seguridad_medica": "Sabor tex-mex especiado con orégano y comino, estricta y deliberadamente SIN chile, tabasco ni jalapeño.",
+    "pasos_preparacion": [
+      "Pochar finamente la cebolla y el pimiento rojo a fuego suave durante 10 minutos.",
+      "Añadir la carne de ternera picada, deshaciéndola con cuchara de madera hasta que cambie de color.",
+      "Incorporar comino molido, pimentón dulce, tomate triturado y una pizca de sal.",
+      "Añadir las alubias rojas enjuagadas y cocinar a fuego lento durante 15 minutos.",
+      "Emplatar sobre la cama de arroz cocido de despensa."
+    ]
+  },
+  {
+    "id": "fajitas_suaves_pollo_pimientos",
+    "nombre": "Fajitas suaves de pollo con pimientos salteados y mayonesa",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (15 min al momento)",
+    "ingredientes": [
+      {
+        "item": "Tiras de pechuga de pollo",
+        "cantidad": "400g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Pimiento rojo y verde dulce",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla cortada en juliana (para cocinar a fuego vivo)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tortillas de trigo",
+        "cantidad": "6 unidades",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Tomate maduro en dados (sin cebolla)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Mayonesa Hacendado",
+        "cantidad": "al gusto",
+        "seccion": "Aceites y condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 fajitas rellenas con abundante pollo y pimiento bien cocinado; toque de mayonesa.",
+      "proporciones": "Cebolla totalmente dorada y pochada en la sartén (cero cruda)."
+    },
+    "adaptacion_dona_y": {
+      "plato": "3 fajitas bien cargadas con pollo, verduras, tomate y generosa mayonesa.",
+      "proporciones": "Mayor número de tortillas para asegurar los carbohidratos necesarios."
+    },
+    "seguridad_medica": "Condimento suave con orégano y pimentón dulce; sin salsas picantes comerciales.",
+    "pasos_preparacion": [
+      "Saltear en wok o sartén grande la cebolla y pimientos con un chorrito de AOVE a fuego alegre 7 min hasta que estén blandos y dorados.",
+      "Añadir las tiras de pollo sazonadas con sal y orégano dulce, salteando otros 5 minutos.",
+      "Calentar las tortillas de trigo en sartén seca 20 segundos por lado.",
+      "Montar las fajitas añadiendo el pollo con pimientos, dados de tomate fresco y mayonesa al gusto."
+    ]
+  },
+  {
+    "id": "carbonara_adaptada",
+    "nombre": "Espaguetis a la carbonara suave y cremosa",
+    "tipo": "comida",
+    "tipo_momento": "elaborado",
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Fin de semana / comida fresca (al momento)",
+    "ingredientes": [
+      {
+        "item": "Espaguetis de trigo de calidad",
+        "cantidad": "300g",
+        "seccion": "Pasta y harinas"
+      },
+      {
+        "item": "Tiras de panceta curada magra o beicon ahumado",
+        "cantidad": "160g",
+        "seccion": "Charcutería y carnicería"
+      },
+      {
+        "item": "Huevos camperos frescos",
+        "cantidad": "4 yemas + 1 huevo entero",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Queso Grana Padano o Parmesano suave rallado",
+        "cantidad": "60g",
+        "seccion": "Quesos suaves"
+      },
+      {
+        "item": "Pimienta negra recién molida",
+        "cantidad": "al gusto suave",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Plato de 100g de pasta en seco con salsa emulsionada con el agua de cocción y huevo.",
+      "proporciones": "Proteína de huevos y magro real sin sobrecarga."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Plato de 130g de pasta en seco, abundante salsa cremosa con queso suave.",
+      "proporciones": "Plato altamente energético y reconfortante + batido de proteína post-entreno."
+    },
+    "seguridad_medica": "Auténtica emulsión de huevo y agua de cocción; queso suave; cero quesos fermentados intensos o picantes.",
+    "pasos_preparacion": [
+      "Poner a hervir abundante agua con sal yodada y cocer los espaguetis al dente (10 min).",
+      "En sartén a fuego medio sin aceite añadido, dorar las tiras de panceta/beicon hasta que estén crujientes pero jugosas.",
+      "En un bol, batir las yemas y el huevo entero junto con el queso rallado y una pizca de pimienta negra.",
+      "Apartar la sartén del fuego; escurrir la pasta reservando medio vaso del agua de cocción.",
+      "Verter la pasta sobre la panceta en la sartén fuera del fuego, verter la mezcla de huevos y mover enérgicamente añadiendo unas cucharadas del agua de cocción hasta formar una crema brillante y sedosa."
+    ]
+  },
+  {
+    "id": "poke_bowl_salmon_fresco",
+    "nombre": "Poke bowl de salmón fresco, aguacate, zanahoria y mayonesa de soja",
+    "tipo": "cena",
+    "tipo_momento": "disfruton",
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Fin de semana (plato fresco disfrutón)",
+    "ingredientes": [
+      {
+        "item": "Lomo de salmón fresco calidad sashimi (previamente congelado)",
+        "cantidad": "350g",
+        "seccion": "Pescadería"
+      },
+      {
+        "item": "Arroz redondo para sushi o jazmín",
+        "cantidad": "250g",
+        "seccion": "Legumbres y arroz"
+      },
+      {
+        "item": "Aguacate maduro",
+        "cantidad": "1 unidad grande",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahoria fresca rallada",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate en dados pequeños",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Mayonesa mezclada con unas gotas de salsa de soja suave",
+        "cantidad": "3 cucharadas",
+        "seccion": "Aceites y condimentos"
+      },
+      {
+        "item": "Semillas de sésamo tostado",
+        "cantidad": "1 cucharadita",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "180g de salmón en dados, 1 taza de arroz, mucho aguacate y zanahoria. Cero cebolla fresca ni cebolleta.",
+      "proporciones": "Aporte insuperable de Omega-3 y grasas cardiosaludables."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Porción extra de arroz de sushi aliñado, dados de salmón, aguacate y generosa mayonesa de soja.",
+      "proporciones": "Excelente densidad calórica con micronutrientes idóneos para el tiroides (Yodo y Selenio del salmón)."
+    },
+    "seguridad_medica": "Sin cebolla cruda; sin wasabi ni mayonesa sriracha picante; salmón previamente congelado según normativa sanitaria.",
+    "pasos_preparacion": [
+      "Cocer el arroz y dejarlo atemperar con un chorrito de vinagre suave.",
+      "Cortar el lomo de salmón limpio en dados regulares de 1.5 cm.",
+      "Disponer en dos boles amplios la base de arroz templado.",
+      "Distribuir por secciones los dados de salmón, el aguacate laminado, la zanahoria rallada y los dados de tomate.",
+      "Coronar con la mayonesa de soja suave y espolvorear sésamo tostado."
+    ]
+  },
+  {
+    "id": "pizza_casera_artesanal",
+    "nombre": "Pizza casera artesanal de pollo, jamón cocido y mozzarella suave",
+    "tipo": "cena",
+    "tipo_momento": "disfruton",
+    "tiempo_minutos": 35,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Viernes noche (elaborada por Lord.I, disfrutona)",
+    "ingredientes": [
+      {
+        "item": "Harina de fuerza de trigo",
+        "cantidad": "350g",
+        "seccion": "Pasta y harinas"
+      },
+      {
+        "item": "Levadura de panadería y agua",
+        "cantidad": "1 sobre",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Tomate triturado passata con orégano",
+        "cantidad": "150g",
+        "seccion": "Conservas y tomate"
+      },
+      {
+        "item": "Mozzarella suave rallada 100%",
+        "cantidad": "200g",
+        "seccion": "Quesos suaves"
+      },
+      {
+        "item": "Tiras de pollo desmechado o jamón cocido extra",
+        "cantidad": "180g",
+        "seccion": "Charcutería y carnicería"
+      },
+      {
+        "item": "Champiñones laminados limpios",
+        "cantidad": "100g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Aceite de Oliva Virgen Extra",
+        "cantidad": "1 cucharada",
+        "seccion": "Aceites y condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Media pizza grande crujiente con masa fina, champiñones y pollo.",
+      "proporciones": "Cero berenjena, cero aceitunas, queso mozzarella suave neutro."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Media pizza grande bien surtida de ingredientes y mozzarella.",
+      "proporciones": "Aporte calórico disfrutable y completo de fin de semana."
+    },
+    "seguridad_medica": "Totalmente libre de quesos fuertes (azul, rulo de cabra); sin aceitunas; sin berenjena; masa casera sin aditivos industriales.",
+    "pasos_preparacion": [
+      "Mezclar la harina con agua templada, levadura, sal y AOVE; amasar 8 minutos y dejar reposar 1h para que fermente.",
+      "Precalentar el horno a temperatura máxima (250°C).",
+      "Estirar la masa fina sobre papel de hornear; extender la salsa de tomate con orégano.",
+      "Cubrir con la mozzarella suave, champiñones laminados y las tiras de pollo/jamón cocido.",
+      "Hornear a altura baja durante 10-12 minutos hasta que los bordes estén crujientes y el queso burbujee dorado."
+    ]
+  },
+  {
+    "id": "tortilla_patata_cebolla_confitada",
+    "nombre": "Tortilla de patatas con cebolla muy pochada y ensalada suave",
+    "tipo": "cena",
+    "tipo_momento": "clasico",
+    "tiempo_minutos": 30,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena de fin de semana o entre semana relajada",
+    "ingredientes": [
+      {
+        "item": "Patatas de calidad para freír",
+        "cantidad": "4 medianas (600g)",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (muy pochada y confitada)",
+        "cantidad": "1 grande",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Huevos camperos frescos",
+        "cantidad": "6 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Aceite de Oliva Virgen Extra para pochar",
+        "cantidad": "200ml",
+        "seccion": "Aceites y condimentos"
+      },
+      {
+        "item": "Lechuga romana limpia o canónigos",
+        "cantidad": "1 bolsa",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate fresco en rodajas (sin cebolla cruda)",
+        "cantidad": "1 grande",
+        "seccion": "Fruta y verdura"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Ración generosa de tortilla jugosa acompañada de ensalada de tomate y lechuga con AOVE.",
+      "proporciones": "La cebolla se confita a fuego mínimo hasta quedar melosa y suave, perfectamente tolerada."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Ración de tortilla jugosa acompañada de pan de masa madre y ensalada.",
+      "proporciones": "Superávit nutritivo con grasas buenas de huevo y AOVE."
+    },
+    "seguridad_medica": "Cebolla cocinada minuciosamente (cero crujiente ni cruda); ensalada limpia sin cebolla ni aceitunas.",
+    "pasos_preparacion": [
+      "Cortar las patatas en láminas finas y la cebolla en juliana fina.",
+      "Pochar lentamente en abundante AOVE a fuego medio-bajo durante 25 minutos hasta que la patata y cebolla se deshagan tiernas y doradas.",
+      "Escurrir bien el aceite y mezclar con los 6 huevos batidos con sal yodada; dejar reposar 3 minutos para que empape.",
+      "Cuajar en sartén caliente 1.5 minutos por lado para dejarla cremosa en su interior.",
+      "Servir con ensalada fresca aliñada al momento."
+    ]
+  },
+  {
+    "id": "salmon_plancha_pure_patata_zanahorias",
+    "nombre": "Lomos de salmón a la plancha con puré rústico de patata y zanahorias asadas",
+    "tipo": "comida",
+    "tiempo_minutos": 25,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Comida al momento de fin de semana",
+    "ingredientes": [
+      {
+        "item": "Lomos de salmón limpios",
+        "cantidad": "2 lomos gruesos (400g)",
+        "seccion": "Pescadería"
+      },
+      {
+        "item": "Patatas cocidas del batch cooking o frescas",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahorias asadas al horno con tomillo",
+        "cantidad": "4 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Aceite de Oliva Virgen Extra",
+        "cantidad": "2 cucharadas",
+        "seccion": "Aceites y condimentos"
+      },
+      {
+        "item": "Mayonesa suave",
+        "cantidad": "al gusto",
+        "seccion": "Aceites y condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Lomo de 200g a la plancha con piel crujiente, puré con AOVE y zanahorias asadas.",
+      "proporciones": "Excelente perfil antiinflamatorio para la salud renal."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Lomo de salmón con doble ración de puré de patata y cucharada de mayonesa.",
+      "proporciones": "Rico en selenio y yodo para la función tiroidea."
+    },
+    "seguridad_medica": "Verduras asadas bien cocinadas; sin aderezos picantes; pescado fresco de calidad.",
+    "pasos_preparacion": [
+      "Machacar las patatas cocidas calientes con tenedor, sal yodada y un chorro generoso de AOVE.",
+      "Hacer las zanahorias al horno o al microondas hasta dejarlas tiernas y caramelizadas.",
+      "Marcar los lomos de salmón en sartén bien caliente con una gota de aceite: 3 min por el lado de la piel y 2 min por el otro lado.",
+      "Emplatar con el puré rústico, las zanahorias y un toque suave de mayonesa."
+    ]
+  },
+  {
+    "id": "hamburguesa_casera_ternera_patatas_gajo",
+    "nombre": "Hamburguesa casera 100% ternera con patatas gajo al horno",
+    "tipo": "cena",
+    "tiempo_minutos": 25,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena de fin de semana elaborada",
+    "ingredientes": [
+      {
+        "item": "Carne picada de ternera magra de carnicería",
+        "cantidad": "400g (2 hamburguesas de 200g)",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Panecillos de hamburguesa brioche o rústicos",
+        "cantidad": "2 unidades",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Lonchas de queso tierno suave Havarti o Gouda suave",
+        "cantidad": "2 lonchas",
+        "seccion": "Quesos suaves"
+      },
+      {
+        "item": "Patatas cortadas en gajo",
+        "cantidad": "3 medianas",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Hojas de lechuga fresca y rodajas de tomate",
+        "cantidad": "al gusto",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Mayonesa suave",
+        "cantidad": "2 cucharadas",
+        "seccion": "Aceites y condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Hamburguesa en pan tostado con tomate, lechuga, queso suave fundido y mayonesa. Sin cebolla cruda.",
+      "proporciones": "200g de ternera real sin suplementos."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Hamburguesa completa con extra de patatas gajo asadas al horno con pimentón dulce.",
+      "proporciones": "Carga calórica y saciante de fin de semana."
+    },
+    "seguridad_medica": "Queso tierno fundente (cero queso azul o cabra); sin cebolla cruda; patatas al horno con AOVE en lugar de fritas en grasas saturadas.",
+    "pasos_preparacion": [
+      "Cortar las patatas en gajos, mezclar con AOVE, sal y pimentón dulce; hornear a 200°C durante 25 minutos.",
+      "Formar dos hamburguesas compactas con la ternera picada y salpimentar suavemente.",
+      "Cocinar en sartén estriada o plancha caliente 3-4 minutos por lado, colocando la loncha de queso suave al final para que funda.",
+      "Tostar ligeramente el pan, untar con mayonesa suave, colocar la lechuga, el tomate y la hamburguesa con queso."
+    ]
+  },
+  {
+    "id": "cuscus_pollo_verduras_salteadas",
+    "nombre": "Cuscús aromático con dados de pollo salteado y calabacín",
+    "tipo": "comida",
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch cooking (montaje rápido)",
+    "ingredientes": [
+      {
+        "item": "Cuscús de sémola de trigo",
+        "cantidad": "250g",
+        "seccion": "Legumbres y arroz"
+      },
+      {
+        "item": "Pechuga de pollo en dados",
+        "cantidad": "450g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Calabacín en dados",
+        "cantidad": "1 grande",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahoria en cubitos",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cúrcuma y comino suave",
+        "cantidad": "1 cucharadita",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de Oliva Virgen Extra",
+        "cantidad": "2 cucharadas",
+        "seccion": "Aceites y condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Plato equilibrado con 1/4 cuscús, 1/4 pollo y 1/2 calabacín/zanahoria cocinados.",
+      "proporciones": "Aporte moderado de proteína real y digestión muy ligera."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Ración abundante de cuscús esponjoso con pollo y dados de verdura.",
+      "proporciones": "Cuscús favorito de Doña.Y con alta densidad de energía limpia."
+    },
+    "seguridad_medica": "Especias no picantes (cúrcuma protectora y antiinflamatoria); verduras salteadas hasta tiernas.",
+    "pasos_preparacion": [
+      "Hidratar el cuscús con igual volumen de caldo hirviendo o agua con sal durante 5 min tapado; desgranar con tenedor y un chorrito de AOVE.",
+      "Saltear el calabacín y zanahoria con AOVE hasta dorar y ablandar.",
+      "Añadir los dados de pechuga con cúrcuma y sal, cocinando 6 minutos hasta dorar.",
+      "Mezclar el cuscús con el salteado caliente y servir o guardar en tuppers para la semana."
+    ]
+  },
+  {
+    "id": "sufle_pastel_carne_patata",
+    "nombre": "Suflé de patata casero y carne picada con queso gratinado",
+    "tipo": "comida",
+    "tiempo_minutos": 40,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (horneado y recalentar en tupper)",
+    "ingredientes": [
+      {
+        "item": "Patatas para puré",
+        "cantidad": "1 kg",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Carne picada 100% vacuno",
+        "cantidad": "400g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Tomate triturado natural",
+        "cantidad": "300g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Cebolla (bien pochada hasta deshecha)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Queso tierno rallado suave",
+        "cantidad": "100g",
+        "seccion": "Quesos suaves"
+      },
+      {
+        "item": "Leche y mantequilla o AOVE",
+        "cantidad": "un chorrito",
+        "seccion": "Lácteos y leches"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Porción equilibrada de pastel con puré suave y relleno de carne magra. Cebolla totalmente pochada.",
+      "proporciones": "Proteína moderada real de vacuno; excelente aguante en tupper y microondas."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Porción generosa con capa gruesa de puré de patata y queso gratinado.",
+      "proporciones": "Plato reconfortante favorito de Doña.Y; alta densidad calórica limpia."
+    },
+    "seguridad_medica": "Cero cebolla cruda; quesos suaves sin fermentación fuerte; carne 100% real sin aditivos.",
+    "pasos_preparacion": [
+      "Cocer las patatas peladas en agua con sal yodada durante 20 minutos; triturar con un toque de leche y AOVE hasta puré sedoso.",
+      "En sartén, pochar la cebolla picada muy fina hasta que esté transparente y tierna. Añadir la carne picada y cocinar 5 minutos.",
+      "Incorporar el tomate triturado, salar y cocinar 10 minutos a fuego suave hasta espesar.",
+      "En fuente para horno, montar: base de puré de patata, capa de carne picada con tomate, y cubrir con el resto del puré.",
+      "Espolvorear el queso tierno rallado por encima y gratinar en el horno a 200°C durante 10 minutos hasta dorar."
+    ]
+  },
+  {
+    "id": "curry_japones_kare_raisu_pollo",
+    "nombre": "Curry japonés suave (Kare Raisu) con pollo y arroz en arrocera",
+    "tipo": "comida",
+    "tiempo_minutos": 35,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (ideal para tupper L-V)",
+    "ingredientes": [
+      {
+        "item": "Pechuga o contramuslos de pollo despiezado",
+        "cantidad": "500g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Arroz blanco para arrocera",
+        "cantidad": "300g",
+        "seccion": "Legumbres y arroz"
+      },
+      {
+        "item": "Patatas medianas",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahorias en rodajas gruesas",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla (pochada a fuego muy lento)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pasta de curry japonés suave o curry dulce",
+        "cantidad": "2 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Caldo de pollo casero",
+        "cantidad": "500ml",
+        "seccion": "Caldos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Ración de pollo tierno con verduras en salsa de curry japonés y 1 puño de arroz de la arrocera.",
+      "proporciones": "Sabor salado, profundo y especiado no picante que le encanta a Lord.I."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Ración con porción generosa de arroz de la arrocera y salsa melosa de patatas y zanahorias.",
+      "proporciones": "Hidratos abundantes para asegurar superávit calórico magro."
+    },
+    "seguridad_medica": "Curry estilo japonés dulce/suave (cero picante ni chiles); verduras bien cocidas; cebolla deshecha en la salsa.",
+    "pasos_preparacion": [
+      "Poner el arroz a cocer en la arrocera con sal yodada y agua proporcional.",
+      "En una olla o cazuela, pochar la cebolla en juliana fina con AOVE durante 12 minutos hasta dorar bien.",
+      "Añadir el pollo en dados medianos, dorar 3 minutos e incorporar las patatas y zanahorias en trozos.",
+      "Cubrir con el caldo de pollo casero (de la carcasa) y cocer a fuego medio 18 minutos hasta tiernas.",
+      "Disolver el curry dulce suave en el caldo, remover hasta espesar la salsa y servir sobre el arroz caliente o envasar en tuppers."
+    ]
+  },
+  {
+    "id": "onigiris_arroz_atun_mayonesa",
+    "nombre": "Onigiris tradicionales de arroz con atún y mayonesa suave",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida o snack (arroz listo de la arrocera + montaje 10 min)",
+    "ingredientes": [
+      {
+        "item": "Arroz blanco cocido en arrocera",
+        "cantidad": "300g cocido",
+        "seccion": "Legumbres y arroz"
+      },
+      {
+        "item": "Atún claro en aceite de oliva escurrido",
+        "cantidad": "2 latas",
+        "seccion": "Pescadería y conservas"
+      },
+      {
+        "item": "Mayonesa suave",
+        "cantidad": "2 cucharadas",
+        "seccion": "Aceites y condimentos"
+      },
+      {
+        "item": "Semillas de sésamo tostado o alga nori",
+        "cantidad": "al gusto",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Unas gotas de salsa de soja",
+        "cantidad": "al gusto",
+        "seccion": "Aceites y condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "3 triángulos de onigiri rellenos con atún-mayo sazonado con soja.",
+      "proporciones": "Cena ligera, digestiva y salada con proteína de atún y carbohidrato limpio."
+    },
+    "adaptacion_dona_y": {
+      "plato": "3-4 onigiris generosos con relleno extra de atún-mayonesa.",
+      "proporciones": "Cena favorita rápida sin esfuerzo culinario."
+    },
+    "seguridad_medica": "Pescado rico en selenio; cero ingredientes prohibidos; mayonesa suave de calidad.",
+    "pasos_preparacion": [
+      "Mezclar en un bol el atún bien escurrido con la mayonesa y unas gotas de salsa de soja.",
+      "Con las manos humedecidas con agua y un toque de sal, tomar una bola de arroz templado de la arrocera.",
+      "Hacer un hueco en el centro, poner una cucharada del relleno de atún y cerrar el arroz compactando en forma triangular.",
+      "Decorar con una tira de alga nori o rebozar los bordes en semillas de sésamo tostado."
+    ]
+  },
+  {
+    "id": "ramen_casero_caldo_pollo_fideos",
+    "nombre": "Ramen casero reconfortante con caldo de pollo, fideos y huevo marinado",
+    "tipo": "cena",
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Cena de fin de semana (caldo casero de carcasa del domingo + montaje fresco)",
+    "ingredientes": [
+      {
+        "item": "Caldo profundo de pollo casero (de la carcasa)",
+        "cantidad": "800ml",
+        "seccion": "Caldos"
+      },
+      {
+        "item": "Fideos de ramen o noodles de trigo",
+        "cantidad": "180g",
+        "seccion": "Pasta y fideos"
+      },
+      {
+        "item": "Huevos cocidos 6-7 minutos",
+        "cantidad": "2 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Tiras de pollo despiezado o magro de cerdo",
+        "cantidad": "200g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Zanahoria en juliana fina cocinada y espinacas tiernas",
+        "cantidad": "100g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Salsa de soja suave",
+        "cantidad": "2 cucharadas",
+        "seccion": "Aceites y condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Bol grande con caldo intenso, 1 huevo cocido, pollo dorado y verduras. Sin cebollino crudo.",
+      "proporciones": "Sabor umami profundo y reconfortante; cero exceso de sodio sintético."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Bol con ración generosa de fideos ramen y huevo con yema cremosa.",
+      "proporciones": "Nutrientes densos de huevo campero y caldo natural de huesos."
+    },
+    "seguridad_medica": "Caldo 100% natural sin pastillas de concentrados hiper-salados; verduras cocinadas al escaldarlas en el caldo hirviendo.",
+    "pasos_preparacion": [
+      "Calentar el caldo casero de pollo en un cazo con 2 cucharadas de salsa de soja suave.",
+      "En otro cazo, cocer los fideos ramen según el fabricante (3-4 min) y escurrir.",
+      "Dorar las tiras de pollo o cerdo en la sartén antiadherente con una gota de aceite.",
+      "Servir los fideos en boles hondos, añadir las espinacas y zanahoria (se cocinan con el calor del caldo), verter el caldo hirviendo y coronar con la carne y el huevo cortado por la mitad."
+    ]
+  },
+  {
+    "id": "alubias_verdes_patata_zanahoria_huevo",
+    "nombre": "Alubia verde tierna con patata, zanahoria y huevos cocidos al AOVE",
+    "tipo": "comida",
+    "tiempo_minutos": 25,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (tupper reconfortante para lunes/martes)",
+    "ingredientes": [
+      {
+        "item": "Alubia verde redonda o plana limpia",
+        "cantidad": "400g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Patatas medianas",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahorias",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla (cortada en cuartos bien cocida en el caldo)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Huevos cocidos",
+        "cantidad": "3 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Aceite de Oliva Virgen Extra y vinagre suave",
+        "cantidad": "al gusto",
+        "seccion": "Aceites y condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Alubia verde con patata y 2 huevos cocidos picados con un buen chorro de AOVE y vinagre.",
+      "proporciones": "Excelente aporte de fibra suave, potasio y proteína limpia de huevo."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Ración generosa con patatas bien chafadas con el tenedor y AOVE.",
+      "proporciones": "Plato tradicional favorito de Doña.Y; digestivo y reconstituyente."
+    },
+    "seguridad_medica": "Cebolla completamente cocida en el hervor; verduras tiernas fáciles de digerir; cero ingredientes prohibidos.",
+    "pasos_preparacion": [
+      "Lavar y despuntar las alubias verdes; cortar en trozos medianos.",
+      "Pelar las patatas y zanahorias, cortándolas en trozos regulares.",
+      "Poner todo en una olla con abundante agua hirviendo con sal yodada y los cuartos de cebolla.",
+      "Cocer 18-20 minutos hasta que la patata y alubia estén muy tiernas pero firmes; escurrir.",
+      "Servir aliñado con AOVE en crudo, unas gotas de vinagre suave y huevos duros picados por encima."
+    ]
+  },
+  {
+    "id": "fideos_salsa_cacahuete_soja_pollo",
+    "nombre": "Fideos con salsa cremosa de cacahuete, soja y tiras de pollo",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (15 min)",
+    "ingredientes": [
+      {
+        "item": "Fideos de trigo o pasta espirales",
+        "cantidad": "220g",
+        "seccion": "Pasta y fideos"
+      },
+      {
+        "item": "Pechuga de pollo en tiras o dados",
+        "cantidad": "300g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Mantequilla de cacahuete 100% natural",
+        "cantidad": "2 cucharadas colmadas",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Salsa de soja suave",
+        "cantidad": "2 cucharadas",
+        "seccion": "Aceites y condimentos"
+      },
+      {
+        "item": "Ajo en polvo y chorrito de agua caliente",
+        "cantidad": "para emulsionar",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Zanahoria rallada o calabacín salteado",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Fideos con salsa densa salada de cacahuete y 150g de pollo dorado en sartén de acero.",
+      "proporciones": "Sabores intensos y salados sin picante que encajan a la perfección con su paladar."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Porción abundante de pasta impregnada en crema de cacahuete con dados de pollo.",
+      "proporciones": "Grasas saludables densas y carbohidratos para superávit limpio."
+    },
+    "seguridad_medica": "Mantequilla de cacahuete 100% pura sin azúcares añadidos; sin picante; verduras salteadas.",
+    "pasos_preparacion": [
+      "Cocer los fideos en agua hirviendo con sal durante 6-8 minutos; reservar un poco de agua de cocción.",
+      "En un cuenco, batir la mantequilla de cacahuete con la salsa de soja, ajo en polvo y 3 cucharadas de agua de cocción caliente hasta formar una crema untuosa.",
+      "En sartén caliente, dorar las tiras de pollo sazonadas durante 5 minutos con AOVE.",
+      "Mezclar los fideos escurridos con la salsa cremosa de cacahuete, el pollo dorado y las verduras salteadas."
+    ]
+  },
+  {
+    "id": "merluza_rebozada_dorada_patatas",
+    "nombre": "Lomos de merluza dorados con patatas rústicas al horno y mayonesa",
+    "tipo": "cena",
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena de fin de semana fresca y reconfortante",
+    "ingredientes": [
+      {
+        "item": "Filetes de merluza limpios sin espinas",
+        "cantidad": "4 filetes (450g)",
+        "seccion": "Pescadería"
+      },
+      {
+        "item": "Patatas medianas para asar",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Harina y huevo batido para rebozar suave",
+        "cantidad": "lo justo",
+        "seccion": "Huevos y harinas"
+      },
+      {
+        "item": "Aceite de oliva para dorar",
+        "cantidad": "al gusto",
+        "seccion": "Aceites y condimentos"
+      },
+      {
+        "item": "Mayonesa suave casera o de bote",
+        "cantidad": "2 cucharadas",
+        "seccion": "Aceites y condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 filetes de merluza dorados con patatas al horno y un toque de mayonesa.",
+      "proporciones": "Pescado blanco de fácil digestión, alto en proteína y bajo en grasa."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Merluza dorada crujiente con ración generosa de patatas asadas con pimentón dulce.",
+      "proporciones": "Pescado favorito de Doña.Y preparado crujiente al momento."
+    },
+    "seguridad_medica": "Pescado blanco limpio sin marisco ni espinas; fritura limpia en AOVE o dorada al horno.",
+    "pasos_preparacion": [
+      "Cortar las patatas en rodajas panaderas y asarlas al horno con AOVE y sal durante 20 minutos.",
+      "Salar los lomos de merluza con sal yodada, pasar ligeramente por harina y huevo batido.",
+      "Dorar en sartén con AOVE caliente durante 2 minutos por lado hasta que estén jugosos y dorados.",
+      "Servir calientes con las patatas asadas y una cucharada de mayonesa suave."
+    ]
+  }
+]
