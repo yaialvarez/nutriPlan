@@ -1,6 +1,6 @@
 {
-  "semana": "Semana 1: Arranque y consolidación de hábitos",
-  "fecha_inicio": "2026-09-14",
+  "semana": "Semana 1: Ciclo Sábado a Viernes",
+  "fecha_inicio": "2026-09-19",
   "objetivo_semana": "Establecer la rutina de Batch Cooking del domingo para liberar tiempo entre semana, garantizando digestiones ligeras, seguridad médica total y platos disfrutones el fin de semana.",
   "batch_cooking_domingo": {
     "duracion_estimada_minutos": 120,
@@ -47,6 +47,76 @@
     "conservacion": "Todos los recipientes aguantan en refrigeración óptima a 4°C de lunes a jueves. Recalentado en microondas o sartén en solo 3 minutos."
   },
   "dias": [
+    {
+      "dia": "Sábado",
+      "comida": {
+        "receta_id": "salmon_plancha_pure_patata_zanahorias",
+        "nombre": "Lomos de salmón fresco a la plancha con puré rústico y zanahorias asadas",
+        "origen": "Cocina fresca de fin de semana (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "Lomo de salmón de 200g con piel crujiente, puré con AOVE y zanahorias asadas",
+          "detalles": "Poderoso aporte antiinflamatorio de Omega-3. Respeto al límite proteico de comida real.",
+          "volumen_macros": "1/4 salmón, 1/4 puré de patata, 1/2 zanahorias asadas al horno."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Lomo de salmón de 180g con doble ración de puré de patatas y toque de mayonesa suave",
+          "detalles": "Rico en Yodo y Selenio, micronutrientes estrella para la tiroides.",
+          "suplementacion": "1 batido de proteína en la merienda."
+        }
+      },
+      "cena": {
+        "receta_id": "poke_bowl_salmon_fresco",
+        "nombre": "Poke bowl de salmón marinado suave, aguacate, zanahoria y mayonesa de soja",
+        "origen": "Plato fresco y veraniego disfrutón (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "Bowl con dados de salmón fresco, aguacate, zanahoria rallada, tomate y arroz sushi",
+          "detalles": "Cero cebolla fresca ni cebolleta. Cero salsas picantes ni wasabi.",
+          "volumen_macros": "Grasas cardiosaludables de aguacate y salmón."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Bowl con base generosa de arroz aliñado, salmón, aguacate y generosa mayonesa de soja",
+          "detalles": "Uno de los platos favoritos de Doña.Y por textura y sabor.",
+          "suplementacion": "Plátano dulce con crema de cacahuete."
+        }
+      }
+    },
+    {
+      "dia": "Domingo",
+      "comida": {
+        "receta_id": "carbonara_adaptada",
+        "nombre": "Espaguetis a la auténtica carbonara suave con huevos camperos",
+        "origen": "Cocina elaborada al momento (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "Plato de 100g de pasta seca con emulsión de huevo, panceta dorada y pimienta suave",
+          "detalles": "Salsa ligera emulsionada con el agua de cocción. Sin natas pesadas ni quesos intensos.",
+          "volumen_macros": "Comida de fin de semana antes de la sesión de Batch Cooking."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Plato de 130g de pasta seca con abundante crema y queso rallado suave",
+          "detalles": "Superávit energético de placer gastronómico.",
+          "suplementacion": "1 batido de proteína post-entreno matutino."
+        }
+      },
+      "cena": {
+        "receta_id": "hamburguesa_casera_ternera_patatas_gajo",
+        "nombre": "Hamburguesa casera 100% ternera con patatas gajo al horno",
+        "origen": "Cena reconfortante de cierre de semana (25 min)",
+        "tiempo_preparacion": "25 min",
+        "adaptacion_lord_i": {
+          "porcion": "Hamburguesa de 200g de ternera magra en pan brioche con loncha de queso suave, lechuga, tomate y mayonesa",
+          "detalles": "Sin cebolla cruda. Patatas gajo asadas al horno con AOVE y pimentón dulce en vez de fritas.",
+          "volumen_macros": "Cena limpia, rica en hierro y proteína real."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Hamburguesa completa con queso suave y ración doble de patatas gajo al horno con mayonesa",
+          "detalles": "Cierre perfecto de la semana con balance calórico positivo.",
+          "suplementacion": "Infusión digestiva."
+        }
+      }
+    },
     {
       "dia": "Lunes",
       "comida": {
@@ -221,76 +291,7 @@
           "suplementacion": "Postre de fruta fresca."
         }
       }
-    },
-    {
-      "dia": "Sábado",
-      "comida": {
-        "receta_id": "salmon_plancha_pure_patata_zanahorias",
-        "nombre": "Lomos de salmón fresco a la plancha con puré rústico y zanahorias asadas",
-        "origen": "Cocina fresca de fin de semana (20 min)",
-        "tiempo_preparacion": "20 min",
-        "adaptacion_lord_i": {
-          "porcion": "Lomo de salmón de 200g con piel crujiente, puré con AOVE y zanahorias asadas",
-          "detalles": "Poderoso aporte antiinflamatorio de Omega-3. Respeto al límite proteico de comida real.",
-          "volumen_macros": "1/4 salmón, 1/4 puré de patata, 1/2 zanahorias asadas al horno."
-        },
-        "adaptacion_dona_y": {
-          "porcion": "Lomo de salmón de 180g con doble ración de puré de patatas y toque de mayonesa suave",
-          "detalles": "Rico en Yodo y Selenio, micronutrientes estrella para la tiroides.",
-          "suplementacion": "1 batido de proteína en la merienda."
-        }
-      },
-      "cena": {
-        "receta_id": "poke_bowl_salmon_fresco",
-        "nombre": "Poke bowl de salmón marinado suave, aguacate, zanahoria y mayonesa de soja",
-        "origen": "Plato fresco y veraniego disfrutón (20 min)",
-        "tiempo_preparacion": "20 min",
-        "adaptacion_lord_i": {
-          "porcion": "Bowl con dados de salmón fresco, aguacate, zanahoria rallada, tomate y arroz sushi",
-          "detalles": "Cero cebolla fresca ni cebolleta. Cero salsas picantes ni wasabi.",
-          "volumen_macros": "Grasas cardiosaludables de aguacate y salmón."
-        },
-        "adaptacion_dona_y": {
-          "porcion": "Bowl con base generosa de arroz aliñado, salmón, aguacate y generosa mayonesa de soja",
-          "detalles": "Uno de los platos favoritos de Doña.Y por textura y sabor.",
-          "suplementacion": "Plátano dulce con crema de cacahuete."
-        }
-      }
-    },
-    {
-      "dia": "Domingo",
-      "comida": {
-        "receta_id": "carbonara_adaptada",
-        "nombre": "Espaguetis a la auténtica carbonara suave con huevos camperos",
-        "origen": "Cocina elaborada al momento (20 min)",
-        "tiempo_preparacion": "20 min",
-        "adaptacion_lord_i": {
-          "porcion": "Plato de 100g de pasta seca con emulsión de huevo, panceta dorada y pimienta suave",
-          "detalles": "Salsa ligera emulsionada con el agua de cocción. Sin natas pesadas ni quesos intensos.",
-          "volumen_macros": "Comida de fin de semana antes de la sesión de Batch Cooking."
-        },
-        "adaptacion_dona_y": {
-          "porcion": "Plato de 130g de pasta seca con abundante crema y queso rallado suave",
-          "detalles": "Superávit energético de placer gastronómico.",
-          "suplementacion": "1 batido de proteína post-entreno matutino."
-        }
-      },
-      "cena": {
-        "receta_id": "hamburguesa_casera_ternera_patatas_gajo",
-        "nombre": "Hamburguesa casera 100% ternera con patatas gajo al horno",
-        "origen": "Cena reconfortante de cierre de semana (25 min)",
-        "tiempo_preparacion": "25 min",
-        "adaptacion_lord_i": {
-          "porcion": "Hamburguesa de 200g de ternera magra en pan brioche con loncha de queso suave, lechuga, tomate y mayonesa",
-          "detalles": "Sin cebolla cruda. Patatas gajo asadas al horno con AOVE y pimentón dulce en vez de fritas.",
-          "volumen_macros": "Cena limpia, rica en hierro y proteína real."
-        },
-        "adaptacion_dona_y": {
-          "porcion": "Hamburguesa completa con queso suave y ración doble de patatas gajo al horno con mayonesa",
-          "detalles": "Cierre perfecto de la semana con balance calórico positivo.",
-          "suplementacion": "Infusión digestiva."
-        }
-      }
     }
-  ]
+  ],
+  "ciclo_semanal": "Sábado a Viernes (Compra el sábado mañana, Batch Cooking el domingo tarde y tuppers L-V)"
 }

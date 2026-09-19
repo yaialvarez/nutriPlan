@@ -26,7 +26,8 @@ Disponemos en casa del siguiente equipamiento, que la IA debe aprovechar estrat�
 
 ---
 
-## 📦 Logística de Comidas y Tuppers (Lunes a Viernes)
+## 📦 Logística de Comidas y Ciclo Semanal (Sábado a Viernes)
+- **Ciclo Semanal Oficial:** La semana de planificación va de **Sábado a Viernes**. El sábado por la mañana se actualiza el menú y se realiza la compra semanal con la app; el sábado y domingo se cocinan platos frescos y disfrutones; el domingo por la tarde se realiza el Batch Cooking para preparar las bases de lunes a viernes; el viernes noche se cierra la semana laboral con pizza casera.
 - **Almuerzos en el trabajo:** Lord.I come a menudo de tupper en el trabajo con microondas (y Doña.Y en casa o tupper).
 - **Regla de textura para comidas L-V:** Todas las comidas de lunes a viernes deben ser **100% aptas para tupper y recalentar en microondas** sin perder textura ni sabor (guisos, arroces salteados, pollo al curry, lentejas, garbanzos, pastel de carne / suflé, purés).
 - **Cero fritos ni rebozados entre semana a mediodía:** Platos como merluza rebozada, huevos fritos o crujientes se reservan exclusivamente para cenas o el fin de semana.

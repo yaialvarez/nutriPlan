@@ -84,30 +84,27 @@ menuIA/
 
 ---
 
-## 🚀 Flujo de Trabajo Semanal
+## 🚀 Flujo de Trabajo Semanal (Ciclo Sábado a Viernes)
 
 ```mermaid
 graph TD
-    A[Chat con la IA] -->|1. Proponer antojos y menú de la semana| B[Actualizar data/menu_semanal.json]
+    A[1. Sábado mañana: Chat con la IA] -->|Proponer antojos y nuevo menú| B[data/menu_semanal.json Sábado a Viernes]
     B -->|2. Ejecutar scripts/generar_lista_compra.py| C[data/lista_compra.json con precios Mercadona]
     C -->|3. Git Push| D[GitHub Pages Web App]
-    D -->|4. Viernes/Sábado| E[Compra en Mercadona con el móvil tachando pasillos]
-    D -->|5. Domingo tarde (2h)| F[Batch Cooking: bases listas para L-J]
-    F -->|6. Domingo noche| G[Anotar peso y sensaciones en Bitácora]
-    G -->|7. Copiar al chat para la siguiente semana| A
+    D -->|4. Sábado mañana| E[Compra en Mercadona con el móvil tachando pasillos]
+    E -->|5. Sábado mediodía y noche| F[Cocina fresca de finde: salmón, poke...]
+    F -->|6. Domingo tarde 2h| G[Batch Cooking: bases listas para Lunes a Viernes]
+    G -->|7. Lunes a Viernes| H[Tuppers microondas en el trabajo y cenas rápidas]
+    H -->|8. Viernes noche| I[Pizza casera artesanal de cierre semanal]
+    I -->|9. Sábado mañana| A
 ```
 
-1. **Planificación Asistida en el Chat**: Le pides a la IA el menú de la semana entrante con tus preferencias puntuales.
-2. **Generación de Lista y Precios**:
-   ```bash
-   python scripts/generar_lista_compra.py
-   ```
-   Consulta los precios de Mercadona, clasifica los productos por pasillo físico y calcula el ticket exacto.
-3. **Ir a la Compra con el Móvil**: Abres el portal privado en el móvil; la lista muestra los productos ordenados por pasillo con checkboxes interactivos que se guardan en el teléfono (`localStorage`).
-4. **Batch Cooking del Domingo (2 horas)**: Sigues la guía paso a paso tachando tareas (ollas, arroz, lentejas, crema de calabacín, pollo al curry). Las comidas de lunes a jueves quedan listas en recipientes de cristal para recalentar en 3 minutos.
-5. **Cenas Rápidas (10-15 min)**: Entre semana las cenas se montan en minutos (crema + dados de pollo, fajitas de pollo salteadas, tortilla de patata confitada).
-6. **Fin de Semana Disfrutón**: Pizza casera artesanal el viernes, poke bowl fresco de salmón el sábado, pasta carbonara auténtica el domingo.
-7. **Bitácora**: Cada domingo te pesas, anotas sensaciones y energía en el gym, y usas el botón **"Copiar para el Chat IA"** para alimentar la siguiente iteración.
+1. **Sábado mañana (Planificación y Compra)**: Actualizamos el menú en el chat, generamos la lista (`python scripts/generar_lista_compra.py`), hacemos `git push` y vamos al supermercado tachando artículos por pasillo en la web app móvil.
+2. **Sábado (Comida y Cena)**: Platos frescos con ingredientes recién comprados (salmón a la plancha, poke bowl, etc.).
+3. **Domingo (Comida y Batch Cooking)**: Comida rica de fin de semana (carbonara) y por la tarde sesión de 2 horas de Batch Cooking para dejar cocinados los tuppers de lunes a jueves.
+4. **Lunes a Jueves**: Almuerzos en tupper de microondas (3 minutos) en el trabajo y cenas rápidas de 10-15 minutos.
+5. **Viernes**: Comida de tupper de cierre semanal y cena disfrutona de viernes noche (pizza casera artesanal).
+6. **Sábado**: Se inicia de nuevo el ciclo con la planificación y la compra.
 
 ---
 
@@ -209,7 +206,7 @@ Antes de proponer o modificar cualquier menú, ingrediente o receta, comprueba e
   ```
 
 #### C. Planificar una nueva semana (`data/menu_semanal.json`)
-- Contiene **14 tomas principales**: `comida` y `cena` de lunes a domingo.
+- Contiene **14 tomas principales**: `comida` y `cena` de **sábado a viernes**.
 - Los campos de adaptación para cada toma deben ser `adaptacion_lord_i` y `adaptacion_dona_y`.
 - La sección `batch_cooking_domingo` debe detallar la sesión de 2 horas del domingo.
 
