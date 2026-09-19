@@ -70,7 +70,7 @@ ITEMS_CONFIG = [
         "id_preferente": 69310,
         "termino_fallback": "pimiento rojo",
         "filtro_excluir": ["asado", "tiras"],
-        "nombre_receta": "Pimiento rojo dulce",
+        "nombre_receta": "Pimiento rojo dulce (cena lunes con muslitos)",
         "cantidad": 1,
         "unidad": "unidad / pieza",
         "seccion": "Fruta y verdura"
@@ -79,7 +79,7 @@ ITEMS_CONFIG = [
         "id_preferente": 69320,
         "termino_fallback": "pimiento verde",
         "filtro_excluir": [],
-        "nombre_receta": "Pimiento verde freír",
+        "nombre_receta": "Pimiento verde freír (cena lunes con muslitos)",
         "cantidad": 1,
         "unidad": "unidad / pieza",
         "seccion": "Fruta y verdura"
@@ -97,7 +97,7 @@ ITEMS_CONFIG = [
         "id_preferente": 3830,
         "termino_fallback": "aguacate",
         "filtro_excluir": ["salsa", "aceite"],
-        "nombre_receta": "Aguacates en su punto (fajitas)",
+        "nombre_receta": "Aguacates en su punto (cena lunes con muslitos)",
         "cantidad": 2,
         "unidad": "piezas",
         "seccion": "Fruta y verdura"
@@ -162,7 +162,7 @@ ITEMS_CONFIG = [
         "id_preferente": 2781,
         "termino_fallback": "pollo entero",
         "filtro_excluir": [],
-        "nombre_receta": "Pollo entero limpio para despiece (x2 unidades)",
+        "nombre_receta": "Pollo entero limpio para despiece (x2 uds: 4 muslitos cena lunes, contramuslos, pechugas y caldo)",
         "cantidad": 2,
         "unidad": "pollos enteros (~3.5 kg total)",
         "seccion": "Carne"
@@ -312,15 +312,6 @@ ITEMS_CONFIG = [
     },
 
     # --- PANADERÍA Y MASAS ---
-    {
-        "id_preferente": 17567,
-        "termino_fallback": "tortillas de trigo",
-        "filtro_excluir": [],
-        "nombre_receta": "Tortillas de trigo grandes (fajitas)",
-        "cantidad": 1,
-        "unidad": "paquete 6-8 uds",
-        "seccion": "Panadería y pastelería"
-    },
     {
         "id_preferente": 52602,
         "termino_fallback": "pan de burger brioche",

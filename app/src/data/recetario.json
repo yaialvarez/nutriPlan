@@ -1129,5 +1129,66 @@
       "Añadir el arroz cocido, reincorporar el pollo, verter la salsa de soja y saltear a fuego vivo 3 minutos removiendo constantemente.",
       "Envasar en tuppers para la comida del viernes o servir caliente."
     ]
+  },
+  {
+    "id": "muslitos_pollo_asados_al_limon",
+    "nombre": "Muslitos de pollo dorados al horno al limón y hierbas con pimientos salteados y aguacate",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Cena rápida entre semana (muslitos asados el domingo o al momento en horno + pimientos salteados 15 min)",
+    "ingredientes": [
+      {
+        "item": "Muslitos de pollo (jamoncitos del despiece de 2 pollos enteros)",
+        "cantidad": "4 unidades (2 por persona)",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Pimiento rojo dulce",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimiento verde freír",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1/2 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Aguacates en su punto",
+        "cantidad": "1-2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo en polvo, orégano, pimentón dulce y limón",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 muslitos de pollo dorados al horno con pimientos salteados a fuego vivo y medio aguacate en láminas.",
+      "proporciones": "2 muslitos (~32g proteína de alto valor biológico de comida real, sin suplementos) + 1/2 plato de pimientos pochados y aguacate con AOVE. Sin cebolla cruda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 muslitos de pollo bien asados con pimientos dulces, aguacate y tosta de pan o patata asada.",
+      "proporciones": "2 muslitos de pollo + grasas monoinsaturadas saludables para densidad calórica + 1 batido de proteína en la merienda."
+    },
+    "seguridad_medica": "100% comida real; cero picante; cebolla totalmente pochada en sartén junto a los pimientos; libre de berenjena, aceitunas y coles de Bruselas.",
+    "pasos_preparacion": [
+      "Sazonar los 4 muslitos de pollo con ajo en polvo, orégano, pimentón dulce, un chorrito de zumo de limón y AOVE.",
+      "Opción A (Batch Cooking): Hornear los muslitos a 200°C durante 25-30 minutos aprovechando el horno del suflé el domingo; refrigerar y dar un golpe de calor de 5 min el lunes.",
+      "Opción B (Al momento): Hornear directamente el lunes a 200°C durante 25 minutos hasta que la piel quede dorada y crujiente.",
+      "En una sartén con unas gotas de AOVE, saltear las tiras de pimiento rojo, pimiento verde y cebolla dulce a fuego medio-vivo hasta que estén tiernos y dorados (sin cebolla cruda).",
+      "Servir 2 muslitos por persona acompañados de los pimientos salteados y aguacate fresco en láminas con sal yodada."
+    ]
   }
 ]

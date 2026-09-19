@@ -1,9 +1,9 @@
 {
   "supermercado": "Mercadona",
   "semana": "Semana 2: Menú Adaptado con Aprovechamiento de Pollo Entero y Nuevos Favoritos",
-  "total_ticket_estimado": 107.54,
+  "total_ticket_estimado": 105.19,
   "moneda": "EUR",
-  "total_articulos": 39,
+  "total_articulos": 38,
   "pasillos": [
     {
       "nombre_pasillo": "Fruta y verdura",
@@ -87,7 +87,7 @@
         {
           "id": "69310",
           "nombre": "Pimiento rojo",
-          "nombre_receta": "Pimiento rojo dulce",
+          "nombre_receta": "Pimiento rojo dulce (cena lunes con muslitos)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Calabacín y pimiento",
           "cantidad": 1,
@@ -102,7 +102,7 @@
         {
           "id": "69320",
           "nombre": "Pimiento verde freír",
-          "nombre_receta": "Pimiento verde freír",
+          "nombre_receta": "Pimiento verde freír (cena lunes con muslitos)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Calabacín y pimiento",
           "cantidad": 1,
@@ -132,7 +132,7 @@
         {
           "id": "3830",
           "nombre": "Aguacate",
-          "nombre_receta": "Aguacates en su punto (fajitas)",
+          "nombre_receta": "Aguacates en su punto (cena lunes con muslitos)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Fruta tropical",
           "cantidad": 2,
@@ -264,7 +264,7 @@
         {
           "id": "2781",
           "nombre": "Pollo entero",
-          "nombre_receta": "Pollo entero limpio para despiece (x2 unidades)",
+          "nombre_receta": "Pollo entero limpio para despiece (x2 uds: 4 muslitos cena lunes, contramuslos, pechugas y caldo)",
           "pasillo": "Carne",
           "subseccion": "Pollo",
           "cantidad": 2,
@@ -508,23 +508,8 @@
     },
     {
       "nombre_pasillo": "Panadería y pastelería",
-      "subtotal": 3.45,
+      "subtotal": 1.1,
       "items": [
-        {
-          "id": "17567",
-          "nombre": "Tortillas de trigo Delibreads 30 cm",
-          "nombre_receta": "Tortillas de trigo grandes (fajitas)",
-          "pasillo": "Panadería y pastelería",
-          "subseccion": "Pan de hamburguesa y wrap",
-          "cantidad": 1,
-          "unidad_receta": "paquete 6-8 uds",
-          "precio_unitario": 2.35,
-          "precio_total": 2.35,
-          "precio_referencia": 3.672,
-          "formato_referencia": "kg",
-          "thumbnail": "https://prod-mercadona.imgix.net/images/b40bf5cda59aa0d7c49fe769c6ad3314.jpg?fit=crop&h=300&w=300",
-          "comprado": false
-        },
         {
           "id": "52602",
           "nombre": "Pan de burger Brioche Hacendado",

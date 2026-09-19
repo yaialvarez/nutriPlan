@@ -22,7 +22,7 @@
       {
         "orden": 1,
         "tiempo": "00:00 - 00:20",
-        "accion": "Despiece estratégico de 2 pollos por Lord.I: Separar pechugas (tiras para fajitas del lunes y fideos de cacahuete del jueves; dados para curry del martes, dados para cena de calabacín y dados para pizza del viernes), muslos/contramuslos (dados jugosos para el arroz salteado del viernes), y apartar carcasas, cuellos y alitas para la olla de caldo."
+        "accion": "Despiece estratégico de 2 pollos por Lord.I: Separar pechugas (dados para curry del martes, dados para cena de calabacín, dados para fideos del jueves y dados para pizza del viernes), apartar los 4 muslitos (2 por persona para la cena del lunes), deshuesar los contramuslos (dados jugosos para el arroz salteado del viernes), y apartar carcasas, cuellos y alitas para la olla de caldo."
       },
       {
         "orden": 2,
@@ -47,7 +47,7 @@
       {
         "orden": 6,
         "tiempo": "01:00 - 01:40",
-        "accion": "Horno (Suflé casero de patata y carne): Cocer patatas y machacar con tenedor, un toque de leche y AOVE para puré cremoso; saltear 400g de carne picada 100% vacuno con cebolla bien pochada y tomate triturado natural con orégano; montar en fuente capa puré + carne + puré + queso mozzarella y tierno; gratinar a 200°C 15 min (Comida Miércoles)."
+        "accion": "Horno (Suflé casero y Muslitos dorados): Cocer patatas y machacar con tenedor, leche y AOVE para puré cremoso; saltear 400g de carne picada 100% vacuno con cebolla bien pochada y tomate triturado; montar en fuente puré + carne + puré + queso mozzarella y tierno. En la misma hornada a 200°C: Hornear en bandeja contigua los 4 muslitos sazonados con ajo, limón, orégano, pimentón dulce y AOVE durante 25-30 min (Comida Miércoles y Cena Lunes lista para calentar)."
       },
       {
         "orden": 7,
@@ -122,19 +122,19 @@
         }
       },
       "cena": {
-        "receta_id": "fajitas_suaves_pollo_pimientos",
-        "nombre": "Fajitas suaves de pollo con pimientos salteados y aguacate",
-        "origen": "Cocina rápida al momento (15 min)",
+        "receta_id": "muslitos_pollo_asados_al_limon",
+        "nombre": "Muslitos de pollo dorados al horno al limón y hierbas (2 por persona) con pimientos salteados y aguacate",
+        "origen": "Cena rápida entre semana (muslitos asados el domingo o al horno 25 min + pimientos salteados 10 min)",
         "tiempo_preparacion": "15 min",
         "adaptacion_lord_i": {
-          "porcion": "2 tortillas de trigo rellenas con tiras de pechuga del despiece, pimientos y mayonesa",
-          "detalles": "Cebolla y pimientos dorados a fuego vivo en sartén (cero cebolla cruda). Cero picante.",
-          "volumen_macros": "Proteína abundante de pechuga a la plancha."
+          "porcion": "2 muslitos de pollo dorados al horno con pimientos salteados y medio aguacate en láminas",
+          "detalles": "Sin cebolla cruda (cebolla bien pochada con los pimientos). Cero salsas pesadas ni picante.",
+          "volumen_macros": "2 muslitos (~32g de proteína real limpia) y grasas cardiosaludables de aguacate y AOVE."
         },
         "adaptacion_dona_y": {
-          "porcion": "3 tortillas de trigo bien cargadas con pollo, aguacate y mayonesa",
-          "detalles": "Grasas saludables y densidad calórica.",
-          "suplementacion": "Completado con plátano maduro."
+          "porcion": "2 muslitos de pollo bien asados acompañados de pimientos dulces, aguacate y tosta de pan",
+          "detalles": "Densidad nutricional y grasas saludables idóneas para superávit calórico magro.",
+          "suplementacion": "1 batido de proteína en la merienda."
         }
       }
     },
