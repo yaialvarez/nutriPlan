@@ -1,13 +1,13 @@
 {
   "supermercado": "Mercadona",
-  "semana": "Semana 1: Arranque y consolidación de hábitos",
-  "total_ticket_estimado": 86.75,
+  "semana": "Semana 2: Menú Adaptado con Aprovechamiento de Pollo Entero y Nuevos Favoritos",
+  "total_ticket_estimado": 107.54,
   "moneda": "EUR",
-  "total_articulos": 34,
+  "total_articulos": 39,
   "pasillos": [
     {
       "nombre_pasillo": "Fruta y verdura",
-      "subtotal": 20.59,
+      "subtotal": 31.92,
       "items": [
         {
           "id": "69338",
@@ -42,7 +42,7 @@
         {
           "id": "69166",
           "nombre": "Patatas",
-          "nombre_receta": "Patatas para guisar y freír",
+          "nombre_receta": "Patatas para guisar y puré",
           "pasillo": "Fruta y verdura",
           "subseccion": "Patata",
           "cantidad": 1,
@@ -102,7 +102,7 @@
         {
           "id": "69320",
           "nombre": "Pimiento verde freír",
-          "nombre_receta": "Pimiento verde dulce",
+          "nombre_receta": "Pimiento verde freír",
           "pasillo": "Fruta y verdura",
           "subseccion": "Calabacín y pimiento",
           "cantidad": 1,
@@ -117,13 +117,13 @@
         {
           "id": "60369",
           "nombre": "Tomate ensalada",
-          "nombre_receta": "Tomates maduros para ensalada y fajitas",
+          "nombre_receta": "Tomates ensalada (hamburguesas)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Tomate",
-          "cantidad": 1,
-          "unidad_receta": "malla / 1 kg",
+          "cantidad": 2,
+          "unidad_receta": "piezas",
           "precio_unitario": 0.48,
-          "precio_total": 0.48,
+          "precio_total": 0.96,
           "precio_referencia": 2.4,
           "formato_referencia": "kg",
           "thumbnail": "https://prod-mercadona.imgix.net/images/b211c1fcb72ca3fcc0e6fcebe57d4082.jpeg?fit=crop&h=300&w=300",
@@ -132,13 +132,13 @@
         {
           "id": "3830",
           "nombre": "Aguacate",
-          "nombre_receta": "Aguacates en su punto",
+          "nombre_receta": "Aguacates en su punto (fajitas)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Fruta tropical",
-          "cantidad": 1,
-          "unidad_receta": "malla / 2 unidades",
+          "cantidad": 2,
+          "unidad_receta": "piezas",
           "precio_unitario": 1.6,
-          "precio_total": 1.6,
+          "precio_total": 3.2,
           "precio_referencia": 5.0,
           "formato_referencia": "kg",
           "thumbnail": "https://prod-mercadona.imgix.net/images/b1dee7e254871996d81c69a656fa4304.jpg?fit=crop&h=300&w=300",
@@ -162,7 +162,7 @@
         {
           "id": "68130",
           "nombre": "Lechuga Iceberg",
-          "nombre_receta": "Lechuga crujiente para ensalada y burger",
+          "nombre_receta": "Lechuga Iceberg crujiente (hamburguesas)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Lechuga",
           "cantidad": 1,
@@ -180,10 +180,10 @@
           "nombre_receta": "Plátanos de Canarias IGP (snacks)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Plátano y uva",
-          "cantidad": 1,
-          "unidad_receta": "racimo (~1 kg)",
+          "cantidad": 6,
+          "unidad_receta": "piezas (~1 kg)",
           "precio_unitario": 0.39,
-          "precio_total": 0.39,
+          "precio_total": 2.34,
           "precio_referencia": 2.3,
           "formato_referencia": "kg",
           "thumbnail": "https://prod-mercadona.imgix.net/images/e4a37940916985bf5ca166e266580c37.jpg?fit=crop&h=300&w=300",
@@ -195,31 +195,61 @@
           "nombre_receta": "Manzanas Golden (snacks)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Manzana y pera",
-          "cantidad": 1,
-          "unidad_receta": "malla 1.5 kg",
+          "cantidad": 6,
+          "unidad_receta": "piezas (~1 kg)",
           "precio_unitario": 0.48,
-          "precio_total": 0.48,
+          "precio_total": 2.88,
           "precio_referencia": 2.4,
           "formato_referencia": "kg",
           "thumbnail": "https://prod-mercadona.imgix.net/images/12cc1ef38a5b781f364ca22e46a25ad7.jpg?fit=crop&h=300&w=300",
+          "comprado": false
+        },
+        {
+          "id": "69889",
+          "nombre": "Judía verde plana",
+          "nombre_receta": "Judía verde plana tierna (alubias jueves)",
+          "pasillo": "Fruta y verdura",
+          "subseccion": "Otras verduras y hortalizas",
+          "cantidad": 1,
+          "unidad_receta": "bolsa 500g",
+          "precio_unitario": 3.75,
+          "precio_total": 3.75,
+          "precio_referencia": 5.0,
+          "formato_referencia": "kg",
+          "thumbnail": "https://prod-mercadona.imgix.net/images/6fe3bd1734dacc3f8751577ed526b7ab.jpg?fit=crop&h=300&w=300",
+          "comprado": false
+        },
+        {
+          "id": "69984",
+          "nombre": "Espinacas baby lavadas",
+          "nombre_receta": "Espinacas baby lavadas (ramen sábado)",
+          "pasillo": "Fruta y verdura",
+          "subseccion": "Lechuga",
+          "cantidad": 1,
+          "unidad_receta": "bolsa 100g",
+          "precio_unitario": 1.15,
+          "precio_total": 1.15,
+          "precio_referencia": 11.5,
+          "formato_referencia": "kg",
+          "thumbnail": "https://prod-mercadona.imgix.net/images/a91f13d218a7badd0b10b7b0e3088f20.jpg?fit=crop&h=300&w=300",
           "comprado": false
         }
       ]
     },
     {
       "nombre_pasillo": "Congelados",
-      "subtotal": 11.9,
+      "subtotal": 5.95,
       "items": [
         {
           "id": "24511",
           "nombre": "Lomos de salmón sin piel Hacendado congelado",
-          "nombre_receta": "Lomos de salmón (plancha y poke)",
+          "nombre_receta": "Lomos de salmón sin piel (sábado comida)",
           "pasillo": "Congelados",
           "subseccion": "Pescado",
-          "cantidad": 2,
-          "unidad_receta": "packs 2 lomos",
+          "cantidad": 1,
+          "unidad_receta": "pack 2 lomos",
           "precio_unitario": 5.95,
-          "precio_total": 11.9,
+          "precio_total": 5.95,
           "precio_referencia": 23.8,
           "formato_referencia": "kg",
           "thumbnail": "https://prod-mercadona.imgix.net/images/d276498ce484c1c8c3b247d77589e49d.jpg?fit=crop&h=300&w=300",
@@ -229,31 +259,31 @@
     },
     {
       "nombre_pasillo": "Carne",
-      "subtotal": 26.45,
+      "subtotal": 30.67,
       "items": [
         {
-          "id": "3400",
-          "nombre": "Filetes pechuga de pollo corte fino",
-          "nombre_receta": "Pechuga de pollo fileteada",
+          "id": "2781",
+          "nombre": "Pollo entero",
+          "nombre_receta": "Pollo entero limpio para despiece (x2 unidades)",
           "pasillo": "Carne",
           "subseccion": "Pollo",
           "cantidad": 2,
-          "unidad_receta": "bandejas (~1.1 kg total)",
-          "precio_unitario": 4.54,
-          "precio_total": 9.08,
-          "precio_referencia": 7.7,
+          "unidad_receta": "pollos enteros (~3.5 kg total)",
+          "precio_unitario": 6.65,
+          "precio_total": 13.3,
+          "precio_referencia": 3.5,
           "formato_referencia": "kg",
-          "thumbnail": "https://prod-mercadona.imgix.net/images/c89d28c5929f14861da52e2508912e3d.jpg?fit=crop&h=300&w=300",
+          "thumbnail": "https://prod-mercadona.imgix.net/images/cb8d3cd457f1c0c8bce835505ad77695.jpg?fit=crop&h=300&w=300",
           "comprado": false
         },
         {
           "id": "2868",
           "nombre": "Preparado de carne picada vacuno",
-          "nombre_receta": "Carne picada de vacuno 100% (chili y hamburguesas)",
+          "nombre_receta": "Carne picada de vacuno 100% (hamburguesas y suflé)",
           "pasillo": "Carne",
           "subseccion": "Picadas y otros",
           "cantidad": 2,
-          "unidad_receta": "bandejas 400g",
+          "unidad_receta": "bandejas 400g (800g total)",
           "precio_unitario": 5.5,
           "precio_total": 11.0,
           "precio_referencia": 11.0,
@@ -283,7 +313,7 @@
           "pasillo": "Carne",
           "subseccion": "Cerdo",
           "cantidad": 1,
-          "unidad_receta": "bandeja",
+          "unidad_receta": "bandeja 250g",
           "precio_unitario": 3.15,
           "precio_total": 3.15,
           "precio_referencia": 6.3,
@@ -295,36 +325,36 @@
     },
     {
       "nombre_pasillo": "Huevos, leche y mantequilla",
-      "subtotal": 4.95,
+      "subtotal": 7.54,
       "items": [
         {
           "id": "15768",
           "nombre": "Huevos de gallinas camperas",
-          "nombre_receta": "Huevos camperos frescos (tortilla y carbonara)",
+          "nombre_receta": "Huevos camperos frescos clase L (x2 docenas)",
           "pasillo": "Huevos, leche y mantequilla",
           "subseccion": "Huevos",
-          "cantidad": 1,
-          "unidad_receta": "docena clase L",
+          "cantidad": 2,
+          "unidad_receta": "docenas clase L",
           "precio_unitario": 3.35,
-          "precio_total": 3.35,
+          "precio_total": 6.7,
           "precio_referencia": 3.35,
           "formato_referencia": "dc",
           "thumbnail": "https://prod-mercadona.imgix.net/images/50933500ef69e4c4cc91733c48e4e909.jpg?fit=crop&h=300&w=300",
           "comprado": false
         },
         {
-          "id": "13846",
-          "nombre": "Bebida de coco y arroz sin azúcares añadidos Hacendado",
-          "nombre_receta": "Bebida de coco sin azúcares (pollo curry)",
+          "id": "10382",
+          "nombre": "Leche semidesnatada Hacendado",
+          "nombre_receta": "Leche semidesnatada Hacendado (puré suflé)",
           "pasillo": "Huevos, leche y mantequilla",
-          "subseccion": "Bebidas vegetales",
+          "subseccion": "Leche semidesnatada",
           "cantidad": 1,
           "unidad_receta": "brick 1 L",
-          "precio_unitario": 1.6,
-          "precio_total": 1.6,
-          "precio_referencia": 1.6,
+          "precio_unitario": 0.84,
+          "precio_total": 0.84,
+          "precio_referencia": 0.84,
           "formato_referencia": "L",
-          "thumbnail": "https://prod-mercadona.imgix.net/images/c9d5c928c1099db31752e2e688d808a6.jpg?fit=crop&h=300&w=300",
+          "thumbnail": "https://prod-mercadona.imgix.net/images/5a14472b53ac7a848fc8220982694c4a.jpg?fit=crop&h=300&w=300",
           "comprado": false
         }
       ]
@@ -334,24 +364,9 @@
       "subtotal": 9.76,
       "items": [
         {
-          "id": "51110",
-          "nombre": "Queso rallado mozzarella pizza-Roma de vaca Hacendado",
-          "nombre_receta": "Mozzarella suave rallada (pizza)",
-          "pasillo": "Charcutería y quesos",
-          "subseccion": "Queso rallado",
-          "cantidad": 1,
-          "unidad_receta": "bolsa 200g",
-          "precio_unitario": 1.6,
-          "precio_total": 1.6,
-          "precio_referencia": 8.0,
-          "formato_referencia": "kg",
-          "thumbnail": "https://prod-mercadona.imgix.net/images/0697e560e6a01d260447f0d5aa8ae1a2.jpg?fit=crop&h=300&w=300",
-          "comprado": false
-        },
-        {
           "id": "50916",
           "nombre": "Queso tierno de vaca Hacendado cortado en cuñitas",
-          "nombre_receta": "Queso tierno suave en lonchas/cuñitas (hamburguesas)",
+          "nombre_receta": "Queso tierno suave en lonchas/cuñitas (hamburguesas y suflé)",
           "pasillo": "Charcutería y quesos",
           "subseccion": "Queso tierno",
           "cantidad": 1,
@@ -394,9 +409,24 @@
           "comprado": false
         },
         {
+          "id": "51110",
+          "nombre": "Queso rallado mozzarella pizza-Roma de vaca Hacendado",
+          "nombre_receta": "Mozzarella suave rallada (pizza y suflé)",
+          "pasillo": "Charcutería y quesos",
+          "subseccion": "Queso rallado",
+          "cantidad": 1,
+          "unidad_receta": "bolsa 200g",
+          "precio_unitario": 1.6,
+          "precio_total": 1.6,
+          "precio_referencia": 8.0,
+          "formato_referencia": "kg",
+          "thumbnail": "https://prod-mercadona.imgix.net/images/0697e560e6a01d260447f0d5aa8ae1a2.jpg?fit=crop&h=300&w=300",
+          "comprado": false
+        },
+        {
           "id": "51146",
           "nombre": "Queso en polvo grana padano Hacendado",
-          "nombre_receta": "Queso Grana Padano rallado (carbonara)",
+          "nombre_receta": "Queso Grana Padano en polvo/rallado (carbonara)",
           "pasillo": "Charcutería y quesos",
           "subseccion": "Queso rallado",
           "cantidad": 1,
@@ -412,12 +442,12 @@
     },
     {
       "nombre_pasillo": "Arroz, legumbres y pasta",
-      "subtotal": 5.95,
+      "subtotal": 5.5,
       "items": [
         {
           "id": "5330",
           "nombre": "Lenteja pardina Hacendado",
-          "nombre_receta": "Lentejas pardinas (guiso domingo)",
+          "nombre_receta": "Lentejas pardinas (guiso lunes)",
           "pasillo": "Arroz, legumbres y pasta",
           "subseccion": "Lentejas y otros",
           "cantidad": 1,
@@ -430,39 +460,24 @@
           "comprado": false
         },
         {
-          "id": "26000",
-          "nombre": "Alubia cocida roja Hacendado",
-          "nombre_receta": "Alubias rojas cocidas en tarro (chili)",
-          "pasillo": "Arroz, legumbres y pasta",
-          "subseccion": "Alubias",
-          "cantidad": 1,
-          "unidad_receta": "tarro 400g",
-          "precio_unitario": 1.2,
-          "precio_total": 1.2,
-          "precio_referencia": 3.0,
-          "formato_referencia": "kg",
-          "thumbnail": "https://prod-mercadona.imgix.net/images/231e70f1833a97babe9b0ecab3bfee2c.jpg?fit=crop&h=300&w=300",
-          "comprado": false
-        },
-        {
-          "id": "5002",
-          "nombre": "Arroz basmati aromático Hacendado",
-          "nombre_receta": "Arroz basmati aromático",
+          "id": "5044",
+          "nombre": "Arroz redondo Hacendado",
+          "nombre_receta": "Arroz blanco para arrocera (curry, onigiris y salteado)",
           "pasillo": "Arroz, legumbres y pasta",
           "subseccion": "Arroz",
           "cantidad": 1,
           "unidad_receta": "paquete 1 kg",
-          "precio_unitario": 2.1,
-          "precio_total": 2.1,
-          "precio_referencia": 2.1,
+          "precio_unitario": 1.15,
+          "precio_total": 1.15,
+          "precio_referencia": 1.15,
           "formato_referencia": "kg",
-          "thumbnail": "https://prod-mercadona.imgix.net/images/ff02e0b326c0d33682f76e66cc825dda.jpg?fit=crop&h=300&w=300",
+          "thumbnail": "https://prod-mercadona.imgix.net/images/0daf43fb5761b823ce83c985930c97c9.jpg?fit=crop&h=300&w=300",
           "comprado": false
         },
         {
           "id": "6277",
           "nombre": "Spaghetti fino Hacendado",
-          "nombre_receta": "Spaghetti finos (carbonara)",
+          "nombre_receta": "Spaghetti finos (carbonara domingo)",
           "pasillo": "Arroz, legumbres y pasta",
           "subseccion": "Spaghetti y tallarines",
           "cantidad": 1,
@@ -472,6 +487,21 @@
           "precio_referencia": 1.6,
           "formato_referencia": "kg",
           "thumbnail": "https://prod-mercadona.imgix.net/images/12cb042a1db2a965e3a7b1be7b01bd62.jpg?fit=crop&h=300&w=300",
+          "comprado": false
+        },
+        {
+          "id": "9861",
+          "nombre": "Noodles Ramen",
+          "nombre_receta": "Noodles Ramen (fideos cacahuete y ramen)",
+          "pasillo": "Arroz, legumbres y pasta",
+          "subseccion": "Fideos orientales",
+          "cantidad": 2,
+          "unidad_receta": "paquetes",
+          "precio_unitario": 0.85,
+          "precio_total": 1.7,
+          "precio_referencia": 4.25,
+          "formato_referencia": "kg",
+          "thumbnail": "https://prod-mercadona.imgix.net/images/9e9cea574b49ba9c0ef349de109a008d.jpg?fit=crop&h=300&w=300",
           "comprado": false
         }
       ]
@@ -498,7 +528,7 @@
         {
           "id": "52602",
           "nombre": "Pan de burger Brioche Hacendado",
-          "nombre_receta": "Pan de hamburguesa Brioche",
+          "nombre_receta": "Pan de hamburguesa Brioche (domingo cena)",
           "pasillo": "Panadería y pastelería",
           "subseccion": "Pan de hamburguesa y wrap",
           "cantidad": 1,
@@ -513,13 +543,34 @@
       ]
     },
     {
+      "nombre_pasillo": "Pizzas y platos preparados",
+      "subtotal": 1.5,
+      "items": [
+        {
+          "id": "52454",
+          "nombre": "Masa pizza fresca familiar Hacendado",
+          "nombre_receta": "Masa pizza fresca familiar Hacendado",
+          "pasillo": "Pizzas y platos preparados",
+          "subseccion": "Base de pizza",
+          "cantidad": 1,
+          "unidad_receta": "paquete 400g",
+          "precio_unitario": 1.5,
+          "precio_total": 1.5,
+          "precio_referencia": 3.75,
+          "formato_referencia": "kg",
+          "thumbnail": "https://prod-mercadona.imgix.net/images/db3376bba214345ed6e40be45311ff6f.jpg?fit=crop&h=300&w=300",
+          "comprado": false
+        }
+      ]
+    },
+    {
       "nombre_pasillo": "Conservas, caldos y cremas",
-      "subtotal": 1.0,
+      "subtotal": 5.9,
       "items": [
         {
           "id": "16043",
           "nombre": "Tomate triturado Hacendado",
-          "nombre_receta": "Tomate triturado natural (chili y pizza)",
+          "nombre_receta": "Tomate triturado natural (suflé y pizza)",
           "pasillo": "Conservas, caldos y cremas",
           "subseccion": "Tomate",
           "cantidad": 1,
@@ -529,6 +580,21 @@
           "precio_referencia": 1.25,
           "formato_referencia": "kg",
           "thumbnail": "https://prod-mercadona.imgix.net/images/117a2a2230b103f17b50e07a73a8fc38.jpg?fit=crop&h=300&w=300",
+          "comprado": false
+        },
+        {
+          "id": "18002",
+          "nombre": "Atún claro en aceite de oliva Hacendado",
+          "nombre_receta": "Atún claro en aceite de oliva Hacendado (onigiris)",
+          "pasillo": "Conservas, caldos y cremas",
+          "subseccion": "Atún",
+          "cantidad": 1,
+          "unidad_receta": "pack 6 latas",
+          "precio_unitario": 4.9,
+          "precio_total": 4.9,
+          "precio_referencia": 13.612,
+          "formato_referencia": "kg",
+          "thumbnail": "https://prod-mercadona.imgix.net/images/003c8146e861ce8abd19032687b62da0.jpg?fit=crop&h=300&w=300",
           "comprado": false
         }
       ]
@@ -561,7 +627,7 @@
         {
           "id": "34964",
           "nombre": "Semillas sésamo tostado Hacendado",
-          "nombre_receta": "Semillas de sésamo tostado (poke bowl)",
+          "nombre_receta": "Semillas de sésamo tostado (onigiris y ramen)",
           "pasillo": "Aperitivos",
           "subseccion": "Frutos secos",
           "cantidad": 1,
@@ -571,6 +637,27 @@
           "precio_referencia": 10.0,
           "formato_referencia": "kg",
           "thumbnail": "https://prod-mercadona.imgix.net/images/fb777e1d4a1c4070fec4002886f4d339.jpg?fit=crop&h=300&w=300",
+          "comprado": false
+        }
+      ]
+    },
+    {
+      "nombre_pasillo": "Azúcar, caramelos y chocolate",
+      "subtotal": 2.65,
+      "items": [
+        {
+          "id": "16883",
+          "nombre": "Crema de cacahuete 100% Hacendado",
+          "nombre_receta": "Crema de cacahuete 100% Hacendado (fideos cacahuete)",
+          "pasillo": "Azúcar, caramelos y chocolate",
+          "subseccion": "Cremas de untar",
+          "cantidad": 1,
+          "unidad_receta": "tarro 500g",
+          "precio_unitario": 2.65,
+          "precio_total": 2.65,
+          "precio_referencia": 5.3,
+          "formato_referencia": "kg",
+          "thumbnail": "https://prod-mercadona.imgix.net/images/ecac26182b20af3cb009a9b33cac5693.jpg?fit=crop&h=300&w=300",
           "comprado": false
         }
       ]

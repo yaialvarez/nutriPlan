@@ -55,7 +55,7 @@ export default function CalendarioSemanal({ menuData, recetarioData, onSelectRec
 
       {/* Selector de días tipo píldora para móvil */}
       <div className="flex items-center gap-1.5 overflow-x-auto pb-2 scrollbar-none">
-        {['Todos', 'Sábado', 'Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'].map((dia) => (
+        {['Todos', ...(menuData?.dias?.map(d => d.dia) || [])].map((dia) => (
           <button
             key={dia}
             onClick={() => setSelectedDay(dia)}

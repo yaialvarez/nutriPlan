@@ -1067,5 +1067,67 @@
       "Dorar en sartén con AOVE caliente durante 2 minutos por lado hasta que estén jugosos y dorados.",
       "Servir calientes con las patatas asadas y una cucharada de mayonesa suave."
     ]
+  },
+  {
+    "id": "arroz_asiatico_salteado_pollo",
+    "nombre": "Arroz salteado asiático con contramuslos de pollo y verduras",
+    "tipo": "comida",
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking (recalentar y servir en tupper)",
+    "ingredientes": [
+      {
+        "item": "Arroz blanco cocido en arrocera",
+        "cantidad": "350g cocido",
+        "seccion": "Legumbres y arroz"
+      },
+      {
+        "item": "Contramuslos de pollo despiezado en dados",
+        "cantidad": "400g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Zanahorias en cubitos finos",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Calabacín en dados pequeños",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Huevos camperos revueltos",
+        "cantidad": "2 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Salsa de soja suave",
+        "cantidad": "2 cucharadas",
+        "seccion": "Aceites y condimentos"
+      },
+      {
+        "item": "Aceite de Oliva Virgen Extra",
+        "cantidad": "2 cucharadas",
+        "seccion": "Aceites y condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Arroz suelto salteado al wok/sartén con dados jugosos de contramuslo y verduras pochadas. Cero cebolla cruda.",
+      "proporciones": "1/4 contramuslo de comida real, 1/4 arroz, 1/2 verdura pochada y huevo revuelto."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Porción generosa de arroz con pollo y verduras impregnadas en soja.",
+      "proporciones": "Extra hidratos para superávit calórico magro + batido proteico en merienda."
+    },
+    "seguridad_medica": "100% comida real sin salsas picantes ni potenciadores artificiales; verduras cocinadas al dente; pollo de despiece casero.",
+    "pasos_preparacion": [
+      "Tener listo el arroz cocido y frío de la arrocera (del Batch Cooking).",
+      "En sartén de acero bien caliente con AOVE, dorar los dados de contramuslo salpimentados durante 5 minutos hasta que tengan costra dorada; reservar.",
+      "En la misma sartén, saltear las zanahorias y el calabacín durante 4 minutos.",
+      "Apartar a un lado, cascar los 2 huevos y revolver rápidamente hasta que cuajen.",
+      "Añadir el arroz cocido, reincorporar el pollo, verter la salsa de soja y saltear a fuego vivo 3 minutos removiendo constantemente.",
+      "Envasar en tuppers para la comida del viernes o servir caliente."
+    ]
   }
 ]

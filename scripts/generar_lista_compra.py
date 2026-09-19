@@ -18,7 +18,7 @@ PANTRY_FILE = os.path.join(DATA_DIR, "despensa_base.json")
 LISTA_FILE = os.path.join(DATA_DIR, "lista_compra.json")
 CACHE_FILE = os.path.join(DATA_DIR, "mercadona_catalogo_cache.json")
 
-# Definición precisa de los artículos necesarios para Semana 1
+# Definición precisa de los artículos necesarios para Semana 2 (Pollo entero, tuppers y favoritos)
 # y sus identificadores o términos clave preferentes en el catálogo de Mercadona
 ITEMS_CONFIG = [
     # --- FRUTA Y VERDURA ---
@@ -31,7 +31,7 @@ ITEMS_CONFIG = [
         "seccion": "Fruta y verdura"
     },
     {
-        "id_preferente": None,
+        "id_preferente": 69586,
         "termino_fallback": "zanahoria",
         "filtro_excluir": ["bebé", "papilla", "tarrina"],
         "nombre_receta": "Zanahorias",
@@ -40,16 +40,16 @@ ITEMS_CONFIG = [
         "seccion": "Fruta y verdura"
     },
     {
-        "id_preferente": None,
+        "id_preferente": 69166,
         "termino_fallback": "patatas",
         "filtro_excluir": ["fritas", "chispas", "snack"],
-        "nombre_receta": "Patatas para guisar y freír",
+        "nombre_receta": "Patatas para guisar y puré",
         "cantidad": 1,
         "unidad": "malla 3 kg",
         "seccion": "Fruta y verdura"
     },
     {
-        "id_preferente": None,
+        "id_preferente": 69411,
         "termino_fallback": "puerro",
         "filtro_excluir": [],
         "nombre_receta": "Puerros limpios",
@@ -58,8 +58,8 @@ ITEMS_CONFIG = [
         "seccion": "Fruta y verdura"
     },
     {
-        "id_preferente": None,
-        "termino_fallback": "cebolla dulce",
+        "id_preferente": 69155,
+        "termino_fallback": "cebollas dulces",
         "filtro_excluir": ["frita"],
         "nombre_receta": "Cebollas dulces (para pochar)",
         "cantidad": 1,
@@ -67,7 +67,7 @@ ITEMS_CONFIG = [
         "seccion": "Fruta y verdura"
     },
     {
-        "id_preferente": None,
+        "id_preferente": 69310,
         "termino_fallback": "pimiento rojo",
         "filtro_excluir": ["asado", "tiras"],
         "nombre_receta": "Pimiento rojo dulce",
@@ -76,34 +76,34 @@ ITEMS_CONFIG = [
         "seccion": "Fruta y verdura"
     },
     {
-        "id_preferente": None,
+        "id_preferente": 69320,
         "termino_fallback": "pimiento verde",
         "filtro_excluir": [],
-        "nombre_receta": "Pimiento verde dulce",
+        "nombre_receta": "Pimiento verde freír",
         "cantidad": 1,
         "unidad": "unidad / pieza",
         "seccion": "Fruta y verdura"
     },
     {
-        "id_preferente": None,
+        "id_preferente": 60369,
         "termino_fallback": "tomate ensalada",
         "filtro_excluir": ["frito", "triturado"],
-        "nombre_receta": "Tomates maduros para ensalada y fajitas",
-        "cantidad": 1,
-        "unidad": "malla / 1 kg",
+        "nombre_receta": "Tomates ensalada (hamburguesas)",
+        "cantidad": 2,
+        "unidad": "piezas",
         "seccion": "Fruta y verdura"
     },
     {
-        "id_preferente": None,
+        "id_preferente": 3830,
         "termino_fallback": "aguacate",
         "filtro_excluir": ["salsa", "aceite"],
-        "nombre_receta": "Aguacates en su punto",
-        "cantidad": 1,
-        "unidad": "malla / 2 unidades",
+        "nombre_receta": "Aguacates en su punto (fajitas)",
+        "cantidad": 2,
+        "unidad": "piezas",
         "seccion": "Fruta y verdura"
     },
     {
-        "id_preferente": None,
+        "id_preferente": 69519,
         "termino_fallback": "champinon laminado",
         "filtro_excluir": ["entero"],
         "nombre_receta": "Champiñones laminados limpios (pizza)",
@@ -112,54 +112,72 @@ ITEMS_CONFIG = [
         "seccion": "Fruta y verdura"
     },
     {
-        "id_preferente": None,
+        "id_preferente": 68130,
         "termino_fallback": "lechuga iceberg",
         "filtro_excluir": [],
-        "nombre_receta": "Lechuga crujiente para ensalada y burger",
+        "nombre_receta": "Lechuga Iceberg crujiente (hamburguesas)",
         "cantidad": 1,
         "unidad": "pieza",
         "seccion": "Fruta y verdura"
     },
     {
-        "id_preferente": None,
+        "id_preferente": 3819,
         "termino_fallback": "platano canarias",
         "filtro_excluir": [],
         "nombre_receta": "Plátanos de Canarias IGP (snacks)",
-        "cantidad": 1,
-        "unidad": "racimo (~1 kg)",
+        "cantidad": 6,
+        "unidad": "piezas (~1 kg)",
         "seccion": "Fruta y verdura"
     },
     {
-        "id_preferente": None,
+        "id_preferente": 3028,
         "termino_fallback": "manzana golden",
         "filtro_excluir": [],
         "nombre_receta": "Manzanas Golden (snacks)",
+        "cantidad": 6,
+        "unidad": "piezas (~1 kg)",
+        "seccion": "Fruta y verdura"
+    },
+    {
+        "id_preferente": 69889,
+        "termino_fallback": "judia verde",
+        "filtro_excluir": [],
+        "nombre_receta": "Judía verde plana tierna (alubias jueves)",
         "cantidad": 1,
-        "unidad": "malla 1.5 kg",
+        "unidad": "bolsa 500g",
+        "seccion": "Fruta y verdura"
+    },
+    {
+        "id_preferente": 69984,
+        "termino_fallback": "espinaca",
+        "filtro_excluir": [],
+        "nombre_receta": "Espinacas baby lavadas (ramen sábado)",
+        "cantidad": 1,
+        "unidad": "bolsa 100g",
         "seccion": "Fruta y verdura"
     },
 
     # --- CARNICERÍA ---
     {
-        "id_preferente": "filetes_pollo",
-        "termino_fallback": "filetes pechuga de pollo",
-        "filtro_excluir": ["empanado", "adobada"],
-        "nombre_receta": "Pechuga de pollo fileteada",
+        "id_preferente": 2781,
+        "termino_fallback": "pollo entero",
+        "filtro_excluir": [],
+        "nombre_receta": "Pollo entero limpio para despiece (x2 unidades)",
         "cantidad": 2,
-        "unidad": "bandejas (~1.1 kg total)",
+        "unidad": "pollos enteros (~3.5 kg total)",
         "seccion": "Carne"
     },
     {
-        "id_preferente": "2868",
+        "id_preferente": 2868,
         "termino_fallback": "carne picada vacuno",
         "filtro_excluir": ["cerdo", "mixta"],
-        "nombre_receta": "Carne picada de vacuno 100% (chili y hamburguesas)",
+        "nombre_receta": "Carne picada de vacuno 100% (hamburguesas y suflé)",
         "cantidad": 2,
-        "unidad": "bandejas 400g",
+        "unidad": "bandejas 400g (800g total)",
         "seccion": "Carne"
     },
     {
-        "id_preferente": "2813",
+        "id_preferente": 2813,
         "termino_fallback": "cerdo a tacos",
         "filtro_excluir": ["fiambre", "adobado", "embutido", "berenjena"],
         "nombre_receta": "Magro de cerdo troceado (lentejas)",
@@ -168,41 +186,41 @@ ITEMS_CONFIG = [
         "seccion": "Carne"
     },
     {
-        "id_preferente": "8994",
+        "id_preferente": 8994,
         "termino_fallback": "panceta",
         "filtro_excluir": [],
         "nombre_receta": "Panceta fina en tiras (carbonara)",
         "cantidad": 1,
-        "unidad": "bandeja",
+        "unidad": "bandeja 250g",
         "seccion": "Carne"
     },
 
     # --- PESCADERÍA / CONGELADOS DE PESCADO ---
     {
-        "id_preferente": "24511",
+        "id_preferente": 24511,
         "termino_fallback": "lomos de salmon",
         "filtro_excluir": ["paté", "ahumado"],
-        "nombre_receta": "Lomos de salmón (plancha y poke)",
-        "cantidad": 2,
-        "unidad": "packs 2 lomos",
+        "nombre_receta": "Lomos de salmón sin piel (sábado comida)",
+        "cantidad": 1,
+        "unidad": "pack 2 lomos",
         "seccion": "Congelados"
     },
 
     # --- HUEVOS Y LÁCTEOS ---
     {
-        "id_preferente": "15768",
+        "id_preferente": 15768,
         "termino_fallback": "huevos camperas",
         "filtro_excluir": ["chocolate", "sorpresa"],
-        "nombre_receta": "Huevos camperos frescos (tortilla y carbonara)",
-        "cantidad": 1,
-        "unidad": "docena clase L",
+        "nombre_receta": "Huevos camperos frescos clase L (x2 docenas)",
+        "cantidad": 2,
+        "unidad": "docenas clase L",
         "seccion": "Huevos, leche y mantequilla"
     },
     {
-        "id_preferente": "13846",
-        "termino_fallback": "bebida de coco",
-        "filtro_excluir": ["pack-6"],
-        "nombre_receta": "Bebida de coco sin azúcares (pollo curry)",
+        "id_preferente": 10382,
+        "termino_fallback": "leche semidesnatada",
+        "filtro_excluir": [],
+        "nombre_receta": "Leche semidesnatada Hacendado (puré suflé)",
         "cantidad": 1,
         "unidad": "brick 1 L",
         "seccion": "Huevos, leche y mantequilla"
@@ -210,25 +228,16 @@ ITEMS_CONFIG = [
 
     # --- CHARCUTERÍA Y QUESOS SUAVES ---
     {
-        "id_preferente": None,
-        "termino_fallback": "mozzarella pizza",
-        "filtro_excluir": [],
-        "nombre_receta": "Mozzarella suave rallada (pizza)",
-        "cantidad": 1,
-        "unidad": "bolsa 200g",
-        "seccion": "Charcutería y quesos"
-    },
-    {
-        "id_preferente": "50916",
+        "id_preferente": 50916,
         "termino_fallback": "queso tierno",
         "filtro_excluir": ["fuerte", "azul", "cabra"],
-        "nombre_receta": "Queso tierno suave en lonchas/cuñitas (hamburguesas)",
+        "nombre_receta": "Queso tierno suave en lonchas/cuñitas (hamburguesas y suflé)",
         "cantidad": 1,
         "unidad": "paquete",
         "seccion": "Charcutería y quesos"
     },
     {
-        "id_preferente": "52405",
+        "id_preferente": 52405,
         "termino_fallback": "queso en porciones",
         "filtro_excluir": [],
         "nombre_receta": "Quesitos suaves en porciones (crema de calabacín)",
@@ -237,7 +246,7 @@ ITEMS_CONFIG = [
         "seccion": "Charcutería y quesos"
     },
     {
-        "id_preferente": "60329",
+        "id_preferente": 60329,
         "termino_fallback": "jamon cocido extra",
         "filtro_excluir": ["chopped", "lata"],
         "nombre_receta": "Jamón cocido extra calidad (pizza)",
@@ -246,10 +255,19 @@ ITEMS_CONFIG = [
         "seccion": "Charcutería y quesos"
     },
     {
-        "id_preferente": "51146",
+        "id_preferente": 51110,
+        "termino_fallback": "mozzarella pizza",
+        "filtro_excluir": [],
+        "nombre_receta": "Mozzarella suave rallada (pizza y suflé)",
+        "cantidad": 1,
+        "unidad": "bolsa 200g",
+        "seccion": "Charcutería y quesos"
+    },
+    {
+        "id_preferente": 51146,
         "termino_fallback": "grana padano",
         "filtro_excluir": [],
-        "nombre_receta": "Queso Grana Padano rallado (carbonara)",
+        "nombre_receta": "Queso Grana Padano en polvo/rallado (carbonara)",
         "cantidad": 1,
         "unidad": "bolsa 100g",
         "seccion": "Charcutería y quesos"
@@ -257,45 +275,45 @@ ITEMS_CONFIG = [
 
     # --- ARROZ, LEGUMBRES Y PASTA ---
     {
-        "id_preferente": None,
+        "id_preferente": 5330,
         "termino_fallback": "lenteja pardina",
         "filtro_excluir": [],
-        "nombre_receta": "Lentejas pardinas (guiso domingo)",
+        "nombre_receta": "Lentejas pardinas (guiso lunes)",
         "cantidad": 1,
         "unidad": "paquete 1 kg",
         "seccion": "Arroz, legumbres y pasta"
     },
     {
-        "id_preferente": None,
-        "termino_fallback": "alubia cocida roja",
+        "id_preferente": 5044,
+        "termino_fallback": "arroz redondo",
         "filtro_excluir": [],
-        "nombre_receta": "Alubias rojas cocidas en tarro (chili)",
-        "cantidad": 1,
-        "unidad": "tarro 400g",
-        "seccion": "Arroz, legumbres y pasta"
-    },
-    {
-        "id_preferente": None,
-        "termino_fallback": "arroz basmati",
-        "filtro_excluir": [],
-        "nombre_receta": "Arroz basmati aromático",
+        "nombre_receta": "Arroz blanco para arrocera (curry, onigiris y salteado)",
         "cantidad": 1,
         "unidad": "paquete 1 kg",
         "seccion": "Arroz, legumbres y pasta"
     },
     {
-        "id_preferente": "6277",
+        "id_preferente": 6277,
         "termino_fallback": "spaghetti fino",
         "filtro_excluir": [],
-        "nombre_receta": "Spaghetti finos (carbonara)",
+        "nombre_receta": "Spaghetti finos (carbonara domingo)",
         "cantidad": 1,
         "unidad": "paquete 1 kg",
+        "seccion": "Arroz, legumbres y pasta"
+    },
+    {
+        "id_preferente": 9861,
+        "termino_fallback": "fideo",
+        "filtro_excluir": [],
+        "nombre_receta": "Noodles Ramen (fideos cacahuete y ramen)",
+        "cantidad": 2,
+        "unidad": "paquetes",
         "seccion": "Arroz, legumbres y pasta"
     },
 
     # --- PANADERÍA Y MASAS ---
     {
-        "id_preferente": None,
+        "id_preferente": 17567,
         "termino_fallback": "tortillas de trigo",
         "filtro_excluir": [],
         "nombre_receta": "Tortillas de trigo grandes (fajitas)",
@@ -304,27 +322,45 @@ ITEMS_CONFIG = [
         "seccion": "Panadería y pastelería"
     },
     {
-        "id_preferente": "52602",
+        "id_preferente": 52602,
         "termino_fallback": "pan de burger brioche",
         "filtro_excluir": [],
-        "nombre_receta": "Pan de hamburguesa Brioche",
+        "nombre_receta": "Pan de hamburguesa Brioche (domingo cena)",
         "cantidad": 1,
         "unidad": "paquete 4 uds",
         "seccion": "Panadería y pastelería"
     },
+    {
+        "id_preferente": 52454,
+        "termino_fallback": "masa pizza fresca",
+        "filtro_excluir": [],
+        "nombre_receta": "Masa pizza fresca familiar Hacendado",
+        "cantidad": 1,
+        "unidad": "paquete 400g",
+        "seccion": "Pizzas y platos preparados"
+    },
 
     # --- SALSAS Y CONSERVAS ---
     {
-        "id_preferente": None,
+        "id_preferente": 16043,
         "termino_fallback": "tomate triturado",
         "filtro_excluir": ["frito"],
-        "nombre_receta": "Tomate triturado natural (chili y pizza)",
+        "nombre_receta": "Tomate triturado natural (suflé y pizza)",
         "cantidad": 1,
         "unidad": "bote 400g",
         "seccion": "Conservas, caldos y cremas"
     },
     {
-        "id_preferente": None,
+        "id_preferente": 18002,
+        "termino_fallback": "atun claro oliva",
+        "filtro_excluir": [],
+        "nombre_receta": "Atún claro en aceite de oliva Hacendado (onigiris)",
+        "cantidad": 1,
+        "unidad": "pack 6 latas",
+        "seccion": "Conservas, caldos y cremas"
+    },
+    {
+        "id_preferente": 13406,
         "termino_fallback": "mayonesa",
         "filtro_excluir": ["trufa", "picante", "ligera"],
         "nombre_receta": "Mayonesa clásica favorita Hacendado",
@@ -335,13 +371,22 @@ ITEMS_CONFIG = [
 
     # --- APERITIVOS Y CONDIMENTOS FRESCOS ---
     {
-        "id_preferente": "34964",
+        "id_preferente": 34964,
         "termino_fallback": "semillas sesamo tostado",
         "filtro_excluir": [],
-        "nombre_receta": "Semillas de sésamo tostado (poke bowl)",
+        "nombre_receta": "Semillas de sésamo tostado (onigiris y ramen)",
         "cantidad": 1,
         "unidad": "bote 150g",
         "seccion": "Aperitivos"
+    },
+    {
+        "id_preferente": 16883,
+        "termino_fallback": "crema de cacahuete",
+        "filtro_excluir": [],
+        "nombre_receta": "Crema de cacahuete 100% Hacendado (fideos cacahuete)",
+        "cantidad": 1,
+        "unidad": "tarro 500g",
+        "seccion": "Azúcar, caramelos y chocolate"
     }
 ]
 
@@ -454,9 +499,11 @@ def generar_lista_compra_mercadona() -> Dict[str, Any]:
         "Charcutería y quesos",
         "Arroz, legumbres y pasta",
         "Panadería y pastelería",
+        "Pizzas y platos preparados",
         "Conservas, caldos y cremas",
         "Aceite, especias y salsas",
-        "Aperitivos"
+        "Aperitivos",
+        "Azúcar, caramelos y chocolate"
     ]
 
     secciones_map = {}
@@ -491,7 +538,7 @@ def generar_lista_compra_mercadona() -> Dict[str, Any]:
 
     resultado = {
         "supermercado": "Mercadona",
-        "semana": "Semana 1: Arranque y consolidación de hábitos",
+        "semana": "Semana 2: Menú Adaptado con Aprovechamiento de Pollo Entero y Nuevos Favoritos",
         "total_ticket_estimado": ticket_total,
         "moneda": "EUR",
         "total_articulos": len(articulos),
