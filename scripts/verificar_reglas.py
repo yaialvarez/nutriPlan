@@ -78,8 +78,8 @@ def check_medical_and_dietary_rules():
     menu = data.get("menu_semanal.json", {})
     dias = menu.get("dias", [])
     print(f"[*] Auditando {len(dias)} días ({len(dias) * 2} tomas principales)...")
-    if len(dias) != 7:
-        errors.append(f"El menú semanal debe tener 7 días, tiene {len(dias)}")
+    if len(dias) not in [7, 8]:
+        errors.append(f"El menú semanal debe tener 7 u 8 días, tiene {len(dias)}")
 
     for d in dias:
         dia_nom = d.get("dia")

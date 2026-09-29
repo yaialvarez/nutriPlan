@@ -1190,5 +1190,215 @@
       "En una sartén con unas gotas de AOVE, saltear las tiras de pimiento rojo, pimiento verde y cebolla dulce a fuego medio-vivo hasta que estén tiernos y dorados (sin cebolla cruda).",
       "Servir 2 muslitos por persona acompañados de los pimientos salteados y aguacate fresco en láminas con sal yodada."
     ]
+  },
+  {
+    "id": "filetes_dorados_sarten_acero_guarnicion",
+    "nombre": "Filetes dorados a la sartén de acero con guarnición suave",
+    "tipo": "cena",
+    "tiempo_minutos": 12,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cocina rápida al momento (sartén de acero 12 min)",
+    "ingredientes": [
+      {
+        "item": "Filetes de ternera o lomo noble",
+        "cantidad": "400g total",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Ajo en polvo, orégano y pimienta suave",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 filetes (~180g) sellados a fuego vivo en sartén de acero con costra dorada sabrosa y AOVE. Sin cebolla cruda.",
+      "proporciones": "Proteína limpia de carne noble de comida real (~34g de proteína, sin batidos ni suplementos) con guarnición suave."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Filetes tiernos a la plancha con tostas crujientes o guarnición de patata.",
+      "proporciones": "Carne noble tierna + carbohidratos para superávit magro + 1 batido de proteína en la merienda."
+    },
+    "seguridad_medica": "100% comida real; cero picante; libre de berenjena, aceitunas y coles de Bruselas.",
+    "pasos_preparacion": [
+      "Calentar la sartén de acero inoxidable a fuego vivo hasta que unas gotas de agua bailen (efecto Leidenfrost).",
+      "Pintar los filetes con un hilo fino de AOVE y sazonar con ajo en polvo y sal yodada.",
+      "Sellar en la sartén de acero 1.5 a 2 minutos por lado hasta conseguir una costra dorada e intensa sin resecar el interior.",
+      "Servir caliente de inmediato acompañado de guarnición suave."
+    ]
+  },
+  {
+    "id": "albondigas_caseras_ternera_salsa_espanola",
+    "nombre": "Albóndigas caseras de ternera 100% en salsa española tradicional con patatas",
+    "tipo": "comida",
+    "tiempo_minutos": 35,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Tupper Batch Cooking (recalentar 3 min microondas)",
+    "ingredientes": [
+      {
+        "item": "Carne picada de vacuno 100%",
+        "cantidad": "400g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Patatas para guisar",
+        "cantidad": "2 unidades medianas en dados",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahorias",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Puerro",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate triturado natural",
+        "cantidad": "2 cucharadas",
+        "seccion": "Conservas, caldos y cremas"
+      },
+      {
+        "item": "Ajo, perejil, sal yodada y AOVE",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "5-6 albóndigas caseras con dados de patata y abundante salsa española con verdura 100% pochada y triturada fina.",
+      "proporciones": "Ternera noble 100% (~32g de proteína de comida real). Cebolla totalmente pochada e integrada en la salsa. Sin cebolla cruda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Albóndigas con ración generosa de patatas empapadas en salsa española casera.",
+      "proporciones": "Carbohidratos densos y proteína de alto valor biológico + 1 batido de proteína en la merienda."
+    },
+    "seguridad_medica": "100% comida real; cero picante; cebolla pochada y triturada; libre de berenjena, aceitunas y coles de Bruselas.",
+    "pasos_preparacion": [
+      "Mezclar la carne picada de vacuno con ajo picado, perejil y sal yodada. Formar bolitas de albóndigas.",
+      "Dorar las albóndigas en horno a 200°C 12 min o en sartén con un chorrito de AOVE para sellarlas.",
+      "En cazuela, pochar puerro, zanahoria y cebolla dulce hasta que estén muy tiernos; añadir tomate triturado y un poco de caldo o agua.",
+      "Triturar la salsa con batidora hasta textura homogénea y sedosa.",
+      "Incorporar las albóndigas doradas y las patatas en dados a la salsa, y cocer a fuego suave 15 minutos.",
+      "Conservar en tuppers de cristal para el microondas del trabajo."
+    ]
+  },
+  {
+    "id": "garbanzos_salteados_espinacas_jamon_huevo",
+    "nombre": "Salteado castellano de garbanzos con espinacas baby, taquitos de jamón y huevo campero",
+    "tipo": "comida",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Tupper Batch Cooking (recalentar 3 min microondas)",
+    "ingredientes": [
+      {
+        "item": "Garbanzos cocidos en tarro",
+        "cantidad": "400g escurridos",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Espinacas baby lavadas",
+        "cantidad": "100g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Taquitos de jamón curado",
+        "cantidad": "75g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Huevos camperos cocidos",
+        "cantidad": "2 unidades",
+        "seccion": "Huevos, leche y mantequilla"
+      },
+      {
+        "item": "Dientes de ajo laminados",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimentón dulce de la Vera, sal yodada y AOVE",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Garbanzos salteados con ajo dorado, espinacas tiernas cocinadas, jamón crujiente y huevo campero picado.",
+      "proporciones": "Legumbre noble y proteína animal de comida real (~34g de proteína total). Sin cebolla cruda ni suplementos sintéticos."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Plato hondo colmado de garbanzos con espinacas cocinadas térmicamente, jamón y huevo campero.",
+      "proporciones": "Yodo y selenio del huevo campero, fibra soluble suave y carbohidratos complejos + 1 batido proteico en la merienda."
+    },
+    "seguridad_medica": "Espinacas cocinadas térmicamente en el salteado; cero picante (pimentón dulce); libre de marisco, coles de Bruselas y berenjena.",
+    "pasos_preparacion": [
+      "En sartén amplia, dorar los ajos laminados en 2 cucharadas de AOVE.",
+      "Añadir los taquitos de jamón salteando 1 minuto a fuego medio.",
+      "Incorporar las espinacas baby y saltear 2 minutos hasta que reduzcan y queden tiernas.",
+      "Añadir una cucharadita de pimentón dulce de la Vera fuera del fuego para que no amargue.",
+      "Agregar los garbanzos cocidos lavados y escurridos, saltear todo junto 3-4 minutos para integrar sabores.",
+      "Servir coronado con los huevos camperos cocidos cortados en cuartos."
+    ]
+  },
+  {
+    "id": "espaguetis_tomate_casero_bacon",
+    "nombre": "Espaguetis con salsa casera de tomate, orégano y bacon crujiente",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (15 min)",
+    "ingredientes": [
+      {
+        "item": "Espaguetis",
+        "cantidad": "220g total",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Tomate frito o triturado casero",
+        "cantidad": "250g",
+        "seccion": "Conservas, caldos y cremas"
+      },
+      {
+        "item": "Bacon en tiras dorado",
+        "cantidad": "100g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Queso suave tierno rallado (opcional)",
+        "cantidad": "30g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Orégano, sal yodada y AOVE",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "100g de espaguetis al dente con salsa de tomate casero suave, bacon crujiente dorado a fuego medio y orégano.",
+      "proporciones": "Carbohidrato limpio con proteína de bacon noble. Sin quesos fuertes ni cebolla cruda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "120-130g de espaguetis bien bañados en salsa de tomate, bacon y toque de queso suave rallado.",
+      "proporciones": "Cena reconfortante de densidad calórica + 1 batido de proteína pautado a media tarde."
+    },
+    "seguridad_medica": "Cero quesos fuertes (sin queso azul ni cabra); cero picante; libre de berenjena y aceitunas.",
+    "pasos_preparacion": [
+      "Cocer los espaguetis en abundante agua con sal yodada siguiendo el tiempo del paquete hasta dejarlos al dente.",
+      "En una sartén sin aceite añadido, dorar las tiras de bacon a fuego medio hasta que suelten su grasa y queden crujientes.",
+      "Añadir la salsa de tomate casera y una pizca de orégano a la sartén con el bacon, dejando reducir 3 minutos.",
+      "Escurrir la pasta e integrarla directamente en la sartén con la salsa durante 1 minuto a fuego vivo.",
+      "Servir caliente con un toque opcional de queso suave tierno rallado."
+    ]
   }
 ]

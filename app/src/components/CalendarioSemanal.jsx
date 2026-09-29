@@ -102,16 +102,18 @@ export default function CalendarioSemanal({ menuData, recetarioData, onSelectRec
                       {diaItem.comida.origen}
                     </span>
                   </div>
-                  <button
-                    onClick={() => {
-                      const rec = getRecetaDetalle(diaItem.comida.receta_id);
-                      if (rec) onSelectReceta(rec);
-                    }}
-                    className="text-xs font-semibold text-emerald-700 hover:text-emerald-800 inline-flex items-center gap-0.5"
-                  >
-                    Ver receta
-                    <ChevronRight className="w-3.5 h-3.5" />
-                  </button>
+                  {diaItem.comida.receta_id && (
+                    <button
+                      onClick={() => {
+                        const rec = getRecetaDetalle(diaItem.comida.receta_id);
+                        if (rec) onSelectReceta(rec);
+                      }}
+                      className="text-xs font-semibold text-emerald-700 hover:text-emerald-800 inline-flex items-center gap-0.5"
+                    >
+                      Ver receta
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
+                  )}
                 </div>
 
                 <h3 className="font-bold text-slate-900 text-sm sm:text-base leading-snug mb-3">
@@ -168,16 +170,18 @@ export default function CalendarioSemanal({ menuData, recetarioData, onSelectRec
                       {diaItem.cena.origen}
                     </span>
                   </div>
-                  <button
-                    onClick={() => {
-                      const rec = getRecetaDetalle(diaItem.cena.receta_id);
-                      if (rec) onSelectReceta(rec);
-                    }}
-                    className="text-xs font-semibold text-emerald-700 hover:text-emerald-800 inline-flex items-center gap-0.5"
-                  >
-                    Ver receta
-                    <ChevronRight className="w-3.5 h-3.5" />
-                  </button>
+                  {diaItem.cena.receta_id && (
+                    <button
+                      onClick={() => {
+                        const rec = getRecetaDetalle(diaItem.cena.receta_id);
+                        if (rec) onSelectReceta(rec);
+                      }}
+                      className="text-xs font-semibold text-emerald-700 hover:text-emerald-800 inline-flex items-center gap-0.5"
+                    >
+                      Ver receta
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
+                  )}
                 </div>
 
                 <h3 className="font-bold text-slate-900 text-sm sm:text-base leading-snug mb-3">
