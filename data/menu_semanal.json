@@ -1,197 +1,204 @@
 {
-  "semana": "Semana Adaptada: Cierre de Semana (Martes 29/09 a Sábado 03/10)",
-  "fecha_inicio": "2026-09-26",
-  "ciclo_semanal": "Martes 29/09 a Sábado 03/10 (Días previos pasados, cenas de fin de semana fuera)",
-  "objetivo_semana": "Planificación precisa para los días restantes con 0 desperdicio: platos reconfortantes nuevos para tupper (albóndigas caseras en salsa y garbanzos salteados con jamón), cenas rápidas y cenas de viernes y sábado fuera.",
+  "semana": "Semana 3: Menú Semanal con Lote Doble de Legumbres y Batch Cooking Inteligente",
+  "fecha_inicio": "2026-10-03",
+  "ciclo_semanal": "Sábado 03/10 a Viernes 09/10 (Arranque de fin de semana con cenas y comidas fuera estratégicas)",
+  "objetivo_semana": "Potente presencia de legumbres reconfortantes (lentejas, alubias verdes y garbanzos) con triple reutilización en Batch Cooking (cocina 1 vez, come 2 o 3), cenas rápidas entre semana y pizza casera el viernes.",
   "batch_cooking_domingo": {
-    "duracion_estimada_minutos": 45,
-    "resumen": "Sesión express de entre semana (45 min) para dejar cocinados los tuppers de albóndigas y bases de arroz y huevos.",
+    "duracion_estimada_minutos": 75,
+    "resumen": "Sesión estratégica de domingo tarde (~75 min) basada en triple reutilización: 1 olla doble de lentejas (resuelve Lunes y Miércoles), 1 lote de arrocera (resuelve Onigiris y Arroz salteado viernes), y tanda de huevos cocidos (resuelve Martes y Jueves).",
     "equipamiento": [
-      "1 cazuela para albóndigas en salsa española",
-      "Arrocera eléctrica para arroz de onigiris y salteado",
-      "1 cazo para cocer huevos camperos",
-      "4 recipientes herméticos de cristal"
+      "1 olla grande para el lote doble de guiso de lentejas pardinas",
+      "1 olla mediana para hervir alubias verdes con patatas",
+      "1 cazo para cocer 4 huevos camperos",
+      "Arrocera eléctrica para lote base de arroz blanco",
+      "1 sartén amplia para tiras de pollo y pimientos salteados de las fajitas",
+      "6 recipientes herméticos de cristal para tuppers"
     ],
     "cronograma_pasos": [
       {
         "orden": 1,
-        "tiempo": "00:00 - 00:20",
-        "accion": "Formar las albóndigas de ternera sazonadas con ajo y perejil; sellarlas en sartén con unas gotas de AOVE o al horno a 200°C 12 min."
+        "tiempo": "00:00 - 00:35",
+        "accion": "La Olla Grande Doble de Lentejas: Pochar cebolla dulce y puerro en AOVE hasta que estén muy tiernos; dorar dados de magro de cerdo con pimentón dulce, incorporar patatas chascadas, zanahorias y 350g de lentejas pardinas. Cubrir con agua y cocer 35 min a fuego suave. Dividir a partes iguales en tuppers: mitad para el Lunes y mitad para el Miércoles."
       },
       {
         "orden": 2,
         "tiempo": "00:15 - 00:35",
-        "accion": "Pochar puerro, zanahoria y cebolla dulce; triturar fina la salsa española con un toque de caldo, incorporar las albóndigas y patatas en dados y cocinar 15 min a fuego suave (Comida Miércoles)."
+        "accion": "Arrocera eléctrica (Lote base de Arroz): Cocer 300g de arroz blanco en la arrocera con sal yodada. Dejar enfriar extendido con unas gotas de AOVE para que el grano quede suelto. Base lista para los Onigiris del miércoles noche y el Arroz salteado del viernes comida."
       },
       {
         "orden": 3,
-        "tiempo": "00:20 - 00:40",
-        "accion": "Arrocera: Cocinar 250g de arroz en arrocera con sal yodada para los onigiris del miércoles noche y el arroz salteado del viernes. En paralelo, cocer 4 huevos camperos en cazo durante 10 min."
+        "tiempo": "00:30 - 00:55",
+        "accion": "Olla de Alubias verdes y Cazo de Huevos: Hervir judías verdes limpias con patata y zanahoria 20 min para el tupper del Martes. En cazo paralelo, cocer 4 huevos camperos durante 10 min (2 para las alubias del martes y 2 para los garbanzos del jueves)."
       },
       {
         "orden": 4,
-        "tiempo": "00:40 - 00:45",
-        "accion": "Envasar el tupper de albóndigas en salsa española y refrigerar el arroz y los huevos cocidos en recipientes herméticos de cristal a 4°C."
+        "tiempo": "00:55 - 01:10",
+        "accion": "Preparación de Cena Domingo: En sartén amplia, dorar tiras de pechuga de pollo sazonadas y saltear pimientos rojo y verde en tiras con cebolla dulce pochada. Dejar listo para montar las fajitas al momento con aguacate fresco."
+      },
+      {
+        "orden": 5,
+        "tiempo": "01:10 - 01:15",
+        "accion": "Envasado hermético y refrigeración: Guardar los tuppers de lentejas (Lunes y Miércoles), las alubias verdes, los huevos cocidos y el arroz en recipientes herméticos de cristal a 4°C."
       }
     ],
     "conservacion": "Los recipientes de cristal mantienen la jugosidad perfecta para calentar en el microondas del trabajo en solo 3 minutos."
   },
   "dias": [
     {
-      "dia": "Sábado (26/09)",
+      "dia": "Sábado (03/10)",
       "comida": {
-        "receta_id": null,
-        "nombre": "Día pasado / no planificado",
-        "origen": "Semana anterior",
-        "tiempo_preparacion": "—",
+        "receta_id": "salmon_plancha_pure_patata_zanahorias",
+        "nombre": "Lomos de salmón fresco a la plancha con puré rústico y zanahorias asadas",
+        "origen": "Cocina fresca de fin de semana (20 min) - Ligera antes de la cena fuera",
+        "tiempo_preparacion": "20 min",
         "adaptacion_lord_i": {
-          "porcion": "Día pasado",
-          "detalles": "",
-          "volumen_macros": "—"
+          "porcion": "Lomo de salmón de 200g con piel crujiente, puré con AOVE y zanahorias asadas. Sin cebolla cruda.",
+          "detalles": "Aporte antiinflamatorio de Omega-3 para la salud renal. Sin batidos ni suplementos.",
+          "volumen_macros": "1/4 salmón, 1/4 puré de patata, 1/2 zanahorias asadas."
         },
         "adaptacion_dona_y": {
-          "porcion": "Día pasado",
-          "detalles": "",
-          "suplementacion": ""
+          "porcion": "Lomo de salmón de 180g con puré de patata abundante",
+          "detalles": "Yodo y Selenio clave para la tiroides con pescado de máxima frescura.",
+          "suplementacion": "1 batido de proteína en la merienda."
         }
       },
       "cena": {
         "receta_id": null,
-        "nombre": "Día pasado / no planificado",
-        "origen": "Semana anterior",
-        "tiempo_preparacion": "—",
+        "nombre": "🎉 Cena fuera de casa (Hamburguesas con amigos / Ocio)",
+        "origen": "Plan social fuera de casa",
+        "tiempo_preparacion": "0 min",
         "adaptacion_lord_i": {
-          "porcion": "Día pasado",
-          "detalles": "",
-          "volumen_macros": "—"
+          "porcion": "Hamburguesa en restaurante a elección",
+          "detalles": "Priorizar queso tierno/suave y sin cebolla cruda.",
+          "volumen_macros": "Cena de ocio libre."
         },
         "adaptacion_dona_y": {
-          "porcion": "Día pasado",
-          "detalles": "",
-          "suplementacion": ""
+          "porcion": "Hamburguesa completa a elección",
+          "detalles": "Disfrutar de la velada de sábado.",
+          "suplementacion": "Batido tomado por la tarde."
         }
       }
     },
     {
-      "dia": "Domingo (27/09)",
+      "dia": "Domingo (04/10)",
       "comida": {
         "receta_id": null,
-        "nombre": "Día pasado / no planificado",
-        "origen": "Semana anterior",
-        "tiempo_preparacion": "—",
+        "nombre": "🎉 Comida fuera de casa (Restaurante con familia / amigos)",
+        "origen": "Plan social fuera de casa",
+        "tiempo_preparacion": "0 min",
         "adaptacion_lord_i": {
-          "porcion": "Día pasado",
-          "detalles": "",
-          "volumen_macros": "—"
+          "porcion": "Comida fuera a elección",
+          "detalles": "Sin quesos fuertes y sin cebolla cruda.",
+          "volumen_macros": "Comida social libre."
         },
         "adaptacion_dona_y": {
-          "porcion": "Día pasado",
-          "detalles": "",
-          "suplementacion": ""
+          "porcion": "Comida fuera a elección",
+          "detalles": "Disfrutar de la comida familiar.",
+          "suplementacion": "Batido pautado."
         }
       },
       "cena": {
-        "receta_id": null,
-        "nombre": "Día pasado / no planificado",
-        "origen": "Semana anterior",
-        "tiempo_preparacion": "—",
+        "receta_id": "fajitas_suaves_pollo_pimientos",
+        "nombre": "Fajitas suaves de pollo con pimientos salteados y aguacate",
+        "origen": "Cocina rápida al momento (15 min) - Pedido especial de domingo noche",
+        "tiempo_preparacion": "15 min",
         "adaptacion_lord_i": {
-          "porcion": "Día pasado",
-          "detalles": "",
-          "volumen_macros": "—"
+          "porcion": "2 tortillas de trigo rellenas con tiras de pollo doradas, pimientos salteados y aguacate",
+          "detalles": "Cebolla y pimientos pochados a fuego vivo en sartén (sin cebolla cruda). Cero picante.",
+          "volumen_macros": "Proteína abundante de pechuga a la plancha de comida real (~34g)."
         },
         "adaptacion_dona_y": {
-          "porcion": "Día pasado",
-          "detalles": "",
-          "suplementacion": ""
+          "porcion": "3 tortillas de trigo bien cargadas con pollo, aguacate y mayonesa suave",
+          "detalles": "Grasas saludables y densidad calórica para cerrar el fin de semana.",
+          "suplementacion": "Completado con fruta fresca."
         }
       }
     },
     {
-      "dia": "Lunes (28/09)",
+      "dia": "Lunes (05/10)",
       "comida": {
-        "receta_id": null,
-        "nombre": "Día pasado / no planificado",
-        "origen": "Semana anterior",
-        "tiempo_preparacion": "—",
+        "receta_id": "guiso_lentejas_verduras",
+        "nombre": "Guiso de lentejas pardinas con magro de cerdo y verduras (Ración 1)",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas) - Lote doble dominical",
+        "tiempo_preparacion": "3 min",
         "adaptacion_lord_i": {
-          "porcion": "Día pasado",
-          "detalles": "",
-          "volumen_macros": "—"
+          "porcion": "1 plato hondo estándar bien caliente con magro de cerdo, lentejas y verduras",
+          "detalles": "Cebolla perfectamente pochada y deshecha (sin cebolla cruda). Proteína vegetal y magro de comida real (~32g).",
+          "volumen_macros": "1/4 magro, 1/4 lentejas/patata, 1/2 verdura y caldo."
         },
         "adaptacion_dona_y": {
-          "porcion": "Día pasado",
-          "detalles": "",
-          "suplementacion": ""
+          "porcion": "1 plato hondo generoso con trozos extra de patata cocida",
+          "detalles": "Mayor volumen de carbohidratos para superávit calórico magro.",
+          "suplementacion": "1 batido de proteína a media tarde."
         }
       },
       "cena": {
-        "receta_id": null,
-        "nombre": "Día pasado / no planificado",
-        "origen": "Semana anterior",
-        "tiempo_preparacion": "—",
+        "receta_id": "tortilla_patata_cebolla_confitada",
+        "nombre": "Tortilla de patatas casera con cebolla confitada y ensalada suave de tomate y atún",
+        "origen": "Cena clásica reconfortante (20 min)",
+        "tiempo_preparacion": "20 min",
         "adaptacion_lord_i": {
-          "porcion": "Día pasado",
-          "detalles": "",
-          "volumen_macros": "—"
+          "porcion": "Generosa porción de tortilla jugosa con cebolla muy pochada y ensalada de tomate con atún",
+          "detalles": "Cebolla 100% caramelizada a fuego lento (sin cebolla cruda en ensalada). Sin suplementos.",
+          "volumen_macros": "Proteína de huevos camperos y atún claro (~30g)."
         },
         "adaptacion_dona_y": {
-          "porcion": "Día pasado",
-          "detalles": "",
-          "suplementacion": ""
+          "porcion": "Ración amplia de tortilla con ensalada de tomate, atún y tostas crujientes",
+          "detalles": "Yodo y selenio del huevo campero y atún para la función tiroidea.",
+          "suplementacion": "Infusión digestiva relajante."
         }
       }
     },
     {
-      "dia": "Martes (29/09)",
+      "dia": "Martes (06/10)",
       "comida": {
-        "receta_id": null,
-        "nombre": "Comida ya realizada / no planificada",
-        "origen": "Día en curso",
-        "tiempo_preparacion": "—",
+        "receta_id": "alubias_verdes_patata_zanahoria_huevo",
+        "nombre": "Alubia verde tierna con patatas, zanahorias y huevos camperos cocidos al AOVE y vinagre",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "tiempo_preparacion": "3 min",
         "adaptacion_lord_i": {
-          "porcion": "Comida ya realizada",
-          "detalles": "",
-          "volumen_macros": "—"
+          "porcion": "Alubias verdes con patatas y 2 huevos cocidos picados con buen chorro de AOVE y vinagre",
+          "detalles": "Cebolla cocida en el hervor (sin cebolla cruda). Proteína de huevo campero de alto valor biológico (~26g).",
+          "volumen_macros": "Fibra soluble suave, digestión limpia y óptima."
         },
         "adaptacion_dona_y": {
-          "porcion": "Comida ya realizada",
-          "detalles": "",
-          "suplementacion": ""
+          "porcion": "Ración generosa con patatas bien chafadas con tenedor y AOVE abundante",
+          "detalles": "Uno de los platos tradicionales favoritos de Doña.Y.",
+          "suplementacion": "1 batido de proteína en la merienda."
         }
       },
       "cena": {
         "receta_id": "filetes_dorados_sarten_acero_guarnicion",
-        "nombre": "Filetes dorados a la sartén de acero con guarnición suave",
-        "origen": "Cocina rápida al momento (12 min) - Ingredientes ya disponibles en casa",
+        "nombre": "Filetes dorados a la sartén de acero con pimientos dulces asados",
+        "origen": "Cocina rápida al momento (12 min)",
         "tiempo_preparacion": "12 min",
         "adaptacion_lord_i": {
           "porcion": "2 filetes (~180g) sellados a fuego vivo en sartén de acero con costra dorada sabrosa y AOVE",
           "detalles": "Sabores salados e intensos. Sin cebolla cruda. Cero suplementos sintéticos.",
-          "volumen_macros": "Proteína noble de comida real (~34g) y digestión ligera."
+          "volumen_macros": "Proteína noble de carne de comida real (~34g)."
         },
         "adaptacion_dona_y": {
-          "porcion": "Filetes tiernos a la plancha con tostas crujientes o guarnición de patata",
+          "porcion": "Filetes tiernos a la plancha con pimientos dulces y tostas crujientes de pan",
           "detalles": "Aporte limpio de densidad nutricional magra.",
-          "suplementacion": "1 batido de proteína pautado a media tarde."
+          "suplementacion": "Fruta fresca de temporada."
         }
       }
     },
     {
-      "dia": "Miércoles (30/09)",
+      "dia": "Miércoles (07/10)",
       "comida": {
-        "receta_id": "albondigas_caseras_ternera_salsa_espanola",
-        "nombre": "Albóndigas caseras de ternera 100% en salsa española tradicional con patatas",
-        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "receta_id": "guiso_lentejas_verduras",
+        "nombre": "Guiso de lentejas pardinas con magro de cerdo y verduras (Ración 2 - Lote domingo)",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas) - ¡0 minutos de cocina!",
         "tiempo_preparacion": "3 min",
         "adaptacion_lord_i": {
-          "porcion": "5-6 albóndigas de ternera caseras con dados de patata y salsa española casera",
-          "detalles": "Cebolla totalmente pochada y triturada fina en la salsa (sin cebolla cruda). Ternera 100% noble.",
-          "volumen_macros": "Proteína real limpia (~32g) y hierro bioasimilable."
+          "porcion": "1 plato hondo caliente con magro tierno y lentejas con sabor aún más asentado",
+          "detalles": "Cebolla totalmente deshecha (sin cebolla cruda). Proteína vegetal y animal de comida real (~32g).",
+          "volumen_macros": "1/4 magro, 1/4 lentejas/patata, 1/2 verdura y caldo."
         },
         "adaptacion_dona_y": {
-          "porcion": "Albóndigas tiernas con ración colmada de patatas empapadas en salsa española",
-          "detalles": "Carbohidratos complejos y proteína de alto valor biológico.",
+          "porcion": "1 plato hondo generoso con patata cocida y caldo sabroso",
+          "detalles": "Energía sostenida en mitad de la semana laboral.",
           "suplementacion": "1 batido de proteína en la merienda."
         }
       },
@@ -203,61 +210,61 @@
         "adaptacion_lord_i": {
           "porcion": "3 triángulos grandes de onigiri rellenos con atún claro, mayonesa y toque de soja",
           "detalles": "Semillas de sésamo tostado. Cero cebolla cruda ni picante.",
-          "volumen_macros": "Carbohidrato limpio y proteína de pescado azul."
+          "volumen_macros": "Carbohidrato limpio y proteína de pescado azul (~25g)."
         },
         "adaptacion_dona_y": {
           "porcion": "3-4 onigiris bien rellenos de atún-mayonesa con toque de sésamo",
           "detalles": "Cena divertida, sabrosa y sin esfuerzo de sartenes.",
-          "suplementacion": "Fruta fresca de temporada de postre."
+          "suplementacion": "Fruta fresca de postre."
         }
       }
     },
     {
-      "dia": "Jueves (01/10)",
+      "dia": "Jueves (08/10)",
       "comida": {
         "receta_id": "garbanzos_salteados_espinacas_jamon_huevo",
         "nombre": "Salteado castellano de garbanzos con espinacas baby, taquitos de jamón y huevo campero",
         "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
         "tiempo_preparacion": "3 min",
         "adaptacion_lord_i": {
-          "porcion": "Garbanzos salteados con ajo dorado, espinacas cocinadas, jamón tostado y huevo picado",
-          "detalles": "Cero cebolla cruda. Pimentón dulce suave sin picante. Proteína vegetal y animal de comida real.",
-          "volumen_macros": "Legumbre entera que no se apelmaza en tupper (~34g de proteína)."
+          "porcion": "Garbanzos salteados con ajo dorado, espinacas cocinadas, jamón crujiente y huevo cocido picado",
+          "detalles": "Sin cebolla cruda. Pimentón dulce sin picante. Proteína vegetal y animal de comida real (~34g).",
+          "volumen_macros": "Legumbre entera de textura firme que no se apelmaza en tupper."
         },
         "adaptacion_dona_y": {
-          "porcion": "Plato hondo colmado de garbanzos con espinacas tiernas cocinadas, jamón y huevo campero",
+          "porcion": "Plato hondo colmado de garbanzos con espinacas cocinadas térmicamente, jamón y huevo campero",
           "detalles": "Selenio y yodo del huevo campero, hojas cocinadas seguras para tiroides.",
           "suplementacion": "1 batido de proteína en la merienda."
         }
       },
       "cena": {
-        "receta_id": "espaguetis_tomate_casero_bacon",
-        "nombre": "Espaguetis con salsa casera de tomate, orégano y bacon crujiente",
-        "origen": "Cena reconfortante de entre semana (15 min) - Ingredientes ya disponibles en casa",
-        "tiempo_preparacion": "15 min",
+        "receta_id": "sandwiches_calientes_jamon_queso_tierno",
+        "nombre": "Sándwiches calientes gourmet de jamón cocido extra, queso tierno fundido y orégano",
+        "origen": "Cena rápida entre semana (tostadora o sartén 10 min)",
+        "tiempo_preparacion": "10 min",
         "adaptacion_lord_i": {
-          "porcion": "100g de espaguetis al dente con salsa de tomate casero, tiras de bacon doradas y orégano",
-          "detalles": "Sin quesos fuertes (toque opcional de queso tierno suave). Sin cebolla cruda.",
-          "volumen_macros": "Carbohidrato limpio y proteína sabrosa de comida real."
+          "porcion": "2 sándwiches calientes en pan tostado con jamón cocido extra, queso tierno fundido y orégano",
+          "detalles": "Acompañados de rodajas de tomate aliñadas con AOVE. Sin quesos fuertes y sin cebolla cruda.",
+          "volumen_macros": "Proteína noble de jamón y queso tierno suave (~28g)."
         },
         "adaptacion_dona_y": {
-          "porcion": "120-130g de espaguetis con abundante salsa de tomate casero, bacon crujiente y queso suave rallado",
-          "detalles": "Densidad calórica limpia para superávit controlado.",
-          "suplementacion": "Infusión relajante digestiva."
+          "porcion": "2 sándwiches calientes bien rellenos de jamón y queso fundido con toque de mayonesa suave",
+          "detalles": "Cena rápida y reconfortante antes del cierre de semana.",
+          "suplementacion": "Infusión relajante."
         }
       }
     },
     {
-      "dia": "Viernes (02/10)",
+      "dia": "Viernes (09/10)",
       "comida": {
         "receta_id": "arroz_asiatico_salteado_pollo",
-        "nombre": "Arroz salteado asiático con dados de pollo, verduras y huevo revuelto",
+        "nombre": "Arroz salteado asiático con contramuslos de pollo, verduras y huevo revuelto",
         "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
         "tiempo_preparacion": "3 min",
         "adaptacion_lord_i": {
-          "porcion": "Arroz salteado suelto con dados dorados de pechuga de pollo, puerro, zanahoria y 2 huevos revueltos",
+          "porcion": "Arroz salteado suelto con dados dorados de pollo, puerro, zanahoria y 2 huevos revueltos",
           "detalles": "Toque de soja baja en sal. Cero cebolla cruda. Cierre de semana laboral sabroso.",
-          "volumen_macros": "Proteína completa de pollo y huevo campero con arroz suelto."
+          "volumen_macros": "Proteína completa de pollo y huevo campero con arroz suelto (~34g)."
         },
         "adaptacion_dona_y": {
           "porcion": "Ración colmada de arroz salteado sabroso con dados de pollo y huevo revuelto",
@@ -266,54 +273,19 @@
         }
       },
       "cena": {
-        "receta_id": null,
-        "nombre": "🎉 Cena fuera de ocio (Restaurante con amigos)",
-        "origen": "Plan social fuera de casa",
-        "tiempo_preparacion": "0 min",
+        "receta_id": "pizza_casera_artesanal",
+        "nombre": "Pizza casera artesanal de pollo, jamón cocido extra y mozzarella suave",
+        "origen": "Cocina disfrutona de viernes noche elaborada por Lord.I (35 min)",
+        "tiempo_preparacion": "35 min",
         "adaptacion_lord_i": {
-          "porcion": "Elección libre en restaurante",
-          "detalles": "Priorizar carnes o pescados sin queso fuerte y sin cebolla cruda.",
-          "volumen_macros": "Cena social libre."
+          "porcion": "Media pizza de masa crujiente con tomate, champiñones, jamón cocido extra, pollo y mozzarella suave",
+          "detalles": "Mozzarella suave de vaca (cero queso fuerte, azul o cabra). Cero berenjena y cero aceitunas. Sin cebolla cruda.",
+          "volumen_macros": "Cena casera 100% noble celebrando el inicio del fin de semana."
         },
         "adaptacion_dona_y": {
-          "porcion": "Elección libre en restaurante",
-          "detalles": "Disfrutar de la velada.",
-          "suplementacion": "Batido tomado por la tarde."
-        }
-      }
-    },
-    {
-      "dia": "Sábado (03/10)",
-      "comida": {
-        "receta_id": "salmon_plancha_pure_patata_zanahorias",
-        "nombre": "Lomos de salmón fresco a la plancha con puré rústico y zanahorias asadas",
-        "origen": "Cocina fresca de fin de semana (20 min)",
-        "tiempo_preparacion": "20 min",
-        "adaptacion_lord_i": {
-          "porcion": "Lomo de salmón de 200g con piel crujiente, puré con AOVE y zanahorias asadas",
-          "detalles": "Aporte antiinflamatorio de Omega-3 para la salud renal.",
-          "volumen_macros": "1/4 salmón, 1/4 puré de patata, 1/2 zanahorias asadas."
-        },
-        "adaptacion_dona_y": {
-          "porcion": "Lomo de salmón de 180g con puré de patata abundante",
-          "detalles": "Yodo y Selenio clave para la tiroides con pescado de máxima frescura.",
-          "suplementacion": "1 batido de proteína en la merienda."
-        }
-      },
-      "cena": {
-        "receta_id": null,
-        "nombre": "🎉 Cena fuera de ocio (Restaurante con amigos)",
-        "origen": "Plan social fuera de casa",
-        "tiempo_preparacion": "0 min",
-        "adaptacion_lord_i": {
-          "porcion": "Elección libre en restaurante",
-          "detalles": "Cena de fin de semana relajada sin cocinar.",
-          "volumen_macros": "Cena social libre."
-        },
-        "adaptacion_dona_y": {
-          "porcion": "Elección libre en restaurante",
-          "detalles": "Disfrutar de la velada.",
-          "suplementacion": "Infusión al volver a casa."
+          "porcion": "Media pizza bien cargada de ingredientes y queso suave fundido",
+          "detalles": "Momento gastronómico favorito de fin de semana.",
+          "suplementacion": "Fruta fresca de temporada."
         }
       }
     }

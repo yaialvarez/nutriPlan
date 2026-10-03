@@ -18,7 +18,7 @@ PANTRY_FILE = os.path.join(DATA_DIR, "despensa_base.json")
 LISTA_FILE = os.path.join(DATA_DIR, "lista_compra.json")
 CACHE_FILE = os.path.join(DATA_DIR, "mercadona_catalogo_cache.json")
 
-# Definición precisa de los artículos necesarios para el Cierre de Semana (Martes a Sábado)
+# Definición precisa de los artículos necesarios para Semana 3 (Legumbres y Batch Cooking Inteligente)
 # y sus identificadores o términos clave preferentes en el catálogo de Mercadona
 ITEMS_CONFIG = [
     # --- FRUTA Y VERDURA ---
@@ -26,7 +26,7 @@ ITEMS_CONFIG = [
         "id_preferente": 69586,
         "termino_fallback": "zanahoria",
         "filtro_excluir": ["bebé", "papilla", "tarrina"],
-        "nombre_receta": "Zanahorias (salsa albóndigas, arroz y salmón)",
+        "nombre_receta": "Zanahorias (lentejas, alubias verdes, arroz y salmón)",
         "cantidad": 1,
         "unidad": "malla 1 kg",
         "seccion": "Fruta y verdura"
@@ -35,7 +35,7 @@ ITEMS_CONFIG = [
         "id_preferente": 69166,
         "termino_fallback": "patatas",
         "filtro_excluir": ["fritas", "chispas", "snack"],
-        "nombre_receta": "Patatas para guisar y puré (albóndigas y salmón)",
+        "nombre_receta": "Patatas para guisar y puré (lentejas, tortilla, alubias y salmón)",
         "cantidad": 1,
         "unidad": "malla 3 kg",
         "seccion": "Fruta y verdura"
@@ -44,7 +44,7 @@ ITEMS_CONFIG = [
         "id_preferente": 69411,
         "termino_fallback": "puerro",
         "filtro_excluir": [],
-        "nombre_receta": "Puerros limpios (salsa albóndigas y arroz salteado)",
+        "nombre_receta": "Puerros limpios (lentejas y arroz salteado)",
         "cantidad": 1,
         "unidad": "manojo",
         "seccion": "Fruta y verdura"
@@ -53,9 +53,54 @@ ITEMS_CONFIG = [
         "id_preferente": 69155,
         "termino_fallback": "cebollas dulces",
         "filtro_excluir": ["frita"],
-        "nombre_receta": "Cebollas dulces para pochar (salsa albóndigas)",
+        "nombre_receta": "Cebollas dulces para pochar (lentejas, tortilla y fajitas)",
         "cantidad": 1,
         "unidad": "malla 1 kg",
+        "seccion": "Fruta y verdura"
+    },
+    {
+        "id_preferente": 69310,
+        "termino_fallback": "pimiento rojo",
+        "filtro_excluir": ["asado", "tiras"],
+        "nombre_receta": "Pimiento rojo dulce (fajitas domingo y filetes martes)",
+        "cantidad": 1,
+        "unidad": "unidad / pieza",
+        "seccion": "Fruta y verdura"
+    },
+    {
+        "id_preferente": 69320,
+        "termino_fallback": "pimiento verde",
+        "filtro_excluir": [],
+        "nombre_receta": "Pimiento verde freír (fajitas domingo)",
+        "cantidad": 1,
+        "unidad": "unidad / pieza",
+        "seccion": "Fruta y verdura"
+    },
+    {
+        "id_preferente": 60369,
+        "termino_fallback": "tomate ensalada",
+        "filtro_excluir": ["frito", "triturado"],
+        "nombre_receta": "Tomates ensalada (ensalada tortilla y sándwiches)",
+        "cantidad": 2,
+        "unidad": "piezas",
+        "seccion": "Fruta y verdura"
+    },
+    {
+        "id_preferente": 3830,
+        "termino_fallback": "aguacate",
+        "filtro_excluir": ["salsa", "aceite"],
+        "nombre_receta": "Aguacates en su punto (fajitas domingo)",
+        "cantidad": 2,
+        "unidad": "piezas",
+        "seccion": "Fruta y verdura"
+    },
+    {
+        "id_preferente": 69889,
+        "termino_fallback": "judia verde",
+        "filtro_excluir": [],
+        "nombre_receta": "Judía verde plana tierna (alubias martes)",
+        "cantidad": 1,
+        "unidad": "bolsa 500g",
         "seccion": "Fruta y verdura"
     },
     {
@@ -65,6 +110,15 @@ ITEMS_CONFIG = [
         "nombre_receta": "Espinacas baby lavadas (garbanzos jueves)",
         "cantidad": 1,
         "unidad": "bolsa 100g",
+        "seccion": "Fruta y verdura"
+    },
+    {
+        "id_preferente": 69519,
+        "termino_fallback": "champinon laminado",
+        "filtro_excluir": ["entero"],
+        "nombre_receta": "Champiñones laminados limpios (pizza viernes)",
+        "cantidad": 1,
+        "unidad": "bandeja 250g",
         "seccion": "Fruta y verdura"
     },
     {
@@ -88,21 +142,30 @@ ITEMS_CONFIG = [
 
     # --- CARNICERÍA ---
     {
-        "id_preferente": 2868,
-        "termino_fallback": "carne picada vacuno",
-        "filtro_excluir": ["cerdo", "mixta"],
-        "nombre_receta": "Carne picada de vacuno 100% (albóndigas caseras)",
+        "id_preferente": 2787,
+        "termino_fallback": "filetes pechuga pollo",
+        "filtro_excluir": ["adobada", "empanado"],
+        "nombre_receta": "Filetes pechuga de pollo (fajitas, arroz salteado y pizza)",
+        "cantidad": 2,
+        "unidad": "bandejas (~1 kg total)",
+        "seccion": "Carne"
+    },
+    {
+        "id_preferente": 2813,
+        "termino_fallback": "cerdo a tacos",
+        "filtro_excluir": ["fiambre", "adobado", "embutido", "berenjena"],
+        "nombre_receta": "Magro de cerdo troceado (lote doble lentejas)",
         "cantidad": 1,
         "unidad": "bandeja 400g",
         "seccion": "Carne"
     },
     {
-        "id_preferente": 2787,
-        "termino_fallback": "filetes pechuga pollo",
-        "filtro_excluir": ["adobada", "empanado"],
-        "nombre_receta": "Filetes pechuga de pollo (arroz salteado viernes)",
+        "id_preferente": 2849,
+        "termino_fallback": "filetes lomo cerdo",
+        "filtro_excluir": ["adobado", "empanado"],
+        "nombre_receta": "Filetes de lomo de cerdo extra tiernos (martes cena)",
         "cantidad": 1,
-        "unidad": "bandeja ~500g",
+        "unidad": "bandeja 400g",
         "seccion": "Carne"
     },
 
@@ -122,9 +185,9 @@ ITEMS_CONFIG = [
         "id_preferente": 15768,
         "termino_fallback": "huevos camperas",
         "filtro_excluir": ["chocolate", "sorpresa"],
-        "nombre_receta": "Huevos camperos frescos clase L (garbanzos y arroz salteado)",
-        "cantidad": 1,
-        "unidad": "docena clase L",
+        "nombre_receta": "Huevos camperos frescos clase L (tortilla, alubias, garbanzos y arroz)",
+        "cantidad": 2,
+        "unidad": "docenas clase L",
         "seccion": "Huevos, leche y mantequilla"
     },
 
@@ -133,13 +196,49 @@ ITEMS_CONFIG = [
         "id_preferente": 59071,
         "termino_fallback": "taquitos jamon",
         "filtro_excluir": [],
-        "nombre_receta": "Taquitos de jamón curado (garbanzos salteados)",
+        "nombre_receta": "Taquitos de jamón curado (garbanzos jueves)",
         "cantidad": 1,
         "unidad": "pack taquitos",
         "seccion": "Charcutería y quesos"
     },
+    {
+        "id_preferente": 60329,
+        "termino_fallback": "jamon cocido extra",
+        "filtro_excluir": ["chopped", "lata"],
+        "nombre_receta": "Jamón cocido extra calidad (sándwiches y pizza)",
+        "cantidad": 1,
+        "unidad": "paquete lonchas",
+        "seccion": "Charcutería y quesos"
+    },
+    {
+        "id_preferente": 50916,
+        "termino_fallback": "queso tierno",
+        "filtro_excluir": ["fuerte", "azul", "cabra"],
+        "nombre_receta": "Queso tierno suave en lonchas (sándwiches)",
+        "cantidad": 1,
+        "unidad": "paquete",
+        "seccion": "Charcutería y quesos"
+    },
+    {
+        "id_preferente": 51110,
+        "termino_fallback": "mozzarella pizza",
+        "filtro_excluir": [],
+        "nombre_receta": "Mozzarella suave rallada (pizza viernes)",
+        "cantidad": 1,
+        "unidad": "bolsa 200g",
+        "seccion": "Charcutería y quesos"
+    },
 
     # --- ARROZ, LEGUMBRES Y PASTA ---
+    {
+        "id_preferente": 5330,
+        "termino_fallback": "lenteja pardina",
+        "filtro_excluir": [],
+        "nombre_receta": "Lentejas pardinas Hacendado (lote doble L y X)",
+        "cantidad": 1,
+        "unidad": "paquete 1 kg",
+        "seccion": "Arroz, legumbres y pasta"
+    },
     {
         "id_preferente": 26029,
         "termino_fallback": "garbanzo cocido",
@@ -153,10 +252,39 @@ ITEMS_CONFIG = [
         "id_preferente": 5044,
         "termino_fallback": "arroz redondo",
         "filtro_excluir": [],
-        "nombre_receta": "Arroz blanco para arrocera (onigiris y salteado)",
+        "nombre_receta": "Arroz blanco para arrocera (onigiris y arroz salteado)",
         "cantidad": 1,
         "unidad": "paquete 1 kg",
         "seccion": "Arroz, legumbres y pasta"
+    },
+
+    # --- PANADERÍA Y MASAS ---
+    {
+        "id_preferente": 17567,
+        "termino_fallback": "tortillas de trigo",
+        "filtro_excluir": [],
+        "nombre_receta": "Tortillas de trigo grandes Delibreads (fajitas domingo)",
+        "cantidad": 1,
+        "unidad": "paquete 6-8 uds",
+        "seccion": "Panadería y pastelería"
+    },
+    {
+        "id_preferente": 23359,
+        "termino_fallback": "pan de molde",
+        "filtro_excluir": ["sin gluten"],
+        "nombre_receta": "Pan de molde natural rústico Hacendado (sándwiches)",
+        "cantidad": 1,
+        "unidad": "paquete",
+        "seccion": "Panadería y pastelería"
+    },
+    {
+        "id_preferente": 52454,
+        "termino_fallback": "masa pizza fresca",
+        "filtro_excluir": [],
+        "nombre_receta": "Masa pizza fresca familiar Hacendado (pizza viernes)",
+        "cantidad": 1,
+        "unidad": "paquete 400g",
+        "seccion": "Pizzas y platos preparados"
     },
 
     # --- SALSAS Y CONSERVAS ---
@@ -164,7 +292,7 @@ ITEMS_CONFIG = [
         "id_preferente": 16043,
         "termino_fallback": "tomate triturado",
         "filtro_excluir": ["frito"],
-        "nombre_receta": "Tomate triturado natural (salsa albóndigas)",
+        "nombre_receta": "Tomate triturado natural (pizza viernes)",
         "cantidad": 1,
         "unidad": "bote 400g",
         "seccion": "Conservas, caldos y cremas"
@@ -173,7 +301,7 @@ ITEMS_CONFIG = [
         "id_preferente": 18002,
         "termino_fallback": "atun claro oliva",
         "filtro_excluir": [],
-        "nombre_receta": "Atún claro en aceite de oliva Hacendado (onigiris)",
+        "nombre_receta": "Atún claro en aceite de oliva Hacendado (tortilla y onigiris)",
         "cantidad": 1,
         "unidad": "pack 6 latas",
         "seccion": "Conservas, caldos y cremas"
@@ -182,7 +310,7 @@ ITEMS_CONFIG = [
         "id_preferente": 13406,
         "termino_fallback": "mayonesa",
         "filtro_excluir": ["trufa", "picante", "ligera"],
-        "nombre_receta": "Mayonesa clásica favorita Hacendado",
+        "nombre_receta": "Mayonesa clásica favorita Hacendado (onigiris y sándwiches)",
         "cantidad": 1,
         "unidad": "frasco 450ml",
         "seccion": "Aceite, especias y salsas"
@@ -348,14 +476,12 @@ def generar_lista_compra_mercadona() -> Dict[str, Any]:
 
     resultado = {
         "supermercado": "Mercadona",
-        "semana": "Semana Adaptada: Cierre de Semana (Martes 29/09 a Sábado 03/10)",
+        "semana": "Semana 3: Menú Semanal con Lote Doble de Legumbres y Batch Cooking Inteligente",
         "total_ticket_estimado": ticket_total,
         "moneda": "EUR",
         "total_articulos": len(articulos),
         "pasillos": pasillos_ordenados,
         "despensa_excluida": [
-            "Filetes para cena del martes (stock ya disponible en casa)",
-            "Espaguetis, tomate casero y bacon para cena del jueves (stock ya disponible en casa)",
             "Aceite de oliva virgen extra (AOVE)",
             "Sal yodada",
             "Pimienta negra molida",

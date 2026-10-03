@@ -1400,5 +1400,54 @@
       "Escurrir la pasta e integrarla directamente en la sartén con la salsa durante 1 minuto a fuego vivo.",
       "Servir caliente con un toque opcional de queso suave tierno rallado."
     ]
+  },
+  {
+    "id": "sandwiches_calientes_jamon_queso_tierno",
+    "nombre": "Sándwiches calientes gourmet de jamón cocido extra, queso tierno fundido y orégano",
+    "tipo": "cena",
+    "tiempo_minutos": 10,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (tostadora o sartén 10 min)",
+    "ingredientes": [
+      {
+        "item": "Pan de molde o pan artesanal",
+        "cantidad": "4 rebanadas",
+        "seccion": "Panadería y pastelería"
+      },
+      {
+        "item": "Jamón cocido extra calidad",
+        "cantidad": "100g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Queso tierno suave en lonchas",
+        "cantidad": "80g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Tomates ensalada y lechuga crujiente",
+        "cantidad": "para acompañar",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Orégano, AOVE y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 sándwiches calientes con jamón cocido extra, queso tierno fundido y orégano, acompañados de tomate con AOVE.",
+      "proporciones": "Proteína noble de jamón y queso tierno suave (~28g). Sin quesos fuertes ni cebolla cruda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 sándwiches calientes bien rellenos de jamón y queso tierno fundido con toque de mayonesa suave.",
+      "proporciones": "Cena reconfortante de densidad calórica + 1 batido de proteína en la merienda."
+    },
+    "seguridad_medica": "Cero quesos fuertes (solo queso tierno de vaca); cero picante; libre de berenjena, aceitunas y coles de Bruselas.",
+    "pasos_preparacion": [
+      "Montar los sándwiches colocando capas generosas de jamón cocido extra y lonchas de queso tierno suave con una pizca de orégano.",
+      "Tostar en sandwichera o en sartén con una gota de AOVE a fuego medio hasta que el pan quede dorado y crujiente y el queso fundido.",
+      "Cortar en triángulos y servir caliente acompañado de rodajas de tomate aliñadas con AOVE y sal yodada."
+    ]
   }
 ]
