@@ -1449,5 +1449,62 @@
       "Tostar en sandwichera o en sartén con una gota de AOVE a fuego medio hasta que el pan quede dorado y crujiente y el queso fundido.",
       "Cortar en triángulos y servir caliente acompañado de rodajas de tomate aliñadas con AOVE y sal yodada."
     ]
+  },
+  {
+    "id": "jamoncitos_pollo_asados_con_patatas",
+    "nombre": "Jamoncitos de pollo dorados al horno con patatas panadera y toque de romero",
+    "tipo": "comida",
+    "tiempo_minutos": 45,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (recalentar 3 min tupper en microondas)",
+    "ingredientes": [
+      {
+        "item": "Jamoncitos de pollo (stock congelado en casa)",
+        "cantidad": "4 unidades (2 por persona)",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Patatas medianas",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien asada y tierna)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Dientes de ajo laminados",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Romero, tomillo o pimentón dulce",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 jamoncitos de pollo dorados al horno con patatas panadera tiernas y cebolla dulce asada.",
+      "proporciones": "2 jamoncitos (~32g de proteína de alto valor biológico de comida real, sin suplementos) + patatas panadera asadas con AOVE. Sin cebolla cruda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 jamoncitos de pollo con ración generosa de patatas panadera asadas en su jugo.",
+      "proporciones": "2 jamoncitos de pollo + carbohidratos densos de patata para energía sostenida + 1 batido de proteína en la merienda."
+    },
+    "seguridad_medica": "100% comida real; cero picante; cebolla completamente asada y melosa a fuego lento (sin cebolla cruda); libre de berenjena, aceitunas y coles de Bruselas.",
+    "pasos_preparacion": [
+      "Descongelar previamente los 4 jamoncitos de pollo en la nevera la víspera.",
+      "Pelar las patatas y cortarlas en rodajas tipo panadera (~0,5 cm). Cortar la cebolla dulce en juliana fina y laminar los ajos.",
+      "En una bandeja de horno, disponer una cama con las patatas, la cebolla dulce y el ajo, regar con AOVE, sal yodada, pimentón dulce y romero.",
+      "Colocar los 4 jamoncitos de pollo encima, sazonar con hierbas y un hilo de AOVE.",
+      "Hornear a 190°C durante 40-45 minutos hasta que la carne esté tierna, el pollo dorado y las patatas melosas.",
+      "Distribuir en dos tuppers herméticos de cristal para el jueves: 2 jamoncitos por tupper con su ración de patatas panadera y jugo."
+    ]
   }
 ]

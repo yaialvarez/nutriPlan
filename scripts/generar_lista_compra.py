@@ -35,7 +35,7 @@ ITEMS_CONFIG = [
         "id_preferente": 69166,
         "termino_fallback": "patatas",
         "filtro_excluir": ["fritas", "chispas", "snack"],
-        "nombre_receta": "Patatas para guisar y puré (lentejas, tortilla, alubias y salmón)",
+        "nombre_receta": "Patatas para guisar, asar y puré (lentejas, alubias, jamoncitos y salmón)",
         "cantidad": 1,
         "unidad": "malla 3 kg",
         "seccion": "Fruta y verdura"
@@ -53,7 +53,7 @@ ITEMS_CONFIG = [
         "id_preferente": 69155,
         "termino_fallback": "cebollas dulces",
         "filtro_excluir": ["frita"],
-        "nombre_receta": "Cebollas dulces para pochar (lentejas, tortilla y fajitas)",
+        "nombre_receta": "Cebollas dulces para pochar y asar (lentejas, tortilla, fajitas y jamoncitos)",
         "cantidad": 1,
         "unidad": "malla 1 kg",
         "seccion": "Fruta y verdura"
@@ -101,15 +101,6 @@ ITEMS_CONFIG = [
         "nombre_receta": "Judía verde plana tierna (alubias martes)",
         "cantidad": 1,
         "unidad": "bolsa 500g",
-        "seccion": "Fruta y verdura"
-    },
-    {
-        "id_preferente": 69984,
-        "termino_fallback": "espinaca",
-        "filtro_excluir": [],
-        "nombre_receta": "Espinacas baby lavadas (garbanzos jueves)",
-        "cantidad": 1,
-        "unidad": "bolsa 100g",
         "seccion": "Fruta y verdura"
     },
     {
@@ -185,22 +176,13 @@ ITEMS_CONFIG = [
         "id_preferente": 15768,
         "termino_fallback": "huevos camperas",
         "filtro_excluir": ["chocolate", "sorpresa"],
-        "nombre_receta": "Huevos camperos frescos clase L (tortilla, alubias, garbanzos y arroz)",
-        "cantidad": 2,
-        "unidad": "docenas clase L",
+        "nombre_receta": "Huevos camperos frescos clase L (tortilla, alubias y arroz)",
+        "cantidad": 1,
+        "unidad": "docena clase L",
         "seccion": "Huevos, leche y mantequilla"
     },
 
     # --- CHARCUTERÍA Y QUESOS SUAVES ---
-    {
-        "id_preferente": 59071,
-        "termino_fallback": "taquitos jamon",
-        "filtro_excluir": [],
-        "nombre_receta": "Taquitos de jamón curado (garbanzos jueves)",
-        "cantidad": 1,
-        "unidad": "pack taquitos",
-        "seccion": "Charcutería y quesos"
-    },
     {
         "id_preferente": 60329,
         "termino_fallback": "jamon cocido extra",
@@ -237,15 +219,6 @@ ITEMS_CONFIG = [
         "nombre_receta": "Lentejas pardinas Hacendado (lote doble L y X)",
         "cantidad": 1,
         "unidad": "paquete 1 kg",
-        "seccion": "Arroz, legumbres y pasta"
-    },
-    {
-        "id_preferente": 26029,
-        "termino_fallback": "garbanzo cocido",
-        "filtro_excluir": [],
-        "nombre_receta": "Garbanzo cocido Hacendado (garbanzos jueves)",
-        "cantidad": 1,
-        "unidad": "tarro 400g",
         "seccion": "Arroz, legumbres y pasta"
     },
     {
@@ -482,6 +455,7 @@ def generar_lista_compra_mercadona() -> Dict[str, Any]:
         "total_articulos": len(articulos),
         "pasillos": pasillos_ordenados,
         "despensa_excluida": [
+            "Jamoncitos de pollo (4 unidades - stock congelado en casa)",
             "Aceite de oliva virgen extra (AOVE)",
             "Sal yodada",
             "Pimienta negra molida",

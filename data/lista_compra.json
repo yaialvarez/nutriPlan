@@ -1,13 +1,13 @@
 {
   "supermercado": "Mercadona",
   "semana": "Semana 3: Menú Semanal con Lote Doble de Legumbres y Batch Cooking Inteligente",
-  "total_ticket_estimado": 82.82,
+  "total_ticket_estimado": 74.87,
   "moneda": "EUR",
-  "total_articulos": 32,
+  "total_articulos": 29,
   "pasillos": [
     {
       "nombre_pasillo": "Fruta y verdura",
-      "subtotal": 28.41,
+      "subtotal": 27.26,
       "items": [
         {
           "id": "69586",
@@ -27,7 +27,7 @@
         {
           "id": "69166",
           "nombre": "Patatas",
-          "nombre_receta": "Patatas para guisar y puré (lentejas, tortilla, alubias y salmón)",
+          "nombre_receta": "Patatas para guisar, asar y puré (lentejas, alubias, jamoncitos y salmón)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Patata",
           "cantidad": 1,
@@ -57,7 +57,7 @@
         {
           "id": "69155",
           "nombre": "Cebollas dulces",
-          "nombre_receta": "Cebollas dulces para pochar (lentejas, tortilla y fajitas)",
+          "nombre_receta": "Cebollas dulces para pochar y asar (lentejas, tortilla, fajitas y jamoncitos)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Cebolla y ajo",
           "cantidad": 1,
@@ -142,21 +142,6 @@
           "precio_referencia": 5.0,
           "formato_referencia": "kg",
           "thumbnail": "https://prod-mercadona.imgix.net/images/6fe3bd1734dacc3f8751577ed526b7ab.jpg?fit=crop&h=300&w=300",
-          "comprado": false
-        },
-        {
-          "id": "69984",
-          "nombre": "Espinacas baby lavadas",
-          "nombre_receta": "Espinacas baby lavadas (garbanzos jueves)",
-          "pasillo": "Fruta y verdura",
-          "subseccion": "Lechuga",
-          "cantidad": 1,
-          "unidad_receta": "bolsa 100g",
-          "precio_unitario": 1.15,
-          "precio_total": 1.15,
-          "precio_referencia": 11.5,
-          "formato_referencia": "kg",
-          "thumbnail": "https://prod-mercadona.imgix.net/images/a91f13d218a7badd0b10b7b0e3088f20.jpg?fit=crop&h=300&w=300",
           "comprado": false
         },
         {
@@ -280,18 +265,18 @@
     },
     {
       "nombre_pasillo": "Huevos, leche y mantequilla",
-      "subtotal": 6.7,
+      "subtotal": 3.35,
       "items": [
         {
           "id": "15768",
           "nombre": "Huevos de gallinas camperas",
-          "nombre_receta": "Huevos camperos frescos clase L (tortilla, alubias, garbanzos y arroz)",
+          "nombre_receta": "Huevos camperos frescos clase L (tortilla, alubias y arroz)",
           "pasillo": "Huevos, leche y mantequilla",
           "subseccion": "Huevos",
-          "cantidad": 2,
-          "unidad_receta": "docenas clase L",
+          "cantidad": 1,
+          "unidad_receta": "docena clase L",
           "precio_unitario": 3.35,
-          "precio_total": 6.7,
+          "precio_total": 3.35,
           "precio_referencia": 3.35,
           "formato_referencia": "dc",
           "thumbnail": "https://prod-mercadona.imgix.net/images/50933500ef69e4c4cc91733c48e4e909.jpg?fit=crop&h=300&w=300",
@@ -301,23 +286,8 @@
     },
     {
       "nombre_pasillo": "Charcutería y quesos",
-      "subtotal": 8.81,
+      "subtotal": 6.16,
       "items": [
-        {
-          "id": "59071",
-          "nombre": "Taquitos de jamón Incarlopsa",
-          "nombre_receta": "Taquitos de jamón curado (garbanzos jueves)",
-          "pasillo": "Charcutería y quesos",
-          "subseccion": "Jamón serrano",
-          "cantidad": 1,
-          "unidad_receta": "pack taquitos",
-          "precio_unitario": 2.65,
-          "precio_total": 2.65,
-          "precio_referencia": 13.25,
-          "formato_referencia": "kg",
-          "thumbnail": "https://prod-mercadona.imgix.net/images/d536e150ab381deb37082541dd44ba75.jpg?fit=crop&h=300&w=300",
-          "comprado": false
-        },
         {
           "id": "60329",
           "nombre": "Jamón cocido extra Hacendado finas lonchas",
@@ -367,7 +337,7 @@
     },
     {
       "nombre_pasillo": "Arroz, legumbres y pasta",
-      "subtotal": 3.8,
+      "subtotal": 3.0,
       "items": [
         {
           "id": "5330",
@@ -382,21 +352,6 @@
           "precio_referencia": 1.85,
           "formato_referencia": "kg",
           "thumbnail": "https://prod-mercadona.imgix.net/images/80c08ddcd236321ea41242268903726b.jpg?fit=crop&h=300&w=300",
-          "comprado": false
-        },
-        {
-          "id": "26029",
-          "nombre": "Garbanzo cocido Hacendado",
-          "nombre_receta": "Garbanzo cocido Hacendado (garbanzos jueves)",
-          "pasillo": "Arroz, legumbres y pasta",
-          "subseccion": "Garbanzos",
-          "cantidad": 1,
-          "unidad_receta": "tarro 400g",
-          "precio_unitario": 0.8,
-          "precio_total": 0.8,
-          "precio_referencia": 2.0,
-          "formato_referencia": "kg",
-          "thumbnail": "https://prod-mercadona.imgix.net/images/b8b807948038c4b64791632f799e9bd8.jpg?fit=crop&h=300&w=300",
           "comprado": false
         },
         {
@@ -553,6 +508,7 @@
     }
   ],
   "despensa_excluida": [
+    "Jamoncitos de pollo (4 unidades - stock congelado en casa)",
     "Aceite de oliva virgen extra (AOVE)",
     "Sal yodada",
     "Pimienta negra molida",

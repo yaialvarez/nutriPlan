@@ -2,17 +2,18 @@
   "semana": "Semana 3: Menú Semanal con Lote Doble de Legumbres y Batch Cooking Inteligente",
   "fecha_inicio": "2026-10-03",
   "ciclo_semanal": "Sábado 03/10 a Viernes 09/10 (Arranque de fin de semana con cenas y comidas fuera estratégicas)",
-  "objetivo_semana": "Potente presencia de legumbres reconfortantes (lentejas, alubias verdes y garbanzos) con triple reutilización en Batch Cooking (cocina 1 vez, come 2 o 3), cenas rápidas entre semana y pizza casera el viernes.",
+  "objetivo_semana": "Menú equilibrado con reconfortante presencia de legumbres (lote doble de lentejas el lunes y miércoles, alubias verdes el martes), jamoncitos de pollo al horno con patatas el jueves (stock de casa), cenas rápidas entre semana y pizza casera el viernes.",
   "batch_cooking_domingo": {
     "duracion_estimada_minutos": 75,
-    "resumen": "Sesión estratégica de domingo tarde (~75 min) basada en triple reutilización: 1 olla doble de lentejas (resuelve Lunes y Miércoles), 1 lote de arrocera (resuelve Onigiris y Arroz salteado viernes), y tanda de huevos cocidos (resuelve Martes y Jueves).",
+    "resumen": "Sesión estratégica de domingo tarde (~75 min): 1 olla doble de lentejas (resuelve Lunes y Miércoles), 1 lote de arrocera (resuelve Onigiris y Arroz salteado viernes), bandeja de jamoncitos con patatas panadera al horno (resuelve Jueves) y olla de judías verdes con huevos cocidos (resuelve Martes).",
     "equipamiento": [
       "1 olla grande para el lote doble de guiso de lentejas pardinas",
+      "1 bandeja de horno para los jamoncitos de pollo con patatas panadera",
       "1 olla mediana para hervir alubias verdes con patatas",
-      "1 cazo para cocer 4 huevos camperos",
+      "1 cazo para cocer 2 huevos camperos",
       "Arrocera eléctrica para lote base de arroz blanco",
       "1 sartén amplia para tiras de pollo y pimientos salteados de las fajitas",
-      "6 recipientes herméticos de cristal para tuppers"
+      "6-7 recipientes herméticos de cristal para tuppers"
     ],
     "cronograma_pasos": [
       {
@@ -22,23 +23,28 @@
       },
       {
         "orden": 2,
-        "tiempo": "00:15 - 00:35",
-        "accion": "Arrocera eléctrica (Lote base de Arroz): Cocer 300g de arroz blanco en la arrocera con sal yodada. Dejar enfriar extendido con unas gotas de AOVE para que el grano quede suelto. Base lista para los Onigiris del miércoles noche y el Arroz salteado del viernes comida."
+        "tiempo": "00:10 - 00:50",
+        "accion": "Horno Inteligente (Jamoncitos con patatas panadera): En bandeja de horno, disponer patatas en rodajas panadera y cebolla dulce en juliana con AOVE, sal yodada y romero. Colocar encima los 4 jamoncitos de pollo descongelados y hornear 40 min a 190°C en paralelo. ¡Tupper del jueves resuelto con cero trabajo activo!"
       },
       {
         "orden": 3,
-        "tiempo": "00:30 - 00:55",
-        "accion": "Olla de Alubias verdes y Cazo de Huevos: Hervir judías verdes limpias con patata y zanahoria 20 min para el tupper del Martes. En cazo paralelo, cocer 4 huevos camperos durante 10 min (2 para las alubias del martes y 2 para los garbanzos del jueves)."
+        "tiempo": "00:20 - 00:40",
+        "accion": "Arrocera eléctrica (Lote base de Arroz): Cocer 300g de arroz blanco en la arrocera con sal yodada. Dejar enfriar extendido con unas gotas de AOVE para que el grano quede suelto. Base lista para los Onigiris del miércoles noche y el Arroz salteado del viernes comida."
       },
       {
         "orden": 4,
+        "tiempo": "00:35 - 00:55",
+        "accion": "Olla de Alubias verdes y Cazo de Huevos: Hervir judías verdes limpias con patata y zanahoria 20 min para el tupper del Martes. En cazo paralelo, cocer 2 huevos camperos durante 10 min para las alubias del martes."
+      },
+      {
+        "orden": 5,
         "tiempo": "00:55 - 01:10",
         "accion": "Preparación de Cena Domingo: En sartén amplia, dorar tiras de pechuga de pollo sazonadas y saltear pimientos rojo y verde en tiras con cebolla dulce pochada. Dejar listo para montar las fajitas al momento con aguacate fresco."
       },
       {
-        "orden": 5,
+        "orden": 6,
         "tiempo": "01:10 - 01:15",
-        "accion": "Envasado hermético y refrigeración: Guardar los tuppers de lentejas (Lunes y Miércoles), las alubias verdes, los huevos cocidos y el arroz en recipientes herméticos de cristal a 4°C."
+        "accion": "Envasado hermético y refrigeración: Guardar los tuppers de lentejas (Lunes y Miércoles), los jamoncitos con patatas panadera (Jueves), las alubias verdes con huevo y el arroz en recipientes herméticos de cristal a 4°C."
       }
     ],
     "conservacion": "Los recipientes de cristal mantienen la jugosidad perfecta para calentar en el microondas del trabajo en solo 3 minutos."
@@ -222,18 +228,18 @@
     {
       "dia": "Jueves (08/10)",
       "comida": {
-        "receta_id": "garbanzos_salteados_espinacas_jamon_huevo",
-        "nombre": "Salteado castellano de garbanzos con espinacas baby, taquitos de jamón y huevo campero",
-        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "receta_id": "jamoncitos_pollo_asados_con_patatas",
+        "nombre": "Jamoncitos de pollo dorados al horno con patatas panadera y toque de romero",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas) - Pollo asado tierno en su jugo",
         "tiempo_preparacion": "3 min",
         "adaptacion_lord_i": {
-          "porcion": "Garbanzos salteados con ajo dorado, espinacas cocinadas, jamón crujiente y huevo cocido picado",
-          "detalles": "Sin cebolla cruda. Pimentón dulce sin picante. Proteína vegetal y animal de comida real (~34g).",
-          "volumen_macros": "Legumbre entera de textura firme que no se apelmaza en tupper."
+          "porcion": "2 jamoncitos de pollo bien asados con patatas panadera tiernas y cebolla dulce asada",
+          "detalles": "Cebolla totalmente asada y tierna (sin cebolla cruda). Proteína de alto valor biológico de comida real (~32g).",
+          "volumen_macros": "2 jamoncitos (proteína limpia de comida real), patatas panadera (carbohidrato asado) y jugo."
         },
         "adaptacion_dona_y": {
-          "porcion": "Plato hondo colmado de garbanzos con espinacas cocinadas térmicamente, jamón y huevo campero",
-          "detalles": "Selenio y yodo del huevo campero, hojas cocinadas seguras para tiroides.",
+          "porcion": "2 jamoncitos de pollo con buena ración de patatas panadera asadas en su jugo",
+          "detalles": "Carbohidratos densos de patata para energía sostenida en el trabajo.",
           "suplementacion": "1 batido de proteína en la merienda."
         }
       },
