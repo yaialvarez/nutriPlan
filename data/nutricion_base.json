@@ -4,7 +4,8 @@
     "proteina_min": 120,
     "proteina_max": 135,
     "fijos": [
-      { "nombre": "Desayuno: avena (60 g) con leche (250 ml) y vainilla", "proteina_g": 17, "kcal": 380 }
+      { "nombre": "Desayuno: avena (60 g) con leche (250 ml) y vainilla", "proteina_g": 17, "kcal": 380 },
+      { "nombre": "Merienda: queso fresco batido 0% (200 g) con fruta", "proteina_g": 16, "kcal": 160 }
     ]
   },
   "dona_y": {
