@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   Calendar,
   Flame,
@@ -39,6 +39,7 @@ import BitacoraProgreso from './components/BitacoraProgreso';
 import FichaRecetaModal from './components/FichaRecetaModal';
 import ReglasMedicasModal from './components/ReglasMedicasModal';
 import CambiarPlatoModal from './components/CambiarPlatoModal';
+import { clasificarRecetario } from './utils/equilibrio';
 
 const TABS = [
   { id: 'menu', label: 'Menú Semanal', corto: 'Menú', icon: Calendar, color: 'text-emerald-700', colorMovil: 'text-emerald-600' },
@@ -155,6 +156,8 @@ export default function App() {
   const nutricionBase = files?.['nutricion_base.json'] || SIN_DATOS;
   const semana = claveSemana(menuData);
   const [cambios, setCambios] = useEstadoSemanal('cambios', semana, {});
+  const reglas = files?.['reglas_semana.json'] || null;
+  const clases = useMemo(() => clasificarRecetario(recetarioData, reglas), [recetarioData, reglas]);
 
   if (checkingAuth) {
     return (
@@ -246,6 +249,8 @@ export default function App() {
             recetarioData={recetarioData}
             nutricion={nutricion}
             nutricionBase={nutricionBase}
+            reglas={reglas}
+            clases={clases}
             cambios={cambios}
             onSelectReceta={(receta) => setSelectedReceta(receta)}
             onCambiar={(idx, tipo) => setCambiando({ idx, tipo })}
@@ -324,6 +329,9 @@ export default function App() {
           menuData={menuData}
           recetarioData={recetarioData}
           nutricion={nutricion}
+          nutricionBase={nutricionBase}
+          reglas={reglas}
+          clases={clases}
           cambios={cambios}
           idx={cambiando.idx}
           tipo={cambiando.tipo}

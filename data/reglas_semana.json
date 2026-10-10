@@ -1,0 +1,56 @@
+{
+  "_nota": "Reglas de equilibrio de la semana completa (no de cada receta). Las usan scripts/equilibrio_semanal.py y la app (app/src/utils/equilibrio.js). Cada grupo se detecta por palabras en el nombre y los ingredientes de la receta; una receta puede forzar un grupo con \"grupos\": {\"pescado\": true}. Los límites cuentan tomas (comida o cena) de la semana; las tomas sin receta (comida fuera) no cuentan.",
+  "vigente_desde": "2026-10-17",
+  "grupos": {
+    "pescado": {
+      "nombre": "Pescado",
+      "palabras": ["pescado", "salmon", "merluza", "atun", "bonito", "bacalao", "dorada", "lubina", "sardina", "sardinilla", "caballa", "boqueron", "anchoa", "rape", "gallo", "trucha", "emperador", "pez espada", "rodaballo", "lenguado", "abadejo", "melva"],
+      "excluir": ["caldo de pescado", "salsa de pescado"]
+    },
+    "legumbre": {
+      "nombre": "Legumbres",
+      "palabras": ["lenteja", "garbanzo", "alubia", "judia", "frijol", "guisante", "haba", "soja texturizada", "edamame", "hummus"],
+      "excluir": ["alubia verde", "alubias verdes", "judia verde", "judias verdes", "salsa de soja"]
+    },
+    "carne_roja": {
+      "nombre": "Carne roja",
+      "palabras": ["ternera", "vacuno", "buey", "cerdo", "cordero", "cabrito", "solomillo", "magro", "carrillada", "costilla", "carne picada", "lomo noble", "lomo de cerdo", "cinta de lomo"],
+      "excluir": []
+    },
+    "procesada": {
+      "nombre": "Carne procesada",
+      "palabras": ["jamon", "panceta", "beicon", "bacon", "chorizo", "salchicha", "salchichon", "fuet", "mortadela", "lacon", "sobrasada", "morcilla", "fiambre"],
+      "excluir": []
+    },
+    "ave": {
+      "nombre": "Pollo o pavo",
+      "palabras": ["pollo", "pavo", "pechuga", "contramuslo", "muslo", "muslito", "jamoncito", "pato"],
+      "excluir": ["caldo de pollo", "caldo profundo de pollo"]
+    },
+    "verdura": {
+      "nombre": "Verdura",
+      "palabras": ["calabacin", "zanahoria", "puerro", "pimiento", "espinaca", "tomate", "calabaza", "brocoli", "coliflor", "col", "repollo", "lombarda", "judia verde", "judias verdes", "alubia verde", "alubias verdes", "champinon", "seta", "lechuga", "canonigo", "rucula", "escarola", "acelga", "alcachofa", "esparrago", "apio", "pepino", "remolacha", "kale", "romanesco", "berza"],
+      "excluir": []
+    },
+    "frito": {
+      "nombre": "Fritos o rebozados",
+      "palabras": ["frito", "frita", "freir", "rebozado", "rebozada", "rebozar", "empanado", "empanada", "tempura"],
+      "excluir": ["tomate frito", "pimiento verde freir", "pimiento verde de freir", "pimiento de freir", "pimientos de freir"]
+    }
+  },
+  "limites": [
+    { "grupo": "pescado", "min": 2, "nivel": "error", "motivo": "pescado 2-3 veces por semana" },
+    { "grupo": "pescado", "max": 4, "nivel": "aviso", "motivo": "pescado 2-3 veces por semana" },
+    { "grupo": "legumbre", "min": 2, "nivel": "error", "motivo": "legumbres al menos 2 veces por semana" },
+    { "grupo": "carne_roja", "max": 4, "nivel": "aviso", "motivo": "moderar la carne roja" },
+    { "grupo": "procesada", "max": 3, "nivel": "aviso", "motivo": "poca carne procesada (jamón, bacon, embutido)" },
+    { "grupo": "frito", "max": 2, "nivel": "aviso", "motivo": "fritos y rebozados de forma ocasional" },
+    { "grupo": "ave", "max": 6, "nivel": "aviso", "motivo": "que una sola proteína no domine la semana" }
+  ],
+  "verdura_cada_dia": { "nivel": "aviso" },
+  "verduras_distintas_min": { "valor": 6, "nivel": "aviso" },
+  "sin_fritos_comida_laborable": { "nivel": "error" },
+  "receta_max_tomas": { "valor": 2, "nivel": "aviso" },
+  "proteina_lord_i_media": { "nivel": "error" },
+  "kcal_dona_y_media": { "nivel": "error" }
+}

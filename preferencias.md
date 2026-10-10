@@ -2,6 +2,7 @@
 ## Lord.I & Doña.Y
 
 > **Nota para la IA:** Este documento reúne las directrices logísticas, paladar, equipamiento culinario y reglas acordadas para diseñar menús semanales adaptados, eficientes y económicos.
+> Antes de publicar un menú, `python scripts/equilibrio_semanal.py` debe salir sin errores: la semana completa tiene que cumplir `data/reglas_semana.json` (pescado, legumbres, carne, fritos, verdura diaria, variedad y medias diarias de proteína y kcal), no solo cada receta por separado.
 
 ---
 

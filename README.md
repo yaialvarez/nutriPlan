@@ -51,6 +51,7 @@ nutriPlan/
 │   ├── recetario.json             # Catálogo de recetas con adaptaciones de cada perfil
 │   ├── nutricion_recetas.json     # Proteína y kcal estimadas por ración de cada receta
 │   ├── nutricion_base.json        # Tomas fijas (desayunos, snacks) y límites diarios
+│   ├── reglas_semana.json         # Equilibrio de la semana: pescado, legumbres, carne, fritos, verdura
 │   ├── compra_semana.json         # Artículos de la compra de la semana (entrada del generador)
 │   ├── lista_compra.json          # Lista generada con precios y pasillos de Mercadona
 │   ├── despensa_base.json         # Básicos del hogar que no se compran cada semana
@@ -61,6 +62,7 @@ nutriPlan/
 │   ├── generar_lista_compra.py    # compra_semana.json + catálogo → lista_compra.json
 │   ├── comprobar_precios_lidl.py  # Qué artículos de la lista tienen precio LIDL
 │   ├── verificar_reglas.py        # Reglas médicas, proteína, fechas y coherencia de datos
+│   ├── equilibrio_semanal.py      # Equilibrio de la semana completa (lo llama verificar_reglas.py)
 │   ├── build_bundle.js            # Empaqueta data/ cifrado en app/src/data/bundle.json
 │   ├── encrypt_perfiles.js        # Cifra data/perfiles.json
 │   ├── password.js                # Lectura común de APP_PASSWORD para los dos anteriores
@@ -120,6 +122,9 @@ python scripts/generar_lista_compra.py
 # Auditar reglas médicas y sincronización de datos
 python scripts/verificar_reglas.py
 
+# Ver el recuento de equilibrio de la semana publicada
+python scripts/equilibrio_semanal.py
+
 # Todo lo que comprueba un PR (reglas, lint, build y auditoría), desde la raíz
 npm run comprobar
 ```
@@ -145,6 +150,7 @@ Genera los ficheros estáticos listos en `app/dist/` (incluyendo `robots.txt` an
 
 - **Pauta Renal (Lord.I)**: Menús auditados para no exceder 120-135g de proteína al día, obtenidos íntegramente de alimentos naturales (pollo, vacuno magro, salmón, huevos, legumbres). **Cero suplementación proteica sintética.**
 - **Pauta Metabólica y Micronutrientes (Doña.Y)**: Micronutrientes protectores asegurados (sal yodada, salmón fresco, huevos camperos). Vegetales bociógenos siempre con cocción térmica adecuada.
+- **Equilibrio Semanal**: además de cada receta, se audita la semana completa con `data/reglas_semana.json`: pescado 2-3 veces, legumbres al menos 2, carne roja y procesada moderadas, fritos ocasionales y nunca en la comida de entre semana, verdura cada día y variedad, y medias diarias de proteína (Lord.I) y kcal (Doña.Y) dentro de objetivo. Desde el menú del 17 de octubre de 2026 el despliegue falla si se incumple una regla marcada como error; la app muestra el recuento y, al cambiar un plato, avisa de lo que desequilibraría la semana.
 - **Armonía Culinaria**: Cero berenjena, cero cebolla cruda (siempre pochada/confitada), cero picante, cero quesos fuertes y cero aceitunas en todas las recetas compartidas.
 
 ---

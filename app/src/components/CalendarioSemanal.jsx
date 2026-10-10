@@ -9,9 +9,11 @@ import {
   User,
   Shuffle,
   AlertTriangle,
-  Clock
+  Clock,
+  Scale
 } from 'lucide-react';
 import { fechasDelMenu, indiceHoy, menuCaducado, recetaDeToma } from '../utils/semana';
+import { evaluarSemana } from '../utils/equilibrio';
 
 const fmtFecha = (f) => f?.toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
 
@@ -64,10 +66,98 @@ function ResumenNutricional({ totales, nutricionBase }) {
       <div className="rounded-lg border px-3 py-2 bg-rose-50/60 text-rose-900 border-rose-200">
         <div className="font-bold">Doña.Y: ~{totales.dona_y.proteina_g} g proteína · ~{totales.dona_y.kcal} kcal</div>
         <div className="text-xs">
-          Incluye desayuno y batido estimados{totales.parcial && ' · sin contar comidas fuera'}
+          Incluye desayuno, batido y tentempiés estimados{totales.parcial && ' · sin contar comidas fuera'}
         </div>
       </div>
     </div>
+  );
+}
+
+/** Recuento de la semana (con los platos cambiados) frente a data/reglas_semana.json. */
+function EquilibrioSemana({ menuData, recetarioData, nutricion, nutricionBase, reglas, clases, cambios }) {
+  const { problemas, resumen } = useMemo(
+    () => evaluarSemana({ menu: menuData, recetario: recetarioData, nutricion, base: nutricionBase, reglas, cambios, clases }),
+    [menuData, recetarioData, nutricion, nutricionBase, reglas, cambios, clases]
+  );
+  if (!resumen) return null;
+
+  const claves = new Set(problemas.map((p) => p.clave));
+  const objetivo = (g) =>
+    (reglas.limites || [])
+      .filter((l) => l.grupo === g)
+      .map((l) => (l.min != null ? `mín. ${l.min}` : `máx. ${l.max}`))
+      .join(' · ');
+  const grupos = Object.keys(reglas.grupos).filter((g) => (reglas.limites || []).some((l) => l.grupo === g));
+  const indicadores = [
+    ...grupos.map((g) => ({
+      clave: g,
+      etiqueta: reglas.grupos[g].nombre,
+      valor: resumen.grupos[g],
+      objetivo: objetivo(g),
+      mal: claves.has(`min:${g}`) || claves.has(`max:${g}`)
+    })),
+    {
+      clave: 'verduras',
+      etiqueta: 'Verduras distintas',
+      valor: resumen.verduras_distintas,
+      objetivo: reglas.verduras_distintas_min ? `mín. ${reglas.verduras_distintas_min.valor}` : '',
+      mal: claves.has('verduras_distintas')
+    },
+    {
+      clave: 'prot',
+      etiqueta: 'Lord.I proteína media',
+      valor: resumen.proteina_lord_i_media != null ? `~${resumen.proteina_lord_i_media} g` : '–',
+      objetivo: `${nutricionBase?.lord_i?.proteina_min}-${nutricionBase?.lord_i?.proteina_max} g`,
+      mal: claves.has('prot_media')
+    },
+    {
+      clave: 'kcal',
+      etiqueta: 'Doña.Y kcal media',
+      valor: resumen.kcal_dona_y_media != null ? `~${resumen.kcal_dona_y_media}` : '–',
+      objetivo: nutricionBase?.dona_y?.kcal_min ? `${nutricionBase.dona_y.kcal_min}-${nutricionBase.dona_y.kcal_max}` : '',
+      mal: claves.has('kcal_media')
+    }
+  ];
+
+  return (
+    <section className="bg-white border border-slate-200 rounded-2xl p-4 space-y-3" aria-label="Equilibrio de la semana">
+      <h3 className="text-sm font-bold text-slate-800 flex items-center gap-1.5">
+        <Scale className="w-4 h-4 text-emerald-600" />
+        Equilibrio de la semana
+        <span className={`ml-auto text-xs font-semibold ${problemas.length ? 'text-amber-700' : 'text-emerald-700'}`}>
+          {problemas.length ? `${problemas.length} por revisar` : 'Todo en orden'}
+        </span>
+      </h3>
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+        {indicadores.map((i) => (
+          <div
+            key={i.clave}
+            className={`rounded-lg border px-2.5 py-1.5 text-xs ${
+              i.mal ? 'bg-amber-50 border-amber-300 text-amber-900' : 'bg-emerald-50 border-emerald-200 text-emerald-900'
+            }`}
+          >
+            <div className="font-semibold">{i.etiqueta}</div>
+            <div>
+              <span className="text-sm font-bold">{i.valor}</span>
+              {i.objetivo && <span className="opacity-75"> · {i.objetivo}</span>}
+            </div>
+          </div>
+        ))}
+      </div>
+      {problemas.length > 0 && (
+        <ul className="space-y-1">
+          {problemas.map((p) => (
+            <li
+              key={p.clave}
+              className={`text-xs flex items-start gap-1.5 ${p.nivel === 'error' ? 'text-rose-700 font-semibold' : 'text-amber-800'}`}
+            >
+              <AlertTriangle className="w-3.5 h-3.5 mt-0.5 shrink-0" />
+              {p.texto}
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
   );
 }
 
@@ -271,6 +361,8 @@ export default function CalendarioSemanal(props) {
         </h2>
         <p className="text-emerald-50/90 text-sm leading-relaxed">{menuData?.objetivo_semana}</p>
       </div>
+
+      <EquilibrioSemana {...props} />
 
       {/* Selector de días */}
       <div className="flex items-center gap-1.5 overflow-x-auto pb-2 scrollbar-none">
