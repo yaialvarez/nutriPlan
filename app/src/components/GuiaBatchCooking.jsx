@@ -6,31 +6,49 @@ import {
   Circle, 
   Layers, 
   Refrigerator, 
-  RotateCcw
+  RotateCcw,
+  SunMedium
 } from 'lucide-react';
+import { useEstadoSemanal } from '../utils/semana';
 
-const STORAGE_KEY = 'menuia_batch_cooking_steps';
-
-export default function GuiaBatchCooking({ batchData }) {
-  const pasos = batchData?.cronograma_pasos || [];
-  
-  // Cargar estado de checkboxes desde localStorage
-  const [completedSteps, setCompletedSteps] = useState(() => {
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      return saved ? JSON.parse(saved) : {};
-    } catch {
-      return {};
-    }
-  });
+/** Mantiene la pantalla encendida mientras se cocina (Screen Wake Lock API). */
+function usePantallaEncendida() {
+  const soportado = typeof navigator !== 'undefined' && 'wakeLock' in navigator;
+  const [activa, setActiva] = useState(false);
 
   useEffect(() => {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(completedSteps));
-    } catch (e) {
-      console.error('Error saving batch cooking steps', e);
-    }
-  }, [completedSteps]);
+    if (!activa || !soportado) return undefined;
+    let lock = null;
+    let cancelado = false;
+    const pedir = async () => {
+      try {
+        lock = await navigator.wakeLock.request('screen');
+        if (cancelado) lock.release();
+      } catch {
+        setActiva(false);
+      }
+    };
+    // El sistema suelta el bloqueo al cambiar de app; se vuelve a pedir al volver
+    const alVolver = () => {
+      if (document.visibilityState === 'visible') pedir();
+    };
+    pedir();
+    document.addEventListener('visibilitychange', alVolver);
+    return () => {
+      cancelado = true;
+      document.removeEventListener('visibilitychange', alVolver);
+      lock?.release().catch(() => {});
+    };
+  }, [activa, soportado]);
+
+  return [soportado, activa, setActiva];
+}
+
+export default function GuiaBatchCooking({ batchData, semana }) {
+  const pasos = batchData?.cronograma_pasos || [];
+  // Checks ligados a la semana: se reinician solos con cada menú nuevo
+  const [completedSteps, setCompletedSteps] = useEstadoSemanal('batch', semana, {});
+  const [wakeSoportado, pantallaEncendida, setPantallaEncendida] = usePantallaEncendida();
 
   const toggleStep = (orden) => {
     setCompletedSteps(prev => ({
@@ -75,7 +93,7 @@ export default function GuiaBatchCooking({ batchData }) {
             <div className="text-2xl sm:text-3xl font-black">
               {batchData?.duracion_estimada_minutos || 120} min
             </div>
-            <div className="text-[11px] text-amber-200/80">
+            <div className="text-xs text-amber-200/80">
               Ahorro entre semana: ~4 horas
             </div>
           </div>
@@ -88,7 +106,7 @@ export default function GuiaBatchCooking({ batchData }) {
             {numCompletados > 0 && (
               <button 
                 onClick={resetAll}
-                className="inline-flex items-center gap-1 text-[11px] text-amber-200 hover:text-white underline"
+                className="inline-flex items-center gap-1 text-xs text-amber-200 hover:text-white underline"
               >
                 <RotateCcw className="w-3 h-3" />
                 Reiniciar
@@ -103,6 +121,21 @@ export default function GuiaBatchCooking({ batchData }) {
           </div>
         </div>
       </div>
+
+      {wakeSoportado && (
+        <button
+          onClick={() => setPantallaEncendida(!pantallaEncendida)}
+          className={`w-full rounded-2xl border px-4 py-3 text-sm font-semibold flex items-center justify-center gap-2 transition-colors ${
+            pantallaEncendida
+              ? 'bg-amber-100 border-amber-300 text-amber-900'
+              : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50'
+          }`}
+          aria-pressed={pantallaEncendida}
+        >
+          <SunMedium className="w-5 h-5" />
+          {pantallaEncendida ? 'Pantalla siempre encendida: activada' : 'Mantener la pantalla encendida mientras cocino'}
+        </button>
+      )}
 
       {/* Equipamiento recomendado */}
       {batchData?.equipamiento && (

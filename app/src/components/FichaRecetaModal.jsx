@@ -1,7 +1,7 @@
 import React from 'react';
 import { X, Clock, ShieldCheck, User, HeartPulse } from 'lucide-react';
 
-export default function FichaRecetaModal({ receta, onClose }) {
+export default function FichaRecetaModal({ receta, nutricion, onClose }) {
   if (!receta) return null;
 
   return (
@@ -67,6 +67,20 @@ export default function FichaRecetaModal({ receta, onClose }) {
               Adaptación de Raciones y Macros
             </h3>
 
+            {nutricion && (
+              <div className="grid grid-cols-2 gap-3 mb-4 text-sm">
+                <div className="rounded-xl border border-blue-200 bg-blue-50/70 px-3 py-2 text-blue-900">
+                  <div className="font-bold">Lord.I por ración</div>
+                  <div>~{nutricion.lord_i.proteina_g} g proteína · ~{nutricion.lord_i.kcal} kcal</div>
+                </div>
+                <div className="rounded-xl border border-rose-200 bg-rose-50/70 px-3 py-2 text-rose-900">
+                  <div className="font-bold">Doña.Y por ración</div>
+                  <div>~{nutricion.dona_y.proteina_g} g proteína · ~{nutricion.dona_y.kcal} kcal</div>
+                </div>
+                <p className="col-span-2 text-xs text-slate-500">Estimación orientativa según las raciones descritas.</p>
+              </div>
+            )}
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Lord.I */}
               <div className="bg-blue-50/70 border border-blue-200 rounded-xl p-4">
@@ -75,7 +89,7 @@ export default function FichaRecetaModal({ receta, onClose }) {
                     <User className="w-4 h-4 text-blue-600" />
                     Lord.I (Recomposición 80kg)
                   </span>
-                  <span className="text-[11px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded-md font-medium">
+                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded-md font-medium">
                     120-135g prot max
                   </span>
                 </div>
@@ -95,7 +109,7 @@ export default function FichaRecetaModal({ receta, onClose }) {
                     <User className="w-4 h-4 text-rose-600" />
                     Doña.Y (Superávit 50kg)
                   </span>
-                  <span className="text-[11px] bg-rose-100 text-rose-800 px-2 py-0.5 rounded-md font-medium">
+                  <span className="text-xs bg-rose-100 text-rose-800 px-2 py-0.5 rounded-md font-medium">
                     Extra hidrato + batido
                   </span>
                 </div>

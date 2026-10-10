@@ -8,10 +8,8 @@ import {
   Sparkles, 
   Lock
 } from 'lucide-react';
-import { encryptData, decryptData, getSavedAuthPassword } from '../utils/crypto';
-
-const STORAGE_KEY = 'menuia_bitacora_entries_secure';
-const LEGACY_STORAGE_KEY = 'menuia_bitacora_entries';
+import { encryptWithKey, decryptWithKey } from '../utils/crypto';
+import { BITACORA_KEY as STORAGE_KEY, BITACORA_LEGACY_KEY as LEGACY_STORAGE_KEY } from '../utils/bitacora';
 
 const INITIAL_ENTRIES = [
   {
@@ -25,7 +23,7 @@ const INITIAL_ENTRIES = [
   }
 ];
 
-export default function BitacoraProgreso({ perfilesData }) {
+export default function BitacoraProgreso({ perfilesData, cryptoKey }) {
   const [entries, setEntries] = useState(INITIAL_ENTRIES);
   const [copied, setCopied] = useState(false);
   const [showForm, setShowForm] = useState(false);
@@ -42,14 +40,12 @@ export default function BitacoraProgreso({ perfilesData }) {
   // Carga inicial y descifrado de bitácora
   useEffect(() => {
     async function loadEntries() {
-      const password = getSavedAuthPassword();
       const savedSecure = localStorage.getItem(STORAGE_KEY);
-      
-      if (savedSecure && password) {
+      if (savedSecure && cryptoKey) {
         try {
           const parsedSecure = JSON.parse(savedSecure);
-          if (parsedSecure.ciphertext) {
-            const decrypted = await decryptData(parsedSecure, password);
+          if (parsedSecure.ciphertext && !parsedSecure.salt) {
+            const decrypted = await decryptWithKey(parsedSecure, cryptoKey);
             if (Array.isArray(decrypted)) {
               setEntries(decrypted);
               isLoadedRef.current = true;
@@ -59,6 +55,8 @@ export default function BitacoraProgreso({ perfilesData }) {
         } catch (e) {
           console.error('Error descifrando bitácora:', e);
         }
+        // Hay datos guardados que no se pueden abrir: no sobrescribirlos
+        return;
       }
 
       // Fallback a almacenamiento legacy si existía
@@ -85,7 +83,7 @@ export default function BitacoraProgreso({ perfilesData }) {
     }
 
     loadEntries();
-  }, []);
+  }, [cryptoKey]);
 
   // Guardado seguro cifrado en localStorage
   useEffect(() => {
@@ -93,12 +91,11 @@ export default function BitacoraProgreso({ perfilesData }) {
       return;
     }
     async function persistEntries() {
-      const password = getSavedAuthPassword();
-      if (!password) {
+      if (!cryptoKey) {
         return;
       }
       try {
-        const encrypted = await encryptData(entries, password);
+        const encrypted = await encryptWithKey(entries, cryptoKey);
         localStorage.setItem(STORAGE_KEY, JSON.stringify(encrypted));
         // Limpiar clave legacy no cifrada
         localStorage.removeItem(LEGACY_STORAGE_KEY);
@@ -108,7 +105,7 @@ export default function BitacoraProgreso({ perfilesData }) {
     }
 
     persistEntries();
-  }, [entries]);
+  }, [entries, cryptoKey]);
 
   const handleAddEntry = (e) => {
     e.preventDefault();
@@ -223,7 +220,7 @@ export default function BitacoraProgreso({ perfilesData }) {
             <h3 className="text-sm font-bold text-slate-800">
               Registro Histórico Semanal
             </h3>
-            <span className="inline-flex items-center gap-1 text-[10px] bg-slate-100 text-slate-600 font-medium px-2 py-0.5 rounded-full border border-slate-200">
+            <span className="inline-flex items-center gap-1 text-xs bg-slate-100 text-slate-600 font-medium px-2 py-0.5 rounded-full border border-slate-200">
               <Lock className="w-2.5 h-2.5 text-emerald-600" />
               Cifrado AES-256
             </span>
@@ -368,7 +365,7 @@ export default function BitacoraProgreso({ perfilesData }) {
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="font-bold text-slate-900 text-sm">{entry.semana}</span>
                   <span className="text-xs text-slate-400 font-mono">({entry.fecha})</span>
-                  <span className="text-[10px] bg-emerald-100 text-emerald-800 font-semibold px-2 py-0.5 rounded-full">
+                  <span className="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2 py-0.5 rounded-full">
                     Gym: {entry.energia_gym}
                   </span>
                 </div>
@@ -379,12 +376,12 @@ export default function BitacoraProgreso({ perfilesData }) {
 
               <div className="flex items-center gap-4 shrink-0 bg-slate-50 p-2.5 rounded-xl border border-slate-100 self-start sm:self-center">
                 <div className="text-center">
-                  <div className="text-[10px] uppercase font-bold text-blue-800">Lord.I</div>
+                  <div className="text-xs uppercase font-bold text-blue-800">Lord.I</div>
                   <div className="text-base font-black text-slate-900">{Number(pI).toFixed(1)} kg</div>
                 </div>
                 <div className="h-6 w-px bg-slate-200"></div>
                 <div className="text-center">
-                  <div className="text-[10px] uppercase font-bold text-rose-800">Doña.Y</div>
+                  <div className="text-xs uppercase font-bold text-rose-800">Doña.Y</div>
                   <div className="text-base font-black text-slate-900">{Number(pY).toFixed(1)} kg</div>
                 </div>
                 {entries.length > 1 && (

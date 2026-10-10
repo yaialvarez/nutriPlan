@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Lock, KeyRound, Eye, EyeOff, ShieldCheck, AlertCircle } from 'lucide-react';
-import { saveAuthSession } from '../utils/crypto';
 
 export default function LockScreen({ onUnlock }) {
   const [password, setPassword] = useState('');
@@ -16,7 +15,6 @@ export default function LockScreen({ onUnlock }) {
 
     try {
       await onUnlock(password);
-      saveAuthSession(password);
     } catch (err) {
       console.error('Error al inicializar sesión cifrada:', err);
       setError(true);
@@ -118,7 +116,7 @@ export default function LockScreen({ onUnlock }) {
           </form>
 
           {/* Pie de pantalla */}
-          <div className="mt-8 pt-4 border-t border-slate-800/80 text-center text-[11px] text-slate-500">
+          <div className="mt-8 pt-4 border-t border-slate-800/80 text-center text-xs text-slate-500">
             Sesión persistente en este dispositivo • AES-GCM 256 bits
           </div>
         </div>
