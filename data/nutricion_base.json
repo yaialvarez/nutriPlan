@@ -1,20 +1,43 @@
 {
   "_nota": "Tomas fijas que se suman cada día a la comida y la cena del menú. Estimaciones orientativas.",
   "lord_i": {
-    "proteina_min": 120,
-    "proteina_max": 135,
+    "_nota": "Proteína moderada: rango de 1,0-1,2 g/kg (80-96 g/día de media en la semana), tope diario de 104 g y como mucho 40 g en una misma toma. Solo comida real.",
+    "proteina_min": 80,
+    "proteina_max": 96,
+    "proteina_max_dia": 104,
+    "proteina_max_toma": 40,
     "fijos": [
-      { "nombre": "Desayuno: avena (60 g) con leche (250 ml) y vainilla", "proteina_g": 17, "kcal": 380 },
-      { "nombre": "Merienda: queso fresco batido 0% (200 g) con fruta", "proteina_g": 16, "kcal": 160 }
+      {
+        "nombre": "Desayuno: avena (60 g) con leche (250 ml) y vainilla",
+        "proteina_g": 17,
+        "kcal": 380
+      },
+      {
+        "nombre": "Merienda: una pieza de fruta",
+        "proteina_g": 1,
+        "kcal": 90
+      }
     ]
   },
   "dona_y": {
     "kcal_min": 2100,
     "kcal_max": 2300,
     "fijos": [
-      { "nombre": "Desayuno a su elección (estimado)", "proteina_g": 12, "kcal": 350 },
-      { "nombre": "Batido proteico pautado", "proteina_g": 25, "kcal": 150 },
-      { "nombre": "Tentempiés: puñado de frutos secos y tostada o plátano", "proteina_g": 10, "kcal": 380 }
+      {
+        "nombre": "Desayuno a su elección (estimado)",
+        "proteina_g": 12,
+        "kcal": 350
+      },
+      {
+        "nombre": "Batido proteico pautado",
+        "proteina_g": 25,
+        "kcal": 150
+      },
+      {
+        "nombre": "Tentempiés: puñado de frutos secos y tostada o plátano",
+        "proteina_g": 10,
+        "kcal": 380
+      }
     ]
   }
 }

@@ -185,7 +185,7 @@ export default function BitacoraProgreso({ cryptoKey }) {
           </div>
 
           <div className="space-y-1 text-xs text-blue-100/90 pt-3 border-t border-blue-800/60 leading-relaxed">
-            <p><strong>Límite Proteico Diario:</strong> 120 - 135 g/día (solo comida real).</p>
+            <p><strong>Proteína diaria:</strong> 80 - 96 g/día, tope 104 g (solo comida real).</p>
             <p><strong>Protección:</strong> Cero batidos de proteína en polvo ni aminoácidos.</p>
             <p><strong>Cocina:</strong> Cero berenjena, cero cebolla cruda, cero aceitunas, quesos suaves.</p>
           </div>

@@ -97,7 +97,16 @@ export function evaluarSemana({ menu, recetario, nutricion, base, reglas, cambio
       }
       const n = nutricion[rid];
       if (n) {
-        pI += n.lord_i?.proteina_g || 0;
+        const pToma = n.lord_i?.proteina_g || 0;
+        if (lordI.proteina_max_toma && pToma > lordI.proteina_max_toma) {
+          problemas.push({
+            clave: `prot_toma:${idx}-${tipo}`,
+            desvio: pToma - lordI.proteina_max_toma,
+            nivel: 'aviso',
+            texto: `${etiqueta} (${tipo}): ración de Lord.I con ~${pToma} g de proteína, más de ${lordI.proteina_max_toma} g en una sola toma`
+          });
+        }
+        pI += pToma;
         kY += n.dona_y?.kcal || 0;
       } else {
         completo = false;
@@ -109,12 +118,20 @@ export function evaluarSemana({ menu, recetario, nutricion, base, reglas, cambio
     if (completo) {
       protI.push(pI);
       kcalY.push(kY);
-      if (lordI.proteina_max && pI > lordI.proteina_max) {
+      const topeDia = lordI.proteina_max_dia || lordI.proteina_max;
+      if (topeDia && pI > topeDia) {
         problemas.push({
-          clave: `prot_max:${idx}`,
-          desvio: pI - lordI.proteina_max,
+          clave: `prot_dia:${idx}`,
+          desvio: pI - topeDia,
           nivel: 'error',
-          texto: `${etiqueta}: Lord.I ~${pI} g de proteína supera el límite de ${lordI.proteina_max} g`
+          texto: `${etiqueta}: Lord.I ~${pI} g de proteína supera el tope diario de ${topeDia} g`
+        });
+      } else if (lordI.proteina_max && pI > lordI.proteina_max) {
+        problemas.push({
+          clave: `prot_alto:${idx}`,
+          desvio: pI - lordI.proteina_max,
+          nivel: 'aviso',
+          texto: `${etiqueta}: Lord.I ~${pI} g de proteína, por encima de su rango de ${lordI.proteina_min}-${lordI.proteina_max} g`
         });
       }
     }
@@ -148,13 +165,24 @@ export function evaluarSemana({ menu, recetario, nutricion, base, reglas, cambio
 
   const mediaI = media(protI);
   const mediaY = media(kcalY);
-  if (reglas.proteina_lord_i_media && mediaI != null && lordI.proteina_min && mediaI < lordI.proteina_min) {
-    problemas.push({
-      clave: 'prot_media',
-      desvio: lordI.proteina_min - mediaI,
-      nivel: reglas.proteina_lord_i_media.nivel,
-      texto: `Lord.I: media de ~${mediaI} g de proteína al día, por debajo de ${lordI.proteina_min} g`
-    });
+  const reglaProt = reglas.proteina_lord_i_media;
+  if (reglaProt && mediaI != null) {
+    // El tope manda (protección renal); quedarse algo corto solo es un aviso
+    if (lordI.proteina_max && mediaI > lordI.proteina_max) {
+      problemas.push({
+        clave: 'prot_media',
+        desvio: mediaI - lordI.proteina_max,
+        nivel: reglaProt.nivel_alto || 'error',
+        texto: `Lord.I: media de ~${mediaI} g de proteína al día, por encima del tope de ${lordI.proteina_max} g`
+      });
+    } else if (lordI.proteina_min && mediaI < lordI.proteina_min) {
+      problemas.push({
+        clave: 'prot_media',
+        desvio: lordI.proteina_min - mediaI,
+        nivel: reglaProt.nivel_bajo || 'aviso',
+        texto: `Lord.I: media de ~${mediaI} g de proteína al día, por debajo de ${lordI.proteina_min} g`
+      });
+    }
   }
   if (reglas.kcal_dona_y_media && mediaY != null && donaY.kcal_min && mediaY < donaY.kcal_min) {
     problemas.push({

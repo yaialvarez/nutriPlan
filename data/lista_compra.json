@@ -1,9 +1,9 @@
 {
   "supermercado": "Mercadona",
   "semana": "Semana 4 (v2): Recetas nuevas con pescado tres veces, brócoli y legumbre",
-  "total_ticket_estimado": 124.13,
+  "total_ticket_estimado": 115.39,
   "moneda": "EUR",
-  "total_articulos": 37,
+  "total_articulos": 36,
   "pasillos": [
     {
       "nombre_pasillo": "Fruta y verdura",
@@ -222,7 +222,7 @@
         {
           "id": "3028",
           "nombre": "Manzana Golden",
-          "nombre_receta": "Manzanas Golden (merienda con queso batido)",
+          "nombre_receta": "Manzanas Golden (merienda de fruta)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Manzana y pera",
           "cantidad": 6,
@@ -295,7 +295,7 @@
     },
     {
       "nombre_pasillo": "Carne",
-      "subtotal": 36.57,
+      "subtotal": 32.48,
       "items": [
         {
           "id": "2787",
@@ -303,10 +303,10 @@
           "nombre_receta": "Filetes de pechuga de pollo (burrito, quesadillas, yakisoba y pasta)",
           "pasillo": "Carne",
           "subseccion": "Pollo",
-          "cantidad": 3,
-          "unidad_receta": "bandejas (~1,6 kg)",
+          "cantidad": 2,
+          "unidad_receta": "bandejas (~1,1 kg)",
           "precio_unitario": 4.09,
-          "precio_total": 12.27,
+          "precio_total": 8.18,
           "precio_referencia": 7.3,
           "formato_referencia": "kg",
           "thumbnail": "https://prod-mercadona.imgix.net/images/cfbe3b741d3a64cc637efe0c7bf0bb93.jpg?fit=crop&h=300&w=300",
@@ -361,7 +361,7 @@
     },
     {
       "nombre_pasillo": "Huevos, leche y mantequilla",
-      "subtotal": 8.0,
+      "subtotal": 3.35,
       "items": [
         {
           "id": "15768",
@@ -376,21 +376,6 @@
           "precio_referencia": 3.35,
           "formato_referencia": "dc",
           "thumbnail": "https://prod-mercadona.imgix.net/images/50933500ef69e4c4cc91733c48e4e909.jpg?fit=crop&h=300&w=300",
-          "comprado": false
-        },
-        {
-          "id": "51071",
-          "nombre": "Queso fresco batido desnatado 0% MG Hacendado",
-          "nombre_receta": "Queso fresco batido 0% (merienda de Lord.I) (precio estimado)",
-          "pasillo": "Huevos, leche y mantequilla",
-          "subseccion": "Postres lácteos",
-          "cantidad": 3,
-          "unidad_receta": "tarrinas 500 g",
-          "precio_unitario": 1.55,
-          "precio_total": 4.65,
-          "precio_referencia": 1.55,
-          "formato_referencia": "tarrina 500 g",
-          "thumbnail": "",
           "comprado": false
         }
       ]

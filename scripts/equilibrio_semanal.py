@@ -99,7 +99,11 @@ def evaluar(menu, recetario, nutricion, base, reglas, cambios=None):
                                   "texto": f"{etiqueta}: frito o rebozado en la comida de entre semana ({recetas[rid]['nombre']})"})
             n = nutricion.get(rid)
             if n:
-                p_i += n.get("lord_i", {}).get("proteina_g", 0)
+                p_toma = n.get("lord_i", {}).get("proteina_g", 0)
+                if lord_i.get("proteina_max_toma") and p_toma > lord_i["proteina_max_toma"]:
+                    problemas.append({"clave": f"prot_toma:{idx}-{tipo}", "desvio": p_toma - lord_i["proteina_max_toma"], "nivel": "aviso",
+                                      "texto": f"{etiqueta} ({tipo}): ración de Lord.I con ~{p_toma} g de proteína, más de {lord_i['proteina_max_toma']} g en una sola toma"})
+                p_i += p_toma
                 k_y += n.get("dona_y", {}).get("kcal", 0)
             else:
                 completo = False
@@ -109,9 +113,13 @@ def evaluar(menu, recetario, nutricion, base, reglas, cambios=None):
         if completo:
             prot_i.append(p_i)
             kcal_y.append(k_y)
-            if lord_i.get("proteina_max") and p_i > lord_i["proteina_max"]:
-                problemas.append({"clave": f"prot_max:{idx}", "desvio": p_i - lord_i["proteina_max"], "nivel": "error",
-                                  "texto": f"{etiqueta}: Lord.I ~{p_i} g de proteína supera el límite de {lord_i['proteina_max']} g"})
+            tope_dia = lord_i.get("proteina_max_dia") or lord_i.get("proteina_max")
+            if tope_dia and p_i > tope_dia:
+                problemas.append({"clave": f"prot_dia:{idx}", "desvio": p_i - tope_dia, "nivel": "error",
+                                  "texto": f"{etiqueta}: Lord.I ~{p_i} g de proteína supera el tope diario de {tope_dia} g"})
+            elif lord_i.get("proteina_max") and p_i > lord_i["proteina_max"]:
+                problemas.append({"clave": f"prot_alto:{idx}", "desvio": p_i - lord_i["proteina_max"], "nivel": "aviso",
+                                  "texto": f"{etiqueta}: Lord.I ~{p_i} g de proteína, por encima de su rango de {lord_i.get('proteina_min')}-{lord_i['proteina_max']} g"})
 
     for lim in reglas.get("limites", []):
         g = lim["grupo"]
@@ -136,9 +144,15 @@ def evaluar(menu, recetario, nutricion, base, reglas, cambios=None):
                                   "texto": f"'{recetas[rid]['nombre']}' aparece {_veces(n)} en la semana"})
 
     media_i, media_y = _media(prot_i), _media(kcal_y)
-    if "proteina_lord_i_media" in reglas and media_i is not None and lord_i.get("proteina_min") and media_i < lord_i["proteina_min"]:
-        problemas.append({"clave": "prot_media", "desvio": lord_i["proteina_min"] - media_i, "nivel": reglas["proteina_lord_i_media"]["nivel"],
-                          "texto": f"Lord.I: media de ~{media_i} g de proteína al día, por debajo de {lord_i['proteina_min']} g"})
+    regla = reglas.get("proteina_lord_i_media")
+    if regla and media_i is not None:
+        # El tope manda (protección renal); quedarse algo corto solo es un aviso
+        if lord_i.get("proteina_max") and media_i > lord_i["proteina_max"]:
+            problemas.append({"clave": "prot_media", "desvio": media_i - lord_i["proteina_max"], "nivel": regla.get("nivel_alto", "error"),
+                              "texto": f"Lord.I: media de ~{media_i} g de proteína al día, por encima del tope de {lord_i['proteina_max']} g"})
+        elif lord_i.get("proteina_min") and media_i < lord_i["proteina_min"]:
+            problemas.append({"clave": "prot_media", "desvio": lord_i["proteina_min"] - media_i, "nivel": regla.get("nivel_bajo", "aviso"),
+                              "texto": f"Lord.I: media de ~{media_i} g de proteína al día, por debajo de {lord_i['proteina_min']} g"})
     if "kcal_dona_y_media" in reglas and media_y is not None and dona_y.get("kcal_min") and media_y < dona_y["kcal_min"]:
         problemas.append({"clave": "kcal_media", "desvio": dona_y["kcal_min"] - media_y, "nivel": reglas["kcal_dona_y_media"]["nivel"],
                           "texto": f"Doña.Y: media de ~{media_y} kcal al día (con tentempiés), por debajo de {dona_y['kcal_min']} kcal"})
@@ -168,7 +182,7 @@ def comprobar(menu, recetario, avisos):
     exigible = (menu.get("fecha_inicio") or "") >= reglas.get("vigente_desde", "")
     errores = []
     for p in problemas:
-        if p["clave"].startswith("prot_max:"):
+        if p["clave"].startswith("prot_dia:"):
             continue  # ya lo comprueba verificar_reglas.py con su propio mensaje
         if p["nivel"] == "error" and exigible:
             errores.append(f"Equilibrio semanal: {p['texto']}")

@@ -51,6 +51,6 @@
   "verduras_distintas_min": { "valor": 6, "nivel": "aviso" },
   "sin_fritos_comida_laborable": { "nivel": "error" },
   "receta_max_tomas": { "valor": 2, "nivel": "aviso" },
-  "proteina_lord_i_media": { "nivel": "error" },
+  "proteina_lord_i_media": { "nivel_alto": "error", "nivel_bajo": "aviso" },
   "kcal_dona_y_media": { "nivel": "error" }
 }

@@ -90,7 +90,7 @@ export default function FichaRecetaModal({ receta, nutricion, onClose }) {
                     Lord.I (Recomposición 80kg)
                   </span>
                   <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded-md font-medium">
-                    120-135g prot max
+                    máx. 40 g prot por toma
                   </span>
                 </div>
                 <p className="text-xs sm:text-sm text-blue-900 font-medium mb-2">

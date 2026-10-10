@@ -149,7 +149,7 @@
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Manzanas Golden (merienda con queso batido)",
+      "nombre_receta": "Manzanas Golden (merienda de fruta)",
       "cantidad": 6,
       "unidad": "piezas (~1 kg)",
       "seccion": "Fruta y verdura",
@@ -193,8 +193,8 @@
     },
     {
       "nombre_receta": "Filetes de pechuga de pollo (burrito, quesadillas, yakisoba y pasta)",
-      "cantidad": 3,
-      "unidad": "bandejas (~1,6 kg)",
+      "cantidad": 2,
+      "unidad": "bandejas (~1,1 kg)",
       "seccion": "Carne",
       "id_preferente": 2787,
       "termino_fallback": "filetes pechuga pollo",
@@ -248,15 +248,6 @@
         "chocolate",
         "sorpresa"
       ]
-    },
-    {
-      "nombre_receta": "Queso fresco batido 0% (merienda de Lord.I) (precio estimado)",
-      "cantidad": 3,
-      "unidad": "tarrinas 500 g",
-      "seccion": "Huevos, leche y mantequilla",
-      "id_preferente": 51071,
-      "termino_fallback": "queso fresco batido",
-      "filtro_excluir": []
     },
     {
       "nombre_receta": "Queso tierno suave para rallar (quesadillas)",
