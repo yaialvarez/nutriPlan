@@ -8,9 +8,12 @@
     ]
   },
   "dona_y": {
+    "kcal_min": 2100,
+    "kcal_max": 2300,
     "fijos": [
       { "nombre": "Desayuno a su elección (estimado)", "proteina_g": 12, "kcal": 350 },
-      { "nombre": "Batido proteico pautado", "proteina_g": 25, "kcal": 150 }
+      { "nombre": "Batido proteico pautado", "proteina_g": 25, "kcal": 150 },
+      { "nombre": "Tentempiés: puñado de frutos secos y tostada o plátano", "proteina_g": 10, "kcal": 380 }
     ]
   }
 }

@@ -11,6 +11,8 @@ import re
 import sys
 from datetime import date, timedelta
 
+from equilibrio_semanal import comprobar as comprobar_equilibrio
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 
@@ -197,16 +199,8 @@ def check_medical_and_dietary_rules():
             for rid in set(json.load(fp).get("recetas", {})) - recetas_ids:
                 avisos.append(f"nutricion_recetas.json tiene '{rid}', que no existe en recetario.json")
 
-    # 5c. Variedad: mismo plato en demasiadas tomas de la semana
-    usos = {}
-    for d in dias:
-        for toma_tipo in ["comida", "cena"]:
-            rid = d.get(toma_tipo, {}).get("receta_id")
-            if rid:
-                usos[rid] = usos.get(rid, 0) + 1
-    for rid, n in usos.items():
-        if n > 2:
-            avisos.append(f"Poca variedad: '{rid}' aparece {n} veces en la semana")
+    # 5c. Equilibrio de la semana completa (pescado, legumbres, verdura, variedad, medias diarias)
+    errors.extend(comprobar_equilibrio(menu, recetas, avisos))
 
     for a in avisos:
         print(f"  [aviso] {a}")
@@ -225,6 +219,7 @@ def check_medical_and_dietary_rules():
         print(f"  - Integridad de catálogo Mercadona: 100% productos reales verificados (0 ficticios).")
         print(f"  - Ticket Mercadona: {compra.get('total_ticket_estimado')} EUR ({compra.get('moneda')}) calculado con exactitud matemática.")
         print("  - Proteína diaria de Lord.I: dentro del límite renal en todos los días.")
+        print("  - Equilibrio semanal: pescado, legumbres, verdura diaria y medias de proteína y kcal según data/reglas_semana.json.")
 
 
 def comprobar_coherencia(menu, compra, avisos):
