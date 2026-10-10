@@ -1,0 +1,343 @@
+{
+  "_nota": "Generado por scripts/planificar_semana.py a partir de las recetas del menú y data/planificador/ingredientes.json. Se puede retocar a mano y volver a ejecutar scripts/generar_lista_compra.py.",
+  "supermercado": "Mercadona",
+  "articulos": [
+    {
+      "nombre_receta": "Plátanos de Canarias (tentempiés de Doña.Y)",
+      "cantidad": 6,
+      "unidad": "piezas (~1 kg)",
+      "seccion": "Fruta y verdura",
+      "id_preferente": "3819",
+      "termino_fallback": "platano canarias"
+    },
+    {
+      "nombre_receta": "Manzanas Golden (merienda de fruta)",
+      "cantidad": 7,
+      "unidad": "piezas (~1,2 kg)",
+      "seccion": "Fruta y verdura",
+      "id_preferente": "3028",
+      "termino_fallback": "manzana golden"
+    },
+    {
+      "nombre_receta": "Caldo de pollo (comida del martes y cena del viernes)",
+      "cantidad": 2,
+      "unidad": "brik 1 L",
+      "seccion": "Conservas, caldos y cremas",
+      "id_preferente": "7313",
+      "termino_fallback": "caldo pollo",
+      "filtro_excluir": [
+        "pastillas"
+      ]
+    },
+    {
+      "nombre_receta": "Merluza en lomos ultracongelada (cena del miércoles)",
+      "cantidad": 1,
+      "unidad": "caja (~400 g)",
+      "seccion": "Congelados",
+      "id_preferente": "62113",
+      "termino_fallback": "merluza",
+      "filtro_excluir": [
+        "empanada",
+        "rebozada",
+        "croquetas",
+        "palitos",
+        "fingers"
+      ]
+    },
+    {
+      "nombre_receta": "Tacos de atún congelado (cena del sábado)",
+      "cantidad": 1,
+      "unidad": "bandeja (~280 g)",
+      "seccion": "Congelados",
+      "id_preferente": "24458",
+      "termino_fallback": "tacos atun",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Atún claro en aceite de oliva (cena del domingo)",
+      "cantidad": 1,
+      "unidad": "pack 6 latas",
+      "seccion": "Conservas, caldos y cremas",
+      "id_preferente": "18002",
+      "termino_fallback": "atun claro aceite oliva",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Jamón serrano en lonchas (cena del lunes)",
+      "cantidad": 1,
+      "unidad": "paquete (~90 g)",
+      "seccion": "Charcutería y quesos",
+      "id_preferente": "15628",
+      "termino_fallback": "jamon serrano lonchas",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Taquitos de jamón serrano (comida del viernes)",
+      "cantidad": 1,
+      "unidad": "pack 2 (~200 g)",
+      "seccion": "Charcutería y quesos",
+      "id_preferente": "59071",
+      "termino_fallback": "taquitos jamon",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Jamoncitos de pollo (comida del lunes)",
+      "cantidad": 1,
+      "unidad": "bandeja (~900 g)",
+      "seccion": "Carne",
+      "id_preferente": "2778",
+      "termino_fallback": "jamoncitos pollo",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Contramuslos de pollo deshuesados (comida del sábado)",
+      "cantidad": 1,
+      "unidad": "bandeja (~550 g)",
+      "seccion": "Carne",
+      "id_preferente": "2789",
+      "termino_fallback": "contramuslos pollo deshuesados",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Filetes de pechuga de pollo (comida del martes y cena del viernes)",
+      "cantidad": 2,
+      "unidad": "bandeja (~560 g)",
+      "seccion": "Carne",
+      "id_preferente": "2787",
+      "termino_fallback": "filetes pechuga pollo",
+      "filtro_excluir": [
+        "empanad",
+        "marinad"
+      ]
+    },
+    {
+      "nombre_receta": "Carne picada de vacuno (comida del miércoles)",
+      "cantidad": 1,
+      "unidad": "bandeja 500 g",
+      "seccion": "Carne",
+      "id_preferente": "2868",
+      "termino_fallback": "carne picada vacuno",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Filetes de vacuno añojo (cena del martes)",
+      "cantidad": 1,
+      "unidad": "bandeja (~420 g)",
+      "seccion": "Carne",
+      "id_preferente": "8936",
+      "termino_fallback": "filetes vacuno anojo",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Taquitos de cerdo (comida del jueves)",
+      "cantidad": 1,
+      "unidad": "bandeja (~400 g)",
+      "seccion": "Carne",
+      "id_preferente": "14943",
+      "termino_fallback": "taquitos cerdo",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Huevos camperos (comida del sábado, cena del lunes, cena del miércoles, cena del jueves, comida del viernes y cena del viernes)",
+      "cantidad": 2,
+      "unidad": "docena",
+      "seccion": "Huevos, leche y mantequilla",
+      "id_preferente": "15768",
+      "termino_fallback": "huevos camperas",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Lentejas pardinas (comida del jueves)",
+      "cantidad": 1,
+      "unidad": "paquete 1 kg",
+      "seccion": "Arroz, legumbres y pasta",
+      "id_preferente": "5330",
+      "termino_fallback": "lenteja pardina",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Garbanzos cocidos (comida del viernes)",
+      "cantidad": 1,
+      "unidad": "tarro 400 g",
+      "seccion": "Arroz, legumbres y pasta",
+      "id_preferente": "26029",
+      "termino_fallback": "garbanzo cocido",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Judía verde plana (cena del sábado)",
+      "cantidad": 1,
+      "unidad": "paquete (~350 g)",
+      "seccion": "Fruta y verdura",
+      "id_preferente": "68131",
+      "termino_fallback": "judia verde",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Arroz redondo (comida del sábado, cena del domingo y comida del martes)",
+      "cantidad": 1,
+      "unidad": "paquete 1 kg",
+      "seccion": "Arroz, legumbres y pasta",
+      "id_preferente": "5044",
+      "termino_fallback": "arroz redondo",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Noodles de trigo (cena del viernes)",
+      "cantidad": 1,
+      "unidad": "paquete 200 g",
+      "seccion": "Arroz, legumbres y pasta",
+      "id_preferente": "9861",
+      "termino_fallback": "noodles ramen",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Hogaza de pan natural (cena del lunes y cena del jueves)",
+      "cantidad": 1,
+      "unidad": "hogaza (~12 rebanadas)",
+      "seccion": "Panadería y pastelería",
+      "id_preferente": "17809",
+      "termino_fallback": "hogaza natural",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Tomate triturado (comida del miércoles)",
+      "cantidad": 1,
+      "unidad": "bote 800 g",
+      "seccion": "Conservas, caldos y cremas",
+      "id_preferente": "16043",
+      "termino_fallback": "tomate triturado",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Mayonesa (cena del domingo y cena del miércoles)",
+      "cantidad": 1,
+      "unidad": "tarro",
+      "seccion": "Aceite, especias y salsas",
+      "id_preferente": "13406",
+      "termino_fallback": "mayonesa",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Espinacas cortadas y lavadas (comida del viernes y cena del viernes)",
+      "cantidad": 1,
+      "unidad": "bolsa 300 g",
+      "seccion": "Fruta y verdura",
+      "id_preferente": "69730",
+      "termino_fallback": "espinacas",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Calabacín (comida del sábado y cena del jueves)",
+      "cantidad": 2,
+      "unidad": "pieza",
+      "seccion": "Fruta y verdura",
+      "id_preferente": "69338",
+      "termino_fallback": "calabacin",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Tomates cherry (cena del sábado)",
+      "cantidad": 1,
+      "unidad": "bandeja 500 g",
+      "seccion": "Fruta y verdura",
+      "id_preferente": "69990",
+      "termino_fallback": "tomates cherry",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Tomate de ensalada (cena del jueves)",
+      "cantidad": 1,
+      "unidad": "pieza",
+      "seccion": "Fruta y verdura",
+      "id_preferente": "69937",
+      "termino_fallback": "tomate ensalada",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Champiñones laminados (cena del lunes)",
+      "cantidad": 1,
+      "unidad": "bandeja (~320 g)",
+      "seccion": "Fruta y verdura",
+      "id_preferente": "69519",
+      "termino_fallback": "champinones laminados",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Zanahorias (comida del sábado, comida del martes, comida del miércoles, comida del jueves y cena del viernes)",
+      "cantidad": 2,
+      "unidad": "malla 1 kg",
+      "seccion": "Fruta y verdura",
+      "id_preferente": "69586",
+      "termino_fallback": "zanahorias",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Patatas (cena del sábado, comida del lunes, comida del martes, comida del miércoles, cena del miércoles y comida del jueves)",
+      "cantidad": 1,
+      "unidad": "malla 3 kg",
+      "seccion": "Fruta y verdura",
+      "id_preferente": "69166",
+      "termino_fallback": "patatas",
+      "filtro_excluir": [
+        "fritas",
+        "chips",
+        "snack"
+      ]
+    },
+    {
+      "nombre_receta": "Cebollas dulces para pochar (comida del lunes, comida del martes, comida del miércoles y comida del jueves)",
+      "cantidad": 1,
+      "unidad": "malla 1 kg",
+      "seccion": "Fruta y verdura",
+      "id_preferente": "69155",
+      "termino_fallback": "cebollas dulces",
+      "filtro_excluir": [
+        "frita",
+        "polvo"
+      ]
+    },
+    {
+      "nombre_receta": "Puerros (comida del miércoles y comida del jueves)",
+      "cantidad": 1,
+      "unidad": "manojo (~4)",
+      "seccion": "Fruta y verdura",
+      "id_preferente": "69411",
+      "termino_fallback": "puerros",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Perejil fresco (cena del lunes y comida del miércoles)",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Fruta y verdura",
+      "id_preferente": "69701",
+      "termino_fallback": "perejil",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Queso tierno en lonchas (cena del jueves)",
+      "cantidad": 1,
+      "unidad": "paquete (~300 g)",
+      "seccion": "Charcutería y quesos",
+      "id_preferente": "50543",
+      "termino_fallback": "queso lonchas tierno",
+      "filtro_excluir": []
+    }
+  ],
+  "despensa_excluida": [
+    "Salsa de soja baja en sal",
+    "Aceite de oliva virgen extra (AOVE)",
+    "Semillas de sésamo tostado",
+    "Ajos",
+    "Sal yodada",
+    "Pimienta negra molida",
+    "Hierbas secas: orégano, laurel, tomillo y romero",
+    "Curry dulce en polvo (comprobar que no pica)",
+    "Harina de trigo",
+    "Pimentón dulce de la Vera",
+    "Copos de avena y leche (desayuno de Lord.I)",
+    "Café e infusiones",
+    "Polvo de proteína (Doña.Y stock habitual)"
+  ]
+}

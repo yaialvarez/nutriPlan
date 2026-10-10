@@ -3,7 +3,9 @@
 Generador automático de la Lista de la Compra Semanal con precios reales de Mercadona.
 
 Lee los artículos de la semana de data/compra_semana.json, los busca en el catálogo
-(data/mercadona_catalogo_cache.json o, si no existe, lo descarga con mercadona_api.py),
+(data/mercadona_catalogo_cache.json si se acaba de sincronizar en este ordenador; si no, la
+copia guardada en el repositorio, data/catalogo/mercadona.json; y si tampoco, lo descarga con
+mercadona_api.py),
 los agrupa por pasillos para optimizar el recorrido y escribe data/lista_compra.json
 con el ticket estimado. Cada semana solo se edita compra_semana.json, no este script.
 """
@@ -19,6 +21,7 @@ MENU_FILE = os.path.join(DATA_DIR, "menu_semanal.json")
 LISTA_FILE = os.path.join(DATA_DIR, "lista_compra.json")
 CACHE_FILE = os.path.join(DATA_DIR, "mercadona_catalogo_cache.json")
 COMPRA_FILE = os.path.join(DATA_DIR, "compra_semana.json")
+CATALOGO_FILE = os.path.join(DATA_DIR, "catalogo", "mercadona.json")
 
 
 def cargar_json(ruta: str) -> Any:
@@ -27,9 +30,10 @@ def cargar_json(ruta: str) -> Any:
 
 
 def cargar_catalogo() -> List[Dict[str, Any]]:
-    """Catálogo de Mercadona desde la caché local o, si no hay, descargándolo."""
-    if os.path.exists(CACHE_FILE):
-        return cargar_json(CACHE_FILE).get("productos", [])
+    """Catálogo de Mercadona: caché local, copia guardada en el repositorio o descarga."""
+    for ruta in (CACHE_FILE, CATALOGO_FILE):
+        if os.path.exists(ruta):
+            return cargar_json(ruta).get("productos", [])
     print("[*] No hay caché del catálogo: descargándolo de Mercadona...")
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from mercadona_api import load_catalog
@@ -95,14 +99,14 @@ def resolve_item(cfg: Dict[str, Any], catalog: List[Dict[str, Any]]) -> Dict[str
             "nombre": matched_prod.get("nombre"),
             "nombre_receta": cfg["nombre_receta"],
             "pasillo": matched_prod.get("pasillo", cfg["seccion"]),
-            "subseccion": matched_prod.get("subseccion", ""),
+            "subseccion": matched_prod.get("subseccion") or matched_prod.get("subcategoria", ""),
             "cantidad": cant,
             "unidad_receta": cfg["unidad"],
             "precio_unitario": p_unit,
             "precio_total": p_total,
             "precio_referencia": matched_prod.get("precio_referencia", 0.0),
             "formato_referencia": matched_prod.get("formato_referencia", "kg"),
-            "thumbnail": matched_prod.get("thumbnail", ""),
+            "thumbnail": matched_prod.get("thumbnail") or matched_prod.get("foto") or "",
             "comprado": False
         }
     else:
@@ -125,11 +129,12 @@ def resolve_item(cfg: Dict[str, Any], catalog: List[Dict[str, Any]]) -> Dict[str
         }
 
 
-def generar_lista_compra_mercadona() -> Dict[str, Any]:
+def generar_lista_compra_mercadona(compra_file: str = COMPRA_FILE, menu_file: str = MENU_FILE,
+                                   lista_file: str = LISTA_FILE, catalogo=None) -> Dict[str, Any]:
     print("[*] Generando lista de compra precisa para Mercadona...")
-    compra = cargar_json(COMPRA_FILE)
-    menu = cargar_json(MENU_FILE)
-    catalog = cargar_catalogo()
+    compra = cargar_json(compra_file)
+    menu = cargar_json(menu_file)
+    catalog = catalogo if catalogo is not None else cargar_catalogo()
     if not catalog:
         # Sin catálogo todos los precios serían inventados: mejor no tocar la lista actual
         print("[!] Catálogo de Mercadona vacío o inaccesible: lista_compra.json no se modifica.")
@@ -194,7 +199,7 @@ def generar_lista_compra_mercadona() -> Dict[str, Any]:
         "despensa_excluida": compra.get("despensa_excluida", [])
     }
 
-    with open(LISTA_FILE, "w", encoding="utf-8") as f:
+    with open(lista_file, "w", encoding="utf-8") as f:
         json.dump(resultado, f, ensure_ascii=False, indent=2)
         f.write("\n")
 

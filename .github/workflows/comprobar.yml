@@ -35,6 +35,13 @@ jobs:
       - name: Validar reglas médicas, proteína, fechas y lista de la compra
         run: python scripts/verificar_reglas.py
 
+      - name: Validar las semanas guardadas por adelantado (data/semanas/)
+        run: python scripts/semanas.py comprobar
+
+      # Si cambian recetas o reglas, el planificador de los sábados tiene que seguir encontrando menú
+      - name: Probar el planificador automático con la semana siguiente
+        run: python scripts/planificar_semana.py --prueba
+
       - name: Revisar el código de la app
         run: npm run lint --prefix app
 

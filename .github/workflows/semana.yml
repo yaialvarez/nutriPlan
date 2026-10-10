@@ -1,0 +1,72 @@
+name: Menú de la semana
+
+# Cada sábado a primera hora pone en marcha la semana nueva sin intervención:
+#  1. Activa en data/ la semana que empieza hoy (guardada en data/semanas/ o, si no hay,
+#     la planifica scripts/planificar_semana.py con las recetas y reglas del repositorio).
+#  2. La valida con los mismos scripts que el despliegue y la sube a main.
+#  3. Publica la web.
+# Si algo falla no se sube nada, la web sigue con la semana anterior y GitHub avisa por correo.
+on:
+  schedule:
+    # 03:00 UTC = 05:00 en verano / 04:00 en invierno en España
+    - cron: '0 3 * * 6'
+  workflow_dispatch:
+    inputs:
+      fecha:
+        description: 'Fecha a activar (AAAA-MM-DD); vacío = hoy'
+        required: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: semana
+  cancel-in-progress: false
+
+jobs:
+  preparar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Activar (o planificar) la semana
+        env:
+          FECHA: ${{ inputs.fecha }}
+        run: python scripts/semanas.py activar --generar ${FECHA:+--fecha "$FECHA"}
+
+      - name: Validar reglas médicas, proteína, fechas y lista de la compra
+        run: python scripts/verificar_reglas.py
+
+      - name: Validar las semanas guardadas por adelantado
+        run: python scripts/semanas.py comprobar
+
+      - name: Subir la semana a main
+        run: |
+          git add data
+          if git diff --cached --quiet; then
+            echo "Nada que subir: la semana ya estaba activa."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "feat: menú de la semana del $(python -c 'import json;print(json.load(open("data/menu_semanal.json"))["fecha_inicio"])')"
+          git push origin HEAD:main
+
+  desplegar:
+    needs: preparar
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit
