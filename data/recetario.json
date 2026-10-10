@@ -1506,5 +1506,3813 @@
       "Hornear a 190°C durante 40-45 minutos hasta que la carne esté tierna, el pollo dorado y las patatas melosas.",
       "Distribuir en dos tuppers herméticos de cristal para el jueves: 2 jamoncitos por tupper con su ración de patatas panadera y jugo."
     ]
+  },
+  {
+    "id": "pollo_asado_entero_patatas_limon",
+    "nombre": "Pollo entero asado al horno con patatas, limón y hierbas",
+    "tipo": "comida",
+    "tiempo_minutos": 60,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (asado el domingo; recalentar 3 min en microondas y sobras para otros platos)",
+    "ingredientes": [
+      {
+        "item": "Pollo entero limpio",
+        "cantidad": "1 unidad (~1,8 kg)",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Patatas medianas",
+        "cantidad": "5 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Limón",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien asada y melosa)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cabeza de ajos",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomillo y romero secos",
+        "cantidad": "1 cucharada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Pimentón dulce",
+        "cantidad": "1 cucharadita",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 cuarto de pollo (muslo y contramuslo o media pechuga) sin piel excesiva con 1 patata asada y cebolla melosa.",
+      "proporciones": "1 cuarto de pollo (~38 g de proteína) + 1 patata mediana asada + jugo del asado desgrasado."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 cuarto de pollo con doble ración de patatas asadas, bien regadas con el jugo y un hilo extra de AOVE.",
+      "proporciones": "1 cuarto de pollo + 2 patatas asadas + 1 cucharada extra de AOVE sobre las patatas."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Precalentar el horno a 200°C. Pelar las patatas y cortarlas en gajos gruesos; cortar la cebolla en juliana y partir la cabeza de ajos por la mitad.",
+      "Extender patatas, cebolla y ajos en una bandeja honda, regar con AOVE, sal yodada y la mitad de las hierbas.",
+      "Mezclar 3 cucharadas de AOVE con el zumo de 1 limón, el pimentón dulce, el resto de hierbas y sal; untar el pollo por fuera y meter el otro limón partido en su interior.",
+      "Colocar el pollo sobre la cama de patatas con la pechuga hacia arriba y asar 55-60 minutos, regando con su jugo a mitad de cocción.",
+      "Dejar reposar 10 minutos antes de trinchar. Reservar la carcasa para caldo casero.",
+      "Repartir en tuppers: cuartos traseros con patatas para la semana y pechuga desmenuzada para ensaladas, fajitas o sándwiches."
+    ]
+  },
+  {
+    "id": "estofado_ternera_patatas_zanahoria",
+    "nombre": "Estofado de ternera con patatas y zanahoria al vino tinto",
+    "tipo": "comida",
+    "tiempo_minutos": 60,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (4 raciones; recalentar 3 min en microondas o congelar)",
+    "ingredientes": [
+      {
+        "item": "Ternera para guisar en dados (morcillo o aguja)",
+        "cantidad": "800g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Patatas medianas",
+        "cantidad": "4 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahorias",
+        "cantidad": "4 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Dientes de ajo",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate triturado natural",
+        "cantidad": "200g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Vino tinto",
+        "cantidad": "150ml",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Laurel, pimentón dulce y tomillo",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 plato hondo de estofado con abundante zanahoria, 1 patata y salsa bien ligada.",
+      "proporciones": "~200 g de ternera guisada (~40 g de proteína) + 1 patata + zanahoria y salsa."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 plato hondo generoso con patata extra y una rebanada de pan de hogaza para mojar la salsa.",
+      "proporciones": "~200 g de ternera + 2 patatas + 1 rebanada de pan + hilo de AOVE crudo al servir."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Secar bien los dados de ternera, salar con sal yodada y sellarlos por tandas en la olla con AOVE a fuego fuerte hasta que queden dorados. Reservar.",
+      "En la misma olla, pochar la cebolla y el ajo picados a fuego suave 10 minutos hasta que estén tiernos y transparentes.",
+      "Añadir 1 cucharadita de pimentón dulce, el tomate triturado y el vino; dejar reducir 3 minutos.",
+      "Devolver la carne, añadir laurel y tomillo, cubrir con agua y cocer tapado a fuego suave 35 minutos.",
+      "Incorporar las zanahorias en rodajas gruesas y las patatas chascadas; cocer 20 minutos más hasta que la salsa espese y la carne esté melosa.",
+      "Dejar enfriar y repartir en 4 tuppers; 2 a la nevera y 2 al congelador para el final de la semana."
+    ]
+  },
+  {
+    "id": "garbanzos_con_bacalao_espinacas",
+    "nombre": "Potaje de garbanzos con bacalao desalado y espinacas",
+    "tipo": "comida",
+    "tiempo_minutos": 45,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (4 raciones; recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Garbanzos cocidos (bote)",
+        "cantidad": "2 botes (800g escurridos)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Bacalao desalado en trozos (fresco o congelado)",
+        "cantidad": "500g",
+        "seccion": "Pescadería"
+      },
+      {
+        "item": "Espinacas frescas",
+        "cantidad": "300g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Dientes de ajo",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate triturado natural",
+        "cantidad": "200g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Huevos",
+        "cantidad": "2 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Pimentón dulce, comino y laurel",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 plato hondo de potaje con 2 trozos generosos de bacalao, garbanzos, espinacas y medio huevo cocido.",
+      "proporciones": "~125 g de bacalao + 1 cazo de garbanzos (~38 g de proteína entre pescado, legumbre y huevo)."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 plato hondo con cazo extra de garbanzos, huevo cocido entero y pan tostado con AOVE.",
+      "proporciones": "~125 g de bacalao + 2 cazos de garbanzos + 1 huevo + 1 rebanada de pan con AOVE."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Cocer los huevos 10 minutos, enfriar, pelar y reservar.",
+      "Pochar la cebolla y el ajo picados con AOVE a fuego suave 10 minutos hasta que estén muy tiernos.",
+      "Añadir 1 cucharadita de pimentón dulce, media de comino y el tomate triturado; sofreír 5 minutos.",
+      "Incorporar los garbanzos escurridos y enjuagados, el laurel y 500 ml de agua; cocer 10 minutos a fuego medio.",
+      "Añadir las espinacas y el bacalao en trozos, cocer 6-8 minutos más hasta que el pescado se abra en lascas. Ajustar de sal yodada (el bacalao ya aporta).",
+      "Repartir en tuppers con medio huevo cocido por ración; el potaje gana sabor de un día para otro."
+    ]
+  },
+  {
+    "id": "lentejas_estofadas_calabaza_arroz",
+    "nombre": "Lentejas estofadas con calabaza, zanahoria y arroz",
+    "tipo": "comida",
+    "tiempo_minutos": 45,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (4 raciones; recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Lentejas pardinas",
+        "cantidad": "400g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Calabaza pelada en dados",
+        "cantidad": "500g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahorias",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Puerro",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Arroz redondo",
+        "cantidad": "120g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Huevos",
+        "cantidad": "4 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Comino, pimentón dulce y laurel",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 plato hondo de lentejas con calabaza y 1 huevo cocido troceado por encima.",
+      "proporciones": "1 plato hondo (lentejas + arroz + huevo ~28 g de proteína) con hilo de AOVE crudo."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 plato hondo generoso con el arroz bien presente, 1 huevo cocido y un puñado de nueces picadas por encima.",
+      "proporciones": "1 plato hondo colmado + 1 huevo + 1 cucharada de AOVE y nueces para subir la energía."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Pochar la cebolla, el puerro y la zanahoria picados con AOVE a fuego suave 10 minutos hasta que queden tiernos.",
+      "Añadir 1 cucharadita de pimentón dulce y media de comino, remover 30 segundos y agregar las lentejas lavadas, la calabaza y el laurel.",
+      "Cubrir con agua (3 dedos por encima), salar con sal yodada y cocer a fuego medio 25 minutos.",
+      "Añadir el arroz y cocer 15 minutos más, añadiendo agua caliente si espesa demasiado; la calabaza se deshará y dará cremosidad.",
+      "Mientras, cocer los huevos 10 minutos, pelar y partir por la mitad.",
+      "Repartir en 4 tuppers con 1 huevo cocido por ración; también se puede congelar sin el huevo."
+    ]
+  },
+  {
+    "id": "alubias_blancas_guisadas_con_pollo",
+    "nombre": "Alubias blancas guisadas con contramuslos de pollo y pimentón dulce",
+    "tipo": "comida",
+    "tiempo_minutos": 50,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (4 raciones; recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Contramuslos de pollo deshuesados sin piel",
+        "cantidad": "600g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Alubias blancas cocidas (bote)",
+        "cantidad": "2 botes (800g escurridos)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Pimiento rojo",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahorias",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Dientes de ajo",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate triturado natural",
+        "cantidad": "200g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Pimentón dulce, laurel y tomillo",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 plato hondo con 1 contramuslo y medio troceado, alubias y verduras en salsa.",
+      "proporciones": "~150 g de pollo + 1 cazo de alubias (~40 g de proteína) con abundante verdura."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 plato hondo con alubias extra, pollo y pan de hogaza para la salsa.",
+      "proporciones": "~150 g de pollo + 2 cazos de alubias + 1 rebanada de pan con hilo de AOVE."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Trocear los contramuslos en 3 piezas, salar con sal yodada y dorarlos en la olla con AOVE a fuego fuerte. Reservar.",
+      "Pochar en la misma olla la cebolla, el ajo, el pimiento y la zanahoria picados a fuego suave 12 minutos.",
+      "Añadir 1 cucharada de pimentón dulce, remover 30 segundos y agregar el tomate triturado; sofreír 5 minutos.",
+      "Devolver el pollo, añadir laurel y tomillo, cubrir con agua y cocer 20 minutos a fuego medio.",
+      "Incorporar las alubias escurridas y enjuagadas; cocer 10 minutos más a fuego suave para que la salsa espese. Rectificar de sal.",
+      "Repartir en 4 tuppers de cristal; congelar 2 para el final de semana si se desea."
+    ]
+  },
+  {
+    "id": "risotto_calabaza_pollo",
+    "nombre": "Risotto cremoso de calabaza con dados de pollo y parmesano suave",
+    "tipo": "comida",
+    "tiempo_minutos": 40,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (recalentar 3 min en microondas con un chorrito de agua o caldo)",
+    "ingredientes": [
+      {
+        "item": "Arroz redondo o arborio",
+        "cantidad": "250g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Pechuga de pollo en dados",
+        "cantidad": "400g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Calabaza pelada en dados pequeños",
+        "cantidad": "400g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Caldo de pollo casero o de brik",
+        "cantidad": "1 litro",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Vino blanco",
+        "cantidad": "100ml",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Parmesano suave rallado",
+        "cantidad": "40g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Tomillo o salvia seca",
+        "cantidad": "1 cucharadita",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 plato de risotto con buena presencia de pollo y calabaza; el arroz como acompañamiento.",
+      "proporciones": "~200 g de pollo (~45 g de proteína) con 1 cazo y medio de risotto."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 plato colmado de risotto con el pollo y un extra de parmesano y AOVE al servir.",
+      "proporciones": "~200 g de pollo + 2 cazos y medio de risotto + 1 cucharada extra de parmesano y AOVE."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Calentar el caldo y mantenerlo caliente. Dorar los dados de pollo salados con sal yodada en la sartén con AOVE 4 minutos. Reservar.",
+      "En una cazuela ancha, pochar la cebolla picada muy fina a fuego suave 10 minutos; añadir la calabaza y rehogar 5 minutos.",
+      "Añadir el arroz, nacararlo 1 minuto, verter el vino y dejar evaporar.",
+      "Ir añadiendo caldo cazo a cazo, removiendo, durante 18 minutos hasta que el arroz esté cremoso y la calabaza deshecha.",
+      "Apagar el fuego, incorporar el pollo, el parmesano, el tomillo y un chorrito de AOVE; remover hasta que quede meloso.",
+      "Repartir en tuppers; al recalentar, añadir un chorrito de agua para recuperar la cremosidad."
+    ]
+  },
+  {
+    "id": "lasana_casera_carne_bechamel",
+    "nombre": "Lasaña casera de carne de vacuno con bechamel ligera y queso tierno",
+    "tipo": "comida",
+    "tiempo_minutos": 60,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (4 raciones; recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Placas de lasaña precocidas",
+        "cantidad": "12 placas",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Carne picada 100% vacuno",
+        "cantidad": "600g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Tomate triturado natural",
+        "cantidad": "400g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahoria",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Leche semidesnatada",
+        "cantidad": "500ml",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Harina de trigo",
+        "cantidad": "40g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Queso tierno rallado",
+        "cantidad": "120g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Orégano, nuez moscada, AOVE y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 porción cuadrada de lasaña (un cuarto de la fuente) con ensalada de tomate aliñada.",
+      "proporciones": "1 porción (~150 g de carne, ~40 g de proteína) con tomate aliñado con AOVE."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 porción de lasaña más un trozo extra y 1 rebanada de pan de hogaza con AOVE.",
+      "proporciones": "1 porción grande + pan con AOVE; la bechamel y el queso aportan la densidad calórica."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Pochar la cebolla y la zanahoria picadas muy finas con AOVE a fuego suave 10 minutos. Añadir la carne, salar con sal yodada y dorar 5 minutos.",
+      "Añadir el tomate triturado y orégano; cocinar 15 minutos a fuego suave hasta que espese.",
+      "Bechamel ligera: calentar 3 cucharadas de AOVE, tostar la harina 1 minuto, añadir la leche poco a poco sin dejar de remover hasta espesar; sal yodada y nuez moscada.",
+      "Hidratar las placas según el envase. En una fuente, alternar: bechamel fina, placas, carne, bechamel; repetir 3 pisos y acabar con bechamel y queso tierno.",
+      "Hornear a 190°C durante 25 minutos hasta que dore. Dejar reposar 10 minutos antes de cortar.",
+      "Cortar en 4 porciones y guardar en tuppers; aguanta perfectamente 3-4 días en nevera o se congela."
+    ]
+  },
+  {
+    "id": "macarrones_bolonesa_casera",
+    "nombre": "Macarrones con boloñesa casera gratinados con mozzarella",
+    "tipo": "comida",
+    "tiempo_minutos": 45,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (4 raciones; recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Macarrones",
+        "cantidad": "400g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Carne picada mixta (vacuno y cerdo)",
+        "cantidad": "600g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Tomate triturado natural",
+        "cantidad": "500g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahoria",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Dientes de ajo",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Mozzarella rallada",
+        "cantidad": "150g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Orégano y albahaca seca",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 plato de macarrones con boloñesa abundante y gratinado ligero de mozzarella.",
+      "proporciones": "~150 g de carne (~40 g de proteína) con 1 ración moderada de pasta (~90 g en seco)."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 plato colmado de macarrones con boloñesa, mozzarella extra y un hilo de AOVE.",
+      "proporciones": "~150 g de carne + ración grande de pasta (~130 g en seco) + mozzarella y AOVE extra."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Pochar la cebolla, el ajo y la zanahoria picados muy finos con AOVE a fuego suave 10 minutos.",
+      "Añadir la carne picada, salar con sal yodada y dorar 5 minutos deshaciendo los grumos.",
+      "Incorporar el tomate triturado, orégano y albahaca; cocinar 20 minutos a fuego suave hasta que la salsa espese.",
+      "Cocer los macarrones 2 minutos menos de lo que indique el paquete, escurrir y mezclar con la boloñesa.",
+      "Pasar a una fuente, cubrir con la mozzarella y gratinar a 200°C durante 10 minutos.",
+      "Repartir en 4 tuppers; al recalentar, un chorrito de agua evita que la pasta se seque."
+    ]
+  },
+  {
+    "id": "arroz_al_horno_costillas_garbanzos",
+    "nombre": "Arroz al horno con costilla de cerdo, garbanzos, patata y tomate",
+    "tipo": "comida",
+    "tiempo_minutos": 60,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (4 raciones; recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Costilla de cerdo troceada",
+        "cantidad": "700g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Arroz redondo",
+        "cantidad": "350g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Garbanzos cocidos (bote)",
+        "cantidad": "1 bote (400g escurridos)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Patata grande",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomates maduros",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cabeza de ajos",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Caldo de pollo casero o de brik",
+        "cantidad": "800ml",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Pimentón dulce y azafrán o colorante",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 plato de arroz con 3-4 trozos de costilla, garbanzos y rodajas de patata y tomate.",
+      "proporciones": "~175 g de costilla (~35 g de proteína) con 1 ración moderada de arroz."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 plato colmado de arroz al horno con costilla, patata extra y un hilo de AOVE.",
+      "proporciones": "~175 g de costilla + ración grande de arroz y patata + AOVE al servir."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Precalentar el horno a 200°C y calentar el caldo. Salar la costilla con sal yodada.",
+      "En una sartén o cazuela apta para horno, dorar la costilla con AOVE a fuego fuerte 8 minutos; reservar.",
+      "Dorar en el mismo aceite las rodajas de patata (1 cm), la cabeza de ajos entera y los tomates en mitades; retirar.",
+      "Añadir 1 cucharadita de pimentón dulce y el arroz, rehogar 1 minuto, añadir los garbanzos y repartir todo en la cazuela.",
+      "Colocar encima costilla, patata, tomate y ajos; verter el caldo caliente con el azafrán y hornear 25-30 minutos sin remover hasta que el arroz absorba el caldo.",
+      "Dejar reposar 5 minutos y repartir en tuppers; es un arroz seco que se recalienta muy bien."
+    ]
+  },
+  {
+    "id": "pollo_teriyaki_arroz_brocoli",
+    "nombre": "Pollo teriyaki casero con arroz y brócoli al vapor",
+    "tipo": "comida",
+    "tiempo_minutos": 35,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Contramuslos de pollo deshuesados sin piel",
+        "cantidad": "500g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Arroz redondo o jazmín para arrocera",
+        "cantidad": "220g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Brócoli",
+        "cantidad": "1 unidad (~400g)",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Salsa de soja",
+        "cantidad": "5 cucharadas",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Jengibre fresco",
+        "cantidad": "1 trozo (~3 cm)",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Dientes de ajo",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Azúcar moreno",
+        "cantidad": "1 cucharada y media",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Semillas de sésamo",
+        "cantidad": "1 cucharada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y maicena",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 ración de pollo glaseado con brócoli abundante y 1 puño de arroz.",
+      "proporciones": "~250 g de pollo (~44 g de proteína) + 1 cazo de arroz + mitad del brócoli."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 ración de pollo glaseado con doble puño de arroz y sésamo extra.",
+      "proporciones": "~250 g de pollo + 2 cazos de arroz + 1 cucharadita de aceite de sésamo o AOVE al servir."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco. Crucíferas bien cocinadas.",
+    "pasos_preparacion": [
+      "Poner el arroz en la arrocera con su agua y una pizca de sal yodada.",
+      "Cocer el brócoli en ramilletes al vapor o en agua hirviendo 5 minutos; debe quedar tierno pero verde. Escurrir.",
+      "Mezclar la soja, el azúcar, el jengibre y el ajo rallados y 4 cucharadas de agua para la salsa teriyaki.",
+      "Cortar el pollo en tiras gruesas y dorarlo en la sartén con AOVE a fuego fuerte 5 minutos.",
+      "Verter la salsa, cocer 4 minutos y espesar con 1 cucharadita de maicena disuelta en agua hasta que el pollo quede glaseado y brillante.",
+      "Montar los tuppers con arroz, brócoli y pollo; espolvorear sésamo."
+    ]
+  },
+  {
+    "id": "ternera_salteada_brocoli_soja",
+    "nombre": "Tiras de ternera salteadas con brócoli, soja y sésamo, con arroz",
+    "tipo": "comida",
+    "tiempo_minutos": 35,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Ternera para filetes en tiras finas (tapa o babilla)",
+        "cantidad": "500g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Brócoli",
+        "cantidad": "1 unidad (~400g)",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Arroz redondo o jazmín para arrocera",
+        "cantidad": "220g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Salsa de soja",
+        "cantidad": "4 cucharadas",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Dientes de ajo",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Jengibre fresco",
+        "cantidad": "1 trozo (~3 cm)",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahoria",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Semillas de sésamo y maicena",
+        "cantidad": "1 cucharada de cada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 ración de ternera con brócoli y zanahoria en salsa de soja ligada y 1 puño de arroz.",
+      "proporciones": "~250 g de ternera (~45 g de proteína) + 1 cazo de arroz."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 ración de ternera con doble puño de arroz y sésamo extra.",
+      "proporciones": "~250 g de ternera + 2 cazos de arroz + 1 cucharadita de aceite de sésamo o AOVE."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco. Crucíferas bien cocinadas.",
+    "pasos_preparacion": [
+      "Poner el arroz en la arrocera con su agua y una pizca de sal yodada.",
+      "Cocer el brócoli en ramilletes 5 minutos en agua hirviendo o al vapor; escurrir. Cortar la zanahoria en bastones finos.",
+      "Mezclar la ternera con 2 cucharadas de soja y la maicena; dejar 10 minutos.",
+      "En la sartén de acero muy caliente con AOVE, saltear la ternera por tandas 2 minutos hasta dorar. Reservar.",
+      "Saltear el ajo laminado, el jengibre rallado y la zanahoria 2 minutos; añadir el brócoli, la ternera, el resto de soja y 4 cucharadas de agua; remover 2 minutos hasta ligar.",
+      "Montar los tuppers con arroz y salteado; sésamo por encima."
+    ]
+  },
+  {
+    "id": "curry_garbanzos_coco_espinacas",
+    "nombre": "Curry suave de garbanzos con leche de coco, tomate y espinacas",
+    "tipo": "comida",
+    "tiempo_minutos": 35,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (4 raciones; recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Garbanzos cocidos (bote)",
+        "cantidad": "2 botes (800g escurridos)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Leche de coco",
+        "cantidad": "1 lata (400ml)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Tomate triturado natural",
+        "cantidad": "400g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Espinacas frescas",
+        "cantidad": "300g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Dientes de ajo y jengibre fresco",
+        "cantidad": "3 dientes y 1 trozo",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Arroz basmati",
+        "cantidad": "300g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Curry suave en polvo (sin picante), cúrcuma y comino",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 plato hondo de curry de garbanzos con 1 puño de arroz basmati y un yogur natural de postre.",
+      "proporciones": "1 plato de curry (~22 g de proteína vegetal) + 1 cazo de arroz; completar con yogur natural."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 plato hondo generoso de curry con doble puño de basmati y anacardos tostados por encima.",
+      "proporciones": "1 plato colmado + 2 cazos de arroz + 1 puñado de anacardos para energía y grasa buena."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Poner el arroz basmati en la arrocera con su agua y una pizca de sal yodada.",
+      "Pochar la cebolla picada fina con AOVE a fuego suave 10 minutos; añadir el ajo y el jengibre rallados y rehogar 1 minuto.",
+      "Añadir 1 cucharada de curry suave, 1 cucharadita de cúrcuma y media de comino; tostar 30 segundos sin que se queme.",
+      "Incorporar el tomate triturado y cocinar 5 minutos; añadir los garbanzos escurridos y la leche de coco, salar y cocer 12 minutos a fuego suave.",
+      "Añadir las espinacas en 2 tandas y remover hasta que se fundan en la salsa.",
+      "Repartir en tuppers con el arroz al lado; el curry espesa y mejora al día siguiente."
+    ]
+  },
+  {
+    "id": "dahl_lentejas_rojas_arroz",
+    "nombre": "Dahl suave de lentejas rojas con cúrcuma, comino y jengibre, con arroz basmati",
+    "tipo": "comida",
+    "tiempo_minutos": 35,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (4 raciones; recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Lentejas rojas",
+        "cantidad": "400g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Arroz basmati",
+        "cantidad": "300g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Tomate triturado natural",
+        "cantidad": "200g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Dientes de ajo y jengibre fresco",
+        "cantidad": "3 dientes y 1 trozo",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahoria",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Yogur natural",
+        "cantidad": "2 unidades",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Cúrcuma, comino, cilantro molido y laurel",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 plato hondo de dahl cremoso con 1 puño de basmati y 1 cucharada de yogur natural por encima.",
+      "proporciones": "1 plato de dahl (~24 g de proteína vegetal) + 1 cazo de arroz + yogur natural."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 plato hondo generoso de dahl con doble puño de basmati y un hilo de AOVE.",
+      "proporciones": "1 plato colmado + 2 cazos de arroz + 1 cucharada de AOVE + yogur entero."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Poner el arroz basmati en la arrocera con su agua y una pizca de sal yodada.",
+      "Pochar la cebolla y la zanahoria picadas finas con AOVE a fuego suave 10 minutos; añadir el ajo y el jengibre rallados 1 minuto más.",
+      "Añadir 1 cucharadita de cúrcuma, 1 de comino y 1 de cilantro molido; tostar 30 segundos.",
+      "Incorporar las lentejas rojas lavadas, el tomate, el laurel y 1,2 litros de agua; salar con sal yodada.",
+      "Cocer 20-25 minutos a fuego medio removiendo de vez en cuando hasta que las lentejas se deshagan y quede un puré cremoso.",
+      "Repartir en tuppers con el arroz; servir con una cucharada de yogur natural."
+    ]
+  },
+  {
+    "id": "pollo_tikka_masala_suave",
+    "nombre": "Pollo tikka masala suave con yogur, tomate y arroz basmati",
+    "tipo": "comida",
+    "tiempo_minutos": 45,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (4 raciones; recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Contramuslos de pollo deshuesados sin piel",
+        "cantidad": "800g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Yogur natural",
+        "cantidad": "2 unidades (250g)",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Tomate triturado natural",
+        "cantidad": "400g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Nata para cocinar o leche de coco",
+        "cantidad": "150ml",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Dientes de ajo y jengibre fresco",
+        "cantidad": "3 dientes y 1 trozo",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Arroz basmati",
+        "cantidad": "300g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Garam masala suave, cúrcuma, comino y pimentón dulce",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 ración de pollo en salsa tikka cremosa con 1 puño de arroz basmati.",
+      "proporciones": "~200 g de pollo (~42 g de proteína) + 1 cazo de arroz y salsa."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 ración de pollo tikka con doble puño de arroz basmati y pan naan o pita para mojar.",
+      "proporciones": "~200 g de pollo + 2 cazos de arroz + 1 pan plano."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Marinar el pollo en dados con 1 yogur, 1 cucharadita de garam masala, media de cúrcuma, media de comino y sal yodada; 15 minutos (o la noche anterior).",
+      "Poner el arroz basmati en la arrocera con su agua y sal yodada.",
+      "Dorar el pollo marinado en la sartén con AOVE a fuego fuerte 5 minutos; reservar.",
+      "Pochar la cebolla picada fina a fuego suave 10 minutos; añadir ajo y jengibre rallados, 1 cucharadita de garam masala y 1 de pimentón dulce; rehogar 1 minuto.",
+      "Añadir el tomate triturado y cocer 10 minutos; incorporar el pollo, la nata y el otro yogur; cocer 10 minutos a fuego suave hasta una salsa cremosa.",
+      "Repartir en tuppers con el arroz basmati; congela muy bien."
+    ]
+  },
+  {
+    "id": "burrito_bowl_pollo_frijoles",
+    "nombre": "Burrito bowl de pollo al comino con arroz, frijoles negros, maíz y aguacate",
+    "tipo": "comida",
+    "tiempo_minutos": 40,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (recalentar 3 min en microondas; añadir el aguacate al momento)",
+    "ingredientes": [
+      {
+        "item": "Pechuga de pollo en tiras",
+        "cantidad": "450g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Arroz largo para arrocera",
+        "cantidad": "220g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Frijoles o alubias negras cocidas (bote)",
+        "cantidad": "1 bote (240g escurridos)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Maíz dulce en lata",
+        "cantidad": "1 lata pequeña (140g)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Pimiento rojo y pimiento verde",
+        "cantidad": "1 unidad de cada",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Aguacate",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Lima",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Comino, pimentón dulce, orégano y ajo en polvo",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 bowl con pollo especiado, pimientos, frijoles, maíz, 1 puño de arroz y un cuarto de aguacate.",
+      "proporciones": "~225 g de pollo + frijoles (~50 g de proteína) + 1 cazo de arroz; aguacate al servir."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 bowl con doble puño de arroz, medio aguacate y un extra de frijoles y maíz.",
+      "proporciones": "~225 g de pollo + 2 cazos de arroz + medio aguacate + 1 cucharada extra de AOVE."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Poner el arroz en la arrocera con su agua, sal yodada y la ralladura de la lima.",
+      "Mezclar el pollo con 1 cucharadita de comino, 1 de pimentón dulce, media de orégano, ajo en polvo, sal yodada y 1 cucharada de AOVE.",
+      "Saltear los pimientos en tiras en la sartén con AOVE 8 minutos hasta que estén tiernos; reservar.",
+      "Dorar el pollo en la misma sartén a fuego fuerte 6 minutos hasta que coja color por todos lados.",
+      "Calentar los frijoles escurridos 3 minutos con una pizca de comino y el maíz escurrido.",
+      "Montar tuppers con arroz, pollo, pimientos, frijoles y maíz; el aguacate con zumo de lima se añade al momento de comer."
+    ]
+  },
+  {
+    "id": "lomo_cerdo_guisado_pimientos_arroz",
+    "nombre": "Dados de lomo de cerdo guisados con pimientos, ajo y vino blanco, con arroz",
+    "tipo": "comida",
+    "tiempo_minutos": 40,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Lomo de cerdo en dados",
+        "cantidad": "500g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Pimiento rojo",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimiento verde",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Dientes de ajo",
+        "cantidad": "4 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Vino blanco",
+        "cantidad": "150ml",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Arroz redondo para arrocera",
+        "cantidad": "220g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Pimentón dulce, orégano y laurel",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 ración de lomo guisado con pimientos melosos y 1 puño de arroz.",
+      "proporciones": "~250 g de lomo (~48 g de proteína) + 1 cazo de arroz y su salsa."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 ración de lomo con doble puño de arroz y pan para la salsa.",
+      "proporciones": "~250 g de lomo + 2 cazos de arroz + 1 rebanada de pan con AOVE."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Poner el arroz en la arrocera con su agua y sal yodada.",
+      "Salar los dados de lomo con sal yodada y sellarlos en la sartén de acero con AOVE a fuego fuerte 3 minutos; reservar.",
+      "En la misma sartén, pochar la cebolla, los pimientos en tiras y el ajo laminado a fuego suave 12 minutos hasta que estén muy tiernos.",
+      "Añadir 1 cucharadita de pimentón dulce, orégano y el vino blanco; reducir 3 minutos.",
+      "Devolver el lomo con el laurel, añadir medio vaso de agua y guisar tapado 10 minutos a fuego suave para que quede jugoso.",
+      "Montar los tuppers con el arroz y el guiso con su salsa."
+    ]
+  },
+  {
+    "id": "merluza_en_salsa_verde_patatas",
+    "nombre": "Merluza en salsa verde con guisantes y patatas cocidas",
+    "tipo": "comida",
+    "tiempo_minutos": 35,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (recalentar 2 min en microondas a potencia media)",
+    "ingredientes": [
+      {
+        "item": "Lomos de merluza sin espinas (frescos o congelados)",
+        "cantidad": "4 lomos (~600g)",
+        "seccion": "Pescadería"
+      },
+      {
+        "item": "Patatas medianas",
+        "cantidad": "4 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Guisantes congelados",
+        "cantidad": "200g",
+        "seccion": "Congelados"
+      },
+      {
+        "item": "Dientes de ajo",
+        "cantidad": "4 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Perejil fresco",
+        "cantidad": "1 manojo",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Vino blanco",
+        "cantidad": "100ml",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Caldo de pescado o de pollo casero",
+        "cantidad": "250ml",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Harina de trigo",
+        "cantidad": "1 cucharada",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 lomos de merluza en salsa verde con guisantes y 1 patata cocida en rodajas.",
+      "proporciones": "~300 g de merluza (~45 g de proteína) + 1 patata + guisantes."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 lomos de merluza con 2 patatas cocidas regadas con la salsa y un hilo generoso de AOVE.",
+      "proporciones": "~300 g de merluza + 2 patatas + 1 cucharada extra de AOVE."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Cocer las patatas peladas en rodajas gruesas en agua con sal yodada 15 minutos; escurrir.",
+      "Secar bien la merluza (si es congelada, descongelada la víspera) y salar con sal yodada.",
+      "En una cazuela ancha, dorar el ajo laminado en 4 cucharadas de AOVE a fuego suave sin que se queme; añadir la harina y remover 1 minuto.",
+      "Verter el vino, dejar evaporar, y añadir el caldo y la mitad del perejil picado; cocer 3 minutos moviendo la cazuela para ligar la salsa.",
+      "Colocar la merluza y los guisantes, tapar y cocer 6-8 minutos a fuego suave hasta que el pescado esté jugoso.",
+      "Repartir en tuppers con las patatas y el resto del perejil; recalentar suave para no resecar el pescado."
+    ]
+  },
+  {
+    "id": "bacalao_con_tomate_patatas",
+    "nombre": "Bacalao con salsa de tomate casera y patatas panadera al horno",
+    "tipo": "comida",
+    "tiempo_minutos": 45,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (recalentar 2 min en microondas a potencia media)",
+    "ingredientes": [
+      {
+        "item": "Lomos de bacalao sin espinas (fresco o congelado)",
+        "cantidad": "4 lomos (~600g)",
+        "seccion": "Pescadería"
+      },
+      {
+        "item": "Patatas medianas",
+        "cantidad": "4 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate triturado natural",
+        "cantidad": "500g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimiento verde",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Dientes de ajo",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Orégano, tomillo y laurel",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Azúcar",
+        "cantidad": "1 cucharadita",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 lomos de bacalao bañados en tomate casero con 1 patata panadera.",
+      "proporciones": "~300 g de bacalao (~45 g de proteína) + 1 patata asada + salsa."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 lomos de bacalao con 2 patatas panadera y pan para mojar en el tomate.",
+      "proporciones": "~300 g de bacalao + 2 patatas + 1 rebanada de pan + hilo de AOVE."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Precalentar el horno a 200°C. Cortar las patatas en rodajas finas tipo panadera, extenderlas en una bandeja con AOVE, sal yodada y tomillo; asar 30 minutos hasta que estén tiernas y doradas.",
+      "Pochar la cebolla, el pimiento y el ajo picados finos con AOVE a fuego suave 12 minutos.",
+      "Añadir el tomate triturado, el azúcar, el orégano, el laurel y sal yodada; cocinar 20 minutos a fuego suave hasta una salsa espesa.",
+      "Secar el bacalao y salar ligeramente; colocarlo sobre la salsa de tomate en la sartén, tapar y cocer 8 minutos a fuego suave hasta que se abra en lascas.",
+      "Repartir en tuppers: cama de patatas panadera, bacalao y salsa de tomate por encima.",
+      "Recalentar a potencia media para que el pescado quede jugoso."
+    ]
+  },
+  {
+    "id": "marmitako_atun_patatas",
+    "nombre": "Marmitako de atún fresco con patatas, pimientos y tomate",
+    "tipo": "comida",
+    "tiempo_minutos": 40,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (recalentar 3 min en microondas; el atún se añade al final para que quede jugoso)",
+    "ingredientes": [
+      {
+        "item": "Atún fresco o bonito limpio en dados",
+        "cantidad": "600g",
+        "seccion": "Pescadería"
+      },
+      {
+        "item": "Patatas para guisar",
+        "cantidad": "800g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimiento verde y pimiento rojo",
+        "cantidad": "2 verdes + 1 rojo",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate triturado",
+        "cantidad": "200g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "3 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimentón dulce y laurel",
+        "cantidad": "1 cucharadita + 2 hojas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "AOVE y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 plato hondo de marmitako con unos 150g de atún en dados y patata chascada en su caldo.",
+      "proporciones": "Pescado 1/3 del plato, patata 1/3, pimientos y caldo 1/3. Un hilo de AOVE en crudo al servir."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Plato hondo generoso con ración extra de patata y pan rústico para mojar en el caldo.",
+      "proporciones": "Patata y pan en doble ración; chorrito de AOVE extra al emplatar."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Pochar a fuego suave la cebolla en juliana fina, los pimientos en tiras y el ajo laminado con AOVE durante 10 minutos, hasta que estén muy tiernos y dulces.",
+      "Añadir el pimentón dulce, remover 10 segundos y volcar el tomate triturado; sofreír 5 minutos hasta que pierda el agua.",
+      "Incorporar las patatas chascadas (rompiéndolas con el cuchillo para que suelten almidón), el laurel y cubrir con agua caliente; salar con sal yodada.",
+      "Cocer a fuego medio 25 minutos hasta que la patata esté tierna y el caldo ligado.",
+      "Apagar el fuego, añadir el atún en dados, tapar y dejar reposar 5 minutos: se cocina con el calor residual y queda jugoso.",
+      "Repartir en tuppers de cristal; al recalentar, hacerlo a potencia media para no secar el atún."
+    ]
+  },
+  {
+    "id": "pollo_al_chilindron_suave",
+    "nombre": "Pollo al chilindrón con pimientos asados, tomate y jamón, con arroz blanco",
+    "tipo": "comida",
+    "tiempo_minutos": 50,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (recalentar 3 min en microondas; el arroz en la arrocera)",
+    "ingredientes": [
+      {
+        "item": "Muslos y contramuslos de pollo troceados y sin piel",
+        "cantidad": "1,2kg",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Jamón serrano en taquitos",
+        "cantidad": "80g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Pimiento rojo y pimiento verde",
+        "cantidad": "2 rojos + 1 verde",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate triturado",
+        "cantidad": "400g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "3 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimentón dulce (cero picante) y tomillo",
+        "cantidad": "1 cucharadita + 1 pizca",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Arroz redondo o largo",
+        "cantidad": "300g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "AOVE y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 piezas de pollo (muslo + contramuslo) con abundante salsa de pimientos y 1 taza rasa de arroz blanco.",
+      "proporciones": "Pollo 1/3, verdura y salsa 1/3, arroz 1/3."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 piezas de pollo con 1 taza y media colmada de arroz y un buen chorro de la salsa.",
+      "proporciones": "Arroz en ración grande y un hilo de AOVE extra en el arroz."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Salar el pollo con sal yodada y dorarlo bien en la sartén de acero con AOVE hasta tener una costra dorada; reservar.",
+      "En la misma olla, pochar la cebolla en juliana, el ajo laminado y los pimientos en tiras a fuego suave 12 minutos hasta que estén tiernos y dulces.",
+      "Añadir los taquitos de jamón y el pimentón dulce, dar dos vueltas e incorporar el tomate triturado y el tomillo.",
+      "Devolver el pollo a la olla, cubrir a media altura con agua y cocinar tapado a fuego suave 30 minutos, hasta que la carne se separe del hueso.",
+      "Mientras, cocer el arroz en la arrocera con sal yodada y un chorrito de AOVE.",
+      "Guardar pollo con salsa y arroz en tuppers separados o juntos; recalentar 3 minutos."
+    ]
+  },
+  {
+    "id": "tajine_cordero_ciruelas_cuscus",
+    "nombre": "Tajín de cordero con ciruelas, canela y almendras tostadas, con cuscús",
+    "tipo": "comida",
+    "tiempo_minutos": 70,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (guiso que mejora al día siguiente; recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Cordero para guisar deshuesado (pierna o paletilla) en dados",
+        "cantidad": "700g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahoria",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo y jengibre fresco",
+        "cantidad": "3 dientes + 1 trozo de 2cm",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ciruelas pasas sin hueso",
+        "cantidad": "120g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Almendras laminadas",
+        "cantidad": "50g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Canela molida, comino y cúrcuma",
+        "cantidad": "1 cucharadita de cada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Cuscús",
+        "cantidad": "300g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "AOVE y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Ración de tajín con unos 160g de cordero, 4 ciruelas y 1 taza rasa de cuscús con almendras por encima.",
+      "proporciones": "Cordero 1/3, cuscús 1/3, cebolla confitada, zanahoria y ciruelas 1/3."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Misma ración de cordero con 1 taza y media colmada de cuscús, doble de almendras y un hilo de AOVE.",
+      "proporciones": "Cuscús y frutos secos en ración grande para un plato más energético."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Salar el cordero con sal yodada y dorarlo por tandas en la olla con AOVE hasta que tome color; reservar.",
+      "Pochar la cebolla en juliana a fuego suave 15 minutos hasta que esté confitada y dulce; añadir el ajo picado, el jengibre rallado y las especias y remover 1 minuto.",
+      "Devolver el cordero, añadir la zanahoria en rodajas y cubrir justo con agua caliente; tapar y guisar a fuego muy suave 45 minutos.",
+      "Añadir las ciruelas y cocinar 10 minutos más hasta que la salsa quede espesa y brillante.",
+      "Tostar las almendras en una sartén seca 2 minutos e hidratar el cuscús con el mismo volumen de agua hirviendo con sal yodada y un chorrito de AOVE; reposar 5 minutos y soltar con un tenedor.",
+      "Guardar el tajín y el cuscús en tuppers; servir las almendras por encima al recalentar."
+    ]
+  },
+  {
+    "id": "goulash_ternera_pimenton_dulce",
+    "nombre": "Goulash de ternera con pimentón dulce, pimientos y patata",
+    "tipo": "comida",
+    "tiempo_minutos": 80,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (guiso de cuchara; se congela muy bien; recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Ternera para guisar en dados (morcillo o aguja)",
+        "cantidad": "800g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimiento rojo",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Patatas",
+        "cantidad": "600g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "3 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate triturado",
+        "cantidad": "200g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Caldo de carne o de pollo",
+        "cantidad": "500ml",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Pimentón dulce (cero picante), comino y laurel",
+        "cantidad": "1 cucharada + 1/2 cucharadita + 2 hojas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "AOVE y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Plato hondo de goulash con unos 200g de ternera guisada, patata y abundante salsa de pimiento.",
+      "proporciones": "Ternera 1/3, patata 1/3, salsa de pimientos y cebolla 1/3."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Plato hondo con patata extra y 2 rebanadas de pan rústico para mojar la salsa.",
+      "proporciones": "Patata y pan en ración grande; chorrito de AOVE al servir."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Salar la ternera con sal yodada y dorarla por tandas en la olla con AOVE a fuego vivo hasta que tenga costra; reservar.",
+      "Bajar el fuego y pochar la cebolla en juliana con el ajo picado 15 minutos, hasta que esté muy blanda y dulce.",
+      "Apartar del fuego, añadir el pimentón dulce y el comino, remover 20 segundos y volcar enseguida el tomate triturado para que no amargue.",
+      "Devolver la ternera, añadir el pimiento rojo en tiras, el laurel y el caldo; tapar y cocinar a fuego muy suave 50 minutos.",
+      "Añadir las patatas en dados grandes y cocinar 20 minutos más hasta que la carne esté melosa y la salsa espesa.",
+      "Repartir en tuppers; congelar las raciones de jueves y viernes."
+    ]
+  },
+  {
+    "id": "salchichas_frescas_lentejas_estofadas",
+    "nombre": "Salchichas frescas de cerdo con lentejas estofadas al tomillo y laurel",
+    "tipo": "comida",
+    "tiempo_minutos": 45,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (recalentar 3 min en microondas)",
+    "ingredientes": [
+      {
+        "item": "Salchichas frescas de cerdo",
+        "cantidad": "8 unidades (600g)",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Lentejas pardinas",
+        "cantidad": "350g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Zanahoria",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Puerro",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "2 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate concentrado",
+        "cantidad": "1 cucharada",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Laurel y tomillo",
+        "cantidad": "2 hojas + 1 cucharadita",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "AOVE y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Plato hondo de lentejas estofadas con 2 salchichas doradas troceadas por encima.",
+      "proporciones": "Lentejas y verdura 2/3 del plato, salchichas 1/3."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Plato hondo generoso de lentejas con 2 salchichas y pan rústico para acompañar.",
+      "proporciones": "Ración mayor de lentejas y pan; hilo de AOVE al servir."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Dorar las salchichas enteras en la sartén de acero con una gota de AOVE hasta que estén bien marcadas; reservar.",
+      "En la olla, pochar a fuego suave la cebolla, el puerro y el ajo picados finos con AOVE durante 10 minutos hasta que estén transparentes.",
+      "Añadir la zanahoria en rodajas, el tomate concentrado, el laurel y el tomillo y rehogar 2 minutos.",
+      "Incorporar las lentejas lavadas, cubrir con agua caliente dos dedos por encima y cocer a fuego medio 30 minutos; salar con sal yodada a mitad de cocción.",
+      "Añadir las salchichas troceadas los últimos 10 minutos para que suelten su jugo en el estofado.",
+      "Guardar en tuppers de cristal; recalentar con un chorrito de agua si han espesado."
+    ]
+  },
+  {
+    "id": "pisto_manchego_huevo_arroz",
+    "nombre": "Pisto manchego con huevo, taquitos de jamón y arroz blanco",
+    "tipo": "comida",
+    "tiempo_minutos": 40,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (pisto y arroz hechos; el huevo se añade al recalentar o se lleva cocido)",
+    "ingredientes": [
+      {
+        "item": "Calabacín",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimiento rojo y pimiento verde",
+        "cantidad": "1 rojo + 2 verdes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate triturado",
+        "cantidad": "600g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "2 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Huevos camperos",
+        "cantidad": "8 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Jamón serrano en taquitos",
+        "cantidad": "100g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Arroz redondo",
+        "cantidad": "300g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "AOVE, sal yodada y orégano",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 taza rasa de arroz con pisto abundante, taquitos de jamón y 2 huevos (cocidos o hechos en el pisto).",
+      "proporciones": "Pisto 1/2 plato, arroz 1/4, huevo y jamón 1/4."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 taza y media colmada de arroz con pisto, jamón y 2 huevos, más un chorrito de AOVE.",
+      "proporciones": "Arroz en ración grande y AOVE extra."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Pochar la cebolla y el ajo picados finos en AOVE a fuego suave 10 minutos hasta que estén dulces y transparentes.",
+      "Añadir los pimientos en dados y cocinar 8 minutos; incorporar el calabacín en dados y cocinar otros 8 minutos.",
+      "Volcar el tomate triturado, salar con sal yodada, añadir orégano y cocinar a fuego suave 15 minutos hasta que el pisto quede espeso.",
+      "Saltear los taquitos de jamón 1 minuto y mezclarlos con el pisto.",
+      "Cocer el arroz en la arrocera con sal yodada; cocer 4 huevos 10 minutos para llevar al tupper y guardar los otros 4 para hacerlos al momento en el pisto caliente.",
+      "Montar los tuppers con arroz abajo y pisto encima; recalentar 3 minutos y añadir el huevo."
+    ]
+  },
+  {
+    "id": "ensalada_pasta_atun_tupper",
+    "nombre": "Ensalada fría de pasta con atún, tomate cherry, maíz, huevo cocido y mozzarella",
+    "tipo": "comida",
+    "tiempo_minutos": 25,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (se come fría, directa de la nevera; ideal para días de calor)",
+    "ingredientes": [
+      {
+        "item": "Pasta corta (fusilli o macarrones)",
+        "cantidad": "320g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Atún en aceite de oliva",
+        "cantidad": "4 latas",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Maíz dulce en lata",
+        "cantidad": "1 lata (280g)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Tomate cherry",
+        "cantidad": "250g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pepino",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Huevos",
+        "cantidad": "4 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Mozzarella fresca",
+        "cantidad": "2 bolas (250g)",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "AOVE, vinagre de vino y orégano",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Bol de ensalada de pasta con 1 lata de atún, 1 huevo cocido, media bola de mozzarella y verduras.",
+      "proporciones": "Pasta 1/3, atún, huevo y mozzarella 1/3, tomate, pepino y maíz 1/3."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Bol grande con ración extra de pasta, medio aguacate en dados y un buen chorro de AOVE.",
+      "proporciones": "Pasta y grasas buenas en ración grande."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Cocer la pasta en abundante agua con sal yodada 1 minuto menos de lo que indique el paquete; escurrir, refrescar con agua fría y mezclar con un chorrito de AOVE.",
+      "Cocer los huevos 10 minutos, enfriar, pelar y cortar en cuartos.",
+      "Cortar los tomates cherry por la mitad, el pepino en medias lunas y la mozzarella en dados; escurrir el maíz y el atún.",
+      "Mezclar en un bol grande la pasta fría con el atún desmigado, el maíz, el tomate, el pepino y la mozzarella.",
+      "Aliñar con AOVE, vinagre, orégano y sal yodada; añadir el huevo encima de cada tupper para que no se rompa.",
+      "Guardar en tuppers en la nevera (aguanta 3 días); remover antes de comer."
+    ]
+  },
+  {
+    "id": "costillar_cerdo_asado_patatas",
+    "nombre": "Costillar de cerdo asado lento al horno con patatas asadas y ensalada de tomate",
+    "tipo": "comida",
+    "tiempo_minutos": 90,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Fin de semana (al momento; asado lento en horno mientras se descansa)",
+    "ingredientes": [
+      {
+        "item": "Costillar de cerdo entero",
+        "cantidad": "1kg",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Patatas medianas para asar",
+        "cantidad": "4 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "4 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Limón",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate de ensalada",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Vino blanco o caldo de pollo",
+        "cantidad": "100ml",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Pimentón dulce, orégano y tomillo",
+        "cantidad": "1 cucharadita de cada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "AOVE y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Unos 400g de costillar asado (4-5 costillas) con 1 patata asada y tomate aliñado.",
+      "proporciones": "Costillas 1/2 plato, patata 1/4, tomate 1/4."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Unos 500g de costillar con 2 patatas asadas regadas con el jugo del asado y tomate con AOVE.",
+      "proporciones": "Patata en doble ración y más jugo del asado."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Mezclar AOVE, ajo majado, zumo de medio limón, pimentón dulce, orégano, tomillo y sal yodada; embadurnar bien el costillar y dejarlo reposar 20 minutos.",
+      "Precalentar el horno a 160 °C. Colocar el costillar en una bandeja con la carne hacia arriba, regar con el vino blanco y tapar con papel de aluminio.",
+      "Asar tapado 60 minutos; mientras, cortar las patatas en gajos y aliñarlas con AOVE y sal yodada.",
+      "Destapar, añadir las patatas alrededor del costillar, subir a 200 °C y asar 30 minutos más hasta que la carne se despegue del hueso y las patatas estén doradas.",
+      "Dejar reposar 5 minutos, trocear por costillas y servir con las patatas y el tomate aliñado con AOVE y sal yodada."
+    ]
+  },
+  {
+    "id": "fideua_pollo_merluza",
+    "nombre": "Fideuá de fideo fino con pollo dorado y merluza sobre caldo casero",
+    "tipo": "comida",
+    "tiempo_minutos": 40,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Fin de semana (al momento, en paella o sartén ancha; sobra para un tupper)",
+    "ingredientes": [
+      {
+        "item": "Fideo fino para fideuá (nº 2 o cabello grueso)",
+        "cantidad": "350g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Contramuslos de pollo deshuesados en dados",
+        "cantidad": "350g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Lomos de merluza sin piel ni espinas (frescos o congelados)",
+        "cantidad": "350g",
+        "seccion": "Pescadería"
+      },
+      {
+        "item": "Caldo de pollo casero",
+        "cantidad": "1 litro",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Pimiento rojo",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate maduro rallado",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "3 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimentón dulce y azafrán o cúrcuma",
+        "cantidad": "1 cucharadita + 1 pizca",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "AOVE y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Ración de fideuá con unos 90g de pollo y 90g de merluza y el fideo bien tostado.",
+      "proporciones": "Fideo 1/2, pollo y merluza 1/2. Un gajo de limón para rociar."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Ración grande de fideo con el mismo pollo y merluza, y una cucharada de alioli suave o mayonesa.",
+      "proporciones": "Fideo en ración grande con un extra de grasa buena."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Calentar el caldo. En la paella, tostar el fideo en seco con un chorrito de AOVE a fuego medio, removiendo, hasta que esté dorado; reservar.",
+      "Salar el pollo con sal yodada y dorarlo en la paella con AOVE hasta que tenga costra; añadir el pimiento rojo en dados y el ajo picado y sofreír 5 minutos.",
+      "Añadir el tomate rallado y el pimentón dulce; cocinar 3 minutos hasta que el sofrito quede concentrado.",
+      "Volver a echar el fideo, mezclar con el sofrito y añadir el caldo caliente con el azafrán; cocinar a fuego vivo 5 minutos.",
+      "Colocar la merluza en dados grandes sobre el fideo, bajar el fuego y cocinar 6-8 minutos más hasta que el caldo se evapore y el fideo se levante.",
+      "Reposar 3 minutos tapado con un paño y servir con un gajo de limón."
+    ]
+  },
+  {
+    "id": "tortilla_francesa_calabacin_queso_tierno",
+    "nombre": "Tortilla francesa rellena de calabacín salteado y queso tierno fundido, con pan y tomate",
+    "tipo": "cena",
+    "tiempo_minutos": 10,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (10 min)",
+    "ingredientes": [
+      {
+        "item": "Huevos camperos",
+        "cantidad": "6 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Calabacín",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Queso tierno en lonchas",
+        "cantidad": "80g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Pan de hogaza",
+        "cantidad": "4 rebanadas",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Tomate de ensalada",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "1 diente",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "AOVE, sal yodada y orégano",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Tortilla de 3 huevos rellena de calabacín y queso tierno, con 1 rebanada de pan y tomate aliñado.",
+      "proporciones": "Tortilla 2/3 del plato, pan y tomate 1/3."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Tortilla de 3 huevos con 3 rebanadas de pan con AOVE y tomate.",
+      "proporciones": "Pan en ración grande y AOVE extra."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Cortar el calabacín en dados pequeños y saltearlo en la sartén antiadherente con AOVE, el ajo picado y sal yodada 4 minutos hasta que esté tierno y dorado; reservar.",
+      "Batir 3 huevos por tortilla con una pizca de sal yodada y orégano.",
+      "Verter en la sartén caliente con una gota de AOVE; cuando empiece a cuajar, poner el calabacín y las lonchas de queso tierno en el centro.",
+      "Doblar la tortilla sobre sí misma y dejar 1 minuto más para que el queso funda; repetir con la segunda.",
+      "Servir con el pan tostado y el tomate en rodajas aliñado con AOVE y sal yodada."
+    ]
+  },
+  {
+    "id": "revuelto_champinones_jamon_tostadas",
+    "nombre": "Revuelto cremoso de champiñones y jamón serrano sobre tostadas de pan rústico",
+    "tipo": "cena",
+    "tiempo_minutos": 12,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (12 min)",
+    "ingredientes": [
+      {
+        "item": "Huevos camperos",
+        "cantidad": "6 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Champiñones laminados",
+        "cantidad": "250g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Jamón serrano en lonchas",
+        "cantidad": "80g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Pan rústico",
+        "cantidad": "5 rebanadas",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "1 diente",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Perejil fresco",
+        "cantidad": "unas ramas",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "AOVE y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Revuelto de 3 huevos con champiñones y jamón sobre 2 tostadas.",
+      "proporciones": "Revuelto 2/3, pan 1/3."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Revuelto de 3 huevos sobre 3 tostadas con AOVE y medio aguacate en láminas.",
+      "proporciones": "Pan y aguacate en ración grande."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Tostar el pan en la tostadora y frotarlo con el diente de ajo; regar con un hilo de AOVE.",
+      "Saltear los champiñones a fuego vivo en la sartén antiadherente con AOVE hasta que doren y suelten el agua, unos 5 minutos; salar con sal yodada al final.",
+      "Añadir el jamón en tiras y dar una vuelta de 30 segundos.",
+      "Bajar el fuego, batir los huevos con un tenedor, verterlos y remover despacio con la espátula hasta que cuajen cremosos, sin secarlos.",
+      "Repartir el revuelto sobre las tostadas y terminar con perejil picado."
+    ]
+  },
+  {
+    "id": "crema_calabaza_zanahoria_pollo",
+    "nombre": "Crema de calabaza y zanahoria con dados de pollo dorado y picatostes",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Cena rápida entre semana (crema hecha el domingo + pollo dorado al momento, 15 min)",
+    "ingredientes": [
+      {
+        "item": "Calabaza limpia en dados",
+        "cantidad": "800g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahoria",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Puerro",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Patata",
+        "cantidad": "1 mediana",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Caldo de pollo casero (o agua)",
+        "cantidad": "700ml",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Queso crema",
+        "cantidad": "60g",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Pechuga de pollo en dados",
+        "cantidad": "400g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Pan de hogaza para picatostes",
+        "cantidad": "4 rebanadas",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "AOVE, sal yodada y nuez moscada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Plato hondo de crema con unos 150g de pollo dorado y un puñado de picatostes.",
+      "proporciones": "Crema 2/3, pollo 1/3, picatostes por encima."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Plato hondo de crema con pollo, doble de picatostes y un buen chorro de AOVE.",
+      "proporciones": "Pan y AOVE en ración grande."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "El domingo: rehogar el puerro en rodajas con AOVE 5 minutos; añadir calabaza, zanahoria y patata en trozos, cubrir con el caldo y cocer 25 minutos.",
+      "Triturar con la batidora junto al queso crema, sal yodada y nuez moscada hasta obtener una crema fina; guardar en tuppers (se congela bien).",
+      "Al momento: calentar la crema en el microondas o en un cazo.",
+      "Salar el pollo con sal yodada y dorarlo en la sartén de acero con AOVE a fuego vivo 5-6 minutos hasta que tenga costra.",
+      "Tostar el pan en dados en la misma sartén o en la tostadora para hacer los picatostes.",
+      "Servir la crema con el pollo y los picatostes por encima y un hilo de AOVE."
+    ]
+  },
+  {
+    "id": "vichyssoise_puerro_patata_jamon",
+    "nombre": "Crema suave de puerro y patata con taquitos de jamón, huevo cocido y pan tostado",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Cena rápida entre semana (crema hecha el domingo + montaje 15 min; también rica templada)",
+    "ingredientes": [
+      {
+        "item": "Puerros",
+        "cantidad": "4 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Patatas",
+        "cantidad": "3 medianas",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Caldo de pollo casero",
+        "cantidad": "800ml",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Nata ligera para cocinar o leche evaporada",
+        "cantidad": "200ml",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Jamón serrano en taquitos",
+        "cantidad": "150g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Huevos",
+        "cantidad": "6 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Pan de hogaza",
+        "cantidad": "4 rebanadas",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "AOVE, sal yodada y nuez moscada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Cebollino fresco",
+        "cantidad": "unas hojas",
+        "seccion": "Fruta y verdura"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Plato hondo de crema con taquitos de jamón salteados, 2 huevos cocidos en cuartos y 1 rebanada de pan tostado.",
+      "proporciones": "Crema 2/3, jamón y huevo 1/3."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Plato hondo de crema con jamón, 2 huevos cocidos, 2 rebanadas de pan con AOVE.",
+      "proporciones": "Pan y AOVE en ración grande."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "El domingo: rehogar la parte blanca de los puerros en rodajas con AOVE a fuego suave 8 minutos sin que tomen color.",
+      "Añadir la patata en trozos y el caldo; cocer 25 minutos y triturar con la nata, sal yodada y nuez moscada hasta que quede muy fina. Guardar en tuppers.",
+      "Al momento: cocer los huevos 10 minutos (o tenerlos cocidos del domingo), pelar y cortar en cuartos.",
+      "Calentar la crema y saltear los taquitos de jamón 1 minuto en una sartén sin aceite hasta que estén crujientes.",
+      "Servir la crema con el jamón, el huevo, cebollino picado y un hilo de AOVE, con el pan tostado aparte."
+    ]
+  },
+  {
+    "id": "sopa_pollo_fideos_caldo_casero",
+    "nombre": "Sopa de pollo con fideos finos, zanahoria y huevo sobre caldo casero del domingo",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Cena rápida entre semana (caldo casero de la carcasa del domingo + 15 min)",
+    "ingredientes": [
+      {
+        "item": "Caldo de pollo casero",
+        "cantidad": "1,2 litros",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Fideos finos (cabello de ángel o fideo nº 1)",
+        "cantidad": "120g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Pollo cocido desmenuzado (del caldo) o pechuga en dados",
+        "cantidad": "250g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Zanahoria",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Puerro",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Huevos",
+        "cantidad": "2 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Perejil fresco",
+        "cantidad": "unas ramas",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "AOVE y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Plato hondo de sopa con abundante pollo desmenuzado, fideos, zanahoria y un huevo escalfado en el propio caldo.",
+      "proporciones": "Pollo y huevo 1/2, fideos y verdura 1/2."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Plato hondo con ración extra de fideos y 2 rebanadas de pan tostado con AOVE.",
+      "proporciones": "Fideos y pan en ración grande."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Llevar el caldo a ebullición con la zanahoria en rodajas finas y el puerro en juliana; cocer 6 minutos.",
+      "Añadir los fideos y el pollo desmenuzado (si es pechuga cruda, en dados pequeños) y cocer 4 minutos; rectificar de sal yodada.",
+      "Cascar los huevos directamente en la sopa, uno por plato, y dejar 3 minutos a fuego suave hasta que la clara cuaje y la yema quede cremosa.",
+      "Servir con perejil picado y un hilo de AOVE."
+    ]
+  },
+  {
+    "id": "salmon_teriyaki_sarten_arroz",
+    "nombre": "Lomos de salmón fresco glaseados al teriyaki con arroz y calabacín al sésamo",
+    "tipo": "cena",
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Fin de semana (al momento; el arroz en la arrocera mientras se hace el salmón)",
+    "ingredientes": [
+      {
+        "item": "Lomos de salmón fresco",
+        "cantidad": "2 lomos (350g)",
+        "seccion": "Pescadería"
+      },
+      {
+        "item": "Arroz redondo o jazmín",
+        "cantidad": "160g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Calabacín",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo y jengibre fresco",
+        "cantidad": "1 diente + 1 trozo de 2cm",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Salsa de soja",
+        "cantidad": "3 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Azúcar moreno",
+        "cantidad": "1 cucharada",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Semillas de sésamo",
+        "cantidad": "1 cucharada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "AOVE y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 lomo de salmón glaseado con 1 taza rasa de arroz y calabacín salteado con sésamo.",
+      "proporciones": "Salmón 1/3, arroz 1/3, calabacín 1/3."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 lomo de salmón con 1 taza y media colmada de arroz y medio aguacate en láminas.",
+      "proporciones": "Arroz y aguacate en ración grande."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Poner el arroz en la arrocera con sal yodada. Mezclar en un vaso la soja, el azúcar moreno, el ajo y el jengibre rallados y 3 cucharadas de agua.",
+      "Secar los lomos de salmón con papel, salar muy ligeramente y marcarlos en la sartén de acero con una gota de AOVE, 3 minutos por el lado de la piel y 2 por el otro.",
+      "Verter la salsa en la sartén y dejar que reduzca 2 minutos a fuego medio, regando el salmón con la cuchara hasta que quede brillante y glaseado.",
+      "En otra sartén, saltear el calabacín en bastones a fuego vivo con AOVE 4 minutos y terminar con sésamo.",
+      "Servir el salmón sobre el arroz con el resto del glaseado por encima y el calabacín al lado."
+    ]
+  },
+  {
+    "id": "dorada_al_horno_patatas_panadera",
+    "nombre": "Dorada entera al horno sobre patatas panadera, pimiento y cebolla confitada",
+    "tipo": "cena",
+    "tiempo_minutos": 35,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Fin de semana (al momento, en bandeja de horno)",
+    "ingredientes": [
+      {
+        "item": "Doradas de ración limpias",
+        "cantidad": "2 unidades (350-400g cada una)",
+        "seccion": "Pescadería"
+      },
+      {
+        "item": "Patatas",
+        "cantidad": "4 medianas",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimiento rojo",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada, asada hasta quedar tierna)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "3 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Limón",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Vino blanco",
+        "cantidad": "100ml",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Perejil fresco",
+        "cantidad": "unas ramas",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "AOVE y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 dorada entera con 1 patata en panadera y pimiento asado.",
+      "proporciones": "Pescado 1/2, patata y verdura 1/2."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 dorada con doble ración de patatas panadera bien regadas con el jugo de la bandeja y AOVE.",
+      "proporciones": "Patata y AOVE en ración grande."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Precalentar el horno a 200 °C. Cortar las patatas en rodajas finas, la cebolla en juliana y el pimiento en tiras; pocharlos 8 minutos en la sartén con AOVE y sal yodada para que la cebolla quede muy blanda.",
+      "Extender la base de patata, cebolla y pimiento en la bandeja, regar con el vino blanco y hornear 15 minutos.",
+      "Hacer dos cortes en el lomo de cada dorada, salar con sal yodada e introducir en los cortes rodajas de limón y ajo laminado.",
+      "Colocar las doradas sobre las patatas, rociar con AOVE y hornear 15-18 minutos hasta que la carne se separe de la espina.",
+      "Terminar con perejil picado y un chorrito de limón; servir directamente de la bandeja."
+    ]
+  },
+  {
+    "id": "merluza_plancha_ajo_perejil_verduras",
+    "nombre": "Lomos de merluza a la plancha con ajo y perejil y salteado de calabacín, pimiento y champiñones",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (15 min, dos sartenes a la vez)",
+    "ingredientes": [
+      {
+        "item": "Lomos de merluza sin espinas (frescos o congelados)",
+        "cantidad": "4 lomos (500g)",
+        "seccion": "Pescadería"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "3 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Perejil fresco",
+        "cantidad": "un manojo pequeño",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Limón",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Calabacín",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimiento rojo",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Champiñones laminados",
+        "cantidad": "200g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pan rústico",
+        "cantidad": "4 rebanadas",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "AOVE y sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 lomos de merluza con su refrito de ajo y perejil, salteado de verduras y 1 rebanada de pan.",
+      "proporciones": "Pescado 1/2, verduras 1/3, pan 1/6."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 lomos de merluza con verduras, 3 rebanadas de pan con AOVE y, si apetece, medio aguacate.",
+      "proporciones": "Pan y grasas buenas en ración grande."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Si la merluza es congelada, descongelarla la noche anterior en la nevera; secar bien los lomos con papel y salar con sal yodada.",
+      "Saltear a fuego vivo en una sartén el calabacín en medias lunas, el pimiento en tiras y los champiñones con AOVE 6-7 minutos hasta que doren; salar al final.",
+      "En la sartén antiadherente, hacer los lomos de merluza con AOVE 3 minutos por cada lado hasta que estén dorados por fuera y jugosos dentro; reservar.",
+      "En la misma sartén, dorar el ajo laminado a fuego suave 1 minuto, apartar y añadir el perejil picado y un chorro de limón; verter sobre la merluza.",
+      "Servir con las verduras salteadas y el pan tostado."
+    ]
+  },
+  {
+    "id": "tostas_sardinas_tomate_aguacate",
+    "nombre": "Tostas de pan de hogaza con sardinillas en aceite de oliva, tomate rallado y aguacate",
+    "tipo": "cena",
+    "tiempo_minutos": 10,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (10 min, sin cocinar; solo tostadora)",
+    "ingredientes": [
+      {
+        "item": "Pan de hogaza",
+        "cantidad": "7 rebanadas",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Sardinillas en aceite de oliva",
+        "cantidad": "4 latas",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Tomate maduro",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Aguacate",
+        "cantidad": "1 unidad y media",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "1 diente",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Limón",
+        "cantidad": "1/2 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "AOVE, sal yodada y orégano",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "3 tostas con tomate rallado, medio aguacate en láminas y las sardinillas de 1 lata y media.",
+      "proporciones": "Pan 1/3, sardinillas 1/3, tomate y aguacate 1/3."
+    },
+    "adaptacion_dona_y": {
+      "plato": "4 tostas con tomate, 1 aguacate entero, las sardinillas de 2 latas y un chorrito extra de AOVE.",
+      "proporciones": "Pan y aguacate en ración grande."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Tostar el pan en la tostadora y frotar cada rebanada con el diente de ajo partido.",
+      "Rallar el tomate, aliñarlo con AOVE, sal yodada y orégano y repartirlo sobre las tostas.",
+      "Cortar el aguacate en láminas, rociarlo con limón y ponerlo encima del tomate.",
+      "Escurrir las sardinillas, colocarlas sobre el aguacate y terminar con un hilo de AOVE y una pizca de orégano."
+    ]
+  },
+  {
+    "id": "atun_plancha_sesamo_ensalada_templada",
+    "nombre": "Tacos de atún fresco a la plancha con costra de sésamo y ensalada templada de patata y judías verdes",
+    "tipo": "cena",
+    "tiempo_minutos": 25,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Fin de semana (al momento)",
+    "ingredientes": [
+      {
+        "item": "Tacos de atún fresco (lomo limpio)",
+        "cantidad": "350g",
+        "seccion": "Pescadería"
+      },
+      {
+        "item": "Semillas de sésamo (blanco y negro)",
+        "cantidad": "3 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Patatas pequeñas tipo baby o nuevas",
+        "cantidad": "400g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Judías verdes planas",
+        "cantidad": "250g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomates cherry",
+        "cantidad": "150g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Salsa de soja",
+        "cantidad": "2 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "1 diente",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "3 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Sal yodada y pimienta negra",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "175g de atún en tacos sellados por fuera y rosados por dentro, con media ración de patata y abundante judía verde.",
+      "proporciones": "Proteína 1/3 del plato, verdura 1/2, patata 1/6. Aliño de AOVE y soja."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Misma ración de atún con el doble de patata templada y un chorro extra de AOVE sobre la ensalada.",
+      "proporciones": "Más patata y más AOVE para una cena completa y energética."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Cocer las patatas con piel en agua con sal yodada 15-18 minutos; en los últimos 6 minutos añadir las judías verdes troceadas. Escurrir.",
+      "Partir las patatas por la mitad y mezclarlas templadas con las judías, los cherry en mitades, el ajo muy picado, 2 cucharadas de AOVE, 1 de soja, sal yodada y pimienta.",
+      "Secar bien los tacos de atún, salpimentar y rebozarlos ligeramente en el sésamo presionando con la mano.",
+      "Calentar la sartén de acero con 1 cucharada de AOVE hasta que humee y marcar el atún 1 minuto por cada cara: dorado fuera, rosado dentro.",
+      "Cortar el atún en lonchas gruesas y servir sobre la ensalada templada, regando con la cucharada de soja restante."
+    ]
+  },
+  {
+    "id": "wrap_pollo_cesar_suave",
+    "nombre": "Wrap de pollo asado, lechuga romana y salsa césar suave de yogur",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (15 min)",
+    "ingredientes": [
+      {
+        "item": "Pechuga de pollo asada o a la plancha (puede ser la del domingo)",
+        "cantidad": "300g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Tortillas de trigo grandes",
+        "cantidad": "4 unidades",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Lechuga romana",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate maduro",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Yogur natural sin azúcar",
+        "cantidad": "1 unidad (125g)",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Mayonesa",
+        "cantidad": "1 cucharada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Parmesano o grana padano suave rallado",
+        "cantidad": "30g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Ajo y zumo de limón",
+        "cantidad": "1/2 diente y 1 cucharada",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Sal yodada y pimienta negra",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 wrap grande y bien cargado: 150g de pollo en tiras, mucha lechuga, tomate y 2 cucharadas de salsa césar de yogur.",
+      "proporciones": "Pollo 1/2 del relleno, verdura 1/2; salsa ligera a base de yogur."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 wraps con 150g de pollo repartidos, salsa generosa y un puñado extra de parmesano rallado.",
+      "proporciones": "Doble tortilla para más hidratos y un poco más de queso y salsa para sumar calorías."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Preparar la salsa: mezclar el yogur con la mayonesa, el ajo rallado muy fino, el zumo de limón, la mitad del parmesano, sal yodada y pimienta.",
+      "Cortar el pollo asado en tiras y calentarlo 1 minuto en sartén antiadherente con unas gotas de AOVE (si es del domingo).",
+      "Lavar y cortar la lechuga en tiras finas y el tomate en dados.",
+      "Calentar las tortillas 20 segundos por cara en sartén seca para que se doblen sin romperse.",
+      "Rellenar cada tortilla con lechuga, pollo, tomate, salsa césar y el resto del parmesano; cerrar bien doblando los extremos y partir por la mitad."
+    ]
+  },
+  {
+    "id": "quesadillas_pollo_queso_tierno_pimientos",
+    "nombre": "Quesadillas de pollo desmechado, queso tierno y pimientos pochados",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (15 min)",
+    "ingredientes": [
+      {
+        "item": "Tortillas de trigo",
+        "cantidad": "4 unidades",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Pollo asado desmechado (restos del domingo o pechuga cocida)",
+        "cantidad": "300g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Queso tierno rallado",
+        "cantidad": "120g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Pimiento rojo y pimiento verde",
+        "cantidad": "1 unidad de cada",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate triturado",
+        "cantidad": "4 cucharadas",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Comino molido y orégano",
+        "cantidad": "1 cucharadita de cada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aguacate maduro",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "2 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 medias quesadillas (1 tortilla doblada) con 120g de pollo, 40g de queso tierno y pimientos; medio aguacate en láminas al lado.",
+      "proporciones": "Relleno con más pollo y pimiento que queso; tortilla dorada sin apenas aceite."
+    },
+    "adaptacion_dona_y": {
+      "plato": "3 medias quesadillas con el resto del pollo, 60g de queso y medio aguacate machacado para untar.",
+      "proporciones": "Una tortilla más y algo más de queso y aguacate para una cena más calórica."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Cortar los pimientos en tiras finas y pocharlos en sartén con 1 cucharada de AOVE y sal yodada a fuego medio 8 minutos hasta que estén blandos.",
+      "Añadir el pollo desmechado, el tomate triturado, el comino y el orégano; mezclar 2 minutos y apagar.",
+      "Poner una tortilla en sartén antiadherente a fuego medio, cubrir media tortilla con queso rallado, relleno de pollo y un poco más de queso, y doblar.",
+      "Dorar 2 minutos por cada cara presionando con la espátula hasta que el queso se funda y la tortilla quede crujiente.",
+      "Cortar en triángulos y servir con el aguacate en láminas con unas gotas de limón y sal yodada."
+    ]
+  },
+  {
+    "id": "tacos_cerdo_desmechado_horno",
+    "nombre": "Tacos blandos de cerdo desmechado al horno con naranja, maíz y aguacate",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (cerdo asado y desmechado) + montaje 15 min",
+    "ingredientes": [
+      {
+        "item": "Aguja o cabezada de cerdo en una pieza",
+        "cantidad": "1kg",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Naranja de zumo",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Comino molido, pimentón dulce y orégano",
+        "cantidad": "1 cucharadita de cada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "4 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tortillas de trigo pequeñas (tamaño taco)",
+        "cantidad": "8 unidades",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Maíz dulce en conserva",
+        "cantidad": "1 lata (285g)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Aguacate maduro",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Tomate maduro y lima",
+        "cantidad": "2 tomates y 1 lima",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Yogur natural sin azúcar",
+        "cantidad": "1 unidad (125g)",
+        "seccion": "Lácteos y leches"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "3 tacos con 150g de cerdo desmechado, maíz, tomate, aguacate y una cucharada de yogur con lima.",
+      "proporciones": "Carne 1/2 del relleno, verdura y maíz 1/2; tortillas de trigo pequeñas."
+    },
+    "adaptacion_dona_y": {
+      "plato": "4 tacos con la misma carne, el doble de maíz y medio aguacate entero.",
+      "proporciones": "Una tortilla más, más maíz y más aguacate para sumar hidratos y grasa buena."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "El domingo: salpimentar la pieza de cerdo y frotarla con el comino, el pimentón dulce, el orégano y el ajo machacado; colocarla en una fuente con el zumo de las naranjas y 100ml de agua.",
+      "Tapar con papel de aluminio y asar a 160ºC durante 2 h 30 min; destapar y asar 20 minutos más a 200ºC hasta que esté dorada y se deshaga.",
+      "Desmechar con dos tenedores mezclándolo con el jugo de la fuente; repartir en tuppers (aguanta 4 días en nevera o se congela).",
+      "Entre semana: calentar el cerdo 3 minutos en microondas o en sartén hasta que esté caliente y jugoso.",
+      "Calentar las tortillas en sartén seca, escurrir el maíz, cortar el tomate en dados y el aguacate en láminas; mezclar el yogur con el zumo de media lima y sal yodada.",
+      "Montar los tacos: cerdo, maíz, tomate, aguacate y salsa de yogur con lima por encima."
+    ]
+  },
+  {
+    "id": "yakisoba_pollo_verduras",
+    "nombre": "Yakisoba de pollo con col salteada, zanahoria y salsa suave de soja",
+    "tipo": "cena",
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (20 min)",
+    "ingredientes": [
+      {
+        "item": "Fideos de trigo tipo yakisoba o udon",
+        "cantidad": "300g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Pechuga de pollo en tiras finas",
+        "cantidad": "350g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Col blanca o repollo",
+        "cantidad": "1/4 de pieza",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Zanahoria",
+        "cantidad": "1 unidad grande",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimiento verde",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Salsa de soja",
+        "cantidad": "4 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Kétchup y salsa Worcestershire",
+        "cantidad": "1 cucharada de cada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Jengibre fresco y ajo",
+        "cantidad": "1 trozo pequeño y 2 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Semillas de sésamo tostado",
+        "cantidad": "1 cucharada",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Plato con 175g de pollo, mucha col y zanahoria salteadas y una ración normal de fideos (120g cocidos).",
+      "proporciones": "Pollo y verdura 2/3 del plato, fideos 1/3."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Misma cantidad de pollo con ración generosa de fideos (el resto de la sartén) y un chorrito de aceite de sésamo al final.",
+      "proporciones": "Más fideos para los hidratos y un toque de aceite de sésamo para más calorías."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco; crucíferas bien cocinadas.",
+    "pasos_preparacion": [
+      "Cocer los fideos según el paquete (3-4 minutos), escurrir y reservar con unas gotas de aceite para que no se peguen.",
+      "Mezclar en un vaso la soja, el kétchup, la Worcestershire, el jengibre rallado y 2 cucharadas de agua.",
+      "Cortar la col en tiras, la zanahoria en bastones finos y el pimiento en juliana.",
+      "En sartén grande muy caliente con 1 cucharada de AOVE, saltear el pollo con sal yodada 4 minutos hasta dorar; retirar.",
+      "Saltear la col, la zanahoria, el pimiento y el ajo laminado 5 minutos a fuego vivo hasta que la col esté tierna.",
+      "Devolver el pollo, añadir los fideos y la salsa, saltear 2 minutos mezclando bien y servir con el sésamo por encima."
+    ]
+  },
+  {
+    "id": "pad_thai_suave_pollo_cacahuete",
+    "nombre": "Pad thai suave de fideos de arroz con pollo, huevo, brotes y cacahuete",
+    "tipo": "cena",
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (20 min)",
+    "ingredientes": [
+      {
+        "item": "Fideos de arroz planos",
+        "cantidad": "250g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Pechuga de pollo en dados pequeños",
+        "cantidad": "300g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Huevos",
+        "cantidad": "2 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Brotes de soja frescos",
+        "cantidad": "150g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cacahuetes tostados sin sal",
+        "cantidad": "40g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Salsa de soja y azúcar moreno",
+        "cantidad": "3 cucharadas y 1 cucharada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Lima",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo y cebollino",
+        "cantidad": "2 dientes y unas hebras",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "2 cucharadas",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Plato con 150g de pollo, 1 huevo, muchos brotes y una ración moderada de fideos (120g cocidos); cacahuete picado por encima.",
+      "proporciones": "Proteína y brotes 2/3 del plato, fideos 1/3; zumo de lima al gusto."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Misma proteína con el resto de los fideos y doble ración de cacahuete por encima.",
+      "proporciones": "Más fideos de arroz y más cacahuete para sumar hidratos y grasa buena."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Remojar los fideos de arroz en agua caliente 8-10 minutos hasta que estén flexibles; escurrir.",
+      "Mezclar la soja, el azúcar moreno, el zumo de media lima y 3 cucharadas de agua para la salsa.",
+      "Saltear el pollo con sal yodada y el ajo picado en sartén grande con AOVE 4-5 minutos hasta dorar; apartar a un lado de la sartén.",
+      "Cascar los huevos en el hueco libre, revolverlos 1 minuto y mezclarlos con el pollo.",
+      "Añadir los fideos y la salsa, saltear 2 minutos; incorporar los brotes de soja y saltear 1 minuto más para que queden crujientes.",
+      "Servir con el cacahuete picado, el cebollino y gajos de lima."
+    ]
+  },
+  {
+    "id": "bowl_coreano_suave_ternera_huevo",
+    "nombre": "Bowl de arroz estilo coreano con ternera salteada, zanahoria, espinacas y huevo",
+    "tipo": "cena",
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (20 min, arroz de la arrocera)",
+    "ingredientes": [
+      {
+        "item": "Arroz redondo o jazmín (cocido en la arrocera)",
+        "cantidad": "180g en crudo",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Ternera en tiras finas (tapa o aguja)",
+        "cantidad": "350g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Zanahoria",
+        "cantidad": "1 unidad grande",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Espinacas frescas",
+        "cantidad": "200g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Huevos",
+        "cantidad": "2 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Salsa de soja",
+        "cantidad": "4 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de sésamo y semillas de sésamo",
+        "cantidad": "1 cucharada y 1 cucharadita",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Ajo y azúcar",
+        "cantidad": "2 dientes y 1 cucharadita",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "1 cucharada",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Bol con 1 taza rasa de arroz, 175g de ternera, zanahoria, espinacas cocidas y un huevo a la plancha con yema blanda.",
+      "proporciones": "Arroz 1/3, ternera 1/3, verdura 1/3; un chorrito de soja extra al gusto."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Bol con taza y media colmada de arroz, la misma ternera y el huevo, con un hilo de aceite de sésamo extra.",
+      "proporciones": "Más arroz y un poco más de aceite de sésamo para sumar energía."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Cocer el arroz en la arrocera (o usar arroz del domingo recalentado).",
+      "Marinar la ternera 5 minutos con 3 cucharadas de soja, el ajo rallado, el azúcar y media cucharada de aceite de sésamo.",
+      "Saltear la zanahoria en bastones finos 3 minutos en sartén con AOVE y sal yodada; apartar. Saltear las espinacas 2 minutos hasta que caigan, escurrir y aliñar con el resto del aceite de sésamo y una cucharada de soja.",
+      "En la misma sartén muy caliente, saltear la ternera escurrida 3-4 minutos hasta que esté dorada.",
+      "Hacer los huevos a la plancha en antiadherente dejando la yema jugosa.",
+      "Montar los boles: arroz en la base, ternera, zanahoria y espinacas por sectores, el huevo encima y sésamo espolvoreado."
+    ]
+  },
+  {
+    "id": "pollo_salteado_anacardos_arroz",
+    "nombre": "Pollo salteado con anacardos, pimiento y soja con arroz de la arrocera",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (15 min, arroz de la arrocera)",
+    "ingredientes": [
+      {
+        "item": "Pechuga de pollo en dados",
+        "cantidad": "350g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Anacardos naturales",
+        "cantidad": "50g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Pimiento rojo",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Calabacín",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Salsa de soja",
+        "cantidad": "3 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Maicena",
+        "cantidad": "1 cucharadita",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Jengibre fresco y ajo",
+        "cantidad": "1 trozo pequeño y 2 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Arroz jazmín o largo (arrocera)",
+        "cantidad": "180g en crudo",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "2 cucharadas",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "175g de pollo con pimiento, calabacín y 20g de anacardos; 1 taza rasa de arroz.",
+      "proporciones": "Pollo y verdura 2/3 del plato, arroz 1/3."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Misma ración de pollo con taza y media de arroz y 30g de anacardos.",
+      "proporciones": "Más arroz y más anacardos para sumar hidratos y grasa buena."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Cocer el arroz en la arrocera (o recalentar el del domingo).",
+      "Mezclar la soja con la maicena, el jengibre rallado y 4 cucharadas de agua.",
+      "Tostar los anacardos en la sartén seca 2 minutos hasta que doren; reservar.",
+      "Saltear el pollo con sal yodada en sartén muy caliente con AOVE 4 minutos hasta dorar; añadir el ajo laminado, el pimiento y el calabacín en dados y saltear 4 minutos más.",
+      "Verter la salsa, cocinar 1 minuto hasta que espese y brille, añadir los anacardos y servir sobre el arroz."
+    ]
+  },
+  {
+    "id": "ensalada_garbanzos_atun_tomate",
+    "nombre": "Ensalada fría de garbanzos, atún, tomate, pepino y huevo cocido con AOVE",
+    "tipo": "cena",
+    "tiempo_minutos": 10,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (10 min)",
+    "ingredientes": [
+      {
+        "item": "Garbanzos cocidos en conserva",
+        "cantidad": "1 bote grande (400g escurridos)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Atún en aceite de oliva",
+        "cantidad": "3 latas (156g escurridos)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Tomate maduro",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pepino",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Huevos",
+        "cantidad": "2 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Pimiento rojo asado en conserva",
+        "cantidad": "100g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Aceite de oliva virgen extra y vinagre de Jerez",
+        "cantidad": "3 cucharadas y 1 cucharada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Perejil fresco",
+        "cantidad": "un puñado",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Sal yodada y comino molido",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Plato con 200g de garbanzos, 1 lata y media de atún, 1 huevo cocido, tomate y pepino abundantes.",
+      "proporciones": "Legumbre y atún 2/3 del plato, verdura 1/3; aliño de AOVE sin cebolla."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Misma ensalada con el doble de AOVE y 2 rebanadas de pan de hogaza para acompañar.",
+      "proporciones": "Pan y más AOVE para sumar hidratos y calorías."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Cocer los huevos 10 minutos desde que hierve el agua, enfriar y pelar.",
+      "Escurrir y enjuagar los garbanzos; escurrir el atún y desmenuzarlo.",
+      "Cortar el tomate y el pepino en dados, el pimiento asado en tiras y picar el perejil.",
+      "Mezclar todo en una ensaladera con el AOVE, el vinagre, sal yodada y una pizca de comino.",
+      "Repartir en dos platos y coronar con el huevo cocido en cuartos."
+    ]
+  },
+  {
+    "id": "hamburguesas_pollo_caseras_pita",
+    "nombre": "Hamburguesas caseras de pollo con hierbas en pan de pita con yogur y lechuga",
+    "tipo": "cena",
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (20 min)",
+    "ingredientes": [
+      {
+        "item": "Pollo picado (muslo o pechuga)",
+        "cantidad": "400g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Huevo",
+        "cantidad": "1 unidad",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Pan rallado",
+        "cantidad": "3 cucharadas",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Perejil fresco, orégano y ajo",
+        "cantidad": "un puñado, 1 cucharadita y 1 diente",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pan de pita",
+        "cantidad": "4 unidades",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Yogur griego natural sin azúcar",
+        "cantidad": "1 unidad (125g)",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Lechuga y tomate",
+        "cantidad": "1/2 lechuga y 1 tomate",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "2 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Sal yodada, comino y limón",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 pita rellena con 2 hamburguesas pequeñas (180g de pollo), lechuga, tomate y 2 cucharadas de salsa de yogur.",
+      "proporciones": "Carne 1/2 del relleno, verdura 1/2; pan de pita normal."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 pitas con las mismas 2 hamburguesas repartidas, más salsa de yogur y un chorrito extra de AOVE.",
+      "proporciones": "Una pita más y más salsa para sumar hidratos y calorías."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Mezclar el pollo picado con el huevo, el pan rallado, el perejil y el ajo picados, el orégano, una pizca de comino y sal yodada; amasar y formar 4 hamburguesas finas.",
+      "Mezclar el yogur con unas gotas de limón, sal yodada y perejil picado para la salsa.",
+      "Dorar las hamburguesas en sartén antiadherente con AOVE 4 minutos por cara a fuego medio hasta que estén bien hechas por dentro.",
+      "Calentar las pitas en la tostadora o sartén seca 1 minuto y abrirlas por un lado.",
+      "Rellenar con lechuga, tomate en rodajas, las hamburguesas y la salsa de yogur."
+    ]
+  },
+  {
+    "id": "kebab_casero_pollo_yogur_pita",
+    "nombre": "Kebab casero de contramuslos marinados en yogur y especias al horno, en pita con salsa de yogur",
+    "tipo": "cena",
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (pollo marinado y asado) + montaje 20 min",
+    "ingredientes": [
+      {
+        "item": "Contramuslos de pollo deshuesados y sin piel",
+        "cantidad": "800g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Yogur natural sin azúcar",
+        "cantidad": "3 unidades (375g)",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Comino molido, pimentón dulce y cúrcuma",
+        "cantidad": "1 cucharadita de cada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Ajo y limón",
+        "cantidad": "3 dientes y 1 limón",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pan de pita",
+        "cantidad": "4 unidades",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Lechuga, tomate y pepino",
+        "cantidad": "1/2 lechuga, 1 tomate y 1/2 pepino",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimiento rojo asado en conserva",
+        "cantidad": "100g",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "2 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Sal yodada y orégano",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 pita con 180g de pollo kebab en tiras, mucha lechuga, tomate, pepino y 2 cucharadas de salsa de yogur.",
+      "proporciones": "Pollo 1/2 del relleno, verdura 1/2; pita normal."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 pitas con la misma cantidad de pollo repartida, salsa generosa y pimiento asado extra.",
+      "proporciones": "Una pita más y más salsa para sumar hidratos y calorías."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "El domingo: mezclar 2 yogures con el comino, el pimentón dulce, la cúrcuma, el ajo rallado, el zumo de medio limón, el AOVE y sal yodada; embadurnar los contramuslos y marinar al menos 1 hora (mejor toda la noche).",
+      "Asar los contramuslos en bandeja a 220ºC durante 25 minutos hasta que estén dorados en los bordes; dejar templar, cortar en tiras finas y guardar en tupper (4 raciones, aguanta 4 días o se congela).",
+      "Entre semana: calentar las tiras de pollo 3 minutos en sartén muy caliente para que queden tostadas en los bordes.",
+      "Preparar la salsa con el yogur restante, zumo de limón, sal yodada y orégano.",
+      "Calentar las pitas, abrirlas y rellenarlas con lechuga, tomate, pepino, pimiento asado, el pollo y la salsa de yogur."
+    ]
+  },
+  {
+    "id": "falafel_horno_hummus_pita",
+    "nombre": "Falafel al horno con hummus casero, pita, tomate y pepino",
+    "tipo": "cena",
+    "tiempo_minutos": 30,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (falafel y hummus) + montaje 10 min",
+    "ingredientes": [
+      {
+        "item": "Garbanzos cocidos en conserva",
+        "cantidad": "2 botes grandes (800g escurridos)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Perejil fresco",
+        "cantidad": "1 manojo",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "4 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Comino molido y pimentón dulce",
+        "cantidad": "2 cucharaditas y 1 cucharadita",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Pan rallado",
+        "cantidad": "4 cucharadas",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Tahini (pasta de sésamo)",
+        "cantidad": "3 cucharadas",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Limón",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pan de pita",
+        "cantidad": "4 unidades",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Tomate y pepino",
+        "cantidad": "2 tomates y 1 pepino",
+        "seccion": "Fruta y verdura"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 pita con 5 falafel, 3 cucharadas de hummus, tomate y pepino en dados.",
+      "proporciones": "Falafel y hummus 2/3 del plato, verdura fresca 1/3; AOVE en el hummus."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 pitas con 6 falafel, hummus generoso con un chorro extra de AOVE y pepino y tomate.",
+      "proporciones": "Una pita más y más hummus con AOVE para sumar hidratos y grasa buena."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Hummus: triturar 300g de garbanzos con 2 cucharadas de tahini, el zumo de 1 limón, 1 diente de ajo, 3 cucharadas de AOVE, 4 cucharadas de agua fría, media cucharadita de comino y sal yodada hasta obtener una crema fina. Guardar en tupper.",
+      "Falafel: picar en la picadora el resto de garbanzos escurridos con el perejil, 3 dientes de ajo, el comino restante, el pimentón dulce, 1 cucharada de tahini, el pan rallado y sal yodada hasta una masa gruesa que se pueda moldear.",
+      "Formar unas 20 bolas aplastadas, pintarlas con AOVE y hornear a 200ºC 20-25 minutos, dándoles la vuelta a mitad, hasta que estén doradas y crujientes por fuera.",
+      "Guardar los falafel en tupper (aguantan 4 días en nevera; recalentar 5 minutos en horno o 2 en microondas).",
+      "Para servir: calentar las pitas, untar hummus, añadir los falafel, tomate y pepino en dados con unas gotas de limón y sal yodada."
+    ]
+  },
+  {
+    "id": "shakshuka_suave_huevos_tomate",
+    "nombre": "Shakshuka suave de huevos cocinados en salsa de tomate y pimiento con comino y pan de hogaza",
+    "tipo": "cena",
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (20 min)",
+    "ingredientes": [
+      {
+        "item": "Huevos",
+        "cantidad": "6 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Tomate triturado",
+        "cantidad": "1 lata (400g)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Pimiento rojo",
+        "cantidad": "1 unidad grande",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1/2 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "2 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Comino molido y pimentón dulce",
+        "cantidad": "1 cucharadita de cada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Queso fresco",
+        "cantidad": "100g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Pan de hogaza",
+        "cantidad": "4 rebanadas",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "2 cucharadas",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "3 huevos con la mitad de la salsa de tomate y pimiento, 50g de queso fresco desmenuzado y 1 rebanada de pan para mojar.",
+      "proporciones": "Huevos y salsa el grueso del plato; una rebanada de pan."
+    },
+    "adaptacion_dona_y": {
+      "plato": "3 huevos con la misma salsa, el queso fresco y 3 rebanadas de pan con un chorrito de AOVE.",
+      "proporciones": "Más pan y AOVE para sumar hidratos y calorías."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Pochar la cebolla picada fina y el pimiento en dados en sartén amplia con AOVE y sal yodada a fuego medio-bajo 10 minutos hasta que estén muy tiernos y la cebolla transparente.",
+      "Añadir el ajo picado, el comino y el pimentón dulce, remover 30 segundos y verter el tomate triturado; cocinar 5 minutos hasta que espese.",
+      "Hacer 6 huecos en la salsa con una cuchara y cascar un huevo en cada uno; salar con sal yodada.",
+      "Tapar y cocinar 5-6 minutos a fuego suave hasta que la clara cuaje y la yema siga blanda.",
+      "Repartir el queso fresco desmenuzado por encima y servir en la misma sartén con el pan tostado para mojar."
+    ]
+  },
+  {
+    "id": "tostas_salmon_ahumado_aguacate_huevo",
+    "nombre": "Tostas de pan de centeno con salmón ahumado, aguacate y huevo cocido",
+    "tipo": "cena",
+    "tiempo_minutos": 10,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (10 min)",
+    "ingredientes": [
+      {
+        "item": "Pan de centeno en rebanadas",
+        "cantidad": "6 rebanadas",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Salmón ahumado en lonchas",
+        "cantidad": "200g",
+        "seccion": "Pescadería"
+      },
+      {
+        "item": "Aguacate maduro",
+        "cantidad": "1 unidad grande",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Huevos",
+        "cantidad": "4 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Queso crema",
+        "cantidad": "60g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Limón",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Eneldo o cebollino fresco",
+        "cantidad": "unas hebras",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Semillas de sésamo tostado",
+        "cantidad": "1 cucharadita",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Sal yodada y pimienta negra",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 tostas con queso crema, 100g de salmón ahumado, medio aguacate en láminas y 2 huevos cocidos en rodajas.",
+      "proporciones": "Salmón y huevo el grueso de la tosta; 2 rebanadas de pan de centeno."
+    },
+    "adaptacion_dona_y": {
+      "plato": "3 tostas con la misma cantidad de salmón y huevo repartida y medio aguacate machacado con AOVE.",
+      "proporciones": "Una rebanada más de pan y más aguacate con AOVE para sumar hidratos y grasa buena."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Cocer los huevos 9-10 minutos desde que hierve el agua, enfriar bajo el grifo y pelar.",
+      "Tostar las rebanadas de pan de centeno en la tostadora.",
+      "Untar cada tosta con queso crema y cubrir con láminas de aguacate rociadas con limón.",
+      "Colocar las lonchas de salmón ahumado y el huevo cocido en rodajas.",
+      "Terminar con pimienta, una pizca de sal yodada, el eneldo picado y el sésamo."
+    ]
+  },
+  {
+    "id": "pollo_al_limon_estilo_chino",
+    "nombre": "Pollo al limón estilo chino dorado en sartén con salsa de limón y arroz jazmín",
+    "tipo": "cena",
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (20 min, arroz de la arrocera)",
+    "ingredientes": [
+      {
+        "item": "Pechuga de pollo en filetes finos",
+        "cantidad": "400g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Maicena",
+        "cantidad": "3 cucharadas",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Huevo",
+        "cantidad": "1 unidad",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Limones",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Caldo de pollo casero (o agua), azúcar y salsa de soja",
+        "cantidad": "150ml, 1 cucharada y 1 cucharada",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Ajo y jengibre fresco",
+        "cantidad": "1 diente y 1 trozo pequeño",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Arroz jazmín (arrocera)",
+        "cantidad": "180g en crudo",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Brócoli",
+        "cantidad": "200g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "2 cucharadas",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "180g de pollo en tiras con la salsa de limón, 1 taza rasa de arroz y brócoli al vapor.",
+      "proporciones": "Pollo 1/3, arroz 1/3, brócoli 1/3."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Misma ración de pollo con taza y media colmada de arroz y un poco más de salsa.",
+      "proporciones": "Más arroz y salsa para sumar hidratos y energía."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco; crucíferas bien cocinadas.",
+    "pasos_preparacion": [
+      "Cocer el arroz en la arrocera; cocer el brócoli al vapor o en el microondas 4 minutos con un poco de agua.",
+      "Salar el pollo con sal yodada, pasarlo por el huevo batido y después por 2 cucharadas de maicena; sacudir el exceso.",
+      "Dorar los filetes en sartén antiadherente con el AOVE 3 minutos por cara hasta que estén dorados y hechos; cortar en tiras y reservar.",
+      "En un cazo, mezclar el zumo de los limones, el caldo, el azúcar, la soja, el ajo y el jengibre rallados y la cucharada de maicena restante disuelta en agua; cocinar 2 minutos removiendo hasta que espese y brille.",
+      "Servir el pollo sobre el arroz, regar con la salsa de limón caliente y acompañar con el brócoli."
+    ]
+  },
+  {
+    "id": "pasta_pesto_pollo_tomates_cherry",
+    "nombre": "Pasta corta con pesto casero suave, pollo dorado y tomates cherry asados",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (15 min)",
+    "ingredientes": [
+      {
+        "item": "Pasta corta (fusilli o penne)",
+        "cantidad": "180g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Pechuga de pollo en dados",
+        "cantidad": "300g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Tomates cherry",
+        "cantidad": "250g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Albahaca fresca",
+        "cantidad": "1 manojo (30g)",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Piñones o nueces",
+        "cantidad": "30g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Parmesano o grana padano suave rallado",
+        "cantidad": "30g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "1 diente pequeño",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "5 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Sal yodada y pimienta negra",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Plato con 140g de pollo, 80g de pasta en crudo, muchos cherry asados y 2 cucharadas de pesto.",
+      "proporciones": "Pollo y tomate 1/2 del plato, pasta 1/2."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Plato con 160g de pollo, 100g de pasta en crudo, el resto del pesto y un puñado extra de piñones.",
+      "proporciones": "Más pasta y más pesto para sumar hidratos y grasa buena."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Poner a cocer la pasta en agua con sal yodada según el paquete; reservar medio vaso del agua de cocción.",
+      "Pesto: triturar la albahaca con los piñones, el ajo, el parmesano, 4 cucharadas de AOVE y una pizca de sal yodada hasta una crema; aclarar con un poco del agua de la pasta.",
+      "Dorar el pollo salpimentado en sartén de acero con 1 cucharada de AOVE 5 minutos a fuego vivo.",
+      "Añadir los cherry enteros y saltear 3 minutos hasta que se arruguen y suelten su jugo.",
+      "Mezclar la pasta escurrida con el pollo, los cherry y el pesto fuera del fuego; servir con un poco más de parmesano."
+    ]
+  },
+  {
+    "id": "noquis_tomate_mozzarella",
+    "nombre": "Ñoquis de patata con salsa de tomate casera, albahaca y mozzarella fundida",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (15 min)",
+    "ingredientes": [
+      {
+        "item": "Ñoquis de patata frescos",
+        "cantidad": "500g",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Tomate triturado",
+        "cantidad": "1 lata (400g)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Mozzarella fresca",
+        "cantidad": "2 bolas (250g)",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "2 dientes",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Albahaca fresca",
+        "cantidad": "un puñado",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Parmesano o grana padano suave rallado",
+        "cantidad": "20g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Orégano y azúcar",
+        "cantidad": "1 cucharadita y 1 pizca",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "2 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Sal yodada y pimienta negra",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Plato con 220g de ñoquis, la mitad de la salsa y 1 bola de mozzarella fundida por encima.",
+      "proporciones": "Ñoquis 1/2, salsa de tomate 1/4, queso 1/4."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Plato con el resto de ñoquis (280g), la misma mozzarella y un chorro extra de AOVE y parmesano.",
+      "proporciones": "Más ñoquis y más AOVE para sumar hidratos y calorías."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Dorar el ajo laminado en sartén amplia con AOVE a fuego suave 1 minuto sin que se queme.",
+      "Añadir el tomate triturado, el orégano, el azúcar, sal yodada y pimienta; cocinar 8 minutos a fuego medio hasta que espese.",
+      "Cocer los ñoquis en agua hirviendo con sal yodada hasta que floten (2-3 minutos) y escurrir.",
+      "Mezclar los ñoquis con la salsa, repartir la mozzarella troceada por encima, tapar 2 minutos (o gratinar 3 minutos bajo el grill del horno) hasta que funda.",
+      "Servir con la albahaca fresca rota con las manos y el parmesano rallado."
+    ]
+  },
+  {
+    "id": "lomo_adobado_plancha_pure_boniato",
+    "nombre": "Filetes de lomo de cerdo adobado a la plancha con puré de boniato y pimientos verdes",
+    "tipo": "cena",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena rápida entre semana (15 min)",
+    "ingredientes": [
+      {
+        "item": "Filetes de lomo de cerdo adobado (pimentón dulce, ajo y orégano)",
+        "cantidad": "400g",
+        "seccion": "Carnicería"
+      },
+      {
+        "item": "Boniato",
+        "cantidad": "2 unidades grandes (600g)",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimientos verdes italianos",
+        "cantidad": "4 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Leche entera",
+        "cantidad": "60ml",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Mantequilla",
+        "cantidad": "15g",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "1 diente",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimentón dulce y orégano (si el lomo no viene adobado)",
+        "cantidad": "1 cucharadita de cada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "2 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Sal yodada",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 filetes (180g) de lomo a la plancha con una ración moderada de puré de boniato y 2 pimientos verdes.",
+      "proporciones": "Lomo 1/2 del plato, puré 1/4, pimiento 1/4."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 filetes con el resto del puré de boniato (ración doble) y un chorrito de AOVE por encima.",
+      "proporciones": "Doble de puré y más AOVE para sumar hidratos y energía."
+    },
+    "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
+    "pasos_preparacion": [
+      "Pelar el boniato, cortarlo en dados y cocerlo en el microondas 8 minutos tapado con un poco de agua (o en olla 15 minutos) hasta que esté muy tierno.",
+      "Triturar el boniato con la leche caliente, la mantequilla, sal yodada y el ajo rallado hasta obtener un puré fino.",
+      "Hacer los pimientos verdes enteros en sartén de acero con 1 cucharada de AOVE y sal yodada 6-8 minutos hasta que estén blandos y tostados; reservar.",
+      "Si el lomo no viene adobado, frotarlo con el pimentón dulce, el orégano, ajo y sal yodada.",
+      "Marcar los filetes en la misma sartén muy caliente con el resto del AOVE 2-3 minutos por cara hasta que estén dorados y jugosos; servir con el puré y los pimientos."
+    ]
   }
 ]
