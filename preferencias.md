@@ -26,13 +26,25 @@ Disponemos en casa del siguiente equipamiento, que la IA debe aprovechar estrat�
 
 ---
 
+## 🛒 Supermercado y Presupuesto
+- **Un único supermercado por semana:** toda la compra se hace en el mismo súper, nunca se reparte entre varios.
+- **Mercadona por defecto; Lidl ocasionalmente.** Cuando toque Lidl, la lista completa debe generarse para Lidl.
+- **Presupuesto:** priorizar calidad manteniendo un precio comedido.
+- **Pescado:** el congelado es válido (merluza, etc.), pero el **salmón siempre en lomos frescos de calidad**, nunca salmón congelado económico.
+
+---
+
 ## 📦 Logística de Comidas y Ciclo Semanal (Sábado a Viernes)
 - **Ciclo Semanal Oficial:** La semana de planificación va de **Sábado a Viernes**. El sábado por la mañana se actualiza el menú y se realiza la compra semanal con la app; el sábado y domingo se cocinan platos frescos y disfrutones; el domingo por la tarde se realiza el Batch Cooking para preparar las bases de lunes a viernes; el viernes noche se cierra la semana laboral con pizza casera.
 - **Almuerzos en el trabajo:** Lord.I come a menudo de tupper en el trabajo con microondas (y Doña.Y en casa o tupper).
 - **Regla de textura para comidas L-V:** Todas las comidas de lunes a viernes deben ser **100% aptas para tupper y recalentar en microondas** sin perder textura ni sabor (guisos, arroces salteados, pollo al curry, lentejas, garbanzos, pastel de carne / suflé, purés).
 - **Cero fritos ni rebozados entre semana a mediodía:** Platos como merluza rebozada, huevos fritos o crujientes se reservan exclusivamente para cenas o el fin de semana.
 - **Cenas de entre semana:** Rápidas (10-15 minutos) con montajes sencillos para que Doña.Y o Lord.I no tengan que pasar tiempo cocinando.
+- **Comida fuera el fin de semana:** uno de los dos días del fin de semana suelen comer en casa de familia. Esa toma se deja flexible y no se compra para ella.
+- **Batch Cooking:** todo de golpe el domingo por la tarde. Hay congelador con espacio para tuppers, así que se pueden congelar raciones para el jueves y el viernes.
 - **Fin de semana:** Platos disfrutones y elaborados al momento (pizza casera, poke bowl, tortilla de patata, hamburguesas, fideuá).
+- **Variedad:** repetir el mismo tupper varios días está bien, pero se valora rotar cocinas (asiática, mexicana suave, italiana, mediterránea y de cuchara) y no repetir platos de una semana a la siguiente.
+- **Pescado:** 2-3 veces por semana.
 
 ---
 
@@ -40,6 +52,7 @@ Disponemos en casa del siguiente equipamiento, que la IA debe aprovechar estrat�
 - **Desayuno habitual de Lord.I:** Avena con leche y un toque de extracto de vainilla.
 - **Desayuno habitual de Doña.Y:** Batido proteico pautado y desayuno a su elección.
 - **Regla de la lista de compra:** La lista de la compra semanal se centra **estrictamente en Comidas y Cenas** planificadas. Los ingredientes de desayuno (avena, leche, vainilla) se gestionan como compras de despensa esporádicas cuando se agotan.
+- **Postres y picoteo:** incluir fruta, yogur y postres comprados o de muy poca elaboración. Tentempiés sencillos para Doña.Y (frutos secos, tostadas, batido con plátano) que le ayuden a llegar a sus calorías.
 
 ---
 
@@ -47,6 +60,7 @@ Disponemos en casa del siguiente equipamiento, que la IA debe aprovechar estrat�
 
 ### Objetivos y Salud
 - **Objetivo:** Comer sano, recomposición corporal (ganar masa muscular y reducir porcentaje de grasa manteniendo tono atlético).
+- **Energía:** ligero déficit calórico (reducir algo los hidratos en las cenas), manteniendo la proteína en el rango indicado. Gimnasio 3 días por semana y paseo diario.
 - **Pauta Renal Preventiva:** 
   - Proteína total moderada (\(1.5 - 1.7\,\text{g/kg}\), aprox. \(120 - 135\,\text{g/día}\)) **procedente exclusivamente de comida real**.
   - **PROHIBIDOS** suplementos de proteína en polvo o aminoácidos sintéticos.
@@ -72,6 +86,7 @@ Disponemos en casa del siguiente equipamiento, que la IA debe aprovechar estrat�
 
 ### Objetivos y Salud
 - **Objetivo:** Comer sano y ganancia de masa muscular magra (superávit calórico controlado y saludable).
+- **Energía:** superávit de aproximadamente 2.100-2.300 kcal/día, repartidas en comidas, cenas y tentempiés. Gimnasio 2 días por semana y paseo diario.
 - **Pauta Metabólica:** 
   - Priorizar densidad nutricional, **Yodo y Selenio** (salmón fresco, sal yodada, huevos camperos).
   - **Vegetales bociógenos (crucíferas):** Brócoli, coliflor, col, repollo **SIEMPRE cocinados térmicamente**, nunca crudos.
