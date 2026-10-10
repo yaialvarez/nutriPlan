@@ -62,9 +62,12 @@ Disponemos en casa del siguiente equipamiento, que la IA debe aprovechar estrat�
 ### Objetivos y Salud
 - **Objetivo:** Comer sano, recomposición corporal (ganar masa muscular y reducir porcentaje de grasa manteniendo tono atlético).
 - **Energía:** ligero déficit calórico (reducir algo los hidratos en las cenas), manteniendo la proteína en el rango indicado. Gimnasio 3 días por semana y paseo diario.
-- **Pauta Renal Preventiva:** 
-  - Proteína total moderada (\(1.5 - 1.7\,\text{g/kg}\), aprox. \(120 - 135\,\text{g/día}\)) **procedente exclusivamente de comida real**.
-  - **PROHIBIDOS** suplementos de proteína en polvo o aminoácidos sintéticos.
+- **Pauta Renal:** 
+  - Proteína total moderada: \(1.0 - 1.2\,\text{g/kg}\), aprox. \(80 - 96\,\text{g/día}\) de media en la semana, **nunca más de 104 g en un día ni de 40 g en una sola toma**, **procedente exclusivamente de comida real**. Con esto basta para entrenar fuerza 3 días por semana: no se compensa con más proteína.
+  - Fuentes preferentes: pescado (2-3 veces por semana), legumbres, aves y huevo. Carne roja y procesada con moderación.
+  - Ración orientativa por toma: 110-130 g de carne o 150-180 g de pescado blanco en crudo; el resto del plato, verdura e hidratos.
+  - Sal moderada: sin pastillas de caldo, con poca salsa de soja y pocos embutidos y precocinados.
+  - **PROHIBIDOS** suplementos de proteína en polvo o aminoácidos sintéticos. Sin merienda proteica extra: la merienda es fruta.
   - Hidratación constante y abundante.
 
 ### Prohibiciones Estrictas

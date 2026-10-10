@@ -8,7 +8,7 @@ Herramienta privada de asistencia nutricional y planificación semanal adaptada 
 
 | Perfil | Enfoque Nutricional | Pauta Dietética Clave | Prohibiciones Estrictas |
 | :--- | :--- | :--- | :--- |
-| **Lord.I** | Recomposición corporal y protección renal | Límite proteico de 1.5 - 1.7 g/kg (~120-135g/día) **exclusivamente de comida real**. | ❌ Suplementos de proteína sintética en polvo o aminoácidos<br>❌ Berenjena<br>❌ Cebolla fresca/cruda (sólo bien pochada)<br>❌ Aceitunas<br>❌ Quesos fuertes |
+| **Lord.I** | Recomposición corporal y protección renal | Proteína moderada de 1,0 - 1,2 g/kg (~80-96 g/día, tope 104 g/día y 40 g por toma) **exclusivamente de comida real**, con preferencia por pescado, legumbres y aves. | ❌ Suplementos de proteína sintética en polvo o aminoácidos<br>❌ Berenjena<br>❌ Cebolla fresca/cruda (sólo bien pochada)<br>❌ Aceitunas<br>❌ Quesos fuertes |
 | **Doña.Y** | Ganancia muscular y soporte metabólico | Priorizar densidad de nutrientes, Selenio y Yodo (salmón fresco, sal yodada, huevos camperos). **Vegetales bociógenos (brócoli, etc.) SIEMPRE cocinados.** Batido proteico diario permitido. | ❌ Coles de Bruselas<br>❌ Comida picante o chiles<br>❌ Berenjena<br>❌ Aceitunas<br>❌ Quesos fuertes |
 
 ---
@@ -148,7 +148,7 @@ Genera los ficheros estáticos listos en `app/dist/` (incluyendo `robots.txt` an
 
 ## 🔒 Compromiso de Seguridad Dietética
 
-- **Pauta Renal (Lord.I)**: Menús auditados para no exceder 120-135g de proteína al día, obtenidos íntegramente de alimentos naturales (pollo, vacuno magro, salmón, huevos, legumbres). **Cero suplementación proteica sintética.**
+- **Pauta Renal (Lord.I)**: Menús auditados para una proteína moderada de 80-96 g/día de media (tope de 104 g en un día y de 40 g por toma), obtenida íntegramente de alimentos naturales, con preferencia por pescado, legumbres y aves frente a carne roja y procesada, y sal moderada. **Cero suplementación proteica sintética.**
 - **Pauta Metabólica y Micronutrientes (Doña.Y)**: Micronutrientes protectores asegurados (sal yodada, salmón fresco, huevos camperos). Vegetales bociógenos siempre con cocción térmica adecuada.
 - **Equilibrio Semanal**: además de cada receta, se audita la semana completa con `data/reglas_semana.json`: pescado 2-3 veces, legumbres al menos 2, carne roja y procesada moderadas, fritos ocasionales y nunca en la comida de entre semana, verdura cada día y variedad, y medias diarias de proteína (Lord.I) y kcal (Doña.Y) dentro de objetivo. Desde el menú del 17 de octubre de 2026 el despliegue falla si se incumple una regla marcada como error; la app muestra el recuento y, al cambiar un plato, avisa de lo que desequilibraría la semana.
 - **Armonía Culinaria**: Cero berenjena, cero cebolla cruda (siempre pochada/confitada), cero picante, cero quesos fuertes y cero aceitunas en todas las recetas compartidas.
@@ -163,7 +163,9 @@ Genera los ficheros estáticos listos en `app/dist/` (incluyendo `robots.txt` an
 ### 1. Reglas Innegociables del Hogar (Prioridad Absoluta)
 Antes de proponer o modificar cualquier menú, ingrediente o receta, comprueba esta lista:
 - **Lord.I (Protección Renal y Comida Real):**
-  - **Proteína total:** Máximo 1.5 - 1.7 g/kg (~120-135 g/día) procedente **exclusivamente de comida real**.
+  - **Proteína total moderada:** 1,0 - 1,2 g/kg (~80-96 g/día de media en la semana), **nunca más de 104 g en un día ni de 40 g en una sola toma**, procedente **exclusivamente de comida real**. Es suficiente para entrenar fuerza 3 días por semana; no se busca subirla.
+  - **Fuentes:** prioridad a pescado, legumbres, aves y huevo; carne roja y procesada con moderación. Sal moderada (sin pastillas de caldo ni salsas de soja en exceso) e hidratación abundante.
+  - **Ración en el plato:** unos 110-130 g de carne o 150-180 g de pescado blanco en crudo por toma; el resto del plato, verdura e hidratos.
   - **PROHIBICIÓN TAXATIVA:** Suplementos de proteína en polvo (whey, soja, aislados) o aminoácidos sintéticos (BCAAs, etc.).
   - **PROHIBICIÓN EN COCINA:** Berenjena (total), aceitunas, quesos fuertes (azul, cabra fuerte, curados intensos).
   - **Cebolla:** **PROHIBIDA fresca/cruda en ensaladas**. Únicamente permitida si está perfectamente cocinada, pochada o confitada.
@@ -175,7 +177,7 @@ Antes de proponer o modificar cualquier menú, ingrediente o receta, comprueba e
   - **Suplementación:** Su batido de proteína diario está **permitido y recomendado** (lo toma ella aparte).
 - **Proporciones en el plato (sin báscula):**
   - Misma preparación base para cocinar a la vez.
-  - Al servir: Lord.I recibe ración estándar de hidratos y moderada de proteína; Doña.Y recibe ración aumentada de carbohidratos (pasta, arroz, patata) para garantizar su superávit calórico.
+  - Al servir: Lord.I recibe ración estándar de hidratos, verdura abundante y moderada de proteína (sin pasar de 40 g por toma); Doña.Y recibe ración aumentada de carbohidratos (pasta, arroz, patata) para garantizar su superávit calórico.
 
 ---
 
@@ -215,7 +217,7 @@ Antes de proponer o modificar cualquier menú, ingrediente o receta, comprueba e
 - `fecha_inicio` es el sábado (`AAAA-MM-DD`) y cada día lleva su fecha en la etiqueta, por ejemplo `"Sábado (17/10)"`: la vista de hoy de la app y `verificar_reglas.py` dependen de ello.
 - Los campos de adaptación para cada toma deben ser `adaptacion_lord_i` y `adaptacion_dona_y`.
 - La sección `batch_cooking_domingo` debe detallar la sesión de 2 horas del domingo.
-- Toda receta nueva necesita su estimación en `data/nutricion_recetas.json` para comprobar la proteína diaria.
+- Toda receta nueva necesita su estimación en `data/nutricion_recetas.json` para comprobar la proteína diaria. La ración de Lord.I no puede pasar de `proteina_max_toma` (40 g) y la semana debe quedar entre `proteina_min` y `proteina_max` de media (80-96 g), sin ningún día por encima de `proteina_max_dia` (104 g); todos esos límites están en `data/nutricion_base.json`.
 
 #### D. Compra de la semana (`data/compra_semana.json`)
 - Un artículo por producto: `nombre_receta`, `cantidad`, `unidad`, `seccion`, `id_preferente` (id de Mercadona, se busca con `python scripts/mercadona_api.py search "..."`), `termino_fallback` y `filtro_excluir`.

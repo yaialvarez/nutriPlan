@@ -70,7 +70,7 @@
     "ingredientes": [
       {
         "item": "Pechuga de pollo limpia",
-        "cantidad": "500g",
+        "cantidad": "400g",
         "seccion": "Carnicería"
       },
       {
@@ -105,8 +105,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "150g de pechuga cocinada, 1 taza rasa de arroz basmati, abundante calabacín y zanahoria.",
-      "proporciones": "Proteína 1/4 plato, Hidratos 1/4 plato, Verdura 1/2 plato."
+      "plato": "90 g de pechuga cocinada (unos 120 g en crudo) con la salsa de curry, 1 taza rasa de arroz basmati y abundante calabacín y zanahoria.",
+      "proporciones": "Proteína 1/4 plato (~35 g de proteína, ración moderada), Hidratos 1/4 plato, Verdura 1/2 plato."
     },
     "adaptacion_dona_y": {
       "plato": "130g de pechuga cocinada con porción generosa de arroz basmati (1 taza y media colmada) y salsa.",
@@ -146,7 +146,7 @@
       },
       {
         "item": "Pechuga de pollo en dados",
-        "cantidad": "350g",
+        "cantidad": "300g",
         "seccion": "Carnicería"
       },
       {
@@ -161,8 +161,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Plato de crema con 180g de dados de pechuga recién dorada a la plancha por encima.",
-      "proporciones": "Cena ligera, saciante y digestiva."
+      "plato": "Plato hondo bien colmado de crema con 130 g de dados de pechuga (en crudo) recién dorados a la plancha por encima.",
+      "proporciones": "Cena ligera y digestiva: ~34 g de proteína (ración moderada), verdura abundante."
     },
     "adaptacion_dona_y": {
       "plato": "Plato de crema con dados de pollo + tostas de pan integral con un toque de mayonesa.",
@@ -186,7 +186,7 @@
     "ingredientes": [
       {
         "item": "Carne picada de ternera magra",
-        "cantidad": "450g",
+        "cantidad": "350g",
         "seccion": "Carnicería"
       },
       {
@@ -221,8 +221,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Ración estándar con 1/4 arroz y 3/4 chili con ternera y alubias.",
-      "proporciones": "Proteína y hierro bioasimilable óptimo para rendimiento."
+      "plato": "Ración con 1/4 de arroz y un cazo de chili con unos 110 g de ternera, medio cazo de alubias y pimiento extra.",
+      "proporciones": "~36 g de proteína (ración moderada) con hierro bien asimilable; verdura y arroz para saciar."
     },
     "adaptacion_dona_y": {
       "plato": "Doble base de arroz blanco con ración generosa de chili.",
@@ -247,7 +247,7 @@
     "ingredientes": [
       {
         "item": "Tiras de pechuga de pollo",
-        "cantidad": "400g",
+        "cantidad": "320g",
         "seccion": "Carnicería"
       },
       {
@@ -277,8 +277,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "2 fajitas rellenas con abundante pollo y pimiento bien cocinado; toque de mayonesa.",
-      "proporciones": "Cebolla totalmente dorada y pochada en la sartén (cero cruda)."
+      "plato": "2 fajitas rellenas con unos 120 g de pollo (en crudo), mucho pimiento bien cocinado y tomate; toque de mayonesa.",
+      "proporciones": "~36 g de proteína (ración moderada). Cebolla totalmente dorada y pochada en la sartén (cero cruda)."
     },
     "adaptacion_dona_y": {
       "plato": "3 fajitas bien cargadas con pollo, verduras, tomate y generosa mayonesa.",
@@ -308,7 +308,7 @@
       },
       {
         "item": "Tiras de panceta curada magra o beicon ahumado",
-        "cantidad": "160g",
+        "cantidad": "140g",
         "seccion": "Charcutería y carnicería"
       },
       {
@@ -318,7 +318,7 @@
       },
       {
         "item": "Queso Grana Padano o Parmesano suave rallado",
-        "cantidad": "60g",
+        "cantidad": "50g",
         "seccion": "Quesos suaves"
       },
       {
@@ -328,8 +328,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Plato de 100g de pasta en seco con salsa emulsionada con el agua de cocción y huevo.",
-      "proporciones": "Proteína de huevos y magro real sin sobrecarga."
+      "plato": "Plato de 90 g de pasta en seco con unos 60 g de panceta, la salsa de huevo emulsionada con el agua de cocción y poco queso; ensalada verde al lado.",
+      "proporciones": "~35 g de proteína (ración moderada) de huevo y magro, sin sobrecarga."
     },
     "adaptacion_dona_y": {
       "plato": "Plato de 130g de pasta en seco, abundante salsa cremosa con queso suave.",
@@ -355,7 +355,7 @@
     "ingredientes": [
       {
         "item": "Lomo de salmón fresco calidad sashimi (previamente congelado)",
-        "cantidad": "350g",
+        "cantidad": "300g",
         "seccion": "Pescadería"
       },
       {
@@ -390,8 +390,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "180g de salmón en dados, 1 taza de arroz, mucho aguacate y zanahoria. Cero cebolla fresca ni cebolleta.",
-      "proporciones": "Aporte insuperable de Omega-3 y grasas cardiosaludables."
+      "plato": "140 g de salmón en dados, 1 taza de arroz, mucho aguacate, zanahoria y tomate. Cero cebolla fresca ni cebolleta.",
+      "proporciones": "~35 g de proteína (ración moderada) con buen aporte de Omega-3 y grasas cardiosaludables."
     },
     "adaptacion_dona_y": {
       "plato": "Porción extra de arroz de sushi aliñado, dados de salmón, aguacate y generosa mayonesa de soja.",
@@ -432,12 +432,12 @@
       },
       {
         "item": "Mozzarella suave rallada 100%",
-        "cantidad": "200g",
+        "cantidad": "160g",
         "seccion": "Quesos suaves"
       },
       {
         "item": "Tiras de pollo desmechado o jamón cocido extra",
-        "cantidad": "180g",
+        "cantidad": "130g",
         "seccion": "Charcutería y carnicería"
       },
       {
@@ -452,8 +452,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Media pizza grande crujiente con masa fina, champiñones y pollo.",
-      "proporciones": "Cero berenjena, cero aceitunas, queso mozzarella suave neutro."
+      "plato": "Algo menos de media pizza (2 de 5 porciones) con masa fina, champiñones, pocos trozos de pollo y la mitad de queso en su lado; ensalada grande de tomate al lado.",
+      "proporciones": "~37 g de proteína (ración moderada). Cero berenjena, cero aceitunas, queso mozzarella suave neutro."
     },
     "adaptacion_dona_y": {
       "plato": "Media pizza grande bien surtida de ingredientes y mozzarella.",
@@ -464,7 +464,7 @@
       "Mezclar la harina con agua templada, levadura, sal y AOVE; amasar 8 minutos y dejar reposar 1h para que fermente.",
       "Precalentar el horno a temperatura máxima (250°C).",
       "Estirar la masa fina sobre papel de hornear; extender la salsa de tomate con orégano.",
-      "Cubrir con la mozzarella suave, champiñones laminados y las tiras de pollo/jamón cocido.",
+      "Cubrir con la mozzarella suave, champiñones laminados y las tiras de pollo/jamón cocido (en la mitad de Lord.I, menos queso y menos pollo).",
       "Hornear a altura baja durante 10-12 minutos hasta que los bordes estén crujientes y el queso burbujee dorado."
     ]
   },
@@ -535,7 +535,7 @@
     "ingredientes": [
       {
         "item": "Lomos de salmón limpios",
-        "cantidad": "2 lomos gruesos (400g)",
+        "cantidad": "2 lomos (340g)",
         "seccion": "Pescadería"
       },
       {
@@ -560,8 +560,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Lomo de 200g a la plancha con piel crujiente, puré con AOVE y zanahorias asadas.",
-      "proporciones": "Excelente perfil antiinflamatorio para la salud renal."
+      "plato": "Lomo de 140 g a la plancha con piel crujiente, puré con AOVE (1 patata y media) y zanahorias asadas abundantes.",
+      "proporciones": "~35 g de proteína (ración moderada) con excelente perfil antiinflamatorio."
     },
     "adaptacion_dona_y": {
       "plato": "Lomo de salmón con doble ración de puré de patata y cucharada de mayonesa.",
@@ -585,7 +585,7 @@
     "ingredientes": [
       {
         "item": "Carne picada de ternera magra de carnicería",
-        "cantidad": "400g (2 hamburguesas de 200g)",
+        "cantidad": "320g (1 hamburguesa de 200g y 1 de 120g)",
         "seccion": "Carnicería"
       },
       {
@@ -615,8 +615,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Hamburguesa en pan tostado con tomate, lechuga, queso suave fundido y mayonesa. Sin cebolla cruda.",
-      "proporciones": "200g de ternera real sin suplementos."
+      "plato": "Hamburguesa de 120 g en pan tostado con tomate, lechuga, media loncha de queso suave fundido y mayonesa; patatas gajo en ración normal. Sin cebolla cruda.",
+      "proporciones": "~37 g de proteína (ración moderada) de ternera real."
     },
     "adaptacion_dona_y": {
       "plato": "Hamburguesa completa con extra de patatas gajo asadas al horno con pimentón dulce.",
@@ -625,7 +625,7 @@
     "seguridad_medica": "Queso tierno fundente (cero queso azul o cabra); sin cebolla cruda; patatas al horno con AOVE en lugar de fritas en grasas saturadas.",
     "pasos_preparacion": [
       "Cortar las patatas en gajos, mezclar con AOVE, sal y pimentón dulce; hornear a 200°C durante 25 minutos.",
-      "Formar dos hamburguesas compactas con la ternera picada y salpimentar suavemente.",
+      "Formar dos hamburguesas compactas con la ternera picada (una de 200 g para Doña.Y y otra de 120 g para Lord.I) y salpimentar suavemente.",
       "Cocinar en sartén estriada o plancha caliente 3-4 minutos por lado, colocando la loncha de queso suave al final para que funda.",
       "Tostar ligeramente el pan, untar con mayonesa suave, colocar la lechuga, el tomate y la hamburguesa con queso."
     ]
@@ -877,7 +877,7 @@
       },
       {
         "item": "Tiras de pollo despiezado o magro de cerdo",
-        "cantidad": "200g",
+        "cantidad": "160g",
         "seccion": "Carnicería"
       },
       {
@@ -892,8 +892,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Bol grande con caldo intenso, 1 huevo cocido, pollo dorado y verduras. Sin cebollino crudo.",
-      "proporciones": "Sabor umami profundo y reconfortante; cero exceso de sodio sintético."
+      "plato": "Bol grande con caldo intenso, 1 huevo cocido, unos 60 g de pollo dorado y verduras abundantes. Sin cebollino crudo.",
+      "proporciones": "~35 g de proteína (ración moderada); sabor umami profundo y cero exceso de sodio sintético."
     },
     "adaptacion_dona_y": {
       "plato": "Bol con ración generosa de fideos ramen y huevo con yema cremosa.",
@@ -978,7 +978,7 @@
       },
       {
         "item": "Pechuga de pollo en tiras o dados",
-        "cantidad": "300g",
+        "cantidad": "240g",
         "seccion": "Carnicería"
       },
       {
@@ -1003,8 +1003,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Fideos con salsa densa salada de cacahuete y 150g de pollo dorado en sartén de acero.",
-      "proporciones": "Sabores intensos y salados sin picante que encajan a la perfección con su paladar."
+      "plato": "Fideos (90 g en seco) con salsa densa salada de cacahuete, 90 g de pollo dorado en sartén de acero y calabacín o zanahoria salteados en abundancia.",
+      "proporciones": "~36 g de proteína (ración moderada). Sabores intensos y salados sin picante."
     },
     "adaptacion_dona_y": {
       "plato": "Porción abundante de pasta impregnada en crema de cacahuete con dados de pollo.",
@@ -1028,7 +1028,7 @@
     "ingredientes": [
       {
         "item": "Filetes de merluza limpios sin espinas",
-        "cantidad": "4 filetes (450g)",
+        "cantidad": "3 filetes (~380g)",
         "seccion": "Pescadería"
       },
       {
@@ -1053,8 +1053,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "2 filetes de merluza dorados con patatas al horno y un toque de mayonesa.",
-      "proporciones": "Pescado blanco de fácil digestión, alto en proteína y bajo en grasa."
+      "plato": "1 filete grande de merluza (~160 g) dorado con patatas al horno (1 y media), ensalada de tomate y un toque de mayonesa.",
+      "proporciones": "~34 g de proteína (ración moderada). Pescado blanco de fácil digestión y bajo en grasa."
     },
     "adaptacion_dona_y": {
       "plato": "Merluza dorada crujiente con ración generosa de patatas asadas con pimentón dulce.",
@@ -1083,7 +1083,7 @@
       },
       {
         "item": "Contramuslos de pollo despiezado en dados",
-        "cantidad": "400g",
+        "cantidad": "320g",
         "seccion": "Carnicería"
       },
       {
@@ -1113,8 +1113,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Arroz suelto salteado al wok/sartén con dados jugosos de contramuslo y verduras pochadas. Cero cebolla cruda.",
-      "proporciones": "1/4 contramuslo de comida real, 1/4 arroz, 1/2 verdura pochada y huevo revuelto."
+      "plato": "Arroz suelto salteado al wok/sartén con 120 g de dados de contramuslo (en crudo), huevo revuelto y verduras pochadas en abundancia. Cero cebolla cruda.",
+      "proporciones": "~36 g de proteína (ración moderada): 1/4 contramuslo, 1/4 arroz, 1/2 verdura pochada y huevo revuelto."
     },
     "adaptacion_dona_y": {
       "plato": "Porción generosa de arroz con pollo y verduras impregnadas en soja.",
@@ -1557,8 +1557,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 cuarto de pollo (muslo y contramuslo o media pechuga) sin piel excesiva con 1 patata asada y cebolla melosa.",
-      "proporciones": "1 cuarto de pollo (~38 g de proteína) + 1 patata mediana asada + jugo del asado desgrasado."
+      "plato": "1 contramuslo (o media pechuga pequeña) sin piel, unos 120 g de carne limpia, con 1 patata asada, cebolla melosa y ensalada.",
+      "proporciones": "~35 g de proteína (ración moderada) + 1 patata mediana asada + jugo del asado desgrasado. El resto del pollo se desmenuza para otros platos."
     },
     "adaptacion_dona_y": {
       "plato": "1 cuarto de pollo con doble ración de patatas asadas, bien regadas con el jugo y un hilo extra de AOVE.",
@@ -1584,7 +1584,7 @@
     "ingredientes": [
       {
         "item": "Ternera para guisar en dados (morcillo o aguja)",
-        "cantidad": "800g",
+        "cantidad": "700g",
         "seccion": "Carnicería"
       },
       {
@@ -1629,8 +1629,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 plato hondo de estofado con abundante zanahoria, 1 patata y salsa bien ligada.",
-      "proporciones": "~200 g de ternera guisada (~40 g de proteína) + 1 patata + zanahoria y salsa."
+      "plato": "1 plato hondo de estofado con abundante zanahoria, 1 patata y salsa bien ligada; la carne en ración moderada.",
+      "proporciones": "~140 g de ternera guisada (~35 g de proteína) + 1 patata + zanahoria y salsa."
     },
     "adaptacion_dona_y": {
       "plato": "1 plato hondo generoso con patata extra y una rebanada de pan de hogaza para mojar la salsa.",
@@ -1800,7 +1800,7 @@
     "ingredientes": [
       {
         "item": "Contramuslos de pollo deshuesados sin piel",
-        "cantidad": "600g",
+        "cantidad": "500g",
         "seccion": "Carnicería"
       },
       {
@@ -1845,8 +1845,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 plato hondo con 1 contramuslo y medio troceado, alubias y verduras en salsa.",
-      "proporciones": "~150 g de pollo + 1 cazo de alubias (~40 g de proteína) con abundante verdura."
+      "plato": "1 plato hondo con 1 contramuslo troceado (~110 g), 1 cazo colmado de alubias y abundante verdura en salsa.",
+      "proporciones": "~110 g de pollo + 1 cazo colmado de alubias (~36 g de proteína, ración moderada) con abundante verdura."
     },
     "adaptacion_dona_y": {
       "plato": "1 plato hondo con alubias extra, pollo y pan de hogaza para la salsa.",
@@ -1877,7 +1877,7 @@
       },
       {
         "item": "Pechuga de pollo en dados",
-        "cantidad": "400g",
+        "cantidad": "300g",
         "seccion": "Carnicería"
       },
       {
@@ -1917,8 +1917,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 plato de risotto con buena presencia de pollo y calabaza; el arroz como acompañamiento.",
-      "proporciones": "~200 g de pollo (~45 g de proteína) con 1 cazo y medio de risotto."
+      "plato": "1 plato de risotto cremoso de calabaza con 1 cazo y medio de arroz y el pollo en ración moderada; el parmesano, justo.",
+      "proporciones": "~110 g de pollo (~35 g de proteína) con 1 cazo y medio de risotto."
     },
     "adaptacion_dona_y": {
       "plato": "1 plato colmado de risotto con el pollo y un extra de parmesano y AOVE al servir.",
@@ -1949,7 +1949,7 @@
       },
       {
         "item": "Carne picada 100% vacuno",
-        "cantidad": "600g",
+        "cantidad": "500g",
         "seccion": "Carnicería"
       },
       {
@@ -1989,8 +1989,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 porción cuadrada de lasaña (un cuarto de la fuente) con ensalada de tomate aliñada.",
-      "proporciones": "1 porción (~150 g de carne, ~40 g de proteína) con tomate aliñado con AOVE."
+      "plato": "1 porción de lasaña algo más pequeña (un quinto de la fuente) con ensalada grande de tomate aliñada.",
+      "proporciones": "1 porción (~100 g de carne, ~36 g de proteína, ración moderada) con tomate aliñado con AOVE."
     },
     "adaptacion_dona_y": {
       "plato": "1 porción de lasaña más un trozo extra y 1 rebanada de pan de hogaza con AOVE.",
@@ -2003,7 +2003,7 @@
       "Bechamel ligera: calentar 3 cucharadas de AOVE, tostar la harina 1 minuto, añadir la leche poco a poco sin dejar de remover hasta espesar; sal yodada y nuez moscada.",
       "Hidratar las placas según el envase. En una fuente, alternar: bechamel fina, placas, carne, bechamel; repetir 3 pisos y acabar con bechamel y queso tierno.",
       "Hornear a 190°C durante 25 minutos hasta que dore. Dejar reposar 10 minutos antes de cortar.",
-      "Cortar en 4 porciones y guardar en tuppers; aguanta perfectamente 3-4 días en nevera o se congela."
+      "Cortar en 4 porciones (2 más grandes para Doña.Y y 2 de un quinto de la fuente para Lord.I) y guardar en tuppers; aguanta perfectamente 3-4 días en nevera o se congela."
     ]
   },
   {
@@ -2021,7 +2021,7 @@
       },
       {
         "item": "Carne picada mixta (vacuno y cerdo)",
-        "cantidad": "600g",
+        "cantidad": "500g",
         "seccion": "Carnicería"
       },
       {
@@ -2061,8 +2061,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 plato de macarrones con boloñesa abundante y gratinado ligero de mozzarella.",
-      "proporciones": "~150 g de carne (~40 g de proteína) con 1 ración moderada de pasta (~90 g en seco)."
+      "plato": "1 plato de macarrones con boloñesa en ración moderada y gratinado ligero de mozzarella; ensalada verde al lado.",
+      "proporciones": "~100 g de carne (~37 g de proteína, ración moderada) con 1 ración moderada de pasta (~90 g en seco)."
     },
     "adaptacion_dona_y": {
       "plato": "1 plato colmado de macarrones con boloñesa, mozzarella extra y un hilo de AOVE.",
@@ -2075,7 +2075,7 @@
       "Incorporar el tomate triturado, orégano y albahaca; cocinar 20 minutos a fuego suave hasta que la salsa espese.",
       "Cocer los macarrones 2 minutos menos de lo que indique el paquete, escurrir y mezclar con la boloñesa.",
       "Pasar a una fuente, cubrir con la mozzarella y gratinar a 200°C durante 10 minutos.",
-      "Repartir en 4 tuppers; al recalentar, un chorrito de agua evita que la pasta se seque."
+      "Repartir en 4 tuppers (los de Lord.I con algo menos de boloñesa); al recalentar, un chorrito de agua evita que la pasta se seque."
     ]
   },
   {
@@ -2160,7 +2160,7 @@
     "ingredientes": [
       {
         "item": "Contramuslos de pollo deshuesados sin piel",
-        "cantidad": "500g",
+        "cantidad": "400g",
         "seccion": "Carnicería"
       },
       {
@@ -2205,8 +2205,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 ración de pollo glaseado con brócoli abundante y 1 puño de arroz.",
-      "proporciones": "~250 g de pollo (~44 g de proteína) + 1 cazo de arroz + mitad del brócoli."
+      "plato": "1 ración moderada de pollo glaseado con brócoli abundante y 1 puño de arroz.",
+      "proporciones": "~140 g de pollo (~37 g de proteína) + 1 cazo de arroz + mitad del brócoli."
     },
     "adaptacion_dona_y": {
       "plato": "1 ración de pollo glaseado con doble puño de arroz y sésamo extra.",
@@ -2232,7 +2232,7 @@
     "ingredientes": [
       {
         "item": "Ternera para filetes en tiras finas (tapa o babilla)",
-        "cantidad": "500g",
+        "cantidad": "380g",
         "seccion": "Carnicería"
       },
       {
@@ -2277,8 +2277,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 ración de ternera con brócoli y zanahoria en salsa de soja ligada y 1 puño de arroz.",
-      "proporciones": "~250 g de ternera (~45 g de proteína) + 1 cazo de arroz."
+      "plato": "1 ración moderada de ternera con brócoli y zanahoria abundantes en salsa de soja ligada y 1 puño de arroz.",
+      "proporciones": "~130 g de ternera (~36 g de proteína) + 1 cazo de arroz."
     },
     "adaptacion_dona_y": {
       "plato": "1 ración de ternera con doble puño de arroz y sésamo extra.",
@@ -2448,7 +2448,7 @@
     "ingredientes": [
       {
         "item": "Contramuslos de pollo deshuesados sin piel",
-        "cantidad": "800g",
+        "cantidad": "700g",
         "seccion": "Carnicería"
       },
       {
@@ -2493,8 +2493,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 ración de pollo en salsa tikka cremosa con 1 puño de arroz basmati.",
-      "proporciones": "~200 g de pollo (~42 g de proteína) + 1 cazo de arroz y salsa."
+      "plato": "1 ración moderada de pollo en salsa tikka cremosa con 1 puño de arroz basmati y la salsa abundante.",
+      "proporciones": "~140 g de pollo (~34 g de proteína) + 1 cazo de arroz y salsa."
     },
     "adaptacion_dona_y": {
       "plato": "1 ración de pollo tikka con doble puño de arroz basmati y pan naan o pita para mojar.",
@@ -2520,7 +2520,7 @@
     "ingredientes": [
       {
         "item": "Pechuga de pollo en tiras",
-        "cantidad": "450g",
+        "cantidad": "320g",
         "seccion": "Carnicería"
       },
       {
@@ -2565,8 +2565,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 bowl con pollo especiado, pimientos, frijoles, maíz, 1 puño de arroz y un cuarto de aguacate.",
-      "proporciones": "~225 g de pollo + frijoles (~50 g de proteína) + 1 cazo de arroz; aguacate al servir."
+      "plato": "1 bowl con unos 100 g de pollo especiado, pimientos abundantes, frijoles, maíz, 1 puño de arroz y un cuarto de aguacate.",
+      "proporciones": "~100 g de pollo + frijoles (~36 g de proteína, ración moderada) + 1 cazo de arroz; aguacate al servir."
     },
     "adaptacion_dona_y": {
       "plato": "1 bowl con doble puño de arroz, medio aguacate y un extra de frijoles y maíz.",
@@ -2592,7 +2592,7 @@
     "ingredientes": [
       {
         "item": "Lomo de cerdo en dados",
-        "cantidad": "500g",
+        "cantidad": "400g",
         "seccion": "Carnicería"
       },
       {
@@ -2637,8 +2637,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 ración de lomo guisado con pimientos melosos y 1 puño de arroz.",
-      "proporciones": "~250 g de lomo (~48 g de proteína) + 1 cazo de arroz y su salsa."
+      "plato": "1 ración moderada de lomo guisado con pimientos melosos abundantes y 1 puño de arroz.",
+      "proporciones": "~140 g de lomo (~37 g de proteína) + 1 cazo de arroz y su salsa."
     },
     "adaptacion_dona_y": {
       "plato": "1 ración de lomo con doble puño de arroz y pan para la salsa.",
@@ -2664,7 +2664,7 @@
     "ingredientes": [
       {
         "item": "Lomos de merluza sin espinas (frescos o congelados)",
-        "cantidad": "4 lomos (~600g)",
+        "cantidad": "3 lomos (~460g)",
         "seccion": "Pescadería"
       },
       {
@@ -2709,8 +2709,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "2 lomos de merluza en salsa verde con guisantes y 1 patata cocida en rodajas.",
-      "proporciones": "~300 g de merluza (~45 g de proteína) + 1 patata + guisantes."
+      "plato": "1 lomo grande de merluza (~160 g) en salsa verde con guisantes y 1 patata y media cocida en rodajas.",
+      "proporciones": "~160 g de merluza (~35 g de proteína, ración moderada) + 1 patata y media + guisantes."
     },
     "adaptacion_dona_y": {
       "plato": "2 lomos de merluza con 2 patatas cocidas regadas con la salsa y un hilo generoso de AOVE.",
@@ -2736,7 +2736,7 @@
     "ingredientes": [
       {
         "item": "Lomos de bacalao sin espinas (fresco o congelado)",
-        "cantidad": "4 lomos (~600g)",
+        "cantidad": "3 lomos (~460g)",
         "seccion": "Pescadería"
       },
       {
@@ -2781,8 +2781,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "2 lomos de bacalao bañados en tomate casero con 1 patata panadera.",
-      "proporciones": "~300 g de bacalao (~45 g de proteína) + 1 patata asada + salsa."
+      "plato": "1 lomo grande de bacalao (~160 g) bañado en tomate casero con 1 patata y media panadera.",
+      "proporciones": "~160 g de bacalao (~35 g de proteína, ración moderada) + patata asada + salsa."
     },
     "adaptacion_dona_y": {
       "plato": "2 lomos de bacalao con 2 patatas panadera y pan para mojar en el tomate.",
@@ -2808,7 +2808,7 @@
     "ingredientes": [
       {
         "item": "Atún fresco o bonito limpio en dados",
-        "cantidad": "600g",
+        "cantidad": "550g",
         "seccion": "Pescadería"
       },
       {
@@ -2848,8 +2848,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 plato hondo de marmitako con unos 150g de atún en dados y patata chascada en su caldo.",
-      "proporciones": "Pescado 1/3 del plato, patata 1/3, pimientos y caldo 1/3. Un hilo de AOVE en crudo al servir."
+      "plato": "1 plato hondo de marmitako con unos 120 g de atún en dados y patata chascada abundante en su caldo.",
+      "proporciones": "~35 g de proteína (ración moderada). Pescado 1/4 del plato, patata 1/2, pimientos y caldo 1/4. Un hilo de AOVE en crudo al servir."
     },
     "adaptacion_dona_y": {
       "plato": "Plato hondo generoso con ración extra de patata y pan rústico para mojar en el caldo.",
@@ -2875,7 +2875,7 @@
     "ingredientes": [
       {
         "item": "Muslos y contramuslos de pollo troceados y sin piel",
-        "cantidad": "1,2kg",
+        "cantidad": "1kg",
         "seccion": "Carnicería"
       },
       {
@@ -2920,8 +2920,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "2 piezas de pollo (muslo + contramuslo) con abundante salsa de pimientos y 1 taza rasa de arroz blanco.",
-      "proporciones": "Pollo 1/3, verdura y salsa 1/3, arroz 1/3."
+      "plato": "1 pieza de pollo (contramuslo) con abundante salsa de pimientos y 1 taza rasa de arroz blanco.",
+      "proporciones": "~34 g de proteína (ración moderada). Pollo 1/4, verdura y salsa 1/2, arroz 1/4."
     },
     "adaptacion_dona_y": {
       "plato": "2 piezas de pollo con 1 taza y media colmada de arroz y un buen chorro de la salsa.",
@@ -2947,7 +2947,7 @@
     "ingredientes": [
       {
         "item": "Cordero para guisar deshuesado (pierna o paletilla) en dados",
-        "cantidad": "700g",
+        "cantidad": "600g",
         "seccion": "Carnicería"
       },
       {
@@ -2992,8 +2992,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Ración de tajín con unos 160g de cordero, 4 ciruelas y 1 taza rasa de cuscús con almendras por encima.",
-      "proporciones": "Cordero 1/3, cuscús 1/3, cebolla confitada, zanahoria y ciruelas 1/3."
+      "plato": "Ración de tajín con unos 120 g de cordero, 4 ciruelas, zanahoria abundante y 1 taza rasa de cuscús con almendras por encima.",
+      "proporciones": "~36 g de proteína (ración moderada). Cordero 1/4, cuscús 1/3, cebolla confitada, zanahoria y ciruelas el resto."
     },
     "adaptacion_dona_y": {
       "plato": "Misma ración de cordero con 1 taza y media colmada de cuscús, doble de almendras y un hilo de AOVE.",
@@ -3019,7 +3019,7 @@
     "ingredientes": [
       {
         "item": "Ternera para guisar en dados (morcillo o aguja)",
-        "cantidad": "800g",
+        "cantidad": "700g",
         "seccion": "Carnicería"
       },
       {
@@ -3064,8 +3064,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Plato hondo de goulash con unos 200g de ternera guisada, patata y abundante salsa de pimiento.",
-      "proporciones": "Ternera 1/3, patata 1/3, salsa de pimientos y cebolla 1/3."
+      "plato": "Plato hondo de goulash con unos 140 g de ternera guisada, patata y abundante salsa de pimiento.",
+      "proporciones": "~36 g de proteína (ración moderada). Ternera 1/4, patata 1/3, salsa de pimientos y cebolla el resto."
     },
     "adaptacion_dona_y": {
       "plato": "Plato hondo con patata extra y 2 rebanadas de pan rústico para mojar la salsa.",
@@ -3265,7 +3265,7 @@
       },
       {
         "item": "Mozzarella fresca",
-        "cantidad": "2 bolas (250g)",
+        "cantidad": "1 bola y media (~190g)",
         "seccion": "Charcutería y quesos"
       },
       {
@@ -3280,8 +3280,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Bol de ensalada de pasta con 1 lata de atún, 1 huevo cocido, media bola de mozzarella y verduras.",
-      "proporciones": "Pasta 1/3, atún, huevo y mozzarella 1/3, tomate, pepino y maíz 1/3."
+      "plato": "Bol de ensalada de pasta con 1 lata de atún, 1 huevo cocido, un cuarto de bola de mozzarella y verduras abundantes.",
+      "proporciones": "~35 g de proteína (ración moderada). Pasta 1/3, atún, huevo y mozzarella 1/4, tomate, pepino y maíz el resto."
     },
     "adaptacion_dona_y": {
       "plato": "Bol grande con ración extra de pasta, medio aguacate en dados y un buen chorro de AOVE.",
@@ -3378,12 +3378,12 @@
       },
       {
         "item": "Contramuslos de pollo deshuesados en dados",
-        "cantidad": "350g",
+        "cantidad": "300g",
         "seccion": "Carnicería"
       },
       {
         "item": "Lomos de merluza sin piel ni espinas (frescos o congelados)",
-        "cantidad": "350g",
+        "cantidad": "320g",
         "seccion": "Pescadería"
       },
       {
@@ -3418,8 +3418,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Ración de fideuá con unos 90g de pollo y 90g de merluza y el fideo bien tostado.",
-      "proporciones": "Fideo 1/2, pollo y merluza 1/2. Un gajo de limón para rociar."
+      "plato": "Ración de fideuá con unos 60 g de pollo y 75 g de merluza y el fideo bien tostado; ensalada al lado.",
+      "proporciones": "~36 g de proteína (ración moderada). Fideo 1/2, pollo y merluza 1/2. Un gajo de limón para rociar."
     },
     "adaptacion_dona_y": {
       "plato": "Ración grande de fideo con el mismo pollo y merluza, y una cucharada de alioli suave o mayonesa.",
@@ -3597,7 +3597,7 @@
       },
       {
         "item": "Pechuga de pollo en dados",
-        "cantidad": "400g",
+        "cantidad": "350g",
         "seccion": "Carnicería"
       },
       {
@@ -3612,8 +3612,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Plato hondo de crema con unos 150g de pollo dorado y un puñado de picatostes.",
-      "proporciones": "Crema 2/3, pollo 1/3, picatostes por encima."
+      "plato": "Plato hondo bien colmado de crema con unos 120 g de pollo dorado y un puñado de picatostes.",
+      "proporciones": "~36 g de proteína (ración moderada). Crema 3/4, pollo 1/4, picatostes por encima."
     },
     "adaptacion_dona_y": {
       "plato": "Plato hondo de crema con pollo, doble de picatostes y un buen chorro de AOVE.",
@@ -3720,7 +3720,7 @@
       },
       {
         "item": "Pollo cocido desmenuzado (del caldo) o pechuga en dados",
-        "cantidad": "250g",
+        "cantidad": "200g",
         "seccion": "Carnicería"
       },
       {
@@ -3750,8 +3750,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Plato hondo de sopa con abundante pollo desmenuzado, fideos, zanahoria y un huevo escalfado en el propio caldo.",
-      "proporciones": "Pollo y huevo 1/2, fideos y verdura 1/2."
+      "plato": "Plato hondo de sopa con unos 80 g de pollo desmenuzado, fideos, zanahoria y puerro abundantes y un huevo escalfado en el propio caldo.",
+      "proporciones": "~35 g de proteína (ración moderada). Pollo y huevo 1/3, fideos y verdura 2/3."
     },
     "adaptacion_dona_y": {
       "plato": "Plato hondo con ración extra de fideos y 2 rebanadas de pan tostado con AOVE.",
@@ -3775,7 +3775,7 @@
     "ingredientes": [
       {
         "item": "Lomos de salmón fresco",
-        "cantidad": "2 lomos (350g)",
+        "cantidad": "2 lomos (~320g)",
         "seccion": "Pescadería"
       },
       {
@@ -3815,8 +3815,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 lomo de salmón glaseado con 1 taza rasa de arroz y calabacín salteado con sésamo.",
-      "proporciones": "Salmón 1/3, arroz 1/3, calabacín 1/3."
+      "plato": "1 lomo de salmón de unos 140 g glaseado con 1 taza rasa de arroz y calabacín salteado abundante con sésamo.",
+      "proporciones": "~35 g de proteína (ración moderada). Salmón 1/4, arroz 1/3, calabacín el resto."
     },
     "adaptacion_dona_y": {
       "plato": "1 lomo de salmón con 1 taza y media colmada de arroz y medio aguacate en láminas.",
@@ -3912,7 +3912,7 @@
     "ingredientes": [
       {
         "item": "Lomos de merluza sin espinas (frescos o congelados)",
-        "cantidad": "4 lomos (500g)",
+        "cantidad": "3 lomos (~420g)",
         "seccion": "Pescadería"
       },
       {
@@ -3957,8 +3957,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "2 lomos de merluza con su refrito de ajo y perejil, salteado de verduras y 1 rebanada de pan.",
-      "proporciones": "Pescado 1/2, verduras 1/3, pan 1/6."
+      "plato": "1 lomo grande de merluza (~170 g) con su refrito de ajo y perejil, salteado abundante de verduras y 1 rebanada de pan.",
+      "proporciones": "~36 g de proteína (ración moderada). Pescado 1/3, verduras 1/2, pan 1/6."
     },
     "adaptacion_dona_y": {
       "plato": "2 lomos de merluza con verduras, 3 rebanadas de pan con AOVE y, si apetece, medio aguacate.",
@@ -4043,7 +4043,7 @@
     "ingredientes": [
       {
         "item": "Tacos de atún fresco (lomo limpio)",
-        "cantidad": "350g",
+        "cantidad": "300g",
         "seccion": "Pescadería"
       },
       {
@@ -4088,8 +4088,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "175g de atún en tacos sellados por fuera y rosados por dentro, con media ración de patata y abundante judía verde.",
-      "proporciones": "Proteína 1/3 del plato, verdura 1/2, patata 1/6. Aliño de AOVE y soja."
+      "plato": "130 g de atún en tacos sellados por fuera y rosados por dentro, con media ración de patata y abundante judía verde.",
+      "proporciones": "~36 g de proteína (ración moderada). Proteína 1/4 del plato, verdura 1/2, patata 1/4. Aliño de AOVE y soja."
     },
     "adaptacion_dona_y": {
       "plato": "Misma ración de atún con el doble de patata templada y un chorro extra de AOVE sobre la ensalada.",
@@ -4114,7 +4114,7 @@
     "ingredientes": [
       {
         "item": "Pechuga de pollo asada o a la plancha (puede ser la del domingo)",
-        "cantidad": "300g",
+        "cantidad": "240g",
         "seccion": "Carnicería"
       },
       {
@@ -4159,8 +4159,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 wrap grande y bien cargado: 150g de pollo en tiras, mucha lechuga, tomate y 2 cucharadas de salsa césar de yogur.",
-      "proporciones": "Pollo 1/2 del relleno, verdura 1/2; salsa ligera a base de yogur."
+      "plato": "1 wrap grande y bien cargado: 90 g de pollo en tiras, mucha lechuga, tomate y 2 cucharadas de salsa césar de yogur.",
+      "proporciones": "~35 g de proteína (ración moderada). Pollo 1/3 del relleno, verdura 2/3; salsa ligera a base de yogur."
     },
     "adaptacion_dona_y": {
       "plato": "2 wraps con 150g de pollo repartidos, salsa generosa y un puñado extra de parmesano rallado.",
@@ -4190,12 +4190,12 @@
       },
       {
         "item": "Pollo asado desmechado (restos del domingo o pechuga cocida)",
-        "cantidad": "300g",
+        "cantidad": "260g",
         "seccion": "Carnicería"
       },
       {
         "item": "Queso tierno rallado",
-        "cantidad": "120g",
+        "cantidad": "100g",
         "seccion": "Charcutería y quesos"
       },
       {
@@ -4230,8 +4230,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "2 medias quesadillas (1 tortilla doblada) con 120g de pollo, 40g de queso tierno y pimientos; medio aguacate en láminas al lado.",
-      "proporciones": "Relleno con más pollo y pimiento que queso; tortilla dorada sin apenas aceite."
+      "plato": "2 medias quesadillas (1 tortilla doblada) con 80 g de pollo, 25 g de queso tierno y pimientos abundantes; medio aguacate en láminas al lado.",
+      "proporciones": "~35 g de proteína (ración moderada). Relleno con más pimiento que pollo y queso; tortilla dorada sin apenas aceite."
     },
     "adaptacion_dona_y": {
       "plato": "3 medias quesadillas con el resto del pollo, 60g de queso y medio aguacate machacado para untar.",
@@ -4256,7 +4256,7 @@
     "ingredientes": [
       {
         "item": "Aguja o cabezada de cerdo en una pieza",
-        "cantidad": "1kg",
+        "cantidad": "900g",
         "seccion": "Carnicería"
       },
       {
@@ -4301,8 +4301,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "3 tacos con 150g de cerdo desmechado, maíz, tomate, aguacate y una cucharada de yogur con lima.",
-      "proporciones": "Carne 1/2 del relleno, verdura y maíz 1/2; tortillas de trigo pequeñas."
+      "plato": "3 tacos con unos 100 g de cerdo desmechado, maíz, tomate abundante, aguacate y una cucharada de yogur con lima.",
+      "proporciones": "~34 g de proteína (ración moderada). Carne 1/3 del relleno, verdura y maíz 2/3; tortillas de trigo pequeñas."
     },
     "adaptacion_dona_y": {
       "plato": "4 tacos con la misma carne, el doble de maíz y medio aguacate entero.",
@@ -4333,7 +4333,7 @@
       },
       {
         "item": "Pechuga de pollo en tiras finas",
-        "cantidad": "350g",
+        "cantidad": "300g",
         "seccion": "Carnicería"
       },
       {
@@ -4373,8 +4373,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Plato con 175g de pollo, mucha col y zanahoria salteadas y una ración normal de fideos (120g cocidos).",
-      "proporciones": "Pollo y verdura 2/3 del plato, fideos 1/3."
+      "plato": "Plato con 120 g de pollo, mucha col y zanahoria salteadas y una ración normal de fideos (120 g cocidos).",
+      "proporciones": "~36 g de proteína (ración moderada). Verdura 1/2 del plato, pollo 1/4, fideos 1/4."
     },
     "adaptacion_dona_y": {
       "plato": "Misma cantidad de pollo con ración generosa de fideos (el resto de la sartén) y un chorrito de aceite de sésamo al final.",
@@ -4405,7 +4405,7 @@
       },
       {
         "item": "Pechuga de pollo en dados pequeños",
-        "cantidad": "300g",
+        "cantidad": "240g",
         "seccion": "Carnicería"
       },
       {
@@ -4445,8 +4445,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Plato con 150g de pollo, 1 huevo, muchos brotes y una ración moderada de fideos (120g cocidos); cacahuete picado por encima.",
-      "proporciones": "Proteína y brotes 2/3 del plato, fideos 1/3; zumo de lima al gusto."
+      "plato": "Plato con 90 g de pollo, 1 huevo, muchos brotes y una ración moderada de fideos (120 g cocidos); un poco de cacahuete picado por encima.",
+      "proporciones": "~36 g de proteína (ración moderada). Proteína y brotes 2/3 del plato, fideos 1/3; zumo de lima al gusto."
     },
     "adaptacion_dona_y": {
       "plato": "Misma proteína con el resto de los fideos y doble ración de cacahuete por encima.",
@@ -4477,7 +4477,7 @@
       },
       {
         "item": "Ternera en tiras finas (tapa o aguja)",
-        "cantidad": "350g",
+        "cantidad": "290g",
         "seccion": "Carnicería"
       },
       {
@@ -4517,8 +4517,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Bol con 1 taza rasa de arroz, 175g de ternera, zanahoria, espinacas cocidas y un huevo a la plancha con yema blanda.",
-      "proporciones": "Arroz 1/3, ternera 1/3, verdura 1/3; un chorrito de soja extra al gusto."
+      "plato": "Bol con 1 taza rasa de arroz, 110 g de ternera, zanahoria y espinacas cocidas abundantes y un huevo a la plancha con yema blanda.",
+      "proporciones": "~37 g de proteína (ración moderada). Arroz 1/3, ternera 1/4, verdura el resto; un chorrito de soja extra al gusto."
     },
     "adaptacion_dona_y": {
       "plato": "Bol con taza y media colmada de arroz, la misma ternera y el huevo, con un hilo de aceite de sésamo extra.",
@@ -4544,7 +4544,7 @@
     "ingredientes": [
       {
         "item": "Pechuga de pollo en dados",
-        "cantidad": "350g",
+        "cantidad": "300g",
         "seccion": "Carnicería"
       },
       {
@@ -4589,8 +4589,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "175g de pollo con pimiento, calabacín y 20g de anacardos; 1 taza rasa de arroz.",
-      "proporciones": "Pollo y verdura 2/3 del plato, arroz 1/3."
+      "plato": "120 g de pollo con pimiento y calabacín abundantes y 15 g de anacardos; 1 taza rasa de arroz.",
+      "proporciones": "~37 g de proteína (ración moderada). Verdura 1/2 del plato, pollo 1/4, arroz 1/4."
     },
     "adaptacion_dona_y": {
       "plato": "Misma ración de pollo con taza y media de arroz y 30g de anacardos.",
@@ -4660,8 +4660,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Plato con 200g de garbanzos, 1 lata y media de atún, 1 huevo cocido, tomate y pepino abundantes.",
-      "proporciones": "Legumbre y atún 2/3 del plato, verdura 1/3; aliño de AOVE sin cebolla."
+      "plato": "Plato con 180 g de garbanzos, 1 lata de atún, 1 huevo cocido, tomate y pepino abundantes.",
+      "proporciones": "~35 g de proteína (ración moderada). Legumbre y atún 1/2 del plato, verdura 1/2; aliño de AOVE sin cebolla."
     },
     "adaptacion_dona_y": {
       "plato": "Misma ensalada con el doble de AOVE y 2 rebanadas de pan de hogaza para acompañar.",
@@ -4686,7 +4686,7 @@
     "ingredientes": [
       {
         "item": "Pollo picado (muslo o pechuga)",
-        "cantidad": "400g",
+        "cantidad": "320g",
         "seccion": "Carnicería"
       },
       {
@@ -4731,8 +4731,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 pita rellena con 2 hamburguesas pequeñas (180g de pollo), lechuga, tomate y 2 cucharadas de salsa de yogur.",
-      "proporciones": "Carne 1/2 del relleno, verdura 1/2; pan de pita normal."
+      "plato": "1 pita rellena con 1 hamburguesa de pollo de ~120 g, mucha lechuga, tomate y 2 cucharadas de salsa de yogur.",
+      "proporciones": "~37 g de proteína (ración moderada). Carne 1/3 del relleno, verdura 2/3; pan de pita normal."
     },
     "adaptacion_dona_y": {
       "plato": "2 pitas con las mismas 2 hamburguesas repartidas, más salsa de yogur y un chorrito extra de AOVE.",
@@ -4740,7 +4740,7 @@
     },
     "seguridad_medica": "Comida real; sin picante; cebolla siempre bien pochada; sin berenjena, aceitunas, quesos fuertes ni marisco.",
     "pasos_preparacion": [
-      "Mezclar el pollo picado con el huevo, el pan rallado, el perejil y el ajo picados, el orégano, una pizca de comino y sal yodada; amasar y formar 4 hamburguesas finas.",
+      "Mezclar el pollo picado con el huevo, el pan rallado, el perejil y el ajo picados, el orégano, una pizca de comino y sal yodada; amasar y formar 3 hamburguesas finas (2 de ~100 g para Doña.Y y 1 de ~120 g para Lord.I).",
       "Mezclar el yogur con unas gotas de limón, sal yodada y perejil picado para la salsa.",
       "Dorar las hamburguesas en sartén antiadherente con AOVE 4 minutos por cara a fuego medio hasta que estén bien hechas por dentro.",
       "Calentar las pitas en la tostadora o sartén seca 1 minuto y abrirlas por un lado.",
@@ -4757,7 +4757,7 @@
     "ingredientes": [
       {
         "item": "Contramuslos de pollo deshuesados y sin piel",
-        "cantidad": "800g",
+        "cantidad": "650g",
         "seccion": "Carnicería"
       },
       {
@@ -4802,8 +4802,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "1 pita con 180g de pollo kebab en tiras, mucha lechuga, tomate, pepino y 2 cucharadas de salsa de yogur.",
-      "proporciones": "Pollo 1/2 del relleno, verdura 1/2; pita normal."
+      "plato": "1 pita con unos 100 g de pollo kebab en tiras, mucha lechuga, tomate, pepino, pimiento asado y 2 cucharadas de salsa de yogur.",
+      "proporciones": "~37 g de proteína (ración moderada). Pollo 1/3 del relleno, verdura 2/3; pita normal."
     },
     "adaptacion_dona_y": {
       "plato": "2 pitas con la misma cantidad de pollo repartida, salsa generosa y pimiento asado extra.",
@@ -4985,7 +4985,7 @@
       },
       {
         "item": "Huevos",
-        "cantidad": "4 unidades",
+        "cantidad": "3 unidades",
         "seccion": "Huevos"
       },
       {
@@ -5015,8 +5015,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "2 tostas con queso crema, 100g de salmón ahumado, medio aguacate en láminas y 2 huevos cocidos en rodajas.",
-      "proporciones": "Salmón y huevo el grueso de la tosta; 2 rebanadas de pan de centeno."
+      "plato": "2 tostas con queso crema, 80 g de salmón ahumado, medio aguacate en láminas y 1 huevo cocido en rodajas.",
+      "proporciones": "~36 g de proteína (ración moderada). Salmón, huevo y aguacate sobre 2 rebanadas de pan de centeno."
     },
     "adaptacion_dona_y": {
       "plato": "3 tostas con la misma cantidad de salmón y huevo repartida y medio aguacate machacado con AOVE.",
@@ -5041,7 +5041,7 @@
     "ingredientes": [
       {
         "item": "Pechuga de pollo en filetes finos",
-        "cantidad": "400g",
+        "cantidad": "340g",
         "seccion": "Carnicería"
       },
       {
@@ -5086,8 +5086,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "180g de pollo en tiras con la salsa de limón, 1 taza rasa de arroz y brócoli al vapor.",
-      "proporciones": "Pollo 1/3, arroz 1/3, brócoli 1/3."
+      "plato": "120 g de pollo en tiras con la salsa de limón, 1 taza rasa de arroz y brócoli al vapor abundante.",
+      "proporciones": "~36 g de proteína (ración moderada). Pollo 1/4, arroz 1/3, brócoli el resto."
     },
     "adaptacion_dona_y": {
       "plato": "Misma ración de pollo con taza y media colmada de arroz y un poco más de salsa.",
@@ -5117,7 +5117,7 @@
       },
       {
         "item": "Pechuga de pollo en dados",
-        "cantidad": "300g",
+        "cantidad": "260g",
         "seccion": "Carnicería"
       },
       {
@@ -5157,8 +5157,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "Plato con 140g de pollo, 80g de pasta en crudo, muchos cherry asados y 2 cucharadas de pesto.",
-      "proporciones": "Pollo y tomate 1/2 del plato, pasta 1/2."
+      "plato": "Plato con 100 g de pollo, 80 g de pasta en crudo, muchos cherry asados y 2 cucharadas de pesto.",
+      "proporciones": "~36 g de proteína (ración moderada). Pollo y tomate 1/2 del plato, pasta 1/2."
     },
     "adaptacion_dona_y": {
       "plato": "Plato con 160g de pollo, 100g de pasta en crudo, el resto del pesto y un puñado extra de piñones.",
@@ -5254,7 +5254,7 @@
     "ingredientes": [
       {
         "item": "Filetes de lomo de cerdo adobado (pimentón dulce, ajo y orégano)",
-        "cantidad": "400g",
+        "cantidad": "3 filetes (~320g)",
         "seccion": "Carnicería"
       },
       {
@@ -5299,8 +5299,8 @@
       }
     ],
     "adaptacion_lord_i": {
-      "plato": "2 filetes (180g) de lomo a la plancha con una ración moderada de puré de boniato y 2 pimientos verdes.",
-      "proporciones": "Lomo 1/2 del plato, puré 1/4, pimiento 1/4."
+      "plato": "1 filete grueso (~130 g) de lomo a la plancha con una ración moderada de puré de boniato y 2 pimientos verdes.",
+      "proporciones": "~34 g de proteína (ración moderada). Lomo 1/3 del plato, puré 1/3, pimiento 1/3."
     },
     "adaptacion_dona_y": {
       "plato": "2 filetes con el resto del puré de boniato (ración doble) y un chorrito de AOVE por encima.",

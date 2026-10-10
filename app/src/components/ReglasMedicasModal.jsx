@@ -67,8 +67,8 @@ export default function ReglasMedicasModal({ perfilesData, onClose }) {
               </span>
             </div>
             <ul className="space-y-1.5 text-blue-950">
-              <li>• <strong>Límite Proteico:</strong> 1.5 - 1.7 g/kg (~120 - 135 g/día) procedente ÚNICAMENTE de comida real.</li>
-              <li>• <strong>Protección Renal:</strong> Cero deshidratación, cero dietas hiperproteicas sintéticas. Cero batidos ni aminoácidos concentrados.</li>
+              <li>• <strong>Proteína moderada:</strong> 1,0 - 1,2 g/kg (~80 - 96 g/día), nunca más de ~104 g en un día ni de 40 g en una toma, procedente ÚNICAMENTE de comida real. Prioridad a pescado, legumbres y aves.</li>
+              <li>• <strong>Protección Renal:</strong> Buena hidratación, sal moderada, poca carne roja y procesada. Cero dietas hiperproteicas, cero batidos ni aminoácidos concentrados.</li>
               <li>• <strong>Plato Visual:</strong> 1/4 proteína real, 1/4 hidratos complejos, 1/2 verduras cocidas o ensalada fresca sin cebolla cruda.</li>
             </ul>
           </div>

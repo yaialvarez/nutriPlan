@@ -2,7 +2,7 @@
   "semana": "Semana 4 (v2): Recetas nuevas con pescado tres veces, brócoli y legumbre",
   "fecha_inicio": "2026-10-10",
   "ciclo_semanal": "Sábado 10/10 a Viernes 16/10",
-  "objetivo_semana": "Menú rehecho con 13 recetas nuevas del recetario ampliado: pescado tres veces (salmón fresco el sábado y merluza el martes y el jueves), legumbre tres veces (burrito bowl, guisantes en la salsa verde y alubias con pollo), brócoli cocinado dos veces y seis cocinas distintas. La comida del domingo queda libre para comer en familia. Lord.I suma una merienda de queso fresco 0% con fruta y queda en ~120 g de proteína de media (máximo 124 g, por debajo del tope de 135 g); Doña.Y supera las 2.100 kcal todos los días con raciones dobles de hidratos y su batido.",
+  "objetivo_semana": "Menú rehecho con 13 recetas nuevas del recetario ampliado: pescado tres veces (salmón fresco el sábado y merluza el martes y el jueves), legumbre tres veces (burrito bowl, guisantes en la salsa verde y alubias con pollo), brócoli cocinado dos veces y seis cocinas distintas. La comida del domingo queda libre para comer en familia. Lord.I sigue una ración de proteína moderada en cada toma (30-38 g por plato, fruta de merienda) y queda en ~90 g de proteína de media (máximo 91 g, por debajo del tope diario de 104 g); Doña.Y supera las 2.100 kcal todos los días con raciones dobles de hidratos y su batido.",
   "batch_cooking_domingo": {
     "duracion_estimada_minutos": 120,
     "resumen": "Sesión del domingo por la tarde, al volver de la comida en familia (~2 h): arroz en la arrocera para tres tuppers, pollo teriyaki con brócoli (lunes), burrito bowl (martes), lomo guisado con pimientos (miércoles), merluza en salsa verde (jueves, al congelador) y alubias blancas con pollo (viernes, al congelador).",
@@ -63,9 +63,9 @@
         "origen": "Cocina fresca de fin de semana (20 min)",
         "tiempo_preparacion": "20 min",
         "adaptacion_lord_i": {
-          "porcion": "1 lomo de salmón glaseado con 1 taza rasa de arroz y calabacín salteado con sésamo",
-          "detalles": "Salmón fresco en lomos, glaseado sin picante. Sin suplementos; merienda de queso fresco 0% con fruta.",
-          "volumen_macros": "Proteína de comida real (~42 g)."
+          "porcion": "1 lomo de salmón de unos 140 g glaseado con 1 taza rasa de arroz y calabacín salteado abundante con sésamo",
+          "detalles": "Salmón fresco en lomos, glaseado sin picante. Ración de proteína moderada; de merienda, una pieza de fruta.",
+          "volumen_macros": "Proteína de comida real (~35 g)."
         },
         "adaptacion_dona_y": {
           "porcion": "1 lomo de salmón con 1 taza y media colmada de arroz y medio aguacate en láminas",
@@ -79,9 +79,9 @@
         "origen": "Cena de sábado en sartén de acero (15 min)",
         "tiempo_preparacion": "15 min",
         "adaptacion_lord_i": {
-          "porcion": "2 filetes (180 g) de lomo adobado a la plancha con ración moderada de puré de patata y 2 pimientos verdes",
-          "detalles": "Puré de patata en lugar de boniato (no hay boniato fresco en el catálogo). Adobo de pimentón dulce y ajo, sin picante.",
-          "volumen_macros": "Proteína de comida real (~42 g)."
+          "porcion": "1 filete grueso (~130 g) de lomo adobado a la plancha con ración moderada de puré de patata y 2 pimientos verdes",
+          "detalles": "Puré de patata en lugar de boniato (no hay boniato fresco en el catálogo). Adobo de pimentón dulce y ajo, sin picante. Ración de proteína moderada.",
+          "volumen_macros": "Proteína de comida real (~34 g)."
         },
         "adaptacion_dona_y": {
           "porcion": "2 filetes de lomo con ración doble de puré de patata y un chorrito de AOVE",
@@ -133,9 +133,9 @@
         "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
         "tiempo_preparacion": "3 min",
         "adaptacion_lord_i": {
-          "porcion": "1 ración de pollo glaseado con brócoli abundante y 1 puño de arroz",
-          "detalles": "Brócoli cocinado al vapor. Sin suplementos; merienda de queso fresco 0% con fruta.",
-          "volumen_macros": "Proteína de comida real (~44 g)."
+          "porcion": "1 ración moderada de pollo glaseado (~140 g) con brócoli abundante y 1 puño de arroz",
+          "detalles": "Brócoli cocinado al vapor. Ración de proteína moderada, sin suplementos.",
+          "volumen_macros": "Proteína de comida real (~37 g)."
         },
         "adaptacion_dona_y": {
           "porcion": "1 ración de pollo glaseado con doble puño de arroz y sésamo extra",
@@ -149,9 +149,9 @@
         "origen": "Cena rápida (15 min)",
         "tiempo_preparacion": "15 min",
         "adaptacion_lord_i": {
-          "porcion": "2 medias quesadillas (1 tortilla doblada) con 120g de pollo, 40g de queso tierno y pimientos; medio aguacate en láminas al lado",
-          "detalles": "Pechuga a la plancha del momento, queso tierno suave y pimientos pochados.",
-          "volumen_macros": "Proteína de comida real (~42 g)."
+          "porcion": "2 medias quesadillas (1 tortilla doblada) con 80 g de pollo, 25 g de queso tierno y pimientos abundantes; medio aguacate en láminas al lado",
+          "detalles": "Pechuga a la plancha del momento, queso tierno suave y pimientos pochados. Ración de proteína moderada.",
+          "volumen_macros": "Proteína de comida real (~35 g)."
         },
         "adaptacion_dona_y": {
           "porcion": "3 medias quesadillas con el resto del pollo, 60g de queso y medio aguacate machacado para untar",
@@ -168,9 +168,9 @@
         "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
         "tiempo_preparacion": "3 min",
         "adaptacion_lord_i": {
-          "porcion": "1 bowl con pollo especiado, pimientos, frijoles, maíz, 1 puño de arroz y un cuarto de aguacate",
-          "detalles": "Comino y pimentón dulce, cero picante; alubias rojas como legumbre. Sin suplementos; merienda de queso fresco 0% con fruta.",
-          "volumen_macros": "Proteína de comida real (~48 g)."
+          "porcion": "1 bowl con unos 100 g de pollo especiado, pimientos abundantes, frijoles, maíz, 1 puño de arroz y un cuarto de aguacate",
+          "detalles": "Comino y pimentón dulce, cero picante; alubias rojas como legumbre. Ración de proteína moderada, sin suplementos.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
         },
         "adaptacion_dona_y": {
           "porcion": "1 bowl con doble puño de arroz, medio aguacate y un extra de frijoles y maíz",
@@ -184,9 +184,9 @@
         "origen": "Cena rápida (15 min, dos sartenes)",
         "tiempo_preparacion": "15 min",
         "adaptacion_lord_i": {
-          "porcion": "2 lomos de merluza con su refrito de ajo y perejil, salteado de verduras y 1 rebanada de pan",
-          "detalles": "Merluza ultracongelada descongelada en la nevera desde la mañana.",
-          "volumen_macros": "Proteína de comida real (~43 g)."
+          "porcion": "1 lomo grande de merluza (~170 g) con su refrito de ajo y perejil, salteado abundante de verduras y 1 rebanada de pan",
+          "detalles": "Merluza ultracongelada descongelada en la nevera desde la mañana. Ración de proteína moderada.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
         },
         "adaptacion_dona_y": {
           "porcion": "2 lomos de merluza con verduras, 3 rebanadas de pan con AOVE y, si apetece, medio aguacate",
@@ -203,9 +203,9 @@
         "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
         "tiempo_preparacion": "3 min",
         "adaptacion_lord_i": {
-          "porcion": "1 ración de lomo guisado con pimientos melosos y 1 puño de arroz",
-          "detalles": "Cebolla pochada a fondo; carne magra. Sin suplementos; merienda de queso fresco 0% con fruta.",
-          "volumen_macros": "Proteína de comida real (~48 g)."
+          "porcion": "1 ración moderada de lomo guisado (~140 g) con pimientos melosos abundantes y 1 puño de arroz",
+          "detalles": "Cebolla pochada a fondo; carne magra. Ración de proteína moderada, sin suplementos.",
+          "volumen_macros": "Proteína de comida real (~37 g)."
         },
         "adaptacion_dona_y": {
           "porcion": "1 ración de lomo con doble puño de arroz y pan para la salsa",
@@ -219,9 +219,9 @@
         "origen": "Cena rápida (20 min)",
         "tiempo_preparacion": "20 min",
         "adaptacion_lord_i": {
-          "porcion": "Plato con 175 g de pollo, brócoli y zanahoria salteados y una ración normal de fideos (120 g cocidos)",
-          "detalles": "Con brócoli en lugar de col (crucífera siempre cocinada). Soja baja en sal, sin picante.",
-          "volumen_macros": "Proteína de comida real (~42 g)."
+          "porcion": "Plato con 120 g de pollo, brócoli y zanahoria salteados en abundancia y una ración normal de fideos (120 g cocidos)",
+          "detalles": "Con brócoli en lugar de col (crucífera siempre cocinada). Soja baja en sal, sin picante. Ración de proteína moderada.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
         },
         "adaptacion_dona_y": {
           "porcion": "Misma cantidad de pollo con ración generosa de fideos (el resto de la sartén) y un chorrito de aceite de sésamo al final",
@@ -238,9 +238,9 @@
         "origen": "Tupper congelado el domingo (pasar a la nevera la noche antes, recalentar 3 min)",
         "tiempo_preparacion": "3 min",
         "adaptacion_lord_i": {
-          "porcion": "2 lomos de merluza en salsa verde con guisantes y 1 patata cocida en rodajas",
-          "detalles": "Pescado blanco ligero; guisantes como legumbre. Sin suplementos; merienda de queso fresco 0% con fruta.",
-          "volumen_macros": "Proteína de comida real (~45 g)."
+          "porcion": "1 lomo grande de merluza (~160 g) en salsa verde con guisantes y 1 patata y media cocida en rodajas",
+          "detalles": "Pescado blanco ligero; guisantes como legumbre. Ración de proteína moderada, sin suplementos.",
+          "volumen_macros": "Proteína de comida real (~35 g)."
         },
         "adaptacion_dona_y": {
           "porcion": "2 lomos de merluza con 2 patatas cocidas regadas con la salsa y un hilo generoso de AOVE",
@@ -254,9 +254,9 @@
         "origen": "Cena rápida (20 min, arroz de la arrocera)",
         "tiempo_preparacion": "20 min",
         "adaptacion_lord_i": {
-          "porcion": "Bol con 1 taza rasa de arroz, 175g de ternera, zanahoria, espinacas cocidas y un huevo a la plancha con yema blanda",
-          "detalles": "Ternera magra en tiras, espinacas cocinadas, sin picante.",
-          "volumen_macros": "Proteína de comida real (~44 g)."
+          "porcion": "Bol con 1 taza rasa de arroz, 110 g de ternera, zanahoria y espinacas cocidas abundantes y un huevo a la plancha con yema blanda",
+          "detalles": "Ternera magra en tiras, espinacas cocinadas, sin picante. Ración de proteína moderada.",
+          "volumen_macros": "Proteína de comida real (~37 g)."
         },
         "adaptacion_dona_y": {
           "porcion": "Bol con taza y media colmada de arroz, la misma ternera y el huevo, con un hilo de aceite de sésamo extra",
@@ -273,9 +273,9 @@
         "origen": "Tupper congelado el domingo (pasar a la nevera la noche antes, recalentar 3 min)",
         "tiempo_preparacion": "3 min",
         "adaptacion_lord_i": {
-          "porcion": "1 plato hondo con 1 contramuslo y medio troceado, alubias y verduras en salsa",
-          "detalles": "Legumbre con pollo, pimentón dulce. Sin suplementos; merienda de queso fresco 0% con fruta.",
-          "volumen_macros": "Proteína de comida real (~40 g)."
+          "porcion": "1 plato hondo con 1 contramuslo troceado (~110 g), 1 cazo colmado de alubias y abundante verdura en salsa",
+          "detalles": "Legumbre con pollo, pimentón dulce. Ración de proteína moderada, sin suplementos.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
         },
         "adaptacion_dona_y": {
           "porcion": "1 plato hondo con alubias extra, pollo y pan de hogaza para la salsa",
@@ -289,9 +289,9 @@
         "origen": "Cena de viernes (15 min)",
         "tiempo_preparacion": "15 min",
         "adaptacion_lord_i": {
-          "porcion": "Plato con 140g de pollo, 80g de pasta en crudo, muchos cherry asados y 2 cucharadas de pesto",
-          "detalles": "Pesto fresco de albahaca comprado y grana padano suave; sin quesos fuertes.",
-          "volumen_macros": "Proteína de comida real (~44 g)."
+          "porcion": "Plato con 100 g de pollo, 80 g de pasta en crudo, muchos cherry asados y 2 cucharadas de pesto",
+          "detalles": "Pesto fresco de albahaca comprado y grana padano suave; sin quesos fuertes. Ración de proteína moderada.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
         },
         "adaptacion_dona_y": {
           "porcion": "Plato con 160g de pollo, 100g de pasta en crudo, el resto del pesto y un puñado extra de piñones",

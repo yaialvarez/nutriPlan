@@ -176,11 +176,18 @@ def check_medical_and_dietary_rules():
         with open(base_path, "r", encoding="utf-8") as fp:
             base = json.load(fp)
         lord_i = base.get("lord_i", {})
-        prot_max = lord_i.get("proteina_max")
+        prot_max = lord_i.get("proteina_max_dia") or lord_i.get("proteina_max")
+        max_toma = lord_i.get("proteina_max_toma")
         fijos = sum(f.get("proteina_g", 0) for f in lord_i.get("fijos", []))
         for rid in recetas_ids - set(nutricion):
             avisos.append(f"Receta '{rid}' sin estimación de proteína/kcal en nutricion_recetas.json")
-        print(f"[*] Auditando proteína diaria de Lord.I (límite {prot_max} g)...")
+        # Ninguna receta puede darle a Lord.I más proteína de la que admite una sola toma
+        if max_toma:
+            for rid in sorted(recetas_ids & set(nutricion)):
+                p = nutricion[rid].get("lord_i", {}).get("proteina_g", 0)
+                if p > max_toma:
+                    errors.append(f"Receta '{rid}': la ración de Lord.I tiene ~{p} g de proteína, más de {max_toma} g por toma")
+        print(f"[*] Auditando proteína diaria de Lord.I (tope {prot_max} g/día, {max_toma} g por toma)...")
         for d in dias:
             total = fijos
             for toma_tipo in ["comida", "cena"]:
@@ -188,7 +195,7 @@ def check_medical_and_dietary_rules():
                 if rid in nutricion:
                     total += nutricion[rid].get("lord_i", {}).get("proteina_g", 0)
             if prot_max and total > prot_max:
-                errors.append(f"Proteína de Lord.I en {d.get('dia')}: ~{total} g supera el límite de {prot_max} g/día")
+                errors.append(f"Proteína de Lord.I en {d.get('dia')}: ~{total} g supera el tope de {prot_max} g/día")
     else:
         avisos.append("Faltan nutricion_recetas.json o nutricion_base.json: no se comprueba la proteína diaria")
 
@@ -218,7 +225,7 @@ def check_medical_and_dietary_rules():
         print("  - Prohibiciones del hogar: 100% respetadas (cero berenjena, cero aceitunas, cero quesos fuertes, cero picante, cebolla siempre cocinada para Lord.I).")
         print(f"  - Integridad de catálogo Mercadona: 100% productos reales verificados (0 ficticios).")
         print(f"  - Ticket Mercadona: {compra.get('total_ticket_estimado')} EUR ({compra.get('moneda')}) calculado con exactitud matemática.")
-        print("  - Proteína diaria de Lord.I: dentro del límite renal en todos los días.")
+        print("  - Proteína de Lord.I: moderada, sin pasar el tope diario ni el de cada toma.")
         print("  - Equilibrio semanal: pescado, legumbres, verdura diaria y medias de proteína y kcal según data/reglas_semana.json.")
 
 

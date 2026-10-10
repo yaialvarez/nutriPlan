@@ -45,14 +45,21 @@ function totalesDia(dia, idx, cambios, nutricion, nutricionBase) {
 function ResumenNutricional({ totales, nutricionBase }) {
   const max = nutricionBase?.lord_i?.proteina_max;
   const min = nutricionBase?.lord_i?.proteina_min;
+  const tope = nutricionBase?.lord_i?.proteina_max_dia || max;
   const protI = totales.lord_i.proteina_g;
-  const estadoI = max && protI > max ? 'alto' : min && protI < min ? 'bajo' : 'ok';
+  const estadoI = tope && protI > tope ? 'alto' : max && protI > max ? 'subido' : min && protI < min ? 'bajo' : 'ok';
   const estilos = {
     ok: 'bg-emerald-50 text-emerald-800 border-emerald-200',
     bajo: 'bg-sky-50 text-sky-800 border-sky-200',
+    subido: 'bg-amber-50 text-amber-800 border-amber-200',
     alto: 'bg-rose-50 text-rose-800 border-rose-300'
   };
-  const textoI = { ok: 'dentro del límite', bajo: 'por debajo del objetivo', alto: 'supera el límite renal' };
+  const textoI = {
+    ok: 'dentro de su rango',
+    bajo: 'por debajo del objetivo',
+    subido: 'algo por encima de su rango',
+    alto: `supera el tope diario de ${tope} g`
+  };
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
