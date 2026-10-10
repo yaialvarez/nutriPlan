@@ -4,11 +4,11 @@
  * - Resto (JS/CSS con hash, iconos, fotos de productos): caché primero.
  * Los datos van dentro del JS cifrado, así que la caché no guarda nada en claro.
  */
-const CACHE = 'portal-v1';
+const CACHE = 'portal-v2';
 const PRECACHE = ['./', './index.html', './manifest.webmanifest', './favicon.svg'];
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(PRECACHE)).then(() => self.skipWaiting()));
+  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(PRECACHE.map((url) => new Request(url, { cache: 'reload' })))).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (event) => {
@@ -24,8 +24,9 @@ self.addEventListener('fetch', (event) => {
   if (request.method !== 'GET') return;
 
   if (request.mode === 'navigate') {
+    // Saltar la caché HTTP (GitHub Pages da 10 min) para ver el menú recién publicado
     event.respondWith(
-      fetch(request)
+      fetch(request.url, { cache: 'no-cache', credentials: 'same-origin' })
         .then((response) => {
           const copy = response.clone();
           caches.open(CACHE).then((cache) => cache.put('./index.html', copy));
