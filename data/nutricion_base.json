@@ -17,7 +17,17 @@
         "proteina_g": 1,
         "kcal": 90
       }
-    ]
+    ],
+    "merienda_recetas": {
+      "_nota": "La merienda fija de arriba (fruta, ~90 kcal) se puede cubrir con una receta del recetario de tipo 'postre' o 'tentempie' marcada con apto_lord_i: true, usando su ración de nutricion_recetas.json en lugar de la fija. Nunca una receta con apto_lord_i: false (proteína en polvo, embutido, sal).",
+      "tipos": [
+        "postre",
+        "tentempie"
+      ],
+      "solo_apto_lord_i": true,
+      "sustituye_a": "Merienda: una pieza de fruta",
+      "proteina_max_g": 12
+    }
   },
   "dona_y": {
     "kcal_min": 2100,
@@ -38,6 +48,16 @@
         "proteina_g": 10,
         "kcal": 380
       }
-    ]
+    ],
+    "tentempies_recetas": {
+      "_nota": "El bloque fijo 'Tentempiés' (~380 kcal, 10 g) se puede cubrir con una o dos recetas de tipo 'tentempie' o 'postre' del recetario, usando sus raciones de nutricion_recetas.json. El 'Batido proteico pautado' (150 kcal) puede sustituirse por batido_proteico_platano_avena (600 kcal), que ya incluye la proteína en polvo.",
+      "tipos": [
+        "tentempie",
+        "postre"
+      ],
+      "sustituye_a": "Tentempiés: puñado de frutos secos y tostada o plátano",
+      "kcal_objetivo": 380,
+      "kcal_max_dia": 700
+    }
   }
 }

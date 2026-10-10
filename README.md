@@ -53,6 +53,7 @@ nutriPlan/
 │   ├── nutricion_base.json        # Tomas fijas (desayunos, snacks) y límites diarios
 │   ├── reglas_semana.json         # Equilibrio de la semana: pescado, legumbres, carne, fritos, verdura
 │   ├── compra_semana.json         # Artículos de la compra de la semana (entrada del generador)
+│   ├── compra_tentempies.json     # Artículos de Mercadona de los postres y tentempiés, para copiar a compra_semana.json
 │   ├── lista_compra.json          # Lista generada con precios y pasillos de Mercadona
 │   ├── despensa_base.json         # Básicos del hogar que no se compran cada semana
 │   ├── precios_lidl.json          # Precios LIDL de referencia (estimados, editables en la app)

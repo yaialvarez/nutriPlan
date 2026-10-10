@@ -1,0 +1,774 @@
+{
+  "_nota": "Artículos de Mercadona para los ingredientes de los postres y tentempiés del recetario (tipo 'postre' y 'tentempie'). Mismo formato que compra_semana.json: el planificador copia a compra_semana.json los artículos cuyos 'ingredientes' aparezcan en las recetas elegidas (ajustando 'cantidad' y 'nombre_receta'), y generar_lista_compra.py los resuelve por id_preferente o termino_fallback. Los ids conocidos salen de listas anteriores; el resto se busca por término.",
+  "supermercado": "Mercadona",
+  "despensa_excluida": [
+    "Sal yodada",
+    "Sal yodada en escamas (opcional)",
+    "Sal yodada y pimienta negra",
+    "Comino molido y pimentón dulce",
+    "Proteína en polvo (la pautada, stock de despensa)"
+  ],
+  "articulos": [
+    {
+      "nombre_receta": "Plátano de Canarias",
+      "cantidad": 6,
+      "unidad": "piezas",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 3819,
+      "termino_fallback": "plátano",
+      "filtro_excluir": [
+        "chips",
+        "deshidratado"
+      ],
+      "ingredientes": [
+        "Plátano",
+        "Plátanos maduros",
+        "Plátanos muy maduros"
+      ]
+    },
+    {
+      "nombre_receta": "Manzanas",
+      "cantidad": 4,
+      "unidad": "piezas",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 3028,
+      "termino_fallback": "manzana",
+      "filtro_excluir": [
+        "zumo",
+        "compota",
+        "deshidratada"
+      ],
+      "ingredientes": [
+        "Manzana",
+        "Manzanas",
+        "Manzanas (Golden o Reineta)"
+      ]
+    },
+    {
+      "nombre_receta": "Peras",
+      "cantidad": 4,
+      "unidad": "piezas",
+      "seccion": "Fruta y verdura",
+      "termino_fallback": "pera conferencia",
+      "filtro_excluir": [
+        "zumo",
+        "compota"
+      ],
+      "ingredientes": [
+        "Pera",
+        "Peras"
+      ]
+    },
+    {
+      "nombre_receta": "Naranjas",
+      "cantidad": 1,
+      "unidad": "malla",
+      "seccion": "Fruta y verdura",
+      "termino_fallback": "naranja",
+      "filtro_excluir": [
+        "zumo",
+        "mermelada"
+      ],
+      "ingredientes": [
+        "Naranjas"
+      ]
+    },
+    {
+      "nombre_receta": "Kiwis",
+      "cantidad": 3,
+      "unidad": "piezas",
+      "seccion": "Fruta y verdura",
+      "termino_fallback": "kiwi",
+      "filtro_excluir": [
+        "zumo"
+      ],
+      "ingredientes": [
+        "Kiwi"
+      ]
+    },
+    {
+      "nombre_receta": "Fresas",
+      "cantidad": 1,
+      "unidad": "tarrina",
+      "seccion": "Fruta y verdura",
+      "termino_fallback": "fresas",
+      "filtro_excluir": [
+        "mermelada",
+        "yogur",
+        "congelada"
+      ],
+      "ingredientes": [
+        "Fresas",
+        "Fresas, arándanos o plátano para acompañar",
+        "Uvas o fresas (según temporada)"
+      ]
+    },
+    {
+      "nombre_receta": "Mango",
+      "cantidad": 1,
+      "unidad": "pieza",
+      "seccion": "Fruta y verdura",
+      "termino_fallback": "mango",
+      "filtro_excluir": [
+        "zumo",
+        "congelado",
+        "yogur"
+      ],
+      "ingredientes": [
+        "Mango"
+      ]
+    },
+    {
+      "nombre_receta": "Limones",
+      "cantidad": 1,
+      "unidad": "malla",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 3236,
+      "termino_fallback": "limón",
+      "filtro_excluir": [
+        "zumo",
+        "exprimido"
+      ],
+      "ingredientes": [
+        "Limón (piel)",
+        "Limón (zumo)"
+      ]
+    },
+    {
+      "nombre_receta": "Aguacate",
+      "cantidad": 1,
+      "unidad": "piezas",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 3830,
+      "termino_fallback": "aguacate",
+      "filtro_excluir": [
+        "guacamole"
+      ],
+      "ingredientes": [
+        "Aguacate"
+      ]
+    },
+    {
+      "nombre_receta": "Zanahorias",
+      "cantidad": 1,
+      "unidad": "malla 1 kg",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69586,
+      "termino_fallback": "zanahoria",
+      "filtro_excluir": [
+        "bebé",
+        "papilla",
+        "tarrina"
+      ],
+      "ingredientes": [
+        "Zanahoria"
+      ]
+    },
+    {
+      "nombre_receta": "Pepino",
+      "cantidad": 1,
+      "unidad": "pieza",
+      "seccion": "Fruta y verdura",
+      "termino_fallback": "pepino",
+      "filtro_excluir": [
+        "encurtido",
+        "pepinillo"
+      ],
+      "ingredientes": [
+        "Pepino"
+      ]
+    },
+    {
+      "nombre_receta": "Tomates",
+      "cantidad": 2,
+      "unidad": "piezas",
+      "seccion": "Fruta y verdura",
+      "termino_fallback": "tomate ensalada",
+      "filtro_excluir": [
+        "frito",
+        "triturado",
+        "cherry",
+        "seco"
+      ],
+      "ingredientes": [
+        "Tomate"
+      ]
+    },
+    {
+      "nombre_receta": "Hierbabuena fresca",
+      "cantidad": 1,
+      "unidad": "bandeja",
+      "seccion": "Fruta y verdura",
+      "termino_fallback": "hierbabuena",
+      "filtro_excluir": [
+        "infusión",
+        "té"
+      ],
+      "ingredientes": [
+        "Hierbabuena fresca (opcional)"
+      ]
+    },
+    {
+      "nombre_receta": "Ajos",
+      "cantidad": 1,
+      "unidad": "malla",
+      "seccion": "Fruta y verdura",
+      "termino_fallback": "ajos",
+      "filtro_excluir": [
+        "polvo",
+        "negro"
+      ],
+      "ingredientes": [
+        "Ajo"
+      ]
+    },
+    {
+      "nombre_receta": "Huevos camperos",
+      "cantidad": 1,
+      "unidad": "docena",
+      "seccion": "Huevos, leche y mantequilla",
+      "id_preferente": 15768,
+      "termino_fallback": "huevos camperos",
+      "filtro_excluir": [
+        "codorniz",
+        "líquido"
+      ],
+      "ingredientes": [
+        "Huevos",
+        "Huevos (yemas)"
+      ]
+    },
+    {
+      "nombre_receta": "Leche entera",
+      "cantidad": 1,
+      "unidad": "pack 6 L",
+      "seccion": "Huevos, leche y mantequilla",
+      "termino_fallback": "leche entera",
+      "filtro_excluir": [
+        "sin lactosa",
+        "desnatada",
+        "semi",
+        "condensada",
+        "evaporada"
+      ],
+      "ingredientes": [
+        "Leche entera"
+      ]
+    },
+    {
+      "nombre_receta": "Mantequilla",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "seccion": "Huevos, leche y mantequilla",
+      "termino_fallback": "mantequilla",
+      "filtro_excluir": [
+        "sin sal",
+        "margarina",
+        "cacahuete"
+      ],
+      "ingredientes": [
+        "Mantequilla"
+      ]
+    },
+    {
+      "nombre_receta": "Yogur griego natural",
+      "cantidad": 1,
+      "unidad": "pack 4",
+      "seccion": "Huevos, leche y mantequilla",
+      "termino_fallback": "yogur griego natural",
+      "filtro_excluir": [
+        "azucarado",
+        "stracciatella",
+        "fresa",
+        "ligero"
+      ],
+      "ingredientes": [
+        "Yogur griego natural",
+        "Yogur griego natural (sin azúcar)"
+      ]
+    },
+    {
+      "nombre_receta": "Yogur natural",
+      "cantidad": 1,
+      "unidad": "pack 6",
+      "seccion": "Huevos, leche y mantequilla",
+      "termino_fallback": "yogur natural",
+      "filtro_excluir": [
+        "azucarado",
+        "desnatado",
+        "sabor",
+        "griego",
+        "líquido"
+      ],
+      "ingredientes": [
+        "Yogur natural"
+      ]
+    },
+    {
+      "nombre_receta": "Queso fresco de Burgos",
+      "cantidad": 2,
+      "unidad": "tarrina",
+      "seccion": "Charcutería y quesos",
+      "termino_fallback": "queso fresco burgos",
+      "filtro_excluir": [
+        "desnatado",
+        "0%",
+        "batido"
+      ],
+      "ingredientes": [
+        "Queso fresco de Burgos"
+      ]
+    },
+    {
+      "nombre_receta": "Queso tierno en lonchas",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Charcutería y quesos",
+      "id_preferente": 50916,
+      "termino_fallback": "queso tierno lonchas",
+      "filtro_excluir": [
+        "curado",
+        "azul",
+        "cabra",
+        "fundido"
+      ],
+      "ingredientes": [
+        "Queso tierno en lonchas"
+      ]
+    },
+    {
+      "nombre_receta": "Jamón cocido extra",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Charcutería y quesos",
+      "termino_fallback": "jamón cocido extra",
+      "filtro_excluir": [
+        "ahumado",
+        "pavo",
+        "fiambre",
+        "serrano"
+      ],
+      "ingredientes": [
+        "Jamón cocido extra (bajo en sal)"
+      ]
+    },
+    {
+      "nombre_receta": "Arroz redondo",
+      "cantidad": 1,
+      "unidad": "paquete 1 kg",
+      "seccion": "Arroz, legumbres y pasta",
+      "id_preferente": 5044,
+      "termino_fallback": "arroz redondo",
+      "filtro_excluir": [
+        "vaporizado",
+        "integral",
+        "basmati"
+      ],
+      "ingredientes": [
+        "Arroz redondo"
+      ]
+    },
+    {
+      "nombre_receta": "Copos de avena",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Arroz, legumbres y pasta",
+      "termino_fallback": "copos de avena",
+      "filtro_excluir": [
+        "bebida",
+        "galleta",
+        "barrita",
+        "chocolate"
+      ],
+      "ingredientes": [
+        "Copos de avena"
+      ]
+    },
+    {
+      "nombre_receta": "Muesli sin azúcares añadidos",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Arroz, legumbres y pasta",
+      "termino_fallback": "muesli",
+      "filtro_excluir": [
+        "chocolate",
+        "barrita",
+        "crunchy"
+      ],
+      "ingredientes": [
+        "Muesli sin azúcares añadidos"
+      ]
+    },
+    {
+      "nombre_receta": "Maicena",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Arroz, legumbres y pasta",
+      "termino_fallback": "maicena",
+      "filtro_excluir": [],
+      "ingredientes": [
+        "Maicena"
+      ]
+    },
+    {
+      "nombre_receta": "Levadura química",
+      "cantidad": 1,
+      "unidad": "sobres",
+      "seccion": "Arroz, legumbres y pasta",
+      "termino_fallback": "levadura química",
+      "filtro_excluir": [
+        "panadería",
+        "fresca",
+        "cerveza"
+      ],
+      "ingredientes": [
+        "Levadura química (tipo Royal)"
+      ]
+    },
+    {
+      "nombre_receta": "Garbanzos cocidos",
+      "cantidad": 1,
+      "unidad": "bote",
+      "seccion": "Conservas, caldos y cremas",
+      "termino_fallback": "garbanzo cocido",
+      "filtro_excluir": [
+        "secos",
+        "hummus",
+        "ensalada"
+      ],
+      "ingredientes": [
+        "Garbanzos cocidos (bote)"
+      ]
+    },
+    {
+      "nombre_receta": "Tahini (crema de sésamo)",
+      "cantidad": 1,
+      "unidad": "bote",
+      "seccion": "Conservas, caldos y cremas",
+      "termino_fallback": "tahini",
+      "filtro_excluir": [],
+      "ingredientes": [
+        "Tahini (crema de sésamo)"
+      ]
+    },
+    {
+      "nombre_receta": "Dulce de membrillo",
+      "cantidad": 1,
+      "unidad": "bloque",
+      "seccion": "Conservas, caldos y cremas",
+      "termino_fallback": "membrillo",
+      "filtro_excluir": [
+        "mermelada"
+      ],
+      "ingredientes": [
+        "Dulce de membrillo"
+      ]
+    },
+    {
+      "nombre_receta": "Pan integral de hogaza",
+      "cantidad": 1,
+      "unidad": "unidad",
+      "seccion": "Panadería y pastelería",
+      "termino_fallback": "pan hogaza integral",
+      "filtro_excluir": [
+        "molde",
+        "tostado",
+        "rallado"
+      ],
+      "ingredientes": [
+        "Pan integral de hogaza o rústico",
+        "Pan de barra integral o rústica"
+      ]
+    },
+    {
+      "nombre_receta": "Pan de pita",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Panadería y pastelería",
+      "termino_fallback": "pan de pita",
+      "filtro_excluir": [
+        "integral"
+      ],
+      "ingredientes": [
+        "Pan de pita"
+      ]
+    },
+    {
+      "nombre_receta": "Galletas María",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Panadería y pastelería",
+      "termino_fallback": "galleta maría",
+      "filtro_excluir": [
+        "chocolate",
+        "integral",
+        "sin azúcar"
+      ],
+      "ingredientes": [
+        "Galletas María"
+      ]
+    },
+    {
+      "nombre_receta": "Crema de cacahuete 100 %",
+      "cantidad": 1,
+      "unidad": "bote",
+      "seccion": "Aperitivos",
+      "termino_fallback": "crema de cacahuete",
+      "filtro_excluir": [
+        "chocolate",
+        "crujiente con azúcar"
+      ],
+      "ingredientes": [
+        "Crema de cacahuete 100 % (sin sal ni azúcar)"
+      ]
+    },
+    {
+      "nombre_receta": "Nueces peladas",
+      "cantidad": 1,
+      "unidad": "bolsa",
+      "seccion": "Aperitivos",
+      "termino_fallback": "nueces peladas",
+      "filtro_excluir": [
+        "con cáscara",
+        "garrapiñada",
+        "saladas"
+      ],
+      "ingredientes": [
+        "Nueces peladas",
+        "Nueces peladas (opcional, para rebozar)",
+        "Nueces y almendras naturales"
+      ]
+    },
+    {
+      "nombre_receta": "Almendras naturales",
+      "cantidad": 1,
+      "unidad": "bolsa",
+      "seccion": "Aperitivos",
+      "termino_fallback": "almendra natural",
+      "filtro_excluir": [
+        "frita",
+        "salada",
+        "garrapiñada",
+        "tostada con sal"
+      ],
+      "ingredientes": [
+        "Almendras naturales (sin sal)"
+      ]
+    },
+    {
+      "nombre_receta": "Almendra laminada",
+      "cantidad": 1,
+      "unidad": "bolsa",
+      "seccion": "Aperitivos",
+      "termino_fallback": "almendra laminada",
+      "filtro_excluir": [
+        "frita",
+        "salada"
+      ],
+      "ingredientes": [
+        "Almendra laminada"
+      ]
+    },
+    {
+      "nombre_receta": "Avellanas o anacardos naturales",
+      "cantidad": 1,
+      "unidad": "bolsa",
+      "seccion": "Aperitivos",
+      "termino_fallback": "anacardo natural",
+      "filtro_excluir": [
+        "frito",
+        "salado",
+        "tostado con sal"
+      ],
+      "ingredientes": [
+        "Avellanas o anacardos naturales (sin sal)"
+      ]
+    },
+    {
+      "nombre_receta": "Orejones de albaricoque",
+      "cantidad": 1,
+      "unidad": "bolsa",
+      "seccion": "Aperitivos",
+      "termino_fallback": "orejones",
+      "filtro_excluir": [],
+      "ingredientes": [
+        "Orejones de albaricoque"
+      ]
+    },
+    {
+      "nombre_receta": "Pasas sultanas",
+      "cantidad": 1,
+      "unidad": "bolsa",
+      "seccion": "Aperitivos",
+      "termino_fallback": "pasas",
+      "filtro_excluir": [
+        "chocolate"
+      ],
+      "ingredientes": [
+        "Pasas sultanas"
+      ]
+    },
+    {
+      "nombre_receta": "Dátiles",
+      "cantidad": 1,
+      "unidad": "bandeja",
+      "seccion": "Aperitivos",
+      "termino_fallback": "dátiles",
+      "filtro_excluir": [
+        "chocolate",
+        "rellenos"
+      ],
+      "ingredientes": [
+        "Dátiles Medjool (o deglet nour grandes)",
+        "Dátiles deshuesados"
+      ]
+    },
+    {
+      "nombre_receta": "Semillas de chía",
+      "cantidad": 1,
+      "unidad": "bolsa",
+      "seccion": "Aperitivos",
+      "termino_fallback": "semillas de chía",
+      "filtro_excluir": [],
+      "ingredientes": [
+        "Semillas de chía"
+      ]
+    },
+    {
+      "nombre_receta": "Semillas de girasol peladas",
+      "cantidad": 1,
+      "unidad": "bolsa",
+      "seccion": "Aperitivos",
+      "termino_fallback": "pipas de girasol peladas",
+      "filtro_excluir": [
+        "saladas",
+        "con cáscara",
+        "tostadas con sal"
+      ],
+      "ingredientes": [
+        "Semillas de girasol o calabaza (sin sal)"
+      ]
+    },
+    {
+      "nombre_receta": "Semillas de sésamo tostado",
+      "cantidad": 1,
+      "unidad": "bote",
+      "seccion": "Aceite, especias y salsas",
+      "termino_fallback": "sésamo",
+      "filtro_excluir": [
+        "aceite",
+        "tahini"
+      ],
+      "ingredientes": [
+        "Semillas de sésamo tostado"
+      ]
+    },
+    {
+      "nombre_receta": "Tortitas de arroz sin sal",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Aperitivos",
+      "termino_fallback": "tortitas de arroz",
+      "filtro_excluir": [
+        "chocolate",
+        "yogur",
+        "con sal"
+      ],
+      "ingredientes": [
+        "Tortitas de arroz o maíz (sin sal)"
+      ]
+    },
+    {
+      "nombre_receta": "Chocolate negro 70-85 %",
+      "cantidad": 1,
+      "unidad": "tableta",
+      "seccion": "Azúcar, caramelos y chocolate",
+      "termino_fallback": "chocolate negro 70",
+      "filtro_excluir": [
+        "con leche",
+        "almendras",
+        "relleno"
+      ],
+      "ingredientes": [
+        "Chocolate negro (70-85 % cacao)"
+      ]
+    },
+    {
+      "nombre_receta": "Azúcar",
+      "cantidad": 1,
+      "unidad": "paquete 1 kg",
+      "seccion": "Azúcar, caramelos y chocolate",
+      "termino_fallback": "azúcar blanco",
+      "filtro_excluir": [
+        "moreno",
+        "glas",
+        "edulcorante"
+      ],
+      "ingredientes": [
+        "Azúcar"
+      ]
+    },
+    {
+      "nombre_receta": "Canela molida",
+      "cantidad": 1,
+      "unidad": "bote",
+      "seccion": "Aceite, especias y salsas",
+      "termino_fallback": "canela molida",
+      "filtro_excluir": [
+        "infusión",
+        "rama"
+      ],
+      "ingredientes": [
+        "Canela molida",
+        "Canela en rama y canela molida",
+        "Canela molida y extracto de vainilla"
+      ]
+    },
+    {
+      "nombre_receta": "Canela en rama",
+      "cantidad": 1,
+      "unidad": "bote",
+      "seccion": "Aceite, especias y salsas",
+      "termino_fallback": "canela en rama",
+      "filtro_excluir": [
+        "molida",
+        "infusión"
+      ],
+      "ingredientes": [
+        "Canela en rama",
+        "Canela en rama y canela molida"
+      ]
+    },
+    {
+      "nombre_receta": "Extracto de vainilla",
+      "cantidad": 1,
+      "unidad": "bote",
+      "seccion": "Aceite, especias y salsas",
+      "termino_fallback": "vainilla",
+      "filtro_excluir": [
+        "azúcar",
+        "yogur",
+        "helado"
+      ],
+      "ingredientes": [
+        "Extracto de vainilla",
+        "Canela molida y extracto de vainilla"
+      ]
+    },
+    {
+      "nombre_receta": "Aceite de oliva virgen extra suave",
+      "cantidad": 1,
+      "unidad": "botella",
+      "seccion": "Aceite, especias y salsas",
+      "termino_fallback": "aceite de oliva virgen extra suave",
+      "filtro_excluir": [
+        "girasol",
+        "spray"
+      ],
+      "ingredientes": [
+        "Aceite de oliva virgen extra",
+        "Aceite de oliva virgen extra suave"
+      ]
+    }
+  ]
+}

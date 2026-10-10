@@ -22,8 +22,13 @@ export default function FichaRecetaModal({ receta, nutricion, onClose }) {
                 {receta.tiempo_minutos} min
               </span>
               <span className="text-xs font-medium bg-emerald-800/40 text-emerald-100 px-2.5 py-0.5 rounded-full capitalize">
-                {receta.tipo}
+                {receta.tipo === 'tentempie' ? 'tentempié' : receta.tipo}
               </span>
+              {receta.apto_lord_i === false && (
+                <span className="text-xs font-medium bg-rose-100 text-rose-900 px-2.5 py-0.5 rounded-full font-bold">
+                  Solo Doña.Y
+                </span>
+              )}
               {receta.apto_batch_cooking && (
                 <span className="text-xs font-medium bg-amber-400 text-amber-950 px-2.5 py-0.5 rounded-full font-bold">
                   Batch Cooking
@@ -71,7 +76,11 @@ export default function FichaRecetaModal({ receta, nutricion, onClose }) {
               <div className="grid grid-cols-2 gap-3 mb-4 text-sm">
                 <div className="rounded-xl border border-blue-200 bg-blue-50/70 px-3 py-2 text-blue-900">
                   <div className="font-bold">Lord.I por ración</div>
-                  <div>~{nutricion.lord_i.proteina_g} g proteína · ~{nutricion.lord_i.kcal} kcal</div>
+                  <div>
+                    {receta.apto_lord_i === false
+                      ? 'No indicado'
+                      : `~${nutricion.lord_i.proteina_g} g proteína · ~${nutricion.lord_i.kcal} kcal`}
+                  </div>
                 </div>
                 <div className="rounded-xl border border-rose-200 bg-rose-50/70 px-3 py-2 text-rose-900">
                   <div className="font-bold">Doña.Y por ración</div>
