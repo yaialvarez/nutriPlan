@@ -1,0 +1,46 @@
+name: Comprobar cambios
+
+# Valida cada PR (menú semanal, datos o código) antes de fusionarlo en main,
+# con los mismos pasos que el despliegue pero sin publicar nada.
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+          cache-dependency-path: 'app/package-lock.json'
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias web
+        run: npm ci --prefix app
+
+      - name: Validar reglas médicas, proteína, fechas y lista de la compra
+        run: python scripts/verificar_reglas.py
+
+      - name: Revisar el código de la app
+        run: npm run lint --prefix app
+
+      # Sin APP_PASSWORD: comprueba que compila; este build no se publica
+      - name: Compilar aplicación
+        run: npm run build --prefix app
+
+      - name: Auditar que el JS compilado no filtra datos personales
+        run: python scripts/audit_bundle.py

@@ -7,7 +7,11 @@ las restricciones médicas de Lord.I y Doña.Y y las prohibiciones del hogar.
 
 import json
 import os
+import re
 import sys
+from datetime import date, timedelta
+
+from equilibrio_semanal import comprobar as comprobar_equilibrio
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -188,16 +192,15 @@ def check_medical_and_dietary_rules():
     else:
         avisos.append("Faltan nutricion_recetas.json o nutricion_base.json: no se comprueba la proteína diaria")
 
-    # 5c. Variedad: mismo plato en demasiadas tomas de la semana
-    usos = {}
-    for d in dias:
-        for toma_tipo in ["comida", "cena"]:
-            rid = d.get(toma_tipo, {}).get("receta_id")
-            if rid:
-                usos[rid] = usos.get(rid, 0) + 1
-    for rid, n in usos.items():
-        if n > 2:
-            avisos.append(f"Poca variedad: '{rid}' aparece {n} veces en la semana")
+    # 5d. Coherencia entre ficheros: fechas del menú y lista generada para esta semana
+    errors.extend(comprobar_coherencia(menu, compra, avisos))
+    if os.path.exists(nutricion_path):
+        with open(nutricion_path, "r", encoding="utf-8") as fp:
+            for rid in set(json.load(fp).get("recetas", {})) - recetas_ids:
+                avisos.append(f"nutricion_recetas.json tiene '{rid}', que no existe en recetario.json")
+
+    # 5c. Equilibrio de la semana completa (pescado, legumbres, verdura, variedad, medias diarias)
+    errors.extend(comprobar_equilibrio(menu, recetas, avisos))
 
     for a in avisos:
         print(f"  [aviso] {a}")
@@ -216,6 +219,44 @@ def check_medical_and_dietary_rules():
         print(f"  - Integridad de catálogo Mercadona: 100% productos reales verificados (0 ficticios).")
         print(f"  - Ticket Mercadona: {compra.get('total_ticket_estimado')} EUR ({compra.get('moneda')}) calculado con exactitud matemática.")
         print("  - Proteína diaria de Lord.I: dentro del límite renal en todos los días.")
+        print("  - Equilibrio semanal: pescado, legumbres, verdura diaria y medias de proteína y kcal según data/reglas_semana.json.")
+
+
+def comprobar_coherencia(menu, compra, avisos):
+    """Errores de sincronización entre menu_semanal.json, lista_compra.json y compra_semana.json."""
+    errores = []
+    dias = menu.get("dias", [])
+    try:
+        inicio = date.fromisoformat(menu.get("fecha_inicio") or "")
+    except ValueError:
+        return [f"fecha_inicio '{menu.get('fecha_inicio')}' no es una fecha AAAA-MM-DD"]
+
+    if inicio.weekday() != 5:
+        errores.append(f"El menú debe empezar en sábado y fecha_inicio {inicio} no lo es")
+
+    # La app usa la fecha "(dd/mm)" de cada día para la vista de hoy
+    for idx, d in enumerate(dias):
+        esperado = inicio + timedelta(days=idx)
+        m = re.search(r"\((\d{1,2})/(\d{1,2})\)", d.get("dia", ""))
+        if m and (int(m.group(1)), int(m.group(2))) != (esperado.day, esperado.month):
+            errores.append(f"'{d.get('dia')}' no coincide con fecha_inicio + {idx} días ({esperado:%d/%m})")
+
+    if compra.get("semana") != menu.get("semana"):
+        errores.append("lista_compra.json es de otra semana: ejecuta scripts/generar_lista_compra.py")
+
+    n_items = sum(len(p.get("items", [])) for p in compra.get("pasillos", []))
+    if compra.get("total_articulos") != n_items:
+        errores.append(f"total_articulos={compra.get('total_articulos')} pero la lista tiene {n_items} artículos")
+
+    config_path = os.path.join(DATA_DIR, "compra_semana.json")
+    if os.path.exists(config_path):
+        with open(config_path, "r", encoding="utf-8") as fp:
+            n_config = len(json.load(fp).get("articulos", []))
+        if n_config != n_items:
+            avisos.append(f"compra_semana.json tiene {n_config} artículos y lista_compra.json {n_items}: "
+                          "¿falta ejecutar generar_lista_compra.py?")
+    return errores
+
 
 if __name__ == "__main__":
     check_medical_and_dietary_rules()

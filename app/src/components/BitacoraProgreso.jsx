@@ -23,14 +23,20 @@ const INITIAL_ENTRIES = [
   }
 ];
 
-export default function BitacoraProgreso({ perfilesData, cryptoKey }) {
+// Fecha de hoy en hora local (toISOString usa UTC y de madrugada daría el día anterior)
+const fechaLocalHoy = () => {
+  const n = new Date();
+  return `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, '0')}-${String(n.getDate()).padStart(2, '0')}`;
+};
+
+export default function BitacoraProgreso({ cryptoKey }) {
   const [entries, setEntries] = useState(INITIAL_ENTRIES);
   const [copied, setCopied] = useState(false);
   const [showForm, setShowForm] = useState(false);
   const isLoadedRef = useRef(false);
 
   // Campos formulario
-  const [fecha, setFecha] = useState(new Date().toISOString().split('T')[0]);
+  const [fecha, setFecha] = useState(fechaLocalHoy);
   const [semanaNombre, setSemanaNombre] = useState(`Semana ${entries.length + 1}`);
   const [pesoLordI, setPesoLordI] = useState('80.0');
   const [pesoDonaY, setPesoDonaY] = useState('50.0');

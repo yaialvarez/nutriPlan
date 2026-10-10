@@ -4,9 +4,6 @@ import { X, ShieldAlert, ShieldCheck, User } from 'lucide-react';
 export default function ReglasMedicasModal({ perfilesData, onClose }) {
   if (!perfilesData) return null;
 
-  const lordI = perfilesData?.lord_i;
-  const donaY = perfilesData?.dona_y;
-
   return (
     <div 
       className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-900/60 backdrop-blur-sm overflow-y-auto animate-fadeIn"

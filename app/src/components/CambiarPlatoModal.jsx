@@ -1,14 +1,16 @@
 import React, { useMemo, useState } from 'react';
-import { X, Shuffle, Clock, RotateCcw, Check } from 'lucide-react';
+import { X, Shuffle, Clock, RotateCcw, Check, AlertTriangle, Scale } from 'lucide-react';
 import { fechasDelMenu, recetaDeToma } from '../utils/semana';
+import { evaluarSemana } from '../utils/equilibrio';
 
 /**
  * Alternativas compatibles para una toma: mismo tipo (comida/cena), apto tupper si es
  * comida de lunes a viernes, rápida si es cena de lunes a viernes. Las recetas del
  * recetario ya cumplen las reglas médicas (scripts/verificar_reglas.py).
- * Primero las que no aparecen esta semana, para ganar variedad.
+ * Cada una se evalúa con la semana completa (utils/equilibrio.js): primero las que no
+ * rompen el equilibrio, luego las que lo mejoran y las que no aparecen esta semana.
  */
-function alternativas(menuData, recetarioData, nutricion, cambios, idx, tipo) {
+function alternativas({ menuData, recetarioData, nutricion, nutricionBase, reglas, clases, cambios, idx, tipo }) {
   const dia = menuData.dias[idx];
   const fecha = fechasDelMenu(menuData)[idx];
   const laborable = fecha ? fecha.getDay() >= 1 && fecha.getDay() <= 5 : false;
@@ -21,6 +23,10 @@ function alternativas(menuData, recetarioData, nutricion, cambios, idx, tipo) {
     }
   });
   const protActual = nutricion[actual]?.lord_i?.proteina_g;
+  const evaluar = (c) =>
+    evaluarSemana({ menu: menuData, recetario: recetarioData, nutricion, base: nutricionBase, reglas, cambios: c, clases }).problemas;
+  const antes = evaluar(cambios);
+  const desvioAntes = new Map(antes.map((p) => [p.clave, p.desvio]));
 
   return recetarioData
     .filter((r) => r.id !== actual && r.tipo === tipo)
@@ -29,22 +35,38 @@ function alternativas(menuData, recetarioData, nutricion, cambios, idx, tipo) {
       if (tipo === 'comida') return r.apto_batch_cooking;
       return r.tiempo_minutos <= 20;
     })
-    .map((r) => ({
-      receta: r,
-      repetida: enLaSemana.has(r.id),
-      distancia: protActual != null && nutricion[r.id] ? Math.abs(nutricion[r.id].lord_i.proteina_g - protActual) : 99
-    }))
-    .sort((a, b) => a.repetida - b.repetida || a.distancia - b.distancia);
+    .map((r) => {
+      const despues = evaluar({ ...cambios, [`${idx}-${tipo}`]: r.id });
+      const clavesDespues = new Set(despues.map((p) => p.clave));
+      // Nuevos o que empeoran (p. ej. de 1 pescado a 0); los que mejoran sin llegar al objetivo no se marcan
+      const nuevos = despues.filter((p) => !desvioAntes.has(p.clave) || p.desvio > desvioAntes.get(p.clave));
+      return {
+        receta: r,
+        nuevos,
+        resueltos: antes.filter((p) => !clavesDespues.has(p.clave)),
+        peso: nuevos.reduce((a, p) => a + (p.nivel === 'error' ? 10 : 1), 0),
+        repetida: enLaSemana.has(r.id),
+        distancia: protActual != null && nutricion[r.id] ? Math.abs(nutricion[r.id].lord_i.proteina_g - protActual) : 99
+      };
+    })
+    .sort(
+      (a, b) =>
+        a.peso - b.peso ||
+        b.resueltos.length - a.resueltos.length ||
+        a.repetida - b.repetida ||
+        a.distancia - b.distancia
+    );
 }
 
-export default function CambiarPlatoModal({ menuData, recetarioData, nutricion, cambios, idx, tipo, onElegir, onClose }) {
+export default function CambiarPlatoModal(props) {
+  const { menuData, recetarioData, nutricion, nutricionBase, reglas, clases, cambios, idx, tipo, onElegir, onClose } = props;
   const [verTodas, setVerTodas] = useState(false);
   const dia = menuData.dias[idx];
   const toma = dia[tipo];
   const cambiada = !!cambios[`${idx}-${tipo}`];
   const opciones = useMemo(
-    () => alternativas(menuData, recetarioData, nutricion, cambios, idx, tipo),
-    [menuData, recetarioData, nutricion, cambios, idx, tipo]
+    () => alternativas({ menuData, recetarioData, nutricion, nutricionBase, reglas, clases, cambios, idx, tipo }),
+    [menuData, recetarioData, nutricion, nutricionBase, reglas, clases, cambios, idx, tipo]
   );
   const visibles = verTodas ? opciones : opciones.slice(0, 3);
   const esBatch = /batch|tupper/i.test(toma.origen || '');
@@ -80,7 +102,7 @@ export default function CambiarPlatoModal({ menuData, recetarioData, nutricion, 
             </p>
           )}
 
-          {visibles.map(({ receta, repetida }) => {
+          {visibles.map(({ receta, repetida, nuevos, resueltos }) => {
             const n = nutricion[receta.id];
             return (
               <button
@@ -98,6 +120,21 @@ export default function CambiarPlatoModal({ menuData, recetarioData, nutricion, 
                   {n && <span>Lord.I ~{n.lord_i.proteina_g} g prot · Doña.Y ~{n.dona_y.proteina_g} g</span>}
                   {repetida && <span className="text-amber-700 font-semibold">Ya está en la semana</span>}
                 </div>
+                {nuevos.map((p) => (
+                  <div
+                    key={p.clave}
+                    className={`text-xs mt-1 flex items-start gap-1 ${p.nivel === 'error' ? 'text-rose-700 font-semibold' : 'text-amber-700'}`}
+                  >
+                    <AlertTriangle className="w-3.5 h-3.5 mt-0.5 shrink-0" />
+                    {p.texto}
+                  </div>
+                ))}
+                {resueltos.map((p) => (
+                  <div key={p.clave} className="text-xs mt-1 flex items-start gap-1 text-emerald-700">
+                    <Scale className="w-3.5 h-3.5 mt-0.5 shrink-0" />
+                    Corrige: {p.texto}
+                  </div>
+                ))}
               </button>
             );
           })}
@@ -127,7 +164,7 @@ export default function CambiarPlatoModal({ menuData, recetarioData, nutricion, 
 
           <p className="text-xs text-slate-500 flex items-start gap-1.5">
             <Check className="w-3.5 h-3.5 mt-0.5 shrink-0" />
-            Todas las recetas del recetario cumplen las reglas médicas de los dos. La lista de la compra mostrará qué añadir por el cambio.
+            Todas las recetas del recetario cumplen las reglas médicas de los dos. Primero salen las que mantienen el equilibrio de la semana; la lista de la compra mostrará qué añadir por el cambio.
           </p>
         </div>
       </div>

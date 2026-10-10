@@ -45,3 +45,6 @@ app/public/data/
 
 # Paquete de datos generado en cada build por scripts/build_bundle.js
 app/src/data/
+
+# Python
+__pycache__/
