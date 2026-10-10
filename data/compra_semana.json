@@ -70,7 +70,7 @@
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Brócoli (teriyaki del lunes y yakisoba del miércoles) (precio estimado)",
+      "nombre_receta": "Brócoli (teriyaki del lunes y yakisoba del miércoles)",
       "cantidad": 2,
       "unidad": "piezas",
       "seccion": "Fruta y verdura",
@@ -90,7 +90,7 @@
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Tomates cherry (pasta al pesto) (precio estimado)",
+      "nombre_receta": "Tomates cherry (pasta al pesto)",
       "cantidad": 1,
       "unidad": "bandeja",
       "seccion": "Fruta y verdura",
@@ -111,7 +111,7 @@
       ]
     },
     {
-      "nombre_receta": "Limones (merluza y burrito) (precio estimado)",
+      "nombre_receta": "Limones (merluza y burrito)",
       "cantidad": 1,
       "unidad": "malla",
       "seccion": "Fruta y verdura",
@@ -120,7 +120,7 @@
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Perejil (merluza a la plancha y en salsa verde) (precio estimado)",
+      "nombre_receta": "Perejil (merluza a la plancha y en salsa verde)",
       "cantidad": 1,
       "unidad": "paquete",
       "seccion": "Fruta y verdura",
@@ -158,11 +158,11 @@
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Salmón fresco en lomos (comida del sábado) (precio estimado)",
+      "nombre_receta": "Salmón fresco en lomos (comida del sábado)",
       "cantidad": 1,
       "unidad": "bandeja (~350 g)",
       "seccion": "Pescadería",
-      "id_preferente": 87208,
+      "id_preferente": 87204,
       "termino_fallback": "salmon",
       "filtro_excluir": [
         "congelado",
@@ -171,7 +171,7 @@
       ]
     },
     {
-      "nombre_receta": "Merluza en lomos ultracongelada (cena del martes y tupper del jueves) (precio estimado)",
+      "nombre_receta": "Merluza en lomos ultracongelada (cena del martes y tupper del jueves)",
       "cantidad": 2,
       "unidad": "cajas (~1,1 kg)",
       "seccion": "Congelados",
@@ -183,7 +183,7 @@
       ]
     },
     {
-      "nombre_receta": "Guisantes ultracongelados (merluza en salsa verde) (precio estimado)",
+      "nombre_receta": "Guisantes ultracongelados (merluza en salsa verde)",
       "cantidad": 1,
       "unidad": "paquete",
       "seccion": "Congelados",
@@ -204,7 +204,7 @@
       ]
     },
     {
-      "nombre_receta": "Contramuslos de pollo deshuesados (teriyaki y alubias con pollo) (precio estimado)",
+      "nombre_receta": "Contramuslos de pollo deshuesados (teriyaki y alubias con pollo)",
       "cantidad": 2,
       "unidad": "bandejas (~1,1 kg)",
       "seccion": "Carne",
@@ -227,11 +227,11 @@
       ]
     },
     {
-      "nombre_receta": "Filetes de vacuno añojo en tiras (bowl coreano) (precio estimado)",
+      "nombre_receta": "Filetes de vacuno añojo en tiras (bowl coreano)",
       "cantidad": 1,
       "unidad": "bandeja (~350 g)",
       "seccion": "Carne",
-      "id_preferente": 2900,
+      "id_preferente": 8936,
       "termino_fallback": "filetes vacuno",
       "filtro_excluir": [
         "marinado"
@@ -263,7 +263,7 @@
       ]
     },
     {
-      "nombre_receta": "Queso fresco de Burgos (shakshuka) (precio estimado)",
+      "nombre_receta": "Queso fresco de Burgos (shakshuka)",
       "cantidad": 1,
       "unidad": "pack 4",
       "seccion": "Charcutería y quesos",
@@ -281,7 +281,7 @@
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Alubias blancas cocidas (guiso con pollo del viernes) (precio estimado)",
+      "nombre_receta": "Alubias blancas cocidas (guiso con pollo del viernes)",
       "cantidad": 2,
       "unidad": "tarros",
       "seccion": "Arroz, legumbres y pasta",
@@ -348,7 +348,7 @@
       ]
     },
     {
-      "nombre_receta": "Maíz dulce (burrito bowl) (precio estimado)",
+      "nombre_receta": "Maíz dulce (burrito bowl)",
       "cantidad": 1,
       "unidad": "pack 3 latas",
       "seccion": "Conservas, caldos y cremas",
@@ -360,7 +360,7 @@
       ]
     },
     {
-      "nombre_receta": "Pesto fresco de albahaca (pasta del viernes) (precio estimado)",
+      "nombre_receta": "Pesto fresco de albahaca (pasta del viernes)",
       "cantidad": 1,
       "unidad": "tarrina",
       "seccion": "Pizzas y platos preparados",
@@ -369,7 +369,7 @@
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Jengibre molido (teriyaki y yakisoba) (precio estimado)",
+      "nombre_receta": "Jengibre molido (teriyaki y yakisoba)",
       "cantidad": 1,
       "unidad": "bote",
       "seccion": "Aceite, especias y salsas",
