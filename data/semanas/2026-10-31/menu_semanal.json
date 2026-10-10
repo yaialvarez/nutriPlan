@@ -1,0 +1,302 @@
+{
+  "semana": "Semana del 31 de octubre al 6 de noviembre (generada automáticamente)",
+  "fecha_inicio": "2026-10-31",
+  "ciclo_semanal": "Sábado 31/10 a Viernes 06/11",
+  "objetivo_semana": "Menú elegido automáticamente entre las recetas del recetario sin repetir ninguna de la semana pasada. Pescado 3 veces (Lomos de salmón a la plancha, Tostas de pan de hogaza y Tostas de pan de centeno), legumbre 2 veces, carne roja 2 veces y 8 verduras distintas. Comidas de lunes a viernes en tupper del batch cooking del domingo y cenas de 20 minutos como mucho; la comida del domingo queda libre para comer en familia. Lord.I queda en ~84 g de proteína de media (máximo 91 g en un día, tope 104 g) y Doña.Y en ~2437 kcal de media con su batido y tentempiés (objetivo 2100 kcal).",
+  "batch_cooking_domingo": {
+    "duracion_estimada_minutos": 120,
+    "resumen": "Sesión del domingo por la tarde (~2 h 00 min) con los cinco tuppers de la semana: dahl suave de lentejas rojas (lunes), pollo entero asado al horno (martes), tiras de ternera salteadas (miércoles), arroz al horno (jueves) y pisto manchego (viernes).",
+    "equipamiento": [
+      "Arrocera u olla grande para el arroz o la pasta",
+      "2 cazuelas amplias para los guisos",
+      "2 sartenes",
+      "Bandeja de horno",
+      "10 recipientes herméticos de cristal (4 aptos para congelador)"
+    ],
+    "cronograma_pasos": [
+      {
+        "orden": 1,
+        "tiempo": "00:00 - 00:10",
+        "accion": "Sacar todo, lavar y picar la verdura de las cinco recetas. Si hay pescado congelado para los tuppers, descongelarlo en la nevera desde la mañana."
+      },
+      {
+        "orden": 2,
+        "tiempo": "00:10 - 01:10",
+        "accion": "Pollo entero asado al horno con patatas, limón y hierbas (tupper del martes, a la nevera): Precalentar el horno a 200°C. Pelar las patatas y cortarlas en gajos gruesos; cortar la cebolla en juliana y partir la cabeza de ajos por la mitad. Extender patatas, cebolla y ajos en una bandeja honda, regar con AOVE, sal yodada y la mitad de las hierbas. Mezclar 3 cucharadas de AOVE con el zumo de 1 limón, el pimentón dulce, el resto de hierbas y sal; untar el pollo por fuera y meter el otro limón partido en su interior. Colocar el pollo sobre la cama de patatas con la pechuga hacia arriba y asar 55-60 minutos, regando con su jugo a mitad de cocción. Dejar reposar 10 minutos antes de trinchar. Reservar la carcasa para caldo casero. Repartir en tuppers: cuartos traseros con patatas para la semana y pechuga desmenuzada para ensaladas, fajitas o sándwiches."
+      },
+      {
+        "orden": 3,
+        "tiempo": "00:40 - 01:40",
+        "accion": "Arroz al horno con costilla de cerdo, garbanzos, patata y tomate (tupper del jueves, al congelador): Precalentar el horno a 200°C y calentar el caldo. Salar la costilla con sal yodada. En una sartén o cazuela apta para horno, dorar la costilla con AOVE a fuego fuerte 8 minutos; reservar. Dorar en el mismo aceite las rodajas de patata (1 cm), la cabeza de ajos entera y los tomates en mitades; retirar. Añadir 1 cucharadita de pimentón dulce y el arroz, rehogar 1 minuto, añadir los garbanzos y repartir todo en la cazuela. Colocar encima costilla, patata, tomate y ajos; verter el caldo caliente con el azafrán y hornear 25-30 minutos sin remover hasta que el arroz absorba el caldo. Dejar reposar 5 minutos y repartir en tuppers; es un arroz seco que se recalienta muy bien."
+      },
+      {
+        "orden": 4,
+        "tiempo": "01:10 - 01:50",
+        "accion": "Pisto manchego con huevo, taquitos de jamón y arroz blanco (tupper del viernes, al congelador): Pochar la cebolla y el ajo picados finos en AOVE a fuego suave 10 minutos hasta que estén dulces y transparentes. Añadir los pimientos en dados y cocinar 8 minutos; incorporar el calabacín en dados y cocinar otros 8 minutos. Volcar el tomate triturado, salar con sal yodada, añadir orégano y cocinar a fuego suave 15 minutos hasta que el pisto quede espeso. Saltear los taquitos de jamón 1 minuto y mezclarlos con el pisto. Cocer el arroz en la arrocera con sal yodada; cocer 4 huevos 10 minutos para llevar al tupper y guardar los otros 4 para hacerlos al momento en el pisto caliente. Montar los tuppers con arroz abajo y pisto encima; recalentar 3 minutos y añadir el huevo."
+      },
+      {
+        "orden": 5,
+        "tiempo": "01:30 - 02:05",
+        "accion": "Dahl suave de lentejas rojas con cúrcuma, comino y jengibre, con arroz basmati (tupper del lunes, a la nevera): Poner el arroz basmati en la arrocera con su agua y una pizca de sal yodada. Pochar la cebolla y la zanahoria picadas finas con AOVE a fuego suave 10 minutos; añadir el ajo y el jengibre rallados 1 minuto más. Añadir 1 cucharadita de cúrcuma, 1 de comino y 1 de cilantro molido; tostar 30 segundos. Incorporar las lentejas rojas lavadas, el tomate, el laurel y 1,2 litros de agua; salar con sal yodada. Cocer 20-25 minutos a fuego medio removiendo de vez en cuando hasta que las lentejas se deshagan y quede un puré cremoso. Repartir en tuppers con el arroz; servir con una cucharada de yogur natural."
+      },
+      {
+        "orden": 6,
+        "tiempo": "01:47 - 02:22",
+        "accion": "Tiras de ternera salteadas con brócoli, soja y sésamo, con arroz (tupper del miércoles, a la nevera): Poner el arroz en la arrocera con su agua y una pizca de sal yodada. Cocer el brócoli en ramilletes 5 minutos en agua hirviendo o al vapor; escurrir. Cortar la zanahoria en bastones finos. Mezclar la ternera con 2 cucharadas de soja y la maicena; dejar 10 minutos. En la sartén de acero muy caliente con AOVE, saltear la ternera por tandas 2 minutos hasta dorar. Reservar. Saltear el ajo laminado, el jengibre rallado y la zanahoria 2 minutos; añadir el brócoli, la ternera, el resto de soja y 4 cucharadas de agua; remover 2 minutos hasta ligar. Montar los tuppers con arroz y salteado; sésamo por encima."
+      },
+      {
+        "orden": 7,
+        "tiempo": "02:22 - 02:32",
+        "accion": "Envasado: tuppers de lunes a miércoles a la nevera a 4 °C; jueves y viernes al congelador (pasarlos a la nevera la noche anterior)."
+      }
+    ],
+    "conservacion": "Lunes a miércoles en nevera (máximo 3 días); jueves y viernes congelados el domingo para no pasar de 4 días de nevera, sobre todo el pescado."
+  },
+  "dias": [
+    {
+      "dia": "Sábado (31/10)",
+      "comida": {
+        "receta_id": "salmon_plancha_pure_patata_zanahorias",
+        "nombre": "Lomos de salmón a la plancha con puré rústico de patata y zanahorias asadas",
+        "origen": "Cocina fresca de fin de semana (25 min)",
+        "tiempo_preparacion": "25 min",
+        "adaptacion_lord_i": {
+          "porcion": "Lomo de 140 g a la plancha con piel crujiente, puré con AOVE (1 patata y media) y zanahorias asadas abundantes.",
+          "detalles": "~35 g de proteína (ración moderada) con excelente perfil antiinflamatorio.",
+          "volumen_macros": "Proteína de comida real (~35 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Lomo de salmón con doble ración de puré de patata y cucharada de mayonesa.",
+          "detalles": "Rico en selenio y yodo para la función tiroidea.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      },
+      "cena": {
+        "receta_id": "tortilla_patata_cebolla_confitada",
+        "nombre": "Tortilla de patatas con cebolla muy pochada y ensalada suave",
+        "origen": "Cena de sábado (30 min)",
+        "tiempo_preparacion": "30 min",
+        "adaptacion_lord_i": {
+          "porcion": "Ración generosa de tortilla jugosa acompañada de ensalada de tomate y lechuga con AOVE.",
+          "detalles": "La cebolla se confita a fuego mínimo hasta quedar melosa y suave, perfectamente tolerada.",
+          "volumen_macros": "Proteína de comida real (~21 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Ración de tortilla jugosa acompañada de pan de masa madre y ensalada.",
+          "detalles": "Superávit nutritivo con grasas buenas de huevo y AOVE.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      }
+    },
+    {
+      "dia": "Domingo (01/11)",
+      "comida": {
+        "receta_id": null,
+        "nombre": "🎉 Comida en familia (toma flexible)",
+        "origen": "Plan familiar fuera de casa; no se compra para esta toma",
+        "tiempo_preparacion": "0 min",
+        "adaptacion_lord_i": {
+          "porcion": "Comida a elección",
+          "detalles": "Sin quesos fuertes y sin cebolla cruda.",
+          "volumen_macros": "Toma libre."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Comida a elección",
+          "detalles": "Disfrutar de la comida familiar.",
+          "suplementacion": "Batido pautado."
+        }
+      },
+      "cena": {
+        "receta_id": "tostas_sardinas_tomate_aguacate",
+        "nombre": "Tostas de pan de hogaza con sardinillas en aceite de oliva, tomate rallado y aguacate",
+        "origen": "Cena ligera tras el batch cooking (10 min)",
+        "tiempo_preparacion": "10 min",
+        "adaptacion_lord_i": {
+          "porcion": "3 tostas con tomate rallado, medio aguacate en láminas y las sardinillas de 1 lata y media.",
+          "detalles": "Pan 1/3, sardinillas 1/3, tomate y aguacate 1/3.",
+          "volumen_macros": "Proteína de comida real (~31 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "4 tostas con tomate, 1 aguacate entero, las sardinillas de 2 latas y un chorrito extra de AOVE.",
+          "detalles": "Pan y aguacate en ración grande.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      }
+    },
+    {
+      "dia": "Lunes (02/11)",
+      "comida": {
+        "receta_id": "dahl_lentejas_rojas_arroz",
+        "nombre": "Dahl suave de lentejas rojas con cúrcuma, comino y jengibre, con arroz basmati",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 plato hondo de dahl cremoso con 1 puño de basmati y 1 cucharada de yogur natural por encima.",
+          "detalles": "1 plato de dahl (~24 g de proteína vegetal) + 1 cazo de arroz + yogur natural.",
+          "volumen_macros": "Proteína de comida real (~26 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "1 plato hondo generoso de dahl con doble puño de basmati y un hilo de AOVE.",
+          "detalles": "1 plato colmado + 2 cazos de arroz + 1 cucharada de AOVE + yogur entero.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      },
+      "cena": {
+        "receta_id": "pollo_al_limon_estilo_chino",
+        "nombre": "Pollo al limón estilo chino dorado en sartén con salsa de limón y arroz jazmín",
+        "origen": "Cena rápida (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "120 g de pollo en tiras con la salsa de limón, 1 taza rasa de arroz y brócoli al vapor abundante.",
+          "detalles": "~36 g de proteína (ración moderada). Pollo 1/4, arroz 1/3, brócoli el resto.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Misma ración de pollo con taza y media colmada de arroz y un poco más de salsa.",
+          "detalles": "Más arroz y salsa para sumar hidratos y energía.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      }
+    },
+    {
+      "dia": "Martes (03/11)",
+      "comida": {
+        "receta_id": "pollo_asado_entero_patatas_limon",
+        "nombre": "Pollo entero asado al horno con patatas, limón y hierbas",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 contramuslo (o media pechuga pequeña) sin piel, unos 120 g de carne limpia, con 1 patata asada, cebolla melosa y ensalada.",
+          "detalles": "~35 g de proteína (ración moderada) + 1 patata mediana asada + jugo del asado desgrasado. El resto del pollo se desmenuza para otros platos.",
+          "volumen_macros": "Proteína de comida real (~35 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "1 cuarto de pollo con doble ración de patatas asadas, bien regadas con el jugo y un hilo extra de AOVE.",
+          "detalles": "1 cuarto de pollo + 2 patatas asadas + 1 cucharada extra de AOVE sobre las patatas.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      },
+      "cena": {
+        "receta_id": "vichyssoise_puerro_patata_jamon",
+        "nombre": "Crema suave de puerro y patata con taquitos de jamón, huevo cocido y pan tostado",
+        "origen": "Cena rápida (15 min)",
+        "tiempo_preparacion": "15 min",
+        "adaptacion_lord_i": {
+          "porcion": "Plato hondo de crema con taquitos de jamón salteados, 2 huevos cocidos en cuartos y 1 rebanada de pan tostado.",
+          "detalles": "Crema 2/3, jamón y huevo 1/3.",
+          "volumen_macros": "Proteína de comida real (~31 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Plato hondo de crema con jamón, 2 huevos cocidos, 2 rebanadas de pan con AOVE.",
+          "detalles": "Pan y AOVE en ración grande.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      }
+    },
+    {
+      "dia": "Miércoles (04/11)",
+      "comida": {
+        "receta_id": "ternera_salteada_brocoli_soja",
+        "nombre": "Tiras de ternera salteadas con brócoli, soja y sésamo, con arroz",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 ración moderada de ternera con brócoli y zanahoria abundantes en salsa de soja ligada y 1 puño de arroz.",
+          "detalles": "~130 g de ternera (~36 g de proteína) + 1 cazo de arroz.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "1 ración de ternera con doble puño de arroz y sésamo extra.",
+          "detalles": "~250 g de ternera + 2 cazos de arroz + 1 cucharadita de aceite de sésamo o AOVE.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      },
+      "cena": {
+        "receta_id": "tostas_salmon_ahumado_aguacate_huevo",
+        "nombre": "Tostas de pan de centeno con salmón ahumado, aguacate y huevo cocido",
+        "origen": "Cena rápida (10 min)",
+        "tiempo_preparacion": "10 min",
+        "adaptacion_lord_i": {
+          "porcion": "2 tostas con queso crema, 80 g de salmón ahumado, medio aguacate en láminas y 1 huevo cocido en rodajas.",
+          "detalles": "~36 g de proteína (ración moderada). Salmón, huevo y aguacate sobre 2 rebanadas de pan de centeno.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "3 tostas con la misma cantidad de salmón y huevo repartida y medio aguacate machacado con AOVE.",
+          "detalles": "Una rebanada más de pan y más aguacate con AOVE para sumar hidratos y grasa buena.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      }
+    },
+    {
+      "dia": "Jueves (05/11)",
+      "comida": {
+        "receta_id": "arroz_al_horno_costillas_garbanzos",
+        "nombre": "Arroz al horno con costilla de cerdo, garbanzos, patata y tomate",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 plato de arroz con 3-4 trozos de costilla, garbanzos y rodajas de patata y tomate.",
+          "detalles": "~175 g de costilla (~35 g de proteína) con 1 ración moderada de arroz.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "1 plato colmado de arroz al horno con costilla, patata extra y un hilo de AOVE.",
+          "detalles": "~175 g de costilla + ración grande de arroz y patata + AOVE al servir.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      },
+      "cena": {
+        "receta_id": "kebab_casero_pollo_yogur_pita",
+        "nombre": "Kebab casero de contramuslos marinados en yogur y especias al horno, en pita con salsa de yogur",
+        "origen": "Cena rápida (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 pita con unos 100 g de pollo kebab en tiras, mucha lechuga, tomate, pepino, pimiento asado y 2 cucharadas de salsa de yogur.",
+          "detalles": "~37 g de proteína (ración moderada). Pollo 1/3 del relleno, verdura 2/3; pita normal.",
+          "volumen_macros": "Proteína de comida real (~37 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "2 pitas con la misma cantidad de pollo repartida, salsa generosa y pimiento asado extra.",
+          "detalles": "Una pita más y más salsa para sumar hidratos y calorías.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      }
+    },
+    {
+      "dia": "Viernes (06/11)",
+      "comida": {
+        "receta_id": "pisto_manchego_huevo_arroz",
+        "nombre": "Pisto manchego con huevo, taquitos de jamón y arroz blanco",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 taza rasa de arroz con pisto abundante, taquitos de jamón y 2 huevos (cocidos o hechos en el pisto).",
+          "detalles": "Pisto 1/2 plato, arroz 1/4, huevo y jamón 1/4.",
+          "volumen_macros": "Proteína de comida real (~30 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "1 taza y media colmada de arroz con pisto, jamón y 2 huevos, más un chorrito de AOVE.",
+          "detalles": "Arroz en ración grande y AOVE extra.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      },
+      "cena": {
+        "receta_id": "pure_calabacin_dados_pollo",
+        "nombre": "Crema suave de calabacín con dados dorados de pollo y AOVE",
+        "origen": "Cena rápida (15 min)",
+        "tiempo_preparacion": "15 min",
+        "adaptacion_lord_i": {
+          "porcion": "Plato hondo bien colmado de crema con 130 g de dados de pechuga (en crudo) recién dorados a la plancha por encima.",
+          "detalles": "Cena ligera y digestiva: ~34 g de proteína (ración moderada), verdura abundante.",
+          "volumen_macros": "Proteína de comida real (~34 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Plato de crema con dados de pollo + tostas de pan integral con un toque de mayonesa.",
+          "detalles": "Hidrato extra de acompañamiento.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      }
+    }
+  ]
+}

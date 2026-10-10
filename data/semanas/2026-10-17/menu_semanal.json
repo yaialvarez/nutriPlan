@@ -1,0 +1,302 @@
+{
+  "semana": "Semana del 17 al 23 de octubre (generada automáticamente)",
+  "fecha_inicio": "2026-10-17",
+  "ciclo_semanal": "Sábado 17/10 a Viernes 23/10",
+  "objetivo_semana": "Menú elegido automáticamente entre las recetas del recetario sin repetir ninguna de la semana pasada. Pescado 3 veces (Tacos de atún fresco a la plancha, Onigiris tradicionales de arroz y Lomos de merluza dorados), legumbre 2 veces, carne roja 3 veces y 7 verduras distintas. Comidas de lunes a viernes en tupper del batch cooking del domingo y cenas de 20 minutos como mucho; la comida del domingo queda libre para comer en familia. Lord.I queda en ~88 g de proteína de media (máximo 91 g en un día, tope 104 g) y Doña.Y en ~2248 kcal de media con su batido y tentempiés (objetivo 2100 kcal).",
+  "batch_cooking_domingo": {
+    "duracion_estimada_minutos": 90,
+    "resumen": "Sesión del domingo por la tarde (~1 h 30 min) con los cinco tuppers de la semana: jamoncitos de pollo dorados al horno (lunes), curry japonés suave (kare raisu) (martes), albóndigas caseras de ternera 100% (miércoles), guiso de lentejas pardinas (jueves) y salteado castellano de garbanzos (viernes).",
+    "equipamiento": [
+      "Arrocera u olla grande para el arroz o la pasta",
+      "2 cazuelas amplias para los guisos",
+      "2 sartenes",
+      "Bandeja de horno",
+      "10 recipientes herméticos de cristal (4 aptos para congelador)"
+    ],
+    "cronograma_pasos": [
+      {
+        "orden": 1,
+        "tiempo": "00:00 - 00:10",
+        "accion": "Sacar todo, lavar y picar la verdura de las cinco recetas. Si hay pescado congelado para los tuppers, descongelarlo en la nevera desde la mañana."
+      },
+      {
+        "orden": 2,
+        "tiempo": "00:10 - 00:55",
+        "accion": "Jamoncitos de pollo dorados al horno con patatas panadera y toque de romero (tupper del lunes, a la nevera): Descongelar previamente los 4 jamoncitos de pollo en la nevera la víspera. Pelar las patatas y cortarlas en rodajas tipo panadera (~0,5 cm). Cortar la cebolla dulce en juliana fina y laminar los ajos. En una bandeja de horno, disponer una cama con las patatas, la cebolla dulce y el ajo, regar con AOVE, sal yodada, pimentón dulce y romero. Colocar los 4 jamoncitos de pollo encima, sazonar con hierbas y un hilo de AOVE. Hornear a 190°C durante 40-45 minutos hasta que la carne esté tierna, el pollo dorado y las patatas melosas. Distribuir en dos tuppers herméticos de cristal para el jueves: 2 jamoncitos por tupper con su ración de patatas panadera y jugo."
+      },
+      {
+        "orden": 3,
+        "tiempo": "00:32 - 01:17",
+        "accion": "Guiso de lentejas pardinas con verduras y magro (tupper del jueves, al congelador): Sofreír el puerro, zanahoria y cebolla picada fina hasta que estén totalmente transparentes y tiernos. Añadir el magro de cerdo y dorar 3 minutos con una cucharadita de pimentón dulce. Incorporar las lentejas pardinas lavadas y las patatas chascadas en trozos medianos. Cubrir con agua o caldo suave casero, salar con sal yodada y cocinar a fuego medio 35-40 minutos. Conservar en tupper hermético de cristal para los primeros días de la semana."
+      },
+      {
+        "orden": 4,
+        "tiempo": "00:54 - 01:29",
+        "accion": "Curry japonés suave (Kare Raisu) con pollo y arroz en arrocera (tupper del martes, a la nevera): Poner el arroz a cocer en la arrocera con sal yodada y agua proporcional. En una olla o cazuela, pochar la cebolla en juliana fina con AOVE durante 12 minutos hasta dorar bien. Añadir el pollo en dados medianos, dorar 3 minutos e incorporar las patatas y zanahorias en trozos. Cubrir con el caldo de pollo casero (de la carcasa) y cocer a fuego medio 18 minutos hasta tiernas. Disolver el curry dulce suave en el caldo, remover hasta espesar la salsa y servir sobre el arroz caliente o envasar en tuppers."
+      },
+      {
+        "orden": 5,
+        "tiempo": "01:11 - 01:46",
+        "accion": "Albóndigas caseras de ternera 100% en salsa española tradicional con patatas (tupper del miércoles, a la nevera): Mezclar la carne picada de vacuno con ajo picado, perejil y sal yodada. Formar bolitas de albóndigas. Dorar las albóndigas en horno a 200°C 12 min o en sartén con un chorrito de AOVE para sellarlas. En cazuela, pochar puerro, zanahoria y cebolla dulce hasta que estén muy tiernos; añadir tomate triturado y un poco de caldo o agua. Triturar la salsa con batidora hasta textura homogénea y sedosa. Incorporar las albóndigas doradas y las patatas en dados a la salsa, y cocer a fuego suave 15 minutos. Conservar en tuppers de cristal para el microondas del trabajo."
+      },
+      {
+        "orden": 6,
+        "tiempo": "01:28 - 01:43",
+        "accion": "Salteado castellano de garbanzos con espinacas baby, taquitos de jamón y huevo campero (tupper del viernes, al congelador): En sartén amplia, dorar los ajos laminados en 2 cucharadas de AOVE. Añadir los taquitos de jamón salteando 1 minuto a fuego medio. Incorporar las espinacas baby y saltear 2 minutos hasta que reduzcan y queden tiernas. Añadir una cucharadita de pimentón dulce de la Vera fuera del fuego para que no amargue. Agregar los garbanzos cocidos lavados y escurridos, saltear todo junto 3-4 minutos para integrar sabores. Servir coronado con los huevos camperos cocidos cortados en cuartos."
+      },
+      {
+        "orden": 7,
+        "tiempo": "01:46 - 01:56",
+        "accion": "Envasado: tuppers de lunes a miércoles a la nevera a 4 °C; jueves y viernes al congelador (pasarlos a la nevera la noche anterior)."
+      }
+    ],
+    "conservacion": "Lunes a miércoles en nevera (máximo 3 días); jueves y viernes congelados el domingo para no pasar de 4 días de nevera, sobre todo el pescado."
+  },
+  "dias": [
+    {
+      "dia": "Sábado (17/10)",
+      "comida": {
+        "receta_id": "arroz_asiatico_salteado_pollo",
+        "nombre": "Arroz salteado asiático con contramuslos de pollo y verduras",
+        "origen": "Cocina fresca de fin de semana (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "Arroz suelto salteado al wok/sartén con 120 g de dados de contramuslo (en crudo), huevo revuelto y verduras pochadas en abundancia. Cero cebolla cruda.",
+          "detalles": "~36 g de proteína (ración moderada): 1/4 contramuslo, 1/4 arroz, 1/2 verdura pochada y huevo revuelto.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Porción generosa de arroz con pollo y verduras impregnadas en soja.",
+          "detalles": "Extra hidratos para superávit calórico magro + batido proteico en merienda.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      },
+      "cena": {
+        "receta_id": "atun_plancha_sesamo_ensalada_templada",
+        "nombre": "Tacos de atún fresco a la plancha con costra de sésamo y ensalada templada de patata y judías verdes",
+        "origen": "Cena de sábado (25 min)",
+        "tiempo_preparacion": "25 min",
+        "adaptacion_lord_i": {
+          "porcion": "130 g de atún en tacos sellados por fuera y rosados por dentro, con media ración de patata y abundante judía verde.",
+          "detalles": "~36 g de proteína (ración moderada). Proteína 1/4 del plato, verdura 1/2, patata 1/4. Aliño de AOVE y soja.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Misma ración de atún con el doble de patata templada y un chorro extra de AOVE sobre la ensalada.",
+          "detalles": "Más patata y más AOVE para una cena completa y energética.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      }
+    },
+    {
+      "dia": "Domingo (18/10)",
+      "comida": {
+        "receta_id": null,
+        "nombre": "🎉 Comida en familia (toma flexible)",
+        "origen": "Plan familiar fuera de casa; no se compra para esta toma",
+        "tiempo_preparacion": "0 min",
+        "adaptacion_lord_i": {
+          "porcion": "Comida a elección",
+          "detalles": "Sin quesos fuertes y sin cebolla cruda.",
+          "volumen_macros": "Toma libre."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Comida a elección",
+          "detalles": "Disfrutar de la comida familiar.",
+          "suplementacion": "Batido pautado."
+        }
+      },
+      "cena": {
+        "receta_id": "onigiris_arroz_atun_mayonesa",
+        "nombre": "Onigiris tradicionales de arroz con atún y mayonesa suave",
+        "origen": "Cena ligera tras el batch cooking (15 min)",
+        "tiempo_preparacion": "15 min",
+        "adaptacion_lord_i": {
+          "porcion": "3 triángulos de onigiri rellenos con atún-mayo sazonado con soja.",
+          "detalles": "Cena ligera, digestiva y salada con proteína de atún y carbohidrato limpio.",
+          "volumen_macros": "Proteína de comida real (~17 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "3-4 onigiris generosos con relleno extra de atún-mayonesa.",
+          "detalles": "Cena favorita rápida sin esfuerzo culinario.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      }
+    },
+    {
+      "dia": "Lunes (19/10)",
+      "comida": {
+        "receta_id": "jamoncitos_pollo_asados_con_patatas",
+        "nombre": "Jamoncitos de pollo dorados al horno con patatas panadera y toque de romero",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "2 jamoncitos de pollo dorados al horno con patatas panadera tiernas y cebolla dulce asada.",
+          "detalles": "2 jamoncitos (~32g de proteína de alto valor biológico de comida real, sin suplementos) + patatas panadera asadas con AOVE. Sin cebolla cruda.",
+          "volumen_macros": "Proteína de comida real (~35 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "2 jamoncitos de pollo con ración generosa de patatas panadera asadas en su jugo.",
+          "detalles": "2 jamoncitos de pollo + carbohidratos densos de patata para energía sostenida + 1 batido de proteína en la merienda.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      },
+      "cena": {
+        "receta_id": "revuelto_champinones_jamon_tostadas",
+        "nombre": "Revuelto cremoso de champiñones y jamón serrano sobre tostadas de pan rústico",
+        "origen": "Cena rápida (12 min)",
+        "tiempo_preparacion": "12 min",
+        "adaptacion_lord_i": {
+          "porcion": "Revuelto de 3 huevos con champiñones y jamón sobre 2 tostadas.",
+          "detalles": "Revuelto 2/3, pan 1/3.",
+          "volumen_macros": "Proteína de comida real (~38 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Revuelto de 3 huevos sobre 3 tostadas con AOVE y medio aguacate en láminas.",
+          "detalles": "Pan y aguacate en ración grande.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      }
+    },
+    {
+      "dia": "Martes (20/10)",
+      "comida": {
+        "receta_id": "curry_japones_kare_raisu_pollo",
+        "nombre": "Curry japonés suave (Kare Raisu) con pollo y arroz en arrocera",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "Ración de pollo tierno con verduras en salsa de curry japonés y 1 puño de arroz de la arrocera.",
+          "detalles": "Sabor salado, profundo y especiado no picante que le encanta a Lord.I.",
+          "volumen_macros": "Proteína de comida real (~34 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Ración con porción generosa de arroz de la arrocera y salsa melosa de patatas y zanahorias.",
+          "detalles": "Hidratos abundantes para asegurar superávit calórico magro.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      },
+      "cena": {
+        "receta_id": "filetes_dorados_sarten_acero_guarnicion",
+        "nombre": "Filetes dorados a la sartén de acero con guarnición suave",
+        "origen": "Cena rápida (12 min)",
+        "tiempo_preparacion": "12 min",
+        "adaptacion_lord_i": {
+          "porcion": "2 filetes (~180g) sellados a fuego vivo en sartén de acero con costra dorada sabrosa y AOVE. Sin cebolla cruda.",
+          "detalles": "Proteína limpia de carne noble de comida real (~34g de proteína, sin batidos ni suplementos) con guarnición suave.",
+          "volumen_macros": "Proteína de comida real (~37 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Filetes tiernos a la plancha con tostas crujientes o guarnición de patata.",
+          "detalles": "Carne noble tierna + carbohidratos para superávit magro + 1 batido de proteína en la merienda.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      }
+    },
+    {
+      "dia": "Miércoles (21/10)",
+      "comida": {
+        "receta_id": "albondigas_caseras_ternera_salsa_espanola",
+        "nombre": "Albóndigas caseras de ternera 100% en salsa española tradicional con patatas",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "5-6 albóndigas caseras con dados de patata y abundante salsa española con verdura 100% pochada y triturada fina.",
+          "detalles": "Ternera noble 100% (~32g de proteína de comida real). Cebolla totalmente pochada e integrada en la salsa. Sin cebolla cruda.",
+          "volumen_macros": "Proteína de comida real (~35 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Albóndigas con ración generosa de patatas empapadas en salsa española casera.",
+          "detalles": "Carbohidratos densos y proteína de alto valor biológico + 1 batido de proteína en la merienda.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      },
+      "cena": {
+        "receta_id": "merluza_rebozada_dorada_patatas",
+        "nombre": "Lomos de merluza dorados con patatas rústicas al horno y mayonesa",
+        "origen": "Cena rápida (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 filete grande de merluza (~160 g) dorado con patatas al horno (1 y media), ensalada de tomate y un toque de mayonesa.",
+          "detalles": "~34 g de proteína (ración moderada). Pescado blanco de fácil digestión y bajo en grasa.",
+          "volumen_macros": "Proteína de comida real (~34 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Merluza dorada crujiente con ración generosa de patatas asadas con pimentón dulce.",
+          "detalles": "Pescado favorito de Doña.Y preparado crujiente al momento.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      }
+    },
+    {
+      "dia": "Jueves (22/10)",
+      "comida": {
+        "receta_id": "guiso_lentejas_verduras",
+        "nombre": "Guiso de lentejas pardinas con verduras y magro",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 ración estándar con abundante caldo y verduras. Cebolla completamente integrada y deshecha en la cocción.",
+          "detalles": "1 plato hondo (~30-35g de proteína vegetal y magro de comida real). Sin suplementos.",
+          "volumen_macros": "Proteína de comida real (~35 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Ración con patata extra para asegurar aporte de energía e hidratos densos.",
+          "detalles": "1 plato hondo generoso + 1 batido de proteína pautado a media tarde.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      },
+      "cena": {
+        "receta_id": "tortilla_francesa_calabacin_queso_tierno",
+        "nombre": "Tortilla francesa rellena de calabacín salteado y queso tierno fundido, con pan y tomate",
+        "origen": "Cena rápida (10 min)",
+        "tiempo_preparacion": "10 min",
+        "adaptacion_lord_i": {
+          "porcion": "Tortilla de 3 huevos rellena de calabacín y queso tierno, con 1 rebanada de pan y tomate aliñado.",
+          "detalles": "Tortilla 2/3 del plato, pan y tomate 1/3.",
+          "volumen_macros": "Proteína de comida real (~32 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Tortilla de 3 huevos con 3 rebanadas de pan con AOVE y tomate.",
+          "detalles": "Pan en ración grande y AOVE extra.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      }
+    },
+    {
+      "dia": "Viernes (23/10)",
+      "comida": {
+        "receta_id": "garbanzos_salteados_espinacas_jamon_huevo",
+        "nombre": "Salteado castellano de garbanzos con espinacas baby, taquitos de jamón y huevo campero",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "Garbanzos salteados con ajo dorado, espinacas tiernas cocinadas, jamón crujiente y huevo campero picado.",
+          "detalles": "Legumbre noble y proteína animal de comida real (~34g de proteína total). Sin cebolla cruda ni suplementos sintéticos.",
+          "volumen_macros": "Proteína de comida real (~34 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Plato hondo colmado de garbanzos con espinacas cocinadas térmicamente, jamón y huevo campero.",
+          "detalles": "Yodo y selenio del huevo campero, fibra soluble suave y carbohidratos complejos + 1 batido proteico en la merienda.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      },
+      "cena": {
+        "receta_id": "ramen_casero_caldo_pollo_fideos",
+        "nombre": "Ramen casero reconfortante con caldo de pollo, fideos y huevo marinado",
+        "origen": "Cena rápida (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "Bol grande con caldo intenso, 1 huevo cocido, unos 60 g de pollo dorado y verduras abundantes. Sin cebollino crudo.",
+          "detalles": "~35 g de proteína (ración moderada); sabor umami profundo y cero exceso de sodio sintético.",
+          "volumen_macros": "Proteína de comida real (~35 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Bol con ración generosa de fideos ramen y huevo con yema cremosa.",
+          "detalles": "Nutrientes densos de huevo campero y caldo natural de huesos.",
+          "suplementacion": "Batido pautado a media tarde y tentempiés."
+        }
+      }
+    }
+  ]
+}

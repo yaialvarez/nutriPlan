@@ -6,6 +6,9 @@ on:
       - main
       - master
   workflow_dispatch:
+  # La acción semanal (semana.yml) lo llama después de cambiar de semana, porque un push
+  # hecho con GITHUB_TOKEN no dispara este workflow por sí solo
+  workflow_call:
 
 permissions:
   contents: read
@@ -25,6 +28,9 @@ jobs:
     steps:
       - name: Checkout código
         uses: actions/checkout@v4
+        with:
+          # Llamado desde semana.yml: publicar main con la semana recién activada
+          ref: ${{ github.event_name == 'push' && github.sha || 'main' }}
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
@@ -42,6 +48,11 @@ jobs:
         run: |
           cd app
           npm ci
+
+      # Por si la acción del sábado no llegó a ejecutarse: publica la semana que toca por fecha
+      # si ya está guardada en data/semanas/ (solo en esta copia, no cambia el repositorio)
+      - name: Activar la semana que corresponde a hoy
+        run: python scripts/semanas.py activar
 
       - name: Validar reglas médicas, proteína, fechas y lista de la compra
         run: python scripts/verificar_reglas.py

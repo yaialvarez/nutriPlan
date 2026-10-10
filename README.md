@@ -55,12 +55,17 @@ nutriPlan/
 │   ├── compra_semana.json         # Artículos de la compra de la semana (entrada del generador)
 │   ├── compra_tentempies.json     # Artículos de Mercadona de los postres y tentempiés, para copiar a compra_semana.json
 │   ├── lista_compra.json          # Lista generada con precios y pasillos de Mercadona
+│   ├── semanas/AAAA-MM-DD/        # Semanas guardadas (menú, compra y lista); data/ tiene la activa
+│   ├── planificador/ingredientes.json  # Ingrediente de receta → producto de Mercadona
+│   ├── catalogo/mercadona.json    # Copia guardada del catálogo de Mercadona (precios)
 │   ├── despensa_base.json         # Básicos del hogar que no se compran cada semana
 │   ├── precios_lidl.json          # Precios LIDL de referencia (estimados, editables en la app)
 │   └── perfiles_encrypted.json    # Perfiles cifrados (perfiles.json en claro nunca se sube)
 ├── scripts/
 │   ├── mercadona_api.py           # Descarga y búsqueda en el catálogo de Mercadona
 │   ├── generar_lista_compra.py    # compra_semana.json + catálogo → lista_compra.json
+│   ├── planificar_semana.py       # Elige el menú de una semana y genera su compra
+│   ├── semanas.py                 # Activa por fecha la semana guardada y valida las futuras
 │   ├── comprobar_precios_lidl.py  # Qué artículos de la lista tienen precio LIDL
 │   ├── verificar_reglas.py        # Reglas médicas, proteína, fechas y coherencia de datos
 │   ├── equilibrio_semanal.py      # Equilibrio de la semana completa (lo llama verificar_reglas.py)
@@ -75,11 +80,39 @@ nutriPlan/
 │       ├── utils/                 # Cifrado, fechas de la semana, bitácora y precios LIDL
 │       └── App.jsx
 ├── .github/workflows/
-│   ├── comprobar.yml              # Valida cada PR: reglas, lint, build y auditoría
-│   └── deploy.yml                 # Publica en GitHub Pages en cada push a main
+│   ├── comprobar.yml              # Valida cada PR: reglas, semanas guardadas, planificador, lint, build
+│   ├── deploy.yml                 # Publica en GitHub Pages en cada push a main
+│   └── semana.yml                 # Cada sábado activa o planifica la semana y publica
 ├── preferencias.md                # Gustos, logística y reglas prácticas para planificar
 └── README.md                      # Esta guía
 ```
+
+---
+
+## 🤖 Menú automático cada sábado
+
+El menú se renueva solo, sin chat ni PR:
+
+1. **Sábado a las 5:00** (hora de España) la acción `Menú de la semana` (`.github/workflows/semana.yml`) pone en `data/` la semana que empieza ese día. Si está guardada en `data/semanas/AAAA-MM-DD/` usa esa; si no, la crea `scripts/planificar_semana.py`.
+2. La valida con `verificar_reglas.py` (las mismas reglas médicas y de equilibrio que el despliegue), la sube a `main` y publica la web. Si algo falla no se sube nada, la web sigue con la semana anterior y GitHub manda un correo.
+3. Cualquier despliegue de otro día también activa por fecha la semana guardada que toque.
+
+El planificador elige 13 recetas del recetario (la comida del domingo queda libre para comer en familia): comidas de lunes a viernes aptas para el batch cooking del domingo, cenas de entre semana de 20 minutos como mucho, pescado fresco solo de sábado a lunes, pescado 2-3 veces, legumbre al menos 2, proteína de Lord.I en su rango y kcal de Doña.Y por encima de su mínimo, sin repetir recetas de la semana anterior y con la compra más barata posible. Genera el cronograma del batch cooking, `compra_semana.json` (traduciendo ingredientes a productos con `data/planificador/ingredientes.json`) y la lista con los precios de `data/catalogo/mercadona.json`.
+
+```bash
+# Ver qué menú saldría la semana siguiente a la última guardada, sin guardar nada
+python scripts/planificar_semana.py --prueba
+
+# Preparar y guardar una semana concreta por adelantado (se puede retocar a mano antes del sábado)
+python scripts/planificar_semana.py --fecha 2026-11-07
+
+# Validar todas las semanas guardadas que aún no han empezado
+python scripts/semanas.py comprobar
+```
+
+- **Receta nueva**: si un ingrediente no encaja en ninguna regla de `data/planificador/ingredientes.json`, el planificador no usa esa receta y lo avisa; basta con añadir la regla.
+- **Precios**: `python scripts/mercadona_api.py sync` en un ordenador con acceso a Mercadona y copiar `data/mercadona_catalogo_cache.json` a `data/catalogo/mercadona.json`. Desde GitHub Actions no se llega a la API de Mercadona, así que se usa siempre la copia guardada.
+- **Parar la automatización**: desactivar la acción en la pestaña Actions de GitHub.
 
 ---
 
@@ -98,7 +131,7 @@ graph TD
     I -->|9. Sábado mañana| A
 ```
 
-1. **Sábado mañana (Planificación y Compra)**: Actualizamos el menú en el chat, generamos la lista (`python scripts/generar_lista_compra.py`), fusionamos el PR del menú en `main` y vamos al supermercado tachando artículos por pasillo en la web app móvil.
+1. **Sábado mañana (Planificación y Compra)**: El menú nuevo ya está publicado (ver «Menú automático cada sábado»); vamos al supermercado tachando artículos por pasillo en la web app móvil.
 2. **Sábado (Comida y Cena)**: Platos frescos con ingredientes recién comprados (salmón a la plancha, poke bowl, etc.).
 3. **Domingo (Comida y Batch Cooking)**: Comida rica de fin de semana (carbonara) y por la tarde sesión de 2 horas de Batch Cooking para dejar cocinados los tuppers de lunes a jueves.
 4. **Lunes a Jueves**: Almuerzos en tupper de microondas (3 minutos) en el trabajo y cenas rápidas de 10-15 minutos.

@@ -17,7 +17,8 @@ import unicodedata
 from datetime import date, timedelta
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(BASE_DIR, "data")
+# NUTRIPLAN_DATA_DIR permite validar una semana guardada en otra carpeta (scripts/semanas.py)
+DATA_DIR = os.environ.get("NUTRIPLAN_DATA_DIR") or os.path.join(BASE_DIR, "data")
 TOMAS = ("comida", "cena")
 
 
