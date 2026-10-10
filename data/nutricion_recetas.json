@@ -891,6 +891,259 @@
         "proteina_g": 42,
         "kcal": 780
       }
+    },
+    "yogur_griego_nueces_platano_canela": {
+      "raciones_lote": 3,
+      "lord_i": {
+        "proteina_g": 7,
+        "kcal": 230
+      },
+      "dona_y": {
+        "proteina_g": 15,
+        "kcal": 565
+      }
+    },
+    "manzana_asada_canela_nueces": {
+      "raciones_lote": 4,
+      "lord_i": {
+        "proteina_g": 2,
+        "kcal": 185
+      },
+      "dona_y": {
+        "proteina_g": 7,
+        "kcal": 380
+      }
+    },
+    "natillas_caseras_huevo": {
+      "raciones_lote": 6,
+      "lord_i": {
+        "proteina_g": 6,
+        "kcal": 170
+      },
+      "dona_y": {
+        "proteina_g": 7,
+        "kcal": 200
+      }
+    },
+    "arroz_con_leche_casero": {
+      "raciones_lote": 6,
+      "lord_i": {
+        "proteina_g": 5,
+        "kcal": 200
+      },
+      "dona_y": {
+        "proteina_g": 8,
+        "kcal": 330
+      }
+    },
+    "flan_huevo_casero": {
+      "raciones_lote": 6,
+      "lord_i": {
+        "proteina_g": 7,
+        "kcal": 180
+      },
+      "dona_y": {
+        "proteina_g": 7,
+        "kcal": 180
+      }
+    },
+    "macedonia_fruta_zumo_naranja": {
+      "raciones_lote": 6,
+      "lord_i": {
+        "proteina_g": 1,
+        "kcal": 110
+      },
+      "dona_y": {
+        "proteina_g": 5,
+        "kcal": 280
+      }
+    },
+    "fruta_chocolate_negro_fundido": {
+      "raciones_lote": 4,
+      "lord_i": {
+        "proteina_g": 2,
+        "kcal": 150
+      },
+      "dona_y": {
+        "proteina_g": 4,
+        "kcal": 250
+      }
+    },
+    "bizcocho_platano_avena_nueces": {
+      "raciones_lote": 10,
+      "lord_i": {
+        "proteina_g": 6,
+        "kcal": 230
+      },
+      "dona_y": {
+        "proteina_g": 11,
+        "kcal": 390
+      }
+    },
+    "pudin_chia_leche_mango": {
+      "raciones_lote": 3,
+      "lord_i": {
+        "proteina_g": 7,
+        "kcal": 180
+      },
+      "dona_y": {
+        "proteina_g": 14,
+        "kcal": 365
+      }
+    },
+    "compota_pera_manzana_yogur": {
+      "raciones_lote": 8,
+      "lord_i": {
+        "proteina_g": 5,
+        "kcal": 160
+      },
+      "dona_y": {
+        "proteina_g": 8,
+        "kcal": 320
+      }
+    },
+    "batido_platano_avena_cacahuete": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 6,
+        "kcal": 205
+      },
+      "dona_y": {
+        "proteina_g": 17,
+        "kcal": 470
+      }
+    },
+    "batido_proteico_platano_avena": {
+      "raciones_lote": 1,
+      "lord_i": {
+        "proteina_g": 0,
+        "kcal": 0
+      },
+      "dona_y": {
+        "proteina_g": 39,
+        "kcal": 600
+      }
+    },
+    "tostada_aguacate_huevo": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 5,
+        "kcal": 185
+      },
+      "dona_y": {
+        "proteina_g": 16,
+        "kcal": 450
+      }
+    },
+    "tostada_crema_cacahuete_platano": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 7,
+        "kcal": 190
+      },
+      "dona_y": {
+        "proteina_g": 14,
+        "kcal": 485
+      }
+    },
+    "mix_frutos_secos_fruta_deshidratada": {
+      "raciones_lote": 8,
+      "lord_i": {
+        "proteina_g": 4,
+        "kcal": 210
+      },
+      "dona_y": {
+        "proteina_g": 9,
+        "kcal": 360
+      }
+    },
+    "hummus_casero_crudites_pita": {
+      "raciones_lote": 4,
+      "lord_i": {
+        "proteina_g": 4,
+        "kcal": 120
+      },
+      "dona_y": {
+        "proteina_g": 13,
+        "kcal": 360
+      }
+    },
+    "queso_fresco_membrillo_nueces": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 7,
+        "kcal": 150
+      },
+      "dona_y": {
+        "proteina_g": 18,
+        "kcal": 410
+      }
+    },
+    "bocadillo_jamon_cocido_queso_tierno_tomate": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 0,
+        "kcal": 0
+      },
+      "dona_y": {
+        "proteina_g": 22,
+        "kcal": 400
+      }
+    },
+    "tortitas_avena_platano": {
+      "raciones_lote": 8,
+      "lord_i": {
+        "proteina_g": 8,
+        "kcal": 230
+      },
+      "dona_y": {
+        "proteina_g": 16,
+        "kcal": 450
+      }
+    },
+    "datiles_rellenos_cacahuete_chocolate": {
+      "raciones_lote": 5,
+      "lord_i": {
+        "proteina_g": 3,
+        "kcal": 190
+      },
+      "dona_y": {
+        "proteina_g": 8,
+        "kcal": 435
+      }
+    },
+    "barritas_avena_platano_frutos_secos": {
+      "raciones_lote": 10,
+      "lord_i": {
+        "proteina_g": 5,
+        "kcal": 190
+      },
+      "dona_y": {
+        "proteina_g": 10,
+        "kcal": 380
+      }
+    },
+    "bol_muesli_leche_platano_nueces": {
+      "raciones_lote": 4,
+      "lord_i": {
+        "proteina_g": 8,
+        "kcal": 300
+      },
+      "dona_y": {
+        "proteina_g": 17,
+        "kcal": 595
+      }
+    },
+    "tortitas_arroz_cacahuete_platano": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 5,
+        "kcal": 160
+      },
+      "dona_y": {
+        "proteina_g": 10,
+        "kcal": 390
+      }
     }
   }
 }

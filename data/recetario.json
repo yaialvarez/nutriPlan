@@ -5314,5 +5314,1235 @@
       "Si el lomo no viene adobado, frotarlo con el pimentón dulce, el orégano, ajo y sal yodada.",
       "Marcar los filetes en la misma sartén muy caliente con el resto del AOVE 2-3 minutos por cara hasta que estén dorados y jugosos; servir con el puré y los pimientos."
     ]
+  },
+  {
+    "id": "yogur_griego_nueces_platano_canela",
+    "nombre": "Yogur griego con nueces, plátano y canela",
+    "tipo": "postre",
+    "apto_lord_i": true,
+    "tiempo_minutos": 5,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Postre de montaje (5 min), sin cocinar",
+    "ingredientes": [
+      {
+        "item": "Yogur griego natural (sin azúcar)",
+        "cantidad": "3 unidades (125 g)",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Nueces peladas",
+        "cantidad": "45 g",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Plátano",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Canela molida",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 yogur griego con 15 g de nueces troceadas y media rodaja de plátano, con canela por encima. Sustituye a su fruta de la merienda.",
+      "proporciones": "~7 g de proteína. Nueces sin sal; media ración de postre."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 yogures griegos con 30 g de nueces, el plátano entero en rodajas y canela.",
+      "proporciones": "Ración doble de yogur y nueces para sumar grasa saludable y energía."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Repartir el yogur griego en cuencos.",
+      "Trocear las nueces y el plátano en rodajas y repartirlos por encima.",
+      "Espolvorear canela al gusto y servir frío."
+    ]
+  },
+  {
+    "id": "manzana_asada_canela_nueces",
+    "nombre": "Manzana asada con canela, pasas y nueces",
+    "tipo": "postre",
+    "apto_lord_i": true,
+    "tiempo_minutos": 12,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Postre de domingo (horno o microondas), aguanta 4 días en la nevera",
+    "ingredientes": [
+      {
+        "item": "Manzanas (Golden o Reineta)",
+        "cantidad": "4 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Nueces peladas",
+        "cantidad": "40 g",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Pasas sultanas",
+        "cantidad": "40 g",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Canela molida",
+        "cantidad": "1 cucharadita",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Mantequilla",
+        "cantidad": "20 g",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Yogur natural",
+        "cantidad": "2 unidades (para acompañar)",
+        "seccion": "Lácteos y leches"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 manzana asada con 10 g de nueces y unas pasas, sin yogur. Sustituye a su fruta de la merienda.",
+      "proporciones": "~2 g de proteína. Fruta cocinada con un poco de fruto seco."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 manzana asada con 20 g de nueces, pasas y 1 yogur natural por encima.",
+      "proporciones": "Añadir el yogur y el doble de nueces para llegar a sus calorías."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Descorazonar las manzanas sin llegar al fondo y hacer un corte superficial alrededor para que no revienten.",
+      "Rellenar el hueco con pasas, nueces troceadas, una pizca de canela y un trocito de mantequilla.",
+      "Hornear 25-30 minutos a 180 °C, o 6-7 minutos tapadas en el microondas a máxima potencia.",
+      "Servir templadas; guardar el resto en tupper en la nevera y recalentar 1 minuto."
+    ]
+  },
+  {
+    "id": "natillas_caseras_huevo",
+    "nombre": "Natillas caseras de huevo y vainilla",
+    "tipo": "postre",
+    "apto_lord_i": true,
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (lote para la semana, 5 días en nevera)",
+    "ingredientes": [
+      {
+        "item": "Leche entera",
+        "cantidad": "1 litro",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Huevos (yemas)",
+        "cantidad": "4 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Azúcar",
+        "cantidad": "70 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Maicena",
+        "cantidad": "25 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Extracto de vainilla",
+        "cantidad": "1 cucharadita",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Canela en rama y canela molida",
+        "cantidad": "1 rama + al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Galletas María",
+        "cantidad": "6 unidades",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 natilla (150 ml) con canela por encima, sin galleta.",
+      "proporciones": "~6 g de proteína. Postre lácteo moderado en azúcar; cuenta como su dulce del día."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 natilla (150 ml) con una galleta María clavada encima.",
+      "proporciones": "Añadir la galleta para sumar hidratos."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Calentar la leche con la rama de canela hasta que humee; retirar y dejar infusionar 5 minutos.",
+      "Batir las yemas con el azúcar y la maicena hasta que quede una crema lisa.",
+      "Verter la leche caliente poco a poco sobre las yemas sin dejar de remover.",
+      "Devolver todo al cazo y cocinar a fuego suave, removiendo siempre, hasta que espese (unos 5-7 minutos). Añadir la vainilla.",
+      "Repartir en 6 vasitos, dejar templar, tapar y enfriar en la nevera. Servir con canela y la galleta."
+    ]
+  },
+  {
+    "id": "arroz_con_leche_casero",
+    "nombre": "Arroz con leche casero con canela y limón",
+    "tipo": "postre",
+    "apto_lord_i": true,
+    "tiempo_minutos": 45,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (lote para la semana, 5 días en nevera)",
+    "ingredientes": [
+      {
+        "item": "Arroz redondo",
+        "cantidad": "150 g",
+        "seccion": "Legumbres y arroz"
+      },
+      {
+        "item": "Leche entera",
+        "cantidad": "1,2 litros",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Azúcar",
+        "cantidad": "80 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Canela en rama y canela molida",
+        "cantidad": "1 rama + al gusto",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Limón (piel)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Mantequilla",
+        "cantidad": "15 g",
+        "seccion": "Lácteos y leches"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 vasito pequeño (150 g) con canela.",
+      "proporciones": "~5 g de proteína. Dulce de la casa moderado en azúcar; una ración."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 vasito grande (250 g) con canela, con un chorrito de leche extra si lo quiere más cremoso.",
+      "proporciones": "Ración grande: suma hidratos y lácteo sin esfuerzo."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Infusionar la leche con la rama de canela y la piel de limón (solo la parte amarilla) 5 minutos a fuego suave.",
+      "Añadir el arroz lavado y cocinar a fuego muy suave 35-40 minutos removiendo a menudo para que no se pegue.",
+      "Cuando el arroz esté tierno y cremoso, añadir el azúcar y la mantequilla y cocinar 5 minutos más.",
+      "Retirar la canela y el limón, repartir en vasitos, enfriar y guardar tapado en la nevera. Servir con canela molida."
+    ]
+  },
+  {
+    "id": "flan_huevo_casero",
+    "nombre": "Flan de huevo casero al baño maría",
+    "tipo": "postre",
+    "apto_lord_i": true,
+    "tiempo_minutos": 50,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (lote para la semana, 5 días en nevera)",
+    "ingredientes": [
+      {
+        "item": "Huevos",
+        "cantidad": "4 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Leche entera",
+        "cantidad": "500 ml",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Azúcar",
+        "cantidad": "100 g (60 para el flan + 40 para el caramelo)",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Extracto de vainilla",
+        "cantidad": "1 cucharadita",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 flan individual.",
+      "proporciones": "~7 g de proteína (huevo y leche). Postre de comida real; una ración."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 flan individual, con un poco de nata montada o yogur griego si apetece.",
+      "proporciones": "Añadir nata o yogur griego para sumar calorías."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Hacer un caramelo claro con 40 g de azúcar y una cucharada de agua y repartirlo en 6 flaneras.",
+      "Batir los huevos con 60 g de azúcar, la leche y la vainilla sin que haga mucha espuma; colar.",
+      "Repartir en las flaneras, taparlas con papel de aluminio y hornear al baño maría 35-40 minutos a 170 °C hasta que cuajen.",
+      "Enfriar en la nevera al menos 4 horas y desmoldar al servir."
+    ]
+  },
+  {
+    "id": "macedonia_fruta_zumo_naranja",
+    "nombre": "Macedonia de fruta fresca con zumo de naranja y almendra",
+    "tipo": "postre",
+    "apto_lord_i": true,
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Postre fresco (hasta 2 días en nevera)",
+    "ingredientes": [
+      {
+        "item": "Naranjas",
+        "cantidad": "3 unidades (1 para zumo)",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Plátano",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Manzana",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pera",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Kiwi",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Uvas o fresas (según temporada)",
+        "cantidad": "200 g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Almendra laminada",
+        "cantidad": "40 g",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Hierbabuena fresca (opcional)",
+        "cantidad": "unas hojas",
+        "seccion": "Fruta y verdura"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 bol de macedonia (200 g) con su zumo, sin almendra.",
+      "proporciones": "~1 g de proteína. Fruta sin más: puede sustituir a su fruta de la merienda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 bol grande (300 g) con 20 g de almendra laminada por encima.",
+      "proporciones": "Añadir la almendra para sumar grasa saludable y calorías."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Pelar y trocear toda la fruta en dados del mismo tamaño.",
+      "Exprimir una naranja y mezclar el zumo con la fruta para que no se oxide; añadir la hierbabuena picada.",
+      "Reposar 10 minutos en la nevera. Servir y añadir la almendra laminada al momento para que siga crujiente."
+    ]
+  },
+  {
+    "id": "fruta_chocolate_negro_fundido",
+    "nombre": "Fresas y plátano con chocolate negro fundido",
+    "tipo": "postre",
+    "apto_lord_i": true,
+    "tiempo_minutos": 10,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Postre de fin de semana (10 min)",
+    "ingredientes": [
+      {
+        "item": "Chocolate negro (70-85 % cacao)",
+        "cantidad": "1 tableta (100 g)",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Fresas",
+        "cantidad": "250 g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Plátano",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Nueces peladas (opcional, para rebozar)",
+        "cantidad": "20 g",
+        "seccion": "Aperitivos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "150 g de fruta troceada con 15 g de chocolate fundido por encima.",
+      "proporciones": "~2 g de proteína. Chocolate negro en cantidad pequeña; cuenta como su dulce del día."
+    },
+    "adaptacion_dona_y": {
+      "plato": "150 g de fruta con 30 g de chocolate fundido y nuez picada por encima.",
+      "proporciones": "Doble de chocolate y nueces para sumar energía."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Fundir el chocolate troceado en el microondas a intervalos de 30 segundos removiendo entre uno y otro.",
+      "Lavar las fresas y cortar el plátano en rodajas gruesas.",
+      "Repartir la fruta en platos, regar con el chocolate fundido (o mojar cada pieza) y añadir la nuez picada."
+    ]
+  },
+  {
+    "id": "bizcocho_platano_avena_nueces",
+    "nombre": "Bizcocho de plátano, avena y nueces (sin azúcar añadido)",
+    "tipo": "postre",
+    "apto_lord_i": true,
+    "tiempo_minutos": 60,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (horno; aguanta 4 días tapado o se congela por porciones)",
+    "ingredientes": [
+      {
+        "item": "Plátanos muy maduros",
+        "cantidad": "4 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Copos de avena",
+        "cantidad": "200 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Huevos",
+        "cantidad": "3 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Yogur natural",
+        "cantidad": "1 unidad (125 g)",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Aceite de oliva virgen extra suave",
+        "cantidad": "60 ml",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Nueces peladas",
+        "cantidad": "60 g",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Levadura química (tipo Royal)",
+        "cantidad": "1 sobre (16 g)",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Canela molida y extracto de vainilla",
+        "cantidad": "1 cucharadita de cada",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 porción (80 g).",
+      "proporciones": "~6 g de proteína. Dulce casero sin azúcar añadido; una porción."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 porción grande (100 g) con un vaso de leche entera o un yogur.",
+      "proporciones": "Porción mayor y lácteo de acompañamiento para sumar calorías."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Precalentar el horno a 180 °C y forrar un molde alargado con papel de hornear.",
+      "Triturar los plátanos con los huevos, el yogur, el aceite, la canela y la vainilla.",
+      "Moler la mitad de la avena en la picadora; mezclarla con el resto de la avena y la levadura e incorporarla a la masa.",
+      "Añadir las nueces troceadas, verter en el molde y hornear 40-45 minutos hasta que un palillo salga limpio.",
+      "Enfriar sobre una rejilla y cortar en 10 porciones; guardar tapado o congelar por raciones."
+    ]
+  },
+  {
+    "id": "pudin_chia_leche_mango",
+    "nombre": "Pudin de chía con leche y mango",
+    "tipo": "postre",
+    "apto_lord_i": true,
+    "tiempo_minutos": 10,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Postre de montaje la noche anterior (5 días en nevera)",
+    "ingredientes": [
+      {
+        "item": "Semillas de chía",
+        "cantidad": "90 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Leche entera",
+        "cantidad": "750 ml",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Mango",
+        "cantidad": "1 unidad grande (o 300 g congelado)",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Extracto de vainilla",
+        "cantidad": "1 cucharadita",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Canela molida",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Medio vasito (chía con 125 ml de leche) con 50 g de mango por encima.",
+      "proporciones": "~7 g de proteína. Media ración; sustituye a su fruta de la merienda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "1 vasito entero (30 g de chía con 250 ml de leche) con 100 g de mango.",
+      "proporciones": "Ración completa: fibra, grasa buena y lácteo."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Mezclar la chía con la leche, la vainilla y la canela en un bote; remover bien.",
+      "Remover de nuevo a los 10 minutos para que no se formen grumos y dejar en la nevera toda la noche.",
+      "Pelar y trocear el mango y repartirlo por encima al servir."
+    ]
+  },
+  {
+    "id": "compota_pera_manzana_yogur",
+    "nombre": "Compota casera de pera y manzana con yogur",
+    "tipo": "postre",
+    "apto_lord_i": true,
+    "tiempo_minutos": 25,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (la compota aguanta 5 días en nevera)",
+    "ingredientes": [
+      {
+        "item": "Peras",
+        "cantidad": "4 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Manzanas",
+        "cantidad": "4 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Canela en rama",
+        "cantidad": "1 unidad",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Limón (zumo)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Yogur griego natural",
+        "cantidad": "4 unidades (125 g)",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Almendra laminada",
+        "cantidad": "40 g",
+        "seccion": "Aperitivos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "150 g de compota con 1 yogur natural, sin almendra.",
+      "proporciones": "~5 g de proteína. Fruta cocinada con lácteo; puede sustituir a su fruta de la merienda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "150 g de compota con 1 yogur griego y 15 g de almendra laminada.",
+      "proporciones": "Yogur griego y almendra para sumar grasa saludable y calorías."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Pelar y trocear las peras y las manzanas y ponerlas en un cazo con el zumo de limón, la canela y medio vaso de agua.",
+      "Cocinar tapado a fuego suave 20 minutos hasta que la fruta esté muy tierna; triturar o dejar en trozos.",
+      "Retirar la canela, enfriar y guardar en tupper. Servir fría con el yogur y la almendra por encima."
+    ]
+  },
+  {
+    "id": "batido_platano_avena_cacahuete",
+    "nombre": "Batido de plátano con leche, avena y crema de cacahuete",
+    "tipo": "tentempie",
+    "apto_lord_i": true,
+    "tiempo_minutos": 5,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Tentempié de media mañana o tarde (5 min, batidora)",
+    "ingredientes": [
+      {
+        "item": "Plátano",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Leche entera",
+        "cantidad": "500 ml",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Copos de avena",
+        "cantidad": "40 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Crema de cacahuete 100 % (sin sal ni azúcar)",
+        "cantidad": "20 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Canela molida",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Vaso pequeño: 150 ml de leche con 1 plátano y canela, sin avena ni cacahuete.",
+      "proporciones": "~6 g de proteína. Equivale a su fruta de la merienda, ideal los días de gimnasio."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Vaso grande: 300 ml de leche, 1 plátano, 40 g de avena y 20 g de crema de cacahuete.",
+      "proporciones": "Batido denso con avena y cacahuete para sumar ~470 kcal."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Poner en el vaso de la batidora la leche, el plátano troceado, la avena y la crema de cacahuete.",
+      "Batir 1 minuto hasta que quede cremoso; añadir canela al gusto y servir frío."
+    ]
+  },
+  {
+    "id": "batido_proteico_platano_avena",
+    "nombre": "Batido pautado enriquecido con plátano, avena y crema de cacahuete",
+    "tipo": "tentempie",
+    "apto_lord_i": false,
+    "tiempo_minutos": 5,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Tentempié diario (5 min, batidora); versión enriquecida del batido pautado",
+    "ingredientes": [
+      {
+        "item": "Proteína en polvo (la pautada, stock de despensa)",
+        "cantidad": "1 cacito (25 g)",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Leche entera",
+        "cantidad": "300 ml",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Plátano",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Copos de avena",
+        "cantidad": "30 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Crema de cacahuete 100 % (sin sal ni azúcar)",
+        "cantidad": "15 g",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "No indicado: lleva proteína en polvo. Su versión es el batido de plátano con leche, avena y crema de cacahuete.",
+      "proporciones": "Sin ración. Si quiere algo dulce, cualquier postre marcado como apto para los dos."
+    },
+    "adaptacion_dona_y": {
+      "plato": "El batido pautado de siempre, pero con leche entera en vez de agua, plátano, avena y crema de cacahuete.",
+      "proporciones": "Sustituye al batido pautado: pasa de ~150 a ~600 kcal con la misma proteína en polvo."
+    },
+    "seguridad_medica": "Sin miel, sin picante, sin berenjena, aceitunas, quesos fuertes ni marisco. Pensado solo para Doña.Y (ver adaptación de Lord.I).",
+    "pasos_preparacion": [
+      "Batir la leche con la proteína en polvo, el plátano, la avena y la crema de cacahuete 1 minuto.",
+      "Tomar en el momento (la avena espesa si se deja reposar)."
+    ]
+  },
+  {
+    "id": "tostada_aguacate_huevo",
+    "nombre": "Tostada integral con aguacate y huevo cocido",
+    "tipo": "tentempie",
+    "apto_lord_i": true,
+    "tiempo_minutos": 10,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Tentempié de media mañana o fin de semana (10 min)",
+    "ingredientes": [
+      {
+        "item": "Pan integral de hogaza o rústico",
+        "cantidad": "4 rebanadas",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Aguacate",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Huevos",
+        "cantidad": "2 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Limón (zumo)",
+        "cantidad": "medio",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "1 cucharada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Semillas de sésamo tostado",
+        "cantidad": "1 cucharadita",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Sal yodada y pimienta negra",
+        "cantidad": "una pizca",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 tostada con un cuarto de aguacate aplastado, limón y sésamo, sin huevo.",
+      "proporciones": "~5 g de proteína. Media ración sin huevo, para no sumar proteína a sus tomas principales."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 tostadas con medio aguacate, 1 huevo cocido en rodajas, AOVE y sésamo.",
+      "proporciones": "Ración completa con huevo y AOVE para sumar ~450 kcal."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Cocer los huevos 10 minutos, enfriar en agua fría y pelar.",
+      "Tostar el pan. Aplastar el aguacate con el zumo de limón, sal yodada y pimienta.",
+      "Untar el aguacate en las tostadas, poner el huevo en rodajas, un hilo de AOVE y el sésamo."
+    ]
+  },
+  {
+    "id": "tostada_crema_cacahuete_platano",
+    "nombre": "Tostada con crema de cacahuete y plátano",
+    "tipo": "tentempie",
+    "apto_lord_i": true,
+    "tiempo_minutos": 5,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Tentempié de media mañana o tarde (5 min, tostadora)",
+    "ingredientes": [
+      {
+        "item": "Pan integral de hogaza o rústico",
+        "cantidad": "3 rebanadas",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Crema de cacahuete 100 % (sin sal ni azúcar)",
+        "cantidad": "45 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Plátano",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Canela molida",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 tostada con 15 g de crema de cacahuete y unas rodajas de plátano.",
+      "proporciones": "~7 g de proteína. Una tostada en lugar de su fruta de la merienda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 tostadas con 30 g de crema de cacahuete, el plátano en rodajas y canela.",
+      "proporciones": "Doble tostada y crema para sumar ~485 kcal."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Tostar el pan y untarlo con la crema de cacahuete mientras está caliente.",
+      "Cubrir con el plátano en rodajas y espolvorear canela."
+    ]
+  },
+  {
+    "id": "mix_frutos_secos_fruta_deshidratada",
+    "nombre": "Mezcla de frutos secos naturales con orejones y pasas",
+    "tipo": "tentempie",
+    "apto_lord_i": true,
+    "tiempo_minutos": 5,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Tentempié de bolsillo (se prepara el domingo en botes para la semana)",
+    "ingredientes": [
+      {
+        "item": "Nueces peladas",
+        "cantidad": "150 g",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Almendras naturales (sin sal)",
+        "cantidad": "150 g",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Avellanas o anacardos naturales (sin sal)",
+        "cantidad": "100 g",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Orejones de albaricoque",
+        "cantidad": "100 g",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Pasas sultanas",
+        "cantidad": "80 g",
+        "seccion": "Aperitivos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Un puñado pequeño (20 g) de nueces y almendras con una pieza de fruta fresca.",
+      "proporciones": "~4 g de proteína. Frutos secos sin sal en poca cantidad, con su fruta de siempre."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Un puñado grande (50 g) de frutos secos con 25 g de orejones y pasas.",
+      "proporciones": "Ración de 75 g, muy densa en calorías (~360 kcal) y fácil de llevar."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Mezclar todos los frutos secos y la fruta deshidratada en un bote grande.",
+      "Repartir en bolsitas o botes pequeños de 75 g (y de 20 g para la ración pequeña) para llevar al trabajo."
+    ]
+  },
+  {
+    "id": "hummus_casero_crudites_pita",
+    "nombre": "Hummus casero con zanahoria, pepino y pan de pita",
+    "tipo": "tentempie",
+    "apto_lord_i": true,
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (el hummus aguanta 4 días en nevera)",
+    "ingredientes": [
+      {
+        "item": "Garbanzos cocidos (bote)",
+        "cantidad": "1 bote (400 g)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Tahini (crema de sésamo)",
+        "cantidad": "2 cucharadas",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Limón (zumo)",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo",
+        "cantidad": "1 diente pequeño",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Comino molido y pimentón dulce",
+        "cantidad": "media cucharadita de cada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "3 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Zanahoria",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pepino",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pan de pita",
+        "cantidad": "4 unidades",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Sal yodada",
+        "cantidad": "una pizca",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "50 g de hummus con bastones de zanahoria y pepino, sin pita.",
+      "proporciones": "~4 g de proteína. Hummus con poca sal y verdura cruda; sin pan para no sumar hidratos a la cena."
+    },
+    "adaptacion_dona_y": {
+      "plato": "100 g de hummus con 1 pan de pita tostado y bastones de zanahoria y pepino.",
+      "proporciones": "Ración doble de hummus y pita para sumar ~360 kcal."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Escurrir los garbanzos (reservar un poco del líquido) y triturarlos con el tahini, el zumo de limón, el ajo, el comino, el pimentón, 2 cucharadas de AOVE y una pizca de sal hasta que quede una crema fina; aligerar con el líquido reservado.",
+      "Guardar en un tupper con un hilo de AOVE por encima.",
+      "Cortar la zanahoria y el pepino en bastones; tostar la pita en la tostadora y cortarla en triángulos al servir."
+    ]
+  },
+  {
+    "id": "queso_fresco_membrillo_nueces",
+    "nombre": "Queso fresco con dulce de membrillo y nueces",
+    "tipo": "tentempie",
+    "apto_lord_i": true,
+    "tiempo_minutos": 5,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Tentempié de montaje (5 min), sin cocinar",
+    "ingredientes": [
+      {
+        "item": "Queso fresco de Burgos",
+        "cantidad": "2 tarrinas (250 g)",
+        "seccion": "Quesos suaves"
+      },
+      {
+        "item": "Dulce de membrillo",
+        "cantidad": "1 bloque pequeño (200 g)",
+        "seccion": "Conservas y despensa"
+      },
+      {
+        "item": "Nueces peladas",
+        "cantidad": "40 g",
+        "seccion": "Aperitivos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "60 g de queso fresco con 20 g de membrillo y 2 nueces.",
+      "proporciones": "~7 g de proteína. Queso suave en cantidad pequeña; cuenta como su dulce del día."
+    },
+    "adaptacion_dona_y": {
+      "plato": "125 g de queso fresco con 40 g de membrillo y 15 g de nueces.",
+      "proporciones": "Ración doble de queso y membrillo para sumar ~410 kcal."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Cortar el queso fresco en dados o rodajas y el membrillo en láminas.",
+      "Montar en un plato alternando queso y membrillo y repartir las nueces por encima."
+    ]
+  },
+  {
+    "id": "bocadillo_jamon_cocido_queso_tierno_tomate",
+    "nombre": "Bocadillo pequeño de jamón cocido, queso tierno y tomate",
+    "tipo": "tentempie",
+    "apto_lord_i": false,
+    "tiempo_minutos": 5,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Tentempié de media mañana (5 min); llevar al trabajo",
+    "ingredientes": [
+      {
+        "item": "Pan de barra integral o rústica",
+        "cantidad": "1 barra pequeña (160 g)",
+        "seccion": "Panadería y masas"
+      },
+      {
+        "item": "Jamón cocido extra (bajo en sal)",
+        "cantidad": "80 g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Queso tierno en lonchas",
+        "cantidad": "60 g",
+        "seccion": "Quesos suaves"
+      },
+      {
+        "item": "Tomate",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Aceite de oliva virgen extra",
+        "cantidad": "1 cucharada",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "No indicado: embutido y sal extra sobre sus tomas principales. Su merienda sigue siendo fruta.",
+      "proporciones": "Sin ración. Si quiere algo dulce, cualquier postre marcado como apto para los dos."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Media barra (80 g) con 40 g de jamón cocido, 30 g de queso tierno, tomate en rodajas y AOVE.",
+      "proporciones": "Bocadillo de ~400 kcal y 22 g de proteína para días de más hambre o gimnasio."
+    },
+    "seguridad_medica": "Sin miel, sin picante, sin berenjena, aceitunas, quesos fuertes ni marisco. Pensado solo para Doña.Y (ver adaptación de Lord.I).",
+    "pasos_preparacion": [
+      "Abrir el pan, frotar o poner el tomate en rodajas y regar con AOVE.",
+      "Rellenar con el jamón cocido y el queso tierno; envolver en papel si es para llevar."
+    ]
+  },
+  {
+    "id": "tortitas_avena_platano",
+    "nombre": "Tortitas de avena y plátano con yogur y fruta",
+    "tipo": "tentempie",
+    "apto_lord_i": true,
+    "tiempo_minutos": 20,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (lote; aguantan 3 días en nevera y se recalientan en tostadora)",
+    "ingredientes": [
+      {
+        "item": "Copos de avena",
+        "cantidad": "150 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Plátanos maduros",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Huevos",
+        "cantidad": "3 unidades",
+        "seccion": "Huevos"
+      },
+      {
+        "item": "Leche entera",
+        "cantidad": "150 ml",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Levadura química (tipo Royal)",
+        "cantidad": "1 cucharadita",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Canela molida y extracto de vainilla",
+        "cantidad": "1 cucharadita de cada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Aceite de oliva virgen extra suave",
+        "cantidad": "1 cucharada",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Yogur griego natural",
+        "cantidad": "2 unidades (125 g)",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Fresas, arándanos o plátano para acompañar",
+        "cantidad": "200 g",
+        "seccion": "Fruta y verdura"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 tortitas con fruta fresca por encima, sin yogur.",
+      "proporciones": "~8 g de proteína. Dos tortitas en lugar de su fruta de la merienda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "3 tortitas con 1 yogur griego y fruta por encima.",
+      "proporciones": "Tortitas más yogur griego para sumar ~450 kcal."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Triturar la avena con los plátanos, los huevos, la leche, la levadura, la canela y la vainilla hasta tener una masa espesa; reposar 5 minutos.",
+      "Hacer tortitas pequeñas (unas 8) en sartén antiadherente con unas gotas de AOVE, 2 minutos por cara a fuego medio.",
+      "Servir con el yogur y la fruta; guardar el resto en tupper y recalentar en la tostadora."
+    ]
+  },
+  {
+    "id": "datiles_rellenos_cacahuete_chocolate",
+    "nombre": "Dátiles rellenos de crema de cacahuete y chocolate negro",
+    "tipo": "tentempie",
+    "apto_lord_i": true,
+    "tiempo_minutos": 10,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Tentempié de domingo (se preparan y aguantan toda la semana en la nevera)",
+    "ingredientes": [
+      {
+        "item": "Dátiles Medjool (o deglet nour grandes)",
+        "cantidad": "20 unidades",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Crema de cacahuete 100 % (sin sal ni azúcar)",
+        "cantidad": "100 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Chocolate negro (70-85 % cacao)",
+        "cantidad": "50 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Sal yodada en escamas (opcional)",
+        "cantidad": "una pizca",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 dátiles rellenos.",
+      "proporciones": "~3 g de proteína. Dulce natural en cantidad pequeña; cuenta como su dulce del día."
+    },
+    "adaptacion_dona_y": {
+      "plato": "4 dátiles rellenos con chocolate por encima.",
+      "proporciones": "Ración de 4: ~435 kcal muy densas y fáciles de llevar."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Abrir los dátiles por un lado y quitar el hueso.",
+      "Rellenar cada uno con una cucharadita de crema de cacahuete.",
+      "Fundir el chocolate en el microondas a intervalos de 30 segundos y regar los dátiles; enfriar en la nevera 15 minutos y guardar en tupper."
+    ]
+  },
+  {
+    "id": "barritas_avena_platano_frutos_secos",
+    "nombre": "Barritas caseras de avena, plátano y frutos secos",
+    "tipo": "tentempie",
+    "apto_lord_i": true,
+    "tiempo_minutos": 35,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Batch Cooking domingo (horno; 10 barritas para la semana, o congelar)",
+    "ingredientes": [
+      {
+        "item": "Copos de avena",
+        "cantidad": "250 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Plátanos muy maduros",
+        "cantidad": "3 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Dátiles deshuesados",
+        "cantidad": "120 g",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Nueces y almendras naturales",
+        "cantidad": "100 g",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Semillas de girasol o calabaza (sin sal)",
+        "cantidad": "40 g",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Crema de cacahuete 100 % (sin sal ni azúcar)",
+        "cantidad": "60 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Aceite de oliva virgen extra suave",
+        "cantidad": "2 cucharadas",
+        "seccion": "Condimentos"
+      },
+      {
+        "item": "Canela molida",
+        "cantidad": "1 cucharadita",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "1 barrita.",
+      "proporciones": "~5 g de proteína. Una barrita sin azúcar añadido en lugar de su fruta de la merienda, los días de gimnasio."
+    },
+    "adaptacion_dona_y": {
+      "plato": "2 barritas (ideal una a media mañana y otra a media tarde).",
+      "proporciones": "Dos barritas suman ~380 kcal de avena, fruto seco y fruta."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Precalentar el horno a 180 °C y forrar una bandeja pequeña con papel de hornear.",
+      "Triturar los plátanos con los dátiles, la crema de cacahuete y el aceite hasta tener una pasta.",
+      "Mezclar la pasta con la avena, los frutos secos troceados, las semillas y la canela; extender en la bandeja apretando bien (1,5 cm de grosor).",
+      "Hornear 25 minutos hasta que los bordes estén dorados; enfriar del todo antes de cortar en 10 barritas y guardar en tupper."
+    ]
+  },
+  {
+    "id": "bol_muesli_leche_platano_nueces",
+    "nombre": "Bol de muesli con leche entera, plátano y nueces",
+    "tipo": "tentempie",
+    "apto_lord_i": true,
+    "tiempo_minutos": 5,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Tentempié de montaje (5 min), sin cocinar",
+    "ingredientes": [
+      {
+        "item": "Muesli sin azúcares añadidos",
+        "cantidad": "1 paquete (500 g)",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Leche entera",
+        "cantidad": "1 litro",
+        "seccion": "Lácteos y leches"
+      },
+      {
+        "item": "Plátano",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Nueces peladas",
+        "cantidad": "30 g",
+        "seccion": "Aperitivos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Bol pequeño: 30 g de muesli con 150 ml de leche y media pieza de fruta.",
+      "proporciones": "~8 g de proteína. Bol pequeño en lugar de su fruta de la merienda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Bol grande: 60 g de muesli con 250 ml de leche entera, 1 plátano y 15 g de nueces.",
+      "proporciones": "Bol completo de ~595 kcal; muy útil los días en que se queda corta."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Poner el muesli en un bol y cubrir con la leche fría (o templada 1 minuto en el microondas).",
+      "Añadir el plátano en rodajas y las nueces troceadas."
+    ]
+  },
+  {
+    "id": "tortitas_arroz_cacahuete_platano",
+    "nombre": "Tortitas de arroz con crema de cacahuete y plátano",
+    "tipo": "tentempie",
+    "apto_lord_i": true,
+    "tiempo_minutos": 5,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Tentempié de bolsillo (5 min), sin cocinar",
+    "ingredientes": [
+      {
+        "item": "Tortitas de arroz o maíz (sin sal)",
+        "cantidad": "1 paquete",
+        "seccion": "Aperitivos"
+      },
+      {
+        "item": "Crema de cacahuete 100 % (sin sal ni azúcar)",
+        "cantidad": "45 g",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Plátano",
+        "cantidad": "1 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Canela molida",
+        "cantidad": "al gusto",
+        "seccion": "Condimentos"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 tortitas de arroz con 15 g de crema de cacahuete.",
+      "proporciones": "~5 g de proteína. Picoteo crujiente y sin sal en lugar de su fruta de la merienda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "3 tortitas de arroz con 30 g de crema de cacahuete y el plátano en rodajas.",
+      "proporciones": "Tres tortitas con crema y plátano para sumar ~390 kcal."
+    },
+    "seguridad_medica": "Comida real sin suplementos; sin miel; sin picante; sin frutos secos salados; sin berenjena, aceitunas, quesos fuertes ni marisco. Apto para los dos.",
+    "pasos_preparacion": [
+      "Untar las tortitas con la crema de cacahuete.",
+      "Cubrir con el plátano en rodajas y canela; comer al momento para que no se ablanden."
+    ]
   }
 ]

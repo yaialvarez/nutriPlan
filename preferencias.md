@@ -53,7 +53,7 @@ Disponemos en casa del siguiente equipamiento, que la IA debe aprovechar estrat�
 - **Desayuno habitual de Lord.I:** Avena con leche y un toque de extracto de vainilla.
 - **Desayuno habitual de Doña.Y:** Batido proteico pautado y desayuno a su elección.
 - **Regla de la lista de compra:** La lista de la compra semanal se centra **estrictamente en Comidas y Cenas** planificadas. Los ingredientes de desayuno (avena, leche, vainilla) se gestionan como compras de despensa esporádicas cuando se agotan.
-- **Postres y picoteo:** incluir fruta, yogur y postres comprados o de muy poca elaboración. Tentempiés sencillos para Doña.Y (frutos secos, tostadas, batido con plátano) que le ayuden a llegar a sus calorías.
+- **Postres y picoteo:** incluir fruta, yogur y postres comprados o de muy poca elaboración. Tentempiés sencillos para Doña.Y (frutos secos, tostadas, batido con plátano) que le ayuden a llegar a sus calorías. El recetario tiene recetas de tipo `postre` y `tentempie`; las marcadas con `apto_lord_i: false` (proteína en polvo, embutido, sal) son solo para Doña.Y, y en las demás la ración de Lord.I sustituye a su fruta de la merienda, nunca se suma.
 
 ---
 

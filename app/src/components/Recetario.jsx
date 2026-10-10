@@ -4,6 +4,9 @@ import { Search, Clock, BookOpen, ChevronRight } from 'lucide-react';
 const FILTROS = [
   { id: 'comida', label: 'Comidas', test: (r) => r.tipo === 'comida' },
   { id: 'cena', label: 'Cenas', test: (r) => r.tipo === 'cena' },
+  { id: 'postre', label: 'Postres', test: (r) => r.tipo === 'postre' },
+  { id: 'tentempie', label: 'Tentempiés', test: (r) => r.tipo === 'tentempie' },
+  { id: 'ambos', label: 'Aptos para los dos', test: (r) => r.apto_lord_i !== false },
   { id: 'tupper', label: 'Apto tupper', test: (r) => r.apto_batch_cooking },
   { id: 'rapido', label: 'Rápido (≤20 min)', test: (r) => r.tiempo_minutos <= 20 },
   { id: 'batch', label: 'Batch domingo', test: (r) => /batch/i.test(r.origen_cocina || '') },
@@ -85,7 +88,8 @@ export default function Recetario({ recetarioData, nutricion, menuData, onSelect
               <div className="min-w-0">
                 <div className="font-bold text-slate-900 leading-snug">{r.nombre}</div>
                 <div className="flex items-center gap-x-3 gap-y-1 flex-wrap text-xs text-slate-600 mt-1.5">
-                  <span className="capitalize font-semibold">{r.tipo}</span>
+                  <span className="capitalize font-semibold">{r.tipo === 'tentempie' ? 'tentempié' : r.tipo}</span>
+                  {r.apto_lord_i === false && <span className="text-rose-700 font-semibold">Solo Doña.Y</span>}
                   <span className="inline-flex items-center gap-1">
                     <Clock className="w-3.5 h-3.5" />
                     {r.tiempo_minutos} min
@@ -95,7 +99,9 @@ export default function Recetario({ recetarioData, nutricion, menuData, onSelect
                 </div>
                 {n && (
                   <div className="text-xs text-slate-500 mt-1">
-                    Lord.I ~{n.lord_i.proteina_g} g prot / {n.lord_i.kcal} kcal · Doña.Y ~{n.dona_y.proteina_g} g / {n.dona_y.kcal} kcal
+                    {r.apto_lord_i === false
+                      ? `Doña.Y ~${n.dona_y.proteina_g} g prot / ${n.dona_y.kcal} kcal`
+                      : `Lord.I ~${n.lord_i.proteina_g} g prot / ${n.lord_i.kcal} kcal · Doña.Y ~${n.dona_y.proteina_g} g / ${n.dona_y.kcal} kcal`}
                   </div>
                 )}
               </div>
