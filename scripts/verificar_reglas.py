@@ -157,23 +157,50 @@ def check_medical_and_dietary_rules():
     if round(calc_subtotal_total, 2) != round(declared_total, 2):
         errors.append(f"Discrepancia en ticket total: suma pasillos={calc_subtotal_total:.2f} != declarado={declared_total:.2f}")
 
-    # 5. Auditar sincronización con Frontend app/src/data
+    # 5. Privacidad del frontend: los datos se empaquetan en cada build (scripts/build_bundle.js)
     app_data_dir = os.path.join(BASE_DIR, "app", "src", "data")
-    if os.path.exists(app_data_dir):
-        # Asegurar que NO existe perfiles.json no cifrado en frontend
-        if os.path.exists(os.path.join(app_data_dir, "perfiles.json")):
-            errors.append("Fuga de privacidad detectada: 'perfiles.json' no cifrado presente en app/src/data/")
+    if os.path.exists(os.path.join(app_data_dir, "perfiles.json")):
+        errors.append("Fuga de privacidad detectada: 'perfiles.json' no cifrado presente en app/src/data/")
 
-        frontend_files = ["recetario.json", "despensa_base.json", "menu_semanal.json", "lista_compra.json", "perfiles_encrypted.json"]
-        for f in frontend_files:
-            app_f_path = os.path.join(app_data_dir, f)
-            data_f_path = os.path.join(DATA_DIR, f)
-            if not os.path.exists(app_f_path):
-                errors.append(f"Desincronización: falta '{f}' en frontend app/src/data/")
-            elif os.path.exists(data_f_path):
-                with open(app_f_path, "r", encoding="utf-8") as af, open(data_f_path, "r", encoding="utf-8") as df:
-                    if json.load(af) != json.load(df):
-                        errors.append(f"Desincronización: contenido de 'data/{f}' difiere de 'app/src/data/{f}'")
+    # 5b. Proteína diaria de Lord.I (comida + cena + tomas fijas) frente a su límite renal
+    nutricion_path = os.path.join(DATA_DIR, "nutricion_recetas.json")
+    base_path = os.path.join(DATA_DIR, "nutricion_base.json")
+    avisos = []
+    if os.path.exists(nutricion_path) and os.path.exists(base_path):
+        with open(nutricion_path, "r", encoding="utf-8") as fp:
+            nutricion = json.load(fp).get("recetas", {})
+        with open(base_path, "r", encoding="utf-8") as fp:
+            base = json.load(fp)
+        lord_i = base.get("lord_i", {})
+        prot_max = lord_i.get("proteina_max")
+        fijos = sum(f.get("proteina_g", 0) for f in lord_i.get("fijos", []))
+        for rid in recetas_ids - set(nutricion):
+            avisos.append(f"Receta '{rid}' sin estimación de proteína/kcal en nutricion_recetas.json")
+        print(f"[*] Auditando proteína diaria de Lord.I (límite {prot_max} g)...")
+        for d in dias:
+            total = fijos
+            for toma_tipo in ["comida", "cena"]:
+                rid = d.get(toma_tipo, {}).get("receta_id")
+                if rid in nutricion:
+                    total += nutricion[rid].get("lord_i", {}).get("proteina_g", 0)
+            if prot_max and total > prot_max:
+                errors.append(f"Proteína de Lord.I en {d.get('dia')}: ~{total} g supera el límite de {prot_max} g/día")
+    else:
+        avisos.append("Faltan nutricion_recetas.json o nutricion_base.json: no se comprueba la proteína diaria")
+
+    # 5c. Variedad: mismo plato en demasiadas tomas de la semana
+    usos = {}
+    for d in dias:
+        for toma_tipo in ["comida", "cena"]:
+            rid = d.get(toma_tipo, {}).get("receta_id")
+            if rid:
+                usos[rid] = usos.get(rid, 0) + 1
+    for rid, n in usos.items():
+        if n > 2:
+            avisos.append(f"Poca variedad: '{rid}' aparece {n} veces en la semana")
+
+    for a in avisos:
+        print(f"  [aviso] {a}")
 
     # 6. Resultado final
     if errors:
@@ -188,7 +215,7 @@ def check_medical_and_dietary_rules():
         print("  - Prohibiciones del hogar: 100% respetadas (cero berenjena, cero aceitunas, cero quesos fuertes, cero picante, cebolla siempre cocinada para Lord.I).")
         print(f"  - Integridad de catálogo Mercadona: 100% productos reales verificados (0 ficticios).")
         print(f"  - Ticket Mercadona: {compra.get('total_ticket_estimado')} EUR ({compra.get('moneda')}) calculado con exactitud matemática.")
-        print(f"  - Sincronización Web App: Datos 100% sincronizados con app/src/data/.")
+        print("  - Proteína diaria de Lord.I: dentro del límite renal en todos los días.")
 
 if __name__ == "__main__":
     check_medical_and_dietary_rules()

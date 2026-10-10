@@ -43,16 +43,18 @@ jobs:
           cd app
           npm ci
 
-      - name: Sincronizar datos y compilar aplicación
+      - name: Validar reglas médicas, proteína y lista de la compra
+        run: python scripts/verificar_reglas.py
+
+      - name: Empaquetar datos cifrados y compilar aplicación
+        env:
+          APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
         run: |
-          mkdir -p app/src/data
-          cp data/perfiles_encrypted.json app/src/data/
-          cp data/recetario.json app/src/data/
-          cp data/despensa_base.json app/src/data/
-          cp data/menu_semanal.json app/src/data/
-          cp data/lista_compra.json app/src/data/
           cd app
           npm run build
+
+      - name: Auditar que el JS publicado no filtra datos personales
+        run: python scripts/audit_bundle.py
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v4

@@ -1,0 +1,302 @@
+{
+  "_nota": "Estimaciones por ración según las porciones descritas en cada receta (tablas de composición tipo BEDCA). Orientativas, no sustituyen consejo médico.",
+  "recetas": {
+    "guiso_lentejas_verduras": {
+      "raciones_lote": 4,
+      "lord_i": {
+        "proteina_g": 35,
+        "kcal": 540
+      },
+      "dona_y": {
+        "proteina_g": 32,
+        "kcal": 600
+      }
+    },
+    "pollo_curry_suave_arroz": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 52,
+        "kcal": 660
+      },
+      "dona_y": {
+        "proteina_g": 48,
+        "kcal": 770
+      }
+    },
+    "pure_calabacin_dados_pollo": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 50,
+        "kcal": 520
+      },
+      "dona_y": {
+        "proteina_g": 50,
+        "kcal": 680
+      }
+    },
+    "chili_suave_ternera_arroz": {
+      "raciones_lote": 3,
+      "lord_i": {
+        "proteina_g": 45,
+        "kcal": 470
+      },
+      "dona_y": {
+        "proteina_g": 42,
+        "kcal": 560
+      }
+    },
+    "fajitas_suaves_pollo_pimientos": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 55,
+        "kcal": 680
+      },
+      "dona_y": {
+        "proteina_g": 53,
+        "kcal": 900
+      }
+    },
+    "carbonara_adaptada": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 39,
+        "kcal": 810
+      },
+      "dona_y": {
+        "proteina_g": 50,
+        "kcal": 1020
+      }
+    },
+    "poke_bowl_salmon_fresco": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 43,
+        "kcal": 900
+      },
+      "dona_y": {
+        "proteina_g": 43,
+        "kcal": 1080
+      }
+    },
+    "pizza_casera_artesanal": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 63,
+        "kcal": 1060
+      },
+      "dona_y": {
+        "proteina_g": 63,
+        "kcal": 1060
+      }
+    },
+    "tortilla_patata_cebolla_confitada": {
+      "raciones_lote": 3,
+      "lord_i": {
+        "proteina_g": 21,
+        "kcal": 720
+      },
+      "dona_y": {
+        "proteina_g": 23,
+        "kcal": 750
+      }
+    },
+    "salmon_plancha_pure_patata_zanahorias": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 45,
+        "kcal": 650
+      },
+      "dona_y": {
+        "proteina_g": 48,
+        "kcal": 870
+      }
+    },
+    "hamburguesa_casera_ternera_patatas_gajo": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 55,
+        "kcal": 910
+      },
+      "dona_y": {
+        "proteina_g": 58,
+        "kcal": 1080
+      }
+    },
+    "cuscus_pollo_verduras_salteadas": {
+      "raciones_lote": 4,
+      "lord_i": {
+        "proteina_g": 34,
+        "kcal": 400
+      },
+      "dona_y": {
+        "proteina_g": 33,
+        "kcal": 440
+      }
+    },
+    "sufle_pastel_carne_patata": {
+      "raciones_lote": 4,
+      "lord_i": {
+        "proteina_g": 30,
+        "kcal": 570
+      },
+      "dona_y": {
+        "proteina_g": 32,
+        "kcal": 690
+      }
+    },
+    "curry_japones_kare_raisu_pollo": {
+      "raciones_lote": 4,
+      "lord_i": {
+        "proteina_g": 34,
+        "kcal": 500
+      },
+      "dona_y": {
+        "proteina_g": 34,
+        "kcal": 660
+      }
+    },
+    "onigiris_arroz_atun_mayonesa": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 17,
+        "kcal": 380
+      },
+      "dona_y": {
+        "proteina_g": 20,
+        "kcal": 450
+      }
+    },
+    "ramen_casero_caldo_pollo_fideos": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 46,
+        "kcal": 580
+      },
+      "dona_y": {
+        "proteina_g": 44,
+        "kcal": 630
+      }
+    },
+    "alubias_verdes_patata_zanahoria_huevo": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 22,
+        "kcal": 540
+      },
+      "dona_y": {
+        "proteina_g": 18,
+        "kcal": 540
+      }
+    },
+    "fideos_salsa_cacahuete_soja_pollo": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 52,
+        "kcal": 680
+      },
+      "dona_y": {
+        "proteina_g": 56,
+        "kcal": 820
+      }
+    },
+    "merluza_rebozada_dorada_patatas": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 44,
+        "kcal": 640
+      },
+      "dona_y": {
+        "proteina_g": 47,
+        "kcal": 790
+      }
+    },
+    "arroz_asiatico_salteado_pollo": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 52,
+        "kcal": 660
+      },
+      "dona_y": {
+        "proteina_g": 53,
+        "kcal": 750
+      }
+    },
+    "muslitos_pollo_asados_al_limon": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 33,
+        "kcal": 600
+      },
+      "dona_y": {
+        "proteina_g": 37,
+        "kcal": 700
+      }
+    },
+    "filetes_dorados_sarten_acero_guarnicion": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 37,
+        "kcal": 330
+      },
+      "dona_y": {
+        "proteina_g": 49,
+        "kcal": 580
+      }
+    },
+    "albondigas_caseras_ternera_salsa_espanola": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 35,
+        "kcal": 630
+      },
+      "dona_y": {
+        "proteina_g": 44,
+        "kcal": 790
+      }
+    },
+    "garbanzos_salteados_espinacas_jamon_huevo": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 34,
+        "kcal": 530
+      },
+      "dona_y": {
+        "proteina_g": 34,
+        "kcal": 530
+      }
+    },
+    "espaguetis_tomate_casero_bacon": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 22,
+        "kcal": 650
+      },
+      "dona_y": {
+        "proteina_g": 31,
+        "kcal": 830
+      }
+    },
+    "sandwiches_calientes_jamon_queso_tierno": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 26,
+        "kcal": 500
+      },
+      "dona_y": {
+        "proteina_g": 26,
+        "kcal": 570
+      }
+    },
+    "jamoncitos_pollo_asados_con_patatas": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 35,
+        "kcal": 670
+      },
+      "dona_y": {
+        "proteina_g": 36,
+        "kcal": 710
+      }
+    }
+  }
+}
