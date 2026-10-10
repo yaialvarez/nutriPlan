@@ -44,18 +44,25 @@ export function menuCaducado(menu, ref = hoy()) {
   return ref.getTime() > fechas[fechas.length - 1].getTime();
 }
 
-/** Clave que identifica la semana publicada; cambia al publicar un menú nuevo. */
+/**
+ * Clave que identifica la semana publicada; cambia al publicar un menú nuevo.
+ * null mientras no hay menú (portal bloqueado o cargando).
+ */
 export function claveSemana(menu) {
-  return menu?.fecha_inicio || menu?.semana || 'sin-fecha';
+  if (!menu) return null;
+  return menu.fecha_inicio || menu.semana || 'sin-fecha';
 }
 
 /**
  * Estado persistido en localStorage y ligado a la semana: al publicarse un menú
  * nuevo la clave cambia y el estado arranca vacío. Borra las semanas antiguas.
+ * Con semana null (portal bloqueado) no lee ni escribe nada, para no borrar el
+ * estado de la semana en curso antes de desbloquear.
  */
 export function useEstadoSemanal(nombre, semana, inicial) {
-  const storageKey = `nutriplan_${nombre}_${semana}`;
+  const storageKey = semana ? `nutriplan_${nombre}_${semana}` : null;
   const leer = () => {
+    if (!storageKey) return inicial;
     try {
       const saved = localStorage.getItem(storageKey);
       return saved ? JSON.parse(saved) : inicial;
@@ -72,6 +79,7 @@ export function useEstadoSemanal(nombre, semana, inicial) {
   }
 
   useEffect(() => {
+    if (!storageKey) return;
     try {
       localStorage.setItem(storageKey, JSON.stringify(estado));
       const prefijo = `nutriplan_${nombre}_`;

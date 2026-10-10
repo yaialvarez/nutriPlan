@@ -3,37 +3,19 @@
  * Script de cifrado para perfiles.json.
  * Cifra data/perfiles.json usando PBKDF2 (100.000 iteraciones SHA-256) y AES-GCM (256-bit)
  * La clave se obtiene de la variable APP_PASSWORD, argumento de línea de comandos o .env local.
- * Salidas:
- *  - data/perfiles_encrypted.json
- *  - app/src/data/perfiles_encrypted.json
+ * Salida: data/perfiles_encrypted.json (su salt es también el del paquete de datos, así que
+ * al volver a cifrar hay que desbloquear de nuevo la app en cada dispositivo).
  */
 
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
+const { getPassword } = require('./password');
 
 const BASE_DIR = path.resolve(__dirname, '..');
 const SOURCE_FILE = path.join(BASE_DIR, 'data', 'perfiles.json');
-const ENV_FILE = path.join(BASE_DIR, '.env');
-const TARGET_FILES = [
-  path.join(BASE_DIR, 'data', 'perfiles_encrypted.json'),
-  path.join(BASE_DIR, 'app', 'src', 'data', 'perfiles_encrypted.json')
-];
-
-function getPasswordFromEnv() {
-  if (process.env.APP_PASSWORD) {
-    return process.env.APP_PASSWORD;
-  }
-  if (fs.existsSync(ENV_FILE)) {
-    const lines = fs.readFileSync(ENV_FILE, 'utf8').split('\n');
-    for (const line of lines) {
-      if (line.trim().startsWith('APP_PASSWORD=')) {
-        return line.trim().split('=')[1].replace(/["']/g, '');
-      }
-    }
-  }
-  return null;
-}
+// La web lo recibe dentro del paquete que genera build_bundle.js en cada build
+const TARGET_FILES = [path.join(BASE_DIR, 'data', 'perfiles_encrypted.json')];
 
 function uint8ArrayToBase64(bytes) {
   return Buffer.from(bytes).toString('base64');
@@ -101,7 +83,7 @@ async function main() {
     process.exit(1);
   }
 
-  let password = process.argv[2] || getPasswordFromEnv();
+  let password = getPassword();
   if (!password) {
     password = await askPassword();
   }

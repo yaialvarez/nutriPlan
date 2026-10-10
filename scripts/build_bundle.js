@@ -5,30 +5,20 @@
  * Con APP_PASSWORD (variable de entorno, argumento o .env local) el paquete se cifra con
  * AES-GCM 256 usando la misma clave que perfiles_encrypted.json (PBKDF2 con su salt), de modo
  * que el JavaScript publicado no contiene el menú, las recetas ni la lista en claro.
- * Sin contraseña genera un paquete abierto (solo los perfiles quedan cifrados) y avisa.
+ * Sin contraseña genera un paquete abierto (solo los perfiles quedan cifrados) y avisa; con
+ * EXIGIR_CIFRADO (lo pone el workflow de despliegue) falla para no publicar nunca los datos en claro.
  */
 
 const fs = require('fs');
 const path = require('path');
+const { getPassword } = require('./password');
 
 const BASE_DIR = path.resolve(__dirname, '..');
 const DATA_DIR = path.join(BASE_DIR, 'data');
-const ENV_FILE = path.join(BASE_DIR, '.env');
 const TARGET_FILE = path.join(BASE_DIR, 'app', 'src', 'data', 'bundle.json');
 const PERFILES_FILE = 'perfiles_encrypted.json';
-
-function getPassword() {
-  if (process.argv[2]) return process.argv[2];
-  if (process.env.APP_PASSWORD) return process.env.APP_PASSWORD;
-  if (fs.existsSync(ENV_FILE)) {
-    for (const line of fs.readFileSync(ENV_FILE, 'utf8').split('\n')) {
-      if (line.trim().startsWith('APP_PASSWORD=')) {
-        return line.trim().split('=').slice(1).join('=').replace(/["']/g, '');
-      }
-    }
-  }
-  return null;
-}
+// Ficheros de data/ que solo usan los scripts y no hacen falta en la web
+const SOLO_SCRIPTS = new Set(['compra_semana.json']);
 
 const b64 = (bytes) => Buffer.from(bytes).toString('base64');
 const fromB64 = (str) => new Uint8Array(Buffer.from(str, 'base64'));
@@ -49,7 +39,7 @@ function readDataFiles() {
   const files = {};
   for (const name of fs.readdirSync(DATA_DIR).sort()) {
     if (!name.endsWith('.json')) continue;
-    if (name.includes('cache') || name === 'perfiles.json' || name === PERFILES_FILE) continue;
+    if (name.includes('cache') || name === 'perfiles.json' || name === PERFILES_FILE || SOLO_SCRIPTS.has(name)) continue;
     files[name] = JSON.parse(fs.readFileSync(path.join(DATA_DIR, name), 'utf8'));
   }
   return files;
@@ -81,6 +71,10 @@ async function main() {
     const ciphertext = await globalThis.crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, payload);
     bundle = { version: 2, cifrado: true, salt: perfilesEnc.salt, iv: b64(iv), ciphertext: b64(new Uint8Array(ciphertext)) };
     console.log(`[OK] Paquete cifrado con ${Object.keys(files).length} ficheros de datos.`);
+  } else if (process.env.EXIGIR_CIFRADO) {
+    // El despliegue nunca publica el menú en claro: falta o está vacío el secreto
+    console.error('[!] Falta APP_PASSWORD y el despliegue exige cifrado. Añade el secreto en Settings → Secrets and variables → Actions.');
+    process.exit(1);
   } else {
     bundle = { version: 2, cifrado: false, files, perfiles_encrypted: perfilesEnc };
     console.warn('[AVISO] Sin APP_PASSWORD: menú, recetas y lista se publican SIN cifrar. Añade el secreto APP_PASSWORD en GitHub.');

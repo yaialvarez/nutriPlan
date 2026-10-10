@@ -282,7 +282,6 @@ export default function App() {
 
         {activeTab === 'bitacora' && (
           <BitacoraProgreso
-            perfilesData={datos.perfiles}
             cryptoKey={cryptoKey}
           />
         )}

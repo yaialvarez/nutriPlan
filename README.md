@@ -45,44 +45,36 @@ La aplicación está diseñada para ser publicada en **GitHub Pages** con máxim
 ## 📂 Arquitectura del Proyecto
 
 ```text
-menuIA/
-├── data/
-│   ├── perfiles.json              # Datos biométricos y reglas médicas (seudonimizados)
-│   ├── recetario.json             # Catálogo de recetas con adaptaciones específicas
-│   ├── despensa_base.json         # Básicos del hogar para filtrar de la compra
-│   ├── menu_semanal.json          # 14 tomas activas + cronograma de batch cooking
-│   ├── lista_compra.json          # Lista con precios reales y pasillos de Mercadona
-│   └── precios_lidl.json          # Tabla de precios LIDL de referencia (estimados, editables en la app)
+nutriPlan/
+├── data/                          # Fuente de verdad: se edita aquí y la web se genera en cada build
+│   ├── menu_semanal.json          # 14 tomas de sábado a viernes + cronograma de batch cooking
+│   ├── recetario.json             # Catálogo de recetas con adaptaciones de cada perfil
+│   ├── nutricion_recetas.json     # Proteína y kcal estimadas por ración de cada receta
+│   ├── nutricion_base.json        # Tomas fijas (desayunos, snacks) y límites diarios
+│   ├── compra_semana.json         # Artículos de la compra de la semana (entrada del generador)
+│   ├── lista_compra.json          # Lista generada con precios y pasillos de Mercadona
+│   ├── despensa_base.json         # Básicos del hogar que no se compran cada semana
+│   ├── precios_lidl.json          # Precios LIDL de referencia (estimados, editables en la app)
+│   └── perfiles_encrypted.json    # Perfiles cifrados (perfiles.json en claro nunca se sube)
 ├── scripts/
-│   ├── mercadona_api.py           # Conector concurrente con API Mercadona
-│   ├── generar_lista_compra.py    # Generador/validador de lista de compra y costes
-│   ├── comprobar_precios_lidl.py  # Comprueba qué artículos de la lista tienen precio LIDL
-│   └── verificar_reglas.py        # Validador integral de reglas médicas y sincronización
-├── app/                           # Web App interactiva (Vite + React + Tailwind CSS)
-│   ├── public/
-│   │   ├── robots.txt             # Bloqueo total de motores de búsqueda
-│   │   └── favicon.svg            # Icono neutro y discreto
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── LockScreen.jsx         # Pantalla de acceso minimalista con contraseña
-│   │   │   ├── CalendarioSemanal.jsx  # 14 tomas con raciones Lord.I / Doña.Y
-│   │   │   ├── GuiaBatchCooking.jsx   # Cronograma del domingo con checks persistentes
-│   │   │   ├── ListaCompra.jsx        # Lista por pasillos reales interactiva
-│   │   │   ├── BitacoraProgreso.jsx   # Registro de pesaje con almacenamiento cifrado
-│   │   │   ├── FichaRecetaModal.jsx   # Modal de receta con sello de seguridad médica
-│   │   │   └── ReglasMedicasModal.jsx # Visor de consulta de reglas del hogar
-│   │   ├── utils/
-│   │   │   └── crypto.js              # Utilidades PBKDF2 y AES-GCM 256 bits
-│   │   ├── data/
-│   │   │   └── perfiles_encrypted.json # Perfiles médicos protegidos con clave
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── package.json
-│   ├── vite.config.js
-│   └── tailwind.config.js
-├── .github/
-│   └── workflows/
-│       └── deploy.yml             # Despliegue automático a GitHub Pages
+│   ├── mercadona_api.py           # Descarga y búsqueda en el catálogo de Mercadona
+│   ├── generar_lista_compra.py    # compra_semana.json + catálogo → lista_compra.json
+│   ├── comprobar_precios_lidl.py  # Qué artículos de la lista tienen precio LIDL
+│   ├── verificar_reglas.py        # Reglas médicas, proteína, fechas y coherencia de datos
+│   ├── build_bundle.js            # Empaqueta data/ cifrado en app/src/data/bundle.json
+│   ├── encrypt_perfiles.js        # Cifra data/perfiles.json
+│   ├── password.js                # Lectura común de APP_PASSWORD para los dos anteriores
+│   └── audit_bundle.py            # Comprueba que el JS publicado no filtra datos personales
+├── app/                           # Web app (Vite + React + Tailwind CSS), instalable y offline
+│   ├── public/                    # robots.txt, manifest, iconos y service worker (sw.js)
+│   └── src/
+│       ├── components/            # Pantalla de bloqueo, menú, batch, compra, recetario, bitácora
+│       ├── utils/                 # Cifrado, fechas de la semana, bitácora y precios LIDL
+│       └── App.jsx
+├── .github/workflows/
+│   ├── comprobar.yml              # Valida cada PR: reglas, lint, build y auditoría
+│   └── deploy.yml                 # Publica en GitHub Pages en cada push a main
+├── preferencias.md                # Gustos, logística y reglas prácticas para planificar
 └── README.md                      # Esta guía
 ```
 
@@ -103,7 +95,7 @@ graph TD
     I -->|9. Sábado mañana| A
 ```
 
-1. **Sábado mañana (Planificación y Compra)**: Actualizamos el menú en el chat, generamos la lista (`python scripts/generar_lista_compra.py`), hacemos `git push` y vamos al supermercado tachando artículos por pasillo en la web app móvil.
+1. **Sábado mañana (Planificación y Compra)**: Actualizamos el menú en el chat, generamos la lista (`python scripts/generar_lista_compra.py`), fusionamos el PR del menú en `main` y vamos al supermercado tachando artículos por pasillo en la web app móvil.
 2. **Sábado (Comida y Cena)**: Platos frescos con ingredientes recién comprados (salmón a la plancha, poke bowl, etc.).
 3. **Domingo (Comida y Batch Cooking)**: Comida rica de fin de semana (carbonara) y por la tarde sesión de 2 horas de Batch Cooking para dejar cocinados los tuppers de lunes a jueves.
 4. **Lunes a Jueves**: Almuerzos en tupper de microondas (3 minutos) en el trabajo y cenas rápidas de 10-15 minutos.
@@ -127,6 +119,9 @@ python scripts/generar_lista_compra.py
 
 # Auditar reglas médicas y sincronización de datos
 python scripts/verificar_reglas.py
+
+# Todo lo que comprueba un PR (reglas, lint, build y auditoría), desde la raíz
+npm run comprobar
 ```
 
 ### Ejecutar la Web App Localmente
@@ -211,8 +206,15 @@ Antes de proponer o modificar cualquier menú, ingrediente o receta, comprueba e
 
 #### C. Planificar una nueva semana (`data/menu_semanal.json`)
 - Contiene **14 tomas principales**: `comida` y `cena` de **sábado a viernes**.
+- `fecha_inicio` es el sábado (`AAAA-MM-DD`) y cada día lleva su fecha en la etiqueta, por ejemplo `"Sábado (17/10)"`: la vista de hoy de la app y `verificar_reglas.py` dependen de ello.
 - Los campos de adaptación para cada toma deben ser `adaptacion_lord_i` y `adaptacion_dona_y`.
 - La sección `batch_cooking_domingo` debe detallar la sesión de 2 horas del domingo.
+- Toda receta nueva necesita su estimación en `data/nutricion_recetas.json` para comprobar la proteína diaria.
+
+#### D. Compra de la semana (`data/compra_semana.json`)
+- Un artículo por producto: `nombre_receta`, `cantidad`, `unidad`, `seccion`, `id_preferente` (id de Mercadona, se busca con `python scripts/mercadona_api.py search "..."`), `termino_fallback` y `filtro_excluir`.
+- `despensa_excluida` lista lo que ya hay en casa y no se compra esa semana.
+- No se edita `generar_lista_compra.py` ni `lista_compra.json` a mano: la lista se regenera desde este fichero.
 
 ---
 
@@ -220,7 +222,7 @@ Antes de proponer o modificar cualquier menú, ingrediente o receta, comprueba e
 
 Cada vez que como IA generes o modifiques el menú semanal, debes seguir **estrictamente estos pasos**:
 
-1. **Regenerar la lista de la compra con precios de Mercadona:**
+1. **Regenerar la lista de la compra con precios de Mercadona** (tras editar `data/compra_semana.json`; necesita acceso a la API de Mercadona o la caché local del catálogo, y si no hay catálogo no toca la lista):
    ```bash
    python scripts/generar_lista_compra.py
    ```
@@ -242,4 +244,4 @@ Cada vez que como IA generes o modifiques el menú semanal, debes seguir **estri
    ```
    *Debe compilar con éxito.*
 
-   :)
+5. **Subir los cambios como PR contra `main`**, nunca con push directo. El workflow `comprobar.yml` repite estas comprobaciones en el PR y, al fusionarlo, `deploy.yml` publica la web cifrada.
