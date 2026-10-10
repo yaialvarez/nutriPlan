@@ -65,7 +65,7 @@ export default function ReglasMedicasModal({ perfilesData, onClose }) {
                 <User className="w-4 h-4 text-blue-600" />
                 Lord.I
               </h4>
-              <span className="text-[11px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-medium">
+              <span className="text-xs bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-medium">
                 Pauta Renal Preventiva
               </span>
             </div>
@@ -83,7 +83,7 @@ export default function ReglasMedicasModal({ perfilesData, onClose }) {
                 <User className="w-4 h-4 text-rose-600" />
                 Doña.Y
               </h4>
-              <span className="text-[11px] bg-rose-100 text-rose-800 px-2 py-0.5 rounded font-medium">
+              <span className="text-xs bg-rose-100 text-rose-800 px-2 py-0.5 rounded font-medium">
                 Pauta Metabólica & Masa Magra
               </span>
             </div>

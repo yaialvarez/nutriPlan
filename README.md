@@ -30,13 +30,15 @@ La aplicación está diseñada para ser publicada en **GitHub Pages** con máxim
 3. **Pantalla de bloqueo y control de acceso:**
    - La interfaz permanece totalmente oculta por defecto hasta introducir la contraseña maestra personal.
    - Los menús y datos sensibles no se renderizan en el DOM mientras el portal permanezca bloqueado.
-   - El estado de autenticación se persiste localmente en el dispositivo (`localStorage: portal_auth`) para no solicitar la contraseña en cada visita.
+   - La sesión se recuerda en el dispositivo guardando en IndexedDB la clave AES derivada (no exportable), nunca la contraseña. Las sesiones antiguas (`localStorage: portal_auth`) se migran y se borran al abrir la app.
    - Dispone de un botón discreto de **"Bloquear"** en la cabecera para cerrar la sesión y volver a bloquear el portal inmediatamente.
 
 4. **Cifrado Client-Side (AES-GCM 256 bits):**
    - Módulo criptográfico nativo mediante la Web Crypto API (`window.crypto.subtle`).
    - Derivación de clave mediante PBKDF2 (SHA-256, 100.000 iteraciones).
    - Los datos médicos de salud y la bitácora de progreso se almacenan y procesan de forma cifrada.
+   - Menú, recetas, lista de la compra y despensa se empaquetan cifrados en cada despliegue (`scripts/build_bundle.js`) con la misma clave que los perfiles. Requiere el secreto `APP_PASSWORD` en GitHub (Settings → Secrets and variables → Actions); sin él la web se publica con esos datos sin cifrar y el build avisa.
+   - Ojo: mientras el repositorio sea público, los JSON de `data/`, este README y `preferencias.md` siguen siendo legibles en GitHub.
 
 ---
 

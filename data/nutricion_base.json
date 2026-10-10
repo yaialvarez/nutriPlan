@@ -1,0 +1,16 @@
+{
+  "_nota": "Tomas fijas que se suman cada día a la comida y la cena del menú. Estimaciones orientativas.",
+  "lord_i": {
+    "proteina_min": 120,
+    "proteina_max": 135,
+    "fijos": [
+      { "nombre": "Desayuno: avena (60 g) con leche (250 ml) y vainilla", "proteina_g": 17, "kcal": 380 }
+    ]
+  },
+  "dona_y": {
+    "fijos": [
+      { "nombre": "Desayuno a su elección (estimado)", "proteina_g": 12, "kcal": 350 },
+      { "nombre": "Batido proteico pautado", "proteina_g": 25, "kcal": 150 }
+    ]
+  }
+}

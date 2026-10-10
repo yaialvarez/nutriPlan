@@ -42,3 +42,6 @@ app/public/data/
 
 # Local API cache
 *cache.json
+
+# Paquete de datos generado en cada build por scripts/build_bundle.js
+app/src/data/

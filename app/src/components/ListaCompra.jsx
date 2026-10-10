@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { 
   CheckCircle2, 
   Circle, 
@@ -9,34 +9,25 @@ import {
   Eye, 
   EyeOff, 
   Store,
-  Archive
+  Archive,
+  Home,
+  Plus,
+  Trash2,
+  Shuffle
 } from 'lucide-react';
+import { useEstadoSemanal } from '../utils/semana';
 
-const STORAGE_KEY = 'menuia_lista_compra_checked';
-
-export default function ListaCompra({ listaData, despensaData }) {
-  const [checkedMap, setCheckedMap] = useState(() => {
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      return saved ? JSON.parse(saved) : {};
-    } catch {
-      return {};
-    }
-  });
+export default function ListaCompra({ listaData, despensaData, semana, menuData, recetarioData, cambios }) {
+  // Estado ligado a la semana: se vacía solo al publicar un menú nuevo
+  const [checkedMap, setCheckedMap] = useEstadoSemanal('compra', semana, {});
+  const [tengoMap, setTengoMap] = useEstadoSemanal('tengo', semana, {});
+  const [extras, setExtras] = useEstadoSemanal('extras', semana, []);
+  const [nuevoExtra, setNuevoExtra] = useState('');
 
   const [searchTerm, setSearchTerm] = useState('');
   const [hideChecked, setHideChecked] = useState(false);
   const [copied, setCopied] = useState(false);
   const [showDespensa, setShowDespensa] = useState(false);
-
-  // Guardar estado en localStorage
-  useEffect(() => {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(checkedMap));
-    } catch (e) {
-      console.error('Error saving checked items', e);
-    }
-  }, [checkedMap]);
 
   const toggleItem = (itemId) => {
     setCheckedMap(prev => ({
@@ -44,6 +35,41 @@ export default function ListaCompra({ listaData, despensaData }) {
       [itemId]: !prev[itemId]
     }));
   };
+
+  const toggleTengo = (itemId) => {
+    setTengoMap(prev => ({
+      ...prev,
+      [itemId]: !prev[itemId]
+    }));
+  };
+
+  const addExtra = (e) => {
+    e.preventDefault();
+    const nombre = nuevoExtra.trim();
+    if (!nombre) return;
+    setExtras(prev => [...prev, { id: `extra-${Date.now()}`, nombre }]);
+    setNuevoExtra('');
+  };
+
+  const removeExtra = (id) => {
+    setExtras(prev => prev.filter(x => x.id !== id));
+  };
+
+  // Ingredientes que añade cada plato cambiado en el menú
+  const ajustesCambios = useMemo(() => {
+    return Object.entries(cambios || {}).map(([slot, recetaId]) => {
+      const [idx, tipo] = slot.split('-');
+      const dia = menuData?.dias?.[Number(idx)];
+      const nueva = recetarioData?.find(r => r.id === recetaId);
+      if (!dia || !nueva) return null;
+      return {
+        slot,
+        etiqueta: `${dia.dia} · ${tipo}`,
+        original: dia[tipo]?.nombre,
+        nueva,
+      };
+    }).filter(Boolean);
+  }, [cambios, menuData, recetarioData]);
 
   const uncheckAll = () => {
     if (window.confirm('¿Desmarcar todos los artículos de la lista de la compra?')) {
@@ -54,14 +80,20 @@ export default function ListaCompra({ listaData, despensaData }) {
   const pasillos = useMemo(() => listaData?.pasillos || [], [listaData]);
 
   // Calcular estadísticas
-  const { totalItems, checkedCount, ticketTotal, ticketGastado } = useMemo(() => {
+  const { totalItems, checkedCount, ticketTotal, ticketGastado, ahorroTengo } = useMemo(() => {
     let total = 0;
     let checked = 0;
     let totalEuros = listaData?.total_ticket_estimado || 0;
     let gastado = 0;
+    let ahorro = 0;
 
     pasillos.forEach(p => {
       p.items.forEach(i => {
+        // Lo que ya hay en casa no se compra ni cuenta en el ticket
+        if (tengoMap[i.id || i.nombre]) {
+          ahorro += (i.precio_total || 0);
+          return;
+        }
         total += 1;
         if (checkedMap[i.id || i.nombre]) {
           checked += 1;
@@ -73,10 +105,11 @@ export default function ListaCompra({ listaData, despensaData }) {
     return {
       totalItems: total,
       checkedCount: checked,
-      ticketTotal: totalEuros,
-      ticketGastado: Math.round(gastado * 100) / 100
+      ticketTotal: Math.round((totalEuros - ahorro) * 100) / 100,
+      ticketGastado: Math.round(gastado * 100) / 100,
+      ahorroTengo: Math.round(ahorro * 100) / 100
     };
-  }, [pasillos, checkedMap, listaData]);
+  }, [pasillos, checkedMap, tengoMap, listaData]);
 
   const porcentaje = totalItems > 0 ? Math.round((checkedCount / totalItems) * 100) : 0;
 
@@ -84,7 +117,7 @@ export default function ListaCompra({ listaData, despensaData }) {
   const pasillosFiltrados = useMemo(() => {
     return pasillos.map(p => {
       const itemsFiltrados = p.items.filter(item => {
-        const isChecked = !!checkedMap[item.id || item.nombre];
+        const isChecked = !!checkedMap[item.id || item.nombre] || !!tengoMap[item.id || item.nombre];
         if (hideChecked && isChecked) return false;
 
         if (!searchTerm) return true;
@@ -100,7 +133,7 @@ export default function ListaCompra({ listaData, despensaData }) {
         itemsVisibles: itemsFiltrados
       };
     }).filter(p => p.itemsVisibles.length > 0);
-  }, [pasillos, checkedMap, hideChecked, searchTerm]);
+  }, [pasillos, checkedMap, tengoMap, hideChecked, searchTerm]);
 
   // Copiar lista al portapapeles
   const copiarListaTexto = () => {
@@ -110,12 +143,18 @@ export default function ListaCompra({ listaData, despensaData }) {
     pasillos.forEach(p => {
       texto += `--- ${p.nombre_pasillo.toUpperCase()} ---\n`;
       p.items.forEach(i => {
+        if (tengoMap[i.id || i.nombre]) return;
         const check = checkedMap[i.id || i.nombre] ? '✓' : '•';
         texto += `${check} ${i.nombre_receta || i.nombre} (${i.cantidad} ${i.unidad_receta}) - ${i.precio_total}€\n`;
       });
       texto += `\n`;
     });
-
+    if (extras.length) {
+      texto += `--- EXTRAS ---\n`;
+      extras.forEach(x => {
+        texto += `${checkedMap[x.id] ? '✓' : '•'} ${x.nombre}\n`;
+      });
+    }
     navigator.clipboard.writeText(texto);
     setCopied(true);
     setTimeout(() => setCopied(false), 2500);
@@ -146,9 +185,14 @@ export default function ListaCompra({ listaData, despensaData }) {
             <div className="text-3xl font-black text-white">
               {ticketTotal.toFixed(2)} €
             </div>
-            <div className="text-[11px] text-emerald-200/80 mt-0.5">
+            <div className="text-xs text-emerald-100 mt-0.5">
               Marcado en carro: {ticketGastado.toFixed(2)} €
             </div>
+            {ahorroTengo > 0 && (
+              <div className="text-xs text-emerald-100">
+                Ya en casa: −{ahorroTengo.toFixed(2)} €
+              </div>
+            )}
           </div>
         </div>
 
@@ -246,12 +290,13 @@ export default function ListaCompra({ listaData, despensaData }) {
               <div className="divide-y divide-slate-100">
                 {itemsPasillo.map((item, iIdx) => {
                   const itemKey = item.id || item.nombre;
-                  const isChecked = !!checkedMap[itemKey];
+                  const enCasa = !!tengoMap[itemKey];
+                  const isChecked = !!checkedMap[itemKey] || enCasa;
 
                   return (
                     <div
                       key={iIdx}
-                      onClick={() => toggleItem(itemKey)}
+                      onClick={() => !enCasa && toggleItem(itemKey)}
                       className={`p-3 sm:p-4 flex items-center justify-between gap-3 transition-colors cursor-pointer select-none hover:bg-slate-50/80 ${
                         isChecked ? 'bg-emerald-50/40 text-slate-400' : 'bg-white'
                       }`}
@@ -262,15 +307,17 @@ export default function ListaCompra({ listaData, despensaData }) {
                           type="button"
                           onClick={(e) => {
                             e.stopPropagation();
-                            toggleItem(itemKey);
+                            if (!enCasa) toggleItem(itemKey);
                           }}
-                          className="shrink-0 transition-transform active:scale-90 p-0.5 rounded-full focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                          className="shrink-0 transition-transform active:scale-90 p-1 rounded-full focus:outline-none focus:ring-2 focus:ring-emerald-500"
                           aria-label={isChecked ? "Desmarcar artículo" : "Marcar artículo como comprado"}
                         >
-                          {isChecked ? (
-                            <CheckCircle2 className="w-6 h-6 text-emerald-600" />
+                          {enCasa ? (
+                            <Home className="w-7 h-7 text-sky-600" />
+                          ) : isChecked ? (
+                            <CheckCircle2 className="w-7 h-7 text-emerald-600" />
                           ) : (
-                            <Circle className="w-6 h-6 text-slate-300 hover:text-slate-400" />
+                            <Circle className="w-7 h-7 text-slate-400 hover:text-slate-500" />
                           )}
                         </button>
 
@@ -286,19 +333,19 @@ export default function ListaCompra({ listaData, despensaData }) {
 
                         <div className="min-w-0 flex-1">
                           <div className="flex items-baseline gap-2 flex-wrap">
-                            <span className={`text-xs sm:text-sm font-bold truncate ${
+                            <span className={`text-sm sm:text-base font-bold ${
                               isChecked ? 'line-through text-slate-400' : 'text-slate-900'
                             }`}>
                               {item.nombre_receta || item.nombre}
                             </span>
                             {item.nombre_receta && item.nombre !== item.nombre_receta && (
-                              <span className="text-[11px] text-slate-400 truncate">
+                              <span className="text-xs text-slate-400 truncate">
                                 ({item.nombre})
                               </span>
                             )}
                           </div>
 
-                          <div className="flex items-center gap-2 text-[11px] text-slate-500 mt-0.5">
+                          <div className="flex items-center gap-2 flex-wrap text-xs text-slate-500 mt-0.5">
                             <span className="bg-slate-100 px-2 py-0.5 rounded font-medium text-slate-700">
                               {item.cantidad} x {item.unidad_receta || 'ud'}
                             </span>
@@ -307,6 +354,21 @@ export default function ListaCompra({ listaData, despensaData }) {
                                 {item.precio_referencia.toFixed(2)} €/{item.formato_referencia}
                               </span>
                             )}
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                toggleTengo(itemKey);
+                              }}
+                              className={`px-2 py-1 rounded-md font-semibold border ${
+                                enCasa
+                                  ? 'bg-sky-100 text-sky-800 border-sky-300'
+                                  : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
+                              }`}
+                              aria-pressed={enCasa}
+                            >
+                              {enCasa ? 'En casa · deshacer' : 'Ya lo tengo'}
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -318,7 +380,7 @@ export default function ListaCompra({ listaData, despensaData }) {
                         }`}>
                           {item.precio_total?.toFixed(2)} €
                         </div>
-                        <div className="text-[10px] text-slate-400">
+                        <div className="text-xs text-slate-500">
                           {item.precio_unitario?.toFixed(2)} €/ud
                         </div>
                       </div>
@@ -334,6 +396,87 @@ export default function ListaCompra({ listaData, despensaData }) {
           <div className="bg-white rounded-2xl border border-slate-200 p-8 text-center text-slate-500">
             No se encontraron artículos con el filtro actual.
           </div>
+        )}
+      </div>
+
+      {/* Ajustes por platos cambiados en el menú */}
+      {ajustesCambios.length > 0 && (
+        <div className="bg-white rounded-2xl border border-violet-200 shadow-sm overflow-hidden">
+          <div className="bg-violet-50 px-4 sm:px-5 py-3 border-b border-violet-200 flex items-center gap-2">
+            <Shuffle className="w-4 h-4 text-violet-700" />
+            <h3 className="font-bold text-violet-900 text-sm sm:text-base">Cambios por platos sustituidos</h3>
+          </div>
+          <div className="divide-y divide-slate-100">
+            {ajustesCambios.map(aj => (
+              <div key={aj.slot} className="p-4 space-y-2">
+                <div className="text-sm">
+                  <span className="font-bold text-slate-900">{aj.etiqueta}:</span>{' '}
+                  <span className="text-slate-700">{aj.nueva.nombre}</span>
+                </div>
+                <p className="text-xs text-slate-500">
+                  Sustituye a «{aj.original}». Revisa si sus ingredientes de la lista siguen haciendo falta para otros platos.
+                </p>
+                <ul className="space-y-1">
+                  {aj.nueva.ingredientes?.map((ing, i) => {
+                    const key = `cambio-${aj.slot}-${aj.nueva.id}-${i}`;
+                    const hecho = !!checkedMap[key];
+                    return (
+                      <li key={key}>
+                        <button
+                          type="button"
+                          onClick={() => toggleItem(key)}
+                          className={`w-full flex items-center gap-2 text-left text-sm py-1 ${hecho ? 'line-through text-slate-400' : 'text-slate-800'}`}
+                        >
+                          {hecho ? <CheckCircle2 className="w-6 h-6 text-emerald-600 shrink-0" /> : <Circle className="w-6 h-6 text-slate-400 shrink-0" />}
+                          <span>{ing.item} <span className="text-slate-500">({ing.cantidad})</span></span>
+                        </button>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Extras añadidos a mano */}
+      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-4 sm:p-5 space-y-3">
+        <h3 className="font-bold text-slate-900 text-sm sm:text-base">Extras de esta semana</h3>
+        <form onSubmit={addExtra} className="flex gap-2">
+          <input
+            type="text"
+            value={nuevoExtra}
+            onChange={(e) => setNuevoExtra(e.target.value)}
+            placeholder="Pan, fruta, avena, leche..."
+            className="flex-1 min-w-0 px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-base focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          />
+          <button type="submit" className="px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-semibold inline-flex items-center gap-1">
+            <Plus className="w-4 h-4" />
+            Añadir
+          </button>
+        </form>
+        {extras.length > 0 && (
+          <ul className="divide-y divide-slate-100">
+            {extras.map(x => {
+              const hecho = !!checkedMap[x.id];
+              return (
+                <li key={x.id} className="flex items-center justify-between gap-2 py-1.5">
+                  <button
+                    type="button"
+                    onClick={() => toggleItem(x.id)}
+                    className={`flex items-center gap-2 text-left text-sm flex-1 ${hecho ? 'line-through text-slate-400' : 'text-slate-800'}`}
+                  >
+                    {hecho ? <CheckCircle2 className="w-6 h-6 text-emerald-600 shrink-0" /> : <Circle className="w-6 h-6 text-slate-400 shrink-0" />}
+                    {x.nombre}
+                  </button>
+                  <button type="button" onClick={() => removeExtra(x.id)} className="p-2 text-slate-400 hover:text-rose-600" aria-label={`Quitar ${x.nombre}`}>
+                    <Trash2 className="w-4 h-4" />
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
         )}
       </div>
 
@@ -368,9 +511,9 @@ export default function ListaCompra({ listaData, despensaData }) {
               >
                 <div>
                   <div className="font-semibold text-slate-800">{art.nombre}</div>
-                  <div className="text-[10px] text-slate-400">{art.categoria}</div>
-                  {art.nota && <div className="text-[10px] text-emerald-700 mt-0.5">{art.nota}</div>}
-                  {art.uso_exclusivo && <div className="text-[10px] text-rose-700 font-medium">{art.uso_exclusivo}</div>}
+                  <div className="text-xs text-slate-400">{art.categoria}</div>
+                  {art.nota && <div className="text-xs text-emerald-700 mt-0.5">{art.nota}</div>}
+                  {art.uso_exclusivo && <div className="text-xs text-rose-700 font-medium">{art.uso_exclusivo}</div>}
                 </div>
               </div>
             ))}
