@@ -3,7 +3,7 @@
   "supermercado": "Mercadona",
   "articulos": [
     {
-      "nombre_receta": "Patatas (suflé, tortilla, gajo, curry, alubias, lentejas y crema)",
+      "nombre_receta": "Patatas (merluza en salsa verde y puré del sábado)",
       "cantidad": 1,
       "unidad": "malla 3 kg",
       "seccion": "Fruta y verdura",
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "nombre_receta": "Zanahorias (poke, caldo, curry, ramen, fideos, alubias y lentejas)",
+      "nombre_receta": "Zanahorias (alubias con pollo, yakisoba y bowl coreano)",
       "cantidad": 1,
       "unidad": "malla 1 kg",
       "seccion": "Fruta y verdura",
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "nombre_receta": "Cebollas dulces para pochar (curry, suflé, alubias, tortilla y lentejas)",
+      "nombre_receta": "Cebollas dulces para pochar (lomo guisado, alubias y shakshuka)",
       "cantidad": 1,
       "unidad": "malla 1 kg",
       "seccion": "Fruta y verdura",
@@ -40,44 +40,8 @@
       ]
     },
     {
-      "nombre_receta": "Puerros (caldo, crema de calabacín y lentejas)",
-      "cantidad": 1,
-      "unidad": "manojo",
-      "seccion": "Fruta y verdura",
-      "id_preferente": 69411,
-      "termino_fallback": "puerro",
-      "filtro_excluir": []
-    },
-    {
-      "nombre_receta": "Calabacines verdes (crema del lunes)",
-      "cantidad": 3,
-      "unidad": "piezas",
-      "seccion": "Fruta y verdura",
-      "id_preferente": 69338,
-      "termino_fallback": "calabacin",
-      "filtro_excluir": []
-    },
-    {
-      "nombre_receta": "Judía verde plana (alubias del jueves)",
-      "cantidad": 1,
-      "unidad": "bolsa 500g",
-      "seccion": "Fruta y verdura",
-      "id_preferente": 69889,
-      "termino_fallback": "judia verde",
-      "filtro_excluir": []
-    },
-    {
-      "nombre_receta": "Espinacas baby (garbanzos y ramen)",
-      "cantidad": 1,
-      "unidad": "bolsa",
-      "seccion": "Fruta y verdura",
-      "id_preferente": 69984,
-      "termino_fallback": "espinacas baby",
-      "filtro_excluir": []
-    },
-    {
-      "nombre_receta": "Pimiento rojo (guarnición filetes del miércoles)",
-      "cantidad": 2,
+      "nombre_receta": "Pimiento rojo (quesadillas, burrito, merluza, lomo guisado, alubias y shakshuka)",
+      "cantidad": 6,
       "unidad": "piezas",
       "seccion": "Fruta y verdura",
       "id_preferente": 69310,
@@ -88,29 +52,55 @@
       ]
     },
     {
-      "nombre_receta": "Tomates ensalada (poke, hamburguesa y ensalada de la tortilla)",
-      "cantidad": 3,
+      "nombre_receta": "Pimiento verde (lomo del sábado, quesadillas, burrito, lomo guisado y yakisoba)",
+      "cantidad": 8,
       "unidad": "piezas",
       "seccion": "Fruta y verdura",
-      "id_preferente": 60369,
-      "termino_fallback": "tomate ensalada",
-      "filtro_excluir": [
-        "frito",
-        "triturado"
-      ]
-    },
-    {
-      "nombre_receta": "Lechuga iceberg (hamburguesa y ensalada de la tortilla)",
-      "cantidad": 1,
-      "unidad": "pieza",
-      "seccion": "Fruta y verdura",
-      "id_preferente": 68130,
-      "termino_fallback": "lechuga iceberg",
+      "id_preferente": 69320,
+      "termino_fallback": "pimiento verde",
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Aguacates (poke del sábado)",
+      "nombre_receta": "Calabacín (salmón y merluza a la plancha)",
       "cantidad": 2,
+      "unidad": "piezas",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69338,
+      "termino_fallback": "calabacin",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Brócoli (teriyaki del lunes y yakisoba del miércoles) (precio estimado)",
+      "cantidad": 2,
+      "unidad": "piezas",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69580,
+      "termino_fallback": "brocoli",
+      "filtro_excluir": [
+        "congelado"
+      ]
+    },
+    {
+      "nombre_receta": "Espinacas baby (bowl coreano)",
+      "cantidad": 2,
+      "unidad": "bolsas",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69984,
+      "termino_fallback": "espinacas baby",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Tomates cherry (pasta al pesto) (precio estimado)",
+      "cantidad": 1,
+      "unidad": "bandeja",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69990,
+      "termino_fallback": "tomates cherry",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Aguacates (salmón, burrito y quesadillas)",
+      "cantidad": 3,
       "unidad": "piezas",
       "seccion": "Fruta y verdura",
       "id_preferente": 3830,
@@ -121,7 +111,25 @@
       ]
     },
     {
-      "nombre_receta": "Champiñones laminados (pizza del viernes)",
+      "nombre_receta": "Limones (merluza y burrito) (precio estimado)",
+      "cantidad": 1,
+      "unidad": "malla",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 3236,
+      "termino_fallback": "limones",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Perejil (merluza a la plancha y en salsa verde) (precio estimado)",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69701,
+      "termino_fallback": "perejil",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Champiñones laminados (merluza a la plancha)",
       "cantidad": 1,
       "unidad": "bandeja 250g",
       "seccion": "Fruta y verdura",
@@ -132,7 +140,7 @@
       ]
     },
     {
-      "nombre_receta": "Plátanos de Canarias IGP (snacks Doña.Y)",
+      "nombre_receta": "Plátanos de Canarias IGP (tentempiés)",
       "cantidad": 6,
       "unidad": "piezas (~1 kg)",
       "seccion": "Fruta y verdura",
@@ -141,7 +149,7 @@
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Manzanas Golden (snacks)",
+      "nombre_receta": "Manzanas Golden (merienda con queso batido)",
       "cantidad": 6,
       "unidad": "piezas (~1 kg)",
       "seccion": "Fruta y verdura",
@@ -150,32 +158,43 @@
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Lomos de salmón congelados (poke del sábado)",
+      "nombre_receta": "Salmón fresco en lomos (comida del sábado) (precio estimado)",
+      "cantidad": 1,
+      "unidad": "bandeja (~350 g)",
+      "seccion": "Pescadería",
+      "id_preferente": 87208,
+      "termino_fallback": "salmon",
+      "filtro_excluir": [
+        "congelado",
+        "ahumado",
+        "marinado"
+      ]
+    },
+    {
+      "nombre_receta": "Merluza en lomos ultracongelada (cena del martes y tupper del jueves) (precio estimado)",
       "cantidad": 2,
-      "unidad": "packs 2 lomos",
+      "unidad": "cajas (~1,1 kg)",
       "seccion": "Congelados",
-      "id_preferente": 24511,
-      "termino_fallback": "lomos de salmon",
+      "id_preferente": 62113,
+      "termino_fallback": "merluza",
       "filtro_excluir": [
-        "paté",
-        "ahumado"
+        "rebozada",
+        "empanada"
       ]
     },
     {
-      "nombre_receta": "Pollo entero para despiezar (curry, crema, fideos y caldo de carcasa)",
+      "nombre_receta": "Guisantes ultracongelados (merluza en salsa verde) (precio estimado)",
       "cantidad": 1,
-      "unidad": "pieza ~1,9 kg",
-      "seccion": "Carne",
-      "id_preferente": 2781,
-      "termino_fallback": "pollo entero",
-      "filtro_excluir": [
-        "asado"
-      ]
+      "unidad": "paquete",
+      "seccion": "Congelados",
+      "id_preferente": 61215,
+      "termino_fallback": "guisante",
+      "filtro_excluir": []
     },
     {
-      "nombre_receta": "Filetes pechuga de pollo (ramen del domingo y pizza)",
-      "cantidad": 1,
-      "unidad": "bandeja",
+      "nombre_receta": "Filetes de pechuga de pollo (burrito, quesadillas, yakisoba y pasta)",
+      "cantidad": 3,
+      "unidad": "bandejas (~1,6 kg)",
       "seccion": "Carne",
       "id_preferente": 2787,
       "termino_fallback": "filetes pechuga pollo",
@@ -185,32 +204,20 @@
       ]
     },
     {
-      "nombre_receta": "Carne picada de vacuno (hamburguesas y suflé)",
+      "nombre_receta": "Contramuslos de pollo deshuesados (teriyaki y alubias con pollo) (precio estimado)",
       "cantidad": 2,
-      "unidad": "bandejas 500g",
+      "unidad": "bandejas (~1,1 kg)",
       "seccion": "Carne",
-      "id_preferente": 2868,
-      "termino_fallback": "carne picada vacuno",
+      "id_preferente": 2789,
+      "termino_fallback": "contramuslos pollo",
       "filtro_excluir": [
-        "cerdo",
-        "mixta"
+        "adobado"
       ]
     },
     {
-      "nombre_receta": "Panceta fina sin corteza (carbonara)",
-      "cantidad": 1,
-      "unidad": "bandeja",
-      "seccion": "Carne",
-      "id_preferente": 8994,
-      "termino_fallback": "panceta",
-      "filtro_excluir": [
-        "adobada"
-      ]
-    },
-    {
-      "nombre_receta": "Filetes de lomo de cerdo (cena del miércoles)",
-      "cantidad": 1,
-      "unidad": "bandeja 400g",
+      "nombre_receta": "Filetes de lomo de cerdo (adobado del sábado y guiso del miércoles)",
+      "cantidad": 2,
+      "unidad": "bandejas 400 g",
       "seccion": "Carne",
       "id_preferente": 2849,
       "termino_fallback": "filetes lomo cerdo",
@@ -220,22 +227,20 @@
       ]
     },
     {
-      "nombre_receta": "Magro de cerdo a tacos (lentejas)",
+      "nombre_receta": "Filetes de vacuno añojo en tiras (bowl coreano) (precio estimado)",
       "cantidad": 1,
-      "unidad": "bandeja 400g",
+      "unidad": "bandeja (~350 g)",
       "seccion": "Carne",
-      "id_preferente": 2813,
-      "termino_fallback": "cerdo a tacos",
+      "id_preferente": 2900,
+      "termino_fallback": "filetes vacuno",
       "filtro_excluir": [
-        "fiambre",
-        "adobado",
-        "embutido"
+        "marinado"
       ]
     },
     {
-      "nombre_receta": "Huevos camperos (carbonara, ramen, garbanzos, alubias y tortilla)",
-      "cantidad": 2,
-      "unidad": "docenas",
+      "nombre_receta": "Huevos camperos (shakshuka y bowl coreano)",
+      "cantidad": 1,
+      "unidad": "docena",
       "seccion": "Huevos, leche y mantequilla",
       "id_preferente": 15768,
       "termino_fallback": "huevos camperas",
@@ -245,7 +250,16 @@
       ]
     },
     {
-      "nombre_receta": "Queso tierno suave (hamburguesas y gratinado del suflé)",
+      "nombre_receta": "Queso fresco batido 0% (merienda de Lord.I) (precio estimado)",
+      "cantidad": 3,
+      "unidad": "tarrinas 500 g",
+      "seccion": "Huevos, leche y mantequilla",
+      "id_preferente": 51071,
+      "termino_fallback": "queso fresco batido",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Queso tierno suave para rallar (quesadillas)",
       "cantidad": 1,
       "unidad": "paquete",
       "seccion": "Charcutería y quesos",
@@ -258,73 +272,52 @@
       ]
     },
     {
-      "nombre_receta": "Queso grana padano rallado (carbonara)",
+      "nombre_receta": "Queso fresco de Burgos (shakshuka) (precio estimado)",
       "cantidad": 1,
-      "unidad": "bolsa",
+      "unidad": "pack 4",
       "seccion": "Charcutería y quesos",
-      "id_preferente": 51146,
-      "termino_fallback": "grana padano",
+      "id_preferente": 52409,
+      "termino_fallback": "queso fresco burgos",
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Quesitos suaves (crema de calabacín)",
+      "nombre_receta": "Arroz redondo (salmón, teriyaki, burrito, lomo guisado y bowl)",
       "cantidad": 1,
-      "unidad": "caja",
-      "seccion": "Charcutería y quesos",
-      "id_preferente": 52405,
-      "termino_fallback": "queso en porciones",
-      "filtro_excluir": []
-    },
-    {
-      "nombre_receta": "Mozzarella rallada (pizza del viernes)",
-      "cantidad": 1,
-      "unidad": "bolsa 200g",
-      "seccion": "Charcutería y quesos",
-      "id_preferente": 51110,
-      "termino_fallback": "mozzarella pizza",
-      "filtro_excluir": []
-    },
-    {
-      "nombre_receta": "Jamón cocido extra (pizza del viernes)",
-      "cantidad": 1,
-      "unidad": "paquete lonchas",
-      "seccion": "Charcutería y quesos",
-      "id_preferente": 60329,
-      "termino_fallback": "jamon cocido extra",
-      "filtro_excluir": [
-        "chopped",
-        "lata"
-      ]
-    },
-    {
-      "nombre_receta": "Taquitos de jamón (garbanzos del miércoles)",
-      "cantidad": 1,
-      "unidad": "paquete",
-      "seccion": "Charcutería y quesos",
-      "id_preferente": 59071,
-      "termino_fallback": "taquitos jamon",
-      "filtro_excluir": []
-    },
-    {
-      "nombre_receta": "Garbanzos cocidos (tupper del miércoles)",
-      "cantidad": 1,
-      "unidad": "bote 400g",
+      "unidad": "paquete 1 kg",
       "seccion": "Arroz, legumbres y pasta",
-      "id_preferente": 26029,
-      "termino_fallback": "garbanzo cocido",
+      "id_preferente": 5044,
+      "termino_fallback": "arroz redondo",
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Espaguetis (carbonara del domingo)",
+      "nombre_receta": "Alubias blancas cocidas (guiso con pollo del viernes) (precio estimado)",
+      "cantidad": 2,
+      "unidad": "tarros",
+      "seccion": "Arroz, legumbres y pasta",
+      "id_preferente": 26019,
+      "termino_fallback": "alubia cocida blanca",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Alubias rojas cocidas (burrito bowl)",
       "cantidad": 1,
-      "unidad": "paquete 500g",
+      "unidad": "tarro",
+      "seccion": "Arroz, legumbres y pasta",
+      "id_preferente": 26000,
+      "termino_fallback": "alubia cocida roja",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Espaguetis (pasta al pesto del viernes)",
+      "cantidad": 1,
+      "unidad": "paquete 500 g",
       "seccion": "Arroz, legumbres y pasta",
       "id_preferente": 6277,
       "termino_fallback": "spaghetti",
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Noodles de trigo (ramen del domingo y fideos del martes)",
+      "nombre_receta": "Noodles de trigo (yakisoba)",
       "cantidad": 2,
       "unidad": "paquetes",
       "seccion": "Arroz, legumbres y pasta",
@@ -333,27 +326,29 @@
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Pan de burger brioche (hamburguesas del sábado)",
+      "nombre_receta": "Tortillas de trigo (quesadillas)",
       "cantidad": 1,
       "unidad": "paquete",
       "seccion": "Panadería y pastelería",
-      "id_preferente": 52602,
-      "termino_fallback": "pan burger brioche",
+      "id_preferente": 17567,
+      "termino_fallback": "tortillas de trigo",
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Masa de pizza fresca familiar (pizza del viernes)",
+      "nombre_receta": "Pan rústico (merluza a la plancha y shakshuka)",
       "cantidad": 1,
-      "unidad": "paquete 400g",
-      "seccion": "Pizzas y platos preparados",
-      "id_preferente": 52454,
-      "termino_fallback": "masa pizza fresca",
-      "filtro_excluir": []
+      "unidad": "paquete",
+      "seccion": "Panadería y pastelería",
+      "id_preferente": 23359,
+      "termino_fallback": "pan de molde",
+      "filtro_excluir": [
+        "sin gluten"
+      ]
     },
     {
-      "nombre_receta": "Tomate triturado (suflé y pizza)",
+      "nombre_receta": "Tomate triturado (alubias, shakshuka y quesadillas)",
       "cantidad": 2,
-      "unidad": "botes 400g",
+      "unidad": "botes 400 g",
       "seccion": "Conservas, caldos y cremas",
       "id_preferente": 16043,
       "termino_fallback": "tomate triturado",
@@ -362,36 +357,48 @@
       ]
     },
     {
-      "nombre_receta": "Atún claro (ensalada de la tortilla)",
+      "nombre_receta": "Maíz dulce (burrito bowl) (precio estimado)",
       "cantidad": 1,
-      "unidad": "pack 6 latas",
+      "unidad": "pack 3 latas",
       "seccion": "Conservas, caldos y cremas",
-      "id_preferente": 18002,
-      "termino_fallback": "atun claro oliva",
+      "id_preferente": 16714,
+      "termino_fallback": "maiz dulce",
+      "filtro_excluir": [
+        "frito",
+        "palomitas"
+      ]
+    },
+    {
+      "nombre_receta": "Pesto fresco de albahaca (pasta del viernes) (precio estimado)",
+      "cantidad": 1,
+      "unidad": "tarrina",
+      "seccion": "Pizzas y platos preparados",
+      "id_preferente": 35186,
+      "termino_fallback": "pesto",
       "filtro_excluir": []
     },
     {
-      "nombre_receta": "Crema de cacahuete 100% (fideos del martes)",
+      "nombre_receta": "Jengibre molido (teriyaki y yakisoba) (precio estimado)",
       "cantidad": 1,
       "unidad": "bote",
-      "seccion": "Azúcar, caramelos y chocolate",
-      "id_preferente": 16883,
-      "termino_fallback": "crema cacahuete",
+      "seccion": "Aceite, especias y salsas",
+      "id_preferente": 34149,
+      "termino_fallback": "jengibre",
       "filtro_excluir": []
     }
   ],
   "despensa_excluida": [
-    "Lentejas pardinas (quedan ~650 g del paquete de la semana pasada)",
-    "Arroz redondo (quedan ~700 g del paquete de la semana pasada)",
-    "Mayonesa (frasco empezado la semana pasada)",
-    "Semillas de sésamo tostado (bote de la semana pasada)",
-    "Leche semidesnatada (stock de desayunos, para el puré del suflé)",
-    "Curry dulce suave en polvo y hojas de laurel",
+    "Semillas de sésamo tostado (bote empezado)",
+    "Leche (stock de desayunos, para el puré del sábado)",
+    "Harina (salsa verde de la merluza)",
+    "Comprobar que hay en casa: azúcar, maicena, kétchup, salsa Worcestershire y vino blanco para guisar (o caldo)",
     "Aceite de oliva virgen extra (AOVE)",
     "Sal yodada",
     "Pimienta negra molida",
     "Orégano seco",
     "Pimentón dulce de la Vera",
+    "Comino molido",
+    "Laurel",
     "Ajos",
     "Vinagre de manzana",
     "Salsa de soja baja en sal",
