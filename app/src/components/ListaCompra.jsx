@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { 
   CheckCircle2, 
   Circle, 
@@ -13,11 +13,34 @@ import {
   Home,
   Plus,
   Trash2,
-  Shuffle
+  Shuffle,
+  Pencil,
+  Info
 } from 'lucide-react';
 import { useEstadoSemanal } from '../utils/semana';
+import { precioLidl } from '../utils/supermercados';
 
-export default function ListaCompra({ listaData, despensaData, semana, menuData, recetarioData, cambios }) {
+const SUPER_KEY = 'menuia_supermercado';
+const PRECIOS_LIDL_KEY = 'menuia_precios_lidl_usuario';
+
+const leerLocal = (clave, porDefecto) => {
+  try {
+    const guardado = localStorage.getItem(clave);
+    return guardado ? JSON.parse(guardado) : porDefecto;
+  } catch {
+    return porDefecto;
+  }
+};
+
+const guardarLocal = (clave, valor) => {
+  try {
+    localStorage.setItem(clave, JSON.stringify(valor));
+  } catch (e) {
+    console.error('Error guardando en localStorage', e);
+  }
+};
+
+export default function ListaCompra({ listaData, despensaData, preciosLidl, semana, menuData, recetarioData, cambios }) {
   // Estado ligado a la semana: se vacía solo al publicar un menú nuevo
   const [checkedMap, setCheckedMap] = useEstadoSemanal('compra', semana, {});
   const [tengoMap, setTengoMap] = useEstadoSemanal('tengo', semana, {});
@@ -28,6 +51,17 @@ export default function ListaCompra({ listaData, despensaData, semana, menuData,
   const [hideChecked, setHideChecked] = useState(false);
   const [copied, setCopied] = useState(false);
   const [showDespensa, setShowDespensa] = useState(false);
+  // Supermercado elegido y precios LIDL corregidos: no dependen de la semana
+  const [supermercado, setSupermercado] = useState(() => leerLocal(SUPER_KEY, 'mercadona'));
+  const [preciosUsuario, setPreciosUsuario] = useState(() => leerLocal(PRECIOS_LIDL_KEY, {}));
+  const [preciosCopiados, setPreciosCopiados] = useState(false);
+
+  const esLidl = supermercado === 'lidl';
+  const productosLidl = useMemo(() => preciosLidl?.productos || [], [preciosLidl]);
+  const nombreSuper = esLidl ? 'LIDL' : (listaData?.supermercado || 'Mercadona');
+
+  useEffect(() => guardarLocal(SUPER_KEY, supermercado), [supermercado]);
+  useEffect(() => guardarLocal(PRECIOS_LIDL_KEY, preciosUsuario), [preciosUsuario]);
 
   const toggleItem = (itemId) => {
     setCheckedMap(prev => ({
@@ -77,13 +111,81 @@ export default function ListaCompra({ listaData, despensaData, semana, menuData,
     }
   };
 
-  const pasillos = useMemo(() => listaData?.pasillos || [], [listaData]);
+  // Cada artículo lleva su precio en el supermercado elegido (precioVista)
+  const pasillos = useMemo(() => (listaData?.pasillos || []).map(p => ({
+    ...p,
+    items: p.items.map(i => {
+      const lidl = precioLidl(i, productosLidl, preciosUsuario);
+      return {
+        ...i,
+        lidl,
+        precioVista: esLidl ? lidl.total : i.precio_total,
+        unitarioVista: esLidl ? lidl.unitario : i.precio_unitario
+      };
+    })
+  })), [listaData, productosLidl, preciosUsuario, esLidl]);
+
+  // Comparativa de ambos supermercados sobre lo que hay que comprar y tiene precio en los dos
+  const comparativa = useMemo(() => {
+    let mercadona = 0;
+    let lidl = 0;
+    let sinPrecioLidl = 0;
+    pasillos.forEach(p => p.items.forEach(i => {
+      if (tengoMap[i.id || i.nombre]) return;
+      if (i.lidl.total == null) {
+        sinPrecioLidl += 1;
+        return;
+      }
+      mercadona += i.precio_total || 0;
+      lidl += i.lidl.total;
+    }));
+    return {
+      mercadona: Math.round(mercadona * 100) / 100,
+      lidl: Math.round(lidl * 100) / 100,
+      sinPrecioLidl
+    };
+  }, [pasillos, tengoMap]);
+
+  const editarPrecioLidl = (item) => {
+    const ref = item.lidl.ref;
+    if (!ref) {
+      window.alert('Este artículo no está en la tabla de precios LIDL (data/precios_lidl.json).');
+      return;
+    }
+    const actual = item.lidl.unitario != null ? item.lidl.unitario.toFixed(2) : '';
+    const respuesta = window.prompt(
+      `Precio en LIDL de "${ref.nombre_lidl}" (${ref.formato}), en € por unidad.\nDéjalo vacío para volver al precio estimado.`,
+      actual
+    );
+    if (respuesta === null) return;
+    const limpio = respuesta.trim().replace(',', '.');
+    setPreciosUsuario(prev => {
+      const siguiente = { ...prev };
+      if (limpio === '') {
+        delete siguiente[ref.clave];
+      } else {
+        const valor = parseFloat(limpio);
+        if (Number.isNaN(valor) || valor < 0) {
+          window.alert('Precio no válido.');
+          return prev;
+        }
+        siguiente[ref.clave] = Math.round(valor * 100) / 100;
+      }
+      return siguiente;
+    });
+  };
+
+  const copiarPreciosLidl = () => {
+    navigator.clipboard.writeText(JSON.stringify(preciosUsuario, null, 2));
+    setPreciosCopiados(true);
+    setTimeout(() => setPreciosCopiados(false), 2500);
+  };
 
   // Calcular estadísticas
   const { totalItems, checkedCount, ticketTotal, ticketGastado, ahorroTengo } = useMemo(() => {
     let total = 0;
     let checked = 0;
-    let totalEuros = listaData?.total_ticket_estimado || 0;
+    let totalEuros = 0;
     let gastado = 0;
     let ahorro = 0;
 
@@ -91,13 +193,14 @@ export default function ListaCompra({ listaData, despensaData, semana, menuData,
       p.items.forEach(i => {
         // Lo que ya hay en casa no se compra ni cuenta en el ticket
         if (tengoMap[i.id || i.nombre]) {
-          ahorro += (i.precio_total || 0);
+          ahorro += (i.precioVista || 0);
           return;
         }
         total += 1;
+        totalEuros += (i.precioVista || 0);
         if (checkedMap[i.id || i.nombre]) {
           checked += 1;
-          gastado += (i.precio_total || 0);
+          gastado += (i.precioVista || 0);
         }
       });
     });
@@ -105,11 +208,11 @@ export default function ListaCompra({ listaData, despensaData, semana, menuData,
     return {
       totalItems: total,
       checkedCount: checked,
-      ticketTotal: Math.round((totalEuros - ahorro) * 100) / 100,
+      ticketTotal: Math.round(totalEuros * 100) / 100,
       ticketGastado: Math.round(gastado * 100) / 100,
       ahorroTengo: Math.round(ahorro * 100) / 100
     };
-  }, [pasillos, checkedMap, tengoMap, listaData]);
+  }, [pasillos, checkedMap, tengoMap]);
 
   const porcentaje = totalItems > 0 ? Math.round((checkedCount / totalItems) * 100) : 0;
 
@@ -125,7 +228,8 @@ export default function ListaCompra({ listaData, despensaData, semana, menuData,
         const nom = (item.nombre || '').toLowerCase();
         const nomRec = (item.nombre_receta || '').toLowerCase();
         const pas = (p.nombre_pasillo || '').toLowerCase();
-        return nom.includes(q) || nomRec.includes(q) || pas.includes(q);
+        const nomLidl = esLidl ? (item.lidl.ref?.nombre_lidl || '').toLowerCase() : '';
+        return nom.includes(q) || nomRec.includes(q) || pas.includes(q) || (nomLidl && nomLidl.includes(q));
       });
 
       return {
@@ -133,19 +237,20 @@ export default function ListaCompra({ listaData, despensaData, semana, menuData,
         itemsVisibles: itemsFiltrados
       };
     }).filter(p => p.itemsVisibles.length > 0);
-  }, [pasillos, checkedMap, tengoMap, hideChecked, searchTerm]);
+  }, [pasillos, checkedMap, tengoMap, hideChecked, searchTerm, esLidl]);
 
   // Copiar lista al portapapeles
   const copiarListaTexto = () => {
-    let texto = `🛒 LISTA DE LA COMPRA - ${listaData?.supermercado || 'Mercadona'}\n`;
-    texto += `Total estimado: ${ticketTotal} € | Progreso: ${checkedCount}/${totalItems}\n\n`;
+    let texto = `🛒 LISTA DE LA COMPRA - ${nombreSuper}\n`;
+    texto += `Total estimado: ${ticketTotal.toFixed(2)} € | Progreso: ${checkedCount}/${totalItems}\n\n`;
 
     pasillos.forEach(p => {
       texto += `--- ${p.nombre_pasillo.toUpperCase()} ---\n`;
       p.items.forEach(i => {
         if (tengoMap[i.id || i.nombre]) return;
         const check = checkedMap[i.id || i.nombre] ? '✓' : '•';
-        texto += `${check} ${i.nombre_receta || i.nombre} (${i.cantidad} ${i.unidad_receta}) - ${i.precio_total}€\n`;
+        const precio = i.precioVista != null ? `${i.precioVista.toFixed(2)}€` : 'sin precio';
+        texto += `${check} ${i.nombre_receta || i.nombre} (${i.cantidad} ${i.unidad_receta}) - ${precio}\n`;
       });
       texto += `\n`;
     });
@@ -168,14 +273,35 @@ export default function ListaCompra({ listaData, despensaData, semana, menuData,
           <div>
             <div className="inline-flex items-center gap-1.5 bg-emerald-500/30 border border-emerald-400/40 text-emerald-200 text-xs font-semibold px-3 py-1 rounded-full mb-2">
               <Store className="w-3.5 h-3.5 text-emerald-300" />
-              {listaData?.supermercado || 'Mercadona'}
+              {nombreSuper}
             </div>
             <h2 className="text-xl sm:text-2xl font-black tracking-tight">
               Lista de la Compra Interactiva
             </h2>
             <p className="text-emerald-100/80 text-xs sm:text-sm mt-1 max-w-md">
-              Ordenada por los pasillos reales de la tienda para optimizar tu recorrido.
+              Ordenada por pasillos para optimizar tu recorrido.
             </p>
+
+            {/* Selector de supermercado */}
+            <div className="mt-3 inline-flex bg-black/30 rounded-xl p-1 border border-white/15" role="group" aria-label="Supermercado">
+              {[
+                { id: 'mercadona', label: 'Mercadona' },
+                { id: 'lidl', label: 'LIDL' }
+              ].map(s => (
+                <button
+                  key={s.id}
+                  onClick={() => setSupermercado(s.id)}
+                  aria-pressed={supermercado === s.id}
+                  className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-colors ${
+                    supermercado === s.id
+                      ? 'bg-white text-emerald-900 shadow'
+                      : 'text-emerald-100 hover:text-white'
+                  }`}
+                >
+                  {s.label}
+                </button>
+              ))}
+            </div>
           </div>
 
           <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20 sm:text-right shrink-0">
@@ -191,6 +317,11 @@ export default function ListaCompra({ listaData, despensaData, semana, menuData,
             {ahorroTengo > 0 && (
               <div className="text-xs text-emerald-100">
                 Ya en casa: −{ahorroTengo.toFixed(2)} €
+              </div>
+            )}
+            {esLidl && (
+              <div className="text-xs text-amber-200 mt-0.5">
+                Precios estimados
               </div>
             )}
           </div>
@@ -210,6 +341,44 @@ export default function ListaCompra({ listaData, despensaData, semana, menuData,
           </div>
         </div>
       </div>
+
+      {/* Comparativa Mercadona vs LIDL */}
+      {productosLidl.length > 0 && (
+        <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-sm space-y-3">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+            <span className="font-bold text-slate-900">Comparativa</span>
+            <span className="text-slate-700">Mercadona: <strong>{comparativa.mercadona.toFixed(2)} €</strong></span>
+            <span className="text-slate-700">LIDL: <strong>{comparativa.lidl.toFixed(2)} €</strong></span>
+            <span className={`font-semibold ${comparativa.lidl <= comparativa.mercadona ? 'text-emerald-700' : 'text-rose-700'}`}>
+              {comparativa.lidl <= comparativa.mercadona
+                ? `LIDL ${(comparativa.mercadona - comparativa.lidl).toFixed(2)} € más barato`
+                : `Mercadona ${(comparativa.lidl - comparativa.mercadona).toFixed(2)} € más barato`}
+            </span>
+          </div>
+          {comparativa.sinPrecioLidl > 0 && (
+            <p className="text-xs text-slate-500">
+              Sobre los artículos con precio en ambos; {comparativa.sinPrecioLidl} {comparativa.sinPrecioLidl === 1 ? 'artículo no tiene' : 'artículos no tienen'} precio LIDL.
+            </p>
+          )}
+          {esLidl && (
+            <div className="flex items-start gap-2 text-xs text-amber-900 bg-amber-50 border border-amber-200 rounded-xl p-3">
+              <Info className="w-4 h-4 shrink-0 mt-0.5 text-amber-600" />
+              <div className="space-y-2">
+                <p>{preciosLidl?.aviso} Precios de referencia de {preciosLidl?.actualizado}.</p>
+                {Object.keys(preciosUsuario).length > 0 && (
+                  <button
+                    onClick={copiarPreciosLidl}
+                    className="px-2.5 py-1 bg-white border border-amber-300 rounded-lg font-semibold inline-flex items-center gap-1.5 hover:bg-amber-100"
+                  >
+                    {preciosCopiados ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
+                    {preciosCopiados ? 'Copiados' : `Copiar precios corregidos (${Object.keys(preciosUsuario).length})`}
+                  </button>
+                )}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Barra de Controles y Filtros */}
       <div className="bg-white rounded-2xl border border-slate-200 p-3 sm:p-4 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-3">
@@ -263,7 +432,7 @@ export default function ListaCompra({ listaData, despensaData, semana, menuData,
       <div className="space-y-5">
         {pasillosFiltrados.map((pasillo, pIdx) => {
           const itemsPasillo = pasillo.itemsVisibles;
-          const subtotalPasillo = itemsPasillo.reduce((acc, i) => acc + (i.precio_total || 0), 0);
+          const subtotalPasillo = itemsPasillo.reduce((acc, i) => acc + (i.precioVista || 0), 0);
 
           return (
             <div 
@@ -322,7 +491,7 @@ export default function ListaCompra({ listaData, despensaData, semana, menuData,
                         </button>
 
                         {/* Thumbnail si existe */}
-                        {item.thumbnail && (
+                        {!esLidl && item.thumbnail && (
                           <img 
                             src={item.thumbnail} 
                             alt={item.nombre} 
@@ -338,10 +507,18 @@ export default function ListaCompra({ listaData, despensaData, semana, menuData,
                             }`}>
                               {item.nombre_receta || item.nombre}
                             </span>
-                            {item.nombre_receta && item.nombre !== item.nombre_receta && (
-                              <span className="text-xs text-slate-400 truncate">
-                                ({item.nombre})
-                              </span>
+                            {esLidl ? (
+                              item.lidl.ref && (
+                                <span className="text-xs text-slate-400 truncate">
+                                  ({item.lidl.ref.nombre_lidl} · {item.lidl.ref.formato})
+                                </span>
+                              )
+                            ) : (
+                              item.nombre_receta && item.nombre !== item.nombre_receta && (
+                                <span className="text-xs text-slate-400 truncate">
+                                  ({item.nombre})
+                                </span>
+                              )
                             )}
                           </div>
 
@@ -349,7 +526,10 @@ export default function ListaCompra({ listaData, despensaData, semana, menuData,
                             <span className="bg-slate-100 px-2 py-0.5 rounded font-medium text-slate-700">
                               {item.cantidad} x {item.unidad_receta || 'ud'}
                             </span>
-                            {item.precio_referencia > 0 && (
+                            {esLidl && item.lidl.ref?.nota && (
+                              <span className="text-amber-700">{item.lidl.ref.nota}</span>
+                            )}
+                            {!esLidl && item.precio_referencia > 0 && (
                               <span>
                                 {item.precio_referencia.toFixed(2)} €/{item.formato_referencia}
                               </span>
@@ -374,15 +554,33 @@ export default function ListaCompra({ listaData, despensaData, semana, menuData,
                       </div>
 
                       {/* Precio */}
-                      <div className="text-right shrink-0 pl-2">
-                        <div className={`text-sm sm:text-base font-extrabold ${
-                          isChecked ? 'line-through text-slate-400' : 'text-slate-900'
-                        }`}>
-                          {item.precio_total?.toFixed(2)} €
+                      <div className="text-right shrink-0 pl-2 flex items-center gap-2">
+                        <div>
+                          <div className={`text-sm sm:text-base font-extrabold ${
+                            isChecked ? 'line-through text-slate-400' : 'text-slate-900'
+                          }`}>
+                            {item.precioVista != null ? `${item.precioVista.toFixed(2)} €` : '—'}
+                          </div>
+                          <div className="text-xs text-slate-500">
+                            {item.unitarioVista != null ? `${item.unitarioVista.toFixed(2)} €/ud` : 'sin precio'}
+                            {esLidl && item.lidl.origen === 'estimado' && ' · estimado'}
+                            {esLidl && item.lidl.origen === 'usuario' && ' · tu precio'}
+                          </div>
                         </div>
-                        <div className="text-xs text-slate-500">
-                          {item.precio_unitario?.toFixed(2)} €/ud
-                        </div>
+                        {esLidl && (
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              editarPrecioLidl(item);
+                            }}
+                            className="p-2 rounded-lg text-slate-400 hover:text-emerald-700 hover:bg-emerald-50 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                            aria-label="Corregir precio LIDL"
+                            title="Corregir precio LIDL"
+                          >
+                            <Pencil className="w-4 h-4" />
+                          </button>
+                        )}
                       </div>
                     </div>
                   );

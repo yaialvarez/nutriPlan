@@ -51,10 +51,12 @@ menuIA/
 │   ├── recetario.json             # Catálogo de recetas con adaptaciones específicas
 │   ├── despensa_base.json         # Básicos del hogar para filtrar de la compra
 │   ├── menu_semanal.json          # 14 tomas activas + cronograma de batch cooking
-│   └── lista_compra.json          # Lista con precios reales y pasillos de Mercadona
+│   ├── lista_compra.json          # Lista con precios reales y pasillos de Mercadona
+│   └── precios_lidl.json          # Tabla de precios LIDL de referencia (estimados, editables en la app)
 ├── scripts/
 │   ├── mercadona_api.py           # Conector concurrente con API Mercadona
 │   ├── generar_lista_compra.py    # Generador/validador de lista de compra y costes
+│   ├── comprobar_precios_lidl.py  # Comprueba qué artículos de la lista tienen precio LIDL
 │   └── verificar_reglas.py        # Validador integral de reglas médicas y sincronización
 ├── app/                           # Web App interactiva (Vite + React + Tailwind CSS)
 │   ├── public/

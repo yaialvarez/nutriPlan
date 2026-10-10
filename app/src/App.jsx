@@ -263,6 +263,7 @@ export default function App() {
           <ListaCompra
             listaData={listaData}
             despensaData={despensaData}
+            preciosLidl={files?.['precios_lidl.json']}
             semana={semana}
             menuData={menuData}
             recetarioData={recetarioData}
