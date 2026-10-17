@@ -6544,5 +6544,214 @@
       "Untar las tortitas con la crema de cacahuete.",
       "Cubrir con el plátano en rodajas y canela; comer al momento para que no se ablanden."
     ]
+  },
+  {
+    "id": "lasana_canelones_precocinados",
+    "nombre": "Lasaña boloñesa o canelones de carne precocinados",
+    "tipo": "comida",
+    "tiempo_minutos": 10,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Precocinado refrigerado de Mercadona (horno o microondas)",
+    "ingredientes": [
+      {
+        "item": "Lasaña boloñesa o canelones de carne Hacendado refrigerados",
+        "cantidad": "2 bandejas (una por persona)",
+        "seccion": "Platos preparados"
+      },
+      {
+        "item": "Ensalada verde o verdura cocida de acompañamiento",
+        "cantidad": "al gusto",
+        "seccion": "Fruta y verdura"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Una bandeja individual (o media familiar, ~350 g) gratinada, con algo de verdura al lado.",
+      "proporciones": "~28 g de proteína (ración moderada). Precocinado ocasional: vigilar la sal el resto del día."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Una bandeja completa, con pan si se queda con hambre.",
+      "proporciones": "Plato denso en energía para el superávit + batido proteico en la merienda."
+    },
+    "seguridad_medica": "Precocinado puntual de fin de semana; sin picante, sin berenjena ni quesos fuertes (revisar la etiqueta).",
+    "pasos_preparacion": [
+      "Precalentar el horno a 200 °C (o usar el microondas según la etiqueta).",
+      "Hornear la bandeja 20-25 minutos hasta que gratine y esté caliente por dentro.",
+      "Dejar reposar 3 minutos y servir con la verdura."
+    ]
+  },
+  {
+    "id": "burritos_arroz_chili_carne_picada",
+    "nombre": "Burritos de arroz, chili suave y carne picada con limón y cilantro",
+    "tipo": "cena",
+    "tiempo_minutos": 25,
+    "apto_batch_cooking": false,
+    "origen_cocina": "Cena de sábado (25 min)",
+    "ingredientes": [
+      {
+        "item": "Tortillas de trigo para fajitas",
+        "cantidad": "1 paquete",
+        "seccion": "Panadería y pastelería"
+      },
+      {
+        "item": "Chili con carne en lata (versión suave, sin picante)",
+        "cantidad": "1 lata",
+        "seccion": "Platos preparados"
+      },
+      {
+        "item": "Carne picada",
+        "cantidad": "250g",
+        "seccion": "Carne"
+      },
+      {
+        "item": "Arroz blanco cocido",
+        "cantidad": "150g en crudo",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Zumo de limón",
+        "cantidad": "1 cucharada",
+        "seccion": "Conservas, caldos y cremas"
+      },
+      {
+        "item": "Cilantro fresco picado",
+        "cantidad": "un puñado",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Comino, pimentón dulce, sal yodada y AOVE",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "2 burritos con unos 100 g de carne picada, arroz al cilantro y una cucharada de chili.",
+      "proporciones": "~32 g de proteína (ración moderada). Cero picante y sin cebolla cruda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "3 burritos bien rellenos de arroz, chili y carne.",
+      "proporciones": "Cena energética para llegar a sus kcal + batido proteico en la merienda."
+    },
+    "seguridad_medica": "Comprobar en la etiqueta que el chili de lata no pica; condimentar solo con comino y pimentón dulce. Cebolla, si la lleva, siempre cocinada.",
+    "pasos_preparacion": [
+      "Cocer el arroz y, ya escurrido, aliñarlo con el zumo de limón, sal y la mitad del cilantro picado.",
+      "Dorar la carne picada en sartén con un hilo de AOVE, comino y pimentón dulce, deshaciéndola bien.",
+      "Añadir el chili de lata y cocinar junto 5 minutos a fuego medio hasta que espese.",
+      "Calentar las tortillas 20 segundos por cada lado en sartén seca.",
+      "Rellenar con arroz y carne con chili, espolvorear cilantro, enrollar cerrando los extremos y dorar los burritos 1 minuto por cada lado."
+    ]
+  },
+  {
+    "id": "garbanzos_salteados_espinacas_chorizo_huevo",
+    "nombre": "Salteado castellano de garbanzos con espinacas baby, taquitos de chorizo y huevo campero",
+    "tipo": "comida",
+    "tiempo_minutos": 15,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Tupper Batch Cooking (recalentar 3 min microondas)",
+    "ingredientes": [
+      {
+        "item": "Garbanzos cocidos en tarro",
+        "cantidad": "400g escurridos",
+        "seccion": "Arroz, legumbres y pasta"
+      },
+      {
+        "item": "Espinacas baby lavadas",
+        "cantidad": "100g",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Taquitos de chorizo dulce (sin picante)",
+        "cantidad": "75g",
+        "seccion": "Charcutería y quesos"
+      },
+      {
+        "item": "Huevos camperos cocidos",
+        "cantidad": "2 unidades",
+        "seccion": "Huevos, leche y mantequilla"
+      },
+      {
+        "item": "Dientes de ajo laminados",
+        "cantidad": "2 unidades",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Pimentón dulce de la Vera, sal yodada y AOVE",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "Garbanzos salteados con ajo dorado, espinacas tiernas cocinadas, chorizo dulce dorado y huevo campero picado.",
+      "proporciones": "Legumbre y proteína animal de comida real (~33 g de proteína total). Chorizo en cantidad moderada por la sal; sin cebolla cruda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "Plato hondo colmado de garbanzos con espinacas cocinadas, chorizo y huevo campero.",
+      "proporciones": "Yodo y selenio del huevo campero, fibra soluble suave y carbohidratos complejos + 1 batido proteico en la merienda."
+    },
+    "seguridad_medica": "Chorizo dulce (nunca picante) en poca cantidad; espinacas cocinadas; pimentón dulce; libre de marisco, coles de Bruselas y berenjena.",
+    "pasos_preparacion": [
+      "En sartén amplia, dorar los ajos laminados en 2 cucharadas de AOVE.",
+      "Añadir los taquitos de chorizo y saltear 1-2 minutos a fuego medio hasta que suelten su grasa roja.",
+      "Incorporar las espinacas baby y saltear 2 minutos hasta que reduzcan y queden tiernas.",
+      "Añadir una cucharadita de pimentón dulce de la Vera fuera del fuego para que no amargue.",
+      "Agregar los garbanzos cocidos lavados y escurridos, saltear todo junto 3-4 minutos para integrar sabores.",
+      "Servir coronado con los huevos camperos cocidos cortados en cuartos."
+    ]
+  },
+  {
+    "id": "albondigas_caseras_salsa_tomate_patatas",
+    "nombre": "Albóndigas caseras de vacuno y cerdo en salsa de tomate con patatas",
+    "tipo": "comida",
+    "tiempo_minutos": 40,
+    "apto_batch_cooking": true,
+    "origen_cocina": "Tupper Batch Cooking (recalentar 3 min microondas)",
+    "ingredientes": [
+      {
+        "item": "Carne picada mixta de vacuno y cerdo",
+        "cantidad": "500g",
+        "seccion": "Carne"
+      },
+      {
+        "item": "Tomate triturado natural",
+        "cantidad": "400g",
+        "seccion": "Conservas, caldos y cremas"
+      },
+      {
+        "item": "Patatas para guisar",
+        "cantidad": "2 unidades medianas en dados",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Cebolla dulce (bien pochada)",
+        "cantidad": "1/2 unidad",
+        "seccion": "Fruta y verdura"
+      },
+      {
+        "item": "Ajo, perejil, sal yodada, orégano y AOVE",
+        "cantidad": "al gusto",
+        "seccion": "Despensa"
+      },
+      {
+        "item": "Huevo campero y pan rallado para ligar",
+        "cantidad": "1 huevo + 2 cucharadas",
+        "seccion": "Despensa"
+      }
+    ],
+    "adaptacion_lord_i": {
+      "plato": "5-6 albóndigas (~180 g de carne en crudo) con dados de patata y abundante salsa de tomate.",
+      "proporciones": "~35 g de proteína (ración moderada). Cebolla pochada y deshecha en la salsa; sin cebolla cruda."
+    },
+    "adaptacion_dona_y": {
+      "plato": "El resto de albóndigas con ración generosa de patatas empapadas en salsa.",
+      "proporciones": "Proteína de alto valor biológico y carbohidratos densos + batido proteico en la merienda."
+    },
+    "seguridad_medica": "100% comida real; cero picante; cebolla pochada; libre de berenjena, aceitunas y coles de Bruselas.",
+    "pasos_preparacion": [
+      "Mezclar la carne picada con ajo y perejil picados, el huevo, el pan rallado y sal yodada. Formar bolitas.",
+      "Dorar las albóndigas en sartén con un chorrito de AOVE (o al horno a 200 °C 12 min) y reservar.",
+      "En la misma cazuela, pochar la cebolla y 2 ajos picados 8 minutos a fuego suave.",
+      "Añadir el tomate triturado, una pizca de sal, orégano y una cucharadita de azúcar si está ácido; cocer 10 minutos.",
+      "Incorporar las albóndigas y las patatas en dados pequeños con un poco de agua y cocer tapado a fuego suave 15-20 minutos hasta que la patata esté tierna.",
+      "Repartir en tuppers de cristal para el microondas del trabajo."
+    ]
   }
 ]

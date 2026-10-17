@@ -1,13 +1,13 @@
 {
   "supermercado": "Mercadona",
   "semana": "Semana del 17 al 23 de octubre (generada automáticamente)",
-  "total_ticket_estimado": 97.47,
+  "total_ticket_estimado": 66.9,
   "moneda": "EUR",
-  "total_articulos": 34,
+  "total_articulos": 28,
   "pasillos": [
     {
       "nombre_pasillo": "Fruta y verdura",
-      "subtotal": 27.91,
+      "subtotal": 23.22,
       "items": [
         {
           "id": "3819",
@@ -40,24 +40,9 @@
           "comprado": false
         },
         {
-          "id": "68131",
-          "nombre": "Judía verde plana",
-          "nombre_receta": "Judía verde plana (cena del sábado)",
-          "pasillo": "Fruta y verdura",
-          "subseccion": "Otras verduras y hortalizas",
-          "cantidad": 1,
-          "unidad_receta": "paquete (~350 g)",
-          "precio_unitario": 2.0,
-          "precio_total": 2.0,
-          "precio_referencia": 5.715,
-          "formato_referencia": "kg",
-          "thumbnail": "",
-          "comprado": false
-        },
-        {
           "id": "69730",
           "nombre": "Espinacas cortadas y lavadas",
-          "nombre_receta": "Espinacas cortadas y lavadas (comida del viernes y cena del viernes)",
+          "nombre_receta": "Espinacas cortadas y lavadas (comida del martes)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Otras verduras y hortalizas",
           "cantidad": 1,
@@ -72,29 +57,14 @@
         {
           "id": "69338",
           "nombre": "Calabacín verde",
-          "nombre_receta": "Calabacín (comida del sábado y cena del jueves)",
+          "nombre_receta": "Calabacín (cena del jueves)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Calabacín y pimiento",
-          "cantidad": 2,
+          "cantidad": 1,
           "unidad_receta": "pieza",
           "precio_unitario": 0.74,
-          "precio_total": 1.48,
+          "precio_total": 0.74,
           "precio_referencia": 1.9,
-          "formato_referencia": "kg",
-          "thumbnail": "",
-          "comprado": false
-        },
-        {
-          "id": "69990",
-          "nombre": "Tomates cherry",
-          "nombre_receta": "Tomates cherry (cena del sábado)",
-          "pasillo": "Fruta y verdura",
-          "subseccion": "Tomate",
-          "cantidad": 1,
-          "unidad_receta": "bandeja 500 g",
-          "precio_unitario": 2.2,
-          "precio_total": 2.2,
-          "precio_referencia": 4.4,
           "formato_referencia": "kg",
           "thumbnail": "",
           "comprado": false
@@ -132,13 +102,13 @@
         {
           "id": "69586",
           "nombre": "Zanahorias",
-          "nombre_receta": "Zanahorias (comida del sábado, comida del martes, comida del miércoles, comida del jueves y cena del viernes)",
+          "nombre_receta": "Zanahorias (comida del jueves)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Pepino y zanahoria",
-          "cantidad": 2,
+          "cantidad": 1,
           "unidad_receta": "malla 1 kg",
           "precio_unitario": 1.0,
-          "precio_total": 2.0,
+          "precio_total": 1.0,
           "precio_referencia": 1.0,
           "formato_referencia": "kg",
           "thumbnail": "",
@@ -147,7 +117,7 @@
         {
           "id": "69166",
           "nombre": "Patatas",
-          "nombre_receta": "Patatas (cena del sábado, comida del lunes, comida del martes, comida del miércoles, cena del miércoles y comida del jueves)",
+          "nombre_receta": "Patatas (comida del lunes, comida del miércoles, cena del miércoles y comida del jueves)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Patata",
           "cantidad": 1,
@@ -162,7 +132,7 @@
         {
           "id": "69155",
           "nombre": "Cebollas dulces",
-          "nombre_receta": "Cebollas dulces para pochar (comida del lunes, comida del martes, comida del miércoles y comida del jueves)",
+          "nombre_receta": "Cebollas dulces para pochar (comida del lunes, comida del miércoles y comida del jueves)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Cebolla y ajo",
           "cantidad": 1,
@@ -177,7 +147,7 @@
         {
           "id": "69411",
           "nombre": "Puerros",
-          "nombre_receta": "Puerros (comida del miércoles y comida del jueves)",
+          "nombre_receta": "Puerros (comida del jueves)",
           "pasillo": "Fruta y verdura",
           "subseccion": "Otras verduras y hortalizas",
           "cantidad": 1,
@@ -203,12 +173,27 @@
           "formato_referencia": "100 g",
           "thumbnail": "",
           "comprado": false
+        },
+        {
+          "id": "69690",
+          "nombre": "Cilantro",
+          "nombre_receta": "Cilantro fresco (cena del sábado)",
+          "pasillo": "Fruta y verdura",
+          "subseccion": "Hierbas aromáticas",
+          "cantidad": 1,
+          "unidad_receta": "bandeja",
+          "precio_unitario": 1.25,
+          "precio_total": 1.25,
+          "precio_referencia": 6.25,
+          "formato_referencia": "100 g",
+          "thumbnail": "",
+          "comprado": false
         }
       ]
     },
     {
       "nombre_pasillo": "Congelados",
-      "subtotal": 8.75,
+      "subtotal": 4.9,
       "items": [
         {
           "id": "62113",
@@ -224,27 +209,12 @@
           "formato_referencia": "kg",
           "thumbnail": "",
           "comprado": false
-        },
-        {
-          "id": "24458",
-          "nombre": "Tacos de atún Hacendado congelado",
-          "nombre_receta": "Tacos de atún congelado (cena del sábado)",
-          "pasillo": "Congelados",
-          "subseccion": "Pescado",
-          "cantidad": 1,
-          "unidad_receta": "bandeja (~280 g)",
-          "precio_unitario": 3.85,
-          "precio_total": 3.85,
-          "precio_referencia": 13.75,
-          "formato_referencia": "kg",
-          "thumbnail": "",
-          "comprado": false
         }
       ]
     },
     {
       "nombre_pasillo": "Carne",
-      "subtotal": 31.46,
+      "subtotal": 9.93,
       "items": [
         {
           "id": "2778",
@@ -262,61 +232,16 @@
           "comprado": false
         },
         {
-          "id": "2789",
-          "nombre": "Contramuslos de pollo deshuesados y sin piel",
-          "nombre_receta": "Contramuslos de pollo deshuesados (comida del sábado)",
-          "pasillo": "Carne",
-          "subseccion": "Pollo",
-          "cantidad": 1,
-          "unidad_receta": "bandeja (~550 g)",
-          "precio_unitario": 3.74,
-          "precio_total": 3.74,
-          "precio_referencia": 6.8,
-          "formato_referencia": "kg",
-          "thumbnail": "",
-          "comprado": false
-        },
-        {
           "id": "2787",
           "nombre": "Filetes pechuga de pollo",
-          "nombre_receta": "Filetes de pechuga de pollo (comida del martes y cena del viernes)",
+          "nombre_receta": "Filetes de pechuga de pollo (cena del viernes)",
           "pasillo": "Carne",
           "subseccion": "Pollo",
-          "cantidad": 2,
+          "cantidad": 1,
           "unidad_receta": "bandeja (~560 g)",
           "precio_unitario": 4.31,
-          "precio_total": 8.62,
+          "precio_total": 4.31,
           "precio_referencia": 7.7,
-          "formato_referencia": "kg",
-          "thumbnail": "",
-          "comprado": false
-        },
-        {
-          "id": "2868",
-          "nombre": "Preparado de carne picada vacuno",
-          "nombre_receta": "Carne picada de vacuno (comida del miércoles)",
-          "pasillo": "Carne",
-          "subseccion": "Picadas y otros",
-          "cantidad": 1,
-          "unidad_receta": "bandeja 500 g",
-          "precio_unitario": 5.5,
-          "precio_total": 5.5,
-          "precio_referencia": 11.0,
-          "formato_referencia": "kg",
-          "thumbnail": "",
-          "comprado": false
-        },
-        {
-          "id": "8936",
-          "nombre": "Filetes de vacuno añojo para plancha",
-          "nombre_receta": "Filetes de vacuno añojo (cena del martes)",
-          "pasillo": "Carne",
-          "subseccion": "Vacuno",
-          "cantidad": 1,
-          "unidad_receta": "bandeja (~420 g)",
-          "precio_unitario": 7.98,
-          "precio_total": 7.98,
-          "precio_referencia": 19.0,
           "formato_referencia": "kg",
           "thumbnail": "",
           "comprado": false
@@ -340,18 +265,18 @@
     },
     {
       "nombre_pasillo": "Huevos, leche y mantequilla",
-      "subtotal": 6.7,
+      "subtotal": 3.35,
       "items": [
         {
           "id": "15768",
           "nombre": "Huevos de gallinas camperas",
-          "nombre_receta": "Huevos camperos (comida del sábado, cena del lunes, cena del miércoles, cena del jueves, comida del viernes y cena del viernes)",
+          "nombre_receta": "Huevos camperos (cena del lunes, comida del martes, cena del miércoles y cena del jueves)",
           "pasillo": "Huevos, leche y mantequilla",
           "subseccion": "Huevos",
-          "cantidad": 2,
+          "cantidad": 1,
           "unidad_receta": "docena",
           "precio_unitario": 3.35,
-          "precio_total": 6.7,
+          "precio_total": 3.35,
           "precio_referencia": 3.35,
           "formato_referencia": "dc",
           "thumbnail": "",
@@ -361,7 +286,7 @@
     },
     {
       "nombre_pasillo": "Charcutería y quesos",
-      "subtotal": 7.45,
+      "subtotal": 6.75,
       "items": [
         {
           "id": "15628",
@@ -374,21 +299,6 @@
           "precio_unitario": 2.3,
           "precio_total": 2.3,
           "precio_referencia": 25.556,
-          "formato_referencia": "kg",
-          "thumbnail": "",
-          "comprado": false
-        },
-        {
-          "id": "59071",
-          "nombre": "Taquitos de jamón Incarlopsa",
-          "nombre_receta": "Taquitos de jamón serrano (comida del viernes)",
-          "pasillo": "Charcutería y quesos",
-          "subseccion": "Jamón serrano",
-          "cantidad": 1,
-          "unidad_receta": "pack 2 (~200 g)",
-          "precio_unitario": 2.65,
-          "precio_total": 2.65,
-          "precio_referencia": 13.25,
           "formato_referencia": "kg",
           "thumbnail": "",
           "comprado": false
@@ -407,12 +317,27 @@
           "formato_referencia": "kg",
           "thumbnail": "",
           "comprado": false
+        },
+        {
+          "id": "16252",
+          "nombre": "Bacón Hacendado cintas",
+          "nombre_receta": "Bacon en tiras (comida del domingo)",
+          "pasillo": "Charcutería y quesos",
+          "subseccion": "Bacón",
+          "cantidad": 1,
+          "unidad_receta": "paquete",
+          "precio_unitario": 1.95,
+          "precio_total": 1.95,
+          "precio_referencia": 7.5,
+          "formato_referencia": "kg",
+          "thumbnail": "",
+          "comprado": false
         }
       ]
     },
     {
       "nombre_pasillo": "Arroz, legumbres y pasta",
-      "subtotal": 4.65,
+      "subtotal": 2.65,
       "items": [
         {
           "id": "5330",
@@ -432,7 +357,7 @@
         {
           "id": "26029",
           "nombre": "Garbanzo cocido Hacendado",
-          "nombre_receta": "Garbanzos cocidos (comida del viernes)",
+          "nombre_receta": "Garbanzos cocidos (comida del martes)",
           "pasillo": "Arroz, legumbres y pasta",
           "subseccion": "Garbanzos",
           "cantidad": 1,
@@ -443,42 +368,12 @@
           "formato_referencia": "kg",
           "thumbnail": "",
           "comprado": false
-        },
-        {
-          "id": "5044",
-          "nombre": "Arroz redondo Hacendado",
-          "nombre_receta": "Arroz redondo (comida del sábado, cena del domingo y comida del martes)",
-          "pasillo": "Arroz, legumbres y pasta",
-          "subseccion": "Arroz",
-          "cantidad": 1,
-          "unidad_receta": "paquete 1 kg",
-          "precio_unitario": 1.15,
-          "precio_total": 1.15,
-          "precio_referencia": 1.15,
-          "formato_referencia": "kg",
-          "thumbnail": "",
-          "comprado": false
-        },
-        {
-          "id": "9861",
-          "nombre": "Noodles Ramen",
-          "nombre_receta": "Noodles de trigo (cena del viernes)",
-          "pasillo": "Arroz, legumbres y pasta",
-          "subseccion": "Fideos orientales",
-          "cantidad": 1,
-          "unidad_receta": "paquete 200 g",
-          "precio_unitario": 0.85,
-          "precio_total": 0.85,
-          "precio_referencia": 4.25,
-          "formato_referencia": "kg",
-          "thumbnail": "",
-          "comprado": false
         }
       ]
     },
     {
       "nombre_pasillo": "Panadería y pastelería",
-      "subtotal": 1.95,
+      "subtotal": 3.1,
       "items": [
         {
           "id": "17809",
@@ -494,28 +389,49 @@
           "formato_referencia": "kg",
           "thumbnail": "",
           "comprado": false
+        },
+        {
+          "id": "80859",
+          "nombre": "Tortillas de trigo Hacendado",
+          "nombre_receta": "Tortillas de trigo para fajitas (cena del sábado)",
+          "pasillo": "Panadería y pastelería",
+          "subseccion": "Pan de hamburguesa y wrap",
+          "cantidad": 1,
+          "unidad_receta": "paquete",
+          "precio_unitario": 1.15,
+          "precio_total": 1.15,
+          "precio_referencia": 3.195,
+          "formato_referencia": "kg",
+          "thumbnail": "",
+          "comprado": false
+        }
+      ]
+    },
+    {
+      "nombre_pasillo": "Pizzas y platos preparados",
+      "subtotal": 5.5,
+      "items": [
+        {
+          "id": "4487",
+          "nombre": "Lasaña boloñesa Hacendado",
+          "nombre_receta": "Lasaña boloñesa o canelones de carne Hacendado refrigerados, a elegir en tienda (comida del sábado)",
+          "pasillo": "Pizzas y platos preparados",
+          "subseccion": "Pasta",
+          "cantidad": 2,
+          "unidad_receta": "bandeja",
+          "precio_unitario": 2.75,
+          "precio_total": 5.5,
+          "precio_referencia": 7.858,
+          "formato_referencia": "kg",
+          "thumbnail": "",
+          "comprado": false
         }
       ]
     },
     {
       "nombre_pasillo": "Conservas, caldos y cremas",
-      "subtotal": 7.4,
+      "subtotal": 4.9,
       "items": [
-        {
-          "id": "7313",
-          "nombre": "Caldo de pollo Hacendado",
-          "nombre_receta": "Caldo de pollo (comida del martes y cena del viernes)",
-          "pasillo": "Conservas, caldos y cremas",
-          "subseccion": "Caldo líquido",
-          "cantidad": 2,
-          "unidad_receta": "brik 1 L",
-          "precio_unitario": 0.75,
-          "precio_total": 1.5,
-          "precio_referencia": 0.75,
-          "formato_referencia": "L",
-          "thumbnail": "",
-          "comprado": false
-        },
         {
           "id": "18002",
           "nombre": "Atún claro en aceite de oliva Hacendado",
@@ -530,27 +446,12 @@
           "formato_referencia": "kg",
           "thumbnail": "",
           "comprado": false
-        },
-        {
-          "id": "16043",
-          "nombre": "Tomate triturado Hacendado",
-          "nombre_receta": "Tomate triturado (comida del miércoles)",
-          "pasillo": "Conservas, caldos y cremas",
-          "subseccion": "Tomate",
-          "cantidad": 1,
-          "unidad_receta": "bote 800 g",
-          "precio_unitario": 1.0,
-          "precio_total": 1.0,
-          "precio_referencia": 1.25,
-          "formato_referencia": "kg",
-          "thumbnail": "",
-          "comprado": false
         }
       ]
     },
     {
       "nombre_pasillo": "Aceite, especias y salsas",
-      "subtotal": 1.2,
+      "subtotal": 2.6,
       "items": [
         {
           "id": "13406",
@@ -563,6 +464,21 @@
           "precio_unitario": 1.2,
           "precio_total": 1.2,
           "precio_referencia": 2.4,
+          "formato_referencia": "L",
+          "thumbnail": "",
+          "comprado": false
+        },
+        {
+          "id": "4903",
+          "nombre": "Limón exprimido Hacendado",
+          "nombre_receta": "Zumo de limón exprimido (cena del sábado)",
+          "pasillo": "Aceite, especias y salsas",
+          "subseccion": "Vinagre y otros aderezos",
+          "cantidad": 1,
+          "unidad_receta": "botella",
+          "precio_unitario": 1.4,
+          "precio_total": 1.4,
+          "precio_referencia": 5.0,
           "formato_referencia": "L",
           "thumbnail": "",
           "comprado": false
@@ -583,6 +499,8 @@
     "Pimentón dulce de la Vera",
     "Copos de avena y leche (desayuno de Lord.I)",
     "Café e infusiones",
-    "Polvo de proteína (Doña.Y stock habitual)"
+    "Polvo de proteína (Doña.Y stock habitual)",
+    "Arroz (burritos, onigiris y curry)",
+    "Ya en casa esta semana: carne picada, chili en lata, chorizo, tomate triturado, filetes de vacuno, ingredientes de la carbonara (salvo bacon) y del ramen (salvo pollo), y el curry japonés congelado"
   ]
 }

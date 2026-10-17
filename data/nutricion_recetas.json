@@ -1144,6 +1144,50 @@
         "proteina_g": 10,
         "kcal": 390
       }
+    },
+    "lasana_canelones_precocinados": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 28,
+        "kcal": 560
+      },
+      "dona_y": {
+        "proteina_g": 34,
+        "kcal": 750
+      }
+    },
+    "burritos_arroz_chili_carne_picada": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 32,
+        "kcal": 650
+      },
+      "dona_y": {
+        "proteina_g": 42,
+        "kcal": 950
+      }
+    },
+    "garbanzos_salteados_espinacas_chorizo_huevo": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 33,
+        "kcal": 600
+      },
+      "dona_y": {
+        "proteina_g": 33,
+        "kcal": 600
+      }
+    },
+    "albondigas_caseras_salsa_tomate_patatas": {
+      "raciones_lote": 2,
+      "lord_i": {
+        "proteina_g": 35,
+        "kcal": 620
+      },
+      "dona_y": {
+        "proteina_g": 52,
+        "kcal": 880
+      }
     }
   }
 }
