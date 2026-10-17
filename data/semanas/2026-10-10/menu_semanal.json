@@ -1,0 +1,304 @@
+{
+  "semana": "Semana 4 (v2): Recetas nuevas con pescado tres veces, brócoli y legumbre",
+  "fecha_inicio": "2026-10-10",
+  "ciclo_semanal": "Sábado 10/10 a Viernes 16/10",
+  "objetivo_semana": "Menú rehecho con 13 recetas nuevas del recetario ampliado: pescado tres veces (salmón fresco el sábado y merluza el martes y el jueves), legumbre tres veces (burrito bowl, guisantes en la salsa verde y alubias con pollo), brócoli cocinado dos veces y seis cocinas distintas. La comida del domingo queda libre para comer en familia. Lord.I sigue una ración de proteína moderada en cada toma (30-38 g por plato, fruta de merienda) y queda en ~90 g de proteína de media (máximo 91 g, por debajo del tope diario de 104 g); Doña.Y supera las 2.100 kcal todos los días con raciones dobles de hidratos y su batido.",
+  "batch_cooking_domingo": {
+    "duracion_estimada_minutos": 120,
+    "resumen": "Sesión del domingo por la tarde, al volver de la comida en familia (~2 h): arroz en la arrocera para tres tuppers, pollo teriyaki con brócoli (lunes), burrito bowl (martes), lomo guisado con pimientos (miércoles), merluza en salsa verde (jueves, al congelador) y alubias blancas con pollo (viernes, al congelador).",
+    "equipamiento": [
+      "Arrocera eléctrica para 600 g de arroz",
+      "1 cazuela amplia para las alubias con pollo",
+      "1 cazuela baja para la merluza en salsa verde",
+      "1 olla mediana para el lomo guisado",
+      "2 sartenes (pollo teriyaki y pollo del burrito)",
+      "1 olla con cestillo para el brócoli al vapor",
+      "10 recipientes herméticos de cristal (4 aptos para congelador)"
+    ],
+    "cronograma_pasos": [
+      {
+        "orden": 1,
+        "tiempo": "00:00 - 00:10",
+        "accion": "Arroz a la arrocera (600 g en crudo para teriyaki, burrito y lomo guisado). Descongelar en la nevera desde la mañana la caja de merluza del jueves."
+      },
+      {
+        "orden": 2,
+        "tiempo": "00:05 - 00:50",
+        "accion": "Alubias blancas con pollo: dorar los contramuslos troceados, pochar cebolla, pimiento rojo y zanahoria, añadir pimentón dulce, tomate triturado, laurel y las alubias cocidas escurridas con un vaso de agua. 30 min a fuego suave. Al congelador en dos tuppers para el viernes."
+      },
+      {
+        "orden": 3,
+        "tiempo": "00:10 - 00:45",
+        "accion": "Lomo guisado: dorar los dados de lomo de cerdo, pochar pimientos rojo y verde con cebolla y ajo, mojar con el vino blanco y 25 min tapado. Tuppers del miércoles con su arroz."
+      },
+      {
+        "orden": 4,
+        "tiempo": "00:45 - 01:10",
+        "accion": "Pollo teriyaki: dorar los contramuslos en tiras y glasear con soja, azúcar moreno, ajo y jengibre. Brócoli al vapor 6 min para que quede firme. Tuppers del lunes con arroz y sésamo."
+      },
+      {
+        "orden": 5,
+        "tiempo": "01:10 - 01:30",
+        "accion": "Burrito bowl: tiras de pechuga con comino, pimentón y orégano, pimientos salteados, alubias rojas y maíz escurridos. Tuppers del martes con arroz; el aguacate y la lima se añaden al momento."
+      },
+      {
+        "orden": 6,
+        "tiempo": "01:30 - 01:55",
+        "accion": "Merluza en salsa verde: ajo y perejil en AOVE, una cucharada de harina, vino blanco y agua o caldo; añadir patatas cocidas en rodajas, guisantes y los lomos de merluza 5 min. Al congelador en dos tuppers para el jueves (pasar a la nevera el miércoles por la noche)."
+      },
+      {
+        "orden": 7,
+        "tiempo": "01:55 - 02:00",
+        "accion": "Envasado: tuppers de lunes a miércoles a la nevera a 4 °C; jueves y viernes al congelador."
+      }
+    ],
+    "conservacion": "Lunes a miércoles en nevera (máximo 3 días); jueves y viernes congelados el domingo para no pasar de 4 días de nevera, sobre todo el pescado."
+  },
+  "dias": [
+    {
+      "dia": "Sábado (10/10)",
+      "comida": {
+        "receta_id": "salmon_teriyaki_sarten_arroz",
+        "nombre": "Lomos de salmón fresco glaseados al teriyaki con arroz y calabacín al sésamo",
+        "origen": "Cocina fresca de fin de semana (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 lomo de salmón de unos 140 g glaseado con 1 taza rasa de arroz y calabacín salteado abundante con sésamo",
+          "detalles": "Salmón fresco en lomos, glaseado sin picante. Ración de proteína moderada; de merienda, una pieza de fruta.",
+          "volumen_macros": "Proteína de comida real (~35 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "1 lomo de salmón con 1 taza y media colmada de arroz y medio aguacate en láminas",
+          "detalles": "Yodo y selenio del salmón fresco; grasa saludable del aguacate.",
+          "suplementacion": "1 batido de proteína a media tarde."
+        }
+      },
+      "cena": {
+        "receta_id": "lomo_adobado_plancha_pure_boniato",
+        "nombre": "Filetes de lomo de cerdo adobado a la plancha con puré de patata y pimientos verdes",
+        "origen": "Cena de sábado en sartén de acero (15 min)",
+        "tiempo_preparacion": "15 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 filete grueso (~130 g) de lomo adobado a la plancha con ración moderada de puré de patata y 2 pimientos verdes",
+          "detalles": "Puré de patata en lugar de boniato (no hay boniato fresco en el catálogo). Adobo de pimentón dulce y ajo, sin picante. Ración de proteína moderada.",
+          "volumen_macros": "Proteína de comida real (~34 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "2 filetes de lomo con ración doble de puré de patata y un chorrito de AOVE",
+          "detalles": "Ración doble de puré con AOVE para el superávit.",
+          "suplementacion": "Batido tomado por la tarde."
+        }
+      }
+    },
+    {
+      "dia": "Domingo (11/10)",
+      "comida": {
+        "receta_id": null,
+        "nombre": "🎉 Comida en familia (toma flexible)",
+        "origen": "Plan familiar fuera de casa; no se compra para esta toma",
+        "tiempo_preparacion": "0 min",
+        "adaptacion_lord_i": {
+          "porcion": "Comida a elección",
+          "detalles": "Sin quesos fuertes y sin cebolla cruda.",
+          "volumen_macros": "Toma libre."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Comida a elección",
+          "detalles": "Disfrutar de la comida familiar.",
+          "suplementacion": "Batido pautado."
+        }
+      },
+      "cena": {
+        "receta_id": "shakshuka_suave_huevos_tomate",
+        "nombre": "Shakshuka suave de huevos cocinados en salsa de tomate y pimiento con comino y pan de hogaza",
+        "origen": "Cena ligera tras el batch cooking (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "3 huevos con la mitad de la salsa de tomate y pimiento, 50g de queso fresco desmenuzado y 1 rebanada de pan para mojar",
+          "detalles": "Comino y pimentón dulce, cero picante; cebolla bien pochada.",
+          "volumen_macros": "Proteína de comida real (~31 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "3 huevos con la misma salsa, el queso fresco y 3 rebanadas de pan con un chorrito de AOVE",
+          "detalles": "Pan extra con AOVE para llegar a sus calorías.",
+          "suplementacion": "Fruta fresca de postre."
+        }
+      }
+    },
+    {
+      "dia": "Lunes (12/10)",
+      "comida": {
+        "receta_id": "pollo_teriyaki_arroz_brocoli",
+        "nombre": "Pollo teriyaki casero con arroz y brócoli al vapor",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 ración moderada de pollo glaseado (~140 g) con brócoli abundante y 1 puño de arroz",
+          "detalles": "Brócoli cocinado al vapor. Ración de proteína moderada, sin suplementos.",
+          "volumen_macros": "Proteína de comida real (~37 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "1 ración de pollo glaseado con doble puño de arroz y sésamo extra",
+          "detalles": "Brócoli siempre cocinado (crucífera); doble de arroz.",
+          "suplementacion": "1 batido de proteína a media tarde."
+        }
+      },
+      "cena": {
+        "receta_id": "quesadillas_pollo_queso_tierno_pimientos",
+        "nombre": "Quesadillas de pollo desmechado, queso tierno y pimientos pochados",
+        "origen": "Cena rápida (15 min)",
+        "tiempo_preparacion": "15 min",
+        "adaptacion_lord_i": {
+          "porcion": "2 medias quesadillas (1 tortilla doblada) con 80 g de pollo, 25 g de queso tierno y pimientos abundantes; medio aguacate en láminas al lado",
+          "detalles": "Pechuga a la plancha del momento, queso tierno suave y pimientos pochados. Ración de proteína moderada.",
+          "volumen_macros": "Proteína de comida real (~35 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "3 medias quesadillas con el resto del pollo, 60g de queso y medio aguacate machacado para untar",
+          "detalles": "Aguacate y una quesadilla más para el superávit.",
+          "suplementacion": "Yogur o fruta de postre."
+        }
+      }
+    },
+    {
+      "dia": "Martes (13/10)",
+      "comida": {
+        "receta_id": "burrito_bowl_pollo_frijoles",
+        "nombre": "Burrito bowl de pollo al comino con arroz, frijoles negros, maíz y aguacate",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 bowl con unos 100 g de pollo especiado, pimientos abundantes, frijoles, maíz, 1 puño de arroz y un cuarto de aguacate",
+          "detalles": "Comino y pimentón dulce, cero picante; alubias rojas como legumbre. Ración de proteína moderada, sin suplementos.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "1 bowl con doble puño de arroz, medio aguacate y un extra de frijoles y maíz",
+          "detalles": "Doble de arroz, alubias y maíz; aguacate al momento.",
+          "suplementacion": "1 batido de proteína a media tarde."
+        }
+      },
+      "cena": {
+        "receta_id": "merluza_plancha_ajo_perejil_verduras",
+        "nombre": "Lomos de merluza a la plancha con ajo y perejil y salteado de calabacín, pimiento y champiñones",
+        "origen": "Cena rápida (15 min, dos sartenes)",
+        "tiempo_preparacion": "15 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 lomo grande de merluza (~170 g) con su refrito de ajo y perejil, salteado abundante de verduras y 1 rebanada de pan",
+          "detalles": "Merluza ultracongelada descongelada en la nevera desde la mañana. Ración de proteína moderada.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "2 lomos de merluza con verduras, 3 rebanadas de pan con AOVE y, si apetece, medio aguacate",
+          "detalles": "Pan con AOVE para sumar hidratos.",
+          "suplementacion": "Fruta fresca de postre."
+        }
+      }
+    },
+    {
+      "dia": "Miércoles (14/10)",
+      "comida": {
+        "receta_id": "lomo_cerdo_guisado_pimientos_arroz",
+        "nombre": "Dados de lomo de cerdo guisados con pimientos, ajo y vino blanco, con arroz",
+        "origen": "Tupper Batch Cooking (recalentar 3 min microondas)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 ración moderada de lomo guisado (~140 g) con pimientos melosos abundantes y 1 puño de arroz",
+          "detalles": "Cebolla pochada a fondo; carne magra. Ración de proteína moderada, sin suplementos.",
+          "volumen_macros": "Proteína de comida real (~37 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "1 ración de lomo con doble puño de arroz y pan para la salsa",
+          "detalles": "Doble de arroz y pan para la salsa.",
+          "suplementacion": "1 batido de proteína a media tarde."
+        }
+      },
+      "cena": {
+        "receta_id": "yakisoba_pollo_verduras",
+        "nombre": "Yakisoba de pollo con brócoli salteado, zanahoria y salsa suave de soja",
+        "origen": "Cena rápida (20 min)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "Plato con 120 g de pollo, brócoli y zanahoria salteados en abundancia y una ración normal de fideos (120 g cocidos)",
+          "detalles": "Con brócoli en lugar de col (crucífera siempre cocinada). Soja baja en sal, sin picante. Ración de proteína moderada.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Misma cantidad de pollo con ración generosa de fideos (el resto de la sartén) y un chorrito de aceite de sésamo al final",
+          "detalles": "Ración generosa de fideos.",
+          "suplementacion": "Infusión de noche."
+        }
+      }
+    },
+    {
+      "dia": "Jueves (15/10)",
+      "comida": {
+        "receta_id": "merluza_en_salsa_verde_patatas",
+        "nombre": "Merluza en salsa verde con guisantes y patatas cocidas",
+        "origen": "Tupper congelado el domingo (pasar a la nevera la noche antes, recalentar 3 min)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 lomo grande de merluza (~160 g) en salsa verde con guisantes y 1 patata y media cocida en rodajas",
+          "detalles": "Pescado blanco ligero; guisantes como legumbre. Ración de proteína moderada, sin suplementos.",
+          "volumen_macros": "Proteína de comida real (~35 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "2 lomos de merluza con 2 patatas cocidas regadas con la salsa y un hilo generoso de AOVE",
+          "detalles": "Dos patatas con la salsa y AOVE generoso.",
+          "suplementacion": "1 batido de proteína a media tarde."
+        }
+      },
+      "cena": {
+        "receta_id": "bowl_coreano_suave_ternera_huevo",
+        "nombre": "Bowl de arroz estilo coreano con ternera salteada, zanahoria, espinacas y huevo",
+        "origen": "Cena rápida (20 min, arroz de la arrocera)",
+        "tiempo_preparacion": "20 min",
+        "adaptacion_lord_i": {
+          "porcion": "Bol con 1 taza rasa de arroz, 110 g de ternera, zanahoria y espinacas cocidas abundantes y un huevo a la plancha con yema blanda",
+          "detalles": "Ternera magra en tiras, espinacas cocinadas, sin picante. Ración de proteína moderada.",
+          "volumen_macros": "Proteína de comida real (~37 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Bol con taza y media colmada de arroz, la misma ternera y el huevo, con un hilo de aceite de sésamo extra",
+          "detalles": "Taza y media de arroz y aceite de sésamo extra.",
+          "suplementacion": "Fruta fresca de postre."
+        }
+      }
+    },
+    {
+      "dia": "Viernes (16/10)",
+      "comida": {
+        "receta_id": "alubias_blancas_guisadas_con_pollo",
+        "nombre": "Alubias blancas guisadas con contramuslos de pollo y pimentón dulce",
+        "origen": "Tupper congelado el domingo (pasar a la nevera la noche antes, recalentar 3 min)",
+        "tiempo_preparacion": "3 min",
+        "adaptacion_lord_i": {
+          "porcion": "1 plato hondo con 1 contramuslo troceado (~110 g), 1 cazo colmado de alubias y abundante verdura en salsa",
+          "detalles": "Legumbre con pollo, pimentón dulce. Ración de proteína moderada, sin suplementos.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "1 plato hondo con alubias extra, pollo y pan de hogaza para la salsa",
+          "detalles": "Alubias extra y pan para la salsa.",
+          "suplementacion": "1 batido de proteína a media tarde."
+        }
+      },
+      "cena": {
+        "receta_id": "pasta_pesto_pollo_tomates_cherry",
+        "nombre": "Espaguetis al pesto con pollo dorado y tomates cherry asados",
+        "origen": "Cena de viernes (15 min)",
+        "tiempo_preparacion": "15 min",
+        "adaptacion_lord_i": {
+          "porcion": "Plato con 100 g de pollo, 80 g de pasta en crudo, muchos cherry asados y 2 cucharadas de pesto",
+          "detalles": "Pesto fresco de albahaca comprado y grana padano suave; sin quesos fuertes. Ración de proteína moderada.",
+          "volumen_macros": "Proteína de comida real (~36 g)."
+        },
+        "adaptacion_dona_y": {
+          "porcion": "Plato con 160g de pollo, 100g de pasta en crudo, el resto del pesto y un puñado extra de piñones",
+          "detalles": "Más pasta y el resto del pesto.",
+          "suplementacion": "Fruta fresca de postre."
+        }
+      }
+    }
+  ]
+}

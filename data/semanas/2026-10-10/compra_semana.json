@@ -1,0 +1,399 @@
+{
+  "_nota": "Artículos de la compra de la semana. generar_lista_compra.py los busca en el catálogo de Mercadona (por id_preferente y, si no está, por termino_fallback dentro de la sección) y escribe lista_compra.json. Se edita cada semana junto con menu_semanal.json.",
+  "supermercado": "Mercadona",
+  "articulos": [
+    {
+      "nombre_receta": "Patatas (merluza en salsa verde y puré del sábado)",
+      "cantidad": 1,
+      "unidad": "malla 3 kg",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69166,
+      "termino_fallback": "patatas",
+      "filtro_excluir": [
+        "fritas",
+        "chispas",
+        "snack"
+      ]
+    },
+    {
+      "nombre_receta": "Zanahorias (alubias con pollo, yakisoba y bowl coreano)",
+      "cantidad": 1,
+      "unidad": "malla 1 kg",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69586,
+      "termino_fallback": "zanahoria",
+      "filtro_excluir": [
+        "bebé",
+        "papilla",
+        "tarrina"
+      ]
+    },
+    {
+      "nombre_receta": "Cebollas dulces para pochar (lomo guisado, alubias y shakshuka)",
+      "cantidad": 1,
+      "unidad": "malla 1 kg",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69155,
+      "termino_fallback": "cebollas dulces",
+      "filtro_excluir": [
+        "frita"
+      ]
+    },
+    {
+      "nombre_receta": "Pimiento rojo (quesadillas, burrito, merluza, lomo guisado, alubias y shakshuka)",
+      "cantidad": 6,
+      "unidad": "piezas",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69310,
+      "termino_fallback": "pimiento rojo",
+      "filtro_excluir": [
+        "asado",
+        "tiras"
+      ]
+    },
+    {
+      "nombre_receta": "Pimiento verde (lomo del sábado, quesadillas, burrito, lomo guisado y yakisoba)",
+      "cantidad": 8,
+      "unidad": "piezas",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69320,
+      "termino_fallback": "pimiento verde",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Calabacín (salmón y merluza a la plancha)",
+      "cantidad": 2,
+      "unidad": "piezas",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69338,
+      "termino_fallback": "calabacin",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Brócoli (teriyaki del lunes y yakisoba del miércoles)",
+      "cantidad": 2,
+      "unidad": "piezas",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69580,
+      "termino_fallback": "brocoli",
+      "filtro_excluir": [
+        "congelado"
+      ]
+    },
+    {
+      "nombre_receta": "Espinacas baby (bowl coreano)",
+      "cantidad": 2,
+      "unidad": "bolsas",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69984,
+      "termino_fallback": "espinacas baby",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Tomates cherry (pasta al pesto)",
+      "cantidad": 1,
+      "unidad": "bandeja",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69990,
+      "termino_fallback": "tomates cherry",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Aguacates (salmón, burrito y quesadillas)",
+      "cantidad": 3,
+      "unidad": "piezas",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 3830,
+      "termino_fallback": "aguacate",
+      "filtro_excluir": [
+        "salsa",
+        "aceite"
+      ]
+    },
+    {
+      "nombre_receta": "Limones (merluza y burrito)",
+      "cantidad": 1,
+      "unidad": "malla",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 3236,
+      "termino_fallback": "limones",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Perejil (merluza a la plancha y en salsa verde)",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69701,
+      "termino_fallback": "perejil",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Champiñones laminados (merluza a la plancha)",
+      "cantidad": 1,
+      "unidad": "bandeja 250g",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 69519,
+      "termino_fallback": "champinon laminado",
+      "filtro_excluir": [
+        "entero"
+      ]
+    },
+    {
+      "nombre_receta": "Plátanos de Canarias IGP (tentempiés)",
+      "cantidad": 6,
+      "unidad": "piezas (~1 kg)",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 3819,
+      "termino_fallback": "platano canarias",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Manzanas Golden (merienda de fruta)",
+      "cantidad": 6,
+      "unidad": "piezas (~1 kg)",
+      "seccion": "Fruta y verdura",
+      "id_preferente": 3028,
+      "termino_fallback": "manzana golden",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Salmón fresco en lomos (comida del sábado)",
+      "cantidad": 1,
+      "unidad": "bandeja (~350 g)",
+      "seccion": "Pescadería",
+      "id_preferente": 87204,
+      "termino_fallback": "salmon",
+      "filtro_excluir": [
+        "congelado",
+        "ahumado",
+        "marinado"
+      ]
+    },
+    {
+      "nombre_receta": "Merluza en lomos ultracongelada (cena del martes y tupper del jueves)",
+      "cantidad": 2,
+      "unidad": "cajas (~1,1 kg)",
+      "seccion": "Congelados",
+      "id_preferente": 62113,
+      "termino_fallback": "merluza",
+      "filtro_excluir": [
+        "rebozada",
+        "empanada"
+      ]
+    },
+    {
+      "nombre_receta": "Guisantes ultracongelados (merluza en salsa verde)",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Congelados",
+      "id_preferente": 61215,
+      "termino_fallback": "guisante",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Filetes de pechuga de pollo (burrito, quesadillas, yakisoba y pasta)",
+      "cantidad": 2,
+      "unidad": "bandejas (~1,1 kg)",
+      "seccion": "Carne",
+      "id_preferente": 2787,
+      "termino_fallback": "filetes pechuga pollo",
+      "filtro_excluir": [
+        "adobada",
+        "empanado"
+      ]
+    },
+    {
+      "nombre_receta": "Contramuslos de pollo deshuesados (teriyaki y alubias con pollo)",
+      "cantidad": 2,
+      "unidad": "bandejas (~1,1 kg)",
+      "seccion": "Carne",
+      "id_preferente": 2789,
+      "termino_fallback": "contramuslos pollo",
+      "filtro_excluir": [
+        "adobado"
+      ]
+    },
+    {
+      "nombre_receta": "Filetes de lomo de cerdo (adobado del sábado y guiso del miércoles)",
+      "cantidad": 2,
+      "unidad": "bandejas 400 g",
+      "seccion": "Carne",
+      "id_preferente": 2849,
+      "termino_fallback": "filetes lomo cerdo",
+      "filtro_excluir": [
+        "adobado",
+        "empanado"
+      ]
+    },
+    {
+      "nombre_receta": "Filetes de vacuno añojo en tiras (bowl coreano)",
+      "cantidad": 1,
+      "unidad": "bandeja (~350 g)",
+      "seccion": "Carne",
+      "id_preferente": 8936,
+      "termino_fallback": "filetes vacuno",
+      "filtro_excluir": [
+        "marinado"
+      ]
+    },
+    {
+      "nombre_receta": "Huevos camperos (shakshuka y bowl coreano)",
+      "cantidad": 1,
+      "unidad": "docena",
+      "seccion": "Huevos, leche y mantequilla",
+      "id_preferente": 15768,
+      "termino_fallback": "huevos camperas",
+      "filtro_excluir": [
+        "chocolate",
+        "sorpresa"
+      ]
+    },
+    {
+      "nombre_receta": "Queso tierno suave para rallar (quesadillas)",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Charcutería y quesos",
+      "id_preferente": 50916,
+      "termino_fallback": "queso tierno",
+      "filtro_excluir": [
+        "fuerte",
+        "azul",
+        "cabra"
+      ]
+    },
+    {
+      "nombre_receta": "Queso fresco de Burgos (shakshuka)",
+      "cantidad": 1,
+      "unidad": "pack 4",
+      "seccion": "Charcutería y quesos",
+      "id_preferente": 52409,
+      "termino_fallback": "queso fresco burgos",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Arroz redondo (salmón, teriyaki, burrito, lomo guisado y bowl)",
+      "cantidad": 1,
+      "unidad": "paquete 1 kg",
+      "seccion": "Arroz, legumbres y pasta",
+      "id_preferente": 5044,
+      "termino_fallback": "arroz redondo",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Alubias blancas cocidas (guiso con pollo del viernes)",
+      "cantidad": 2,
+      "unidad": "tarros",
+      "seccion": "Arroz, legumbres y pasta",
+      "id_preferente": 26019,
+      "termino_fallback": "alubia cocida blanca",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Alubias rojas cocidas (burrito bowl)",
+      "cantidad": 1,
+      "unidad": "tarro",
+      "seccion": "Arroz, legumbres y pasta",
+      "id_preferente": 26000,
+      "termino_fallback": "alubia cocida roja",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Espaguetis (pasta al pesto del viernes)",
+      "cantidad": 1,
+      "unidad": "paquete 500 g",
+      "seccion": "Arroz, legumbres y pasta",
+      "id_preferente": 6277,
+      "termino_fallback": "spaghetti",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Noodles de trigo (yakisoba)",
+      "cantidad": 2,
+      "unidad": "paquetes",
+      "seccion": "Arroz, legumbres y pasta",
+      "id_preferente": 9861,
+      "termino_fallback": "noodles ramen",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Tortillas de trigo (quesadillas)",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Panadería y pastelería",
+      "id_preferente": 17567,
+      "termino_fallback": "tortillas de trigo",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Pan rústico (merluza a la plancha y shakshuka)",
+      "cantidad": 1,
+      "unidad": "paquete",
+      "seccion": "Panadería y pastelería",
+      "id_preferente": 23359,
+      "termino_fallback": "pan de molde",
+      "filtro_excluir": [
+        "sin gluten"
+      ]
+    },
+    {
+      "nombre_receta": "Tomate triturado (alubias, shakshuka y quesadillas)",
+      "cantidad": 2,
+      "unidad": "botes 400 g",
+      "seccion": "Conservas, caldos y cremas",
+      "id_preferente": 16043,
+      "termino_fallback": "tomate triturado",
+      "filtro_excluir": [
+        "frito"
+      ]
+    },
+    {
+      "nombre_receta": "Maíz dulce (burrito bowl)",
+      "cantidad": 1,
+      "unidad": "pack 3 latas",
+      "seccion": "Conservas, caldos y cremas",
+      "id_preferente": 16714,
+      "termino_fallback": "maiz dulce",
+      "filtro_excluir": [
+        "frito",
+        "palomitas"
+      ]
+    },
+    {
+      "nombre_receta": "Pesto fresco de albahaca (pasta del viernes)",
+      "cantidad": 1,
+      "unidad": "tarrina",
+      "seccion": "Pizzas y platos preparados",
+      "id_preferente": 35186,
+      "termino_fallback": "pesto",
+      "filtro_excluir": []
+    },
+    {
+      "nombre_receta": "Jengibre molido (teriyaki y yakisoba)",
+      "cantidad": 1,
+      "unidad": "bote",
+      "seccion": "Aceite, especias y salsas",
+      "id_preferente": 34149,
+      "termino_fallback": "jengibre",
+      "filtro_excluir": []
+    }
+  ],
+  "despensa_excluida": [
+    "Semillas de sésamo tostado (bote empezado)",
+    "Leche (stock de desayunos, para el puré del sábado)",
+    "Harina (salsa verde de la merluza)",
+    "Comprobar que hay en casa: azúcar, maicena, kétchup, salsa Worcestershire y vino blanco para guisar (o caldo)",
+    "Aceite de oliva virgen extra (AOVE)",
+    "Sal yodada",
+    "Pimienta negra molida",
+    "Orégano seco",
+    "Pimentón dulce de la Vera",
+    "Comino molido",
+    "Laurel",
+    "Ajos",
+    "Vinagre de manzana",
+    "Salsa de soja baja en sal",
+    "Café e infusiones",
+    "Polvo de proteína (Doña.Y stock habitual)"
+  ]
+}
