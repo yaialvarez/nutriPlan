@@ -10,9 +10,10 @@ import {
   Shuffle,
   AlertTriangle,
   Clock,
-  Scale
+  Scale,
+  Plus
 } from 'lucide-react';
-import { fechasDelMenu, indiceHoy, menuCaducado, recetaDeToma } from '../utils/semana';
+import { FUERA, fechasDelMenu, indiceHoy, menuCaducado, recetaDeToma } from '../utils/semana';
 import { evaluarSemana } from '../utils/equilibrio';
 
 const fmtFecha = (f) => f?.toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
@@ -172,6 +173,7 @@ function Toma({ tipo, toma, idx, cambios, recetario, nutricion, abierta, onSelec
   const [verAdaptaciones, setVerAdaptaciones] = useState(abierta);
   const recetaId = recetaDeToma(cambios, idx, tipo, toma);
   const cambiada = !!cambios[`${idx}-${tipo}`];
+  const fuera = cambios[`${idx}-${tipo}`] === FUERA;
   const receta = recetario.find((r) => r.id === recetaId);
   const n = nutricion[recetaId];
   const esComida = tipo === 'comida';
@@ -181,10 +183,14 @@ function Toma({ tipo, toma, idx, cambios, recetario, nutricion, abierta, onSelec
     : { caja: 'bg-indigo-50/50 border-indigo-200/60', titulo: 'text-indigo-900', icono: 'text-indigo-600', chip: 'bg-indigo-100 text-indigo-800' };
 
   // Con un plato cambiado, las adaptaciones vienen de la receta nueva
-  const adaptI = cambiada
+  const adaptI = fuera
+    ? null
+    : cambiada
     ? { porcion: receta?.adaptacion_lord_i?.plato, detalles: receta?.adaptacion_lord_i?.proporciones }
     : toma.adaptacion_lord_i;
-  const adaptY = cambiada
+  const adaptY = fuera
+    ? null
+    : cambiada
     ? { porcion: receta?.adaptacion_dona_y?.plato, detalles: receta?.adaptacion_dona_y?.proporciones }
     : toma.adaptacion_dona_y;
 
@@ -198,20 +204,18 @@ function Toma({ tipo, toma, idx, cambios, recetario, nutricion, abierta, onSelec
           </span>
           {cambiada && (
             <span className="text-xs bg-violet-100 text-violet-800 font-semibold px-2 py-0.5 rounded-full">
-              Cambiado
+              {fuera ? 'Comemos fuera' : toma.receta_id ? 'Cambiado' : 'Añadido'}
             </span>
           )}
         </div>
         <div className="flex items-center gap-3">
-          {(toma.receta_id || cambiada) && (
-            <button
-              onClick={() => onCambiar(idx, tipo)}
-              className="text-sm font-semibold text-violet-700 hover:text-violet-800 inline-flex items-center gap-1 py-1"
-            >
-              <Shuffle className="w-4 h-4" />
-              Cambiar
-            </button>
-          )}
+          <button
+            onClick={() => onCambiar(idx, tipo)}
+            className="text-sm font-semibold text-violet-700 hover:text-violet-800 inline-flex items-center gap-1 py-1"
+          >
+            {recetaId ? <Shuffle className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+            {recetaId ? 'Cambiar' : 'Añadir plato'}
+          </button>
           {receta && (
             <button
               onClick={() => onSelectReceta(receta)}
@@ -225,7 +229,7 @@ function Toma({ tipo, toma, idx, cambios, recetario, nutricion, abierta, onSelec
       </div>
 
       <h3 className="font-bold text-slate-900 text-base leading-snug">
-        {cambiada ? receta?.nombre : toma.nombre}
+        {fuera ? '🍽️ Comemos fuera' : cambiada ? receta?.nombre : toma.nombre}
       </h3>
       {cambiada && (
         <p className="text-xs text-slate-500 line-through mt-0.5">{toma.nombre}</p>
@@ -233,9 +237,9 @@ function Toma({ tipo, toma, idx, cambios, recetario, nutricion, abierta, onSelec
 
       <div className="flex items-center gap-2 flex-wrap mt-2 text-xs">
         <span className={`font-medium px-2 py-0.5 rounded-full ${tono.chip}`}>
-          {cambiada ? receta?.origen_cocina : toma.origen}
+          {fuera ? 'Toma ignorada; no se compra para ella' : cambiada ? receta?.origen_cocina : toma.origen}
         </span>
-        {(toma.tiempo_preparacion || receta?.tiempo_minutos) && (
+        {!fuera && (toma.tiempo_preparacion || receta?.tiempo_minutos) && (
           <span className="inline-flex items-center gap-1 text-slate-600">
             <Clock className="w-3.5 h-3.5" />
             {cambiada ? `${receta?.tiempo_minutos} min` : toma.tiempo_preparacion || `${receta?.tiempo_minutos} min`}

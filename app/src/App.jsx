@@ -273,6 +273,7 @@ export default function App() {
             menuData={menuData}
             recetarioData={recetarioData}
             cambios={cambios}
+            compraRecetas={files?.['compra_recetas.json']}
           />
         )}
 

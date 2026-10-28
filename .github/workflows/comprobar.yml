@@ -45,6 +45,10 @@ jobs:
       - name: Revisar el código de la app
         run: npm run lint --prefix app
 
+      # La app la usa para recalcular la lista al cambiar platos; se regenera por si cambió el recetario o el catálogo
+      - name: Compra por receta (data/compra_recetas.json)
+        run: python scripts/compra_recetas.py
+
       # Sin APP_PASSWORD: comprueba que compila; este build no se publica
       - name: Compilar aplicación
         run: npm run build --prefix app

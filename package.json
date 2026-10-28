@@ -11,6 +11,7 @@
     "lista-compra": "python3 scripts/generar_lista_compra.py",
     "verificar": "python3 scripts/verificar_reglas.py",
     "planificar": "python3 scripts/planificar_semana.py --prueba",
-    "comprobar": "npm run verificar && python3 scripts/semanas.py comprobar && npm run planificar && npm run lint && npm run build && python3 scripts/audit_bundle.py"
+    "comprobar": "npm run verificar && python3 scripts/compra_recetas.py --comprobar && python3 scripts/semanas.py comprobar && npm run planificar && npm run lint && npm run build && python3 scripts/audit_bundle.py",
+    "compra-recetas": "python3 scripts/compra_recetas.py"
   }
 }

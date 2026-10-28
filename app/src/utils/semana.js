@@ -95,7 +95,12 @@ export function useEstadoSemanal(nombre, semana, inicial) {
   return [estado, setEstado];
 }
 
+/** Valor de un cambio que deja la toma vacía (comemos fuera): no aporta receta ni compra. */
+export const FUERA = '__fuera__';
+
 /** Receta efectiva de una toma, teniendo en cuenta los cambios hechos en la app. */
 export function recetaDeToma(cambios, idx, tipo, toma) {
-  return cambios[`${idx}-${tipo}`] || toma?.receta_id || null;
+  const cambio = cambios[`${idx}-${tipo}`];
+  if (cambio === FUERA) return null;
+  return cambio || toma?.receta_id || null;
 }
