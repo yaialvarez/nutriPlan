@@ -55,6 +55,7 @@ nutriPlan/
 │   ├── compra_semana.json         # Artículos de la compra de la semana (entrada del generador)
 │   ├── compra_tentempies.json     # Artículos de Mercadona de los postres y tentempiés, para copiar a compra_semana.json
 │   ├── lista_compra.json          # Lista generada con precios y pasillos de Mercadona
+│   ├── compra_recetas.json        # Productos que pide cada receta; la app recalcula la lista al cambiar platos
 │   ├── semanas/AAAA-MM-DD/        # Semanas guardadas (menú, compra y lista); data/ tiene la activa
 │   ├── planificador/ingredientes.json  # Ingrediente de receta → producto de Mercadona
 │   ├── catalogo/mercadona.json    # Copia guardada del catálogo de Mercadona (precios)
@@ -65,6 +66,7 @@ nutriPlan/
 │   ├── mercadona_api.py           # Descarga y búsqueda en el catálogo de Mercadona
 │   ├── generar_lista_compra.py    # compra_semana.json + catálogo → lista_compra.json
 │   ├── planificar_semana.py       # Elige el menú de una semana y genera su compra
+│   ├── compra_recetas.py          # recetario + ingredientes.json + catálogo → compra_recetas.json
 │   ├── semanas.py                 # Activa por fecha la semana guardada y valida las futuras
 │   ├── comprobar_precios_lidl.py  # Qué artículos de la lista tienen precio LIDL
 │   ├── verificar_reglas.py        # Reglas médicas, proteína, fechas y coherencia de datos

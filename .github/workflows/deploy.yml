@@ -57,6 +57,10 @@ jobs:
       - name: Validar reglas médicas, proteína, fechas y lista de la compra
         run: python scripts/verificar_reglas.py
 
+      # La app la usa para recalcular la lista al cambiar platos; se regenera por si cambió el recetario o el catálogo
+      - name: Compra por receta (data/compra_recetas.json)
+        run: python scripts/compra_recetas.py
+
       - name: Empaquetar datos cifrados y compilar aplicación
         env:
           APP_PASSWORD: ${{ secrets.APP_PASSWORD }}

@@ -1,0 +1,2570 @@
+{
+ "_nota": "Generado por scripts/compra_recetas.py a partir de data/recetario.json, data/planificador/ingredientes.json y el catálogo de Mercadona. No editar a mano.",
+ "productos": {
+  "caldo": {
+   "id": "7313",
+   "nombre": "Caldo de pollo Hacendado",
+   "nombre_receta": "Caldo de pollo",
+   "pasillo": "Conservas, caldos y cremas",
+   "subseccion": "Caldo líquido",
+   "unidad_receta": "brik 1 L",
+   "envase": 1000.0,
+   "precio_unitario": 0.75,
+   "precio_referencia": 0.75,
+   "formato_referencia": "L"
+  },
+  "salmon_ahumado": {
+   "id": "53444",
+   "nombre": "Salmón ahumado Hacendado",
+   "nombre_receta": "Salmón ahumado",
+   "pasillo": "Marisco y pescado",
+   "subseccion": "Ahumados",
+   "unidad_receta": "paquete 100 g",
+   "envase": 100.0,
+   "precio_unitario": 3.7,
+   "precio_referencia": 37.0,
+   "formato_referencia": "kg"
+  },
+  "salmon": {
+   "id": "87204",
+   "nombre": "Porción de  salmón",
+   "nombre_receta": "Salmón fresco en lomos",
+   "pasillo": "Marisco y pescado",
+   "subseccion": "Salmón",
+   "unidad_receta": "bandeja (~350 g)",
+   "envase": 350.0,
+   "precio_unitario": 8.05,
+   "precio_referencia": 23.0,
+   "formato_referencia": "kg"
+  },
+  "merluza": {
+   "id": "62113",
+   "nombre": "Lomos y centros de merluza del Cabo Hacendado ultracongelados",
+   "nombre_receta": "Merluza en lomos ultracongelada",
+   "pasillo": "Congelados",
+   "subseccion": "Pescado",
+   "unidad_receta": "caja (~400 g)",
+   "envase": 400.0,
+   "precio_unitario": 4.9,
+   "precio_referencia": 12.25,
+   "formato_referencia": "kg"
+  },
+  "bacalao": {
+   "id": "62049",
+   "nombre": "Porciones de bacalao sin piel MareDeus ultracongeladas",
+   "nombre_receta": "Bacalao en porciones sin piel ultracongelado",
+   "pasillo": "Congelados",
+   "subseccion": "Pescado",
+   "unidad_receta": "paquete (~400 g)",
+   "envase": 400.0,
+   "precio_unitario": 7.7,
+   "precio_referencia": 19.25,
+   "formato_referencia": "kg"
+  },
+  "dorada": {
+   "id": "81234.1",
+   "nombre": "Dorada limpia con cabeza",
+   "nombre_receta": "Dorada de ración limpia",
+   "pasillo": "Marisco y pescado",
+   "subseccion": "Dorada",
+   "unidad_receta": "pieza",
+   "envase": 1,
+   "precio_unitario": 5.61,
+   "precio_referencia": 9.5,
+   "formato_referencia": "kg"
+  },
+  "atun_fresco": {
+   "id": "24458",
+   "nombre": "Tacos de atún Hacendado congelado",
+   "nombre_receta": "Tacos de atún congelado",
+   "pasillo": "Congelados",
+   "subseccion": "Pescado",
+   "unidad_receta": "bandeja (~280 g)",
+   "envase": 280.0,
+   "precio_unitario": 3.85,
+   "precio_referencia": 13.75,
+   "formato_referencia": "kg"
+  },
+  "atun_lata": {
+   "id": "18002",
+   "nombre": "Atún claro en aceite de oliva Hacendado",
+   "nombre_receta": "Atún claro en aceite de oliva",
+   "pasillo": "Conservas, caldos y cremas",
+   "subseccion": "Atún",
+   "unidad_receta": "pack 6 latas",
+   "envase": 6,
+   "precio_unitario": 4.9,
+   "precio_referencia": 13.612,
+   "formato_referencia": "kg"
+  },
+  "sardinillas": {
+   "id": "18210",
+   "nombre": "Sardinillas en aceite de oliva Hacendado",
+   "nombre_receta": "Sardinillas en aceite de oliva",
+   "pasillo": "Conservas, caldos y cremas",
+   "subseccion": "Sardinas",
+   "unidad_receta": "lata",
+   "envase": 1,
+   "precio_unitario": 2.15,
+   "precio_referencia": 16.539,
+   "formato_referencia": "kg"
+  },
+  "jamon_cocido": {
+   "id": "60329",
+   "nombre": "Jamón cocido extra Hacendado finas lonchas",
+   "nombre_receta": "Jamón cocido extra en lonchas",
+   "pasillo": "Charcutería y quesos",
+   "subseccion": "Jamón cocido",
+   "unidad_receta": "paquete 200 g",
+   "envase": 200.0,
+   "precio_unitario": 2.0,
+   "precio_referencia": 10.0,
+   "formato_referencia": "kg"
+  },
+  "jamon_lonchas": {
+   "id": "15628",
+   "nombre": "Jamón serrano gran reserva Hacendado sin aditivos lonchas",
+   "nombre_receta": "Jamón serrano en lonchas",
+   "pasillo": "Charcutería y quesos",
+   "subseccion": "Jamón serrano",
+   "unidad_receta": "paquete (~90 g)",
+   "envase": 90.0,
+   "precio_unitario": 2.3,
+   "precio_referencia": 25.556,
+   "formato_referencia": "kg"
+  },
+  "taquitos_jamon": {
+   "id": "59071",
+   "nombre": "Taquitos de jamón Incarlopsa",
+   "nombre_receta": "Taquitos de jamón serrano",
+   "pasillo": "Charcutería y quesos",
+   "subseccion": "Jamón serrano",
+   "unidad_receta": "pack 2 (~200 g)",
+   "envase": 200.0,
+   "precio_unitario": 2.65,
+   "precio_referencia": 13.25,
+   "formato_referencia": "kg"
+  },
+  "bacon": {
+   "id": "16252",
+   "nombre": "Bacón Hacendado cintas",
+   "nombre_receta": "Bacón en tiras",
+   "pasillo": "Charcutería y quesos",
+   "subseccion": "Bacón",
+   "unidad_receta": "paquete (~260 g)",
+   "envase": 260.0,
+   "precio_unitario": 1.95,
+   "precio_referencia": 7.5,
+   "formato_referencia": "kg"
+  },
+  "salchichas": {
+   "id": "6040",
+   "nombre": "Longaniza magro fresca",
+   "nombre_receta": "Longaniza fresca de magro (salchichas frescas)",
+   "pasillo": "Carne",
+   "subseccion": "Embutido",
+   "unidad_receta": "bandeja (~535 g)",
+   "envase": 535.0,
+   "precio_unitario": 3.21,
+   "precio_referencia": 6.0,
+   "formato_referencia": "kg"
+  },
+  "pollo_entero": {
+   "id": "2781",
+   "nombre": "Pollo entero",
+   "nombre_receta": "Pollo entero",
+   "pasillo": "Carne",
+   "subseccion": "Pollo",
+   "unidad_receta": "pieza (~1,9 kg)",
+   "envase": 1,
+   "precio_unitario": 6.65,
+   "precio_referencia": 3.5,
+   "formato_referencia": "kg"
+  },
+  "jamoncitos": {
+   "id": "2778",
+   "nombre": "Jamoncitos de pollo",
+   "nombre_receta": "Jamoncitos de pollo",
+   "pasillo": "Carne",
+   "subseccion": "Pollo",
+   "unidad_receta": "bandeja (~900 g)",
+   "envase": 921.05,
+   "precio_unitario": 3.5,
+   "precio_referencia": 3.8,
+   "formato_referencia": "kg"
+  },
+  "muslos_contramuslos": {
+   "id": "2777",
+   "nombre": "Contramuslos de pollo sin piel",
+   "nombre_receta": "Contramuslos de pollo sin piel",
+   "pasillo": "Carne",
+   "subseccion": "Pollo",
+   "unidad_receta": "bandeja (~800 g)",
+   "envase": 809.52,
+   "precio_unitario": 3.4,
+   "precio_referencia": 4.2,
+   "formato_referencia": "kg"
+  },
+  "contramuslos": {
+   "id": "2789",
+   "nombre": "Contramuslos de pollo deshuesados y sin piel",
+   "nombre_receta": "Contramuslos de pollo deshuesados",
+   "pasillo": "Carne",
+   "subseccion": "Pollo",
+   "unidad_receta": "bandeja (~550 g)",
+   "envase": 550.0,
+   "precio_unitario": 3.74,
+   "precio_referencia": 6.8,
+   "formato_referencia": "kg"
+  },
+  "pollo_picado": {
+   "id": "35774",
+   "nombre": "Preparado de carne picada pollo",
+   "nombre_receta": "Carne picada de pollo",
+   "pasillo": "Carne",
+   "subseccion": "Picadas y otros",
+   "unidad_receta": "bandeja 500 g",
+   "envase": 500.0,
+   "precio_unitario": 3.95,
+   "precio_referencia": 7.9,
+   "formato_referencia": "kg"
+  },
+  "pechuga": {
+   "id": "2787",
+   "nombre": "Filetes pechuga de pollo",
+   "nombre_receta": "Filetes de pechuga de pollo",
+   "pasillo": "Carne",
+   "subseccion": "Pollo",
+   "unidad_receta": "bandeja (~560 g)",
+   "envase": 559.74,
+   "precio_unitario": 4.31,
+   "precio_referencia": 7.7,
+   "formato_referencia": "kg"
+  },
+  "picada_mixta": {
+   "id": "2869",
+   "nombre": "Preparado de carne picada vacuno y cerdo",
+   "nombre_receta": "Carne picada de vacuno y cerdo",
+   "pasillo": "Carne",
+   "subseccion": "Picadas y otros",
+   "unidad_receta": "bandeja 500 g",
+   "envase": 500.0,
+   "precio_unitario": 4.1,
+   "precio_referencia": 8.2,
+   "formato_referencia": "kg"
+  },
+  "picada_vacuno": {
+   "id": "2868",
+   "nombre": "Preparado de carne picada vacuno",
+   "nombre_receta": "Carne picada de vacuno",
+   "pasillo": "Carne",
+   "subseccion": "Picadas y otros",
+   "unidad_receta": "bandeja 500 g",
+   "envase": 500.0,
+   "precio_unitario": 5.5,
+   "precio_referencia": 11.0,
+   "formato_referencia": "kg"
+  },
+  "vacuno_guisar": {
+   "id": "12746",
+   "nombre": "Tacos de vacuno marinado para guisar",
+   "nombre_receta": "Tacos de vacuno para guisar",
+   "pasillo": "Carne",
+   "subseccion": "Vacuno",
+   "unidad_receta": "bandeja (~600 g)",
+   "envase": 600.0,
+   "precio_unitario": 9.72,
+   "precio_referencia": 16.2,
+   "formato_referencia": "kg"
+  },
+  "vacuno_filetes": {
+   "id": "8936",
+   "nombre": "Filetes de vacuno añojo para plancha",
+   "nombre_receta": "Filetes de vacuno añojo",
+   "pasillo": "Carne",
+   "subseccion": "Vacuno",
+   "unidad_receta": "bandeja (~420 g)",
+   "envase": 420.0,
+   "precio_unitario": 7.98,
+   "precio_referencia": 19.0,
+   "formato_referencia": "kg"
+  },
+  "cordero": {
+   "id": "21814",
+   "nombre": "Trozos de cordero para guisar",
+   "nombre_receta": "Trozos de cordero para guisar",
+   "pasillo": "Carne",
+   "subseccion": "Cordero",
+   "unidad_receta": "bandeja (~500 g)",
+   "envase": 500.0,
+   "precio_unitario": 6.75,
+   "precio_referencia": 13.5,
+   "formato_referencia": "kg"
+  },
+  "costillas": {
+   "id": "2811",
+   "nombre": "Costillas de cerdo carnosas a tacos",
+   "nombre_receta": "Costillas de cerdo carnosas",
+   "pasillo": "Carne",
+   "subseccion": "Cerdo",
+   "unidad_receta": "bandeja (~620 g)",
+   "envase": 620.0,
+   "precio_unitario": 4.96,
+   "precio_referencia": 8.0,
+   "formato_referencia": "kg"
+  },
+  "cabeza_lomo": {
+   "id": "3554",
+   "nombre": "Pieza cabeza lomo de cerdo",
+   "nombre_receta": "Pieza de cabeza de lomo de cerdo",
+   "pasillo": "Carne",
+   "subseccion": "Cerdo",
+   "unidad_receta": "pieza (~1,1 kg)",
+   "envase": 1148.98,
+   "precio_unitario": 5.63,
+   "precio_referencia": 4.9,
+   "formato_referencia": "kg"
+  },
+  "lomo_adobado": {
+   "id": "2715",
+   "nombre": "Filetes lomo de cerdo adobado",
+   "nombre_receta": "Filetes de lomo de cerdo adobado",
+   "pasillo": "Carne",
+   "subseccion": "Cerdo",
+   "unidad_receta": "bandeja (~470 g)",
+   "envase": 470.5,
+   "precio_unitario": 3.27,
+   "precio_referencia": 6.95,
+   "formato_referencia": "kg"
+  },
+  "cerdo_tacos": {
+   "id": "14943",
+   "nombre": "Taquitos de cerdo",
+   "nombre_receta": "Taquitos de cerdo",
+   "pasillo": "Carne",
+   "subseccion": "Cerdo",
+   "unidad_receta": "bandeja (~400 g)",
+   "envase": 400.0,
+   "precio_unitario": 2.12,
+   "precio_referencia": 5.3,
+   "formato_referencia": "kg"
+  },
+  "lomo_cerdo": {
+   "id": "2849",
+   "nombre": "Filetes lomo de cerdo extra tiernos",
+   "nombre_receta": "Filetes de lomo de cerdo",
+   "pasillo": "Carne",
+   "subseccion": "Cerdo",
+   "unidad_receta": "bandeja (~520 g)",
+   "envase": 519.48,
+   "precio_unitario": 4.0,
+   "precio_referencia": 7.7,
+   "formato_referencia": "kg"
+  },
+  "huevos": {
+   "id": "15768",
+   "nombre": "Huevos de gallinas camperas",
+   "nombre_receta": "Huevos camperos",
+   "pasillo": "Huevos, leche y mantequilla",
+   "subseccion": "Huevos",
+   "unidad_receta": "docena",
+   "envase": 12,
+   "precio_unitario": 3.35,
+   "precio_referencia": 3.35,
+   "formato_referencia": "dc"
+  },
+  "coco": {
+   "id": "17174",
+   "nombre": "Preparado de coco Hacendado",
+   "nombre_receta": "Preparado de coco para cocinar",
+   "pasillo": "Huevos, leche y mantequilla",
+   "subseccion": "Bebidas vegetales",
+   "unidad_receta": "bote 400 ml",
+   "envase": 400.0,
+   "precio_unitario": 1.3,
+   "precio_referencia": 3.25,
+   "formato_referencia": "L"
+  },
+  "nata": {
+   "id": "10199",
+   "nombre": "Nata ligera para cocinar Hacendado",
+   "nombre_receta": "Nata ligera para cocinar",
+   "pasillo": "Huevos, leche y mantequilla",
+   "subseccion": "Nata",
+   "unidad_receta": "pack 3 x 200 ml",
+   "envase": 599.87,
+   "precio_unitario": 1.85,
+   "precio_referencia": 3.084,
+   "formato_referencia": "L"
+  },
+  "crema_cacahuete": {
+   "id": "16883",
+   "nombre": "Crema de cacahuete 100% Hacendado",
+   "nombre_receta": "Crema de cacahuete 100%",
+   "pasillo": "Azúcar, caramelos y chocolate",
+   "subseccion": "Cremas de untar",
+   "unidad_receta": "tarro",
+   "envase": 1,
+   "precio_unitario": 2.65,
+   "precio_referencia": 5.3,
+   "formato_referencia": "kg"
+  },
+  "mantequilla": {
+   "id": "20716",
+   "nombre": "Mantequilla sin sal añadida Hacendado",
+   "nombre_receta": "Mantequilla sin sal",
+   "pasillo": "Huevos, leche y mantequilla",
+   "subseccion": "Mantequilla",
+   "unidad_receta": "pastilla 250 g",
+   "envase": 250.0,
+   "precio_unitario": 2.05,
+   "precio_referencia": 8.2,
+   "formato_referencia": "kg"
+  },
+  "yogur_griego": {
+   "id": "20559",
+   "nombre": "Yogur griego natural Hacendado",
+   "nombre_receta": "Yogur griego natural",
+   "pasillo": "Postres y yogures",
+   "subseccion": "Yogures griegos",
+   "unidad_receta": "pack 6",
+   "envase": 749.74,
+   "precio_unitario": 1.45,
+   "precio_referencia": 1.934,
+   "formato_referencia": "kg"
+  },
+  "yogur": {
+   "id": "20210",
+   "nombre": "Yogur natural Hacendado 0% MG 0% azúcares añadidos",
+   "nombre_receta": "Yogur natural sin azúcar",
+   "pasillo": "Postres y yogures",
+   "subseccion": "Yogures desnatados",
+   "unidad_receta": "pack 6",
+   "envase": 750.0,
+   "precio_unitario": 1.05,
+   "precio_referencia": 1.4,
+   "formato_referencia": "kg"
+  },
+  "lenteja": {
+   "id": "5330",
+   "nombre": "Lenteja pardina Hacendado",
+   "nombre_receta": "Lentejas pardinas",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Lentejas y otros",
+   "unidad_receta": "paquete 1 kg",
+   "envase": 1000.0,
+   "precio_unitario": 1.85,
+   "precio_referencia": 1.85,
+   "formato_referencia": "kg"
+  },
+  "garbanzo": {
+   "id": "26029",
+   "nombre": "Garbanzo cocido Hacendado",
+   "nombre_receta": "Garbanzos cocidos",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Garbanzos",
+   "unidad_receta": "tarro 400 g",
+   "envase": 400,
+   "precio_unitario": 0.8,
+   "precio_referencia": 2.0,
+   "formato_referencia": "kg"
+  },
+  "judia_verde": {
+   "id": "68131",
+   "nombre": "Judía verde plana",
+   "nombre_receta": "Judía verde plana",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Otras verduras y hortalizas",
+   "unidad_receta": "paquete (~350 g)",
+   "envase": 349.96,
+   "precio_unitario": 2.0,
+   "precio_referencia": 5.715,
+   "formato_referencia": "kg"
+  },
+  "alubia_roja": {
+   "id": "26000",
+   "nombre": "Alubia cocida roja Hacendado",
+   "nombre_receta": "Alubias rojas cocidas",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Alubias",
+   "unidad_receta": "tarro 400 g",
+   "envase": 400,
+   "precio_unitario": 1.2,
+   "precio_referencia": 3.0,
+   "formato_referencia": "kg"
+  },
+  "alubia_blanca": {
+   "id": "26019",
+   "nombre": "Alubia cocida blanca Hacendado",
+   "nombre_receta": "Alubias blancas cocidas",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Alubias",
+   "unidad_receta": "tarro 400 g",
+   "envase": 400,
+   "precio_unitario": 0.75,
+   "precio_referencia": 1.875,
+   "formato_referencia": "kg"
+  },
+  "fideos_arroz": {
+   "id": "35981",
+   "nombre": "Noodles de arroz Hacendado",
+   "nombre_receta": "Noodles de arroz",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Spaghetti y tallarines",
+   "unidad_receta": "paquete 200 g",
+   "envase": 200.0,
+   "precio_unitario": 1.45,
+   "precio_referencia": 7.25,
+   "formato_referencia": "kg"
+  },
+  "basmati": {
+   "id": "5002",
+   "nombre": "Arroz basmati aromático Hacendado",
+   "nombre_receta": "Arroz basmati",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Arroz",
+   "unidad_receta": "paquete 1 kg",
+   "envase": 1000.0,
+   "precio_unitario": 2.1,
+   "precio_referencia": 2.1,
+   "formato_referencia": "kg"
+  },
+  "arroz": {
+   "id": "5044",
+   "nombre": "Arroz redondo Hacendado",
+   "nombre_receta": "Arroz redondo",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Arroz",
+   "unidad_receta": "paquete 1 kg",
+   "envase": 1000.0,
+   "precio_unitario": 1.15,
+   "precio_referencia": 1.15,
+   "formato_referencia": "kg"
+  },
+  "noodles": {
+   "id": "9861",
+   "nombre": "Noodles Ramen",
+   "nombre_receta": "Noodles de trigo",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Fideos orientales",
+   "unidad_receta": "paquete 200 g",
+   "envase": 200.0,
+   "precio_unitario": 0.85,
+   "precio_referencia": 4.25,
+   "formato_referencia": "kg"
+  },
+  "fideua": {
+   "id": "6253",
+   "nombre": "Fideuá Hacendado",
+   "nombre_receta": "Fideo para fideuá",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Fideos",
+   "unidad_receta": "paquete 500 g",
+   "envase": 500.0,
+   "precio_unitario": 0.8,
+   "precio_referencia": 1.6,
+   "formato_referencia": "kg"
+  },
+  "fideo_fino": {
+   "id": "13577",
+   "nombre": "Fideo cabello de ángel Hacendado",
+   "nombre_receta": "Fideo cabello de ángel",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Fideos",
+   "unidad_receta": "paquete 500 g",
+   "envase": 500.0,
+   "precio_unitario": 0.8,
+   "precio_referencia": 1.6,
+   "formato_referencia": "kg"
+  },
+  "cuscus": {
+   "id": "9395",
+   "nombre": "Cous cous mediano Hacendado",
+   "nombre_receta": "Cuscús mediano",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Arroz",
+   "unidad_receta": "caja 1 kg",
+   "envase": 1000.0,
+   "precio_unitario": 1.95,
+   "precio_referencia": 1.95,
+   "formato_referencia": "kg"
+  },
+  "espaguetis": {
+   "id": "6277",
+   "nombre": "Spaghetti fino Hacendado",
+   "nombre_receta": "Espaguetis",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Spaghetti y tallarines",
+   "unidad_receta": "paquete 500 g",
+   "envase": 500.0,
+   "precio_unitario": 0.8,
+   "precio_referencia": 1.6,
+   "formato_referencia": "kg"
+  },
+  "lasana": {
+   "id": "6856",
+   "nombre": "Placas para lasaña precocidas El Pavo",
+   "nombre_receta": "Placas de lasaña precocidas",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Lasaña y canelones",
+   "unidad_receta": "caja",
+   "envase": 18,
+   "precio_unitario": 1.65,
+   "precio_referencia": 8.25,
+   "formato_referencia": "kg"
+  },
+  "noquis": {
+   "id": "6175",
+   "nombre": "Pasta fresca gnocchi Hacendado",
+   "nombre_receta": "Ñoquis de patata frescos",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Pasta rellena",
+   "unidad_receta": "paquete 500 g",
+   "envase": 500.0,
+   "precio_unitario": 1.0,
+   "precio_referencia": 2.0,
+   "formato_referencia": "kg"
+  },
+  "pasta_corta": {
+   "id": "8138",
+   "nombre": "Pasta penne rigate Hacendado",
+   "nombre_receta": "Pasta corta (penne)",
+   "pasillo": "Arroz, legumbres y pasta",
+   "subseccion": "Macarrones, pajaritas y hélices",
+   "unidad_receta": "paquete 500 g",
+   "envase": 500.0,
+   "precio_unitario": 0.8,
+   "precio_referencia": 1.6,
+   "formato_referencia": "kg"
+  },
+  "harina_fuerza": {
+   "id": "29019",
+   "nombre": "Harina de fuerza Hacendado",
+   "nombre_receta": "Harina de fuerza",
+   "pasillo": "Panadería y pastelería",
+   "subseccion": "Harina",
+   "unidad_receta": "paquete 1 kg",
+   "envase": 1000.0,
+   "precio_unitario": 0.95,
+   "precio_referencia": 0.95,
+   "formato_referencia": "kg"
+  },
+  "levadura": {
+   "id": "86998",
+   "nombre": "Levadura de panadería Hacendado",
+   "nombre_receta": "Levadura de panadería",
+   "pasillo": "Panadería y pastelería",
+   "subseccion": "Levadura y preparado repostería",
+   "unidad_receta": "paquete",
+   "envase": 1,
+   "precio_unitario": 1.6,
+   "precio_referencia": 22.858,
+   "formato_referencia": "kg"
+  },
+  "pan_pita": {
+   "id": "14378",
+   "nombre": "Pan de pita Mission",
+   "nombre_receta": "Pan de pita",
+   "pasillo": "Panadería y pastelería",
+   "subseccion": "Pan de hamburguesa y wrap",
+   "unidad_receta": "paquete",
+   "envase": 6,
+   "precio_unitario": 2.0,
+   "precio_referencia": 6.667,
+   "formato_referencia": "kg"
+  },
+  "tortillas": {
+   "id": "80859",
+   "nombre": "Tortillas de trigo Hacendado",
+   "nombre_receta": "Tortillas de trigo",
+   "pasillo": "Panadería y pastelería",
+   "subseccion": "Pan de hamburguesa y wrap",
+   "unidad_receta": "paquete 8",
+   "envase": 8,
+   "precio_unitario": 1.15,
+   "precio_referencia": 3.195,
+   "formato_referencia": "kg"
+  },
+  "pan_burger": {
+   "id": "52602",
+   "nombre": "Pan de burger Brioche Hacendado",
+   "nombre_receta": "Pan de hamburguesa brioche",
+   "pasillo": "Panadería y pastelería",
+   "subseccion": "Pan de hamburguesa y wrap",
+   "unidad_receta": "paquete 4",
+   "envase": 4,
+   "precio_unitario": 1.1,
+   "precio_referencia": 7.334,
+   "formato_referencia": "kg"
+  },
+  "pan_centeno": {
+   "id": "82302",
+   "nombre": "Pan de molde con 55% centeno Hacendado",
+   "nombre_receta": "Pan de molde con centeno",
+   "pasillo": "Panadería y pastelería",
+   "subseccion": "Otros panes",
+   "unidad_receta": "paquete",
+   "envase": 14,
+   "precio_unitario": 1.35,
+   "precio_referencia": 1.875,
+   "formato_referencia": "kg"
+  },
+  "pan": {
+   "id": "17809",
+   "nombre": "Hogaza 100% natural Hacendado",
+   "nombre_receta": "Hogaza de pan natural",
+   "pasillo": "Panadería y pastelería",
+   "subseccion": "Otros panes",
+   "unidad_receta": "hogaza (~12 rebanadas)",
+   "envase": 12,
+   "precio_unitario": 1.95,
+   "precio_referencia": 4.875,
+   "formato_referencia": "kg"
+  },
+  "tomate_frito": {
+   "id": "17153",
+   "nombre": "Tomate frito estilo casero Hacendado",
+   "nombre_receta": "Tomate frito estilo casero",
+   "pasillo": "Aceite, especias y salsas",
+   "subseccion": "Tomate frito",
+   "unidad_receta": "brik (~380 g)",
+   "envase": 379.99,
+   "precio_unitario": 1.2,
+   "precio_referencia": 3.158,
+   "formato_referencia": "kg"
+  },
+  "tomate_concentrado": {
+   "id": "16074",
+   "nombre": "Tomate doble concentrado Hacendado extra",
+   "nombre_receta": "Tomate doble concentrado",
+   "pasillo": "Conservas, caldos y cremas",
+   "subseccion": "Tomate",
+   "unidad_receta": "bote",
+   "envase": 1,
+   "precio_unitario": 1.05,
+   "precio_referencia": 6.177,
+   "formato_referencia": "kg"
+  },
+  "tomate_triturado": {
+   "id": "16043",
+   "nombre": "Tomate triturado Hacendado",
+   "nombre_receta": "Tomate triturado",
+   "pasillo": "Conservas, caldos y cremas",
+   "subseccion": "Tomate",
+   "unidad_receta": "bote 800 g",
+   "envase": 800.0,
+   "precio_unitario": 1.0,
+   "precio_referencia": 1.25,
+   "formato_referencia": "kg"
+  },
+  "pimiento_asado": {
+   "id": "16124",
+   "nombre": "Pimientos rojos asados Hacendado en tiras extra",
+   "nombre_receta": "Pimientos rojos asados en tiras",
+   "pasillo": "Conservas, caldos y cremas",
+   "subseccion": "Conservas verdura",
+   "unidad_receta": "pack 3",
+   "envase": 180.0,
+   "precio_unitario": 1.35,
+   "precio_referencia": 7.5,
+   "formato_referencia": "kg"
+  },
+  "maiz": {
+   "id": "16714",
+   "nombre": "Maíz dulce Hacendado",
+   "nombre_receta": "Maíz dulce",
+   "pasillo": "Conservas, caldos y cremas",
+   "subseccion": "Conservas verdura",
+   "unidad_receta": "pack 3 latas",
+   "envase": 3,
+   "precio_unitario": 1.25,
+   "precio_referencia": 5.953,
+   "formato_referencia": "kg"
+  },
+  "mayonesa": {
+   "id": "13406",
+   "nombre": "Mayonesa Hacendado",
+   "nombre_receta": "Mayonesa",
+   "pasillo": "Aceite, especias y salsas",
+   "subseccion": "Mayonesa",
+   "unidad_receta": "tarro",
+   "envase": 1,
+   "precio_unitario": 1.2,
+   "precio_referencia": 2.4,
+   "formato_referencia": "L"
+  },
+  "tahini": {
+   "id": "17441",
+   "nombre": "Pasta de sésamo Tahini Hacendado",
+   "nombre_receta": "Pasta de sésamo tahini",
+   "pasillo": "Aceite, especias y salsas",
+   "subseccion": "Otras salsas",
+   "unidad_receta": "tarro",
+   "envase": 1,
+   "precio_unitario": 2.95,
+   "precio_referencia": 14.75,
+   "formato_referencia": "kg"
+  },
+  "ciruelas": {
+   "id": "20020",
+   "nombre": "Ciruelas desecadas sin hueso Hacendado",
+   "nombre_receta": "Ciruelas pasas sin hueso",
+   "pasillo": "Aperitivos",
+   "subseccion": "Fruta desecada",
+   "unidad_receta": "paquete (~250 g)",
+   "envase": 250.0,
+   "precio_unitario": 2.14,
+   "precio_referencia": 8.56,
+   "formato_referencia": "kg"
+  },
+  "almendra": {
+   "id": "20920",
+   "nombre": "Almendra laminada Hacendado",
+   "nombre_receta": "Almendra laminada",
+   "pasillo": "Panadería y pastelería",
+   "subseccion": "Decoración",
+   "unidad_receta": "paquete (~150 g)",
+   "envase": 149.99,
+   "precio_unitario": 2.75,
+   "precio_referencia": 18.334,
+   "formato_referencia": "kg"
+  },
+  "anacardo": {
+   "id": "23365",
+   "nombre": "Anacardo natural Hacendado",
+   "nombre_receta": "Anacardos naturales",
+   "pasillo": "Aperitivos",
+   "subseccion": "Frutos secos",
+   "unidad_receta": "paquete 200 g",
+   "envase": 200.0,
+   "precio_unitario": 2.7,
+   "precio_referencia": 13.5,
+   "formato_referencia": "kg"
+  },
+  "cacahuete": {
+   "id": "34031",
+   "nombre": "Cacahuete tostado Hacendado 0% sal añadida",
+   "nombre_receta": "Cacahuetes tostados sin sal",
+   "pasillo": "Aperitivos",
+   "subseccion": "Frutos secos",
+   "unidad_receta": "paquete (~400 g)",
+   "envase": 400.0,
+   "precio_unitario": 1.45,
+   "precio_referencia": 3.625,
+   "formato_referencia": "kg"
+  },
+  "pinones": {
+   "id": "60869",
+   "nombre": "Piñones Hacendado",
+   "nombre_receta": "Piñones",
+   "pasillo": "Aceite, especias y salsas",
+   "subseccion": "Otras especias",
+   "unidad_receta": "bote",
+   "envase": 1,
+   "precio_unitario": 3.55,
+   "precio_referencia": 50.715,
+   "formato_referencia": "kg"
+  },
+  "guisante": {
+   "id": "61215",
+   "nombre": "Guisante fino Hacendado ultracongelado",
+   "nombre_receta": "Guisante fino ultracongelado",
+   "pasillo": "Congelados",
+   "subseccion": "Verdura",
+   "unidad_receta": "paquete 1 kg",
+   "envase": 1000.0,
+   "precio_unitario": 1.5,
+   "precio_referencia": 1.5,
+   "formato_referencia": "kg"
+  },
+  "espinaca": {
+   "id": "69730",
+   "nombre": "Espinacas cortadas y lavadas",
+   "nombre_receta": "Espinacas cortadas y lavadas",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Otras verduras y hortalizas",
+   "unidad_receta": "bolsa 300 g",
+   "envase": 299.95,
+   "precio_unitario": 1.3,
+   "precio_referencia": 4.334,
+   "formato_referencia": "kg"
+  },
+  "calabaza": {
+   "id": "3527",
+   "nombre": "Calabaza cacahuete cortada a trozos",
+   "nombre_receta": "Calabaza cortada a trozos",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Otras verduras y hortalizas",
+   "unidad_receta": "bandeja (~520 g)",
+   "envase": 520.0,
+   "precio_unitario": 1.82,
+   "precio_referencia": 3.5,
+   "formato_referencia": "kg"
+  },
+  "batata": {
+   "id": "69239",
+   "nombre": "Batata",
+   "nombre_receta": "Boniato (batata)",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Patata",
+   "unidad_receta": "pieza",
+   "envase": 1,
+   "precio_unitario": 1.07,
+   "precio_referencia": 2.55,
+   "formato_referencia": "kg"
+  },
+  "pimiento_rojo": {
+   "id": "69310",
+   "nombre": "Pimiento rojo",
+   "nombre_receta": "Pimiento rojo",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Calabacín y pimiento",
+   "unidad_receta": "pieza",
+   "envase": 1,
+   "precio_unitario": 0.84,
+   "precio_referencia": 2.9,
+   "formato_referencia": "kg"
+  },
+  "pimiento_verde": {
+   "id": "69320",
+   "nombre": "Pimiento verde freír",
+   "nombre_receta": "Pimiento verde",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Calabacín y pimiento",
+   "unidad_receta": "pieza",
+   "envase": 1,
+   "precio_unitario": 0.23,
+   "precio_referencia": 2.5,
+   "formato_referencia": "kg"
+  },
+  "calabacin": {
+   "id": "69338",
+   "nombre": "Calabacín verde",
+   "nombre_receta": "Calabacín",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Calabacín y pimiento",
+   "unidad_receta": "pieza",
+   "envase": 1,
+   "precio_unitario": 0.74,
+   "precio_referencia": 1.9,
+   "formato_referencia": "kg"
+  },
+  "tomate_cherry": {
+   "id": "69990",
+   "nombre": "Tomates cherry",
+   "nombre_receta": "Tomates cherry",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Tomate",
+   "unidad_receta": "bandeja 500 g",
+   "envase": 500.0,
+   "precio_unitario": 2.2,
+   "precio_referencia": 4.4,
+   "formato_referencia": "kg"
+  },
+  "tomate": {
+   "id": "69937",
+   "nombre": "Tomate ensalada",
+   "nombre_receta": "Tomate de ensalada",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Tomate",
+   "unidad_receta": "pieza",
+   "envase": 1,
+   "precio_unitario": 0.55,
+   "precio_referencia": 2.5,
+   "formato_referencia": "kg"
+  },
+  "lechuga": {
+   "id": "69122",
+   "nombre": "Lechuga corazón romana",
+   "nombre_receta": "Lechuga corazón romana",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Lechuga",
+   "unidad_receta": "paquete",
+   "envase": 1,
+   "precio_unitario": 1.1,
+   "precio_referencia": 1.1,
+   "formato_referencia": "ud"
+  },
+  "pepino": {
+   "id": "69584",
+   "nombre": "Pepino",
+   "nombre_receta": "Pepino",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Pepino y zanahoria",
+   "unidad_receta": "pieza",
+   "envase": 1,
+   "precio_unitario": 0.37,
+   "precio_referencia": 1.7,
+   "formato_referencia": "kg"
+  },
+  "repollo": {
+   "id": "68462",
+   "nombre": "Repollo liso partido",
+   "nombre_receta": "Repollo (media pieza)",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Repollo y col",
+   "unidad_receta": "media pieza",
+   "envase": 1,
+   "precio_unitario": 1.94,
+   "precio_referencia": 2.15,
+   "formato_referencia": "kg"
+  },
+  "brocoli": {
+   "id": "69580",
+   "nombre": "Brócoli",
+   "nombre_receta": "Brócoli",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Otras verduras y hortalizas",
+   "unidad_receta": "pieza",
+   "envase": 1,
+   "precio_unitario": 1.35,
+   "precio_referencia": 2.7,
+   "formato_referencia": "kg"
+  },
+  "champinon": {
+   "id": "69519",
+   "nombre": "Champiñones laminados limpios",
+   "nombre_receta": "Champiñones laminados",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Setas y champiñones",
+   "unidad_receta": "bandeja (~320 g)",
+   "envase": 319.7,
+   "precio_unitario": 2.11,
+   "precio_referencia": 6.6,
+   "formato_referencia": "kg"
+  },
+  "zanahoria": {
+   "id": "69586",
+   "nombre": "Zanahorias",
+   "nombre_receta": "Zanahorias",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Pepino y zanahoria",
+   "unidad_receta": "malla 1 kg",
+   "envase": 1000.0,
+   "precio_unitario": 1.0,
+   "precio_referencia": 1.0,
+   "formato_referencia": "kg"
+  },
+  "patata": {
+   "id": "69166",
+   "nombre": "Patatas",
+   "nombre_receta": "Patatas",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Patata",
+   "unidad_receta": "malla 3 kg",
+   "envase": 3000.0,
+   "precio_unitario": 4.65,
+   "precio_referencia": 1.55,
+   "formato_referencia": "kg"
+  },
+  "cebollino": {
+   "id": "69286",
+   "nombre": "Cebollino",
+   "nombre_receta": "Cebollino fresco",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Hierbas aromáticas",
+   "unidad_receta": "bandeja",
+   "envase": 1,
+   "precio_unitario": 1.8,
+   "precio_referencia": 9.0,
+   "formato_referencia": "100 g"
+  },
+  "cebolla": {
+   "id": "69155",
+   "nombre": "Cebollas dulces",
+   "nombre_receta": "Cebollas dulces para pochar",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Cebolla y ajo",
+   "unidad_receta": "malla 1 kg",
+   "envase": 1000.0,
+   "precio_unitario": 2.5,
+   "precio_referencia": 2.5,
+   "formato_referencia": "kg"
+  },
+  "puerro": {
+   "id": "69411",
+   "nombre": "Puerros",
+   "nombre_receta": "Puerros",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Otras verduras y hortalizas",
+   "unidad_receta": "manojo (~4)",
+   "envase": 4,
+   "precio_unitario": 2.79,
+   "precio_referencia": 3.1,
+   "formato_referencia": "kg"
+  },
+  "aguacate": {
+   "id": "3830",
+   "nombre": "Aguacate",
+   "nombre_receta": "Aguacate",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Fruta tropical",
+   "unidad_receta": "pieza",
+   "envase": 1,
+   "precio_unitario": 1.65,
+   "precio_referencia": 5.0,
+   "formato_referencia": "kg"
+  },
+  "limon": {
+   "id": "3236",
+   "nombre": "Limones",
+   "nombre_receta": "Limones",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Cítricos",
+   "unidad_receta": "malla 1 kg",
+   "envase": 6,
+   "precio_unitario": 2.3,
+   "precio_referencia": 2.3,
+   "formato_referencia": "kg"
+  },
+  "lima": {
+   "id": "3897",
+   "nombre": "Lima",
+   "nombre_receta": "Lima",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Cítricos",
+   "unidad_receta": "pieza",
+   "envase": 1,
+   "precio_unitario": 0.31,
+   "precio_referencia": 4.4,
+   "formato_referencia": "kg"
+  },
+  "naranja": {
+   "id": "3235",
+   "nombre": "Naranja de mesa",
+   "nombre_receta": "Naranja",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Cítricos",
+   "unidad_receta": "pieza",
+   "envase": 1,
+   "precio_unitario": 0.75,
+   "precio_referencia": 2.5,
+   "formato_referencia": "kg"
+  },
+  "perejil": {
+   "id": "69701",
+   "nombre": "Perejil troceado lavado",
+   "nombre_receta": "Perejil fresco",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Hierbas aromáticas",
+   "unidad_receta": "paquete",
+   "envase": 1,
+   "precio_unitario": 0.95,
+   "precio_referencia": 2.375,
+   "formato_referencia": "100 g"
+  },
+  "albahaca": {
+   "id": "69287",
+   "nombre": "Albahaca",
+   "nombre_receta": "Albahaca fresca",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Hierbas aromáticas",
+   "unidad_receta": "bandeja",
+   "envase": 1,
+   "precio_unitario": 1.55,
+   "precio_referencia": 7.75,
+   "formato_referencia": "100 g"
+  },
+  "eneldo": {
+   "id": "52739",
+   "nombre": "Eneldo Hacendado",
+   "nombre_receta": "Eneldo",
+   "pasillo": "Aceite, especias y salsas",
+   "subseccion": "Hierbas",
+   "unidad_receta": "bote",
+   "envase": 1,
+   "precio_unitario": 1.85,
+   "precio_referencia": 10.278,
+   "formato_referencia": "100 g"
+  },
+  "jengibre": {
+   "id": "69289",
+   "nombre": "Jengibre",
+   "nombre_receta": "Jengibre fresco",
+   "pasillo": "Fruta y verdura",
+   "subseccion": "Hierbas aromáticas",
+   "unidad_receta": "pieza",
+   "envase": 1,
+   "precio_unitario": 1.65,
+   "precio_referencia": 8.25,
+   "formato_referencia": "kg"
+  },
+  "mozzarella_fresca": {
+   "id": "51050",
+   "nombre": "Mozzarella fresca de vaca Hacendado",
+   "nombre_receta": "Mozzarella fresca",
+   "pasillo": "Charcutería y quesos",
+   "subseccion": "Queso fresco",
+   "unidad_receta": "bola 125 g",
+   "envase": 125.0,
+   "precio_unitario": 0.9,
+   "precio_referencia": 7.2,
+   "formato_referencia": "kg"
+  },
+  "mozzarella_rallada": {
+   "id": "51110",
+   "nombre": "Queso rallado mozzarella pizza-Roma de vaca Hacendado",
+   "nombre_receta": "Mozzarella rallada",
+   "pasillo": "Charcutería y quesos",
+   "subseccion": "Queso rallado",
+   "unidad_receta": "paquete 200 g",
+   "envase": 200.0,
+   "precio_unitario": 1.6,
+   "precio_referencia": 8.0,
+   "formato_referencia": "kg"
+  },
+  "parmesano": {
+   "id": "51146",
+   "nombre": "Queso en polvo grana padano Hacendado",
+   "nombre_receta": "Queso grana padano rallado",
+   "pasillo": "Charcutería y quesos",
+   "subseccion": "Queso rallado",
+   "unidad_receta": "paquete 100 g",
+   "envase": 100.0,
+   "precio_unitario": 1.65,
+   "precio_referencia": 16.5,
+   "formato_referencia": "kg"
+  },
+  "queso_crema": {
+   "id": "51203",
+   "nombre": "Queso untar suave de vaca Hacendado",
+   "nombre_receta": "Queso de untar suave",
+   "pasillo": "Charcutería y quesos",
+   "subseccion": "Queso untable",
+   "unidad_receta": "tarrina 300 g",
+   "envase": 299.98,
+   "precio_unitario": 1.4,
+   "precio_referencia": 4.667,
+   "formato_referencia": "kg"
+  },
+  "quesitos": {
+   "id": "52405",
+   "nombre": "Queso en porciones Hacendado",
+   "nombre_receta": "Queso en porciones",
+   "pasillo": "Charcutería y quesos",
+   "subseccion": "Queso en porciones",
+   "unidad_receta": "caja",
+   "envase": 24,
+   "precio_unitario": 1.95,
+   "precio_referencia": 5.2,
+   "formato_referencia": "kg"
+  },
+  "queso_fresco": {
+   "id": "52409",
+   "nombre": "Queso fresco Burgos desnatado 0% MG Hacendado",
+   "nombre_receta": "Queso fresco de Burgos 0%",
+   "pasillo": "Charcutería y quesos",
+   "subseccion": "Queso fresco",
+   "unidad_receta": "pack 4 (~250 g)",
+   "envase": 250.0,
+   "precio_unitario": 1.15,
+   "precio_referencia": 4.6,
+   "formato_referencia": "kg"
+  },
+  "queso_rallado": {
+   "id": "23621",
+   "nombre": "Queso rallado especial fundir mezcla Hacendado",
+   "nombre_receta": "Queso rallado para fundir",
+   "pasillo": "Charcutería y quesos",
+   "subseccion": "Queso rallado",
+   "unidad_receta": "paquete 200 g",
+   "envase": 200.0,
+   "precio_unitario": 1.1,
+   "precio_referencia": 5.5,
+   "formato_referencia": "kg"
+  },
+  "queso_lonchas": {
+   "id": "50543",
+   "nombre": "Queso lonchas tierno de vaca Hacendado",
+   "nombre_receta": "Queso tierno en lonchas",
+   "pasillo": "Charcutería y quesos",
+   "subseccion": "Queso lonchas",
+   "unidad_receta": "paquete (~300 g)",
+   "envase": 299.98,
+   "precio_unitario": 2.5,
+   "precio_referencia": 8.334,
+   "formato_referencia": "kg"
+  }
+ },
+ "recetas": {
+  "guiso_lentejas_verduras": {
+   "necesidades": {
+    "lenteja": 350.0,
+    "zanahoria": 360.0,
+    "patata": 400.0,
+    "puerro": 1.0,
+    "cebolla": 200.0,
+    "cerdo_tacos": 250.0
+   },
+   "sin_producto": []
+  },
+  "pollo_curry_suave_arroz": {
+   "necesidades": {
+    "pechuga": 400.0,
+    "basmati": 300.0,
+    "calabacin": 1.0,
+    "zanahoria": 240.0,
+    "cebolla": 200.0,
+    "coco": 200.0
+   },
+   "sin_producto": []
+  },
+  "pure_calabacin_dados_pollo": {
+   "necesidades": {
+    "calabacin": 3.0,
+    "patata": 200.0,
+    "puerro": 1.0,
+    "pechuga": 300.0,
+    "quesitos": 3.0
+   },
+   "sin_producto": []
+  },
+  "chili_suave_ternera_arroz": {
+   "necesidades": {
+    "picada_vacuno": 350.0,
+    "alubia_roja": 400.0,
+    "tomate_frito": 350.0,
+    "pimiento_rojo": 1.0,
+    "cebolla": 200.0,
+    "arroz": 250.0
+   },
+   "sin_producto": []
+  },
+  "fajitas_suaves_pollo_pimientos": {
+   "necesidades": {
+    "pechuga": 320.0,
+    "pimiento_rojo": 2.0,
+    "pimiento_verde": 0.0,
+    "cebolla": 200.0,
+    "tortillas": 6.0,
+    "tomate": 1.0,
+    "mayonesa": 0.0
+   },
+   "sin_producto": []
+  },
+  "carbonara_adaptada": {
+   "necesidades": {
+    "espaguetis": 300.0,
+    "bacon": 140.0,
+    "huevos": 4.0,
+    "parmesano": 50.0
+   },
+   "sin_producto": []
+  },
+  "poke_bowl_salmon_fresco": {
+   "necesidades": {
+    "salmon": 300.0,
+    "arroz": 250.0,
+    "aguacate": 1.0,
+    "zanahoria": 240.0,
+    "tomate": 1.0,
+    "mayonesa": 0.0
+   },
+   "sin_producto": []
+  },
+  "pizza_casera_artesanal": {
+   "necesidades": {
+    "harina_fuerza": 350.0,
+    "levadura": 1.0,
+    "tomate_triturado": 150.0,
+    "mozzarella_rallada": 160.0,
+    "pechuga": 130.0,
+    "champinon": 100.0
+   },
+   "sin_producto": []
+  },
+  "tortilla_patata_cebolla_confitada": {
+   "necesidades": {
+    "patata": 600.0,
+    "cebolla": 200.0,
+    "huevos": 6.0,
+    "lechuga": 1.0,
+    "tomate": 1.0
+   },
+   "sin_producto": []
+  },
+  "salmon_plancha_pure_patata_zanahorias": {
+   "necesidades": {
+    "salmon": 340.0,
+    "patata": 600.0,
+    "zanahoria": 480.0,
+    "mayonesa": 0.0
+   },
+   "sin_producto": []
+  },
+  "hamburguesa_casera_ternera_patatas_gajo": {
+   "necesidades": {
+    "picada_vacuno": 320.0,
+    "pan_burger": 2.0,
+    "queso_lonchas": 40.0,
+    "patata": 600.0,
+    "lechuga": 0.0,
+    "tomate": 0.0,
+    "mayonesa": 0.0
+   },
+   "sin_producto": []
+  },
+  "cuscus_pollo_verduras_salteadas": {
+   "necesidades": {
+    "cuscus": 250.0,
+    "pechuga": 450.0,
+    "calabacin": 1.0,
+    "zanahoria": 240.0
+   },
+   "sin_producto": []
+  },
+  "sufle_pastel_carne_patata": {
+   "necesidades": {
+    "patata": 1000.0,
+    "picada_vacuno": 400.0,
+    "tomate_triturado": 300.0,
+    "cebolla": 200.0,
+    "queso_rallado": 100.0,
+    "mantequilla": 0.0
+   },
+   "sin_producto": []
+  },
+  "curry_japones_kare_raisu_pollo": {
+   "necesidades": {
+    "pechuga": 500.0,
+    "arroz": 300.0,
+    "patata": 400.0,
+    "zanahoria": 240.0,
+    "cebolla": 200.0,
+    "caldo": 500.0
+   },
+   "sin_producto": []
+  },
+  "onigiris_arroz_atun_mayonesa": {
+   "necesidades": {
+    "arroz": 300.0,
+    "atun_lata": 2.0,
+    "mayonesa": 0.0
+   },
+   "sin_producto": []
+  },
+  "ramen_casero_caldo_pollo_fideos": {
+   "necesidades": {
+    "caldo": 800.0,
+    "noodles": 180.0,
+    "huevos": 2.0,
+    "pechuga": 160.0,
+    "zanahoria": 100.0,
+    "espinaca": 0.0
+   },
+   "sin_producto": []
+  },
+  "alubias_verdes_patata_zanahoria_huevo": {
+   "necesidades": {
+    "judia_verde": 400.0,
+    "patata": 600.0,
+    "zanahoria": 240.0,
+    "cebolla": 200.0,
+    "huevos": 3.0
+   },
+   "sin_producto": []
+  },
+  "fideos_salsa_cacahuete_soja_pollo": {
+   "necesidades": {
+    "noodles": 220.0,
+    "pechuga": 240.0,
+    "crema_cacahuete": 0.0,
+    "zanahoria": 120.0
+   },
+   "sin_producto": []
+  },
+  "merluza_rebozada_dorada_patatas": {
+   "necesidades": {
+    "merluza": 380.0,
+    "patata": 600.0,
+    "huevos": 0.0,
+    "mayonesa": 0.0
+   },
+   "sin_producto": []
+  },
+  "arroz_asiatico_salteado_pollo": {
+   "necesidades": {
+    "arroz": 350.0,
+    "contramuslos": 320.0,
+    "zanahoria": 240.0,
+    "calabacin": 1.0,
+    "huevos": 2.0
+   },
+   "sin_producto": []
+  },
+  "muslitos_pollo_asados_al_limon": {
+   "necesidades": {
+    "jamoncitos": 800.0,
+    "pimiento_rojo": 1.0,
+    "pimiento_verde": 1.0,
+    "cebolla": 100.0,
+    "aguacate": 2.0,
+    "limon": 0.0
+   },
+   "sin_producto": []
+  },
+  "filetes_dorados_sarten_acero_guarnicion": {
+   "necesidades": {
+    "vacuno_filetes": 400.0
+   },
+   "sin_producto": []
+  },
+  "albondigas_caseras_ternera_salsa_espanola": {
+   "necesidades": {
+    "picada_vacuno": 400.0,
+    "patata": 400.0,
+    "zanahoria": 240.0,
+    "puerro": 1.0,
+    "cebolla": 200.0,
+    "tomate_triturado": 30.0,
+    "perejil": 0.0
+   },
+   "sin_producto": []
+  },
+  "garbanzos_salteados_espinacas_jamon_huevo": {
+   "necesidades": {
+    "garbanzo": 400.0,
+    "espinaca": 100.0,
+    "taquitos_jamon": 75.0,
+    "huevos": 2.0
+   },
+   "sin_producto": []
+  },
+  "espaguetis_tomate_casero_bacon": {
+   "necesidades": {
+    "espaguetis": 220.0,
+    "tomate_frito": 250.0,
+    "bacon": 100.0,
+    "queso_rallado": 30.0
+   },
+   "sin_producto": []
+  },
+  "sandwiches_calientes_jamon_queso_tierno": {
+   "necesidades": {
+    "pan": 4.0,
+    "jamon_cocido": 100.0,
+    "queso_lonchas": 80.0,
+    "tomate": 0.0,
+    "lechuga": 0.0
+   },
+   "sin_producto": []
+  },
+  "jamoncitos_pollo_asados_con_patatas": {
+   "necesidades": {
+    "jamoncitos": 800.0,
+    "patata": 600.0,
+    "cebolla": 200.0
+   },
+   "sin_producto": []
+  },
+  "pollo_asado_entero_patatas_limon": {
+   "necesidades": {
+    "pollo_entero": 1.0,
+    "patata": 1000.0,
+    "limon": 2.0,
+    "cebolla": 200.0
+   },
+   "sin_producto": []
+  },
+  "estofado_ternera_patatas_zanahoria": {
+   "necesidades": {
+    "vacuno_guisar": 700.0,
+    "patata": 800.0,
+    "zanahoria": 480.0,
+    "cebolla": 200.0,
+    "tomate_triturado": 200.0
+   },
+   "sin_producto": []
+  },
+  "garbanzos_con_bacalao_espinacas": {
+   "necesidades": {
+    "garbanzo": 800.0,
+    "bacalao": 500.0,
+    "espinaca": 300.0,
+    "cebolla": 200.0,
+    "tomate_triturado": 200.0,
+    "huevos": 2.0
+   },
+   "sin_producto": []
+  },
+  "lentejas_estofadas_calabaza_arroz": {
+   "necesidades": {
+    "lenteja": 400.0,
+    "calabaza": 500.0,
+    "zanahoria": 240.0,
+    "puerro": 1.0,
+    "cebolla": 200.0,
+    "arroz": 120.0,
+    "huevos": 4.0
+   },
+   "sin_producto": []
+  },
+  "alubias_blancas_guisadas_con_pollo": {
+   "necesidades": {
+    "contramuslos": 500.0,
+    "alubia_blanca": 800.0,
+    "pimiento_rojo": 1.0,
+    "zanahoria": 240.0,
+    "cebolla": 200.0,
+    "tomate_triturado": 200.0
+   },
+   "sin_producto": []
+  },
+  "risotto_calabaza_pollo": {
+   "necesidades": {
+    "arroz": 250.0,
+    "pechuga": 300.0,
+    "calabaza": 400.0,
+    "cebolla": 200.0,
+    "caldo": 1000.0,
+    "parmesano": 40.0
+   },
+   "sin_producto": []
+  },
+  "lasana_casera_carne_bechamel": {
+   "necesidades": {
+    "lasana": 12.0,
+    "picada_vacuno": 500.0,
+    "tomate_triturado": 400.0,
+    "cebolla": 200.0,
+    "zanahoria": 120.0,
+    "queso_rallado": 120.0
+   },
+   "sin_producto": []
+  },
+  "macarrones_bolonesa_casera": {
+   "necesidades": {
+    "pasta_corta": 400.0,
+    "picada_mixta": 500.0,
+    "tomate_triturado": 500.0,
+    "cebolla": 200.0,
+    "zanahoria": 120.0,
+    "mozzarella_rallada": 150.0
+   },
+   "sin_producto": []
+  },
+  "arroz_al_horno_costillas_garbanzos": {
+   "necesidades": {
+    "costillas": 700.0,
+    "arroz": 350.0,
+    "garbanzo": 400.0,
+    "patata": 200.0,
+    "tomate": 2.0,
+    "caldo": 800.0
+   },
+   "sin_producto": []
+  },
+  "pollo_teriyaki_arroz_brocoli": {
+   "necesidades": {
+    "contramuslos": 400.0,
+    "arroz": 220.0,
+    "brocoli": 1.0,
+    "jengibre": 1.0
+   },
+   "sin_producto": []
+  },
+  "ternera_salteada_brocoli_soja": {
+   "necesidades": {
+    "vacuno_filetes": 380.0,
+    "brocoli": 1.0,
+    "arroz": 220.0,
+    "jengibre": 1.0,
+    "zanahoria": 120.0
+   },
+   "sin_producto": []
+  },
+  "curry_garbanzos_coco_espinacas": {
+   "necesidades": {
+    "garbanzo": 800.0,
+    "coco": 400.0,
+    "tomate_triturado": 400.0,
+    "espinaca": 300.0,
+    "cebolla": 200.0,
+    "jengibre": 1.0,
+    "basmati": 300.0
+   },
+   "sin_producto": []
+  },
+  "dahl_lentejas_rojas_arroz": {
+   "necesidades": {
+    "lenteja": 400.0,
+    "basmati": 300.0,
+    "tomate_triturado": 200.0,
+    "cebolla": 200.0,
+    "jengibre": 1.0,
+    "zanahoria": 240.0,
+    "yogur": 250.0
+   },
+   "sin_producto": []
+  },
+  "pollo_tikka_masala_suave": {
+   "necesidades": {
+    "contramuslos": 700.0,
+    "yogur": 250.0,
+    "tomate_triturado": 400.0,
+    "nata": 150.0,
+    "cebolla": 200.0,
+    "jengibre": 1.0,
+    "basmati": 300.0
+   },
+   "sin_producto": []
+  },
+  "burrito_bowl_pollo_frijoles": {
+   "necesidades": {
+    "pechuga": 320.0,
+    "basmati": 220.0,
+    "alubia_roja": 240.0,
+    "maiz": 1.0,
+    "pimiento_rojo": 1.0,
+    "pimiento_verde": 1.0,
+    "aguacate": 1.0,
+    "lima": 1.0
+   },
+   "sin_producto": []
+  },
+  "lomo_cerdo_guisado_pimientos_arroz": {
+   "necesidades": {
+    "cerdo_tacos": 400.0,
+    "pimiento_rojo": 1.0,
+    "pimiento_verde": 1.0,
+    "cebolla": 200.0,
+    "arroz": 220.0
+   },
+   "sin_producto": []
+  },
+  "merluza_en_salsa_verde_patatas": {
+   "necesidades": {
+    "merluza": 460.0,
+    "patata": 800.0,
+    "guisante": 200.0,
+    "perejil": 1.0,
+    "caldo": 250.0
+   },
+   "sin_producto": []
+  },
+  "bacalao_con_tomate_patatas": {
+   "necesidades": {
+    "bacalao": 460.0,
+    "patata": 800.0,
+    "tomate_triturado": 500.0,
+    "cebolla": 200.0,
+    "pimiento_verde": 1.0
+   },
+   "sin_producto": []
+  },
+  "marmitako_atun_patatas": {
+   "necesidades": {
+    "atun_fresco": 550.0,
+    "patata": 800.0,
+    "pimiento_verde": 2.0,
+    "pimiento_rojo": 1.0,
+    "cebolla": 200.0,
+    "tomate_triturado": 200.0
+   },
+   "sin_producto": []
+  },
+  "pollo_al_chilindron_suave": {
+   "necesidades": {
+    "muslos_contramuslos": 1000.0,
+    "taquitos_jamon": 80.0,
+    "pimiento_rojo": 2.0,
+    "pimiento_verde": 1.0,
+    "cebolla": 200.0,
+    "tomate_triturado": 400.0,
+    "arroz": 300.0
+   },
+   "sin_producto": []
+  },
+  "tajine_cordero_ciruelas_cuscus": {
+   "necesidades": {
+    "cordero": 600.0,
+    "cebolla": 400.0,
+    "zanahoria": 240.0,
+    "jengibre": 1.0,
+    "ciruelas": 120.0,
+    "almendra": 50.0,
+    "cuscus": 300.0
+   },
+   "sin_producto": []
+  },
+  "goulash_ternera_pimenton_dulce": {
+   "necesidades": {
+    "vacuno_guisar": 700.0,
+    "cebolla": 400.0,
+    "pimiento_rojo": 2.0,
+    "patata": 600.0,
+    "tomate_triturado": 200.0,
+    "caldo": 500.0
+   },
+   "sin_producto": []
+  },
+  "salchichas_frescas_lentejas_estofadas": {
+   "necesidades": {
+    "salchichas": 600.0,
+    "lenteja": 350.0,
+    "zanahoria": 360.0,
+    "puerro": 1.0,
+    "cebolla": 200.0,
+    "tomate_concentrado": 0.0
+   },
+   "sin_producto": []
+  },
+  "pisto_manchego_huevo_arroz": {
+   "necesidades": {
+    "calabacin": 2.0,
+    "pimiento_rojo": 1.0,
+    "pimiento_verde": 2.0,
+    "cebolla": 200.0,
+    "tomate_triturado": 600.0,
+    "huevos": 8.0,
+    "taquitos_jamon": 100.0,
+    "arroz": 300.0
+   },
+   "sin_producto": []
+  },
+  "ensalada_pasta_atun_tupper": {
+   "necesidades": {
+    "pasta_corta": 320.0,
+    "atun_lata": 4.0,
+    "maiz": 1.0,
+    "tomate_cherry": 250.0,
+    "pepino": 1.0,
+    "huevos": 4.0,
+    "mozzarella_fresca": 190.0
+   },
+   "sin_producto": []
+  },
+  "costillar_cerdo_asado_patatas": {
+   "necesidades": {
+    "costillas": 1000.0,
+    "patata": 800.0,
+    "limon": 1.0,
+    "tomate": 2.0
+   },
+   "sin_producto": []
+  },
+  "fideua_pollo_merluza": {
+   "necesidades": {
+    "fideua": 350.0,
+    "contramuslos": 300.0,
+    "merluza": 320.0,
+    "caldo": 1000.0,
+    "pimiento_rojo": 1.0,
+    "tomate": 2.0
+   },
+   "sin_producto": []
+  },
+  "tortilla_francesa_calabacin_queso_tierno": {
+   "necesidades": {
+    "huevos": 6.0,
+    "calabacin": 1.0,
+    "queso_lonchas": 80.0,
+    "pan": 4.0,
+    "tomate": 1.0
+   },
+   "sin_producto": []
+  },
+  "revuelto_champinones_jamon_tostadas": {
+   "necesidades": {
+    "huevos": 6.0,
+    "champinon": 250.0,
+    "jamon_lonchas": 80.0,
+    "pan": 5.0,
+    "perejil": 1.0
+   },
+   "sin_producto": []
+  },
+  "crema_calabaza_zanahoria_pollo": {
+   "necesidades": {
+    "calabaza": 800.0,
+    "zanahoria": 360.0,
+    "puerro": 1.0,
+    "patata": 200.0,
+    "caldo": 700.0,
+    "queso_crema": 60.0,
+    "pechuga": 350.0,
+    "pan": 4.0
+   },
+   "sin_producto": []
+  },
+  "vichyssoise_puerro_patata_jamon": {
+   "necesidades": {
+    "puerro": 4.0,
+    "patata": 600.0,
+    "caldo": 800.0,
+    "nata": 200.0,
+    "taquitos_jamon": 150.0,
+    "huevos": 6.0,
+    "pan": 4.0,
+    "cebollino": 1.0
+   },
+   "sin_producto": []
+  },
+  "sopa_pollo_fideos_caldo_casero": {
+   "necesidades": {
+    "caldo": 1200.0,
+    "fideo_fino": 120.0,
+    "pechuga": 200.0,
+    "zanahoria": 240.0,
+    "puerro": 1.0,
+    "huevos": 2.0,
+    "perejil": 1.0
+   },
+   "sin_producto": []
+  },
+  "salmon_teriyaki_sarten_arroz": {
+   "necesidades": {
+    "salmon": 320.0,
+    "arroz": 160.0,
+    "calabacin": 1.0,
+    "jengibre": 1.0
+   },
+   "sin_producto": []
+  },
+  "dorada_al_horno_patatas_panadera": {
+   "necesidades": {
+    "dorada": 2.0,
+    "patata": 800.0,
+    "pimiento_rojo": 1.0,
+    "cebolla": 200.0,
+    "limon": 1.0,
+    "perejil": 1.0
+   },
+   "sin_producto": []
+  },
+  "merluza_plancha_ajo_perejil_verduras": {
+   "necesidades": {
+    "merluza": 420.0,
+    "perejil": 1.0,
+    "limon": 1.0,
+    "calabacin": 1.0,
+    "pimiento_rojo": 1.0,
+    "champinon": 200.0,
+    "pan": 4.0
+   },
+   "sin_producto": []
+  },
+  "tostas_sardinas_tomate_aguacate": {
+   "necesidades": {
+    "pan": 7.0,
+    "sardinillas": 4.0,
+    "tomate": 2.0,
+    "aguacate": 1.5,
+    "limon": 0.5
+   },
+   "sin_producto": []
+  },
+  "atun_plancha_sesamo_ensalada_templada": {
+   "necesidades": {
+    "atun_fresco": 300.0,
+    "patata": 400.0,
+    "judia_verde": 250.0,
+    "tomate_cherry": 150.0
+   },
+   "sin_producto": []
+  },
+  "wrap_pollo_cesar_suave": {
+   "necesidades": {
+    "pechuga": 240.0,
+    "tortillas": 4.0,
+    "lechuga": 1.0,
+    "tomate": 1.0,
+    "yogur": 125.0,
+    "mayonesa": 0.0,
+    "parmesano": 30.0,
+    "limon": 0.1
+   },
+   "sin_producto": []
+  },
+  "quesadillas_pollo_queso_tierno_pimientos": {
+   "necesidades": {
+    "tortillas": 4.0,
+    "pechuga": 260.0,
+    "queso_rallado": 100.0,
+    "pimiento_rojo": 1.0,
+    "pimiento_verde": 1.0,
+    "tomate_triturado": 60.0,
+    "aguacate": 1.0
+   },
+   "sin_producto": []
+  },
+  "tacos_cerdo_desmechado_horno": {
+   "necesidades": {
+    "cabeza_lomo": 900.0,
+    "naranja": 2.0,
+    "tortillas": 8.0,
+    "maiz": 1.0,
+    "aguacate": 1.0,
+    "tomate": 2.0,
+    "lima": 1.0,
+    "yogur": 125.0
+   },
+   "sin_producto": []
+  },
+  "yakisoba_pollo_verduras": {
+   "necesidades": {
+    "noodles": 300.0,
+    "pechuga": 300.0,
+    "repollo": 0.25,
+    "zanahoria": 120.0,
+    "pimiento_verde": 1.0,
+    "jengibre": 1.0
+   },
+   "sin_producto": []
+  },
+  "pad_thai_suave_pollo_cacahuete": {
+   "necesidades": {
+    "fideos_arroz": 250.0,
+    "pechuga": 240.0,
+    "huevos": 2.0,
+    "cacahuete": 40.0,
+    "lima": 1.0,
+    "cebollino": 1.0
+   },
+   "sin_producto": []
+  },
+  "bowl_coreano_suave_ternera_huevo": {
+   "necesidades": {
+    "arroz": 180.0,
+    "vacuno_filetes": 290.0,
+    "zanahoria": 120.0,
+    "espinaca": 200.0,
+    "huevos": 2.0
+   },
+   "sin_producto": []
+  },
+  "pollo_salteado_anacardos_arroz": {
+   "necesidades": {
+    "pechuga": 300.0,
+    "anacardo": 50.0,
+    "pimiento_rojo": 1.0,
+    "calabacin": 1.0,
+    "jengibre": 1.0,
+    "basmati": 180.0
+   },
+   "sin_producto": []
+  },
+  "ensalada_garbanzos_atun_tomate": {
+   "necesidades": {
+    "garbanzo": 400.0,
+    "atun_lata": 3.0,
+    "tomate": 2.0,
+    "pepino": 1.0,
+    "huevos": 2.0,
+    "pimiento_asado": 100.0,
+    "perejil": 0.0
+   },
+   "sin_producto": []
+  },
+  "hamburguesas_pollo_caseras_pita": {
+   "necesidades": {
+    "pollo_picado": 320.0,
+    "huevos": 1.0,
+    "perejil": 0.0,
+    "pan_pita": 4.0,
+    "yogur_griego": 125.0,
+    "lechuga": 0.5,
+    "tomate": 1.0,
+    "limon": 0.0
+   },
+   "sin_producto": []
+  },
+  "kebab_casero_pollo_yogur_pita": {
+   "necesidades": {
+    "contramuslos": 650.0,
+    "yogur": 375.0,
+    "limon": 1.0,
+    "pan_pita": 4.0,
+    "lechuga": 0.5,
+    "tomate": 1.0,
+    "pepino": 0.5,
+    "pimiento_asado": 100.0
+   },
+   "sin_producto": []
+  },
+  "falafel_horno_hummus_pita": {
+   "necesidades": {
+    "garbanzo": 800.0,
+    "perejil": 1.0,
+    "tahini": 0.0,
+    "limon": 2.0,
+    "pan_pita": 4.0,
+    "tomate": 2.0,
+    "pepino": 1.0
+   },
+   "sin_producto": []
+  },
+  "shakshuka_suave_huevos_tomate": {
+   "necesidades": {
+    "huevos": 6.0,
+    "tomate_triturado": 400.0,
+    "pimiento_rojo": 1.0,
+    "cebolla": 100.0,
+    "queso_fresco": 100.0,
+    "pan": 4.0
+   },
+   "sin_producto": []
+  },
+  "tostas_salmon_ahumado_aguacate_huevo": {
+   "necesidades": {
+    "pan_centeno": 6.0,
+    "salmon_ahumado": 200.0,
+    "aguacate": 1.0,
+    "huevos": 3.0,
+    "queso_crema": 60.0,
+    "limon": 1.0,
+    "eneldo": 1.0
+   },
+   "sin_producto": []
+  },
+  "pollo_al_limon_estilo_chino": {
+   "necesidades": {
+    "pechuga": 340.0,
+    "huevos": 1.0,
+    "limon": 2.0,
+    "caldo": 150.0,
+    "jengibre": 1.0,
+    "basmati": 180.0,
+    "brocoli": 0.44
+   },
+   "sin_producto": []
+  },
+  "pasta_pesto_pollo_tomates_cherry": {
+   "necesidades": {
+    "pasta_corta": 180.0,
+    "pechuga": 260.0,
+    "tomate_cherry": 250.0,
+    "albahaca": 1.0,
+    "pinones": 0.0,
+    "parmesano": 30.0
+   },
+   "sin_producto": []
+  },
+  "noquis_tomate_mozzarella": {
+   "necesidades": {
+    "noquis": 500.0,
+    "tomate_triturado": 400.0,
+    "mozzarella_fresca": 250.0,
+    "albahaca": 0.0,
+    "parmesano": 20.0
+   },
+   "sin_producto": []
+  },
+  "lomo_adobado_plancha_pure_boniato": {
+   "necesidades": {
+    "lomo_adobado": 320.0,
+    "batata": 2.0,
+    "pimiento_verde": 4.0,
+    "mantequilla": 15.0
+   },
+   "sin_producto": []
+  },
+  "yogur_griego_nueces_platano_canela": {
+   "necesidades": {
+    "yogur_griego": 125.0,
+    "pinones": 0.0
+   },
+   "sin_producto": [
+    {
+     "item": "Plátano",
+     "cantidad": "1 unidad"
+    }
+   ]
+  },
+  "manzana_asada_canela_nueces": {
+   "necesidades": {
+    "pinones": 0.0,
+    "mantequilla": 20.0,
+    "yogur": 250.0
+   },
+   "sin_producto": [
+    {
+     "item": "Manzanas (Golden o Reineta)",
+     "cantidad": "4 unidades"
+    },
+    {
+     "item": "Pasas sultanas",
+     "cantidad": "40 g"
+    }
+   ]
+  },
+  "natillas_caseras_huevo": {
+   "necesidades": {
+    "huevos": 4.0
+   },
+   "sin_producto": [
+    {
+     "item": "Extracto de vainilla",
+     "cantidad": "1 cucharadita"
+    },
+    {
+     "item": "Galletas María",
+     "cantidad": "6 unidades"
+    }
+   ]
+  },
+  "arroz_con_leche_casero": {
+   "necesidades": {
+    "arroz": 150.0,
+    "limon": 1.0,
+    "mantequilla": 15.0
+   },
+   "sin_producto": []
+  },
+  "flan_huevo_casero": {
+   "necesidades": {
+    "huevos": 4.0
+   },
+   "sin_producto": [
+    {
+     "item": "Extracto de vainilla",
+     "cantidad": "1 cucharadita"
+    }
+   ]
+  },
+  "macedonia_fruta_zumo_naranja": {
+   "necesidades": {
+    "naranja": 3.0,
+    "almendra": 40.0
+   },
+   "sin_producto": [
+    {
+     "item": "Plátano",
+     "cantidad": "2 unidades"
+    },
+    {
+     "item": "Manzana",
+     "cantidad": "2 unidades"
+    },
+    {
+     "item": "Pera",
+     "cantidad": "2 unidades"
+    },
+    {
+     "item": "Kiwi",
+     "cantidad": "3 unidades"
+    },
+    {
+     "item": "Uvas o fresas (según temporada)",
+     "cantidad": "200 g"
+    },
+    {
+     "item": "Hierbabuena fresca (opcional)",
+     "cantidad": "unas hojas"
+    }
+   ]
+  },
+  "fruta_chocolate_negro_fundido": {
+   "necesidades": {
+    "pinones": 0.0
+   },
+   "sin_producto": [
+    {
+     "item": "Chocolate negro (70-85 % cacao)",
+     "cantidad": "1 tableta (100 g)"
+    },
+    {
+     "item": "Fresas",
+     "cantidad": "250 g"
+    },
+    {
+     "item": "Plátano",
+     "cantidad": "2 unidades"
+    }
+   ]
+  },
+  "bizcocho_platano_avena_nueces": {
+   "necesidades": {
+    "huevos": 3.0,
+    "yogur": 125.0,
+    "pinones": 0.0,
+    "levadura": 1.0
+   },
+   "sin_producto": [
+    {
+     "item": "Plátanos muy maduros",
+     "cantidad": "4 unidades"
+    },
+    {
+     "item": "Copos de avena",
+     "cantidad": "200 g"
+    }
+   ]
+  },
+  "pudin_chia_leche_mango": {
+   "necesidades": {},
+   "sin_producto": [
+    {
+     "item": "Semillas de chía",
+     "cantidad": "90 g"
+    },
+    {
+     "item": "Mango",
+     "cantidad": "1 unidad grande (o 300 g congelado)"
+    },
+    {
+     "item": "Extracto de vainilla",
+     "cantidad": "1 cucharadita"
+    }
+   ]
+  },
+  "compota_pera_manzana_yogur": {
+   "necesidades": {
+    "limon": 1.0,
+    "yogur_griego": 125.0,
+    "almendra": 40.0
+   },
+   "sin_producto": [
+    {
+     "item": "Peras",
+     "cantidad": "4 unidades"
+    },
+    {
+     "item": "Manzanas",
+     "cantidad": "4 unidades"
+    }
+   ]
+  },
+  "batido_platano_avena_cacahuete": {
+   "necesidades": {
+    "crema_cacahuete": 0.0
+   },
+   "sin_producto": [
+    {
+     "item": "Plátano",
+     "cantidad": "2 unidades"
+    },
+    {
+     "item": "Copos de avena",
+     "cantidad": "40 g"
+    }
+   ]
+  },
+  "batido_proteico_platano_avena": {
+   "necesidades": {
+    "crema_cacahuete": 0.0
+   },
+   "sin_producto": [
+    {
+     "item": "Proteína en polvo (la pautada, stock de despensa)",
+     "cantidad": "1 cacito (25 g)"
+    },
+    {
+     "item": "Plátano",
+     "cantidad": "1 unidad"
+    },
+    {
+     "item": "Copos de avena",
+     "cantidad": "30 g"
+    }
+   ]
+  },
+  "tostada_aguacate_huevo": {
+   "necesidades": {
+    "pan": 4.0,
+    "aguacate": 1.0,
+    "huevos": 2.0,
+    "limon": 0.5
+   },
+   "sin_producto": []
+  },
+  "tostada_crema_cacahuete_platano": {
+   "necesidades": {
+    "pan": 3.0,
+    "crema_cacahuete": 0.0
+   },
+   "sin_producto": [
+    {
+     "item": "Plátano",
+     "cantidad": "1 unidad"
+    }
+   ]
+  },
+  "mix_frutos_secos_fruta_deshidratada": {
+   "necesidades": {
+    "pinones": 0.0,
+    "almendra": 150.0
+   },
+   "sin_producto": [
+    {
+     "item": "Avellanas o anacardos naturales (sin sal)",
+     "cantidad": "100 g"
+    },
+    {
+     "item": "Orejones de albaricoque",
+     "cantidad": "100 g"
+    },
+    {
+     "item": "Pasas sultanas",
+     "cantidad": "80 g"
+    }
+   ]
+  },
+  "hummus_casero_crudites_pita": {
+   "necesidades": {
+    "garbanzo": 400.0,
+    "tahini": 0.0,
+    "limon": 1.0,
+    "zanahoria": 360.0,
+    "pepino": 1.0,
+    "pan_pita": 4.0
+   },
+   "sin_producto": []
+  },
+  "queso_fresco_membrillo_nueces": {
+   "necesidades": {
+    "queso_fresco": 250.0,
+    "pinones": 0.0
+   },
+   "sin_producto": [
+    {
+     "item": "Dulce de membrillo",
+     "cantidad": "1 bloque pequeño (200 g)"
+    }
+   ]
+  },
+  "bocadillo_jamon_cocido_queso_tierno_tomate": {
+   "necesidades": {
+    "pan": 1.0,
+    "jamon_cocido": 80.0,
+    "queso_lonchas": 60.0,
+    "tomate": 1.0
+   },
+   "sin_producto": []
+  },
+  "tortitas_avena_platano": {
+   "necesidades": {
+    "huevos": 3.0,
+    "levadura": 0.0,
+    "yogur_griego": 125.0
+   },
+   "sin_producto": [
+    {
+     "item": "Copos de avena",
+     "cantidad": "150 g"
+    },
+    {
+     "item": "Plátanos maduros",
+     "cantidad": "2 unidades"
+    },
+    {
+     "item": "Fresas, arándanos o plátano para acompañar",
+     "cantidad": "200 g"
+    }
+   ]
+  },
+  "datiles_rellenos_cacahuete_chocolate": {
+   "necesidades": {
+    "crema_cacahuete": 0.0
+   },
+   "sin_producto": [
+    {
+     "item": "Dátiles Medjool (o deglet nour grandes)",
+     "cantidad": "20 unidades"
+    },
+    {
+     "item": "Chocolate negro (70-85 % cacao)",
+     "cantidad": "50 g"
+    }
+   ]
+  },
+  "barritas_avena_platano_frutos_secos": {
+   "necesidades": {
+    "pinones": 0.0,
+    "almendra": 0.0,
+    "crema_cacahuete": 0.0
+   },
+   "sin_producto": [
+    {
+     "item": "Copos de avena",
+     "cantidad": "250 g"
+    },
+    {
+     "item": "Plátanos muy maduros",
+     "cantidad": "3 unidades"
+    },
+    {
+     "item": "Dátiles deshuesados",
+     "cantidad": "120 g"
+    },
+    {
+     "item": "Semillas de girasol o calabaza (sin sal)",
+     "cantidad": "40 g"
+    }
+   ]
+  },
+  "bol_muesli_leche_platano_nueces": {
+   "necesidades": {
+    "pinones": 0.0
+   },
+   "sin_producto": [
+    {
+     "item": "Plátano",
+     "cantidad": "2 unidades"
+    }
+   ]
+  },
+  "tortitas_arroz_cacahuete_platano": {
+   "necesidades": {
+    "arroz": 0.0,
+    "crema_cacahuete": 0.0
+   },
+   "sin_producto": [
+    {
+     "item": "Plátano",
+     "cantidad": "1 unidad"
+    }
+   ]
+  },
+  "lasana_canelones_precocinados": {
+   "necesidades": {
+    "lasana": 2.0
+   },
+   "sin_producto": [
+    {
+     "item": "Ensalada verde o verdura cocida de acompañamiento",
+     "cantidad": "al gusto"
+    }
+   ]
+  },
+  "burritos_arroz_chili_carne_picada": {
+   "necesidades": {
+    "tortillas": 1.0,
+    "picada_vacuno": 250.0,
+    "arroz": 150.0,
+    "limon": 0.1
+   },
+   "sin_producto": [
+    {
+     "item": "Chili con carne en lata (versión suave, sin picante)",
+     "cantidad": "1 lata"
+    }
+   ]
+  },
+  "garbanzos_salteados_espinacas_chorizo_huevo": {
+   "necesidades": {
+    "garbanzo": 400.0,
+    "espinaca": 100.0,
+    "huevos": 2.0
+   },
+   "sin_producto": [
+    {
+     "item": "Taquitos de chorizo dulce (sin picante)",
+     "cantidad": "75g"
+    }
+   ]
+  },
+  "albondigas_caseras_salsa_tomate_patatas": {
+   "necesidades": {
+    "picada_mixta": 500.0,
+    "lomo_cerdo": 0.0,
+    "tomate_triturado": 400.0,
+    "patata": 400.0,
+    "cebolla": 100.0,
+    "perejil": 0.0,
+    "huevos": 1.0
+   },
+   "sin_producto": []
+  }
+ }
+}

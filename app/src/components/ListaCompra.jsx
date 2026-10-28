@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { useEstadoSemanal } from '../utils/semana';
 import { precioLidl } from '../utils/supermercados';
+import { recalcularLista } from '../utils/compra';
 
 const SUPER_KEY = 'menuia_supermercado';
 const PRECIOS_LIDL_KEY = 'menuia_precios_lidl_usuario';
@@ -40,7 +41,7 @@ const guardarLocal = (clave, valor) => {
   }
 };
 
-export default function ListaCompra({ listaData, despensaData, preciosLidl, semana, menuData, recetarioData, cambios }) {
+export default function ListaCompra({ listaData, despensaData, preciosLidl, semana, menuData, recetarioData, cambios, compraRecetas }) {
   // Estado ligado a la semana: se vacía solo al publicar un menú nuevo
   const [checkedMap, setCheckedMap] = useEstadoSemanal('compra', semana, {});
   const [tengoMap, setTengoMap] = useEstadoSemanal('tengo', semana, {});
@@ -89,21 +90,11 @@ export default function ListaCompra({ listaData, despensaData, preciosLidl, sema
     setExtras(prev => prev.filter(x => x.id !== id));
   };
 
-  // Ingredientes que añade cada plato cambiado en el menú
-  const ajustesCambios = useMemo(() => {
-    return Object.entries(cambios || {}).map(([slot, recetaId]) => {
-      const [idx, tipo] = slot.split('-');
-      const dia = menuData?.dias?.[Number(idx)];
-      const nueva = recetarioData?.find(r => r.id === recetaId);
-      if (!dia || !nueva) return null;
-      return {
-        slot,
-        etiqueta: `${dia.dia} · ${tipo}`,
-        original: dia[tipo]?.nombre,
-        nueva,
-      };
-    }).filter(Boolean);
-  }, [cambios, menuData, recetarioData]);
+  // Lista recalculada con los platos cambiados, las comidas fuera y los huecos rellenados del menú
+  const recalculada = useMemo(
+    () => recalcularLista({ listaData, menuData, recetarioData, cambios, compraRecetas }),
+    [listaData, menuData, recetarioData, cambios, compraRecetas]
+  );
 
   const uncheckAll = () => {
     if (window.confirm('¿Desmarcar todos los artículos de la lista de la compra?')) {
@@ -112,7 +103,7 @@ export default function ListaCompra({ listaData, despensaData, preciosLidl, sema
   };
 
   // Cada artículo lleva su precio en el supermercado elegido (precioVista)
-  const pasillos = useMemo(() => (listaData?.pasillos || []).map(p => ({
+  const pasillos = useMemo(() => recalculada.pasillos.map(p => ({
     ...p,
     items: p.items.map(i => {
       const lidl = precioLidl(i, productosLidl, preciosUsuario);
@@ -123,7 +114,7 @@ export default function ListaCompra({ listaData, despensaData, preciosLidl, sema
         unitarioVista: esLidl ? lidl.unitario : i.precio_unitario
       };
     })
-  })), [listaData, productosLidl, preciosUsuario, esLidl]);
+  })), [recalculada, productosLidl, preciosUsuario, esLidl]);
 
   // Comparativa de ambos supermercados sobre lo que hay que comprar y tiene precio en los dos
   const comparativa = useMemo(() => {
@@ -526,6 +517,11 @@ export default function ListaCompra({ listaData, despensaData, preciosLidl, sema
                             <span className="bg-slate-100 px-2 py-0.5 rounded font-medium text-slate-700">
                               {item.cantidad} x {item.unidad_receta || 'ud'}
                             </span>
+                            {item.ajuste && item.ajuste.delta !== 0 && (
+                              <span className="bg-violet-100 text-violet-800 px-2 py-0.5 rounded font-semibold">
+                                {item.nuevo ? 'Nuevo por cambios del menú' : `${item.ajuste.delta > 0 ? '+' : '−'}${Math.abs(item.ajuste.delta)} por cambios (antes ${item.ajuste.antes})`}
+                              </span>
+                            )}
                             {esLidl && item.lidl.ref?.nota && (
                               <span className="text-amber-700">{item.lidl.ref.nota}</span>
                             )}
@@ -597,26 +593,48 @@ export default function ListaCompra({ listaData, despensaData, preciosLidl, sema
         )}
       </div>
 
-      {/* Ajustes por platos cambiados en el menú */}
-      {ajustesCambios.length > 0 && (
+      {/* Resumen de los cambios del menú: la lista de arriba ya está recalculada */}
+      {recalculada.tomas.length > 0 && (
         <div className="bg-white rounded-2xl border border-violet-200 shadow-sm overflow-hidden">
           <div className="bg-violet-50 px-4 sm:px-5 py-3 border-b border-violet-200 flex items-center gap-2">
             <Shuffle className="w-4 h-4 text-violet-700" />
-            <h3 className="font-bold text-violet-900 text-sm sm:text-base">Cambios por platos sustituidos</h3>
+            <h3 className="font-bold text-violet-900 text-sm sm:text-base">Lista ajustada a los cambios del menú</h3>
           </div>
-          <div className="divide-y divide-slate-100">
-            {ajustesCambios.map(aj => (
-              <div key={aj.slot} className="p-4 space-y-2">
-                <div className="text-sm">
-                  <span className="font-bold text-slate-900">{aj.etiqueta}:</span>{' '}
-                  <span className="text-slate-700">{aj.nueva.nombre}</span>
-                </div>
-                <p className="text-xs text-slate-500">
-                  Sustituye a «{aj.original}». Revisa si sus ingredientes de la lista siguen haciendo falta para otros platos.
+          <div className="p-4 space-y-3 text-sm">
+            <ul className="space-y-1">
+              {recalculada.tomas.map(t => (
+                <li key={t.slot} className="text-slate-700">
+                  <span className="font-bold text-slate-900">{t.etiqueta}:</span>{' '}
+                  {t.nueva ? t.nueva.nombre : 'comemos fuera'}
+                  {t.original ? <span className="text-slate-500"> (antes: {t.original})</span> : <span className="text-slate-500"> (antes: sin plato)</span>}
+                </li>
+              ))}
+            </ul>
+            {!compraRecetas && (
+              <p className="text-xs text-amber-800">
+                Estos datos no traen la compra por receta: revisa a mano qué sobra de la lista.
+              </p>
+            )}
+            {recalculada.quitados.length > 0 && (
+              <div>
+                <p className="text-xs font-semibold text-slate-600 mb-1">Ya no hace falta comprar:</p>
+                <ul className="space-y-0.5">
+                  {recalculada.quitados.map(i => (
+                    <li key={i.id || i.nombre} className="text-xs text-slate-500 line-through">
+                      {(i.nombre_receta || i.nombre).replace(/ \(.*\)$/, '')} ({i.ajuste?.antes} x {i.unidad_receta || 'ud'})
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {recalculada.sinProducto.map(sp => (
+              <div key={sp.slot}>
+                <p className="text-xs font-semibold text-slate-600 mb-1">
+                  {compraRecetas ? `Revisa también para ${sp.receta.nombre} (sin producto asignado):` : `Ingredientes de ${sp.receta.nombre}:`}
                 </p>
                 <ul className="space-y-1">
-                  {aj.nueva.ingredientes?.map((ing, i) => {
-                    const key = `cambio-${aj.slot}-${aj.nueva.id}-${i}`;
+                  {sp.ingredientes.map((ing, i) => {
+                    const key = `cambio-${sp.slot}-${sp.receta.id}-${i}`;
                     const hecho = !!checkedMap[key];
                     return (
                       <li key={key}>
