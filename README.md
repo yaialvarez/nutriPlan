@@ -40,6 +40,12 @@ La aplicación está diseñada para ser publicada en **GitHub Pages** con máxim
    - Menú, recetas, lista de la compra y despensa se empaquetan cifrados en cada despliegue (`scripts/build_bundle.js`) con la misma clave que los perfiles. Requiere el secreto `APP_PASSWORD` en GitHub (Settings → Secrets and variables → Actions); sin él la web se publica con esos datos sin cifrar y el build avisa.
    - Ojo: mientras el repositorio sea público, los JSON de `data/`, este README y `preferencias.md` siguen siendo legibles en GitHub.
 
+5. **Sincronización entre móviles (botón de la nube en la cabecera):**
+   - Cambios de plato, comidas fuera, compra marcada, "ya lo tengo", extras y pasos del batch se comparten entre los dos móviles (`app/src/utils/sync.js`).
+   - Automática: un gist secreto de GitHub guarda el estado de la semana cifrado con la clave de la app. Hace falta un token clásico con solo el permiso `gist`, que se guarda cifrado en el móvil; "Activar en el otro móvil" lo envía en un enlace cifrado.
+   - Sin token: "Enviar mis cambios" crea un enlace (`#sync=...`, cifrado y comprimido) para mandar por WhatsApp. El fragmento nunca llega al servidor.
+   - Cada elemento lleva la hora de su último cambio y gana el más reciente, así que marcar a la vez en los dos móviles no pisa nada. Al publicarse un menú nuevo el estado empieza de cero.
+
 ---
 
 ## 📂 Arquitectura del Proyecto

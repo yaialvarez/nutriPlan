@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { anotarLocal, escuchar } from './sync';
 
 /** Fecha local (sin hora) a partir de 'AAAA-MM-DD'. */
 export function parseFecha(iso) {
@@ -58,6 +59,8 @@ export function claveSemana(menu) {
  * nuevo la clave cambia y el estado arranca vacío. Borra las semanas antiguas.
  * Con semana null (portal bloqueado) no lee ni escribe nada, para no borrar el
  * estado de la semana en curso antes de desbloquear.
+ * Cada cambio se anota para sincronizarlo con el otro móvil (utils/sync.js), y los
+ * cambios que llegan de fuera se aplican aquí.
  */
 export function useEstadoSemanal(nombre, semana, inicial) {
   const storageKey = semana ? `nutriplan_${nombre}_${semana}` : null;
@@ -79,7 +82,13 @@ export function useEstadoSemanal(nombre, semana, inicial) {
   }
 
   useEffect(() => {
+    if (!storageKey) return undefined;
+    return escuchar(nombre, setEstado);
+  }, [storageKey, nombre]);
+
+  useEffect(() => {
     if (!storageKey) return;
+    anotarLocal(nombre, semana, estado);
     try {
       localStorage.setItem(storageKey, JSON.stringify(estado));
       const prefijo = `nutriplan_${nombre}_`;
@@ -90,7 +99,7 @@ export function useEstadoSemanal(nombre, semana, inicial) {
     } catch (e) {
       console.error(`Error guardando ${nombre}`, e);
     }
-  }, [storageKey, nombre, estado]);
+  }, [storageKey, nombre, semana, estado]);
 
   return [estado, setEstado];
 }
