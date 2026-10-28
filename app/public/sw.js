@@ -22,6 +22,8 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   if (request.method !== 'GET') return;
+  // La sincronización con GitHub siempre va a la red
+  if (new URL(request.url).hostname === 'api.github.com') return;
 
   if (request.mode === 'navigate') {
     // Saltar la caché HTTP (GitHub Pages da 10 min) para ver el menú recién publicado

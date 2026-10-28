@@ -10,7 +10,9 @@ import {
   Lock,
   Sun,
   Moon,
-  Monitor
+  Monitor,
+  Cloud,
+  CloudOff
 } from 'lucide-react';
 
 // Paquete de datos generado por scripts/build_bundle.js (cifrado cuando hay APP_PASSWORD)
@@ -28,6 +30,7 @@ import {
 } from './utils/crypto';
 import { migrarBitacora } from './utils/bitacora';
 import { claveSemana, useEstadoSemanal } from './utils/semana';
+import { iniciarSync, detenerSync, aplicarEnlace, suscribirEstado } from './utils/sync';
 
 // Componentes
 import LockScreen from './components/LockScreen';
@@ -39,6 +42,7 @@ import BitacoraProgreso from './components/BitacoraProgreso';
 import FichaRecetaModal from './components/FichaRecetaModal';
 import ReglasMedicasModal from './components/ReglasMedicasModal';
 import CambiarPlatoModal from './components/CambiarPlatoModal';
+import SincronizarModal from './components/SincronizarModal';
 import { clasificarRecetario } from './utils/equilibrio';
 
 const TABS = [
@@ -94,6 +98,9 @@ export default function App() {
   const [showReglas, setShowReglas] = useState(false);
   const [cambiando, setCambiando] = useState(null);
   const [tema, siguienteTema] = useTema();
+  const [showSync, setShowSync] = useState(false);
+  const [syncEstado, setSyncEstado] = useState({ conectado: false });
+  const [avisoSync, setAvisoSync] = useState(null);
 
   const unlockWithPassword = async (password) => {
     const key = await deriveKey(password, bundleSalt(bundle));
@@ -139,12 +146,14 @@ export default function App() {
   }, []);
 
   const handleLock = async () => {
+    detenerSync();
     await clearAuthSession();
     setDatos(null);
     setCryptoKey(null);
     setSelectedReceta(null);
     setShowReglas(false);
     setCambiando(null);
+    setShowSync(false);
   };
 
   const files = datos?.files;
@@ -158,6 +167,28 @@ export default function App() {
   const [cambios, setCambios] = useEstadoSemanal('cambios', semana, {});
   const reglas = files?.['reglas_semana.json'] || null;
   const clases = useMemo(() => clasificarRecetario(recetarioData, reglas), [recetarioData, reglas]);
+
+  useEffect(() => suscribirEstado(setSyncEstado), []);
+
+  // Sincronización con el otro móvil: gist automático y enlaces #sync=... recibidos
+  useEffect(() => {
+    if (!cryptoKey || !semana) return;
+    let activo = true;
+    (async () => {
+      await iniciarSync(cryptoKey, semana);
+      const resultado = await aplicarEnlace();
+      if (activo && resultado) setAvisoSync(resultado);
+    })();
+    return () => {
+      activo = false;
+    };
+  }, [cryptoKey, semana]);
+
+  useEffect(() => {
+    if (!avisoSync) return;
+    const t = setTimeout(() => setAvisoSync(null), 6000);
+    return () => clearTimeout(t);
+  }, [avisoSync]);
 
   if (checkingAuth) {
     return (
@@ -173,6 +204,7 @@ export default function App() {
   }
 
   const TemaIcon = tema === 'oscuro' ? Moon : tema === 'claro' ? Sun : Monitor;
+  const SyncIcon = syncEstado.conectado && !syncEstado.error ? Cloud : CloudOff;
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col text-slate-800 pb-24 md:pb-10 animate-fadeIn">
@@ -217,6 +249,21 @@ export default function App() {
               aria-label={`Cambiar tema (ahora ${tema})`}
             >
               <TemaIcon className="w-4 h-4" />
+            </button>
+
+            <button
+              onClick={() => setShowSync(true)}
+              className={`p-2 border rounded-xl transition-colors ${
+                syncEstado.error
+                  ? 'bg-rose-50 border-rose-200 text-rose-600'
+                  : syncEstado.conectado
+                    ? 'bg-emerald-50 hover:bg-emerald-100 border-emerald-200 text-emerald-700'
+                    : 'bg-slate-100 hover:bg-slate-200 border-slate-200 text-slate-600'
+              }`}
+              title="Sincronizar con el otro móvil"
+              aria-label="Sincronizar con el otro móvil"
+            >
+              <SyncIcon className={`w-4 h-4 ${syncEstado.ocupado ? 'animate-pulse' : ''}`} />
             </button>
 
             <button
@@ -323,6 +370,19 @@ export default function App() {
           perfilesData={datos.perfiles}
           onClose={() => setShowReglas(false)}
         />
+      )}
+
+      {showSync && <SincronizarModal estado={syncEstado} onClose={() => setShowSync(false)} />}
+
+      {avisoSync && (
+        <div
+          role="status"
+          className={`fixed left-1/2 -translate-x-1/2 bottom-24 md:bottom-6 z-50 max-w-sm w-[calc(100%-2rem)] px-4 py-3 rounded-xl shadow-lg text-sm font-semibold text-white ${
+            avisoSync.ok ? 'bg-emerald-600' : 'bg-rose-600'
+          }`}
+        >
+          {avisoSync.texto}
+        </div>
       )}
 
       {cambiando && (
