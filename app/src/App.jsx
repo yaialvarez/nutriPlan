@@ -308,6 +308,11 @@ export default function App() {
           <GuiaBatchCooking
             batchData={menuData?.batch_cooking_domingo}
             semana={semana}
+            menuData={menuData}
+            recetarioData={recetarioData}
+            cambios={cambios}
+            nutricion={nutricion}
+            despensaData={despensaData}
           />
         )}
 
