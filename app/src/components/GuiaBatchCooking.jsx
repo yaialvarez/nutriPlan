@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { 
   Flame, 
   Clock, 
@@ -7,9 +7,13 @@ import {
   Layers, 
   Refrigerator, 
   RotateCcw,
-  SunMedium
+  SunMedium,
+  Sparkles,
+  AlertTriangle
 } from 'lucide-react';
 import { useEstadoSemanal } from '../utils/semana';
+import { generarPromptBatch, cambiosQueAfectanAlBatch } from '../utils/promptBatch';
+import PromptBatchModal from './PromptBatchModal';
 
 /** Mantiene la pantalla encendida mientras se cocina (Screen Wake Lock API). */
 function usePantallaEncendida() {
@@ -44,8 +48,15 @@ function usePantallaEncendida() {
   return [soportado, activa, setActiva];
 }
 
-export default function GuiaBatchCooking({ batchData, semana }) {
+export default function GuiaBatchCooking({ batchData, semana, menuData, recetarioData, cambios, nutricion, despensaData }) {
   const pasos = batchData?.cronograma_pasos || [];
+  const [prompt, setPrompt] = useState(null);
+  const desfase = useMemo(
+    () => cambiosQueAfectanAlBatch({ menuData, recetarioData, cambios }),
+    [menuData, recetarioData, cambios]
+  );
+  const abrirPrompt = () =>
+    setPrompt(generarPromptBatch({ menuData, recetarioData, cambios, nutricion, despensaData }));
   // Checks ligados a la semana: se reinician solos con cada menú nuevo
   const [completedSteps, setCompletedSteps] = useEstadoSemanal('batch', semana, {});
   const [wakeSoportado, pantallaEncendida, setPantallaEncendida] = usePantallaEncendida();
@@ -120,6 +131,30 @@ export default function GuiaBatchCooking({ batchData, semana }) {
             ></div>
           </div>
         </div>
+      </div>
+
+      {/* Prompt para pedir a una IA la guía con el menú actual */}
+      <div className={`rounded-2xl border p-4 sm:p-5 shadow-sm ${desfase.length ? 'bg-amber-50 border-amber-300' : 'bg-white border-slate-200'}`}>
+        {desfase.length > 0 && (
+          <div className="flex items-start gap-2 text-sm text-amber-900 mb-3">
+            <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+            <p>
+              <strong>Esta guía ya no coincide con el menú.</strong> Has cambiado{' '}
+              {desfase.map((t) => `${t.dia.dia.split(' ')[0].toLowerCase()} (${t.tipo})`).join(', ')}.
+              Genera el prompt y pídele a una IA la guía actualizada.
+            </p>
+          </div>
+        )}
+        <button
+          onClick={abrirPrompt}
+          className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-semibold text-sm px-4 py-3 transition-colors"
+        >
+          <Sparkles className="w-4 h-4" />
+          Generar prompt para la IA con el menú actual
+        </button>
+        <p className="text-xs text-slate-500 mt-2 text-center">
+          Incluye recetas, ingredientes comprados, raciones y qué va al batch y qué se cocina en el momento.
+        </p>
       </div>
 
       {wakeSoportado && (
@@ -237,6 +272,8 @@ export default function GuiaBatchCooking({ batchData, semana }) {
           </p>
         </div>
       </div>
+
+      {prompt && <PromptBatchModal prompt={prompt} onClose={() => setPrompt(null)} />}
     </div>
   );
 }
